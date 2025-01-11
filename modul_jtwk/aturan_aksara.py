@@ -42,9 +42,9 @@ aksara = {
     # Rĕkan
     **{huruf: 'ꦘ꧀' for huruf in ('z', 'Z')},    
     **{huruf: 'ꦥ꦳꧀' for huruf in ('f', 'F')},    
-    **{huruf: 'ꦮ꦳꧀' for huruf in ('v', 'V')},    
+    **{huruf: 'ꦮ꦳꧀' for huruf in ('v', 'V')},
+    **{huruf: 'ꦏ꦳꧀' for huruf in ('ḳ', 'Ḳ')},    
 }
-
 sandhangan = {
     'a': '',  # tidak ada sandhangan untuk 'a'
     'i': 'ꦶ',
@@ -89,6 +89,7 @@ simbol = {
 def hukum_sandi(text):
     text = text.replace("/", "\u200C")
     text = text.replace("ô", "o")
+    text = re.sub(r'akhir', 'ꦄꦏ꦳ꦶꦂ', text, flags=re.IGNORECASE)
     #Menyambung vokal partikel, catatan AĀIĪUŪEOÖŎĔꜸꜼ
     text = re.sub(r'([b-df-hj-np-tv-zḋḍŧṭṣñṇ])\s([aāiīuūeèoōöŏĕꜷꜽ])', r'\1\2', text)
   
