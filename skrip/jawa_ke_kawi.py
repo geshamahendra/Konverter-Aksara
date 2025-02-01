@@ -97,15 +97,21 @@ def konversi_aksara_ke_kawi(text, daftar_konversi):
     
     #zwnj
     text = re.sub(r'𑽂\u200C', '𑽁\u200C', text)
+
+    text = re.sub(r'𑼫𑽂𑼫𑼂‌', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
     return text
 
 
 def retain_final_pangkon(text):
+    # Tambahkan simbol khusus yang perlu diperhatikan di akhir
+    special_symbols = '𑽅𑽆𑽉𑽌꧇𑽋𑽃𑽍𑽄𑽏𑽇।॥'
+    pattern = rf'𑽂(?=$|[{special_symbols}])'
+    
     lines = text.splitlines()
     for i, line in enumerate(lines):
-        # Additionally replace 'ṙ' with 'r' at the end of the line if followed by non-letter characters or nothing
-        lines[i] = re.sub(r'𑽂(?=\W*$)', '𑽁', line)
-    # Rejoin the lines into a single text block
+        # Ganti joiner dengan pangkon sesuai aturan
+        lines[i] = re.sub(pattern, '𑽁', line)
+    
     return "\n".join(lines)
 
 def process_file(input_file, output_file, daftar_konversi):

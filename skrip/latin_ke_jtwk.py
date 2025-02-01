@@ -8,7 +8,7 @@ sys.path.append(root_path)
 
 from modul_jtwk.hukum_jtwk import kata_baku, hukum_aksara, hukum_sigeg, hukum_ṙ
 from modul_jtwk.replacements_jtwk import replacements, replace_numbers_with_colon, retain_final_r
-from modul_jtwk.mode_jtwk import mode_normal, mode_lampah, mode_sriwedari
+from modul_jtwk.mode_jtwk import mode_normal, mode_lampah, mode_sriwedari, mode_modern_lampah, mode_cerita, mode_sanskrit
 
 # Definisi variabel global
 daftar_vokal = "aāiīuūeèoōöŏĕꜷꜽ"  # Daftar vokal
@@ -62,12 +62,18 @@ def replace_characters(text, mode):
     text = hukum_aksara(text) 
    
     #========Aturan Berdasarkan Mode========
-    if mode in {'sriwedari', 'cerita'}:
+    if mode in {'sriwedari'}:
         text = mode_sriwedari(text)
     if mode in {'normal'}:
         text = mode_normal(text)
+    if mode in {'cerita'}:
+        text = mode_cerita(text)
     if mode in {'lampah', 'sumanasantaka'}:
         text = mode_lampah(text)
+    if mode in ('modern_lampah'):
+        text = mode_modern_lampah(text)
+    if mode in ('sanskrit'):
+        text = mode_sanskrit(text)
         
     # Masukkan hukum r
     text = hukum_ṙ(text)
@@ -85,6 +91,7 @@ def replace_characters(text, mode):
 
     text = re.sub(r'(?<=\b)rakṙyyan(?=\b)', 'rakryan', text, flags=re.IGNORECASE)
     text = re.sub(r'(?<=\b)rakṙyyān(?=\b)', 'rakryān', text, flags=re.IGNORECASE)
+    text = re.sub(r'(?<=\b)ry(?=\b)', 'yyṙ‌', text, flags=re.IGNORECASE)
     #text = re.sub(r'(?<=\b)ṣi(?=\b)', 'rṣi', text, flags=re.IGNORECASE)
 
     return text
@@ -100,7 +107,7 @@ def process_file(input_file, output_file):
 # Ganti dengan nama file input dan output sesuai kebutuhan
 input_file = 'input.txt'  # Nama file input
 output_file = 'output/input_jawa.txt'  # Nama file output
-mode = 'normal'
+mode = 'sanskrit'
 
 # Memproses file
 process_file(input_file, output_file)

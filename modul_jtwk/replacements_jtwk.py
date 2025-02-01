@@ -68,17 +68,27 @@ replacements = {
         'le': 'ḷ', 'ṛe': 'ṛ', 'ia' : 'ya',
     },
     'cerita': {
-        'kh': 'ḳ',
-        'gh': 'ǥ','ch': 'ꞓ','jh': 'ɉ',
+        'kh': 'ḳ', 'ua' : 'wa', 'ia' : 'ya',
+        'gh': 'ǥ','ch': 'ꞓ','jh': 'ɉ', 'ny' : 'ñ',
         'ṭh': 'ṫ','ḍh': 'ḋ','th': 'ṭ','dh': 'ḍ',
         'ph': 'ꝑ','bh': 'ƀ', 'ny': 'ñ',
 
         'e' : 'ĕ','E' : 'Ĕ',
+    },
+        'sanskrit': {
+        #'E': 'È',  # Pali specific replacement
+        'e': 'è',  # Pali specific replacement
+        'kh': 'ꝁ', 'gh': 'ǥ', 'ch': 'ꞓ', 'jh': 'ɉ',
+        'ṭh': 'ṭ', 'ḍh': 'ḋ', 'th': 'ŧ', 'dh': 'đ',
+        'ph': 'ꝑ', 'bh': 'ƀ', 'ḷi': 'ḹ', 
+        'v': 'w', 'ai' : 'ꜽ', 'au' : 'ꜷ', 'oṃ':'Ōṃ', 'Oṁ':'Ōṃ',
+        "'" : "0", "’" : "0", 'ṃ' : 'ŋ', 'ṁ' : 'ŋ'
     }
 }
 
 # Mode kakawin mewarisi mode normal dan menambahkan/menimpa beberapa entri
 replacements['lampah'] = replacements['normal'].copy()
+replacements['modern_lampah'] = replacements['cerita'].copy()
 
 def retain_final_r(text):
     lines = text.splitlines()

@@ -26,6 +26,7 @@ aksara = {
     **{huruf: 'ꦫ꧀' for huruf in ('r', 'R')},
     # Dantya
     **{huruf: 'ꦠ꧀' for huruf in ('t', 'T')},
+    **{huruf: 'ꦡ꧀' for huruf in ('ŧ', 'Ŧ')},
     **{huruf: 'ꦢ꧀' for huruf in ('d', 'D')},
     **{huruf: 'ꦣ꧀' for huruf in ('đ', 'Đ')},
     **{huruf: 'ꦤ꧀' for huruf in ('n', 'N')},
@@ -59,7 +60,7 @@ sandhangan = {
     **{tanda: 'ꦼ' for tanda in ('e', 'ĕ')}, 
     **{tanda: 'ꦺꦴ' for tanda in ('o', 'ô')}, 
     **{tanda: 'ꦺ' for tanda in ('è', 'é')}, 
-    **{tanda: 'ꦀ' for tanda in ('ṃ', 'ṃ', 'ᶆ')}, 
+    **{tanda: 'ꦀ' for tanda in ('ṃ', 'm̃', 'ᶆ', 'ṁ')}, 
     **{tanda: 'ꦁ' for tanda in ('ŋ', 'ᶇ')}, 
     **{tanda: 'ꦃ' for tanda in ('ḥ', 'ꞕ')}, 
     **{tanda: 'ꦂ' for tanda in ('ṙ', 'ᶉ')},

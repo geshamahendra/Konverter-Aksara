@@ -1,5 +1,6 @@
 import sys
 import os
+import re
 
 # Tambahkan direktori proyek ke sys.path
 root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
@@ -184,6 +185,8 @@ def latin_to_jawa(text, line_spacing):
 
     hasil = hasil.replace("~", " ")
     hasil = hasil.replace("_", " ")
+    hasil = re.sub(r"(–|⏑|⏓|꧂|;)(?=\S)", r"\1 ", hasil)
+    hasil = hasil.replace("ꦈꦴꦁ", "ꦈꦴꦀ")
 
     return hasil
 

@@ -10,6 +10,7 @@ from modul_jtwk.aturan_aksara import aksara, sandhangan, simbol, swara
 from modul_jtwk.aturan_aksara import hukum_sandi, finalisasi
 
 def latin_to_jawa(text, line_spacing):
+    #text = re.sub(r'ṙ', 'r\u200D', text, flags=re.IGNORECASE)
     text = re.sub(r'ṙ', 'r', text, flags=re.IGNORECASE)
     text = hukum_sandi(text)
 
@@ -82,6 +83,11 @@ def latin_to_jawa(text, line_spacing):
 
         # Jika karakter adalah 'y', kita perlu melakukan pemeriksaan tambahan
         elif char == 'y':
+
+            #if last_aksara == 'ꦫ꧀':  # Cek apakah sebelumnya ada cakra
+            #    hasil += 'ꦪ꧀'  # Tambahkan pengkal
+            #    last_aksara = 'ꦪ꧀'  # Update last_aksara
+
             if last_aksara == 'ꦿ':  # Cek apakah sebelumnya ada cakra
                 hasil += 'ꦾ'  # Tambahkan pengkal
                 last_aksara = 'ꦿꦾ'  # Update last_aksara
@@ -90,7 +96,7 @@ def latin_to_jawa(text, line_spacing):
                 hasil = hasil[:-1] + 'ꦾ'  # Pengkal = ꦾ
                 last_aksara = 'ꦾ'  # Update last aksara menjadi pengkal 
             else:
-                # Jika tidak, tambahkan aksara "ra"
+                # Jika tidak, tambahkan aksara "ya"
                 hasil += aksara['y']
                 last_aksara = aksara['y']  # Menyimpan aksara terakhir
 
@@ -183,9 +189,13 @@ def latin_to_jawa(text, line_spacing):
 
     #Finalisasi
     hasil = finalisasi(hasil)
+    #hasil = re.sub(r'ꦪꦾꦫ꧀‌', 'ꦫ꧀ꦪꦾ', hasil, flags=re.IGNORECASE)
 
     hasil = hasil.replace("~", " ")
     hasil = hasil.replace("_", " ")
+    hasil = hasil.replace("ꦈꦴꦁ", "ꦈꦴꦀ")
+    hasil = re.sub(r"(–|⏑|⏓|꧂|;)(?=\S)", r"\1 ", hasil)
+    hasil = hasil.replace("ꦫꦾꦪ", "ꦫ꧀ꦪꦾ")
 
     return hasil
 

@@ -10,7 +10,7 @@ def kata_baku(text):
     text = re.sub(r'\bAwighnamastu\b', 'Awighnamāstu', text, flags=re.IGNORECASE)
     text = re.sub(r'wruh', '\u200cwruh', text, flags=re.IGNORECASE)
 
-    text = re.sub(r'(?<=\b)wong(?=\b)', 'wwoŋ', text, flags=re.IGNORECASE)
+    text = re.sub(r'(?<=\b)wong(?=\b)', '‌wwoŋ', text, flags=re.IGNORECASE)
     text = re.sub(r'(?<=\b)sabda(?=\b)', 'śabda', text, flags=re.IGNORECASE)
     text = re.sub(r'(?<=\b)sarira(?=\b)', 'śarīra', text, flags=re.IGNORECASE)
     text = re.sub(r'(?<=\b)mèga(?=\b)', 'mèǥa', text, flags=re.IGNORECASE)
@@ -43,7 +43,7 @@ def kata_baku(text):
     text = re.sub(r'(?i)maha', 'mahā', text, flags=re.IGNORECASE)
     text = re.sub(r'(?i)wisnu', 'wiṣṇu', text, flags=re.IGNORECASE)
     text = re.sub(r'(?i)siwa', 'śīwa', text, flags=re.IGNORECASE)
-    text = re.sub(r'(?i)brahma', 'brāhma', text, flags=re.IGNORECASE)
+    #text = re.sub(r'(?i)brahma', 'brāhma', text, flags=re.IGNORECASE)
     text = re.sub(r'(?i)ganesha', 'ganèśa', text, flags=re.IGNORECASE)
     text = re.sub(r'(?i)mataram', 'matāram', text, flags=re.IGNORECASE)
     text = re.sub(r'(?i)kresna', 'kṛĕṣṇa', text, flags=re.IGNORECASE)
@@ -95,8 +95,12 @@ def hukum_sigeg(text):
     return text 
 
 def hukum_ṙ(text):
-    daftar_tidak_digandakan = {'n', 'ṅ', 'ṭ', 'ŧ', 'ṣ', 'h', 'ꝁ', 'k', 'ḍ', 'ḋ', 'd', 'ꞓ', 'đ', 's', 'ṇ', 'c', 'r'}
-    daftar_vokal = {'a', 'ā', 'i', 'ī', 'u', 'ū', 'e', 'è', 'o', 'ō', 'ö', 'ŏ', 'ĕ', 'ꜷ', 'ꜽ'}
+    daftar_tidak_digandakan = {'n', 'ṅ', 'ṇ', 'h', 'ṣ', 's', 'c', 'ꞓ', 'r', 'ṙ'
+                                'ṫ', 'ŧ', 'ꝑ',
+                                'ǥ', 'ɉ',  'ƀ', 
+                                'ꝁ', 'k', 'ḍ', 'ḋ', 'd', 'đ',}
+    
+    daftar_vokal = {'a', 'ā', 'i', 'ī', 'u', 'ū', 'e', 'è', 'o', 'ō', 'ö', 'ŏ', 'ĕ', 'ꜷ', 'ꜽ'} 
 
     text = re.sub(rf'(?<=\w)r(?=[^{daftar_vokal}])', 'ṙ', text)
     text = re.sub(rf'(?<=ṙ)(?=[{daftar_vokal}])', 'r', text)
@@ -109,6 +113,15 @@ def hukum_ṙ(text):
    # Mengganti 'r' + vokal + 's' menjadi 'r' + vokal + 'ṣ', kecuali jika 's' berada di ujung kata
     # Menambahkan pengecekan agar hanya mengganti s jika ada karakter setelah s
     text = re.sub(r'r([' + ''.join(daftar_vokal) + r'])s(?!\s|\b)', r'r\1ṣ', text, flags=re.IGNORECASE)
+
+    #mahaprana
+    text = re.sub(r'ṙꝁ', 'ṙkꝁ', text, flags=re.IGNORECASE)
+    text = re.sub(r'ṙk', 'ṙkk', text, flags=re.IGNORECASE)
+    text = re.sub(r'ṙṫ', 'ṙṭṫ', text, flags=re.IGNORECASE)
+    text = re.sub(r'ṙꝑ', 'ṙpꝑ', text, flags=re.IGNORECASE)
+    text = re.sub(r'ṙǥ', 'ṙgǥ', text, flags=re.IGNORECASE)
+    text = re.sub(r'ṙɉ', 'ṙjɉ', text, flags=re.IGNORECASE)
+    text = re.sub(r'ṙƀ', 'ṙbƀ', text, flags=re.IGNORECASE)
 
     text = re.sub(r'ṙs', 'ṙṣ', text, flags=re.IGNORECASE)
     text = re.sub(r'ṛs', 'ṛṣ', text, flags=re.IGNORECASE)
@@ -127,7 +140,7 @@ def hukum_ṙ(text):
     text = re.sub(r'ṙn', 'ṙṇn', text, flags=re.IGNORECASE)
 
     #Nanti diganti
-    text = re.sub(r'(\d+)', r':\1:', text)
+    #text = re.sub(r'(\d+)', r':\1:', text)
     
     return text
 
