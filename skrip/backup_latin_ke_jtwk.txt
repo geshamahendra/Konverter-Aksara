@@ -14,10 +14,22 @@ from modul_jtwk.mode_jtwk import mode_normal, mode_lampah, mode_sriwedari, mode_
 daftar_vokal = "aāiīuūeèoōöŏĕꜷꜽ"  # Daftar vokal
 vokal_lampah_spesial = "AIU"
 vokal_kapital = "AĀIĪUŪEÈOŌÖŎĔꜶꜼ"  # Daftar vokal kapital
-vokal_gabungan = "aāâiīîuūûeèêoōöŏôĕꜷꜽAĀIĪUŪEÈOŌÖŎĔꜶꜼ"
+vokal_gabungan = "aāiīuūeèoōöŏĕꜷꜽAĀIĪUŪEÈOŌÖŎĔꜶꜼ"
 daftar_konsonan = "bdfhjnptvyzḋḍŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"  # Daftar konsonan
 daftar_konsonan_sigeg = "ŋḥṃṙ"  # Daftar konsonan
 zwnj = '\u200C'  # Zero-width non-joiner (ZWNJ)
+'''
+def replace_r_or_ṙ_with_r_vokal(text):   
+    # Pola untuk mencocokkan 'r' atau 'ṙ' yang diikuti oleh spasi dan vokal
+    pattern = r'([ṙr])\s([' + re.escape(daftar_vokal) + r'])'
+    
+    # Fungsi pengganti untuk menggantikan 'r' atau 'ṙ' dengan 'r' diikuti vokal
+    def replace(match):
+        return 'r' + match.group(2)
+
+    # Terapkan substitusi pada teks
+    return re.sub(pattern, replace, text)
+'''
 
 def replace_characters(text, mode):
 

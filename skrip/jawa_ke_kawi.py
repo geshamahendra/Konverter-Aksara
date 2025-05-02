@@ -85,6 +85,8 @@ def tarung(text):
     return text
 
 def konversi_aksara_ke_kawi(text, daftar_konversi):
+    text = re.sub(r'(?<=\b)ꦪꦾꦂ', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
+
     hasil = []
     for karakter in text:
         hasil.append(daftar_konversi.get(karakter, karakter))  # Gunakan karakter asli jika tidak ditemukan
@@ -96,15 +98,16 @@ def konversi_aksara_ke_kawi(text, daftar_konversi):
     text = retain_final_pangkon(text)  # Memastikan pangkon diproses setelah penggantian
     
     #zwnj
+    text = re.sub(r'𑽂\u200D', '𑽁\u200D', text)
     text = re.sub(r'𑽂\u200C', '𑽁\u200C', text)
 
-    text = re.sub(r'𑼫𑽂𑼫𑼂‌', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
+    text = re.sub(r'𑼫𑽂𑼫𑼂\u200D', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
     return text
 
 
 def retain_final_pangkon(text):
     # Tambahkan simbol khusus yang perlu diperhatikan di akhir
-    special_symbols = '𑽅𑽆𑽉𑽌꧇𑽋𑽃𑽍𑽄𑽏𑽇।॥'
+    special_symbols = '𑽅𑽆𑽉𑽌꧇𑽋𑽃𑽍𑽄𑽏𑽇।॥𑽊'
     pattern = rf'𑽂(?=$|[{special_symbols}])'
     
     lines = text.splitlines()

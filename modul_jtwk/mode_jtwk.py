@@ -1,11 +1,11 @@
 import re
 
 # Definisi variabel global
-daftar_vokal = "aāiīuūeèoōöŏĕꜷꜽ"  # Daftar vokal
+daftar_vokal = "ꜷꜽaāiīuūeèoōöŏĕ"  # Daftar vokal
 vokal_lampah_spesial = "AIU"
 vokal_kapital = "AĀIĪUŪEÈOŌÖŎĔꜶꜼ"  # Daftar vokal kapital
 vokal_gabungan = "aāiīuūeèoōöŏĕꜷꜽAĀIĪUŪEÈOŌÖŎĔꜶꜼ"
-daftar_konsonan = "bdfhjnptvyzḋḍŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"  # Daftar konsonan
+daftar_konsonan = "bdfhjnptvwyzḋḍŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"  # Daftar konsonan
 daftar_konsonan_sigeg = "ŋḥṃṙ"  # Daftar konsonan
 zwnj = '\u200C'  # Zero-width non-joiner (ZWNJ)
 
@@ -38,50 +38,6 @@ def add_h_between_vowels(text):
     # Terapkan substitusi untuk pola yang mencocokkan vokal berturut-turut di dalam kata
     return re.sub(pattern_consecutive_vowels, insert_h_between_vowels, text)
 
-def insert_zwnj_between_consonants(text):
-    pattern = r'([{b-df-hj-np-tv-zḋḍŧṭṣñṇṅŋṛṝḷḹꝁǥꞓƀśʰ}])\s([b-df-hj-np-tv-zḋḍŧṭṣñṇṅŋṛṝḷḹꝁǥꞓƀśʰ])([b-df-hj-np-tv-zḋḍŧṭṣñṇṅŋṛṝḷḹꝁǥꞓƀśʰ])'
-    
-    # Sisipkan ZWNJ setelah konsonan pertama (sebelum spasi)
-    zwnj = '\u200C'
-    
-    # Fungsi pengganti untuk memastikan hanya "r" yang dikecualikan jika berada di konsonan ketiga
-    def replace_consonants(match):
-        first_consonant = match.group(1)
-        second_consonant = match.group(2)
-        third_consonant = match.group(3)
-
-        # Jika konsonan ketiga adalah "r", jangan tambahkan ZWNJ setelah konsonan pertama
-        if third_consonant == 'r':
-            return first_consonant + ' ' + second_consonant + third_consonant
-        elif first_consonant == 'r':
-            return first_consonant + ' ' + second_consonant + third_consonant
-        elif third_consonant == 'y':
-            return first_consonant + ' ' + second_consonant + third_consonant
-        elif first_consonant == 'y':
-            return first_consonant + ' ' + second_consonant + third_consonant
-        elif third_consonant == 'w':
-            return first_consonant + ' ' + second_consonant + third_consonant
-        elif first_consonant == 'w':
-            return first_consonant + ' ' + second_consonant + third_consonant
-        elif third_consonant == 'ṛ':
-            return first_consonant + ' ' + second_consonant + third_consonant
-        elif first_consonant == 'ṛ':
-            return first_consonant + ' ' + second_consonant + third_consonant        
-        elif third_consonant == 'ṝ':
-            return first_consonant + ' ' + second_consonant + third_consonant
-        elif first_consonant == 'ṝ':
-            return first_consonant + ' ' + second_consonant + third_consonant
-        #elif third_consonant == 'l':
-        #    return first_consonant + ' ' + second_consonant + third_consonant
-        #elif first_consonant == 'l':
-        #    return first_consonant + ' ' + second_consonant + third_consonant                  
-        else:
-            # Tambahkan ZWNJ antara konsonan pertama dan kedua
-            return first_consonant + zwnj + ' ' + second_consonant + third_consonant
-
-    # Terapkan pengganti pada teks
-    return re.sub(pattern, replace_consonants, text)
-
 def mode_normal(text):
 
     # Mengubah vokal menjadi uppercase jika didahului oleh spasi dan vokal, tanpa menghapus spasi tersebut
@@ -97,6 +53,9 @@ def mode_normal(text):
 
     # Inserting ZWNJ after the consonant if followed by space and capital vowel
     text = re.sub(rf'([{daftar_konsonan}])(\s)([{vokal_kapital}])', r'\1' + zwnj + r'\2\3', text)
+
+    # Aturan baru: menambahkan '\u200C' sebelum spasi jika diapit oleh konsonan di kiri dan vokal uppercase di kanan
+    text = re.sub(rf'([{daftar_konsonan}])\s([AIUĀĪŪEOÖŎĔÈ])', lambda m: m.group(1) + '\u200C' + ' ' + m.group(2), text)
 
     return text
 
@@ -120,10 +79,68 @@ def mode_modern_lampah(text):
 
     return (text)
 
+def mode_sumanasantaka(text):
+
+    # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf (kecuali -) dan spasi
+    text = re.sub(rf'([^\w\s-])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2) + m.group(3).upper(), text)
+
+    '''
+    #khusus sumanasantaka, urai vokal kapital yang didahuli spasi+konsonan
+    konsonan = "[" + daftar_konsonan + "]"
+
+    # peta vokal kapital → vokal panjang lowercase
+    vokal_map = {
+        "A": "ā", "Ā": "ā",
+        "I": "ī", "Ī": "ī",
+        "U": "ū", "Ū": "ū",
+    }
+    # fungsi pengganti
+    def ganti_vokal(match):
+        return " " + vokal_map[match.group(1)]
+    # regex: dua konsonan + spasi + vokal kapital
+    text = re.sub(rf"(?<={konsonan}{konsonan})\s(A|Ā|I|Ī|U|Ū)", ganti_vokal, text)
+    '''
+    
+    #Perubahan pada rṇn
+    #text = re.sub(r'rṇ', 'rn', text, flags=re.IGNORECASE)
+    # 
+    #text = re.sub(r'i\s+a', 'i ha', text)
+    
+    text = re.sub(r'rṇ', 'rn', text) # khusus bahasa jawa kuno
+    #text = re.sub(r'\bry\b', 'ri', text)
+
+    return text
+
 def mode_lampah(text):
 
     # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf dan spasi
     text = re.sub(rf'([^\w\s])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2) + m.group(3).upper(), text)
+
+    # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf
+    text = re.sub(rf'([^\w\s])([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
+
+    # Kapitalkan vokal di awal baris
+    text = re.sub(rf'(^|\n)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
+
+    # Aturan baru: menambahkan '/' sebelum spasi jika diapit oleh konsonan di kiri dan vokal uppercase di kanan
+    text = re.sub(r'([{daftar_konsonan}])\s([AIUĀĪŪEOÖŎĔÈ])', r'\1\ \2', text)
+    
+    #khusus sumanasantaka, urai vokal kapital yang didahuli spasi+konsonan
+    text = re.sub(r"(?<=[daftar_konsonan][daftar_konsonan]) (A|I|U)", 
+                lambda m: {'A': 'ā', 'I': 'ī', 'U': 'ū'}[m.group(1)], 
+                text)
+
+
+    return text
+
+
+##def mode_lampah(text):
+'''
+    # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf dan spasi
+    text = re.sub(rf'([^\w\s])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2) + m.group(3).upper(), text)
+
+    # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf
+    text = re.sub(rf'([^\w\s])([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
 
     # Kapitalkan vokal di awal baris
     text = re.sub(rf'(^|\n)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
@@ -136,16 +153,12 @@ def mode_lampah(text):
                 lambda m: {'A': 'ā', 'I': 'ī', 'U': 'ū'}[m.group(1)], 
                 text)
 
-    text=insert_zwnj_between_consonants(text)
     
-    #Perubahan pada rṇn
-    text = re.sub(r'rṇ', 'rn', text, flags=re.IGNORECASE)
 
     return text
+'''
 
 def mode_sriwedari(text):
-    # Insert ZWNJ between consecutive consonants
-    text = insert_zwnj_between_consonants(text)
     # Fungsi untuk menambahkan 'h' di depan kata yang dimulai dengan vokal setelah spasi
     text = add_h_between_vowels(text)
     text = re.sub(r'-', '', text, flags=re.IGNORECASE)
@@ -174,9 +187,6 @@ def mode_cerita(text):
     text = re.sub(r'(?<=\b)Udan(?=\b)', 'ʰudan', text, flags=re.IGNORECASE)
     text = re.sub(r'(?<=\b)Ambèk(?=\b)', 'ʰambèk', text, flags=re.IGNORECASE)
 
-    # Insert ZWNJ between consecutive consonants
-    text = insert_zwnj_between_consonants(text)
-
     return text
 
 def mode_sanskrit(text):
@@ -192,6 +202,32 @@ def mode_sanskrit(text):
     # Inserting ZWNJ after the consonant if followed by space and capital vowel
     text = re.sub(rf'([{daftar_konsonan}])(\s)([{vokal_kapital}])', r'\1' + zwnj + r'\2\3', text)
 
-    text=insert_zwnj_between_consonants(text)
     
+    
+    return text
+
+def mode_satya(text):
+
+    # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf dan spasi
+    text = re.sub(rf'([^\w\s])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2) + m.group(3).upper(), text)
+
+    # Kapitalkan vokal di awal baris
+    text = re.sub(rf'(^|\n)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
+
+    # Mengubah vokal menjadi uppercase jika didahului oleh spasi dan vokal, tanpa menghapus spasi tersebut
+    text = re.sub(rf'(?<=o)(\s+)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
+
+    # Aturan baru: menambahkan '/' sebelum spasi jika diapit oleh konsonan di kiri dan vokal uppercase di kanan
+    #text = re.sub(r'([{daftar_konsonan}])\s([AIUĀĪŪEOÖŎĔÈ])', r'\1\u200D \2', text)
+    
+    #khusus sumanasantaka, urai vokal kapital yang didahuli spasi+konsonan
+    text = re.sub(r"(?<=[daftar_konsonan][daftar_konsonan]) (A|I|U)", 
+                lambda m: {'A': 'ā', 'I': 'ī', 'U': 'ū'}[m.group(1)], 
+                text)
+
+    
+    
+    #Perubahan pada rṇn
+    text = re.sub(r'rṇ', 'rn', text, flags=re.IGNORECASE)
+
     return text

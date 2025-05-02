@@ -57,10 +57,36 @@ def latin_to_jawa(text, line_spacing):
             last_char = char
         
         # Jika karakter ada dalam peta nglegena, tambahkan sesuai peta konversi
-        elif char in aksara and char not in ['ṛ','ṝ', 'ḷ', 'ḹ']:
+        #elif char in aksara and char not in ['r', 'y', 'ṛ','ṝ', 'ḷ', 'ḹ']:#, 's', 'ṣ']:
+        elif char in aksara and char not in ['ṛ','ṝ', 'ḷ', 'ḹ']:#, 's', 'ṣ']:
             hasil += aksara[char]
             last_aksara = aksara[char]  # Menyimpan aksara terakhir
             last_char = char  
+    
+        # Jika karakter adalah 'r', kita perlu melakukan pemeriksaan tambahan
+        elif char == 'r':
+            if last_aksara and last_aksara.endswith('꧀'):
+                # Jika iya, tambahkan aksara "cakra" (ꦿ)
+                hasil = hasil[:-1] + 'ꦿ꧀'  # Cakra = ꦿ
+                last_aksara = 'ꦿ꧀'  # Update last aksara menjadi cakra
+            else:
+                # Jika tidak, tambahkan aksara "ra"
+                hasil += aksara['r']
+                last_aksara = aksara['r']  # Menyimpan aksara terakhir
+
+        # Jika karakter adalah 'y', kita perlu melakukan pemeriksaan tambahan
+        elif char == 'y':
+            if last_aksara == 'ꦿ':  # Cek apakah sebelumnya ada cakra
+                hasil += 'ꦾ'  # Tambahkan pengkal
+                last_aksara = 'ꦿꦾ'  # Update last_aksara
+            if last_aksara and last_aksara.endswith('꧀'):
+                # Jika iya, tambahkan aksara "pengkal" (ꦾ)
+                hasil = hasil[:-1] + 'ꦾ'  # Pengkal = ꦾ
+                last_aksara = 'ꦾ'  # Update last aksara menjadi pengkal 
+            else:
+                # Jika tidak, tambahkan aksara "ya"
+                hasil += aksara['y']
+                last_aksara = aksara['y']  # Menyimpan aksara terakhir
 
         # Jika karakter adalah 'ṛ', kita perlu melakukan pemeriksaan tambahan
         elif char == 'ḷ':
