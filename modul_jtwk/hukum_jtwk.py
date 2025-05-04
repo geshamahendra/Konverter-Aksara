@@ -18,7 +18,7 @@ def process_baris(baris):
 
     # Jika ada tanda [ ] maka lakukan perhitungan khusus
     if "[" in baris and "]" in baris:
-        match = re.search(r'\[([–⏑⏓\s\-\u200C\u200D]*)]\s*×(\d+)', baris)
+        match = re.search(r'\[([–⏑⏓\s\-\u200C\u200D]*)][^\S\n]*×(\d+)', baris)
 
         if match:
             isi = match.group(1)
@@ -97,14 +97,12 @@ def kata_baku(text):
     for pattern, replacement in substitutions.items():
         text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
     
-    text = re.sub(r'([yw])\b\s+([AEIOUĀĪŪĒŌÖŎĔꜶꜸ])', lambda m: m.group(1) + ' ' + m.group(2).lower(), text)
+    text = re.sub(r'([yw])\b[^\S\n]+([AEIOUĀĪŪĒŌÖŎĔꜶꜸ])', lambda m: m.group(1) + ' ' + m.group(2).lower(), text)
 
     return(text)
 
 # Fungsi untuk mengubah hukum aksara
 def hukum_aksara(text):
-    text = re.sub(r'\n', '\u200c\n', text)
-    text = re.sub(r'\r', '\u200c\r', text)
 
     text = re.sub(r'(?<=\w)sṭ(?:h)?(?=\w)', lambda m: 'ṣṫ' if m.group(0).endswith('h') else 'ṣṭ', text)
     text = re.sub(r'sṭ', 'ṣṭ', text, flags=re.IGNORECASE)
@@ -199,11 +197,17 @@ def hukum_ṙ(text):
     for pattern, replacement in mahaprana.items():
         text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
 
+    #kasus ry ṙyy
+    #text = re.sub(r'(?:(?<=^)|(?<=\s))ry(?=\S)', '\u200cṙyy', text, flags=re.MULTILINE)
+    #text = re.sub(r'(rī\b[^\S\n]+a|[^\S\n]+ṙyy)', '\u200cṙyy', text, flags=re.IGNORECASE)
+    text = re.sub(
+    r'(?:(?<=^)|(?<=\s))ry(?=\S)|(?:rī\b[^\S\n]+a|[^\S\n]+ṙyy)', '\u200cṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
+
     return(text)
 
 # Fungsi untuk finalisasi (penyesuaian akhir)
 def finalisasi(text):
-    for pattern in [r'\bww', r'\byw', r'wru', r'\brw', r'\blwir', r'\byan\b', r'\bṅw', r'\bmw', r'\bstr', r'\brkw', r'\b(riṅ|ring|riŋ|ri)\b', r'\bdwa\b']:
+    for pattern in [r'\bww', r'\byw', r'wru', r'\brw', r'lwir' , r'\byan\b', r'\btan\b', r'\bṅw', r'\bmw', r'\bstr', r'\brkw', r'\b(riṅ|ring|riŋ|ri)', r'\bdwa\b']:#, r'\bry\b' #r'\blwir'
         text = add_zwnj_awal_kata(text, pattern, '\u200C')
 
     #mempertahankan le
@@ -211,7 +215,9 @@ def finalisasi(text):
 
     #kasus spesial pasanyan nya
     for huruf, ganti in [('r', 'ṙ'), ('h', 'ḥ'), ('ṅ', 'ŋ')]:
-        text = re.sub(rf'{huruf}(?=ny[{vokal_regex}])', ganti, text, flags=re.IGNORECASE)
+        text = re.sub(rf'{huruf}(?=nṇ?y[{vokal_regex}])', ganti, text, flags=re.IGNORECASE)
+    #spesial kata r nya
+    text = re.sub(r'ṙṇny', 'ṙny', text)
 
     # Proses dan gabungkan hasil per baris pada teks
     text = "\n".join(process_baris(baris) for baris in text.splitlines())
@@ -219,12 +225,13 @@ def finalisasi(text):
     
     #spesial kata arsik
     text = re.sub(r'ṙṣik\b', 'ṙsik', text)
-    #spesial kata r nya
-    text = re.sub(r'ṙṇnya', 'ṙnya', text)
-    #text = text.replace('`', '')
+    
+    #zwnj ṅ ḥ
+    text = re.sub(r'[ṅh]\u200c', lambda m: 'ŋ' if m.group(0) == 'ṅ\u200c' else 'ḥ', text)
     
     # ganti 'r' jadi ṙ jika diikuti spasi atau tanda hubung
     text = re.sub(r'(?<=\w)r(?=[\s-])', 'ṙ', text)
+    text = re.sub(r'ṙ[ \t]*\n', 'r\n', text)
 
 
     return(text)

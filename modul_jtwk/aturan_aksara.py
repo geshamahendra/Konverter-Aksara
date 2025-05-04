@@ -100,7 +100,7 @@ def ganti_tanda_metrum(hasil):
 
 def insert_zwnj_between_consonants(text):
     # Pola pencocokan: konsonan + spasi + konsonan + konsonan
-    pattern = r'([bcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅŋꝁǥꞓƀśʰ])\s*([ybcdfghjklmnqtvwzɉḋḍŧṭñṇṅŋꝁǥꞓƀśʰ])\s*([ṛḷḹbcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅŋꝁǥꞓƀśʰ])'
+    pattern = r'([bcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([ybcdfghjklmnqtvwzɉḋḍŧṭñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([ṛḷḹbcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅŋꝁǥꞓƀśʰ])'
 
     # Karakter ZWNJ
     zwnj = '\u200C'
@@ -159,7 +159,7 @@ vowel_merge_rules = [
 def apply_vowel_merges_with_space(text, rules):
     for prefix, output_prefix, vowels in rules:
         for v in vowels:
-            pattern = rf'{re.escape(prefix)}\s+{re.escape(v)}' #dengan spasi
+            pattern = rf'{re.escape(prefix)}[^\S\n]+{re.escape(v)}' #dengan spasi
             replacement = f'{output_prefix}{v}'
             text = re.sub(pattern, replacement, text)
     return text
@@ -175,7 +175,7 @@ def apply_vowel_merges_no_space(text, rules):
 def apply_vowel_merges(text, rules):
     for prefix, output_prefix, vowels in rules:
         for v in vowels:
-            pattern = rf'{re.escape(prefix)}\s*{re.escape(v)}' #non spasi
+            pattern = rf'{re.escape(prefix)}[^\S\n]*{re.escape(v)}' #non spasi
             replacement = f'{output_prefix}{v}'
             text = re.sub(pattern, replacement, text)
     return text
@@ -194,16 +194,14 @@ def hukum_sandi(text):
     # Regex to replace the characters
     text = re.sub('|'.join(re.escape(k) for k in replacements.keys()), 
                 lambda match: replacements[match.group(0)], text)
-
-    text = re.sub(r'rī\b a', 'ꦪꦾꦂ', text, flags=re.IGNORECASE)
-    text = text.replace("-", " ") 
+    text = re.sub(r'\u200cṙyy', '\u200cꦪꦾꦂ', text, flags=re.MULTILINE) 
     text = re.sub(r'akhir', 'ꦄꦏ꦳ꦶꦂ', text, flags=re.IGNORECASE)
     text = re.sub(r'\brŧ', '\u200Dꦡꦂ', text)
 
     #cegah ya dipasangi
     pengecualian_ya = set('aāiīuūeèoōöŏĕꜷꜽlwyr')
     text = re.sub(
-    r'([yw])(\s+|-)(?=([^\s]))',
+    r'([yw])([^\S\n]+|-)(?=([^\s]))',
     lambda m: (m.group(1) + m.group(2) + ('' if m.group(3).lower() in pengecualian_ya else '\u200C')),text)
 
     identik = [('a', 'ā'), ('i', 'ī'), ('u', 'ū'), ('e', 'ꜽ'), ('o', 'ꜷ')]
@@ -212,19 +210,19 @@ def hukum_sandi(text):
         long_cap = long_form.upper()
         
         # Gabungan vokal identik kecil → vokal panjang
-        text = re.sub(rf'{base}\s*{base}', long_form, text)
-        text = re.sub(rf'{long_form}\s*{long_form}', long_form, text)
+        text = re.sub(rf'{base}[^\S\n]*{base}', long_form, text)
+        text = re.sub(rf'{long_form}[^\S\n]*{long_form}', long_form, text)
         
         # Gabungan vokal kapital + kecil → vokal panjang kapital
-        text = re.sub(rf'{cap}\s*{base}', long_cap, text)
-        text = re.sub(rf'{base}\s*{cap}', long_cap, text)
+        text = re.sub(rf'{cap}[^\S\n]*{base}', long_cap, text)
+        text = re.sub(rf'{base}[^\S\n]*{cap}', long_cap, text)
 
     # Kombinasi sandhi vokal yang disederhanakan
-    text = re.sub(r'[aā]\s+[iī]', 'e', text)   # a atau ā + i atau ī menjadi e
-    text = re.sub(r'[aā]\s+[uū]', 'o', text)   # a atau ā + u atau ū menjadi o
+    text = re.sub(r'[aā][^\S\n]+[iī]', 'e', text)   # a atau ā + i atau ī menjadi e
+    text = re.sub(r'[aā][^\S\n]+[uū]', 'o', text)   # a atau ā + u atau ū menjadi o
 
-    text = re.sub(r'ꜽ\s*ꜽ', 'ꜽ', text)
-    text = re.sub(r'ꜷ\s*ꜷ', 'ꜷ', text)
+    text = re.sub(r'ꜽ[^\S\n]*ꜽ', 'ꜽ', text)
+    text = re.sub(r'ꜷ[^\S\n]*ꜷ', 'ꜷ', text)
 
     text = apply_vowel_merges_with_space(text, vowel_merge_rules_with_space)
     text = apply_vowel_merges_no_space(text, vowel_merge_rules_no_space)
@@ -232,11 +230,11 @@ def hukum_sandi(text):
     
     # Untuk beberapa kasus khusus
     vokal = "aāiīuūeèoōöŏĕꜷꜽAĀIĪUŪEÈOŌÖŎĔꜶꜼ"
-    text = re.sub(rf'ḥ\s+([{vokal}])', lambda m: f"h{m.group(1).lower()}", text)
-    text = re.sub(rf'ŋ\s+([{vokal}])', lambda m: f"ṅ{m.group(1).lower()}", text)
+    text = re.sub(rf'ḥ[^\S\n]+([{vokal}])', lambda m: f"h{m.group(1).lower()}", text)
+    text = re.sub(rf'ŋ[^\S\n]+([{vokal}])', lambda m: f"ṅ{m.group(1).lower()}", text)
 
     #Menyambung vokal dan konsonan yang terpisah spasi
-    text = re.sub(r'([b-df-hj-np-tv-zḋḍŧṭñṇṅŋꝁǥꞓƀśʰ])\s*([aāiīuūeèoōöŏĕꜷꜽ])', r'\1\2', text)
+    text = re.sub(r'([b-df-hj-np-tv-zḋḍŧṭñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([aāiīuūeèoōöŏĕꜷꜽ])', r'\1\2', text)
 
     # lĕ, lö, rĕ, rö
     replacement_map = {
@@ -253,9 +251,10 @@ def hukum_sandi(text):
     for pattern, replacement in replacement_map.items():
         text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
 
+    #kasus ṅ berulang
+    #text = re.sub(r'(\w)(\w)ṅ(\1\2)ŋ', r'\1\2ŋ\1\2ŋ', text)
+
     text=insert_zwnj_between_consonants(text)
-
-
     return text
 
 def finalisasi(hasil):
@@ -280,6 +279,7 @@ def finalisasi(hasil):
     hasil = hasil.replace("ꦈꦴꦁ", "ꦈꦴꦀ")
     hasil = hasil.replace("꧀ꦗ꧀ꦚ", "꧀\u200Dꦗ꧀ꦚ")
     hasil = hasil.replace("ꦫ꧀ꦮ", "ꦫ꧀ꦮ\u200D")
+    hasil = hasil.replace("-", "")
     hasil=ganti_tanda_metrum(hasil)
 
     return hasil

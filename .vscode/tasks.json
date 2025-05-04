@@ -2,19 +2,104 @@
   "version": "2.0.0",
   "tasks": [
     {
-        "label": "Run Script chain_konverter",
-        "type": "process",
-        "command": "python3",
-        "args": [
-            "/Users/geshamahendra/My_Home/GitHub/Konverter-Aksara/main.py"
-        ],
-        "isBackground": true,
-        "problemMatcher": [],
-        "group": "build",
-        "presentation": {
-            "reveal": "silent",
-            "panel": "dedicated"
+      "label": "Run Script chain_konverter",
+      "type": "shell",
+      "command": "python3 /Users/geshamahendra/My_Home/GitHub/Konverter-Aksara/main.py",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^$",
+          "endsPattern": "^$"
         }
+      },
+      "group": "build",
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "Run Script chain",
+      "type": "shell",
+      "command": "python3 PATH_TO_YOUR_SCRIPT.py",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^$",
+          "endsPattern": "^$"
+        }
+      },
+      "group": "build",
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "Run Script jawa",
+      "type": "shell",
+      "command": "python3 PATH_TO_YOUR_JAWA_SCRIPT.py",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^$",
+          "endsPattern": "^$"
+        }
+      },
+      "group": "build",
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "Run Script latin_jawa",
+      "type": "shell",
+      "command": "python3 PATH_TO_YOUR_LATIN_JAWA_SCRIPT.py",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^$",
+          "endsPattern": "^$"
+        }
+      },
+      "group": "build",
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      }
     }
   ]
 }

@@ -20,7 +20,6 @@ DAFTAR_KONVERSI = {
     'ƀ': 'bh', 'Ƀ': 'Bh',
     'ꜷ': 'au', 'Ꜷ': 'Au',
     'ꜽ' : 'ai', 'Ꜽ':'Ai',
-    'ŋ': 'ṅ'
     #'ṅ': 'ng', 'Ṅ': 'Ng',
 
 }
@@ -42,7 +41,7 @@ def ganti_vokal_panjang(text):
 
 # Ganti ṙ diikuti 1–2 konsonan jadi r + konsonan-konsonan itu
 def ganti_hukum_r(text):
-    konsonan = 'bcdfghjklmnpqrstvwxyzḍḋḷṅṇñśṣṭṯṝꝁǥꞓƀ'
+    #konsonan = 'bcdfghjklmnpqrstvwxyzḍḋḷṅṇñśṣṭṯṝꝁǥꞓƀ'
 
     # Ubah ṙ + konsonan ganda menjadi r + satu konsonan saja (misalnya ṙjj → rj)
     #text = re.sub(r'ṙ([' + konsonan + r'])\1', r'r\1', text)
@@ -68,7 +67,7 @@ def ganti_hukum_r(text):
     #text = re.sub(r'[aā]\s+[uū]', 'ô', text, flags=re.IGNORECASE)   # a atau ā + u atau ū menjadi o
     text = re.sub(r'â', 'a a', text, flags=re.IGNORECASE)
     text = re.sub(r'î', 'i i', text, flags=re.IGNORECASE)
-    text = re.sub(r'ê', 'i a', text, flags=re.IGNORECASE)
+    text = re.sub(r'ê', 'a i', text, flags=re.IGNORECASE)
     text = re.sub(r'û', 'u u', text, flags=re.IGNORECASE)
     text = re.sub(r'ô', 'a u', text, flags=re.IGNORECASE)
 
@@ -83,6 +82,10 @@ def ganti_hukum_r(text):
     text = re.sub(r'ṙṇ', 'rn', text)
     text = re.sub(r'rṇn', 'rn', text)
     text = re.sub(r'rṇṇ', 'rṇ', text)
+
+    #hapus zwnj zwj
+    text = re.sub(r'\u200c', '', text)
+    text = re.sub(r'\u200d', '', text)
 
     return text
 
