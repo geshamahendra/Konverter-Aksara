@@ -79,35 +79,22 @@ def mode_modern_lampah(text):
 
     return (text)
 
-def mode_sumanasantaka(text):
+def mode_kakawin(text):
 
-    # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf (kecuali -) dan spasi
-    text = re.sub(rf'([^\w\s-])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2) + m.group(3).upper(), text)
-
+    # Menyisipkan ZWNJ dan mengkapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
     '''
-    #khusus sumanasantaka, urai vokal kapital yang didahuli spasi+konsonan
-    konsonan = "[" + daftar_konsonan + "]"
-
-    # peta vokal kapital → vokal panjang lowercase
-    vokal_map = {
-        "A": "ā", "Ā": "ā",
-        "I": "ī", "Ī": "ī",
-        "U": "ū", "Ū": "ū",
-    }
-    # fungsi pengganti
-    def ganti_vokal(match):
-        return " " + vokal_map[match.group(1)]
-    # regex: dua konsonan + spasi + vokal kapital
-    text = re.sub(rf"(?<={konsonan}{konsonan})\s(A|Ā|I|Ī|U|Ū)", ganti_vokal, text)
+    text = re.sub(
+        rf'([^\w\s-])(\s*)([{daftar_vokal}])',
+        lambda m: f"{m.group(1)}{m.group(2)}{zwnj}{m.group(3).upper()}",
+        text
+    )
     '''
-    
     #Perubahan pada rṇn
     #text = re.sub(r'rṇ', 'rn', text, flags=re.IGNORECASE)
     # 
-    #text = re.sub(r'i\s+a', 'i ha', text)
+    #text = re.sub(r'i[^\S\n]+a', 'i ha', text)
     
     text = re.sub(r'rṇ', 'rn', text) # khusus bahasa jawa kuno
-    #text = re.sub(r'\bry\b', 'ri', text)
 
     return text
 
@@ -125,7 +112,7 @@ def mode_lampah(text):
     # Aturan baru: menambahkan '/' sebelum spasi jika diapit oleh konsonan di kiri dan vokal uppercase di kanan
     text = re.sub(r'([{daftar_konsonan}])\s([AIUĀĪŪEOÖŎĔÈ])', r'\1\ \2', text)
     
-    #khusus sumanasantaka, urai vokal kapital yang didahuli spasi+konsonan
+    #khusus kakawin, urai vokal kapital yang didahuli spasi+konsonan
     text = re.sub(r"(?<=[daftar_konsonan][daftar_konsonan]) (A|I|U)", 
                 lambda m: {'A': 'ā', 'I': 'ī', 'U': 'ū'}[m.group(1)], 
                 text)
@@ -148,7 +135,7 @@ def mode_lampah(text):
     # Aturan baru: menambahkan '/' sebelum spasi jika diapit oleh konsonan di kiri dan vokal uppercase di kanan
     text = re.sub(r'([{daftar_konsonan}])\s([AIUĀĪŪEOÖŎĔÈ])', r'\1/ \2', text)
     
-    #khusus sumanasantaka, urai vokal kapital yang didahuli spasi+konsonan
+    #khusus kakawin, urai vokal kapital yang didahuli spasi+konsonan
     text = re.sub(r"(?<=[daftar_konsonan][daftar_konsonan]) (A|I|U)", 
                 lambda m: {'A': 'ā', 'I': 'ī', 'U': 'ū'}[m.group(1)], 
                 text)
@@ -190,20 +177,13 @@ def mode_cerita(text):
     return text
 
 def mode_sanskrit(text):
-    
-    # Membuat kamus untuk mapping vokal kecil ke kapital
-    vokal_map = dict(zip(daftar_vokal, vokal_kapital))
 
-    # Fungsi untuk mengganti vokal pertama dalam kata menjadi kapital
-    def capitalize_vowel(text):
-        return re.sub(r'\b([' + re.escape(daftar_vokal) + r'])', lambda m: vokal_map[m.group(1)], text)
-    text = capitalize_vowel(text)
+    def zwnj_and_capitalize(match):
+        spasi, vokal = match.groups()
+        return spasi + zwnj + vokal.upper()
 
-    # Inserting ZWNJ after the consonant if followed by space and capital vowel
-    text = re.sub(rf'([{daftar_konsonan}])(\s)([{vokal_kapital}])', r'\1' + zwnj + r'\2\3', text)
+    text = re.sub(rf'(\s)([{vokal_gabungan.lower()}])', zwnj_and_capitalize, text)
 
-    
-    
     return text
 
 def mode_satya(text):
@@ -215,18 +195,15 @@ def mode_satya(text):
     text = re.sub(rf'(^|\n)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
 
     # Mengubah vokal menjadi uppercase jika didahului oleh spasi dan vokal, tanpa menghapus spasi tersebut
-    text = re.sub(rf'(?<=o)(\s+)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
+    text = re.sub(rf'(?<=o)([^\S\n]+)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
 
     # Aturan baru: menambahkan '/' sebelum spasi jika diapit oleh konsonan di kiri dan vokal uppercase di kanan
     #text = re.sub(r'([{daftar_konsonan}])\s([AIUĀĪŪEOÖŎĔÈ])', r'\1\u200D \2', text)
     
-    #khusus sumanasantaka, urai vokal kapital yang didahuli spasi+konsonan
+    #khusus kakawin, urai vokal kapital yang didahuli spasi+konsonan
     text = re.sub(r"(?<=[daftar_konsonan][daftar_konsonan]) (A|I|U)", 
                 lambda m: {'A': 'ā', 'I': 'ī', 'U': 'ū'}[m.group(1)], 
                 text)
-
-    
-    
     #Perubahan pada rṇn
     text = re.sub(r'rṇ', 'rn', text, flags=re.IGNORECASE)
 

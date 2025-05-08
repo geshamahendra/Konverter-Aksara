@@ -18,8 +18,10 @@ DAFTAR_KONVERSI = {
     'đ': 'dh', 'Đ': 'Dh',
     'ꝑ': 'ph', 'Ꝑ': 'Ph',
     'ƀ': 'bh', 'Ƀ': 'Bh',
-    'ꜷ': 'au', 'Ꜷ': 'Au',
-    'ꜽ' : 'ai', 'Ꜽ':'Ai',
+    #'Ꜷ': 'Au',
+    #'Ꜽ':'Ai',
+    #'ꜷ': 'au', 
+    #'ꜽ' : 'ai', 
     #'ṅ': 'ng', 'Ṅ': 'Ng',
 
 }
@@ -82,6 +84,10 @@ def ganti_hukum_r(text):
     text = re.sub(r'ṙṇ', 'rn', text)
     text = re.sub(r'rṇn', 'rn', text)
     text = re.sub(r'rṇṇ', 'rṇ', text)
+
+    #paksa jadi huruf kecil
+    text = re.sub(r'(?<!\u200C)([A-Z])', lambda m: m.group(1).lower(), text)
+
 
     #hapus zwnj zwj
     text = re.sub(r'\u200c', '', text)

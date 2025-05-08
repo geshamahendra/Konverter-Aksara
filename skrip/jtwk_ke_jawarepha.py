@@ -12,6 +12,7 @@ def latin_to_jawa(text, line_spacing):
     
     text = re.sub(r'\u200Dꦫ꧀ꦮ', '\u200Cꦫ꧀ꦮ\u200D', text)
     text = re.sub(r'ꦂ', 'ꦂ\u200D', text, flags=re.IGNORECASE)
+    #text = re.sub(r'ꦂ', 'ꦫ꧀', text, flags=re.IGNORECASE)
 
     return text
 

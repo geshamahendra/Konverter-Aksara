@@ -85,6 +85,22 @@ simbol = {
     '.': '꧉', ',': '꧈', ']': '꧊', '[': '꧋',
     '(': '꧌', ')': '꧍', '<': '꧁', '>': '꧂', ':': '꧇', '*': '꧄', 
 }
+penyeragaman_vokal = {
+    'â': 'ā',
+    'î': 'ī',
+    'ô': 'o',
+    'ê': 'e',
+    'è': 'e',
+    'û': 'ū',
+    'lĕ': 'ḷ',
+    'ḷĕ': 'ḷ',
+    'lö': 'ḹ',
+    'ḹö': 'ḹ',
+    'rĕ': 'ṛ',
+    'ṛĕ': 'ṛ',
+    'rö': 'ṝ',
+    'ṝö': 'ṝ'
+}
 
 def ganti_tanda_metrum(hasil):
     def ganti_tanda(match):
@@ -142,7 +158,6 @@ vowel_merge_rules_no_space = [
     ('è', 'èy',  ['a', 'i', 'u', 'o']),
     ('è', 'èw', ['ū','o','u']),
 ]
-
 vowel_merge_rules = [
     # kasus vokal langsung berdampingan atau tidak
     ('a', 'aw', ['u', 'i', 'è', 'é', 'ĕ', 'e', 'o', 'ā', 'ī', 'ō', 'ŏ']),
@@ -156,6 +171,34 @@ vowel_merge_rules = [
     ('è', 'èw', ['ū','o','u']),
 ]
 
+def insert_h_between_unmerged_vowels(text):
+    vowels = 'aāiīuūèéĕeëoöōŏꜽꜷ'
+    pattern = rf'([{vowels}])[^\S\n]*([{vowels}])'
+    def repl(match):
+        v1, v2 = match.group(1), match.group(2)
+        # Jangan ubah jika sudah diubah oleh aturan vowel_merge_rules
+        # Cek apakah kombinasi ini pernah ditangani
+        for ruleset in (vowel_merge_rules_with_space, vowel_merge_rules_no_space, vowel_merge_rules):
+            for prefix, _, allowed in ruleset:
+                if v1 == prefix and v2 in allowed:
+                    return match.group(0)  # Sudah ditangani, jangan ubah
+        return f'{v1}h{v2}'
+    return re.sub(pattern, repl, text)
+def insert_zwnj_and_capitalize_second_vowel(text):
+    vowels = 'aāiīuūèéĕeëoöōŏꜽꜷ'
+    pattern = rf'([{vowels}])[^\S\n]*([{vowels}])'
+
+    def repl(match):
+        v1, v2 = match.group(1), match.group(2)
+        # Jangan ubah jika sudah diubah oleh aturan vowel_merge_rules
+        for ruleset in (vowel_merge_rules_with_space, vowel_merge_rules_no_space, vowel_merge_rules):
+            for prefix, _, allowed in ruleset:
+                if v1 == prefix and v2 in allowed:
+                    return match.group(0)  # Sudah ditangani, jangan ubah
+        # Sisipkan ZWNJ dan kapitalisasi vokal kedua
+        return f'{v1}\u200C{v2.upper()}'
+
+    return re.sub(pattern, repl, text)
 def apply_vowel_merges_with_space(text, rules):
     for prefix, output_prefix, vowels in rules:
         for v in vowels:
@@ -163,7 +206,6 @@ def apply_vowel_merges_with_space(text, rules):
             replacement = f'{output_prefix}{v}'
             text = re.sub(pattern, replacement, text)
     return text
-
 def apply_vowel_merges_no_space(text, rules):
     for prefix, output_prefix, vowels in rules:
         for v in vowels:
@@ -171,7 +213,6 @@ def apply_vowel_merges_no_space(text, rules):
             replacement = f'{output_prefix}{v}'
             text = re.sub(pattern, replacement, text)
     return text
-
 def apply_vowel_merges(text, rules):
     for prefix, output_prefix, vowels in rules:
         for v in vowels:
@@ -181,19 +222,13 @@ def apply_vowel_merges(text, rules):
     return text
 
 def hukum_sandi(text):
-    # Replacement rules
-    replacements = {
-        'â': 'ā',
-        'î': 'ī',
-        'ô': 'o',
-        'ê': 'e',
-        'è': 'e',
-        'û': 'ū'
-    }
-
-    # Regex to replace the characters
-    text = re.sub('|'.join(re.escape(k) for k in replacements.keys()), 
-                lambda match: replacements[match.group(0)], text)
+    text = text.replace("-", " ")
+    # Regex penyeragaman vokal
+    text = re.sub('|'.join(re.escape(k) for k in penyeragaman_vokal.keys()), 
+                lambda match: penyeragaman_vokal[match.group(0)], text)
+    # Ubah vokal kapital jadi kecil jika didahului spasi (bukan \n) atau tanda -
+    text = re.sub(r'(?<=[ \t\r\f\v\-])([AEIOU])', lambda m: m.group(1).lower(), text)
+    
     text = re.sub(r'\u200cṙyy', '\u200cꦪꦾꦂ', text, flags=re.MULTILINE) 
     text = re.sub(r'akhir', 'ꦄꦏ꦳ꦶꦂ', text, flags=re.IGNORECASE)
     text = re.sub(r'\brŧ', '\u200Dꦡꦂ', text)
@@ -227,6 +262,8 @@ def hukum_sandi(text):
     text = apply_vowel_merges_with_space(text, vowel_merge_rules_with_space)
     text = apply_vowel_merges_no_space(text, vowel_merge_rules_no_space)
     text = apply_vowel_merges(text, vowel_merge_rules)
+    #text = insert_h_between_unmerged_vowels(text)
+    #text = insert_zwnj_and_capitalize_second_vowel
     
     # Untuk beberapa kasus khusus
     vokal = "aāiīuūeèoōöŏĕꜷꜽAĀIĪUŪEÈOŌÖŎĔꜶꜼ"
@@ -236,23 +273,11 @@ def hukum_sandi(text):
     #Menyambung vokal dan konsonan yang terpisah spasi
     text = re.sub(r'([b-df-hj-np-tv-zḋḍŧṭñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([aāiīuūeèoōöŏĕꜷꜽ])', r'\1\2', text)
 
-    # lĕ, lö, rĕ, rö
-    replacement_map = {
-        'lĕ': 'ḷ',
-        'ḷĕ': 'ḷ',
-        'lö': 'ḹ',
-        'ḹö': 'ḹ',
-        'rĕ': 'ṛ',
-        'ṛĕ': 'ṛ',
-        'rö': 'ṝ',
-        'ṝö': 'ṝ'
-    }
-
-    for pattern, replacement in replacement_map.items():
-        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
-
     #kasus ṅ berulang
     #text = re.sub(r'(\w)(\w)ṅ(\1\2)ŋ', r'\1\2ŋ\1\2ŋ', text)
+
+    text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙṅ', text)
+    text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥṅ', text)
 
     text=insert_zwnj_between_consonants(text)
     return text

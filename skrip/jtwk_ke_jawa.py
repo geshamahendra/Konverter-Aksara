@@ -22,8 +22,8 @@ def handle_vokal_khusus(char, hasil, last_char, last_aksara):
 
     if last_aksara and last_aksara.endswith('꧀'):
         return hasil[:-1] + tengah, tengah
-    elif last_char == ' ':
-        return hasil[:-1] + awal, awal
+    elif last_char in [' ', '\n']:  # ubah ini!
+        return hasil + awal, awal
     else:
         return hasil + default, default
 
@@ -42,6 +42,7 @@ def latin_to_jawa(text, line_spacing):
             hasil += '\n' * line_spacing
             is_new_line = True
             last_char = '\n'
+            last_aksara = ""  # Tambahkan ini!
             continue
 
         if char == ' ' and i > 0 and i < len(text) - 1:

@@ -101,6 +101,7 @@ def konversi_aksara_ke_kawi(text, daftar_konversi):
     text = re.sub(r'𑽂\u200D', '𑽁\u200D', text)
     text = re.sub(r'𑽂\u200C', '𑽁\u200C', text)
     text = re.sub(r'𑼫𑽂𑼫𑼂\u200D', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
+    text = re.sub(r'𑼬𑽂𑼫', '𑼂𑼫\u200D', text, flags=re.IGNORECASE)
     return text
 
 

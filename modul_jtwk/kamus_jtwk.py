@@ -1,8 +1,9 @@
 substitutions = {
     #Aksara Suci
-    r'\bOṃ': 'Ōṃ', r'\b(o|O)m\b': 'Om\u200C', 
-    r'ai': 'ꜽ', r'au': 'ꜷ', r'ng': 'ṅ',
-    r'\b(A|a)i\b': 'Ꜽ\u200C', r'\b(A|a)u\b': 'Ꜷ\u200C',
+    r'\bOṃ': 'Ōṃ', r'\b(o|O)m\b': '\u200COm\u200C', 
+    r'Ai': 'Ꜽ', r'Au': 'Ꜷ',
+    r'ai': 'ꜽ', r'au': 'ꜷ', 
+    r'ng': 'ṅ',
     r'\bAwi(g|ǥ)?(h)?namastu\b': 'Awiǥnamāstu', 
     
     r'wi(s|ś)(è|e)sa': 'wiśèṣa',
@@ -17,7 +18,7 @@ substitutions = {
     r'sa(ng|ṅ)s': 'saŋs',
     r'sa(ng|ṅ)ṣ': 'saŋṣ',
     r'sa(ng|ṅ)k': 'saŋk',
-    r'\bduhk': 'duḥk', r'\bduhꝁ': 'duḥꝁ',
+    r'\b(a|A)ji\b':'‌Aji',
 
 
     r'(s|ś)unya': 'śūnya', r'(?i)budi': 'budđi', r'(?i)purna': 'pūrna',
@@ -31,15 +32,11 @@ substitutions = {
     r'\braja\b': 'rāja', r'\bwirya': 'wīrya', r'nagara': 'nāgara', r'suksma': 'sūkṣma',
     r'\bmaha\b': 'mahā', r'\bmahar(s|ṣ)i\b': 'mahāṙṣi', r'\biswara': 'iśwara',
     r'ramya': 'rāmya', r'(s|ś)iǥra': 'śīǥra', r'saksat': 'sākṣāt',
-    
-    
-    
-
-     
 
     #backsplash buat pemutus
     r'\\\|': '\u200D',  # input literal \| jadi ZWJ
     r'\\': '\u200C',  # input literal \\ jadi ZWNJ
+    r'!': '\u200C',
     #r'' : ''
 }
 
