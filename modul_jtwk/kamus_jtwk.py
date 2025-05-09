@@ -32,6 +32,7 @@ substitutions = {
     r'\braja\b': 'rāja', r'\bwirya': 'wīrya', r'nagara': 'nāgara', r'suksma': 'sūkṣma',
     r'\bmaha\b': 'mahā', r'\bmahar(s|ṣ)i\b': 'mahāṙṣi', r'\biswara': 'iśwara',
     r'ramya': 'rāmya', r'(s|ś)iǥra': 'śīǥra', r'saksat': 'sākṣāt',
+    r'datĕṅ': 'ḍatĕṅ', 
 
     #backsplash buat pemutus
     r'\\\|': '\u200D',  # input literal \| jadi ZWJ

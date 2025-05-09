@@ -111,8 +111,10 @@ def hukum_aksara(text):
 def hukum_sigeg(text):
     text = re.sub(r'ṅ\b', 'ŋ', text)
     text = re.sub(r'h(?!\w)', 'ḥ', text, flags=re.IGNORECASE)  
-    text = re.sub(r'ng(?=\w)', 'ṅ', text, flags=re.IGNORECASE)  
+    text = re.sub(r'ng(?=\w)', 'ṅ', text, flags=re.IGNORECASE)    
     text = re.sub(r'ng(?!\w)', 'ŋ', text, flags=re.IGNORECASE)
+    #kasus " ṅ h..."
+    text = re.sub(r'\s+ŋ\s+h', ' ṅ h', text, flags=re.IGNORECASE)
 
     #tambah zwnj depan kata
     for pattern in [r'\bww', r'\byw', r'wru', r'\brw', r'lwir' , r'\byan\b', r'\btan\b', r'\bṅw', r'\bmw', r'\bstr', r'\brkw', r'\b(riṅ|ring|riŋ|ri)', r'\bdwa\b']:#, r'\bry\b' #r'\blwir'
