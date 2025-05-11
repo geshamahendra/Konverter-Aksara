@@ -1,3 +1,8 @@
+import re
+daftar_vokal = ['a', 'ā', 'i', 'ī', 'u', 'ū', 'e', 'è', 'o', 'ō', 'ö', 'ŏ', 'ĕ', 'ꜷ', 'ꜽ', 'â', 'î', 'ê', 'û', 'ô']
+vokal = ''.join(daftar_vokal)
+non_vokal = '[^' + re.escape(vokal) + r']'
+
 substitutions = {
     #Aksara Suci
     r'\bOṃ': 'Ōṃ', r'\b(o|O)m\b': '\u200COm\u200C', 
@@ -18,7 +23,8 @@ substitutions = {
     r'sa(ng|ṅ)s': 'saŋs',
     r'sa(ng|ṅ)ṣ': 'saŋṣ',
     r'sa(ng|ṅ)k': 'saŋk',
-    r'\bnir': 'nir',
+    r'\bnir' + non_vokal: 'nir‌\u200c', #nir+zwnj
+    #r'durnaya': 'dur\u200cnaya',
     #r'\b(a|A)ji\b':'‌Aji',
 
 

@@ -159,10 +159,6 @@ def hukum_ṙ(text):
         'ṙǥ': 'ṙgǥ',
         'ṙɉ': 'ṙjɉ',
         'ṙƀ': 'ṙbƀ',
-        'ṙs': 'ṙṣ',
-        'ṛs': 'ṛṣ',
-        'res': 'ṛĕṣ',
-        'rĕs': 'ṛĕṣ',
         'ṙṇ': 'ṙṇṇ',
         'ṙn': 'ṙṇn',
         'ṙd': 'ṙdd',
@@ -183,18 +179,22 @@ def hukum_ṙ(text):
 
         # Daftar penggantian spesial
     penggantian_spesial = {
+        r'ṙs': 'ṙṣ',
+        r'ṛs': 'ṛṣ',
+        r'res': 'ṛĕṣ',
+        r'rĕs': 'ṛĕṣ',
         r'ṙṣik\b': 'ṙsik',
         r'ṙṇny': 'ṙny',
-        r'aṙyyan': 'aryan',
+        r'aṙyya': 'arya',
         r'ṙyyakĕn': 'ryakĕn',
-        r'[^\S\n]+lĕ': ' ‌lĕ'     #zwnj lĕ untuk mencegah lĕ
+        r'[^\S\n]+lĕ': ' ‌lĕ',     #zwnj lĕ untuk mencegah lĕ
+        r'r\u200c': 'ṙ', #r+zwnj agar tidak menjadi ra pangku
+        r'ṙ\u200c': 'ṙ'
     }
 
     # Terapkan semua penggantian spesial
     for pola, ganti in penggantian_spesial.items():
         text = re.sub(pola, ganti, text)
-    
-    text = re.sub(r'niṙ([' + daftar_konsonan + r'])\1', r'niṙ\1', text)
 
     VOWEL_PENDEK = 'aiuĕAIUĔ'
     # regex substitution
