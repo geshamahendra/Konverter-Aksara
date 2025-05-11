@@ -121,7 +121,7 @@ def hukum_sigeg(text):
         text = add_zwnj_awal_kata(text, pattern, '\u200C')
     
     #khusus duhka
-    #text = re.sub(r'(duhk|duhꝁ)([' + vokal_regex + '])',lambda m: ('duḥk' if m.group(1) == 'duhk' else 'duḥꝁ') + m.group(2), text)
+    text = re.sub(r'(duhk|duhꝁ)([' + vokal_regex + '])',lambda m: ('duḥk' if m.group(1) == 'duhk' else 'duḥꝁ') + m.group(2), text)
     
     return(text)
 
@@ -186,12 +186,19 @@ def hukum_ṙ(text):
         r'ṙṣik\b': 'ṙsik',
         r'ṙṇny': 'ṙny',
         r'aṙyyan': 'aryan',
-        r'ṙyyakĕn': 'ryakĕn'
+        r'ṙyyakĕn': 'ryakĕn',
+        r'[^\S\n]+lĕ': ' ‌lĕ'     #zwnj lĕ untuk mencegah lĕ
     }
 
     # Terapkan semua penggantian spesial
     for pola, ganti in penggantian_spesial.items():
         text = re.sub(pola, ganti, text)
+    
+    text = re.sub(r'niṙ([' + daftar_konsonan + r'])\1', r'niṙ\1', text)
+
+    VOWEL_PENDEK = 'aiuĕAIUĔ'
+    # regex substitution
+    #text = re.sub(r'(?<=[%s])ṙ([%s])\1' % (VOWEL_PENDEK, daftar_konsonan), r'r\1', text)
 
     return(text)
 
@@ -212,5 +219,8 @@ def finalisasi(text):
     text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥ ṅ', text)
     #ubah ṙ jadi r diujung baris
     text = re.sub(r'ṙ[ \t]*\n', 'r\n', text)
+    text = re.sub(r'ry\s+\u200c', r'ry ', text)
+    # Ubah vokal kapital jadi kecil jika didahului spasi (bukan \n) atau tanda -
+    text = re.sub(r'(?<=[ \t\r\f\v\-])([AEIOU])', lambda m: m.group(1).lower(), text)
     
     return(text)

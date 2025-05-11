@@ -1,4 +1,4 @@
-Awighnamastu
+#Awighnamastu#
 
 <śroñca>:1.
 
@@ -132,7 +132,7 @@ Sakalī kāraṇa ginawé,
 Paraméśwara inaṅĕn-aṅĕn,
 umuṅgu riṅ kuṇḍa bahnimaya*
 
-Sāmpun bhaṭāra ‌inĕnah,
+Sāmpun bhaṭāra !inĕnah,
 tinitisakĕn taṅ miñak sasomyamaya,
 lawan ikaṅ krĕṣṇatila madhu,
 śrī-wrĕkṣa samiddha rowaṅ nya*
@@ -247,7 +247,7 @@ jāti nya parasparopasarpaṇa ya,
 wiku tan panātha ya hilaṅ,
 tan pawiku kunaṅ ratu wiśīrna*
 
-Kalawan tambhāra ‌iké,
+Kalawan tambhāra !iké,
 apan mahāśakti rakwa saṅ Rāma,
 yéki rānak śri naranātha,
 tatan hana paḍa nira ri kaśaktin*
@@ -310,7 +310,7 @@ anakĕbi ry Ayodhyā śoka monĕṅ manah nya*
 Katĕka nira lumakwāśānti saṅ aṣṭaséni,
 paḍahi haji ya ginwal maṅgalā niṅ lumampah,
 kumĕdut i tèrṅĕnan mār bāhu saṅ Rāmabhadra,
-marahakĕna ‌alah niṅ śatru tātan paśéṣa*
+marahakĕna !alah niṅ śatru tātan paśéṣa#
 
 <Basantatilaka>:2.
 – – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓
@@ -430,7 +430,7 @@ mamöṅ-amöṅ sira rikaṅ wanadéśa rāmya,
 n-ton rākṣasī téka mamātyana donya tan lèn,
 wadwa nira ṅ prabhu Daśāsya si Tāṭakākyā*
 
-Saṅ Rāma yatna ‌Inayat nira taṅ sudhanwa,
+Saṅ Rāma yatna Inayat nira taṅ sudhanwa,
 gaṇḍéwa dibya tumihaṅ warayaṅ malaṇḍĕp,
 tĕṅgĕk nya yénarah-arah nira tan papiṅrwan,
 mūrccān tiba maguliṅan ta si Taṭakākyā*
@@ -587,7 +587,7 @@ tonton ta rūpa nira saṅ nrĕpaputra kālih,
 
 Hyaṅ Aświno sira kunaṅ umahas mara ṅké,
 hyaṅ Kāmadéwa ta kunaṅ madulur Basanta,
-ākāra ‌iṅgita sulakṣaṇa rūpa sampat,
+ākāra iṅgita sulakṣaṇa rūpa sampat,
 saṅ hyaṅ Triwikrama kunaṅ umahā katona*
 
 Nā liṅ nikaṅ wwaṅ umulat paḍa harṣacitta*
@@ -656,7 +656,7 @@ saṅkèp sĕnaddha umasö ta mapatrayuddha,
 mojar nirādara wuwus nira tan hana twaṅ*
 
 Ai Rāmadéwa aku Rāma ṅaranku riṅ rāt,
-yan śakti ko papagakĕn naku yan prawīra,
+yan śakti ko papagakĕn n-aku yan prawīra,
 ko mātya dèṅku athawā aku mātya dému,
 wĕnṭaṅ larasku yadiyan tuhu śaktimānta*
 
@@ -703,7 +703,7 @@ saṅ Maitilī sira saharṣa marir makiṅkiṅ*
 Atha ri sĕḍeṅ ikā saṅ Bhārgawālah ya luṅhā,
 Daśaratha sira harṣān kolakĕn pūtra Rāma,
 krama lumaku umaṅkat tuṅgaṅan kapwa maṅrap,
-satĕka nira sinuṅsuṅ dé nikaṅ wwaṅ ry Ayodhyā*
+satĕka nira sinuṅsuṅ dé nikaṅ wwaṅ ry Ayodhyā#
 
 <Pṛthiwītala>:3.
 ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓
@@ -741,7 +741,7 @@ apan pasamayan sĕḍĕṅ nira sinoma-somah pwa wèh*
 Nda tan hana anak nirāpara-paran maré saṅ kaki,
 siraṅ Bharata tar wĕruh ry aṅĕn-aṅĕn iraṅ Kékayī,
 sirāta juga mogha kimburu tumon siraṅ Rāghawa,
-alah pracaya riṅ ṅ ujar samaya niṅ sumomah sira*
+alah pracaya riṅ ṅ-ujar samaya niṅ sumomah sira*
 
 Masö sira ri saṅ narādhipa mahā mamighnāna don,
 pininta nira saṅ naréndrasuta Rāma muṅgèṅ alas,
@@ -750,7 +750,7 @@ gĕlāna ta naréndra saṅ Daśarathāśa képwan sira*
 
 Sawèt nikana satya saṅ prabhu kinon ṅ anak miṅgata,
 kadi pwa ya ilaṅ ṅ asih nira hiḍĕp nikaṅ wwaṅ kabéh,
-gĕlāna maṅaraṅ ṅ alah salahasātimohāṅĕsah,
+gĕlāna maṅaraṅ ṅ-alah salahasātimohāṅĕsah,
 mahöm ta sahana nya kapwa umasö ri saṅ Rāghawa*
 
 Ah-o lalu lalis naréndra tamatan panolih guṇa,
@@ -872,25 +872,25 @@ Liman kuda lawan ratha pramuka niṅ balānuṅ tumūt,
 sĕnaddha dumulur siraṅ Bharata śīghra luṅhā sira,
 tĕka pwa sira riṅ alas gaja rathāśwa kapwānusup,
 mahas sira rikāṅ alas umulisāk ri saṅ Rāghawa*
-==halaman:88:33
+
 Ri piṅgir ikanaṅ nadī ri Tamasérikā durgama,
 alas gahana gahwarāgraha guhā nya gambhīra ya,
 lawan kali juraṅ trĕbis biṣama bhiṣaṇālwāṅawit,
 siraṅ Bharata tātakut nira alah umèt saṅ kaka*
 
 Taman katĕmu saṅ pinèt lumaku saṅ mamèt tar maṅèl,
-ṭĕmu ṅ lwah atinirmmalātiśaya dibya Gaṅgā gahan,
-maṇik sphaṭika candrakānta ya paḍa nya śuddhāputih,
+tĕmu ṅ lwah atinirmmalātiśaya dibya Gaṅgā gahan,
+maṇik sphaṭika candrakāṇṭa ya paḍa nya śuddhāputih,
 kadi pwa ya manah niraṅ Bharata satya bhaktīṅ kaka*
 
 Muwah ta manusup rikān katĕmu tékanaṅ lwah magöṅ,
-pratīta Yamnunâ ṅaranya makiris hilī nyāhĕniṅ,
+pratīta Yamunā ṅaranya makiris hilī nyāhĕniṅ,
 i sor hana ta saṅgama nya kalawan ta Gaṅgāputih,
 kadi pwa ya bhaṭāra Wiṣṇu kalawan Bhaṭāréśwara*
 
 Muwah ta manusup hana pwa patapan pinaṅguh nira,
-subhikṣa ya manoharāśrama niraṅ Bharadwīja ya,
-sĕḍĕṅ tiba-tibāṅlaluṅ diwasa kāla soré-tĕka,
+subhikṣa ya manoharāśrama niraṅ Bharadwāja ya,
+sĕḍĕṅ tiba-tibāṅlaluṅ diwasa kāla soré n tĕka,
 mahārṣi saha śisya gorawa masö manuṅsuṅ sira*
 
 Anéka panamuy mahārṣi mĕtu saṅka riṅ yoga ya,
@@ -900,18 +900,18 @@ aho saphala niṅ tapātiśaya sarwwakāmaprada*
 
 Anākĕbi riṅ Indraloka manurun lawan apsarī,
 ya téka makurĕn-kuren ri sira saṅ tamuy kādbhuta,
-mabaṅsi maṅiduṅ makinnara malāwu wīṇāmṅigĕl,
-jenĕk ta sira saṅ tamuy dadi tĕhĕr maṅantyaṅhinĕp*
+mabaṅsi maṅiduṅ makinnara malāwu wīṇāṅigĕl,
+jĕnĕk ta sira saṅ tamuy dadi tĕhĕr maṅantyaṅhinĕp*
 
 Waṅuṇ ḍahina śighra yar laku muwah umèt saṅ kaka,
-lawan bala ḍatĕṅ sirè&ṅ talaga dibya Mandākinī,
+lawan bala ḍatĕṅ sirèṅ talaga dibya Mandākinī,
 kathañcana hana pwa nagna wanawāsa paṅguh nira,
 siromarahakĕn pradéśa kahanan niraṅ Rāghawa*
 
 Pawitra hana Citrakuṭagiri durgamāwān magöṅ,
 manohara ya rāmya yéka kahanan niraṅ Rāghawa,
 saharṣa winarah ta saṅ Bharata śīghra maṅkat sira,
-lawan bala kabèh manek sira rikaṅ gunuṅ durgama*
+lawan bala kabèh manèk sira rikaṅ gunuṅ durgama*
 
 Umèh nira tĕkā sasaṅśaya mulat ta saṅ Lakṣmaṇa,
 waliṅ nira musuh ḍatĕṅ r-adĕgakĕn ta laṅkap nira,
@@ -923,7 +923,7 @@ tuhun kuda liman rathādulu-dulur ya makwèh juga*
 makin ta maparö wĕruh siran inaryakĕn taṅ laras,
 masö sira ri saṅ kakāwara-warah ri saṅ Rāghawa*
 
-Siraṅ Bharata śīighra yar tĕka masö manambah sira,
+Siraṅ Bharata śīghra yar tĕka masö manambah sira,
 lawan bala nirāwarah ta sira yar pĕjah saṅ prabhu,
 saśoka manaṅis humuṅ sira kabèh sawèt niṅ lara,
 anantara marir makiṅkiṅ arahup ta madyus kabèh*
@@ -931,124 +931,105 @@ anantara marir makiṅkiṅ arahup ta madyus kabèh*
 Naréndrasuta Rāma sāmpun arahup ta mojar sira,
 ariṅku Bharatāt ulih hara rikaṅ Ayodhyāpura,
 ujar haji ikā dumèh aku marèṅ alas tan kalèn,
-kitékana gumantya ratwa ya mataṅ nya tat saṅśaym*
+kitékana gumantya ratwa ya mataṅ nya tat saṅśayā*
 
-Afer washing himself prince Rāma spoke: ‘My younger brother Bharata,
-hae any doubt*
-
-Iawan kita magöṅ guṇunta gaṇitan tatan hĕntya ya,
+lawan kita magöṅ guṇanta gaṇitan tatan hĕntya ya,
 prawīra wihikan kitèṅ aji lawan kalap niṅ naya,
-mataṅ nya kita yogya ratwa saphalān siwin rākṣakām,
+mataṅ nya kita yogya ratwa saphalān siwin rākṣakā,
 guṇanta aparan guṇa nya yadi tan guṇa niṅ ratu*
 
 Kunĕṅ yan alĕmĕh pi ratwa ri hanaṅku muṅgwiṅ alas,
-ujutĕka u pituhunta kéwalṅ kitāta bhaktyākaka,
+ujutĕka u pituhunta kéwala kitāta bhaktyākaka,
 awās ya mulihāta liṅku kita haywa śoka ṅ hati,
-hanā ta juga rākṣakā kita rikaṅ kaḍatwan [n] ari*
+hanā ta juga rākṣakā kita rikaṅ kaḍatwan ari*
 
-kingdom,
-my younger brother !īINahan ya ta wuwus nirātiśaya dhīra dibyaṅ manah,
-wĕnaṅ nira rumākṣa saṅ bapa rikā kasatyan [n]ira,
+Nahan ya ta wuwus nirātiśaya dhīra dibyaṅ manah,
+wĕnaṅ nira rumākṣa saṅ bapa rikā kasatyan ira,
 samaṅkana siraṅ kinon muliha ratwa tātan lĕgö,
 siraṅ Bharata bhakti riṅ kaka wawaṅ ta mojar sira*
 
-~spoke*
-
 Pirā inaka ni ṅhulun hana rikaṅ kaḍatwan kunĕṅ,
-sĕḍĕṅta humiḍĕp ikaṅ lara hanèṅ alas kāmsyasih,
-Jawan kita ta yogya ratwa tuwi rākṣakām niṅ jagat,
+sĕḍĕṅta humiḍĕp ikaṅ lara hanèṅ alas kāsyasih,
+lawan kita ta yogya ratwa tuwi rākṣakā niṅ jagat,
 apan matuha śaktimānta guṇamānta śūrèṅ raṇa*
-
-rious in battle*
 
 Nya taṅ kuda liman lawan kanaka ratna yogya prabhu,
 ndya yuktyan ikihĕn ṅhulun kumawaśakĕnékā kabèh,
 amītya bhaṭamantri yogya karikā sumiwya ṅhulun,
 mataṅ nya mulihāta ménaka kitāta bhūpālaka*
 
-Behold  All those horses,
-elcphants,
-gold,
-jewels,
-are suitable for kings*
-
-become a highranking official or a minister,
-to sere you*
-
-Therefore pleaseLawan ṅhulun atīta nirguṇa guṇanta Gaṅgopama,
+Lawan ṅhulun atīta nirguṇa guṇanta Gaṅgopama,
 diwākara gunuṅ paḍanta Himawān lawan sāgara,
 ṅhulun pwa pinujinta śakti guṇamānta tātan tuhu,
-asambhawa wuwusta maṅduhuṅakĕn mahā maṅlaré*
+asambhawa wuwusta maṅduhuṅakĕn mahā maṅlaré#
+
+Tiḍak ḍikĕtahui
+‍<>:3.52
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓
 
 Nahan ikana wuwus saṅ Kékayīputra sādhu,
-dadi sumahur ikā saṅ Rāmabhadrāsī maswī,
+dadi sumahur ikā saṅ Rāmabhadrāsi maswī,
 muliha ata kitāntĕn ṅkā ry Ayodhyā tamolah,
-yadin alsmĕha séwan pādukaṅkwīki ratwa*
+yadin alĕmĕha séwan pādukaṅkwīki ratwa#
 
-brother*
+Tiḍak ḍikĕtahui
+‍<>:3.53
+– ⏑ ⏑ | ⏑ ⏑ – | – – – | – ⏑ ⏑ | ⏑ ⏑ ⏓
 
-If you are reluctant [to be king],
-sere my sandals*
-
-They will bethe king*
-
-Ndan kita pi sarabhāran rākSaṅ sakala jagat,
-kṣatriyawinaya yékā rākṣan katuturakĕn,
-śāsaṇa ya gĕgöĕn taṅ śāstra d-wulati lanā,
-sojariṅ aji tūtén yékā mawa kasukan*
-
-These will bring you happiness*
+Ndan kita pi sarabhāran rākṣaṅ sakala jagat,
+kṣatriyawinayā yékā rākṣan katuturakĕn,
+śāsaṇa ya gĕgĕn taṅ śāstra d-wulati lanā,
+sojariṅ aji tūtĕn yékā mawa kasukan*
 
 Dèwa kuśala śālā mwaṅ dharmma ya pahayun,
-māms ya ta pahawrĕddhin byāyā riṅ hayu kĕkĕsĕn,
-bhukti sakaharĕptād wèhi ṅ bala kasukan*
+mās ya ta pahawrĕddhin byāyā riṅ hayu kĕkĕsĕn,
+bhukti sakaharĕptād wèhi ṅ bala kasukan,
+dharmma kalawan artha mwaṅ kāmāta ṅaran ikā*
 
-dharmma kalawan artha mwaṅ kāmāta ṅaran ikām*
-
-good/useful programs*
-
-You may enjoy [life] as much as you wish,
-but alsoŚīla rahayu rākṣan rāga dwéśa hilaṅakĕn,
+Śīla rahayu rākṣan rāga dwéśa hilaṅakĕn,
 kimburu ya ta hīlan śūnyāmbĕkta lawan awak,
 nyāṅ winaya gĕgön asiṅ solah kinalulutan,
 mwaṅ abhimana sampat antĕnku prabhu maṅalih*
 
-completely from your heart [and body]*
-
-Occupy yourself with discipline,
-]īIWruh pwa kita rikāṅdé prajñā dibya ṅaran ikā,
+Wruh pwa kita rikāṅdé prajñā dibya ṅaran ikā,
 riṅ raṇamuka sāra mwaṅ wākśūra ya guṇitan,
 tyāga kita mapuṇyā riṅ brahmāṅśa muniwara,
-nāgata gawayĕntāt rākṣāṅ rāt ya pahapagĕh*
+nāgata gawayĕntāt rākṣāṅ rāt ya pahapagĕh#
 
-Kretajñatā haran ikanaṅ wruh iṅ guṇa,
+‍<Rucira>:3.56
+⏑ – ⏑ | – ⏑ ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓
+
+Krĕtajñatā haran ikanaṅ wruh iṅ guṇa,
 mulat rikaṅ bala manĕkĕt manon ulah,
 asiṅ lèwih linĕwihakĕn rikaṅ hayu,
 ikaṅ masor kinila-kilèṅ sasambhawa*
 
-‘One who has regard for irtue is a wise man*
-
-Closely he watches themeasured in accordance with his deeds*
-
 Mahāt-manon guṇagaṇa dibya riṅ prabhu,
 tumon ikaṅ hala-hayu yatna tan hĕnĕṅ,
 rumĕṅwaken lara nikanaṅ prajā kabèh,
-apan ikāṅ ubhaga lanā ri saṅ prabhu*
+apan ikāṅ ubhaga lanā ri saṅ prabhu#
+
+Tiḍak ḍikĕtahui
+‍<>:3.59
+– – – | ⏑ ⏑ ⏑ | ⏑ ⏓
 
 Utsāhāta larapana,
 kāryyāsiṅ pahapagĕhĕn,
 sampay tan gawayakĕna,
 riṅ satwādhama ya tuwi*
 
-Śaktī sinha katatakut,
+Śaktī siṅha katatakut,
 riṅ wīrāsama winuwus,
 yatnā nyān pamati-mati,
 yékanuṅ satiru-tirun*
 
-Göṅ hĕṅkāmra ya ta hilan,
+Göṅ hĕṅkāra ya ta hilan,
 nindā tan gawayakĕna,
 tañ janmāmuhara wĕrö,
-yékā praśraya sumuka*
+yékā praśraya sumuka#
+
+<Pawitrā>:3.62
+– – – | – ⏑ ⏑ | ⏑ ⏑ ⏓
 
 Nyāṅ mukyāntĕn kanĕkĕtakĕn,
 haywāsampay riṅ asih-asih,
@@ -1058,26 +1039,19 @@ yāwat mèwĕh ya pinituhun*
 Saṅka niṅ wruh aji ginĕgö,
 nītijñācāra kapuhara,
 paṇḍyācāryya dwija pahayun,
-gūṅöntātah ikanaṅ asih*
+göṅĕntātah ikanaṅ asih*
 
 Krodhāmbĕk yélagakèn ika,
 doṣākwèh durbbala winuwus,
 mwaṅ wadwānuṅ rahayu milag,
 mitrādoh taṅ musuh aparĕk*
 
-near*
-
-*
-
 śāntāsih nitya tuhagaṇan,
 haywāpĕs riṅ kinatakutan,
 wadwā doṣa nya palĕ-palĕh,
 tan wruh riṅ twaṅ ya guragaḍa*
 
-you],
-he is insolent*
-
-]īlKadyaṅgā niṅ wèḍus upaman,
+Kadyaṅgā niṅ wèḍus upaman,
 bhītātwaṅ riṅ kayu maṅadĕg,
 yapwan suṇḍé wijah umanèk,
 icchā tan saṅśaya malayū*
@@ -1087,109 +1061,87 @@ maha ṅ cittālupa mawĕrö*
 pāruṣyèṅ wwaṅ prakaṭa wĕgig,
 rāhasyāsiṅ winuni mĕtu*
 
-‘Drinking ([liḍuor]is a great sin è one gets drunk,
-becomes unaware andwhich should be kept priate come out*
-
 Haywādwa-dwāmuhara hala,
-durbhāgāwīm3s ta ya inupĕt,
-mwaṅ wadwāmsiṅ kuṭila katon,
+durbhāgāwās ta ya inupĕt,
+mwaṅ wadwāsiṅ kuṭila katon,
 tan wiśwāsāna ta ikahen*
 
 Nindā riṅ wwaṅ ya ta manapis,
 tan saktā riṅ wiṣaya dahat,
-dyūtāsiṅ duryyasana kunĕṅ*
-yékānuṅ tan gawayakĕna*
+dyūtāsiṅ duryyasana kunĕṅ,
+yékānuṅ tan gawayakĕna#
+
+<Pṛthiwītala>:3.70
+⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓
 
 Nihan ta gawayanta nitya maṅĕmit prajā maṇḍala,
 wihāra pahayunta parhyaṅan umah bhaṭārāmĕrĕn,
 hawan patani pañcuran talaga sétu tambak taman,
 pĕkĕn wwatan asiṅ sakahyuna nikaṅ prajā yad-gawé*
 
-“These matters [I will tell] you should always attend to namely protectingbe built*
-
 Limanta ratha tuṅgaṅan lagi-lagin śraman sañjata,
-mawèha kita karmma piṇḍa rĕṣibhojanāṅkĕn salĕèk,
+mawèha kita karmma piṇḍa rĕṣibhojanāṅkĕn salèk,
 ikaṅ kuśala hosakĕnta ya kabèh pamūjā gĕṅĕn,
-ya tonĕn ikanaṅ sarāt kita janānurāgérikām*
+ya tonĕn ikanaṅ sarāt kita janānurāgérikā*
 
 Wulatta rikanaṅ manéwita kabèh watĕk séwaka,
-guṇa nya kalawan asihnya matuhan ikm tiṅhali,
+guṇa nya kalawan asihnya matuhan ikā tiṅhali,
 suśīla saguṇātibhakti yadi tan sujanmā tuwi,
-sayogya pahayun [n]ikā ṅuni-ṅunin sujanmāmlapĕn*
-
-and attachment to their master*
+sayogya pahayun ikā ṅuni-ṅunin sujanmālapĕn*
 
 Tatan wawaṅ awèha riṅ suka parīkṣanĕntériya,
-lumakwakĕna ṅ ajña yan dadi rikā ta yan wĕhana,
+lumakwakĕna ṅ ajña yan dadi rikā ta yan wèhana,
 guṇa nya mapagĕh manah nika sumiwya saṅ bhūpati,
 kitékana kināsihan subhaga dibya ratnopama*
 
-Do not reward [an attendant] prematurely,
-before you eamine him*
-
-LetṢaṛnaṅkana ikaṅ manéwita yadin salobhmsulit,
+Samaṅkana ikaṅ manéwita yadin salobhāsulit,
 hanomarahakĕn ya tan rahayu lāgi saṅkĕṅ hala,
 iṅetakĕna cāra yékana paṅawruhèṅ durjjana,
 asiṅ lagi katon bĕnĕr nya ya ta gopitan saṅ prabhu*
 
-are reports that his wickedness causes unhappiness,
-dispatch spies to inesti-ITAwāms ya hala wigrahanta ika yan ulah nyān salah,
+Awās ya hala wigrahanta ika yan ulah nyān salah,
 hilāṅakĕna yan sadoṣa wuwusĕn wiwékan tĕmĕn,
-samaṅkana yadin r-ahat dèmakananta wèhĕn suka,
-ya tékana wĕnaṅ [ṅlanugraha lawan wĕnaṅ wigraha*
+samaṅkana yadin r-ahat dĕmakananta wèhĕn suka,
+ya tékana wĕnaṅ anugraha lawan wĕnaṅ wigraha*
 
-“If it becomes clear,
-that one has committed wrong deeds,
-he should bedismissed or sentenced to death afer his case has been eamined thoroughlygie him a present to make him happy,
-that is [what you would call]Bhaṭāra Rawi yopamanta manasèṅ sarāt tar maṅèl,
-samaṅkana ta saṅ prabhūmilaṅakĕn [n]ikaṅ durjjana,
-śaśaṅka magawé asih sira janānurāgĕṅ sarāt,
-awīms ta kita maṅkanāmri yat ahāta riṅ pun-punan*
+Bhaṭāra Rawi yopamanta manasèṅ sarāt tar maṅèl,
+samaṅkana ta saṅ prabhūmilaṅakĕn ikaṅ durjjana,
+śaśaṅka magawé asih sira janānurāgèṅ sarāt,
+awās ta kita maṅkanāri yat ahāta riṅ pun-punan*
 
 Gunuṅ ya ta paḍanta bhūpati ikaṅ prajāṅkĕn ḍukut,
-patūti guṇa-doṣa niṅ [ṅ] ulah ikā mataṅ nyān suka,
-ikaṅ prawara pora warga wanatulya yāṅkĕn [n] alas,
-kitékana ta siṅha rākṣaka dumèh nya śobhmn katon*
+patūti guṇa-doṣa niṅ ulah ikā mataṅ nyān suka,
+ikaṅ prawara pora warga wanatulya yāṅkĕn alas,
+kitékana ta siṅha rākṣaka dumèh nya śobhān katon#
+
+‍<Śikhariṇī>:3.78
+⏑ – – | – – – | ⏑ ⏑ ⏑ | ⏑ ⏑ – | – ⏑ ⏑ | ⏑ ⏓
 
 Ikaṅ thāni prītīnubhaya guṇa niṅ bhūpati lanā,
 ya saṅka nyāṅ bhogān hana pakĕna niṅ rājya ya tuwi,
 asiṅ sénāluh nyékana ta tuluṅĕn haywa humĕnĕṅ,
 lima lwir niṅ sākṣāt bhaya tĕka rikaṅ pora ya paḍĕm*
 
-whateer their complaints,
-you may not sit idle,
-you hae to gie thempeasants,
-you should stop thesc*
-
 Kinonkon saṅ swāmīkana ta umarèṅ wanwa mapanas,
-maliṅ makwèh lumrāṅhala-hala lawan drohaka wanbèh,
+maliṅ makwèh lumrāṅhala-hala lawan drohaka wanèh,
 kapāt nyékā saṅ wallabha ya winilaṅ duṣṭa tan alah,
 lima mwaṅ lobhé saṅ narapati nahan nyaṅ bhaya magöṅ*
 
-Mataṅ nyāntĕn tiṅhal sahana ni watĕk niṅ bala dĕlbn,
+Mataṅ nyāntĕn tiṅhal sahana ni watĕk niṅ bala dĕlön,
 ikaṅ prajña wruh riṅ naya winaya śila nya rahayu,
 tan alwāmwaṅ yatnān drĕḍa maniwi tan lobha samatā,
 nahan pratyakṣantèṅ hala-hayu taman dadya manasar*
 
-Those who are capable,
-ersed in statesmanship,
-good natured,
-honest,
-would not be mislead*
-
-Sunitī prihtāntĕn gagapi hati göṅĕn guṇagaṇan,
-musuhtopāyan toh pisani panas iṅ pāśa pahasat,
-iké śatruntad-don sahana [nin] pakĕna mwaṅ kira-kira,
+Sunitī prih tāntĕn gagapi hati göṅĕn guṇagaṇan,
+musuh topāyan toh pisani panas iṅ pāśa pahasat,
+iké śatruntad-don sahana pakĕna mwaṅ kira-kira,
 tatan wèhĕntātābhawaha gĕsĕṅiṅ drohaka rarah*
 
-Ikaṅ mĕṅét wruh nyĕṅ maniwi mulat iṅ bhakti ya gawé,
+Ikaṅ mèṅĕt wruh nyèṅ maniwi mulat iṅ bhakti ya gawé,
 prayatna wruh riṅ dé tan alĕmĕha riṅ krĕtya rahayu,
 wĕrö niṅ cittāgöṅ ya ta hilaṅakĕn riṅ hati lagé,
-swabhawè]ṅ janmékaṅ mada kaluṣa tātah ya manaput*
+swabhawèṅ janmékaṅ mada kaluṣa tātah ya manaput*
 
-IlIretreat from good works*
-
-Perpleity should be rooted out from your heart,
 Kaśaktin mwaṅ prajña kuśala ya ta bhoga nya tamalah,
 surūpā tatwajñèṅ aji ya sapujintékana kabèh,
 kitāntĕn saṅkĕp riṅ guṇagaṇa ikaṅ bhakti sudrĕḍa,
@@ -1198,160 +1150,121 @@ hilantékāṅ ambĕk manaya-naya mattāmiṣa puji*
 Nahan dé saṅ nāthākĕmita irikaṅ bhūmi subhaga,
 parārthāsih yāgöṅ saka lara nikaṅ rāt winulatan,
 tumiṅhal yatāsiṅ sawuwus ikanāṅ śāsana tinūt,
-tepĕt mmsih tar wruh kutila milag iṅ bañcana dumĕh*
+tepĕt māsih tar wruh kutila milag iṅ bañcana dumĕh*
 
-and with great loe he guards against misfortune that might harm hisActions,
-strict but generous,
-without mercy towards eilness,
-keep misfortunesaway>Nahan tojar saṅ Rāma manĕkĕt iṅ antĕn mapagĕha,
+Nahan tojar saṅ Rāma manĕkĕt iṅ antĕn mapagĕha,
 saharṣāmbĕk saṅ Bhārata ta rumĕṅö śabda karuṇa,
 manĕmbah māmwīt saṅ Bharata ri siraṅ Rāmawijaya,
 lawan wadwākwèh mwaṅ sahana-hana niṅ bhrĕtya mamuhun*
 
-IīI Atha lumaku mulih saṅ Kékayīputra luṅhā,
-tinawanakĕn [n]irékaṅ pādukmātyanta dibya,
-ya ta siniwi sinsmbah dé nikaṅ wwaṅ ry Ayodhyām,
-Bharata sira tamolah bhakti maṅrākṣa rājya*
+‍<Tiḍak ḍikĕtahui>:3.86
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓
 
-CATURTHAS SArgaHCHarīEeR I,
+Atha lumaku mulih saṅ Kékayīputra luṅhā,
+tinawanakĕn irékaṅ pādukātyanta dibya,
+ya ta siniwi sinĕmbah dé nikaṅ wwaṅ ry Ayodhyā,
+Bharata sira tamolah bhakti maṅrākṣa rājya#
+
+Tiḍak ḍikĕtahui
+<Mālabhāriṇi>:4.1
+⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓
+⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓
+
 Ndat atīta sirār hanèṅ kaḍatwan,
-ṣira sah Rāma hanè alas tamolah,
-rikanaṅ giri Citrakuṭa r-uṅgu,
-kalawan Lakṣmaṇa Jānaki susatya*
+sira saṅ Rāma hanèṅ alas tamolah,
+rikanaṅ giri Citrakūṭa r-uṅgu,
+kalawan Lakṣmaṇa Jānakī susatya*
 
-*
-
-Hana tāśrama saṅ mahārṣi Atri,
-ya tikānuṅ pinaran [n]iraṅ tigaṅ wwaṅ,
+Hana tāśrama saṅ mahārṣi atri,
+ya tikānuṅ pinaran niraṅ tigaṅ wwaṅ,
 atigorawa saṅ mahārṣi maṅliṅ,
 karuṇékaṅ śaraṇāgatātidibya*
 
-refugees*
-
-,
 Tamatar malawas sirār hana ṅka,
-hana tālas karĕṅö pratīta riṅ lwām,
-atibhīṣaṇa Daṇḍakm ṅaranya,
+hana tālas karĕṅö pratīta riṅ lwā,
+atibhīṣaṇa Daṇḍakā ṅaranya,
 ya paran saṅ Raghuputra Rāmadéwa*
-
-ancient times,
-called Daṇḍaka*
-
-*
 
 Umahas sira ta hanaṅ katakut,
 kalawan saṅ ari lèn priyā nira,
 hana rākṣasa rodra yéka maṅsö,
 umahā mātyana donya tan kalèn*
 
-*
-
-Ṣi Wirādha haranya tan panoli,
+Si Wirādha ṅaranya tan panoli,
 i ruhur n-uṅgu suku nya wèh sumuṅsaṅ,
 atirodra taṅanya paṅlaku nya,
 atakut Mrĕtyu tumon ya rodrarūpa*
 
-IUmulat ta naréndraputra kālih,
+Umulat ta naréndraputra kālih,
 sira tātar matakut masö tumandaṅ,
 awamāna ikaṅ Wirādha mūrkka,
 tumahā saṅ nrĕpaputra hīnaśakti*
-
-were not powerful*
-
-*
 
 Umasö maṅaṅ tutuk nya malwa,
 kadi raṇḍö ta suku nya bhinna yāgöṅ,
 maluṅid kadi gañjiran kuku nya,
 ya ta paṅduk nya ri saṅ naréndraputra*
 
-He adanccd with his mouth wide open,
-his widespread big legs were likecapok-trunks,
-his nails were pointed like spurs,
-with which he stabbed theprinces*
-
-*
-
-Umulat sira kārwwa śīighra maṅsö,
-sumikĕp kārwa matuṅggalan suku nya,
+Umulat sira kā-rwa śīghra maṅsö,
+sumikĕp kā-rwa matuṅgalan suku nya,
 sinĕbit wadi dé nirār dudut ya,
-mati tātan pabiṣān siwak [k]awak nya*
-
-Alert they both stepped forward,
-quickly grabbing his legs,
-one each*
-
-Theyany harm [to them]*
+mati tātan pabiṣān siwak k-awak nya*
 
 Ri pĕjah nikanaṅ Wirādha mūrkka,
 umahas saṅ nrĕpaputra nirbhayātah,
 tĕmu ṅ āśrama dibya śoba rāmya,
 patapan saṅ Śarabhaṅga yoga siddhi*
 
-Śarabhaṅga*
-
 Sira saṅ rĕṣi siddha dibya yogī,
 wihikan riṅ paramārtha tatwa sūkṣma,
 paripakwa samādhi niṣkalĕṅka,
 dadi mamwit ta siromarèṅ kamokṣan*
 
-(ethereal) Truth,
-completely concersant in faultless samādhi (abstractmeditation)*
-
-Then he asked leae to return to heaenly Bliss*
-
-IKita Rāma ṅaranta rājaputra,
+Kita Rāma ṅaranta rājaputra,
 kami mamwiīta marérikaṅ kamokṣan,
-lalu bhāgya temen kitāt para ṅké,
+lalu bhāgya tĕmĕn kitāt para ṅké,
 kita Nārāyaṇa maṅgalaṅku dibya*
-
-¢O,
-Prince Rāma,
-I would like to ask your leae,
-to return to heaenlyBliss*
-
-How fortunate [I am] that you hae come here,
-as you are Nārāyaṇa,
-an auspicious omen for me*
 
 Hana tāśrama saṅ Sutīkṣṇa yogī,
 yatikānuṅ wĕgilĕnta tat makūṅa,
 maparö ya taman madoh saṅka ṅké,
-rĕṣi yogī śaraṇānta saṅ Sutīkṣṇashelter*
+rĕṣi yogī śaraṇānta saṅ Sutīkṣṇa*
 
-Jti nā ta wuwus niraṅ tapaswī,
+Iti nā ta wuwus niraṅ tapaswī,
 dadi tāyoga sirāsamādhi siddhi,
 magawé ta sira bahnidhāraṇa,
 magĕsöṅ śīrṇna awak nirāpasah*
 
 Atha mokṣa siraṅ mahārṣi siddhi,
 kawĕkas saṅ Raghuputra Rāmadéwa,
-umuwah manusup sirèn alas göṅ,
+umuwah manusup sirèṅ alas göṅ,
 tĕmu tékāśrama saṅ Sutīkṣṇa yogī*
 
 Saphalān winĕgil siraṅ Sutīkṣṇa,
-karuṇā riṅ wanawāmsakācithī ya,
+karuṇā riṅ wanawāsakācithī ya,
 malawas ta naréndraputra Rāma,
 rikanāṅ āśrama wèt nyasih mahārṣi*
 
-ya*
+<Prabodhitā>:4.16
+⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | ⏓
+⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ ⏓
 
-Umahas ta sirè\hṅ tapowana,
+Umahas ta sirèṅ tapowana,
 tinamuy dé nira saṅ mahāmuni,
-phalamīūla pawĕh niraṅ rĕṣi,
+phalamūla pawĕh niraṅ rĕṣi,
 yatikāhāra nirār hanèṅ alas*
 
-IYI sĕḍĕṅ nikanaṅ wĕain tĕka,
-maturū saṅ nrĕpaputra riṅ [ṅ] alas,
+i sĕḍĕṅ nikanaṅ wĕṅin tĕka,
+maturū saṅ nrĕpaputra riṅ ṅ-alas,
 kalaśā nira ron ikaṅ kayu,
-umahā mabrata dhira tar lĕgö*
+umahā mabrata dhīra tar lĕgö*
 
 Rahina nya mahas sirèṅ alas,
 mrĕga yā téka gawé nirāburu,
 mamatīka kĕnas rikĕṅ alas,
 ya pamūjā nira nityakāla ya*
 
-Wiku paṇḍita wédapmraga,
+Wiku paṇḍita wédapāraga,
 umahas māmĕṅ-amĕṅ riṅ āśrama,
 rasikā tinamuy ya dé nira,
 pinakāhāra saśéṣa saṅ tamuy*
@@ -1366,16 +1279,12 @@ ndan ikāṅ ayudha yéka tan kasah,
 abhayā nira saṅ mahārṣi don,
 brata saṅ wīra rumākṣa saṅ wiku*
 
-*
-
 Patapan ri samīpa niṅ gunuṅ,
 paḍa kapwénahasan ta dé nira,
 kinĕmit ya rinākṣa riṅ bhaya,
 suka ménak ta pahoma saṅ rĕṣi*
 
-performing their offerings*
-
-ISalawas nirar uṅgu riṅ [ṅlalas,
+Salawas nirar uṅgu riṅ ṅ-alas,
 tamatan lèn inaṅĕn-aṅĕn ira,
 suka duhka niraṅ mahāmuni,
 ya cinitta winiwéka riṅ hati*
@@ -1385,11 +1294,9 @@ ikanaṅ citta parārtha kéwala,
 tar upékṣa lara nyawak nira,
 prihatah kāryya niraṅ mahāmuni*
 
-Kramakāla umèh kulĕm tĕkām,
+Kramakāla umèh kulĕm tĕkā,
 rikanāṅ āśrama sāndhyawéla ya,
-tamatu*
-
-r malupèṅ bratājapa,
+tamatar malupèṅ bratājapa,
 kadi saṅ tāpa susatya sātwika*
 
 Rahina nya atīta taṅ kulĕm,
@@ -1397,140 +1304,101 @@ sakatambé umuwah sirājapa,
 tamatar kalupan hĕlĕm-hĕlĕm,
 matutur tèṅ brata dhīra niścala*
 
-brata (religious austerities)*
-
-Hana Śarpaṇakhīm ta rākṣasī,
+Hana Śūrpaṇakhā ta rākṣasī,
 ya tikā cāra niraṅ Daśānana,
 umahas ya rikāṅ alas kabèh,
 tĕka riṅ Daṇḍaka kānanāśrama*
 
-forest*
-
-ITinĕmu nya ta saṅ nrĕpātmāja,
+Tinĕmu nya ta saṅ nrĕpātmāja,
 riṅ alas kāwit amèt sĕkar sira,
 kalawan Janakātmajādulur,
 sira tar kāntun asiṅ paran tumūt*
 
-whereer he went*
-
-Dadi mūr yya tumon sirādulur,
-ikanaṅ Śūrpaṇakhm ta kéraṅan,
+Dadi mur ya tumon sirādulur,
+ikanaṅ Śūrpaṇakā ta kéraṅan,
 manusup ya rikāṅ alas wanèh,
 tĕmu saṅ Lakṣmaṇa tāṅalap sĕkar*
-
+===
 Kĕna kāma sarāga yan wulat,
 magawé bhāwa mahiñji yan laku,
 paripūrṇna awak nya riṅ hayu,
-wulan iṅ purṇnamakāmla tulya ya*
+wulan iṅ purṇnamakāla tulya ya*
 
-On seeing him,
-she fell in loe [with him]*
+Tiḍak ḍikĕtahui
+<Mālabhāriṇi>:4.31
+⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓
+⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓
 
-So she took another form,
-shewith style*
-
-Maḍĕmit sapĕgĕg tĕṅah nya māmbĕ t,
+Maḍĕmit sapĕgĕg tĕṅah nya māmbĕt,
 mamanis lèn pamata nya rāmya molĕm,
 malurus ta pupū nya lén wĕtis nya,
 jariji nyānuji laṇḍak ujwalābāṅ*
-
-[nails]*
 
 Jaghana nya magöṅ susu nya buntĕr,
 maputih huntwalaris iruṅ nya śobhāmè,
 ṣesĕranya maṇik manojña saśr1ī,
 masĕkar rāmya marumpukan masumpiṅ*
 
-IMamanis ta wulat nya lèn guyu nya,
+Mamanis ta wulat nya lèn guyu nya,
 ikana lwir nya makin sarāga mahyun,
 ri sawèt ni hiyunya tā iraṅ nya,
 ri siraṅ Lakṣmaṇa yan masö ta mojar*
 
-and approaching Lakṣmaṇa she spoke :Kaka Lakṣmaṇa hé Sumitraputra,
+Kaka Lakṣmaṇa hé Sumitraputra,
 aku mūrcchmā kĕna kāma dbènta,
 asihanta kunĕṅ taman pahīṅan,
 hulunantāku baśīā kité tuwuhku*
 
-Gie response to my unlimited passion,
-let me be your slae,
-take me !Salawas ni huripku tan kasāha,
+Salawas ni huripku tan kasāha,
 ri kitāsiṅ saparanta tan madoha,
 sapakonta riké ṅhulun kadadya,
 ri sĕḍĕṅtāt anumāna riṅ kĕnèṅ hyun*
-
-with you*
-
-I will do what you ask,
-as long as you fulkl my need*
 
 Iti nā wuwus nya tā iraṅ nya,
 sinaput dé ni panah bhaṭāra Kāma,
 ṣumahur ta siraṅ sinoma-somah,
 sira saṅ Lakṣmaṇa gadgada ta dé nya*
 
-posed,
-answered with surprise*
-
 Aparan kita dibyarūpa mojar,
 ry apa saṅkanta amānwṣākrĕtinta,
 tamatat matakut rikèṅ alas göṅ,
 tak anon ṅ waṅ tuwi lbn anuṅ tĕka ṅké*
 
-Who are you (who speaks to me),
-O,
-beautiful one Where do you comefrom,
-O,
-superhuman one( Are you not afraid to be alone here in theforest  I do not see anyone else [with you]*
-
-ILalu dibya hayunta kādbhutāku,
+Lalu dibya hayunta kādbhutāku,
 apa jātinta yan apsarī kunĕṅ,
 paricāra winèh ya kāntuna,
 kita kanyāhayu towi tunga-tuṅgal*
+
+<Prabodhitā>:4.39
+⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | ⏓
+⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ ⏓
 
 Nya dumèh aku saṅśayām tĕmĕn,
 kita mojar [rlyyaku tan kĕnèṅ iraṅ,
 kadi mèdi wuwusta maṅlaré,
 kita déwāmkrĕti manuṣa ṅhulun*
 
-That really makes me suspicious*
-
-You speak to me without feelingbeing,
-I am human*
-
 Yuwatī kita kanyakā kunĕṅ,
 adhawātah lakunta ta diṇḍarm,
 ya mataṅ nya taman kĕnèṅ iraṅ,
 ta wuwus torasi ri ṅhulun [n] ari*
-
-in a respectful way*
 
 Kalawan [n] aku tak sayogya wèdh,
 ri kakaṅku t-para yogya māmsih,
 sira Rāma ṅaran nirèṅ jagat,
 anumānèṅ kĕna rāga mūrcchita*
 
-Besides I am not fit [for youl Go to my brother*
-
-He is well-knownto one who is oerwhelmed by deep passion*
-
 Guṇamānta sĕḍĕṅta yowana,
 sira sah Rāma māmsihé kita,
 wihikan maṅiriṅ [ṅ] anakkĕbi,
 sira tamolya ri kahyunanta wèh*
-
-BK*
-
-siratah molya*
-
-knows his way with women,
-surely he will respond to your wishes*
 
 Amanis pamata[n] nirālaris,
 paṅawak sahya lawan mukābuṅah,
 tuwi bāhu nirāwiḍaṅ katon,
 paṅalah śatru gawé nya riṅ raṇa*
 
-IHana kadga nirātitīkṣṇa ya,
+Hana kadga nirātitīkṣṇa ya,
 tan adoh yadyapi yan tĕkāṅ musuh,
 tinahā ikanaṅ raṇān tĕkā,
 ya karākṣā nira don ikaṅ tĕwĕk*
@@ -1667,11 +1535,16 @@ lĕhĕṅaṅ mātya kunĕṅ misan-misan,
 yadiyat hĕnĕṅāta riṅ musuh,
 tat asĕṅhit hana sāhasé ṅhulun*
 
-‘What use is it for me to eistè It is better that I die,
-if you do nothingagainst me è Ya mataṅ nya yadin hanāsihanta,
+Tiḍak ḍikĕtahui
+<Mālabhāriṇi>:4.65
+⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓
+⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓
+
+Ya mataṅ nya yadin hanāsihanta,
 ikanaṅ Rāghawa Lakṣmaṇolihanta,
 aku niśśaraṇā kitāśrayaṅkwa,
 yan agöṅ śakti nikaṅ musuh prihĕnta*
+
 
 Apa tan pasahāya tuṅga-tuṅgal,
 phalamūlāśana yāmaṅan gaṅan,
@@ -1708,27 +1581,32 @@ malipuṅ puṅ juga riṅ wĕgig[g] umaṅkat*
 They were euipped with shining shields,
 clad only in loincloth*
 
-TheySaḍatĕṅ nya kabèh maṅĕmbuli,
+<Prabodhitā>:4.71
+⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | ⏓
+⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ ⏓
+
+Saḍatĕṅ nya kabèh maṅĕmbuli,
 sira saṅ Raghawa Lakṣmaṇomasö,
 pinanah nira tan paśéṣa ya,
 hibĕkan waṅkay ikaṅ tĕgal kabèh*
 
-IHana bhinna siwak [k] awak nikā,
+Hana bhinna siwak k-awak nikā,
 hana timpaṅ pinanah pupū nya timpal,
 tahulan ni hulu nya ya rĕmuk,
 hana mānaṅ-manaṅ an hilaṅ taṅanya*
 
-There were those whose bodies were torn into pieces,
-some had their legsKumĕtĕr sawanèh hanālayu,
+Kumĕtĕr sawanèh hanālayu,
 hana méraṅ umaluy pwa yékaṅāmūk,
 ri muka nya mabāṅ mulĕk mĕtu ṅ rāh,
 gumaluṅgaṅ ri gulū nya rodra taṅ hrū*
 
-Others ran away trembling all oer their body*
+<Puṣpitāgra>:4.74
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓
+⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓
 
-There were also those whoBala makabalasah wanè]h kabuñcaṅ,
+Bala makabalasah wanèh kabuñcaṅ,
 dadi mapulih Triśirah masö masĕṅhit,
-sarabhasa magalak ulā paḍa nya,
+sarabhasa magalak !ulā paḍa nya,
 Garuḍa paḍā nira saṅ naréndraputra*
 
 Inarah-arah ikā gulū nya riṅ hrīū,
@@ -1736,28 +1614,25 @@ hana warayaṅ dadalī jugāṅlayaṅ ya,
 suniśita maputih tĕlas malaṇḍĕp,
 ya mĕgatakĕn ri gulū nya rāh nya muñcar*
 
-gushed out*
-
 Hulu makabarubuh tibā kabèh nya,
 kadi ta ya pārśwa nikaṅ gunuṅ rubuh rūg,
 tat ujara ta takut niraṅ tapārĕs,
 tuwi bala rākṣasa tan wĕnaṅ mulat ya*
 
-pAñCAMAS SArgaHCuaprerR  Atha ri pĕjah Triśira śīghra hulū nya tibā,
+<Rajanī>:5.1
+⏑ ⏑ ⏑| ⏑ – ⏑| – ⏑ ⏑| ⏑ – ⏑ | ⏑ – ⏑| ⏑ ⏓
+
+Atha ri pĕjah Triśira śīghra hulū nya tibā,
 dadi ta masö masĕṅhit ikanaṅ Khara Dūṣaṇa lèn,
 saha bala maṅlayaṅ kadi ta mégha katon ahirĕṅ,
 karatala kadga cakra winawa nya ya tulya kilat*
 
-and Dūṣaṇa adanced outrageously*
-
-Together with his troops they flew up Hana mamanah wanèh kadi ta bajra panah nya biṣa,
+Hana mamanah wanèh kadi ta bajra panah nya biṣa,
 tali ni panah nya rodra kumupak kaharan gĕlapa,
 Raghusuta bāyubajra ya paḍā ni panah nira bāp,
 ya ta kumĕnékanaṅ kala tibā sahana nya pĕjah*
 
-their bows sounded like thunder-claps*
-
-Raghusuta’s arrows were like Ri pati nikaṅ musuh si Khara Dūṣaṇa lèn Triśirah,
+Ri pati nikaṅ musuh si Khara Dūṣaṇa lèn Triśirah,
 makin asekĕl gĕlāna ta si Śūrpanakā manaṅis,
 dadi malayū tĕkènajarakĕn ta kaka nya pĕjah,
 ri sira ta saṅ Daśānana masö ya mahā manĕsĕl*
@@ -1767,23 +1642,15 @@ praṇata musuhta bhakti matakut sahana nya kabèh,
 surapati saṅ hyaṅ Indra tuwi bhakti sira praṇata,
 katham api durnaya pwa kita hīna tamat panulus*
 
-[hlanulus*
-
-E taman kanulus*
-
- Hana kari cārakanta ya kinon mahasèṅ prĕthiwī,
+Hana kari cārakanta ya kinon mahasèṅ prĕthiwī,
 sumusupanāṅ alas biṣama śatru hanā matapa,
 ya tika tahānta haywa humĕnĕṅ pwa kitèṅ biṣama,
 ya ika kadurnayanta amĕṅāmni balanta pĕjah*
 
-remain idle concerning that danger*
-
-[To your subjects] your bad policy Si Kara si Dūṣaṇa Triśira sūra sudhīra pĕjah,
+Si Kara si Dūṣaṇa Triśira sūra sudhīra pĕjah,
 lumaku kinon matuṅgwa rikanaṅ giri Danḍaka ya,
 mati kapisan taman pabisa dé nika saṅ matapa,
 prakaśita Rāma Lakṣmaṇa mati ya taman pamales*
-
-any harm*
 
 Sahana-hananta mātya kita dé nya si Dāśarati,
 ya ta walĕsĕnta toh kira-kiran pĕjaha nya huwus,
@@ -1795,14 +1662,10 @@ wiṣaya kasakta tat [tJaṅĕn-aṅĕn ṅ awasāna pijer,
 kita wĕgig iṅ musuh daṅu-daṅu magĕlöm aṅawit,
 hana paribhūta śatru tamatan pamalĕs pwa mĕné*
 
-o <*
-
 Rikanaṅ alas ri Daṇḍaka siraṅ tapa tar matakut,
 pratidina homayajña ginawé nira kapwa lanm,
 tuwi taya rākṣasāṅipik-ipik rikanaṅ patapan,
 Raghusuta Rāma Lakṣmaṇa atah katakut nya kabèh*
-
-regularly they make their offerings*
 
 No demons dare to touch them,
 as theyRasika ta saṅ Raghūttama taman pasahāya tuwi,
@@ -2127,7 +1990,7 @@ dadi sumahur mrĕṣodita wuwus nira taṇ ḍahayu*
 
 words*
 
-Ari kita saṅ Sumitratanayāpa kalīṅan ikām,
+Ari kita saṅ Sumitratanayāpa kalīṅan ikā,
 wahu-wahu dènta māmbĕk alĕmöh ri pakonku mĕné,
 atiśaya bhakti riṅ daṅu-daṅī kita sātya kaka,
 punar api durbala pwa sira hīina tamat patuluṅ*
@@ -2669,7 +2532,7 @@ eTo whom should I ask about your message [which you probably left] whothe deitie
 Atiśaya aku yatnāmèt kitèṅ déśa mamrih,
 mara haku ri paturwantèṅ daṅū tat kapaṅguh,
 hana watu maratālwa ṅkāk paromèt kitātah,
-ṣahana ni hawalantāku k-parāmĕèt kitāntĕn*
+ṣahana ni hawalantāku k-parāmèt kitāntĕn*
 
 [ hae gone to all places freuented by you to ṣearch for you,
 my dear*
@@ -2918,7 +2781,7 @@ Further on they met a demon with amazing long arms,
 hungry for want offood*
 
 Musuh niṅ satwa yè]h daṅīū,
-Dirghabāhu ṅaran ikām,
+Dirghabāhu ṅaran ikā,
 ya ta maṅsö sira krūra,
 r-unus taṅ kadga tīkṣṇa ya*
 
@@ -2936,7 +2799,7 @@ kadi saṅ hyaṅ Diwmkara*
 Maprĕśna ya ri saṅ Rāma,
 mamĕpbör i ṅaran ira,
 lāwan don iṅ masusupan,
-ya tinakwanakĕn ikām*
+ya tinakwanakĕn ikā*
 
 woods*
 
@@ -3361,7 +3224,7 @@ luṅhā mĕgil kami riṅ āśrama saṅ Sutikṣṇa,
 ṅkīā ta tamolah aṅĕmit patapan prayatna*
 
 Ṣnm priyāṅku rasikā ta dulurkwi ṅūni,
-ndan duṣṭā Rāwaṇa malap sira śīighra luṅhā,
+ndan duṣṭā Rāwaṇa malap sira śīghra luṅhā,
 Ṣṅtām sirékana pinèt mami kām para ṅké,
 ṇā hétu niṅ masusupan [n] umahas bhramanta*
 
@@ -3780,7 +3643,7 @@ mamwita misātā*
 
 his leae to return to his palace*
 
-Sāmpun mamwit śīighra mulih saṅ kapirāja,
+Sāmpun mamwit śīghra mulih saṅ kapirāja,
 Jāwan wadwā wānara maṅkin ya saharṣa,
 riṅ Kiṣkiṇḍā mukti ta sīraṅ kapirāja*
 
@@ -3863,11 +3726,11 @@ but it eists*
 Nyaṅ kunaṅ-kunaṅ Anaṅgadīpa ya,
 tar paḍèem paḍa-paḍān kĕḍap-kĕḍap,
 maṅraras-rarasakĕn manah mibĕr,
-hāh manahku baribin tumon ikām*
+hāh manahku baribin tumon ikā*
 
 heart is disturbed on seeing it*
 
- Lĕn kilat marimisi matāhulap,
+Lĕn kilat marimisi matāhulap,
 glāna kagyat aku dé nya yan larap,
 tan lanā pwa ya hilah wawaṅ muwah,
 hāh mahā juga ya médi maṅlarè*
@@ -3972,7 +3835,7 @@ nityakāla rahinā kunĕṅ lanā,
 hāh lukan wita gĕlāna ni ṅhulun,
 yan kaṅĕn-aṅĕn atah kitèṅ kulĕm*
 
- O kataṅhi ṅ alarāṅaraṅ makuṅ,
+O kataṅhi ṅ alarāṅaraṅ makuṅ,
 prĕm[m]akĕn kasula tan pijer pwa wèh,
 tan hanāṅrasa sawèt nikaṅ huyaṅ,
 hāh wiyoga kadurus niroṣadha*
@@ -3994,7 +3857,7 @@ tinon nira bhaṭāra Candra mawĕlū sĕḍĕṅ pūrṇnama,
 kadi pwa muka saṅ priyā Janakarājaputrī n-hiḍĕp,
 wawaṅ sira kataṅguhan r-ujari téka saṅ Lakṣmaṇa*
 
- Ariṅku wulati ṅ laṅit hana ta haṅsa harṣāṅlayaṅ,
+Ariṅku wulati ṅ laṅit hana ta haṅsa harṣāṅlayaṅ,
 mamèt talaga harṣayan muni kabèh nya konĕṅ-unĕṅ,
 awāms ya iki lahru liṅku samayanta yèkin tĕka,
 ah adwā tikanaṅ kapindra samaya nya yā tan tuhu*
@@ -4110,7 +3973,7 @@ n-ton taṅ wré maśilāsĕsĕk ya hibĕkan tékaṅ gunuṅ Mālyawān,
 byakta ṅ Rāwaṇa śīrṇna dé nika kabèh apan mahāśakti ya,
 nī liṅ saṅ Raghuputra trĕpti mulat iṅ wrè wīra sāmpun tĕka*
 
- Tatkālān pasamūha taṅ kapibalomaṅsö ta saṅ Māmruti,
+Tatkālān pasamūha taṅ kapibalomaṅsö ta saṅ Māmruti,
 mwaṅ Nīlāṅgada Jāmbawān gĕnĕp anuṅ katwaṅ nikaṅ wānara,
 wīrotsāha catus samudra juga riṅ wīrātigambhrra ya,
 yékānuṅ winarah niraṅ kapipatī Sugriwa mojar sira*
@@ -4287,7 +4150,7 @@ Aku iki dānawakanyā,
 dānawarāja bapaṅku,
 praśāstèbuṅku Mérusāwarṇni*
 
- Yapwat mahyun śrghra tĕkā,
+Yapwat mahyun śrghra tĕkā,
 ri Lĕṅka mĕné ṅ gĕlĕk méṅgal,
 ndak wĕtwakĕn kita kabèh,
 ndan tukupi matanta haywa mulat*
@@ -4412,7 +4275,7 @@ and spoke: ‘Where do you want to go,
 O,
 ecellent monkey heroes TheWindhya-mountain is guite impassible*
 
- Aṅĕn-[n]aṅĕn towi tamar tĕkériya,
+Aṅĕn-[n]aṅĕn towi tamar tĕkériya,
 lawan ruhur nyātiśayèṅ sukĕt tĕmĕn,
 kitāt para ṅké aparan prayojana,
 mataṅ nya tāśā sahananta duhkita*
@@ -4502,7 +4365,7 @@ pakon iraṅ Rāghawa yéka dadyaksĕn,
 katĕmwa saṅ śrī Janakātmajān pinèt,
 hané kaḍatwan [n]ika saṅ Daśānana*
 
- Taman mrĕṣāwāda wuwusku satya ya,
+Taman mrĕṣāwāda wuwusku satya ya,
 prayojanantmt laku dūta dadya ya,
 awms ya tuṣṭā nira saṅ Raghūttama,
 sawèt ni pamrihta umdèt priyā nira*
@@ -4535,7 +4398,7 @@ swabhāwa niṅ śrī ya nimitta riṅ wĕrö*
 
 Aṅinya mādrĕs ya lanomirir matts,
 kadi pwa yośwāsa nikaṅ samudra ya,
-ahos ikāmbĕk nyan alah warĕg dahat,
+ahos ikābĕk nyan alah warĕg dahat,
 minum [m] ikaṅ lwah humilī nirantara*
 
 ]11*
@@ -5032,7 +4895,7 @@ yapwan riṅ drĕs yan mibĕr cittagāmi,
 yan riṅ téjā sūryya sèwūpama nya,
 yan riṅ krūrā ṅ Rāhu sākṣāt muka nya*
 
- Nkānāmr tonton saṅ Daśāsya prasupta,
+Nkānāmr tonton saṅ Daśāsya prasupta,
 tulyātĕṅgö nidra tan paṅrĕṅö rāt,
 lāwan cèṭi cèṭṭa riṅ kr\ḍa tan krah,
 māmbö rūm niṅ kasturī bāhu sumrak*
@@ -6349,7 +6212,7 @@ sāmbut tékaṅ pāṅ ya ta pamalu nirèṅ rākṣasa sy-Akṣa śīghra,
 rĕñcĕm bāhu nyān pinalu ya kapisan mūrcchitāmrih lumumpat,
 moruk méraṅ mūr mari ta ya sakarĕṅ riṅ ratha ṅkān parāryyan*
 
-IMénak pwékāmbĕk nya mari ya mahuyaṅ śīighra gumrit ratha nya,
+IMénak pwékāmbĕk nya mari ya mahuyaṅ śīghra gumrit ratha nya,
 sāmbut tékaṅ hrū umaluya ta manah saṅ Hanūmān riṅ astra,
 mākrĕp ta hrū nyān kadi ta ya hinatĕp lwir niṅ ākāśa dé nya,
 ksmbaṅ tulya nyān tĕka ri ḍaḍa nirĕṅ Māruti syuh wiśīrṇna*
@@ -6368,7 +6231,7 @@ lumumpat sirè sāgara ṅkān parādyus,
 ri dé nyān maṅèl wèt ni sowé nirāpraṅ,
 mataṅ nyār parèṅ sāgarān maṇḍi mogha*
 
-Huwus trĕpti madyus mĕsat śīighra luṅhām,
+Huwus trĕpti madyus mĕsat śīghra luṅhām,
 maluy riṅ taman rūgakĕn pārijmāta,
 kayuh pāṅ nya sĕmpal rurū ronya lumrā,
 lawan wwah nya kégū kaböbĕl tibĕ bāmp*
@@ -6852,7 +6715,7 @@ you are praising*
 Rāma is uneualled in sinfulness,
 because hehas killed people that should not hae been killed*
 
- Wruh kari ko riṅ Yojanabāhu,
+Wruh kari ko riṅ Yojanabāhu,
 durbbala paṅguh yékana timpaṅ,
 yéka pĕjah dé niṅ Raghuputra,
 pātaka ko dhik nirghrĕṇa duṣṭa*
@@ -7130,7 +6993,7 @@ kadi maṅajap-ajap wuwus nya jañjan,
 apusi pahatĕguh ikū nya tunwi,
 prisakiti ta hati nya wĕh sarantmè*
 
- Daśawadana huwus nirojar madĕg tèkanaṅ rākṣasa,
+Daśawadana huwus nirojar madĕg tèkanaṅ rākṣasa,
 hana alalaṅ akiṅ pamuṅkus nya rīkū niraṅ Māmruti,
 apusi ta daluwaṅ lawan bwat kĕliṅ kusyara mwaṅ jamaṅ,
 asiṅ-asiṅ anipis dilah nyāhaṅan ndan bĕbĕd nyāpagĕh*
@@ -7141,17 +7004,12 @@ paḍa tan anumanān panunwī murub tékanékī nira,
 kagiri-giri dilah nya tèja nya mabhrmè sinaṅ lor kidul*
 
 
-EKāDAśŚAMAS SArgaHCHAPTER Il*
+<Daṇḍaka>:11.
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ]×29
 
-Atha sèḍĕṅ umurub ikū saṅ Hanūmān umaṅkak tikāwak nirāgöṅ gunuṅ Méru tulyānanāṅ nāgapāśāpasah sāk pasātus tataś śirṇna rampuṅ pĕgat dénikā bāhu saṅ Bāyuputromĕsat śighra ākāśagāmī mirir tāṅ aṅin ghora yāghūrṇnitādrĕs riwutpāta humyus musus yomĕlĕk taṅ lĕbu,
-kadi ta inububan ya maṅkin murub tékanékū nirāpan katūb dé nikaṅbāyubajré sĕḍĕṅ nyār ibĕr tulya saṅ hyaṅ Lĕmah maṅlayaṅ mwaṅ Apuykyāti Kālāgni rodrār dunuṅ taṅ umah ṅkm riṅ Antahpurāpūrwwa rūpa nyasaśrī saśobhā yatékān tinunwan nirānéka warṇna nya nānāwidha,
-paḍa makaparupuh ṅ apuy yan dilah riṅ umah kapwa rĕmpak rĕmukmaṅkana ṅ maṇḍapāpan parĕṅ yan katunwan saka nyomakin wrĕddhitékaṅ apuy ujwalālola kumĕlab dilah nyèa laṅit nirbhayātah manah sanHanūmān mulat kādbhutékaṅ watĕk rākṣasé sor kasoran kaśuran kawīrankadhiran tuwi,
-Ipaḍa ta ya mututuṅ tutuk nyān kagöman kapūhan tumĕṅhāmtakut n-tonkaḍatwan katunwan kutug taṅ apuy lor kidul kālamrĕtyūpama nyomaladtan dilah tulya télat nya molah mĕlĕk taṅ kukus arddha mawyaṅ-wyaṅèkĕl-Jikèl yéka rambut ni tĕṇḍas nya rodrān katon kāatara ṅ rākṣasā ghūrṇni-tāwū humuṅ*
-
-Tripura-pura murub tinunwan bhaṭāréśwarānuṅ paḍa nyān tĕñuh taṅumah māms ya masyūh masāk taṅ sakāgöṅ maṇik bajra bajropama nyānmakas kmsyasih tékanāṅ apsarī riṅ purāpūrwwa yar ton apuy kapwatékāgupuy kwèh kapĕyĕh gĕyuh yan kayuh kèn i cèi nya maṅluh umaṅguhhuyaṅ yāṅlih,
+Atha sĕḍĕṅ umurub ikū saṅ Hanūmān umaṅkak tikāwak nirāgöṅ gunuṅ Méru tulyānanāṅ nāgapāśāpasah sāk pasātus tataś śirṇna rampuṅ pĕgat dénikā bāhu saṅ Bāyuputromĕsat śighra ākāśagāmī mirir tāṅ aṅin ghora yāghūrṇnitādrĕs riwutpāta humyus musus yomĕlĕk taṅ lĕbu,
+kadi ta inububan ya maṅkin murub tékanékū nirāpan katūb dé nikaṅ bāyubajré sĕḍĕṅ nyār ibĕr tulya saṅ hyaṅ lĕmah maṅlayaṅ mwaṅ Apuy kyāti Kālāgni rodrār dunuṅ taṅ umah ṅkā riṅ Antah purāpūrwwa rūpa nya saśrī saśobhā yatékān tinunwan nirānéka warṇna nya nānāwidha 
+paḍa makaparupuh ṅ-apuy yan dilah riṅ umah kapwa rĕmpak rĕmukmaṅkana ṅ maṇḍapāpan parĕṅ yan katunwan saka nyomakin wrĕddhitékaṅ apuy ujwalālola kumĕlab dilah nya laṅit nirbhayātah manah san Hanūmān mulat kādbhutékaṅ watĕk rākṣasé sor kasoran kaśuran kawīrankadhiran tuwi 
+pa ḍa ta ya mututuṅ tutuk nyān kagöman kapūhan tumĕṅhāmtakut n-tonkaḍatwan katunwan kutug taṅ apuy lor kidul kālamrĕtyūpama nyomaladtan dilah tulya télat nya molah mĕlĕk taṅ kukus arddha mawyaṅ-wyaṅèkĕl-Jikèl yéka rambut ni tĕṇḍas nya rodrān katon kāatara ṅ rākṣasā ghūrṇni-tāwū humuṅ*
+Tripura-pura murub tinunwan bhaṭāréśwarānuṅ paḍa nyān tĕñuh taṅumah mās ya masyūh masāk taṅ sakāgöṅ maṇik bajra bajropama nyānmakas kmsyasih tékanāṅ apsarī riṅ purāpūrwwa yar ton apuy kapwatékāgupuy kwèh kapĕyĕh gĕyuh yan kayuh kèn i cèi nya maṅluh umaṅguhhuyaṅ yāṅlih,
 talaga-talaga riṅ kaḍatwan winatwan ya dé niṅ maṇik candrakānté daṅūṇdan mĕné śuṣka ymāsāt ya kĕsĕp sĕkar niṅ aśokāṅasut yan kasūban panasrūkṣa sakwèh nya yākiṅ makiṅkiṅ manuk nyānaṅis moni kolāhalāwū walācakrawākā gĕlāna ṅ pĕluṅ haṅsa māśā saśokāswarāsū ikaṅ sārasa,
-
-
-jayati parāśarasūnus satyawatīhṛdayanandano byāsaḥ parasya sukārthī paṭhayitwā wāmadākhya sakalajagatāṁ śiwam iti. śrotāñjalipuṭa rawayawaṁ wītabhawān bhāratākhyānaṁ, mṛṣādukta mahābhawatāṁ wṛṣṇi kṛṣṇadwaipāyanam idaṁ. dadyāt suphalajagatādayaḥ paśupatipaṇḍita kṛṣṇajagatwamawitan, sarwaślokaṁ pawāyamānaḥ kawim uktaḥ pārāśāryaḥ wiwṛttānyeti. ādiḥ sabhā wana wirāṭa udyogamākhyaṁ, bhīṣma dwijārkasuta śalya gadāśwa sopti, strī prasthāni muśala śāntika tathāśramañ ca, swargāntam aṣṭadaśaparwa niruktasangkhyam.
-
-nāhan ta ling sang ugraśrawā ri mpungkwing nemiṣāraṇya, tumañākĕn kapawitran iking tīrtha ring pañcaka. sumahur sang ugraśrawā. traitadwāparayos sandhau, ngūni ri pāntara ning traita lāwan dwāpara, hana sira ṛṣi bhagawān rāma paraśu ngaran ira, bhṛgukulawangśaja, wĕka bhagawān bhṛgu. sira ta maprang lāwan sang arjuna sahasrabāhu, alah de nira. masĕnghit ikang kṣatriya ring bhūmaṇḍala, ratu sapinasuk ing bhāratawarṣa, tĕka mamĕjahi ri bhagawān jamadagni, bapa sang rāma paraśu. saka ri krodha sang rāma paraśu pinĕjahan sira bapa tĕkap ning kṣatriyasamūha, ya ta matang yan malĕs sirāmatyanīrikang kṣatriya ring bhāratawarṣamaṇḍala. ekawingśati kṣatriya, salikur kweh ning ratu pĕjah de nira, sagajāśwarathapadātinya kabeḥ. rāh ning sāmantarāja ya ta matĕmahan rudhirārṇawa, i wĕkasan dadi talaga limang siki. ya ta hibĕkan de ning rudhirāngkĕn arṇawa. magawe ta sira tarpaṇa wipula raktasnāpanānjali, ri sang dewa pitṛ. ndātan suka sang hyang pitara de nira, apan tan yogya ikanang rāh yan tarpaṇākna ri sira. ḍatĕng ta kawitan ira kabeh, makādi bhagawān ṛcīka, mwang bhagawān jamadagni, tumurun sangkeng swarga. anak sang rāma paraśu tan yogya kadi kita brāhmaṇa magawe rudhiratarpaṇa, kunĕng yogya tarpaṇakna, ikang tīrtha pawitra juga. hana pwa sādhanantāmūjā ri kami kabeh, ikang tīrtha, wastw atĕmahana tīrtha limang talaga kwehnya, wĕnanga panghilanga kleśa rāh ni sāmantanṛpa sang matīng raṇa denta. tasmāt samantapañcakaṁ, matang yan samantapañcakatīrtha ngaranya, kunang asing māti rikang tīrtha ngūni muliheng swarga, nguniweh ikang śrĕddha marādyusa byakta ya muktakleśā muliheng swargaloka. nāhan ta ling ning kawitan ira, inastwakĕn ing sarwadewatā, yeka ning samantapañcakatīrtha ngaranya, adyāpi katĕka mangke. kalidwāparayos sandhau, tĕka pwa ri pāntara ning dwāpara

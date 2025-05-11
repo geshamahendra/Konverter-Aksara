@@ -18,7 +18,8 @@ substitutions = {
     r'sa(ng|ṅ)s': 'saŋs',
     r'sa(ng|ṅ)ṣ': 'saŋṣ',
     r'sa(ng|ṅ)k': 'saŋk',
-    r'\b(a|A)ji\b':'‌Aji',
+    r'\bnir': 'nir',
+    #r'\b(a|A)ji\b':'‌Aji',
 
 
     r'(s|ś)unya': 'śūnya', r'(?i)budi': 'budđi', r'(?i)purna': 'pūrna',

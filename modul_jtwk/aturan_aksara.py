@@ -83,7 +83,7 @@ simbol = {
      # Simbol lainnya 
     '1': '꧑', '2': '꧒', '3': '꧓', '4': '꧔', '5': '꧕', '6': '꧖', '7': '꧗', '8': '꧘', '9': '꧙', '0': '꧐',  
     '.': '꧉', ',': '꧈', ']': '꧊', '[': '꧋',
-    '(': '꧌', ')': '꧍', '<': '꧁', '>': '꧂', ':': '꧇', '*': '꧄', 
+    '(': '꧌', ')': '꧍', '<': '꧁', '>': '꧂', ':': '꧇', '*': '꧄', '#' : '꧄꧐꧄', '$' : '꧅', '%' : '꧄‍'
 }
 penyeragaman_vokal = {
     'â': 'ā',
@@ -226,8 +226,6 @@ def hukum_sandi(text):
     # Regex penyeragaman vokal
     text = re.sub('|'.join(re.escape(k) for k in penyeragaman_vokal.keys()), 
                 lambda match: penyeragaman_vokal[match.group(0)], text)
-    # Ubah vokal kapital jadi kecil jika didahului spasi (bukan \n) atau tanda -
-    text = re.sub(r'(?<=[ \t\r\f\v\-])([AEIOU])', lambda m: m.group(1).lower(), text)
     
     text = re.sub(r'\u200cṙyy', '\u200cꦪꦾꦂ', text, flags=re.MULTILINE) 
     text = re.sub(r'akhir', 'ꦄꦏ꦳ꦶꦂ', text, flags=re.IGNORECASE)
