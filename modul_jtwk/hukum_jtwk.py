@@ -2,7 +2,7 @@ import re
 from modul_jtwk.kamus_jtwk import substitutions
 
 # Daftar vokal, konsonan, dan simbol yang digunakan untuk regex
-daftar_vokal = 'a', 'ā', 'i', 'ī', 'u', 'ū', 'e', 'è', 'o', 'ō', 'ö', 'ŏ', 'ĕ', 'ꜷ', 'ꜽ', 'â', 'î', 'ê', 'û', 'ô'
+daftar_vokal = 'a', 'ā', 'i', 'ī', 'u', 'ū', 'e', 'è', 'é', 'o', 'ō', 'ö', 'ŏ', 'ĕ', 'ꜷ', 'ꜽ', 'â', 'î', 'ê', 'û', 'ô'
 vokal_regex = ''.join(daftar_vokal)
 daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
 semi_vokal = 'lwyr'
@@ -10,8 +10,6 @@ daftar_tidak_digandakan = {
     'n', 'ṅ', 'ṇ', 'h', 'ṣ', 's', 'c', 'ꞓ', 'r', 'ṙ', 'ṫ', 'ŧ', 'ꝑ', 'ǥ', 'ɉ', 'ƀ', 'ꝁ', 'k', 'ḍ', 'ḋ', 'd', 'đ',
 }
 zwnj = "\u200C"
-
-
 # Fungsi untuk menambahkan ZWNJ di awal kata
 def add_zwnj_awal_kata(text, pattern, replacement):
     def replacer(m):
@@ -21,44 +19,8 @@ def add_zwnj_awal_kata(text, pattern, replacement):
         return replacement + m.group(0)
     return re.sub(pattern, replacer, text, flags=re.IGNORECASE)
 
-def ubah_ry_ri_awal_kata(teks):
-    hasil = []
-    ubah = False
-    baris_metrum_berikutnya = False
-
-    baris_list = teks.splitlines()
-    i = 0
-    while i < len(baris_list):
-        baris = baris_list[i]
-
-        if baris.startswith('<'):
-            # Cek baris berikutnya apakah metrum dengan ⏑ di awal
-            if i + 1 < len(baris_list) and baris_list[i + 1].strip().startswith('⏑'):
-                ubah = False
-            else:
-                ubah = True
-        elif baris.strip().startswith('–'):
-            ubah = True
-        elif baris.strip().startswith('<'):
-            ubah = False
-
-        if ubah:
-            # Ganti "ry"/"ri" di awal kata (case insensitive)
-            def ganti_awalan(match):
-                huruf_pertama = match.group(1)
-                return huruf_pertama + 'ī'
-            baris = re.sub(r'\b([Rr])[YyIi]', ganti_awalan, baris)
-
-        hasil.append(baris)
-        i += 1
-
-    return "\n".join(hasil)
-
 # Fungsi untuk memperbaiki kata baku
 def kata_baku(text):
-    #text = ubah_ry_ri_awal_kata(text)
-    #text = proses_ry_metrum(text)
-    
     # Menyesuaikan huruf vokal pada awal kata
     text = re.sub(rf'(^|\n)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
     #text = text.replace("\n", "\u200C\n")
@@ -95,8 +57,8 @@ def hukum_aksara(text):
     # 'ṅs': 'ṅṣ',
     'jn': 'jñ',
     'rs': 'ṙṣ',
-    'rĕ': 'ṛĕ',
-    'rö': 'ṝö',
+    #'rĕ': 'ṛĕ',
+    #'rö': 'ṝö',
     'ṣt': 'ṣṭ',
     'sṭ': 'ṣṭ',
     'ṣŧ': 'ṣṫ',
@@ -176,7 +138,7 @@ def hukum_ṙ(text):
     # ganti 'r' jadi ṙ jika diikuti spasi atau tanda hubung
     text = re.sub(r'(?<=\w)r(?=[\s-])', 'ṙ', text)
 
-        # Daftar penggantian spesial
+    # Daftar penggantian spesial
     penggantian_spesial = {
         r'ṙs': 'ṙṣ',
         r'ṛs': 'ṛṣ',
@@ -184,8 +146,8 @@ def hukum_ṙ(text):
         r'rĕs': 'ṛĕṣ',
         r'ṙṣik\b': 'ṙsik',
         r'ṙṇny': 'ṙny',
-        r'aṙyya': 'arya',
-        r'ṙyyakĕn': 'ryakĕn',
+        r'aṙyya\b': 'arya',
+        r'ṙyyakĕn\b': 'ryakĕn',
         r'ṙmmu ': 'ṙmu ',
         r'[^\S\n]+lĕ': ' ‌lĕ',     #zwnj lĕ untuk mencegah lĕ
         r'r\u200c': 'ṙ', #r+zwnj agar tidak menjadi ra pangku
