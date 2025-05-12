@@ -57,10 +57,10 @@ def ganti_hukum_r(text):
 
 
     # Ganti 'w' di akhir kata menjadi 'u'
-    text = re.sub(r'w\b', 'u', text)
+    #text = re.sub(r'w\b', 'u', text)
 
     # Ganti 'y' di akhir kata menjadi 'i'
-    text = re.sub(r'y\b', 'i', text)
+    #text = re.sub(r'y\b', 'i', text)
 
     # Kombinasi sandhi vokal yang disederhanakan
     #text = re.sub(r'[aā]\s+[aā]', 'â', text, flags=re.IGNORECASE)
@@ -81,9 +81,9 @@ def ganti_hukum_r(text):
     #text = re.sub(r'\u200D', r'', text)
 
     # Untuk bahasa jawa kuno
-    text = re.sub(r'ṙṇ', 'rn', text)
-    text = re.sub(r'rṇn', 'rn', text)
-    text = re.sub(r'rṇṇ', 'rṇ', text)
+    #text = re.sub(r'ṙṇ', 'rn', text)
+    #text = re.sub(r'rṇn', 'rn', text)
+    #text = re.sub(r'rṇṇ', 'rṇ', text)
 
     #paksa jadi huruf kecil
     text = re.sub(r'(?<!\u200C)([A-Z])', lambda m: m.group(1).lower(), text)

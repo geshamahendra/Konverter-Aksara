@@ -26,6 +26,9 @@ substitutions = {
     r'\bnir(' + konsonan + ')': 'nir\u200c\\1', #nir+zwnj
     #r'durnaya': 'dur\u200cnaya',
     #r'\b(a|A)ji\b':'‌Aji',
+    #--akhiran
+    r'hku\b': 'ḥku', r'hta\b': 'ḥta',
+    r'rku\b': 'ṙ\u200cku',
 
 
     r'(s|ś)unya': 'śūnya', r'(?i)budi': 'budđi', r'(?i)purna': 'pūrna',

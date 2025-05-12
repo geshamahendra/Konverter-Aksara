@@ -66,7 +66,8 @@ def replace_characters(text, mode):
     text = replace_numbers_with_colon(text)
     #Baris metrum
     #text = "\n".join(process_baris(baris) for baris in text.splitlines())
-    text = tandai_vokal_pendek_dalam_pasangan(text)
+    if mode in {'kakawin'}:
+        text = tandai_vokal_pendek_dalam_pasangan(text)
     #finalisasi
     text = finalisasi(text)
 

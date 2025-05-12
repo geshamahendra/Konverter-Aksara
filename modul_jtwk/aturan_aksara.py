@@ -302,6 +302,7 @@ def finalisasi(hasil):
     hasil = hasil.replace("ꦈꦴꦁ", "ꦈꦴꦀ")
     hasil = hasil.replace("꧀ꦗ꧀ꦚ", "꧀\u200Dꦗ꧀ꦚ")
     hasil = hasil.replace("ꦫ꧀ꦮ", "ꦫ꧀ꦮ\u200D")
+    #hasil = hasil.replace("ꦔ꧀ꦲ", "ꦔ꧀ꦲ‍")
     hasil = hasil.replace("-", "")
     hasil=ganti_tanda_metrum(hasil)
 

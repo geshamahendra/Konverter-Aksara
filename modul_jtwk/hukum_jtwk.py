@@ -100,7 +100,6 @@ def hukum_aksara(text):
     'ṣt': 'ṣṭ',
     'sṭ': 'ṣṭ',
     'ṣŧ': 'ṣṫ',
-    'sŧ': 'ṣṫ',
 }
 
     for pattern, replacement in replacements.items():
@@ -117,7 +116,7 @@ def hukum_sigeg(text):
     text = re.sub(r'\s+ŋ\s+h', ' ṅ h', text, flags=re.IGNORECASE)
 
     #tambah zwnj depan kata
-    for pattern in [r'\bww', r'\byw', r'wru', r'\brw', r'lwir' , r'\byan\b', r'\btan\b', r'\bṅw', r'\bmw', r'\bstr', r'\brkw', r'\b(riṅ|ring|riŋ|ri)', r'\bdwa\b']:#, r'\bry\b' #r'\blwir'
+    for pattern in [r'\bww', r'\byw', r'wru', r'\brw', r'lwir' , r'\byan\b', r'\btan\b', r'\bṅw', r'\bmw', r'\bstr', r'\brkw', r'\b(riṅ|ring|riŋ|ri)', r'\bdwa\b', r'\bya\b', r'\bta(?:n|ṅ|ŋ)?\b']:#, r'\bry\b' #r'\blwir'
         text = add_zwnj_awal_kata(text, pattern, '\u200C')
     
     #khusus duhka
@@ -187,6 +186,7 @@ def hukum_ṙ(text):
         r'ṙṇny': 'ṙny',
         r'aṙyya': 'arya',
         r'ṙyyakĕn': 'ryakĕn',
+        r'ṙmmu ': 'ṙmu ',
         r'[^\S\n]+lĕ': ' ‌lĕ',     #zwnj lĕ untuk mencegah lĕ
         r'r\u200c': 'ṙ', #r+zwnj agar tidak menjadi ra pangku
         r'ṙ\u200c': 'ṙ'
@@ -212,8 +212,6 @@ def finalisasi(text):
     for huruf, ganti in [('r', 'ṙ'), ('h', 'ḥ'), ('ṅ', 'ŋ')]:
         text = re.sub(rf'{huruf}(?=nṇ?y[{vokal_regex}])', ganti, text, flags=re.IGNORECASE)
 
-    #zwnj ṅ ḥ untuk nghing
-    text = re.sub(r'[ṅh]\u200c', lambda m: 'ŋ' if m.group(0) == 'ṅ\u200c' else 'ḥ', text)
     #sigeg bertemu sigeg
     text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙ ṅ', text)
     text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥ ṅ', text)
