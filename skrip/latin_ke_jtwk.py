@@ -6,9 +6,10 @@ import os
 root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(root_path)
 
-from modul_jtwk.hukum_jtwk import kata_baku, hukum_aksara, hukum_sigeg, hukum_ṙ, finalisasi 
-from modul_jtwk.replacements_jtwk import replacements, replace_numbers_with_colon, tandai_vokal_pendek_dalam_pasangan, hitung_jumlah_metrum #process_baris, 
 from modul_jtwk.mode_jtwk import mode_normal, mode_lampah, mode_sriwedari, mode_modern_lampah, mode_cerita, mode_sanskrit, mode_satya, mode_kakawin
+from modul_jtwk.hukum_jtwk import kata_baku, hukum_aksara, hukum_sigeg, hukum_ṙ, finalisasi 
+from modul_jtwk.replacements_jtwk import replacements, replace_numbers_with_colon
+from modul_jtwk.hukum_metrum import tandai_vokal_pendek_dalam_pasangan#, debug_metrum_pada_puisi, hitung_jumlah_metrum, aplikasikan_metrum_dan_tandai_vokal #process_baris, 
 
 def replace_characters(text, mode):
 
