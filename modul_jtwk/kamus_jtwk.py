@@ -1,11 +1,17 @@
 import re
 daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
 konsonan = '[' + re.escape(daftar_konsonan) + ']'
+huruf_dikecualikan = "ymg"
+
+daftar_konsonan_tanpa_dikecualikan = daftar_konsonan
+for huruf in huruf_dikecualikan:
+    daftar_konsonan_tanpa_dikecualikan = daftar_konsonan_tanpa_dikecualikan.replace(huruf, '')
 zwnj = "\u200C"
 
 substitutions = {
     #Aksara Suci
-    r'\bOṃ': 'Ōṃ', r'\b(o|O)m\b': '\u200COm\u200C', 
+    r'\bOṃ': 'Ōṃ', 
+    r'(o|O)m\b': '\u200cOm\u200c', 
     r'Ai': 'Ꜽ', r'Au': 'Ꜷ',
     r'ai': 'ꜽ', r'au': 'ꜷ', 
     r'ng': 'ṅ',
@@ -23,7 +29,8 @@ substitutions = {
     r'sa(ng|ṅ)s': 'saŋs',
     r'sa(ng|ṅ)ṣ': 'saŋṣ',
     r'sa(ng|ṅ)k': 'saŋk',
-    r'\bnir(' + konsonan + ')': 'nir\u200c\\1', #nir+zwnj
+    r'\bnir([' + daftar_konsonan_tanpa_dikecualikan + '])': 'nir\u200c\\1', #nir+zwnj
+    r'\bdur([' + daftar_konsonan_tanpa_dikecualikan + '])': 'dur\u200c\\1', #durr+zwnj
     #r'durnaya': 'dur\u200cnaya',
     #r'\b(a|A)ji\b':'‌Aji',
     #--akhiran
@@ -33,16 +40,26 @@ substitutions = {
 
     r'(s|ś)unya': 'śūnya', r'(?i)budi': 'budđi', r'(?i)purna': 'pūrna',
     r'tir(t|ŧ)a': 'tīṙŧa', r'(?i)ningrat': 'niṅrāt', r'\bsabda\b': 'śabda',
-    r'purwa': 'pūrwa', r'\bsirna\b': 'śīrna', r'\bpuja\b': 'pūjā', r'rupa\b': 'rūpa',
+    r'purwa': 'pūrwa', r'\bsirna\b': 'śīrna', 
     r'\bmurti\b': 'mūrti', r'(ś|s)ighra': 'śīghra', r'prapta': 'prāpta',
     r'\bmus(t|ṭ)i': 'muṣṭi', r'na(th|ŧ)a': 'nāŧa',
-    r'prabu': 'praƀu', r'(ṅ|ng)uni': 'ṅūni', r'\bmèga\b': 'mèǥa', r'\brat\b': 'rāt',
+    r'prabu': 'praƀu', 
+    r'\bmèga\b': 'mèǥa', r'\brat\b': 'rāt',
     r'\bbra\b': 'ƀra', r'\b(bh|ƀ)a(t|ṭ)ar': 'ƀaṭār', r'\bsampun\b': 'sāmpun',
-    r'(?i)puspa': 'puṣpa', r'(s|ś)astra': 'śāstra', r'\b(s|ś)arira\b': 'śarīra',
-    r'\braja\b': 'rāja', r'\bwirya': 'wīrya', r'nagara': 'nāgara', r'suksma': 'sūkṣma',
+    r'(?i)puspa': 'puṣpa', r'(s|ś)astra': 'śāstra', 
+    r'\bwirya': 'wīrya',  
+    r'suksma': 'sūkṣma',
     r'\bmaha\b': 'mahā', r'\bmahar(s|ṣ)i\b': 'mahāṙṣi', r'\biswara': 'iśwara',
     r'ramya': 'rāmya', r'(s|ś)iǥra': 'śīǥra', r'saksat': 'sākṣāt',
     r'datĕṅ': 'ḍatĕṅ', 
+
+    #bisa merubah wirama
+    #r'(ṅ|ng)uni': 'ṅūni',
+    #r'nagara': 'nāgara',
+    #r'\braja\b': 'rāja',
+    #r'\b(s|ś)arira\b': 'śarīra',
+    #r'\bpuja\b': 'pūjā', r'rupa\b': 'rūpa', 
+
 
     #backsplash buat pemutus
     r'\\\|': '\u200D',  # input literal \| jadi ZWJ

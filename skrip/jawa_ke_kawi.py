@@ -86,6 +86,7 @@ def tarung(text):
 
 def konversi_aksara_ke_kawi(text, daftar_konversi):
     text = re.sub(r'(?<=\b)ꦪꦾꦂ', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
+    text = re.sub(r'ꦉ\u200Cꦴ', '𑼋', text, flags=re.IGNORECASE)
 
     hasil = []
     for karakter in text:
@@ -102,6 +103,7 @@ def konversi_aksara_ke_kawi(text, daftar_konversi):
     text = re.sub(r'𑽂\u200C', '𑽁\u200C', text)
     text = re.sub(r'𑼫𑽂𑼫𑼂\u200D', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
     text = re.sub(r'𑼬𑽂𑼫', '𑼬𑽂𑼫\u200D', text, flags=re.IGNORECASE)
+    text = re.sub(r'𑽂\u200D', '𑽁\u200D', text)
     return text
 
 

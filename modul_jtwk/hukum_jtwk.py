@@ -9,15 +9,39 @@ semi_vokal = 'lwyr'
 daftar_tidak_digandakan = {
     'n', 'ṅ', 'ṇ', 'h', 'ṣ', 's', 'c', 'ꞓ', 'r', 'ṙ', 'ṫ', 'ŧ', 'ꝑ', 'ǥ', 'ɉ', 'ƀ', 'ꝁ', 'k', 'ḍ', 'ḋ', 'd', 'đ',
 }
+vokal_pendek = 'aiuĕAIUĔ'
+
 zwnj = "\u200C"
-# Fungsi untuk menambahkan ZWNJ di awal kata
-def add_zwnj_awal_kata(text, pattern, replacement):
-    def replacer(m):
+# Fungsi untuk menambahkan ZWNJ di awal kata jika didepannya konsonan
+def add_zwnj_awal_kata_bulk(text, patterns, replacement, daftar_konsonan):
+    def is_prev_char_konsonan(text, pos):
+        # Lewati spasi/tab/newline ke belakang hingga ketemu huruf bukan spasi
+        i = pos - 1
+        while i >= 0 and text[i] in ' \t\r\n':
+            i -= 1
+        return i >= 0 and text[i] in daftar_konsonan
+
+    combined_pattern = '|'.join(f'(?:{p})' for p in patterns)
+    regex = re.compile(combined_pattern, flags=re.IGNORECASE)
+
+    result = []
+    last_idx = 0
+
+    for m in regex.finditer(text):
         start = m.start()
+        result.append(text[last_idx:start])
+
         if start == 0 or text[start - 1] == '\n':
-            return m.group(0)  # Jangan ubah kalau di awal baris
-        return replacement + m.group(0)
-    return re.sub(pattern, replacer, text, flags=re.IGNORECASE)
+            result.append(m.group(0))
+        elif is_prev_char_konsonan(text, start):
+            result.append(replacement + m.group(0))
+        else:
+            result.append(m.group(0))
+
+        last_idx = m.end()
+
+    result.append(text[last_idx:])
+    return ''.join(result)
 
 # Fungsi untuk memperbaiki kata baku
 def kata_baku(text):
@@ -31,6 +55,32 @@ def kata_baku(text):
     text = re.sub(r'([yw])\b[^\S\n]+([AEIOUĀĪŪĒŌÖŎĔꜶꜸ])', lambda m: m.group(1) + ' ' + m.group(2).lower(), text)
 
     return(text)
+
+#Fungsi untuk mengubah kapital
+mapping_vokal = {
+    'A': 'a',
+    'Ā': 'ā',
+    'Â': 'â',
+    'I': 'i',
+    'Ī': 'ī',
+    'Î': 'î',
+    'U': 'u',
+    'Ū': 'ū',
+    'Û': 'û',
+    'O': 'o',
+    'Ō': 'ō',
+    'Ô': 'ô',
+    'E': 'e',
+    'Ê': 'ê',
+    'É': 'é',
+    'È': 'è',
+    'Ꜽ': 'ꜽ',
+    'Ꜷ': 'ꜷ'
+    }
+def lower_capital_vowels(match):
+    capital_vowel = match.group(1)
+    return mapping_vokal.get(capital_vowel, capital_vowel.lower()) # Menggunakan .lower() sebagai fallback
+
 
 # Fungsi untuk mengubah hukum aksara
 def hukum_aksara(text):
@@ -54,11 +104,8 @@ def hukum_aksara(text):
     'ꝁs': 'ꝁṣ',
     'gs': 'gṣ',
     'ǥs': 'ǥṣ',
-    # 'ṅs': 'ṅṣ',
     'jn': 'jñ',
     'rs': 'ṙṣ',
-    #'rĕ': 'ṛĕ',
-    #'rö': 'ṝö',
     'ṣt': 'ṣṭ',
     'sṭ': 'ṣṭ',
     'ṣŧ': 'ṣṫ',
@@ -70,16 +117,20 @@ def hukum_aksara(text):
 
 # Fungsi untuk mengatur hukum sigeg
 def hukum_sigeg(text):
-    text = re.sub(r'ṅ\b', 'ŋ', text)
-    text = re.sub(r'h(?!\w)', 'ḥ', text, flags=re.IGNORECASE)  
-    text = re.sub(r'ng(?=\w)', 'ṅ', text, flags=re.IGNORECASE)    
-    text = re.sub(r'ng(?!\w)', 'ŋ', text, flags=re.IGNORECASE)
+    text = re.sub(r'ng', 'ṅ', text, flags=re.IGNORECASE)
+    text = re.sub(r'(?<!^)(?<!\n)ṅ\b', 'ŋ', text)
+    text = re.sub(r'(?<!^)(?<!\n)h\b', 'ḥ', text)    
+    
     #kasus " ṅ h..."
     text = re.sub(r'\s+ŋ\s+h', ' ṅ h', text, flags=re.IGNORECASE)
+    text = re.sub(r'\s+ŋ\s+w', ' ṅw', text, flags=re.IGNORECASE)
 
     #tambah zwnj depan kata
-    for pattern in [r'\bww', r'\byw', r'wru', r'\brw', r'lwir' , r'\byan\b', r'\btan\b', r'\bṅw', r'\bmw', r'\bstr', r'\brkw', r'\b(riṅ|ring|riŋ|ri)', r'\bdwa\b', r'\bya\b', r'\bta(?:n|ṅ|ŋ)?\b']:#, r'\bry\b' #r'\blwir'
-        text = add_zwnj_awal_kata(text, pattern, '\u200C')
+    patterns = [
+    r'\bww', r'\byw', r'wr', r'\brw', r'lwi(r|ṙ)', r'\byan\b', r'\btan\b',
+    r'\bṅw', r'\bmw', r'\bstr', r'\brkw', r'\b(riṅ|ring|riŋ|ri)',
+    r'\bdwa\b', r'\bya\b', r'[' + daftar_konsonan + r']ta(?:n|ṅ|ŋ)?\b']
+    text = add_zwnj_awal_kata_bulk(text, patterns, '\u200C', daftar_konsonan) 
     
     #khusus duhka
     text = re.sub(r'(duhk|duhꝁ)([' + vokal_regex + '])',lambda m: ('duḥk' if m.group(1) == 'duhk' else 'duḥꝁ') + m.group(2), text)
@@ -142,25 +193,25 @@ def hukum_ṙ(text):
     penggantian_spesial = {
         r'ṙs': 'ṙṣ',
         r'ṛs': 'ṛṣ',
-        r'res': 'ṛĕṣ',
-        r'rĕs': 'ṛĕṣ',
+        #r'res': 'ṛĕṣ',
+        #r'rĕs': 'ṛĕṣ',
         r'ṙṣik\b': 'ṙsik',
         r'ṙṇny': 'ṙny',
-        r'aṙyya\b': 'arya',
+        r'aṙyy(a|ā)': r'ary\1',
+        r'āścary' : r'āścaṙyy',
         r'ṙyyakĕn\b': 'ryakĕn',
+        r'uṙww': 'urw',
         r'ṙmmu ': 'ṙmu ',
         r'[^\S\n]+lĕ': ' ‌lĕ',     #zwnj lĕ untuk mencegah lĕ
         r'r\u200c': 'ṙ', #r+zwnj agar tidak menjadi ra pangku
-        r'ṙ\u200c': 'ṙ'
+        r'ṙ\u200c': 'ṙ',
+        r'^ŋ':r'ṅ'
+        #r'([' + vokal_regex + r'])m\b': r'\1m\u200c'
     }
 
     # Terapkan semua penggantian spesial
     for pola, ganti in penggantian_spesial.items():
         text = re.sub(pola, ganti, text)
-
-    VOWEL_PENDEK = 'aiuĕAIUĔ'
-    # regex substitution
-    #text = re.sub(r'(?<=[%s])ṙ([%s])\1' % (VOWEL_PENDEK, daftar_konsonan), r'r\1', text)
 
     return(text)
 
@@ -177,10 +228,10 @@ def finalisasi(text):
     #sigeg bertemu sigeg
     text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙ ṅ', text)
     text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥ ṅ', text)
+    text = re.sub(r'^[^\S\n]*ŋ', r'ṅ', text, re.MULTILINE)
     #ubah ṙ jadi r diujung baris
     text = re.sub(r'ṙ[ \t]*\n', 'r\n', text)
     text = re.sub(r'ry\s+\u200c', r'ry ', text)
     # Ubah vokal kapital jadi kecil jika didahului spasi (bukan \n) atau tanda -
-    text = re.sub(r'(?<=[ \t\r\f\v\-])([AEIOU])', lambda m: m.group(1).lower(), text)
-    
+    text = re.sub(r'(?<=[ \t\r\f\v\-])([AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ])', lower_capital_vowels, text)
     return(text)

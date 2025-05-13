@@ -116,7 +116,7 @@ def ganti_tanda_metrum(hasil):
 
 def insert_zwnj_between_consonants(text):
     # Pola pencocokan: konsonan + spasi + konsonan + konsonan
-    pattern = r'([bcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([ybcdfghjklmnqtvwzɉḋḍŧṭñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([ṛḷḹbcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅŋꝁǥꞓƀśʰ])'
+    pattern = r'([bcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([ybcdfghjklmnqtvwzɉḋḍŧṭñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([ḷḹbcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅŋꝁǥꞓƀśʰ])'
 
     # Karakter ZWNJ
     zwnj = '\u200C'
@@ -136,6 +136,11 @@ def insert_zwnj_between_consonants(text):
     # Lakukan substitusi pada teks
     return re.sub(pattern, replace_consonants, text)
 
+def hapus_ulang_zw(text, char):
+    while f"{char}{char}" in text:
+        text = text.replace(f"{char}{char}", char)
+    return text
+    
 #Aturan sandi vokal
 vowel_merge_rules_with_space = [
     # hanya untuk kasus vokal dengan spasi antaranya
@@ -184,21 +189,7 @@ def insert_h_between_unmerged_vowels(text):
                     return match.group(0)  # Sudah ditangani, jangan ubah
         return f'{v1}h{v2}'
     return re.sub(pattern, repl, text)
-def insert_zwnj_and_capitalize_second_vowel(text):
-    vowels = 'aāiīuūèéĕeëoöōŏꜽꜷ'
-    pattern = rf'([{vowels}])[^\S\n]*([{vowels}])'
 
-    def repl(match):
-        v1, v2 = match.group(1), match.group(2)
-        # Jangan ubah jika sudah diubah oleh aturan vowel_merge_rules
-        for ruleset in (vowel_merge_rules_with_space, vowel_merge_rules_no_space, vowel_merge_rules):
-            for prefix, _, allowed in ruleset:
-                if v1 == prefix and v2 in allowed:
-                    return match.group(0)  # Sudah ditangani, jangan ubah
-        # Sisipkan ZWNJ dan kapitalisasi vokal kedua
-        return f'{v1}\u200C{v2.upper()}'
-
-    return re.sub(pattern, repl, text)
 def apply_vowel_merges_with_space(text, rules):
     for prefix, output_prefix, vowels in rules:
         for v in vowels:
@@ -261,7 +252,6 @@ def hukum_sandi(text):
     text = apply_vowel_merges_no_space(text, vowel_merge_rules_no_space)
     text = apply_vowel_merges(text, vowel_merge_rules)
     #text = insert_h_between_unmerged_vowels(text)
-    #text = insert_zwnj_and_capitalize_second_vowel
     
     # Untuk beberapa kasus khusus
     vokal = "aāiīuūeèoōöŏĕꜷꜽAĀIĪUŪEÈOŌÖŎĔꜶꜼ"
@@ -277,7 +267,9 @@ def hukum_sandi(text):
     text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙṅ', text)
     text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥṅ', text)
 
-    text=insert_zwnj_between_consonants(text)
+    text = insert_zwnj_between_consonants(text)
+    # Gabungkan ZWNJ dan ZWJ yang berulang menjadi satu saja
+    text = re.sub(r"^(?:\u200D|\u200C)+", "", text,flags=re.MULTILINE)
     return text
 
 def finalisasi(hasil):
@@ -295,15 +287,21 @@ def finalisasi(hasil):
     #tambahkan spasi antar metrum
     hasil = re.sub(r'[^\S\r\n]*([|–⏑⏓])[^\S\r\n]*', r' \1 ', hasil)  # hilangkan ZWNJ dari grup
     hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)  # bersihkan spasi berlebih tapi tetap pertahankan newline
-    hasil = re.sub(r'⏒꧇', '⏒ ꧇', hasil)
     
-    hasil = hasil.replace("꧀ꦪ", "ꦾ") #paksa pasangan ya menjadi pengkal
-    hasil = hasil.replace("꧀ꦫ", "ꦿ") #paksa pasangan ya menjadi pengkal
-    hasil = hasil.replace("ꦈꦴꦁ", "ꦈꦴꦀ")
-    hasil = hasil.replace("꧀ꦗ꧀ꦚ", "꧀\u200Dꦗ꧀ꦚ")
-    hasil = hasil.replace("ꦫ꧀ꦮ", "ꦫ꧀ꦮ\u200D")
-    #hasil = hasil.replace("ꦔ꧀ꦲ", "ꦔ꧀ꦲ‍")
-    hasil = hasil.replace("-", "")
-    hasil=ganti_tanda_metrum(hasil)
+    penggantian_final = {
+        "꧀ꦪ": "ꦾ",
+        "꧀ꦫ": "ꦿ",
+        "ꦈꦴꦁ": "ꦈꦴꦀ",
+        "꧀ꦗ꧀ꦚ": "꧀\u200Dꦗ꧀ꦚ",
+        "ꦫ꧀ꦮ": "ꦫ꧀ꦮ\u200D",
+        r'ꦉꦴ': 'ꦉ\u200Cꦴ',
+        '⏒꧇': '⏒ ꧇'
+    }
 
+    for cari, ganti in penggantian_final.items():
+        hasil = hasil.replace(cari, ganti)
+        
+    hasil=ganti_tanda_metrum(hasil)
+    hasil = hapus_ulang_zw(hasil, "\u200C")
+    hasil = hapus_ulang_zw(hasil, "\u200D")
     return hasil
