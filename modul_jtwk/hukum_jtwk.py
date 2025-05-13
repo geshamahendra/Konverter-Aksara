@@ -2,8 +2,8 @@ import re
 from modul_jtwk.kamus_jtwk import substitutions
 
 # Daftar vokal, konsonan, dan simbol yang digunakan untuk regex
-daftar_vokal = 'a', 'ā', 'i', 'ī', 'u', 'ū', 'e', 'è', 'é', 'o', 'ō', 'ö', 'ŏ', 'ĕ', 'ꜷ', 'ꜽ', 'â', 'î', 'ê', 'û', 'ô'
-vokal_regex = ''.join(daftar_vokal)
+daftar_vokal = ['a', 'ā', 'i', 'ī', 'u', 'ū', 'e', 'è', 'é', 'o', 'ō', 'ö', 'ŏ', 'ĕ', 'ꜷ', 'ꜽ', 'â', 'î', 'ê', 'û', 'ô']
+vokal_regex = "(" + "|".join(daftar_vokal) + ")"
 daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
 semi_vokal = 'lwyr'
 daftar_tidak_digandakan = {
@@ -81,6 +81,12 @@ def lower_capital_vowels(match):
     capital_vowel = match.group(1)
     return mapping_vokal.get(capital_vowel, capital_vowel.lower()) # Menggunakan .lower() sebagai fallback
 
+#hukum aksara suci
+def replace_vokal_m(match):
+    vokal_kecil = match.group(1)
+    mm = match.group(2)
+    vokal_kapital = vokal_kecil.upper()
+    return f"\u200C{vokal_kapital}{mm}\u200C"
 
 # Fungsi untuk mengubah hukum aksara
 def hukum_aksara(text):
@@ -232,6 +238,10 @@ def finalisasi(text):
     #ubah ṙ jadi r diujung baris
     text = re.sub(r'ṙ[ \t]*\n', 'r\n', text)
     text = re.sub(r'ry\s+\u200c', r'ry ', text)
+
+    #aksara suci
+    text = re.sub(rf'\b{vokal_regex}(m|ṃ)\b', replace_vokal_m, text)
+
     # Ubah vokal kapital jadi kecil jika didahului spasi (bukan \n) atau tanda -
     text = re.sub(r'(?<=[ \t\r\f\v\-])([AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ])', lower_capital_vowels, text)
     return(text)

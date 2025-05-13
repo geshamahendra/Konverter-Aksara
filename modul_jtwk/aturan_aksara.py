@@ -85,7 +85,7 @@ simbol = {
     '.': '꧉', ',': '꧈', ']': '꧊', '[': '꧋',
     '(': '꧌', ')': '꧍', 
     '<': '꧁', '>': '꧂',
-    '{': '꧁', '}': '꧂', 
+    '{': '꧁', '}': '꧂', # untuk sub pupuh
     ':': '꧇', '*': '꧄', '@': '꧄', '#' : '꧄꧐꧄', '$' : '꧅', '%' : '꧄‍'
 }
 penyeragaman_vokal = {
@@ -144,7 +144,7 @@ def hapus_ulang_zw(text, char):
         text = text.replace(f"{char}{char}", char)
     return text
     
-#Aturan sandi vokal
+#Daftar sandi vokal
 vowel_merge_rules_with_space = [
     # hanya untuk kasus vokal dengan spasi antaranya
     ('a', 'aw', ['u', 'i']),
@@ -179,20 +179,7 @@ vowel_merge_rules = [
     ('è', 'èw', ['ū','o','u']),
 ]
 
-def insert_h_between_unmerged_vowels(text):
-    vowels = 'aāiīuūèéĕeëoöōŏꜽꜷ'
-    pattern = rf'([{vowels}])[^\S\n]*([{vowels}])'
-    def repl(match):
-        v1, v2 = match.group(1), match.group(2)
-        # Jangan ubah jika sudah diubah oleh aturan vowel_merge_rules
-        # Cek apakah kombinasi ini pernah ditangani
-        for ruleset in (vowel_merge_rules_with_space, vowel_merge_rules_no_space, vowel_merge_rules):
-            for prefix, _, allowed in ruleset:
-                if v1 == prefix and v2 in allowed:
-                    return match.group(0)  # Sudah ditangani, jangan ubah
-        return f'{v1}h{v2}'
-    return re.sub(pattern, repl, text)
-
+#hukum pertemuan vokal
 def apply_vowel_merges_with_space(text, rules):
     for prefix, output_prefix, vowels in rules:
         for v in vowels:
@@ -215,6 +202,21 @@ def apply_vowel_merges(text, rules):
             text = re.sub(pattern, replacement, text)
     return text
 
+#tambahkan h pada pertemuan vokal yang tidak masuk hukum sandi
+def insert_h_between_unmerged_vowels(text):
+    vowels = 'aāiīuūèéĕeëoöōŏꜽꜷ'
+    pattern = rf'([{vowels}])[^\S\n]*([{vowels}])'
+    def repl(match):
+        v1, v2 = match.group(1), match.group(2)
+        # Jangan ubah jika sudah diubah oleh aturan vowel_merge_rules
+        # Cek apakah kombinasi ini pernah ditangani
+        for ruleset in (vowel_merge_rules_with_space, vowel_merge_rules_no_space, vowel_merge_rules):
+            for prefix, _, allowed in ruleset:
+                if v1 == prefix and v2 in allowed:
+                    return match.group(0)  # Sudah ditangani, jangan ubah
+        return f'{v1}h{v2}'
+    return re.sub(pattern, repl, text)
+
 def hukum_sandi(text):
     text = text.replace("-", " ")
     # Regex penyeragaman vokal
@@ -223,7 +225,7 @@ def hukum_sandi(text):
     
     text = re.sub(r'\u200cṙyy', '\u200cꦪꦾꦂ', text, flags=re.MULTILINE) 
     text = re.sub(r'akhir', 'ꦄꦏ꦳ꦶꦂ', text, flags=re.IGNORECASE)
-    text = re.sub(r'\brŧ', '\u200Dꦡꦂ', text)
+    text = re.sub(r'\brŧ', '\u200Cꦡꦂ', text)
 
     #cegah ya dipasangi
     pengecualian_ya = set('aāiīuūeèoōöŏĕꜷꜽlwyr')
@@ -271,6 +273,7 @@ def hukum_sandi(text):
     text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥṅ', text)
 
     text = insert_zwnj_between_consonants(text)
+
     # Gabungkan ZWNJ dan ZWJ yang berulang menjadi satu saja
     text = re.sub(r"^(?:\u200D|\u200C)+", "", text,flags=re.MULTILINE)
     return text
@@ -298,7 +301,9 @@ def finalisasi(hasil):
         "꧀ꦗ꧀ꦚ": "꧀\u200Dꦗ꧀ꦚ",
         "ꦫ꧀ꦮ": "ꦫ꧀ꦮ\u200D",
         r'ꦉꦴ': 'ꦉ\u200Cꦴ',
-        '⏒꧇': '⏒ ꧇'
+        '⏒꧇': '⏒ ꧇',
+        r'^\u200C':'',
+        r'^\u200D':'',
     }
 
     for cari, ganti in penggantian_final.items():

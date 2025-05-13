@@ -1,5 +1,7 @@
 import re
 daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
+daftar_vokal = 'a', 'ā', 'i', 'ī', 'u', 'ū', 'e', 'è', 'é', 'o', 'ō', 'ö', 'ŏ', 'ĕ', 'ꜷ', 'ꜽ', 'â', 'î', 'ê', 'û', 'ô'
+vokal_regex = ''.join(daftar_vokal)
 konsonan = '[' + re.escape(daftar_konsonan) + ']'
 huruf_dikecualikan = "ymg"
 
@@ -25,14 +27,13 @@ substitutions = {
     r'(?i)siwa': 'śīwa', r'(?i)ganesha': 'ganèśa', r'(?i)mataram': 'matāram',
 
     #aturan baku
-    r'lĕṅlĕṅ':'lĕṅ lĕṅ',
+    r'lĕṅlĕṅ':'lĕŋlĕŋ',
+    r'sa(ng|ṅ)k': 'saŋk',
     r'sa(ng|ṅ)s': 'saŋs',
     r'sa(ng|ṅ)ṣ': 'saŋṣ',
-    r'sa(ng|ṅ)k': 'saŋk',
     r'\bnir([' + daftar_konsonan_tanpa_dikecualikan + '])': 'nir\u200c\\1', #nir+zwnj
     r'\bdur([' + daftar_konsonan_tanpa_dikecualikan + '])': 'dur\u200c\\1', #durr+zwnj
-    #r'durnaya': 'dur\u200cnaya',
-    #r'\b(a|A)ji\b':'‌Aji',
+    
     #--akhiran
     r'hku\b': 'ḥku', r'hta\b': 'ḥta',
     r'rku\b': 'ṙ\u200cku',
@@ -61,11 +62,23 @@ substitutions = {
     #r'\bpuja\b': 'pūjā', r'rupa\b': 'rūpa', 
 
 
+
+    #############################################################
     #backsplash buat pemutus
     r'\\\|': '\u200D',  # input literal \| jadi ZWJ
     r'\\': '\u200C',  # input literal \\ jadi ZWNJ
     r'!': '\u200C',
     #r'' : ''
+
+    #Pembalik layar-mahaprana
+    r'(ṙ|r)kk': r'rk', r'(ṙ|r)kꝁ': r'rꝁ',
+    r'(ṙ|r)ṭṫ': r'rṫ', r'(ṙ|r)pꝑ': r'rꝑ',
+    r'(ṙ|r)gǥ': r'rǥ', r'(ṙ|r)jɉ': r'rɉ',
+    r'(ṙ|r)bƀ': r'rƀ', r'(ṙ|r)ṇṇ': r'rṇ',
+    r'(ṙ|r)ṇn': r'rn', r'(ṙ|r)nn': r'rn',
+    r'(ṙ|r)dd': r'rd', r'(ṙ|r)dđ': r'rđ', 
+    r'(ṙ|r)dḍ': r'rḍ', r'(ṙ|r)dḋ': r'rḋ', 
+    r'(ṙ|r)cc': r'rc', r'(ṙ|r)cꞓ': r'rꞓ'
 }
 
 '''
