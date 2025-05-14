@@ -12,7 +12,7 @@ zwnj = "\u200C"
 
 substitutions = {
     #Aksara Suci
-    r'\bOṃ': 'Ōṃ', 
+    r'\bOṃ': '\u200cŌṃ', 
     r'(o|O)m\b': '\u200cOm\u200c', 
     r'Ai': 'Ꜽ', r'Au': 'Ꜷ',
     r'ai': 'ꜽ', r'au': 'ꜷ', 

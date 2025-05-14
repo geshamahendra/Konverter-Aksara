@@ -124,17 +124,19 @@ def hukum_aksara(text):
 # Fungsi untuk mengatur hukum sigeg
 def hukum_sigeg(text):
     text = re.sub(r'ng', 'ṅ', text, flags=re.IGNORECASE)
-    text = re.sub(r'(?<!^)(?<!\n)ṅ\b', 'ŋ', text)
+    text = re.sub(r'(?<!^)(?<!\n)ṅ\b(?!-)', 'ŋ', text)
     text = re.sub(r'(?<!^)(?<!\n)h\b', 'ḥ', text)    
     
     #kasus " ṅ h..."
-    text = re.sub(r'\s+ŋ\s+h', ' ṅ h', text, flags=re.IGNORECASE)
-    text = re.sub(r'\s+ŋ\s+w', ' ṅw', text, flags=re.IGNORECASE)
+    text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
+
+    #kasus ŋ berdiri di depan konsonan
+    text = re.sub(r"(" + f"[{daftar_konsonan}]" + r")\s+(ŋ)\s+(" + f"[{daftar_konsonan}]" + r")", r"\1 ṅ-\3", text, flags=re.IGNORECASE)
 
     #tambah zwnj depan kata
     patterns = [
     r'\bww', r'\byw', r'wr', r'\brw', r'lwi(r|ṙ)', r'\byan\b', r'\btan\b',
-    r'\bṅw', r'\bmw', r'\bstr', r'\brkw', r'\b(riṅ|ring|riŋ|ri)',
+    r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")", r'\bmw', r'\bstr', r'\brkw', r'\b(riṅ|ring|riŋ|ri)',
     r'\bdwa\b', r'\bya\b', r'[' + daftar_konsonan + r']ta(?:n|ṅ|ŋ)?\b']
     text = add_zwnj_awal_kata_bulk(text, patterns, '\u200C', daftar_konsonan) 
     
@@ -145,10 +147,8 @@ def hukum_sigeg(text):
 
 # Fungsi untuk mengubah hukum ṙ
 def hukum_ṙ(text):
-    # Bersihkan konsonan yang digandakan setelah ṙ
-    #text = re.sub(rf'(?<=[ṙ])([{daftar_konsonan}])\1+', lambda m: m.group(0) if m.group(1) in daftar_tidak_digandakan else m.group(1), text)
-    # Ubah ṙ + konsonan ganda menjadi r + satu konsonan saja (misalnya ṙjj → rj)
-    text = re.sub(r'r([' + daftar_konsonan + r'])\1', r'r\1', text)
+    # Bersihkan konsonan yang digandakan setelah ṙ/r (misalnya ṙjj → rj)
+    text = re.sub(r'[rṙ]([' + daftar_konsonan + r'])\1', r'r\1', text)
 
     # Step tambahan untuk menangani kluster seperti "gra", "kra", "dra", dll
     text = re.sub(rf'(?<=\w)r(?=([{daftar_konsonan}])([{semi_vokal}]))', 'ṙ', text)

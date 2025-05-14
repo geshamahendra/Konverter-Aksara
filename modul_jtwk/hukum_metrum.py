@@ -188,12 +188,17 @@ def aplikasikan_metrum_dan_tandai_vokal(teks):
     blok_list = re.split(r'\n\s*\n', teks.strip(), flags=re.MULTILINE)
     hasil_blok = []
     current_metrum = []
+    ada_metrum = False # Flag untuk menandai apakah ada metrum di blok sebelumnya
 
     for blok in blok_list:
         baris = blok.strip().splitlines()
+        # Modifikasi di sini untuk menyertakan { dan }
         is_metrum_blok = any(RE_METRUM_SIMBOL.search(b) for b in baris)
-        header_blok = [b for b in baris if (b.startswith("<") and ":" in b) or (b.startswith("{") and ":" in b)]
-        puisi_baris = [b for b in baris if not RE_METRUM_SIMBOL.search(b) and not (b.startswith("<") and ":" in b or b.startswith("{") and ":" in b)] # perubahan di sini
+        header_blok = [b for b in baris if (b.startswith("<") and ":" in b) or 
+                                           (b.startswith("{") and ":" in b)] # perubahan disini
+        puisi_baris = [b for b in baris if not RE_METRUM_SIMBOL.search(b) and 
+                                           not (b.startswith("<") and ":" in b or 
+                                                b.startswith("{") and ":" in b)] # perubahan disini
         metrum_baris_temp = [get_clean_metrum(b) for b in baris if RE_METRUM_SIMBOL.search(b)]
 
         hasil_blok.extend(header_blok)
@@ -201,7 +206,8 @@ def aplikasikan_metrum_dan_tandai_vokal(teks):
         if is_metrum_blok:
             current_metrum = metrum_baris_temp
             hasil_blok.extend(baris) # Sertakan kembali baris metrum dalam output
-        elif current_metrum:
+            ada_metrum = len(metrum_baris_temp) > 0 # Set flag jika ada baris metrum
+        elif ada_metrum: # Hanya proses jika ada metrum di blok sebelumnya
             jumlah_metrum = len(current_metrum)
             processed_puisi = []
             if jumlah_metrum == 1:
@@ -219,9 +225,10 @@ def aplikasikan_metrum_dan_tandai_vokal(teks):
                 processed_puisi = puisi_baris
 
             hasil_blok.extend(processed_puisi)
+            ada_metrum = False # Reset flag setelah pemrosesan
         else:
             hasil_blok.extend(puisi_baris) # Jika ini blok bait pertama dan belum ada metrum
-
+            
         hasil_blok.append("") # Tambahkan baris kosong antar blok
 
     return "\n".join(hasil_blok).strip()
@@ -258,6 +265,17 @@ def tandai_vokal_pendek_dalam_pasangan(text):
                     metrum_lines = []
                 hasil_blok.append(line)
                 current_metrum = []
+            elif line.startswith("{") and ":" in line: # perubahan disini
+                # Judul metrum ditemukan
+                if puisi_buffer:
+                    processed = proses_puisi_buffer(puisi_buffer, current_metrum)
+                    hasil_blok.extend(processed)
+                    puisi_buffer = []
+                if metrum_lines:
+                    hasil_blok.extend(metrum_lines)
+                    metrum_lines = []
+                hasil_blok.append(line)
+                current_metrum = []
             elif RE_METRUM_SIMBOL.search(line):
                 # Baris simbol metrum
                 if puisi_buffer:
@@ -279,4 +297,3 @@ def tandai_vokal_pendek_dalam_pasangan(text):
         hasil_blok.append("")
     hasil_akhir = "\n".join(hasil_blok).strip()
     return hasil_akhir
-

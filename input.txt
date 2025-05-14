@@ -1364,7 +1364,7 @@ sira saṅ Lakṣmaṇa gadgada ta dé nya*
 Aparan kita dibyarūpa mojar,
 ry apa saṅkanta amānuṣākrĕtinta,
 tamatat matakut rikèṅ alas göṅ,
-tak anon ṅ waṅ tuwi lèn anuṅ tĕka ṅké*
+tak anon ṅ-waṅ tuwi lèn anuṅ tĕka ṅké*
 
 Lalu dibya hayunta kādbhutāku,
 apa jātinta yan apsarī kunĕṅ,
@@ -2566,7 +2566,7 @@ Om sājña hé kitaṅ Rāma,
 ṅhulun ta magawé tapa,
 asiṅ sakawĕnaṅ dèṅku,
 kasatyanku hĕlĕm-hĕlĕm*
-===
+
 Kunaṅ hétuṅku mabrata,
 maṅhanākĕn kasambégan,
 utpatti bhaṭāra Wiṣṇu,
@@ -2589,7 +2589,7 @@ awak mami nīla warṇna*
 
 Tāsyasih hé kitaṅ Rāma,
 tusapi muka ni ṅhulun,
-pūrṇnī kitāntaśāpāṅkwa,
+pūrṇnā kitāntaśāpāṅkwa,
 tāryakĕn kléśa ni ṅhulun*
 
 Nā liṅ saṅ śawarī bratī,
@@ -2624,23 +2624,24 @@ padma yéka maputih tamalah-alah*
 Maithilī sira lanā inaṅĕn-aṅĕn,
 wĕt nyunĕṅ nira kunaṅ dadi manaṅis,
 glāna yar wara-warah ta ari nira*
+==
 
-Lakṣmaṇāri wulat ṅ talaga maho,
+Lakṣmaṇāri wulati ṅ talaga maho,
 bhūṣaṇa nya uni niṅ bhramara humuṅ,
 kokilomuni malon ya salaki-bi,
-hāh mahīm juga ya mèdi riṅ apasah*
+hāh mahā juga ya mèdi riṅ apasah*
 
 Padma rāmya sumĕkar paḍa manĕḍĕṅ,
-wintaṅ iṅ gagana sor ta hayu nikām,
+wintaṅ iṅ gagana sor ta hayu nikā,
 komala nya ya mawèh lara ri hati,
 śoka saṅ priyawiyoga mulati ya*
 
 Saṅ sĕḍĕṅ priyasamāgama kasukan,
 dé nikaṅ bhramara haṅsa paḍa munī,
 rāmanīya ya manohara ya mrĕdu,
-kaṛṇnaśūla ya ri saṅ priyawiraha*
+karṇnnaśūla ya ri saṅ priyawiraha*
 
-Kirṇna taṅ kusuma nitya ya marurū,
+Kīrṇna taṅ kusuma nitya ya marurū,
 dé nikaṅ manuk i pādapa masiwo,
 wwaṅ wimūḍa ta kunaṅ taman alara,
 mwaṅ ri saṅ tan aharĕp suka wirati*
@@ -2650,7 +2651,7 @@ mwaṅ manuk nya lumaré taliṅa muni,
 rūpa niṅ kusuma yānakiti hati,
 hāh ṅ Anaṅga mamanah mamarimisi*
 
-Mwanṅ ṅ ikaṅ kayu kabèh paḍa mamanah,
+Mwaṅ ṅ ikaṅ kayu kabèh paḍa mamanah,
 ronya yāmpĕs alaris ya taji tajĕm,
 pāṅ nya yéka larasa nya ya malurus,
 wruh nya yan tuju hatiṅku kĕna rujit*
@@ -2689,6 +2690,9 @@ Nā taṅis nira saṅ āryya Raghusuta,
 sandhi tībra maṅĕlih hati wipayoh,
 Rĕṣyamūka giri bhīṣaṇa masukĕt,
 nā paran nira saśoka masusupan*
+
+{Basantatilaka}:2.
+– – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓
 
 I Tatkāla yar tĕka rikaṅ giri Rĕṣyamūka,
 Sugrīwa śoka sira tībra maṅön akiṅkiṅ,
