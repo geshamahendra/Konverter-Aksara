@@ -15,11 +15,11 @@ substitutions = {
     r'\bOṃ': '\u200cŌṃ', 
     r'Ai': 'Ꜽ', r'Au': 'Ꜷ',
     r'ai': 'ꜽ', r'au': 'ꜷ', 
-    r'ng': 'ṅ',
+    r'ng': 'ṅ', r'\b^h' : 'ʰ',
     r'\bAwi(g|ǥ)?(h)?namastu\b': 'Awiǥnamāstu', 
     
     r'wi(s|ś)(è|e)sa': 'wiśèṣa',
-    r'r(e|è|ĕ)?sn': 'ṛĕṣṇ', r'\bkar(ĕ|e)?na': 'karĕṇa', r'\bwau\b': '\u200Dwawu',
+    r'r(e|è|ĕ)?sn': 'ṛĕṣṇ', r'\bkar(ĕ|e)na': 'karĕṇa', r'\bwau\b': '\u200Dwawu',
     r'\bwong\b': '\u200Dwwoŋ', r'\bdewa\b': 'dèwa', r'\bdewi\b': 'dèwī',
     r'\bsasangka\b': 'śaśāṅka', r'\b(s|ś)ri\b': 'śrī', r'\brsi\b': 'ṛṣi',
     r'(?i)mahadewi': 'mahādèwi', r'(?i)mahadewa': 'mahādèwa', r'(?i)wisnu': 'wiṣṇu',

@@ -108,19 +108,19 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
             if re.fullmatch(r'[^\S\n]+', text_between):
                 if met1 == '⏑' and met2 == '⏑':
                     if v1_lower in VOWEL_PENDEK and v2_lower in VOWEL_PENDEK:
-                        hasil_line[idx2] = ZWNJ + v2.upper()
+                        hasil_line[idx2] = v2.upper() # Ubah jadi kapital saja
                         i_vokal += 2
                         processed_vokal = True
                 elif v1_lower in VOWEL_PENDEK and v2_lower in VOWELS and met1 == '⏑' and met2 == '–':
-                    hasil_line[idx2] = ZWNJ + v2.upper()
+                    hasil_line[idx2] = v2.upper() # Ubah jadi kapital saja
                     i_vokal += 2
                     processed_vokal = True
                 elif v1_lower in VOWEL_PANJANG and v2_lower in VOWELS and met1 == '–' and met2 == '⏑':
-                    hasil_line[idx2] = ZWNJ + v2.upper()
+                    hasil_line[idx2] = v2.upper() # Ubah jadi kapital saja
                     i_vokal += 2
                     processed_vokal = True
                 elif v1_lower in VOWEL_PANJANG and v2_lower in VOWELS and met1 == '–' and met2 == '–':
-                    hasil_line[idx2] = ZWNJ + v2.upper()
+                    hasil_line[idx2] = v2.upper() # Ubah jadi kapital saja
                     i_vokal += 2
                     processed_vokal = True
 
@@ -140,18 +140,18 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                             if char not in ' \t\n\r\u200C\u200D' and RE_KONSONAN.search(char):
                                 konsonan_setelah_v1.append(char)
                             if len(konsonan_setelah_v1) == 1 and v1_lower in VOWEL_PENDEK:
-                                hasil_line[idx2] = ZWNJ + v2.upper()
+                                hasil_line[idx2] = v2.upper() # Ubah jadi kapital saja
                                 i_vokal += 2
                                 processed_vokal = True
-            
+
             # =================================================================
             # Bagian Logika Pemanjangan dan Pemendekan Vokal
             # =================================================================
-            if not processed_vokal and i_vokal < len(vokal_posisi):
+            if i_vokal < len(vokal_posisi):
                 idx_vokal, vokal, metrum_vokal = vokal_posisi[i_vokal]
                 vokal_lower = vokal.lower()
                 # Logika Pemanjangan Vokal
-                if vokal_lower in 'aiu' and metrum_vokal == '–':
+                if vokal_lower in 'aiuAIU' and metrum_vokal == '–':
                     next1_idx = idx_vokal + 1
                     next2_idx = idx_vokal + 2
                     if next2_idx < len(line):
@@ -164,6 +164,12 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                                 hasil_line[idx_vokal] = 'ī'  # Pemanjangan 'i' menjadi 'ī'
                             elif vokal_lower == 'u':
                                 hasil_line[idx_vokal] = 'ū'  # Pemanjangan 'u' menjadi 'ū'
+                            if vokal_lower == 'A':
+                                hasil_line[idx_vokal] = 'Ā'  # Pemanjangan 'a' menjadi 'ā'
+                            elif vokal_lower == 'I':
+                                hasil_line[idx_vokal] = 'Ī'  # Pemanjangan 'i' menjadi 'ī'
+                            elif vokal_lower == 'U':
+                                hasil_line[idx_vokal] = 'Ū'  # Pemanjangan 'u' menjadi 'ū'
 
                 # Logika Pemendekan Vokal
                 elif vokal_lower in 'āīū' and metrum_vokal == '⏑':

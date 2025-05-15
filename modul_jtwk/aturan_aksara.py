@@ -217,8 +217,45 @@ def insert_h_between_unmerged_vowels(text):
         return f'{v1}h{v2}'
     return re.sub(pattern, repl, text)
 
+zwnj = "\u200C"
+# Fungsi untuk menambahkan ZWNJ di awal kata jika didepannya konsonan
+def add_zwnj_awal_kata_bulk(text, patterns, replacement, daftar_konsonan):
+    def is_prev_char_konsonan(text, pos):
+        # Lewati spasi/tab/newline ke belakang hingga ketemu huruf bukan spasi
+        i = pos - 1
+        while i >= 0 and text[i] in ' \t\r\n':
+            i -= 1
+        return i >= 0 and text[i] in daftar_konsonan
+
+    combined_pattern = '|'.join(f'(?:{p})' for p in patterns)
+    regex = re.compile(combined_pattern, flags=re.IGNORECASE)
+
+    result = []
+    last_idx = 0
+
+    for m in regex.finditer(text):
+        start = m.start()
+        result.append(text[last_idx:start])
+
+        if start == 0 or text[start - 1] == '\n':
+            result.append(m.group(0))
+        elif is_prev_char_konsonan(text, start):
+            result.append(replacement + m.group(0))
+        else:
+            result.append(m.group(0))
+
+        last_idx = m.end()
+
+    result.append(text[last_idx:])
+    return ''.join(result)
+
 def hukum_sandi(text):
     text = text.replace("-", " ")
+
+    #agar aksara swara tidak dijadikan pasangan
+    vokal_spesial = "AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ"
+    text = re.sub(rf'(?<!^)(?<!\n)([{vokal_spesial}])',lambda m: '\u200C' + m.group(1),text)
+
     # Regex penyeragaman vokal
     text = re.sub('|'.join(re.escape(k) for k in penyeragaman_vokal.keys()), 
                 lambda match: penyeragaman_vokal[match.group(0)], text)
@@ -243,8 +280,8 @@ def hukum_sandi(text):
         text = re.sub(rf'{long_form}[^\S\n]*{long_form}', long_form, text)
         
         # Gabungan vokal kapital + kecil → vokal panjang kapital
-        text = re.sub(rf'{cap}[^\S\n]*{base}', long_cap, text)
-        text = re.sub(rf'{base}[^\S\n]*{cap}', long_cap, text)
+        #text = re.sub(rf'{cap}[^\S\n]*{base}', long_cap, text)
+        #text = re.sub(rf'{base}[^\S\n]*{cap}', long_cap, text)
 
     # Kombinasi sandhi vokal yang disederhanakan
     text = re.sub(r'[aā][^\S\n]+[iī]', 'e', text)   # a atau ā + i atau ī menjadi e
@@ -259,21 +296,42 @@ def hukum_sandi(text):
     #text = insert_h_between_unmerged_vowels(text)
     
     # Untuk beberapa kasus khusus
-    vokal = "aāiīuūeèoōöŏĕꜷꜽAĀIĪUŪEÈOŌÖŎĔꜶꜼ"
+    vokal = "aāiīuūeèoōöŏĕꜷꜽ"
     text = re.sub(rf'ḥ[^\S\n]+([{vokal}])', lambda m: f"h{m.group(1).lower()}", text)
     text = re.sub(rf'ŋ[^\S\n]+([{vokal}])', lambda m: f"ṅ{m.group(1).lower()}", text)
 
     #Menyambung vokal dan konsonan yang terpisah spasi
-    text = re.sub(r'([b-df-hj-np-tv-zḋḍŧṭñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([aāiīuūeèoōöŏĕꜷꜽ])', r'\1\2', text)
+    text = re.sub(r'([bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ])[^\S\n]*([aāiīuūeèoōöŏĕꜷꜽ])', r'\1\2', text)
 
+    
+
+    
+    return text
+
+def hukum_penulisan(text):
+
+    daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
+    
+    #tambah zwnj depan kata
+    patterns = [
+    r'\bww', r'\byw', r'wr', r'\brw', r'lwi(r|ṙ)', r'\byan\b', r'\btan\b',
+    r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")", r'\bmw', r'\bstr', r'\brkw', r'\bri',
+    r'\bdwa\b', r'\bya\b', r'[' + daftar_konsonan + r']ta(?:n|ṅ|ŋ)?\b']
+    text = add_zwnj_awal_kata_bulk(text, patterns, '\u200C', daftar_konsonan) 
+
+    #cegah pasangan lebih dari tumpuk tiga
+    text = insert_zwnj_between_consonants(text)
+
+    #kasus sigeg-sigeg
     text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙṅ', text)
     text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥṅ', text)
 
-    text = insert_zwnj_between_consonants(text)
 
     # Gabungkan ZWNJ dan ZWJ yang berulang menjadi satu saja
     text = re.sub(r"^(?:\u200D|\u200C)+", "", text,flags=re.MULTILINE)
-    return text
+
+
+    return(text)
 
 def finalisasi(hasil):
 # Menghapus semua spasi setelah konversi

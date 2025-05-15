@@ -80,43 +80,21 @@ def mode_modern_lampah(text):
     return (text)
 
 def mode_kakawin(text):
+    #Mode kakawin adalah transliterasi yang memaksa semua huruf vokal jadi kecil, pengkapitalan akan dilakukan oleh algoritma metrum
 
-    # Menyisipkan ZWNJ dan mengkapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
-    '''
-    text = re.sub(
-        rf'([^\w\s-])(\s*)([{daftar_vokal}])',
-        lambda m: f"{m.group(1)}{m.group(2)}{zwnj}{m.group(3).upper()}",
-        text
-    )
-    '''
-    #Perubahan pada rṇn
-    #text = re.sub(r'rṇ', 'rn', text, flags=re.IGNORECASE)
-    # 
-    #text = re.sub(r'i[^\S\n]+a', 'i ha', text)
-    
+    #paksa jadi huruf kecil semua
+    text = re.sub(r'(?<!\u200C)([A-Z])', lambda m: m.group(1).lower(), text)
+
+    #Bahasa kawi tidak kenal ṙṇṇ
     text = re.sub(r'rṇ', 'rn', text) # khusus bahasa jawa kuno
 
     return text
 
 def mode_lampah(text):
 
-    # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf dan spasi
-    text = re.sub(rf'([^\w\s])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2) + m.group(3).upper(), text)
-
-    # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf
-    text = re.sub(rf'([^\w\s])([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
-
-    # Kapitalkan vokal di awal baris
-    text = re.sub(rf'(^|\n)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
-
-    # Aturan baru: menambahkan '/' sebelum spasi jika diapit oleh konsonan di kiri dan vokal uppercase di kanan
-    text = re.sub(r'([{daftar_konsonan}])\s([AIUĀĪŪEOÖŎĔÈ])', r'\1\ \2', text)
-    
-    #khusus kakawin, urai vokal kapital yang didahuli spasi+konsonan
-    text = re.sub(r"(?<=[daftar_konsonan][daftar_konsonan]) (A|I|U)", 
-                lambda m: {'A': 'ā', 'I': 'ī', 'U': 'ū'}[m.group(1)], 
-                text)
-
+    #paksa jadi huruf kecil kecuali vokal ini
+    vokal_khusus = "AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ"
+    text = re.sub(rf'(?<!\u200C)(?![{vokal_khusus}])([A-Z])',lambda m: m.group(1).lower(),text)
 
     return text
 

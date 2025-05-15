@@ -20,9 +20,6 @@ def replace_characters(text, mode):
     for old_char, new_char in mode_replacements.items():
         text = re.sub(re.escape(old_char), new_char, text, flags=re.IGNORECASE)
 
-    #paksa jadi huruf kecil
-    text = re.sub(r'(?<!\u200C)([A-Z])', lambda m: m.group(1).lower(), text)
-
     #=======Mulai transliterasi mentah========
     #Aplikasikan kata baku terlebih dahulu
     text = kata_baku(text)
