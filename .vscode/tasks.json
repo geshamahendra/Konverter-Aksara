@@ -5,17 +5,6 @@
       "label": "Run Script jtwk",
       "type": "shell",
       "command": "python3 /Users/geshamahendra/My_Home/GitHub/Konverter-Aksara/main.py",
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": "^$"
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^$",
-          "endsPattern": "^$"
-        }
-      },
       "group": "build",
       "presentation": {
         "echo": false,
@@ -30,17 +19,6 @@
       "label": "Run Script chain_konverter",
       "type": "shell",
       "command": "python3 /Users/geshamahendra/My_Home/GitHub/Konverter-Aksara/main_convert_aksara.py",
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": "^$"
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^$",
-          "endsPattern": "^$"
-        }
-      },
       "group": "build",
       "presentation": {
         "echo": false,
@@ -55,17 +33,6 @@
       "label": "Run Script chain",
       "type": "shell",
       "command": "python3 PATH_TO_YOUR_SCRIPT.py",
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": "^$"
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^$",
-          "endsPattern": "^$"
-        }
-      },
       "group": "build",
       "presentation": {
         "echo": false,
@@ -80,17 +47,6 @@
       "label": "Run Script jawa",
       "type": "shell",
       "command": "python3 PATH_TO_YOUR_JAWA_SCRIPT.py",
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": "^$"
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^$",
-          "endsPattern": "^$"
-        }
-      },
       "group": "build",
       "presentation": {
         "echo": false,
@@ -105,17 +61,6 @@
       "label": "Run Script latin_jawa",
       "type": "shell",
       "command": "python3 PATH_TO_YOUR_LATIN_JAWA_SCRIPT.py",
-      "isBackground": true,
-      "problemMatcher": {
-        "pattern": {
-          "regexp": "^$"
-        },
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": "^$",
-          "endsPattern": "^$"
-        }
-      },
       "group": "build",
       "presentation": {
         "echo": false,

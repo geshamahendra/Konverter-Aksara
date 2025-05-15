@@ -124,14 +124,17 @@ def hukum_aksara(text):
 # Fungsi untuk mengatur hukum sigeg
 def hukum_sigeg(text):
     text = re.sub(r'ng', 'ṅ', text, flags=re.IGNORECASE)
-    text = re.sub(r'(?<!^)(?<!\n)ṅ\b(?!-)', 'ŋ', text)
+    text = re.sub(r'(?<!^)(?<!\n)ṅ\b', 'ŋ', text)
     text = re.sub(r'(?<!^)(?<!\n)h\b', 'ḥ', text)    
     
     #kasus " ṅ h..."
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
 
     #kasus ŋ berdiri di depan konsonan
-    text = re.sub(r"(" + f"[{daftar_konsonan}]" + r")\s+(ŋ)\s+(" + f"[{daftar_konsonan}]" + r")", r"\1 ṅ-\3", text, flags=re.IGNORECASE)
+    text = re.sub(r"(" + f"[{daftar_konsonan}]" + r")\s*(ŋ)\s+(" + f"[{daftar_konsonan}]" + r")", r"\1 ṅ-\3", text, flags=re.IGNORECASE)
+
+    #kasus ṅ berulang
+    #text = re.sub(r'(\w)(\w)ṅ-(\1\2)ŋ', r'\1\2ŋ\1\2ŋ', text)
 
     #tambah zwnj depan kata
     patterns = [
@@ -240,8 +243,20 @@ def finalisasi(text):
     text = re.sub(r'ry\s+\u200c', r'ry ', text)
 
     #aksara suci
-    text = re.sub(rf'\b{vokal_regex}(m|ṃ)\b', replace_vokal_m, text)
+    text = re.sub(rf' {vokal_regex}(m|ṃ) ', replace_vokal_m, text)
+
+    #=====Modifikasi lebih lanjut tentang huruf vokal====
+    daftar_vokal = "aāâiīîuūûeèéêoōöŏôĕꜷꜽ"  # Daftar vokal
+    zwnj = '\u200C'  # Zero-width non-joiner (ZWNJ)
+    kapitalisasi_khusus = {'ꜽ': 'Ꜽ'}
+    # Kapitalkan vokal di awal baris
+    text = re.sub(
+    rf'^([{daftar_vokal}])',lambda m: kapitalisasi_khusus.get(m.group(1), m.group(1).upper()),text,flags=re.MULTILINE)
+    # Menyisipkan ZWNJ dan mengkapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
+    text = re.sub(rf'([^\w\s-])(\s*)([{daftar_vokal}])',lambda m: f"{m.group(1)}{m.group(2)}{zwnj}{m.group(3).upper()}",text)
 
     # Ubah vokal kapital jadi kecil jika didahului spasi (bukan \n) atau tanda -
     text = re.sub(r'(?<=[ \t\r\f\v\-])([AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ])', lower_capital_vowels, text)
+
+    
     return(text)

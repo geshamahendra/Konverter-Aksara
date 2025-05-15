@@ -123,6 +123,9 @@ def mode_lampah(text):
 
 ##def mode_lampah(text):
 '''
+    #kapitalkan dan berikan zwnj jika bertemu huruf ini
+    text = re.sub(r"([AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ])", r"\u200C\1", text); print(text)
+
     # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf dan spasi
     text = re.sub(rf'([^\w\s])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2) + m.group(3).upper(), text)
 
@@ -190,9 +193,6 @@ def mode_satya(text):
 
     # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf dan spasi
     text = re.sub(rf'([^\w\s])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2) + m.group(3).upper(), text)
-
-    # Kapitalkan vokal di awal baris
-    text = re.sub(rf'(^|\n)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
 
     # Mengubah vokal menjadi uppercase jika didahului oleh spasi dan vokal, tanpa menghapus spasi tersebut
     text = re.sub(rf'(?<=o)([^\S\n]+)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)

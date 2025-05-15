@@ -13,7 +13,6 @@ zwnj = "\u200C"
 substitutions = {
     #Aksara Suci
     r'\bOṃ': '\u200cŌṃ', 
-    r'(o|O)m\b': '\u200cOm\u200c', 
     r'Ai': 'Ꜽ', r'Au': 'Ꜷ',
     r'ai': 'ꜽ', r'au': 'ꜷ', 
     r'ng': 'ṅ',
@@ -28,7 +27,8 @@ substitutions = {
 
     #aturan baku
     r'lĕṅlĕṅ':'lĕŋlĕŋ',
-    r'sa(ng|ṅ)k': 'saŋk',
+    r'rĕṅrĕṅ':'rĕŋrĕŋ',
+    r'sa(ng|ṅ)k(s|ṣ)': 'saŋkṣ',
     r'sa(ng|ṅ)s': 'saŋs',
     r'sa(ng|ṅ)ṣ': 'saŋṣ',
     r'\bnir([' + daftar_konsonan_tanpa_dikecualikan + '])': 'nir\u200c\\1', #nir+zwnj

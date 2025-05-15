@@ -266,9 +266,6 @@ def hukum_sandi(text):
     #Menyambung vokal dan konsonan yang terpisah spasi
     text = re.sub(r'([b-df-hj-np-tv-zḋḍŧṭñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([aāiīuūeèoōöŏĕꜷꜽ])', r'\1\2', text)
 
-    #kasus ṅ berulang
-    #text = re.sub(r'(\w)(\w)ṅ(\1\2)ŋ', r'\1\2ŋ\1\2ŋ', text)
-
     text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙṅ', text)
     text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥṅ', text)
 
