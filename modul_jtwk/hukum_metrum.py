@@ -73,8 +73,6 @@ def hitung_jumlah_metrum(line):
     
     return sum(1 for _ in RE_METRUM_SIMBOL.finditer(line))
 
-
-
 def proses_puisi_buffer(puisi_buffer, current_metrum):
     """
     Menerapkan metrum pada baris-baris puisi dalam buffer.
@@ -106,10 +104,6 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
             v1_lower, v2_lower = v1.lower(), v2.lower()
             text_between = line[idx1 + 1:idx2]
             processed_vokal = False  # Flag untuk menandai apakah vokal sudah diproses
-
-
-            
-
             # Logika untuk kasus "vokal spasi vokal"
             if re.fullmatch(r'[^\S\n]+', text_between):
                 if met1 == '⏑' and met2 == '⏑':
@@ -122,6 +116,10 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                     i_vokal += 2
                     processed_vokal = True
                 elif v1_lower in VOWEL_PANJANG and v2_lower in VOWELS and met1 == '–' and met2 == '⏑':
+                    hasil_line[idx2] = ZWNJ + v2.upper()
+                    i_vokal += 2
+                    processed_vokal = True
+                elif v1_lower in VOWEL_PANJANG and v2_lower in VOWELS and met1 == '–' and met2 == '–':
                     hasil_line[idx2] = ZWNJ + v2.upper()
                     i_vokal += 2
                     processed_vokal = True
@@ -204,11 +202,11 @@ def aplikasikan_metrum_dan_tandai_vokal(teks):
     for blok in blok_list:
         baris = blok.strip().splitlines()
         is_metrum_blok = any(RE_METRUM_SIMBOL.search(b) for b in baris)
-        header_blok = [b for b in baris if (b.startswith("<") and ":" in b) or
-                                           (b.startswith("{") and ":" in b)]
+        header_blok = [b for b in baris if (b.startswith("<") and ">" in b) or
+                                           (b.startswith("{") and "}" in b)]
         puisi_baris = [b for b in baris if not RE_METRUM_SIMBOL.search(b) and
-                                           not (b.startswith("<") and ":" in b or
-                                                b.startswith("{") and ":" in b)]
+                                           not (b.startswith("<") and ">" in b or
+                                                b.startswith("{") and "}" in b)]
         metrum_baris_temp = [get_clean_metrum(b) for b in baris if RE_METRUM_SIMBOL.search(b)]
 
         hasil_blok.extend(header_blok)
@@ -273,7 +271,7 @@ def tandai_vokal_pendek_dalam_pasangan(text):
         baris = blok.strip().splitlines()
         metrum_lines = []
         for line in baris:
-            if line.startswith("<") and ":" in line:
+            if line.startswith("<") and ">" in line:
                 # Judul metrum ditemukan
                 if puisi_buffer:
                     processed = proses_puisi_buffer(puisi_buffer, current_metrum)
@@ -284,7 +282,7 @@ def tandai_vokal_pendek_dalam_pasangan(text):
                     metrum_lines = []
                 hasil_blok.append(line)
                 current_metrum = []
-            elif line.startswith("{") and ":" in line: # perubahan disini
+            elif line.startswith("{") and "}" in line: # perubahan disini
                 # Judul metrum ditemukan
                 if puisi_buffer:
                     processed = proses_puisi_buffer(puisi_buffer, current_metrum)
@@ -326,7 +324,242 @@ def tandai_vokal_pendek_dalam_pasangan(text):
     hasil_akhir = "\n".join(hasil_blok).strip()
     return hasil_akhir
 
-#backup paling stabil, tanpa pengecekan x
+
+
+'''
+paling stabil tapi gabisa tabrakan antara panjang+pendek+kapital
+def proses_puisi_buffer(puisi_buffer, current_metrum):
+    """
+    Menerapkan metrum pada baris-baris puisi dalam buffer.
+
+    Args:
+        puisi_buffer (list): List berisi baris-baris puisi yang akan diproses.
+        current_metrum (list): List berisi simbol-simbol metrum yang akan diterapkan.
+
+    Returns:
+        list: List berisi baris-baris puisi yang sudah diproses.
+    """
+    if not current_metrum:
+        return puisi_buffer
+    processed = []
+    panjang_metrum = len(current_metrum)
+    for i, line in enumerate(puisi_buffer):
+        selected_metrum = current_metrum[i % panjang_metrum]
+        vokal_posisi = []
+        idx_metrum = 0
+        for idx, char in enumerate(line):
+            if char.lower() in VOWELS and idx_metrum < len(selected_metrum):
+                vokal_posisi.append((idx, char, selected_metrum[idx_metrum]))
+                idx_metrum += 1
+        hasil_line = list(line)
+        i_vokal = 0
+        while i_vokal < len(vokal_posisi) - 1:
+            idx1, v1, met1 = vokal_posisi[i_vokal]
+            idx2, v2, met2 = vokal_posisi[i_vokal + 1]
+            v1_lower, v2_lower = v1.lower(), v2.lower()
+            text_between = line[idx1 + 1:idx2]
+            processed_vokal = False  # Flag untuk menandai apakah vokal sudah diproses
+            # Logika untuk kasus "vokal spasi vokal"
+            if re.fullmatch(r'[^\S\n]+', text_between):
+                if met1 == '⏑' and met2 == '⏑':
+                    if v1_lower in VOWEL_PENDEK and v2_lower in VOWEL_PENDEK:
+                        hasil_line[idx2] = ZWNJ + v2.upper()
+                        i_vokal += 2
+                        processed_vokal = True
+                elif v1_lower in VOWEL_PENDEK and v2_lower in VOWELS and met1 == '⏑' and met2 == '–':
+                    hasil_line[idx2] = ZWNJ + v2.upper()
+                    i_vokal += 2
+                    processed_vokal = True
+                elif v1_lower in VOWEL_PANJANG and v2_lower in VOWELS and met1 == '–' and met2 == '⏑':
+                    hasil_line[idx2] = ZWNJ + v2.upper()
+                    i_vokal += 2
+                    processed_vokal = True
+                elif v1_lower in VOWEL_PANJANG and v2_lower in VOWELS and met1 == '–' and met2 == '–':
+                    hasil_line[idx2] = ZWNJ + v2.upper()
+                    i_vokal += 2
+                    processed_vokal = True
+
+            # Logika untuk kasus "vokal konsonan spasi vokal"
+            elif not processed_vokal and met1 == '–' and v1_lower in VOWEL_PENDEK and ' ' in text_between:
+                kata_kata = list(re.finditer(r'\S+', line))
+                kata_list = [(m.start(), m.end(), m.group()) for m in kata_kata]
+                kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
+                kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
+                if kata_v1 and kata_v2 and kata_v1 != kata_v2:
+                    if kata_v2[2][0] in VOWELS:
+                        bagian_setelah_v1 = kata_v1[2][kata_v1[2].index(v1) + 1:]
+                        konsonan_setelah_v1 = []
+                        for char in bagian_setelah_v1:
+                            if char in VOWELS:
+                                break
+                            if char not in ' \t\n\r\u200C\u200D' and RE_KONSONAN.search(char):
+                                konsonan_setelah_v1.append(char)
+                            if len(konsonan_setelah_v1) == 1 and v1_lower in VOWEL_PENDEK:
+                                hasil_line[idx2] = ZWNJ + v2.upper()
+                                i_vokal += 2
+                                processed_vokal = True
+            
+            # =================================================================
+            # Bagian Logika Pemanjangan dan Pemendekan Vokal
+            # =================================================================
+            if not processed_vokal and i_vokal < len(vokal_posisi):
+                idx_vokal, vokal, metrum_vokal = vokal_posisi[i_vokal]
+                vokal_lower = vokal.lower()
+                # Logika Pemanjangan Vokal
+                if vokal_lower in 'aiu' and metrum_vokal == '–':
+                    next1_idx = idx_vokal + 1
+                    next2_idx = idx_vokal + 2
+                    if next2_idx < len(line):
+                        char1 = line[next1_idx]
+                        char2 = line[next2_idx]
+                        if RE_KONSONAN.match(char1) and RE_VOKAL.match(char2):
+                            if vokal_lower == 'a':
+                                hasil_line[idx_vokal] = 'ā'  # Pemanjangan 'a' menjadi 'ā'
+                            elif vokal_lower == 'i':
+                                hasil_line[idx_vokal] = 'ī'  # Pemanjangan 'i' menjadi 'ī'
+                            elif vokal_lower == 'u':
+                                hasil_line[idx_vokal] = 'ū'  # Pemanjangan 'u' menjadi 'ū'
+
+                # Logika Pemendekan Vokal
+                elif vokal_lower in 'āīū' and metrum_vokal == '⏑':
+                     if vokal_lower == 'ā':
+                         hasil_line[idx_vokal] = 'a'
+                     elif vokal_lower == 'ī':
+                         hasil_line[idx_vokal] = 'i'
+                     elif vokal_lower == 'ū':
+                         hasil_line[idx_vokal] = 'u'
+                i_vokal += 1
+            elif processed_vokal:
+                pass # Jika vokal sudah diproses, i_vokal sudah ditambah
+            else:
+                i_vokal += 1 # Jika tidak ada perubahan pada pasangan vokal ini
+
+        processed.append(''.join(hasil_line))
+    return processed
+'''
+'''
+logika baru kurang stabil
+
+def proses_puisi_buffer(puisi_buffer, current_metrum):
+    """
+    Menerapkan metrum pada baris-baris puisi dalam buffer.
+
+    Args:
+        puisi_buffer (list): List berisi baris-baris puisi yang akan diproses.
+        current_metrum (list): List berisi simbol-simbol metrum yang akan diterapkan.
+
+    Returns:
+        list: List berisi baris-baris puisi yang sudah diproses.
+    """
+    if not current_metrum:
+        return puisi_buffer
+    processed = []
+    panjang_metrum = len(current_metrum)
+    for i, line in enumerate(puisi_buffer):
+        selected_metrum = current_metrum[i % panjang_metrum]
+        vokal_posisi = []
+        idx_metrum = 0
+        for idx, char in enumerate(line):
+            if char.lower() in VOWELS and idx_metrum < len(selected_metrum):
+                vokal_posisi.append((idx, char, selected_metrum[idx_metrum]))
+                idx_metrum += 1
+        hasil_line = list(line)
+        kapitalisasi_terjadi = set()
+
+        # =================================================================
+        # Bagian Logika Kapitalisasi Vokal Berdasarkan Interaksi
+        # =================================================================
+        i_vokal_interaksi = 0
+        while i_vokal_interaksi < len(vokal_posisi) - 1:
+            idx1, v1, met1 = vokal_posisi[i_vokal_interaksi]
+            idx2, v2, met2 = vokal_posisi[i_vokal_interaksi + 1]
+            v1_lower, v2_lower = v1.lower(), v2.lower()
+            text_between = line[idx1 + 1:idx2]
+
+            # Kasus "vokal spasi vokal"
+            if re.fullmatch(r'[^\S\n]+', text_between):
+                if (met1 == '⏑' and met2 == '⏑' and v1_lower in VOWEL_PENDEK and v2_lower in VOWEL_PENDEK) or \
+                   (met1 == '⏑' and met2 == '–' and v1_lower in VOWEL_PENDEK and v2_lower in VOWELS) or \
+                   (met1 == '–' and met2 == '⏑' and v1_lower in VOWEL_PANJANG and v2_lower in VOWELS) or \
+                   (met1 == '–' and met2 == '–' and v1_lower in VOWEL_PANJANG and v2_lower in VOWELS):
+                    hasil_line[idx2] = ZWNJ + v2.upper()
+                    kapitalisasi_terjadi.add(idx2)
+                    i_vokal_interaksi += 2
+                    continue
+
+            # Kasus "konsonan/ZWNJ + vokal saat ini + satu konsonan + vokal"
+            elif met1 == '–' and v1_lower in VOWEL_PENDEK and ' ' in text_between:
+                kata_kata = list(re.finditer(r'\S+', line))
+                kata_list = [(m.start(), m.end(), m.group()) for m in kata_kata]
+                kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
+                kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
+                if kata_v1 and kata_v2 and kata_v1 != kata_v2:
+                    if kata_v2[2][0] in VOWELS:
+                        bagian_setelah_v1 = kata_v1[2][kata_v1[2].index(v1) + 1:]
+                        konsonan_setelah_v1 = []
+                        for char in bagian_setelah_v1:
+                            if char in VOWELS:
+                                break
+                            if char not in ' \t\n\r\u200C\u200D' and RE_KONSONAN.search(char):
+                                konsonan_setelah_v1.append(char)
+                            if len(konsonan_setelah_v1) == 1 and v1_lower in VOWEL_PENDEK:
+                                karakter_sebelum_v2_valid = False
+                                if idx2 > 0 and (not RE_VOKAL.match(line[idx2 - 1]) or line[idx2 - 1] == ZWNJ):
+                                    karakter_sebelum_v2_valid = True
+                                elif idx2 == 0:
+                                    karakter_sebelum_v2_valid = True
+
+                                if karakter_sebelum_v2_valid:
+                                    hasil_line[idx2] = ZWNJ + v2.upper()
+                                    kapitalisasi_terjadi.add(idx2)
+                                    i_vokal_interaksi += 2
+                                    continue
+
+            i_vokal_interaksi += 1
+
+        # =================================================================
+        # Bagian Logika Pemanjangan dan Pemendekan Vokal
+        # =================================================================
+        for idx, vokal_info in enumerate(vokal_posisi):
+            idx_vokal, vokal, metrum_vokal = vokal_info
+            vokal_asli = vokal
+            vokal_lower = vokal.lower()
+            index_modifikasi = idx_vokal
+            is_kapital_zwnj = (index_modifikasi in kapitalisasi_terjadi) or (index_modifikasi > 0 and hasil_line[index_modifikasi - 1] == ZWNJ and vokal_asli.isupper())
+
+            if metrum_vokal == '–':
+                next1_idx = idx_vokal + 1
+                next2_idx = idx_vokal + 2
+                if next2_idx < len(line):
+                    char1 = line[next1_idx]
+                    char2 = line[next2_idx]
+                    pemicu = (idx_vokal > 0 and not RE_VOKAL.match(line[idx_vokal - 1])) or (idx_vokal > 0 and line[idx_vokal - 1] == ZWNJ) or (idx_vokal == 0)
+                    vokal_untuk_dipanjangkan_lower = vokal_asli.lower()
+                    if (RE_KONSONAN.match(char1) or char1 == ZWNJ) and RE_VOKAL.match(char2) and pemicu:
+                        if vokal_untuk_dipanjangkan_lower == 'a':
+                            hasil_line[index_modifikasi] = 'Ā' if vokal_asli.isupper() else 'ā'
+                        elif vokal_untuk_dipanjangkan_lower == 'i':
+                            hasil_line[index_modifikasi] = 'Ī' if vokal_asli.isupper() else 'ī'
+                        elif vokal_untuk_dipanjangkan_lower == 'u':
+                            hasil_line[index_modifikasi] = 'Ū' if vokal_asli.isupper() else 'ū'
+
+            elif metrum_vokal == '⏑':
+                pemicu = (idx_vokal > 0 and not RE_VOKAL.match(line[idx_vokal - 1])) or (idx_vokal > 0 and line[idx_vokal - 1] == ZWNJ) or (idx_vokal == 0)
+                vokal_untuk_dipendekkan_lower = vokal_asli.lower()
+                if pemicu and vokal_untuk_dipendekkan_lower in 'āīū':
+                    if vokal_untuk_dipendekkan_lower == 'ā':
+                        hasil_line[index_modifikasi] = 'A' if vokal_asli.isupper() else 'a'
+                    elif vokal_untuk_dipendekkan_lower == 'ī':
+                        hasil_line[index_modifikasi] = 'I' if vokal_asli.isupper() else 'i'
+                    elif vokal_untuk_dipendekkan_lower == 'ū':
+                        hasil_line[index_modifikasi] = 'U' if vokal_asli.isupper() else 'u'
+
+        processed.append(''.join(hasil_line))
+    return processed
+'''
+
+
+#backup tanpa pengecekan x
 '''
 import re
 

@@ -70,7 +70,7 @@ swara = {
     # Swara
     'A': 'ꦄ', 'Ā': 'ꦄꦴ', 'I': 'ꦅ', 'Ī': 'ꦇ', 'U': 'ꦎ', 'Ū': 'ꦎꦴ', 'O': 'ꦈ',
     'Ꜷ': 'ꦈꦴ', 'Ꜽ': 'ꦍ', 'Ö': 'ꦄꦼꦴ',
-    **{bunyi: 'ꦌ' for bunyi in ('E', 'È')},
+    **{bunyi: 'ꦌ' for bunyi in ('E', 'È','É')},
     **{bunyi: 'ꦄꦼ' for bunyi in ('Ĕ')},
     **{bunyi: 'ꦈꦴ' for bunyi in ('Ŏ', 'Ō')},
     # Swara spesial

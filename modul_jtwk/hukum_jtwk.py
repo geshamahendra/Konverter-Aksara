@@ -248,10 +248,12 @@ def finalisasi(text):
     #=====Modifikasi lebih lanjut tentang huruf vokal====
     daftar_vokal = "aāâiīîuūûeèéêoōöŏôĕꜷꜽ"  # Daftar vokal
     zwnj = '\u200C'  # Zero-width non-joiner (ZWNJ)
-    kapitalisasi_khusus = {'ꜽ': 'Ꜽ'}
+    kapitalisasi_khusus = {'ꜽ': 'Ꜽ','è': 'È', 'é': 'É', }
+    
     # Kapitalkan vokal di awal baris
     text = re.sub(
     rf'^([{daftar_vokal}])',lambda m: kapitalisasi_khusus.get(m.group(1), m.group(1).upper()),text,flags=re.MULTILINE)
+    
     # Menyisipkan ZWNJ dan mengkapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
     text = re.sub(rf'([^\w\s-])(\s*)([{daftar_vokal}])',lambda m: f"{m.group(1)}{m.group(2)}{zwnj}{m.group(3).upper()}",text)
 

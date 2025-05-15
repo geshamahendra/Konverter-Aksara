@@ -2739,7 +2739,7 @@ ndyānuṅ prayojana iké panusupta kālih*
 
 Lwir niṅ bhayātiśaya rodra anuṅ hana ṅké,
 muṅgwiṅ guhām hana ta rākṣasa lèn piśaca,
-lāwan paran kari hawanta sukĕt t-agamya,===
+lāwan paran kari hawanta sukĕt t-agamya,
 wwaṅ lén saké kita taman hana wèh mara ṅké*
 
 Kwèh siṅha sāhasa musuh niṅ asiṅ marā ṅké,
@@ -2757,10 +2757,12 @@ lāwan śilātala tĕla nya malā ulā nya,
 moṅ māṅsabhakṣa kaharĕp nya humöṅ galak nya,
 tan wismayan paṅĕbusan mamisan wiṣa nya*
 
-Nā liṅ niraṅ Pawanaputra mastö matakwan,
+Nā liṅ niraṅ Pawanaputra masö matakwan,
 mojar ta saṅ Raghusutār pawarah rikaṅ don,
-ai aryya don mami nihan ta-rĕṅé tat aṅsö,
-mwaṅ hétu niṅ malarasan ya ta pajarankwa*
+ai āryya don mami nihan ta-rĕṅé tat aṅsö,
+mwaṅ hétu niṅ malarasan ya ta pajaraṅkwa*
+
+{}===
 
 Kyātīṅ sarāt Daśaratha prabhu sarwwabhoga,
 salwir nikaṅ suka wiśéṣa hané sirākwèh,
@@ -3170,7 +3172,7 @@ kāmadéwa umanah jagat kabèh,
 nya ṅ gĕlap uni nikā panah nira*
 
 Byakta Manmatha sirāmanah jagat,
-ndan rinambutan ĕmms panah nira,
+ndan rinambutan ĕmās panah nira,
 yéka nitya lumarap rikaṅ laṅit,
 hāh Manobhawa lukan tamar maṅèl*
 
@@ -3181,13 +3183,13 @@ mĕdi riṅ madanawédanātura*
 
 Nyā ṅ aṅin ya winaliṅku oṣadha,
 śitalātiśaya tīs nya riṅ awak,
-ndān apuy juga hiḍspku tar pahi,
+ndān apuy juga hiḍĕpku tar pahi,
 śurṇna téki hrĕdayaṅku yāgĕsöṅ*
 
 Nyā ṅ mayūra ya umūra ménaka,
 mogha moruk aku dé nya yan n uni,
 wruh nya yan priyawiyoga duhkita,
-mohita ṅwaṅ umawāṅ unĕṅ magpṅ*
+mohita ṅwaṅ umawāṅ unĕṅ magöṅ*
 
 Nyā ṅ hudan tan anumāna riṅ kasah,
 médi riṅ kinawaśākĕn iṅ lulut,
@@ -3197,10 +3199,10 @@ hāh warĕg g aku huwus rikaṅ lara*
 Saṅ mahāmuni hanèṅ alas kabèh,
 kölan iṅ daṅū-daṅū tatan lĕgö,
 wèt nikaṅ diwasa rĕṅ-rĕṅ aṅgĕges,
-mohitmta sira liṅku tar suka*
+mohitā ta sira liṅku tar suka*
 
 Nyā ṅ wihuṅ muni lawan manuk humuṅ,
-tulya mātyana ikaṅ kĕnṅ unĕṅ,
+tulya mātyana ikaṅ kĕnèṅ unĕṅ,
 moni tar pahuwusan rikaṅ kulĕm,
 hāh tan éraṅ aṅidīdi maṅlarè*
 
@@ -3314,7 +3316,6 @@ asiṅ sakahanan niraṅ Janakarājaputrī n-parā*
 
 {Śārdūlawikrīḍta}:7.43
 – – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑| – – ⏑| ⏓
-
 
 Saṅ Sugrīwa nahan ta liṅ nira ri saṅ Somitra mankat sira,
 ṅ-kon tékaṅ bala wānarāmriha kabèh tātan hanī kāntuna,
@@ -4151,10 +4152,12 @@ Akwèh rārī rākṣasī rākṣaka ṅka,
 kèn-kĕnyāṅkĕn taṅ pakĕnāryakĕnya,
 dodot nyālit sūtra lèn luṅsir abhrā*
 
-I Dèbwī Sītā ṅkā tamolah tinuṅgu,
+Dèwī Sītā ṅkā tamolah tinuṅgu,
 ékākyaṅhiṅ kāsyasih yar kinuṅkuṅ,
 mènĕh monĕṅ mona māśā saśoka,
 aṅhiṅ wwil kwèh tar parowaṅ sira wwaṅ*
+
+{}
 
 Ya ikā paran saṅ Anilātmajār pamèt,
 maṅikis sirār téka manèk rikaṅ kayu,

@@ -2157,7 +2157,7 @@ sambé taŋ bala rākṣasāṅhabĕt ikaŋ aśwomibĕṙ taŋ raŧa,
 yĕkoṅgwan n-ira maṅlayaŋ kuda manogāmi masö maṅdĕmak,
 śīṙṇnāsāk ‌rinĕmĕk rĕmuk kinĕpĕkan rĕmpak tibā taŋ raŧa*
 
-saŋ sītā sira muṅgu riŋ raŧa tibā umrĕm sawèt niŋ takut,
+saŋ sītā sira muṅgu riŋ raŧa tibā ‌Umrĕm sawèt niŋ takut,
 mūṙccā riŋ gaganāntarāla maṅĕliḥ mosaḥ gĕlānomĕhaḥ,
 miṅsoṙ śīǥra siraŋ jaṭāyu sumuyug sāmbut ta saŋ mꜽŧilī,
 mahyā taŋ daśadéśadéwata humuŋ kapwādƀutāṅastuti*
@@ -2190,7 +2190,7 @@ pinakahawan ‌Ira yaṙ uliḥ ri ‌lĕṅkā*
 ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ : 15
 
 satĕka nira ri ‌lĕṅkā glāna kāmāturāhyun,
-hana ri hati nirāṅhiŋ mꜽŧilī ūṣađātaḥ,
+hana ri hati nirāṅhiŋ mꜽŧilī ‌Uṣađātaḥ,
 winaliŋ ira ‌Umaṅgā jānakī rājaputrī,
 dadi ta sira ‌Umaṅsö wèt nikaŋ rāga tībra*
 
@@ -2739,7 +2739,7 @@ ndyānuŋ prayojana ‌Iké panusupta kāliḥ*
 
 lwiṙ niŋ ƀayātiśaya rodra ‌Anuŋ hana ṅké,
 muṅgwiŋ guhām hana ta rākṣasa lèn piśāca,
-lāwan paran kari hawanta sukĕt t-agamya,===
+lāwan paran kari hawanta sukĕt t-agamya,
 wwaŋ lén saké kita taman hana wèḥ mara ṅké*
 
 kwèḥ siṅha sāhasa musuḥ niŋ asiŋ marā ṅké,
@@ -2757,15 +2757,17 @@ lāwan śilātala tĕla nya malā ‌Ulā nya,
 moŋ māṅsaƀakṣa kaharĕp nya humöŋ galak nya,
 tan wismayan paṅĕbusan mamisan wiṣa nya*
 
-nā liŋ niraŋ pawanaputra mastö matakwan,
+nā liŋ niraŋ pawanaputra masö matakwan,
 mojaṙ ta saŋ raǥusutāṙ pawaraḥ rikaŋ don,
-Ꜽ arya don mami nihan ta-rĕṅé tat aṅsö,
-mwaŋ hétu niŋ malarasan ‌ya ta pājarankwa*
+Ꜽ ‌Āṙyya don mami nihan ta-rĕṅé tat aṅsö,
+mwaŋ hétu niŋ malarasan ‌ya ta pājaraṅkwa*
+
+{}===
 
 kyātīŋ sarāt daśaraŧa praƀu saṙwwaƀoga,
 salwiṙ nikaŋ suka wiśéṣa hané sirākwèḥ,
-Akwèḥ anak nira ‌Ariṅku ya dibyaśakti,
-Aṅhiŋ ṅhuluñ juga ‌Anak nira mandaƀāgya*
+Akwèḥ anak nira ariṅku ya dibyaśakti,
+Aṅhiŋ ṅhuluñ juga anak nira mandaƀāgya*
 
 saṅké pakon ira marā riŋ alas malaṅǥya,
 yékā nimitta mami yan panusup ‌ya kāliḥ,
@@ -2773,9 +2775,9 @@ luṅhā mĕgil kami riŋ āśrama saŋ sutikṣṇa,
 ṅkā ta tamolaḥ aṅĕmit patapan prayatna*
 
 sītā priyāṅku rasikā ta duluṙkkwi ṅūni,
-ndan duṣṭa rāwaṇa malap sira śīǥra luṅhā,
+ndan duṣṭā rāwaṇa malap sira śīǥra luṅhā,
 sītā sirékana pinèt mami kām para ṅké,
-ṇā hétu niŋ masusupan n ‌Umahas ƀramanta*
+ṇā hétu niŋ masusupan n umahas ƀramanta*
 
 nojaṙ niraŋ raǥusutāṙ pawaraḥ rikaŋ don,
 mājaṙ-ajaṙ ta sumiliḥ ta siraŋ hanūmān,
@@ -2792,9 +2794,9 @@ miṅgat siromara rikaŋ malaya pradéśa,
 maprītya don ira makon ta siromarā ṅké,
 mahyun tamolaha sumiwya sukunta nāŧa*
 
-mitrānta yogya sira liṅku ‌Anugrahāna,
+mitrānta yogya sira liṅku anugrahāna,
 Āpan mahābala mahāṙdđika sāđubudđi,
-tūtūta māsiha mituhwa ‌Asiŋ pakonta,
+tūtūta māsiha mituhwa asiŋ pakonta,
 milwomatī daśamuka pramukā sirèŋ praŋ*
 
 nāmhaŋ n ujaṙ nira ta saŋ anilātmajaswī,
@@ -2810,10 +2812,10 @@ sugrīwa yéka mapanas ‌ya maṅöb ikaŋ hrū*
 tatkīmla yaṙ patĕmu kāliḥ amoŋ sirāpuy,
 sākṣyā nirān praŧama tambayaniŋ pamitra,
 sāmpun nirāsamaya kapwa sahaṙṣa kāliḥ,
-māṅĕn-naṅĕn ta sira kapwa mamèt upāya*
+maṅĕn-naṅĕn ta sira kapwa mamèt upāya*
 
 naŋ rāmadéwa mulat iŋ bala wānarākwèḥ,
-swéꞓā yaŧāsuka ‌Ulaḥ nya sajāti moṅsil,
+swéꞓā yaŧāsuka ulaḥ nya sajāti moṅsil,
 polaḥ nya hūŋ nya gumuruḥ maturū rikaŋ pāŋ,
 yékā dumèḥ nira sukā magiraŋ tumon ‌ya*
 
@@ -2829,13 +2831,13 @@ byaktān pĕjaḥ nya tuwi dé ni panaḥta śakti*
 
 nyānuŋ dumèḥ nika manĕmwa wiśéṣa riŋ rāt,
 saṅkĕŋ anugraha niraŋ muni ṅūni māsiḥ,
-maṅkin ‌ya śakti wĕkasan n ‌Aniwāṙyya wīṙyya,
+maṅkin ‌ya śakti wĕkasan n aniwāṙyya wīṙyya,
 sūṙyyopama nya rikanaŋ musuḥ anđakāra*
 
 glāna ṅhulun mawèdi dé nya tumon ‌ya śakti,
-tātan maṅĕn-naṅĕn i kāpĕjahanya ṅūni,
-maṅké ḍatĕŋ pwa kita nāŧa ‌Amoǥaśakti,
-cittaṅku niśꞓaya ‌Awās ‌ya pati nya dènta*
+tātan maṅĕn-naṅĕn i kapĕjahanya ṅūni,
+maṅké ḍatĕŋ pwa kita nāŧa amoǥaśakti,
+cittaṅku niśꞓaya awās ‌ya pati nya dènta*
 
 bālī ya lāgi mamatī manikĕp gajéndra,
 rĕmpak-rĕmuk satinĕpak nya gunuŋ pasèwu,
@@ -2847,7 +2849,7 @@ saṅké takut nira ri saŋ kaka śaktimānta,
 mahyun sirāwruha ri śakti saŋ āṙyya rāma,
 prajña siraŋ raǥusutāṙ pamanaḥ ta tal trus*
 
-kwèḥ nyātatā pitu katūb tumuluy ‌Ikaŋ hrū,
+kwèḥ nyātatā pitu katūb tumuluy ikaŋ hrū,
 sugrīwa kādƀuta sahaṙṣa tumon ikaŋ tal,
 maṅkat siraṙ pakaduluṙ nrĕpaputra rāma,
 kiṣkiṇḍa yékana parāna lumakwa maṅdon*
@@ -3170,7 +3172,7 @@ kāmadéwa ‌Umanaḥ jagat kabèḥ,
 nya ŋ gĕlap ‌Uni nikā panaḥ nira*
 
 byakta manmaŧa sirāmanaḥ jagat,
-ndan ‌rinambutan ĕmms pānaḥ nīra,   ❌
+ndan ‌rinambutan ĕmās panaḥ nira,
 yéka nitya lumarap ‌rikaŋ laṅit,
 hāḥ manoƀawa lukan tamaṙ maṅèl*
 
@@ -3181,13 +3183,13 @@ mĕdi riŋ madanawédanātura*
 
 nyā ŋ aṅin ‌ya winaliṅku ‌Oṣađa,
 śītalātiśaya tīs nya riŋ awak,
-ndān apuy juga hiḍspku taṙ pāhi,   ❌
+ndān apuy juga hiḍĕpku taṙ pahi,
 śuṙṇna téki hrĕdayaṅku yāgĕsöŋ*
 
 nyā ŋ mayūra ya ‌Umūra ménaka,
 moǥa moruk aku dé nya yan n ‌Uni,
 wruḥ nya yan priyawiyoga duḥkita,
-mohita ṅwaŋ umawāŋ unĕŋ magpŋ*   ❌
+mohita ṅwaŋ umawāŋ unĕŋ magöŋ*
 
 nyā ṅhudan ‌tan anumāna riŋ kasaḥ,
 médi riŋ kinawaśākĕn iŋ lulut,
@@ -3197,10 +3199,10 @@ hāḥ warĕg g ‌Aku huwus ‌rikaŋ lara*
 saŋ mahāmuni hanèŋ alas kabèḥ,
 kölan iŋ daṅu-daṅū tatan ‌lĕgö,
 wèt nikaŋ diwasa rĕŋ-rĕŋ aṅgĕges,
-mohit‌mta sira liṅku taṙ sūka*   ❌
+mohitā ta sira liṅku taṙ suka*
 
 nyā ŋ wihuŋ muni lawan manuk humuŋ,
-tulya mātyana ‌Ikaŋ kĕnŋ ūnĕŋ,   ❌
+tulya mātyana ‌Ikaŋ kĕnèŋ unĕŋ,
 moni taṙ pahuwusan ‌rikaŋ kulĕm,
 hāḥ tan éraŋ aṅidīdi maṅlarè*
 
@@ -3335,7 +3337,7 @@ tan ‌wruḥ riŋ maṅanugrahé ya mahiwaŋ saktèŋ inak kéwala,
 ndan lotatya naréndra ri ṅhulun apan mūḍātimūḍāđama,
 saṅké pèt naranāŧa hétu ni tutuṙ niŋ mūḍa yékin tĕka*
 
-nā liŋ saŋ kapirāja tuṣṭa sira saŋ rāmāṅrĕṅö akṣama,
+nā liŋ saŋ kapirāja tuṣṭa sira saŋ rāmāṅrĕṅö ‌Akṣama,
 n-ton taŋ wré maśilāsĕsĕk ‌ya hibĕkan tékaŋ gunuŋ mālyawān,
 byakta ŋ rāwaṇa śīṙṇna dé nika kabèḥ āpan mahāśakti ya,
 nī liŋ saŋ raǥuputra trĕpti mulat iŋ wrè wīra sāmpun tĕka*
@@ -4150,1825 +4152,1827 @@ Akwèḥ rārī rākṣasī rākṣaka ṅka,
 kèn-kĕnyāṅkĕn taŋ pakĕnāṙyyakĕnya,
 dodot nyālit sūtra lèn luṅsiṙ aƀrā*
 
-I dèbwī sītā ṅka tāmolaḥ tīnuṅgu,   ❌
+dèwī sītā ṅkā tamolaḥ tinuṅgu,
 Ékākyaṅhiŋ kāsyasiḥ yaṙ kinuṅkuŋ,
 mènĕḥ monĕŋ mona māśā saśoka,
 Aṅhiŋ wwil kwèḥ taṙ parowaŋ sira wwaŋ*
 
-ya īkā pāran saŋ ānīlatmājāṙ pamèt,   ❌
-māṅīkis sīrāṙ téka mānèk ‌rīkaŋ kayu,   ❌
-ri tākut nīrān kawūrūgaŋ mānuk pijĕr,   ❌
-mātūrū ri pāŋ nikaŋ āśoka pādapa*   ❌
-
-krāmākāla mèḥ rahīna yaṙ pītuŋ tabĕḥ,   ❌
-Ūmīriṙ ṅ ‌Aṅin pracālītékānaŋ kayu,   ❌
-Āṅātag māwuṅwa jūga yaṅgūgaḥ sĕkar,   ❌
-dādi jāgra taŋ kusūma mamri yākucup*   ❌
-
-mātākut ta saŋ pawānāputra riŋ aṅin,   ❌
-tūmāhā pāwuṅwa nīkānaŋ mānuk kabèḥ,   ❌
-hūmĕnĕŋ sīrāmriḥ āṅūḍampĕl ‌Iŋ kayu,   ❌
-cāla pāŋ nya tulya ya māṅulyat ‌Aṅlilir*   ❌
-
-māṇi candrākānta tāmālaḥ rīkaŋ taman,   ❌
-kĕna raśmi ya drawa hūmis nīrantara,   ❌
-kādi luḥ nya yaṙ wulat ‌I dèwī jānakī,   ❌
-mānāṅis ‌rīkaŋ wĕṅi tāmaṙ kĕnĕŋ turū*   ❌
-
-Īkānaŋ sĕkaṙ ‌ya rīnūru rīkaŋ aṅin,   ❌
-mānāṅis jūgān pagūlīṅan ‌rīkaŋ ‌lĕmaḥ,   ❌
-tūmībāŋ hĕbun kabārābas ‌ya luḥ nikā,   ❌
-mālārāṙ wūlat ‌ri sīra dèwī jānakuī*   ❌
-
-Āŧa möĕḥ wwāluŋ tābĕḥ ajāgra taŋ manuk,   ❌
-mrĕdu komāla swara mānohārān uni,   ❌
-kādi śabda niŋ kayu ya kasīhan mulat,   ❌
-Ūmāhā tūmaṅguhāna saŋ kĕnèŋ lara*   ❌
-
-jānākātmājā ta rūmĕṅö mānuk humuŋ,   ❌
-tūwi suswārān uni mānojña yaṙ hiḍĕp,   ❌
-māhĕbaŋ-hĕbaŋ hati nīragīraŋ manaḥ,   ❌
-Ūmāṅĕn-n ‌Aṅĕn prawāra raǥāwān mara*   ❌
-
-pāwānītmājātiśāya haṙṣājāṅrĕṅö,   ❌
-Ūni niŋ mānuk śuƀānīmitta liŋ nira,   ❌
-saꝑāléki ṅèlku wĕkāsanta yaṙ hiḍĕp,   ❌
-nīyātān kātĕmwa sīra dèwiī jānakī*   ❌
-
-tīnābĕḥ tīkaŋ bahīri riŋ tāman wawanŋ,   ❌
-kātāraṅgūlādƀuta ta saŋ mārutsuta,   ❌
-hāna dūta yékana tĕka mĕné r-hiḍsp,   ❌
-kādi maṅkānāèn ūni makin ta yānitir*   ❌
-
-wāhu mèḥ ūmĕtwa ta ƀāṭara ƀāmskara,   ❌
-mākūcĕm wūlan kadi wūlat nīkaŋ laṅit,   ❌
-kālāran mānon alāra rukṣa kāsyasiḥ,   ❌
-mīlu téki duḥka māwĕnĕs tīkaŋ śaśī*   ❌
-
-nāyāwit wīdagđa sīra saŋ mārutsuta,   ❌
-māḍĕmit sāwut sira sāwèt nīkaŋ naya,   ❌
-tūmūlaṙ-tūlaṙ sira lūmumpat ‌Iŋ kayu,   ❌
-kūmĕtĕṙ-kĕtĕṙ tika wūgat-wūgat nira*   ❌
-
-Ūmūlat sīrèŋ lemaḥ ānon ta yānaṅis,   ❌
-wwaŋ ākūŋ sĕḍĕŋ malāra tibra kāsyasiḥ,   ❌
-kādi rūpa niŋ priyāwījaya duḥkita,   ❌
-A-ha dèwi liŋ nira sāniśꞓāyèŋ manaḥ*   ❌
-
-māṅīṅĕt-īṅĕt maṅūjīwat sīrāṙ wulat,   ❌
-mĕtu kawrāyan nira tūmuṅkul ‌Aṅjĕṅok,   ❌
-māsĕkĕl tīkā hati nīraṙ wūlat masiḥ,   ❌
-lāra niŋ kāsaḥ priyāwīyoga liŋ nira*   ❌
-
-mākūrū ŋ āwak raga-rāgékānaŋ igām,   ❌
-kūrūṅañ jūgāraŋ ānīpis yāyénaṅit,   ❌
-Īkānaŋ mānaḥ kadi mānuk jūgéniṅu,   ❌
-kīnūruŋ kīnuṅkuŋ āṅāraŋ mākin makuŋ*   ❌
-
-gĕlūṅan māsāk ‌ya mākūsut kĕn ‌ṅ-lĕbu,   ❌
-māgĕlöḥ āpan magūlīṅan ‌rīkaŋ ‌lĕmaḥ,   ❌
-sūmāput pwa yé muka nīrakīlāputiḥ,   ❌
-kādi candra pūṙṇnama kĕnèŋ lāmad-lamad*   ❌
-
-I hāna saṅgrāhé sīra umaḥ hĕmīs tuwi,   ❌
-taṙ āhūrākĕn ‌ya gūmūliŋ sīrèŋ ‌lĕmaḥ,   ❌
-kādi duḥka saŋ raǥūsūtaṙ hānèŋ alas,   ❌
-hīḍepĕṅkwa liŋ nira mātaŋ nya taṙ ‌lĕgö*   ❌
-
-bārībin mānaḥ niran ‌Inambūlan nikaŋ,   ❌
-kāla rākṣāsī tan ānūmana riŋ kasaḥ,   ❌
-māṅīdīdi mèdi ri sīraŋ kĕnèŋ unĕŋ,   ❌
-Āwījaḥ māmid maṅūjīwat ālaḥ puji*   ❌
-
-Ūmūlat sīrékanaŋ ‌Agupyan ‌Aṅdĕlö,   ❌
-māwīsik-wīsik mrisākīti ŋ wīyoga wèḥ,   ❌
-j lūkān īké tan ‌Anūmāna duṙjjana,   ❌
-ya ta liŋ nīrojaṙ-ūjaṙ iŋ dālem hati*   ❌
-
-māṅīsĕk-k ‌Isèk sira sĕsök tīkaŋ hati,   ❌
-Ibskan ‌Unĕŋ īka mānaḥ nirāsĕkĕl,   ❌
-Īkānaŋ tāṅis juga lāna hāné sira,   ❌
-kādi gambaṙ wālaka rāré wāhū mĕtu*   ❌
-
-nda tātīta saŋ malāra kaṣṭa duḥkita,   ❌
-dāśādéśa māwa ya mawmès hūwus katon,   ❌
-ƀūwānāntārāla mālīlaŋ hīlaŋ pĕtĕŋ,   ❌
-hāti saŋ wīyoga wīnĕgil nya yan pasuk*   ❌
-
-nīra saŋ dāśānana glāna taŋ manaḥ,   ❌
-Īnūsī nīkaŋ wiṣāya lèn ūnĕŋ lanā,   ❌
-dādi śīǥra yaṙ laku mārèŋ tāman muwaḥ,   ❌
-mālūyāmūjuk-mujūkānéki don ira*   ❌
-
-sāḍāteŋ nīrāṙ ujaṙ i dèwi jānakī,   ❌
-Āri mꜽŧīlī lalu lālista ri ṅhulun,   ❌
-ṇārākāku tāri yādīyan mrĕṣodita,   ❌
-kīta tāri kéwala gūmantuŋ ‌Iŋ mata*   ❌
-
-jānākātmājātiśāya maṅkin ‌Aṅlaré,   ❌
-ṣa-ūlaḥta tan malālīsata liṅkwari,   ❌
-ṇya lāraṅku dènta kālālaḥ ‌lĕhöŋ pĕjaḥ,   ❌
-kāśulmpa tan hāna ‌Asiḥta ri ṅhulun*   ❌
-
-sīra saŋ dāśānana nāhan ta liŋ nira,   ❌
-māwūwus glāna sira kāma mohita,   ❌
-māṇīratna ƀūṣaṇa āsiŋ sāménaka,   ❌
-ya pāwèḥ nīrāmujūki maṅgīraŋ-giraŋ*   ❌
-
-jānākātmājātiśāya satya riŋ priya,   ❌
-Īkānaŋ mānaḥ sŧiti tāman pārĕŋ wanèḥ,   ❌
-kādi paṙwwāténugaḥ-ūgaḥ nīkaŋ aṅin,   ❌
-kṣāṇāmātra tañcala mānaḥ nīrāpagĕḥ*   ❌
-
-Ūmūwaḥ mānantwa sīra saŋ dāśānana,   ❌
-hūmĕnĕŋ ‌Ataḥ janākārajāputrikām,   ❌
-dādi héwa citta nīra saŋ dāśānana,   ❌
-ndan ‌Ikaŋ gĕlĕŋ ya ta gīnuḍa tan katon*   ❌
-
-so jānākātmājapa ta guṇā ni ko t-hĕnĕŋ,   ❌
-taṙ īkā dūmĕḥ aku ūmaṙyya mojara,   ❌
-Āpa tan sālaḥ ‌Iki ūlaḥku liṅkwari,   ❌
-prakrĕtiṅku rākṣasa tīnutku tan kalèn*   ❌
-
-kālāwan n ‌Anuŋ matākūtèŋ ūlaḥ salaḥ,   ❌
-Īkānaŋ tĕbĕŋ-tĕbĕŋ ‌Inak nya māđyama,   ❌
-kāmi kām hūwus warĕg ‌Amukti riŋ jagat,   ❌
-māri yan prāyatna riŋ ūlaḥ sālaḥ kĕna*   ❌
-
-ya mātaŋ nya tañ jalāni haywa tālara,   ❌
-tāmātaṙ pāhīṅan īkānaŋ āṅĕn-n aṅĕn,   ❌
-Āpa saṅśāyéry aku jāyèḥ jāgat kabèḥ,   ❌
-tūwi ƀaktya tāku ri kītari adyana*   ❌
-
-nyaŋ ūmaḥ māṇik kita sīnaṅgrāhérikā,   ❌
-ta-tūrū yāŧāsuka lāwan ‌ṅhūlun n ari,   ❌
-lālu tan mātīs magūlīṅan kītèŋ ‌lĕmaḥ,   ❌
-ri ḍāḍaṅku t-uṅgu ta-tūru sāménaka*   ❌
-
-ri hātiṅku t-uṅgu ta kūnĕŋ mīsan-misan,   ❌
-māra tan mādoḥ ry aku āsiŋ pārankwari,   ❌
-Āŧāwī hātinta kāhānan hānā ṅhulun,   ❌
-māra tan mādoḥ ri kīta nitya hé priyā*   ❌
-
-pītūhun pwa tāri sāwūwusku yukti ya,   ❌
-Āpa tan wanđ kīta sīwinku kāsiha,   ❌
-kālāwan hūripta saꝑālan pāréry aku,   ❌
-rāǥūputra kiṅkiṅĕn ‌Apa gūṇā nikām*   ❌
-
-yādīyan hānoliha sūsun pāmö hĕnī,   ❌
-ya īkā mānĕmwa hāyu dé ni rāǥawa,   ❌
-ya mātaŋ nya haywa ta wīhaŋ ry ūjaṙkkwari,   ❌
-Āku kéwālékana sīwinta rākṣakā*   ❌
-
-yādīyan kènéka pāsīwinta ri ṅhulun,   ❌
-kīta ratwa niŋ triƀūwānata dèṅkwari,   ❌
-Īkānaŋ tāṅis ‌Apa gūṇa nya târyakĕn,   ❌
-Āku toṣāđā lumīpūra ŋ pūtĕk hati*   ❌
-
-nya bālaṅku rākṣasa bāśa kītériya,   ❌
-sāpīninta yékana pāwèha ni ṅhulun,   ❌
-yādīyan hyaŋ indra kāhārĕpta séwakā,   ❌
-Ātīwāhya ménak āri yan ‌ya kahyuna*   ❌
-
-you may reign ‌Oeṙ my demon-aṙmmy*   ❌
-
-All what you wisḥ,   ❌
-I will gie toyou*   ❌
-
-Iṣyou want ‌Indra to wꜽt upon you,   ❌
-just say so*   ❌
-
-do not woṙry,   ❌
-Iṣṫat ‌Is what you want*   ❌
-
-Ilti nā wūwus nira ta saŋ dāśānana,   ❌
-jānākātmājātiśāya đira niśꞓaya,   ❌
-rāǥūputra kéwala hāné mānaḥ nira,   ❌
-sūmāhuṙ sa-niṣṭura ūjaṙ nīrāpĕḍĕs*   ❌
-
-kāla đik dāśānana si rawāṇāđama,   ❌
-jāḍa ḍūṙtta moha ya pīśaca kaśmala,   ❌
-yādīyan pāḍāna sīra saŋ rāǥūttama,   ❌
-Āpa ko mālap ry aku sèḍĕŋ nya tan hana*   ❌
-
-ṣlŧy imp*   ❌
-
-Iṣ you dāre to ṣǥt priñce raǥūttama,   ❌
-why did you abductyadīyan prawīra kamu wāni riŋ raṇa,   ❌
-ndya mātaŋ nya taṙ papāgākĕn sīrèŋ alas,   ❌
-syāpa śūra maṅraƀāsa yan tāya ŋ musuḥ,   ❌
-ya ta hīna śakti tĕṅsranmu duṙjjana*   ❌
-
-teṅĕranyu yan wĕdi-wĕdi rāṇāṅgaṇa,   ❌
-pārādāra kéwala mānahmu taṙ wanèḥ,   ❌
-rīneṅöṅku dé nikāna saŋ jāyèŋ musuḥ,   ❌
-Īkānaŋ tāwan ‌ya ta wīnĕḥ yāŧāsuka*   ❌
-
-A real hero,   ❌
-Ictorious ‌Oeṙ his ‌Enemies,   ❌
-Is ŧat he gies ṣreedom to hiscapties*   ❌
-
-Iāpa paṅrĕṅömu i siraŋ raǥūttama,   ❌
-tākārin sīrékana đānuṙdđārèŋ jagat,   ❌
-pūrūṣottāmāṅśa sīra déwāmānwṣa,   ❌
-nīyātāta ko pĕjāha dé nīrèŋ raṇa*   ❌
-
-A diīne man*   ❌
-
-you will sūrely be killed in battle by him*   ❌
-
-yādīyan pālaywa māsĕnötānĕŋ tasik,   ❌
-māhīranđra duṙgga gīri gahwārā kunĕŋ,   ❌
-gāwāyanta sūkṣma ta āwakmwātindriya,   ❌
-lūpūtāta dūran īka dé nīrèŋ raṇa*   ❌
-
-Earŧ,   ❌
-Oṙ on an ‌Impassible oṙ inaccessible mountꜽn,   ❌
-Oṙ you māke youṙṣelṣṫere is no way to escape ṣrom him in battle*   ❌
-
-Āŧāwā yādin wĕgīla riŋ prāƀūttama,   ❌
-rātu śaktīmānta ya ta liṅmu āśrayan,   ❌
-tūwi tan pānĕmwa śārāṇa nrĕpodđata,   ❌
-māpāga prāƀāwa nīra saŋ rāǥūttama*   ❌
-
-pārāméśwārātiśāya śakti riŋ jagat,   ❌
-tūwi dadya saŋ raǥūsūtomāpag sira,   ❌
-kīmūta ŋ sūrāsura mānuṣya rīmkṣasa,   ❌
-pānāhĕn pīsan niyāta yan pĕjaḥ kabèḥ*   ❌
-
-tītans*   ❌
-
-wiŧ ‌A siṅle aṙrow he can surely kill ŧem all*   ❌
-
-lālu kasyāsihmu lūmāwan sīrātukar,   ❌
-lāku tām pānĕmbaḥ i nāraṙyya rāǥawa,   ❌
-sīra śūra taṙ papāḍa riŋ pārakrama,   ❌
-yādi taṙ pānĕmbaha āwams ta ko pĕjaḥ*   ❌
-
-Ālour*   ❌
-
-Iṣ you do not submit to him,   ❌
-cleaṙlly you will be slꜽn*   ❌
-
-Īti nā sāhuṙ nira ta dèwi jānakī,   ❌
-wĕkāsan mādĕg ta sīra saŋ dāśānana,   ❌
-māṅūnus tĕwĕk tudīṅi dèwi jānakī,   ❌
-mĕlĕlö wūlat nira māhaṅgĕmĕṙ-gĕmĕr*   ❌
-
-And ‌Ery ŧreāteniŋ*   ❌
-
-jānākātmājā taṅa-tāṅapāran n iké,   ❌
-kādi mrĕtyu muṅgu ri tāṅanku ƀīṣaṇa,   ❌
-sābārin ‌ya tan pamātīhé si rāwaṇa,   ❌
-nīyātān tībā nya ri gūlu nyu sāhasa*   ❌
-
-ṣall ‌Upon youṙ neck saāgely*   ❌
-
-ri hūwus nīrāṅgĕmĕṙ ‌Ahos īkaŋ hati,   ❌
-Ūmūliḥ mārèŋ nagāra kérāṅan sira,   ❌
-hāna rākṣāsī paḍa-pāḍa tigyaŋ atus,   ❌
-ya kīnon īrāṅgĕmĕra śiǥra yaṙ tĕka*   ❌
-
-he oṙddered to ‌Intīmīdate sītā*   ❌
-
-soon ŧey aṙried*   ❌
-
-pāḍa kapwa sāhasa pārĕŋ māṅĕmbuli,   ❌
-māwūwus māmātyana kābèḥ nya maṅgĕmĕr,   ❌
-jānākātmājātiśāya niṙƀāyā ŋ manaḥ,   ❌
-hūmĕnĕŋ sūniśꞓala tūmon ‌ya sāhasa*   ❌
-
-did not moe an ‌Inꞓ ŧouǥ knowiŋ ŧey were brutal*   ❌
-
-hāna rākṣāsī ‌Atīśāyèŋ māhāṙdđika,   ❌
-saꝑālān ānak nira ta saŋ wīƀīṣaṇa,   ❌
-trījāṭī ṅāranya ya āmoǥa kāsihan,   ❌
-ya rūmākṣa dèwi jānākatmājè>ŋ taman*   ❌
-
-tūdiṅtkānāŋ āđama rākṣasī kabèḥ,   ❌
-Āpa donmu koŋ kala kābĕhmu duṙjjana,   ❌
-sīra tan pādoṣa māpāsaḥ lāwan priya,   ❌
-sīra patyamwa lalu đūṙtta niṙǥrĕṇa*   ❌
-
-tūwi satya taṙ papāḍa riŋ pātibrata,   ❌
-saꝑālān sīwin hulūna taku dé nira,   ❌
-yādīyan sāhāsa ta mānahmwāmātyana,   ❌
-nīyātāku mātya rūmūhun sākè sira*   ❌
-
-tṢhe is ‌Also ery loyal to heṙ husband wiŧout eual,   ❌
-woṙŧy to be my mis-hae to kill me ṣrṣṭ beṣore her*   ❌
-
-trījāṭā nāhan ‌ya ta wūwus nya niṣṭura,   ❌
-rīkānaŋ māṅĕmbuli mūliḥ ya kéraṅan,   ❌
-kāwĕkas ta saŋ janākārajāputrikā,   ❌
-trījāṭā ya téka tan ‌Adoḥ sāké sira*   ❌
-
-wiŧ trījāṭā who came to stay wiŧ her*
-
-ya ta sāđu dibya wīnāraḥ nīrèŋ lara,   ❌
-kālāwan n ‌Unĕŋ nira ri saŋ rāǥūttama,   ❌
-mwaŋ āsiḥ nīrè>ŋ priya ya téka pāmjarĕn,   ❌
-ya wīnaṙṇnānā nira sāmantārānaṅis*   ❌
-
-loed whiꞓ she described,   ❌
-whīle teaṙṣ were trickliŋ down heṙ ꞓeekṣ*   ❌
-
-trījāṭāri haywa ‌Upāhasa ri ṅhulun,   ❌
-ndak ‌Ajaṙ kīté lara ni tibra duḥkita,   ❌
-hrĕdāyaṅku śīṙṇna ya dīnagđa riŋ unĕŋ,   ❌
-ṣīnārik nīkaŋ wiđīwāśaku kāsyasiḥ*   ❌
-
-kīta kanyākāri tāmātan ‌wruḥ iŋ lara,   ❌
-Āku mānāsān mapa mānaḥta ri ṅhulun,   ❌
-saꝑālātīsāđu wĕka niŋ māhāṙdđika,   ❌
-ya mātaŋ nya kājaṙ āri tan hānā ŋ iraŋ*   ❌
-
-you āre a youŋ girl,   ❌
-my dear,   ❌
-you hae not known soṙrow yet*   ❌
-
-I amdear,   ❌
-wīŧout shāme*   ❌
-
-nya ta-takwa-takwana kītari tā-rĕṅö,   ❌
-tat-ānon ‌rīkaŋ ƀuwāna tibra duḥkita,   ❌
-Ūmāḍāna téki kālāraṅku tan sipi,   ❌
-sīnāranta riŋ wiđi hūripku saŋsara*   ❌
-
-0‍‌I beg you,   ❌
-my dear,   ❌
-to listen*   ❌
-
-you hae neeṙ known a deep soṙrow inŧis world ŧat could be compared wiŧ my immense distress*   ❌
-
-I‌Am‌toṙ-nya tīké hīḍĕpku rīka tan hanā juga,   ❌
-kādi pāpākaṙmma ni āwakku mandadi,   ❌
-A-ha mandāƀāgya māpāsaḥ sĕḍĕŋ masiḥ,   ❌
-Āpāranta ménaka īké āwakkwari*   ❌
-
-sinṣul deeds*   ❌
-
-Aḥ‌ ‌Ahl how unṣoṙttunāte ‌I am,   ❌
-to be sepārāted whīle ‌Inndya kunĕŋ kaŧā carita pūṙwwakāmla ya,   ❌
-Īrīkaŋ pūrāṇa ‌Aji paṙwwa kāṇḍa lèn,   ❌
-māpāsaḥ gĕlāna rāsa matya tambayan,   ❌
-wĕkāsan māpaṅguḥ ādūluṙ lāwan sĕnĕŋ*   ❌
-
-0‍but ‌In stories oṙ añcient naṙraties,   ❌
-ṣound ‌In holy bookṣ,   ❌
-scriptūres,   ❌
-parw-was (māhāƀārata) ‌Oṙ kaṇps (rāmāmyaṇa),   ❌
-Is sꜽd ŧat sepāration,   ❌
-ya tīkā sāménaka rĕṅönku lālanan,   ❌
-mālūyākwāpaṅguha ƀāṭara māsiha,   ❌
-māhūrip kāriḥ sira kūnèŋ pāḍāṅunĕŋ,   ❌
-yādīyan pĕjaḥ nrĕpāti haḥ ndya mājara*   ❌
-
-0‍let me heaṙ it ‌In relaation to comṣort my soul,   ❌
-to gie me hope ŧat ‌Iwho would tell me ŧat*   ❌
-
-syāpa déwa mmsīha tĕkāwaraḥ kunĕŋ,   ❌
-ndya sīraŋ māhāṙṣi rīkānaŋ tāpowana,   ❌
-lālu nisꝑālāŋ parāhītèŋ jāgat kabèḥ,   ❌
-tūwi déwātā wimūka đik tāmaṙ mawulat*   ❌
-
-Ātītibra riŋ lara wīmoha bāmp aku,   ❌
-sātīnonkwāsiŋ sarīnĕṅöṅku yāṅlaré,   ❌
-tūwi baṅsi kinnara ya kaṙṇnāśūla ya,   ❌
-lāra niŋ wīyoga kādūrus nīroṣađa*   ❌
-
-nya ta ya ŋ pāṅan n ‌Inum ‌Anékāwaṙṇna ya,   ❌
-kādi tāmāṅan wiṣa pāsuk nya riŋ gulū,   ❌
-Īkānaŋ kūlĕm kĕlu rīkaŋ pālaṅka lèn,   ❌
-kādi pañjārékana hīḍĕpkwālaḥ makūŋ*   ❌
-
-bārībin mānaḥku mūlat ‌Iŋ sĕkaṙ marūm,   ❌
-sūka tāpūluŋ jĕnu sūganđa utkata,   ❌
-pāḍa maṅlāréki sāhāna nya niṙgguṇa,   ❌
-māgāwé prāpañca ya māwèḥ ūnĕŋ magöŋ*   ❌
-
-kāpānānta nora ta kūnĕŋ ŋ īkèŋ ŋ unĕŋ,   ❌
-mānānā mānaḥku mānāsaṙ mānāŋ lanā,   ❌
-mānāranta saŋ madāna mèdi maṅlaré,   ❌
-māmānaḥ sīrāmanāsi maṅrūraḥ hati*   ❌
-
-hāti niŋ wīyoga jūga tibra yāgĕsĕŋ,   ❌
-dādi kaṣṭa dé ni śāra saŋ mānoƀawa,   ❌
-pārīƀūta đuṙtta kādi ƀuta yan tamé,   ❌
-hrèdāyātūtuṙ katūtūpan rājaḥ tamaḥ*   ❌
-
-tāmātaṙ ‌wruḥ iŋ asiḥ ātita niṙǥrĕṇa,   ❌
-sīra śatru niŋ ƀuwāna sukṣma tan katon,   ❌
-kūsummyūđām nīra tājĕm ‌ya soṙ taji,   ❌
-ya pānaḥ nīrāṅjaya-jāyèŋ jāgattraya*   ❌
-
-māpa déwa manmaŧa kītaŧa mānuṣa,   ❌
-māra yan ‌wruḥ iŋ lara māran kĕnĕŋ ŋ unĕŋ,   ❌
-kādūrus kītéki mālāraku dènta wèḥ,   ❌
-pīnānaḥ nda tan mati wīnĕḥta monĕṅa*   ❌
-
-do not kill me,   ❌
-you just māke me loesick*   ❌
-
-I pĕpĕk-opĕk-apĕga manaḥku riŋ umaḥ,   ❌
-tūmūrun mātāku mātūru hānèŋ ‌lĕmaḥ,   ❌
-trījāṭā tūmūt ry aku lūmalāna ŋ manaḥ,   ❌
-Ānūmāna riŋ priyāwīyoga duḥkita*   ❌
-
-pīnīpis nya tan suluṙ ‌Atis lāwan n usör,   ❌
-pāṅāsaḥ nya caṇḍana ātita śitala,   ❌
-sīnīram nya tékana āwakku toṣađmè,   ❌
-tūwi tan sūka pwaku mākin āliṅsaṅĕn*   ❌
-
-“she grinds reṣrcshiŋ roots togeŧeṙ wiŧ ‌Ery sooŧiŋ sandalwood andmakes a cream*   ❌
-
-she rubs my body wiŧ ‌It,   ❌
-yet it does not help,   ❌
-Iam not īkānaŋ āśoka sūƀagèŋ jagat kabèḥ,   ❌
-Ātīśoƀa saśri ya hāyu nya riŋ maṅöb,   ❌
-ri sāwèt ni tībra ni lāraṅku tan suka,   ❌
-lāra śoka téki hīnīḍĕpku tan wanèḥ*   ❌
-
-mārūrū sĕkaṙ nikānaŋ ‌Aśoka śīṙṇna ya,   ❌
-tūwi pādāpa nya mānĕḍĕŋ mānohara,   ❌
-tīnūlup nīkāŋ anīla cala yomirir,   ❌
-kādi māsiḥ iŋ kapānāsan kĕnèŋ unĕŋ*   ❌
-
-hāna nāgāpuṣpa pārīpuṙṇna riŋ halĕp,   ❌
-mātātā mānojña mānĕḍèŋ rīkaŋ natar,   ❌
-ri wĕruḥ nya yaṙ wirāha duḥkītālara,   ❌
-pūya kapwa yāsĕkaṙ āwèḥ ūnĕŋ magöŋ*   ❌
-
-loe*   ❌
-
-tan ‌Akūŋ mānahkwi kūsūmati utkatṭa,   ❌
-māgāwé rāras hati kūcup nya komala,   ❌
-mrĕdu pallāwa nya ya māwèḥ lūlut masiḥ,   ❌
-hūmīlī ta luḥku māṅādĕg wūlat ‌riya*   ❌
-
-tāmātan tūlaṙ haṅĕn-āṅĕnku kāsrĕpan,   ❌
-mūlat ‌Iŋ śīlātala i soṙ nya yālilaŋ,   ❌
-kātūtuṙ pwa tāmĕŋ-āmĕŋ iŋ tāpowana,   ❌
-kālāwan prīyottama nāréndra rāǥawa*   ❌
-
-®my mind ‌Is bewildered beyond compāre,
-when i see a clean ṣlat stonemaṅesaḥ tamolaḥ aku moha mūṙcꞓita,   ❌
-bālīsaḥ māsārabāli mamtya tan mati,   ❌
-tāmātaṙ kĕjĕp matāha-taha taṙ padon,   ❌
-Āpa tan tūmon priya mānaḥku duṙyyaśa*   ❌
-
-grows eeṙ ‌stroṅer*   ❌
-
-I want to die but i cannot*   ❌
-
-I cannot sleep,   ❌
-Alwaysŧinkiŋ ‌Ꜽmlessly*   ❌
-
-becꜷse i‌Am‌sepārāted ṣrom my beloed,   ❌
-my mindstrays ‌Away*   ❌
-
-nya ta lèn māwèḥ unĕŋ ātita maṅlaré,   ❌
-wīnārāwa naṣṭa māṅūyuyu riŋ kulĕm,   ❌
-kīnīduŋ nya taŋ priyāwīyoga suswara,   ❌
-rūmārab ta luḥku rūmĕṅö ya kāsrepan*   ❌
-
-hāna maṇdāmāruta mīriṙ ‌ya śītala,   ❌
-mārūrū īkaŋ kusūma dé nya riŋ ‌lĕmaḥ,   ❌
-māpūpul ta ganđa nīkānaŋ sĕkaṙ kabèḥ,   ❌
-tūmĕñuḥ hātiṅku ya sūmaṙ mārèŋ iruŋ*   ❌
-
-nostrils*   ❌
-
-tāmātaṙ hānékana hīḍĕpku sakṣaṇa,   ❌
-wīpārīta taṙ wĕnaŋ āśabda mohita,   ❌
-kūmĕtĕṙ ta sanđi nīkānaŋ āwak kabèḥ,   ❌
-Īkānaŋ hūrip kadi ta lina tan hana*   ❌
-
-Ūmīriṙ tīkāŋ aṅin ‌Atis māwoṙ hrĕbuk,   ❌
-māpānas hīḍĕpku rīya mimbūhīŋ unĕŋ,   ❌
-kūmĕlab hātiṅku rūmĕṅö gĕrĕḥ malon,   ❌
-tūmībā hūdan kadi ya mèdi lot humuŋ*   ❌
-
-“ŧe cool breeze blows,   ❌
-tākiŋ āloŋ pollen whiꞓ to my sensātion is not,   ❌
-Emotions*   ❌
-
-ri śīlātāla rikāku tĕka maṅö,   ❌
-swāmi nitya ya lanā māṅaway-away,   ❌
-toḥ ndya tā ya hāna tamba k-aṅĕn-aṅĕn,   ❌
-tā kādaŋ tāṅīsi tāwāku n-āgati*   ❌
-
-¢0ṇ ŧat ṣat stone i come to ŧink ābout my lord who seems to beckonṇo broŧeṙ oṙ sisteṙ to whom i can complꜽn*   ❌
-
-I become hopeless*   ❌
-
-syuk nīkaŋ jāwĕḥ awĕḥ ūnĕŋ āmatī,   ❌
-hrū nīkaŋ mādāna sūkṣma ya māṅani,   ❌
-rāḥ nīkaŋ hāti humīs mĕtu ri mata,   ❌
-mandāmārūta miriṙ kādi mātuluŋ*   ❌
-
-hyaŋ āṅin kīta ta māmāsiha śaraṇm,   ❌
-sanmātèŋ kāsīharĕp sĕḍĕŋ āpasaḥ,   ❌
-saŋ rāǥūttāma riŋ āśrāma wārahĕn,   ❌
-yak hānèŋ kālāna rākṣāsa tīnawan*   ❌
-
-Am here,   ❌
-kept in captie by a demon*   ❌
-
-ƀakti niŋ ŋ ūnĕŋ akūŋ nya ta tĕkakĕn,   ❌
-mwaŋ lāraṅku māpasaḥ ‌Asama-sama,   ❌
-moǥa mātya yak ‌Adoḥ sāka ri sira,   ❌
-nī ta pājāra ri saŋ prīyawīraha*   ❌
-
-monĕŋ āmbkk i sīraŋ rātu janāka,
-ƀakti ni ṅhūlun ‌Agöŋ ya tĕkākĕna,   ❌
-liṅku yaṙ wīrāha duḥkīta tīnawan,   ❌
-nā ta pājāra rikā ta laku huwus*   ❌
-
-I loŋ ṣoṙ my ṣāŧeṙ kiŋ jānāka,   ❌
-tāke to him my deep reereñce ṣoṙ himhaḥ bapaṅku umapmā ta lara nira,   ❌
-tībra māsiḥ iŋ anak sīra māharis,   ❌
-ḍū ndya tolāhan ‌Ikin prīyawīraha,   ❌
-yak hānèŋ kālāna rākṣāsa tīnawan*   ❌
-
-0‍‌Aḥ my ṣāŧer,   ❌
-how deep would be youṙ soṙrow,   ❌
-As you loe youṙ dꜷǥteṙmme do now ŧat i‌Am‌kept captie by a demon0‍*   ❌
-
-krāma lūmāku ta kāliḥ riŋ prāsāda r-pamīmjā,   ❌
-māpūnāgi ta ri saŋ hyaŋ praṙŧānākèn naréndra,   ❌
-ri hūrip nīra lawan ménakékaŋ paluṅguḥ,   ❌
-ya īkāna ta sināđyā tan kālèn dé nirāsiḥ*   ❌
-
-An ‌Oaŧ to god to oṣṣeṙ someŧiŋ iṣ god would gie his blessiṅs toanilātmajātiśaya haṙṣa yaṙ wulat,   ❌
-tūmūrun sākèh ‌ṅ-kayu ḍātĕŋ sīrèŋ ‌lĕmaḥ,   ❌
-ri hārĕp nīrāṙ ‌wruha ta dèwī jānakī,   ❌
-māṅūliḥ-ūliḥ macārīta mākin masö*   ❌
-
-pāpāsaḥ nīraŋ raǥūsūténūcap nira,   ❌
-kālāwan n ‌Unĕŋ nira īnaryākĕn wanèḥ,   ❌
-pānāṅis nīrèŋ alas ‌Umèt prīyā nira,   ❌
-ya wīnaṙṇnānī nira ta saŋ mārutsuta*   ❌
-
-Ūmūlat pwa dèwi jānākatmājé sira,   ❌
-dādi saṅśāyékana mānaḥ nīrāṙ wulat,   ❌
-wrāyāpéki mĕṅgĕp āṅūliḥ-hūliḥ masö,   ❌
-si dāśānānéki jūga lihkwāmañcana*   ❌
-
-deceie me*   ❌
-
-ri lāmĕḥ nya kawruhāna yan si rāwaṇa,   ❌
-gīnāwé nya tékana āwak nya wānara,   ❌
-cārīta nya bañcana wāliṅku tan tuhu,   ❌
-ri hārèp nya yan syaṅāna maṙyya rākṣasa*   ❌
-
-to be addressed,   ❌
-he does not appeaṙ ‌In his ṣorm as a demon*   ❌
-
-hāna paṅrĕṅöṅku tūwi wrĕttāmātra ya,   ❌
-pāwāraḥ nīkaŋ pinākācara rākṣasa,   ❌
-wwāra rakwa wānara kīnon mārī ry aku,   ❌
-ndan ‌Asamƀāwa ŋ prawāga yan ‌ya cārakā*   ❌
-
-Impossible ŧat he would send a monkey as messeṅer*   ❌
-
-nya wānèḥ dūmèḥ aku ya saŋsāyérikām,   ❌
-Īkānaŋ nīmitta sākātambāyadƀuta,   ❌
-Ūni niŋ mānuk paḍa ya komālaswara,   ❌
-ndan ‌Ikāpi rakwa śūƀāduta wāèkta ya*   ❌
-
-ndya kūnĕŋ ānuŋ mutūsāna ŋ sīnaṅśaya,   ❌
-Īkanmè ri daṇḍaka ātita riŋ madoḥ,   ❌
-māhĕlĕt tāsik gunuŋ ‌Alas jūraŋ trĕbis,   ❌
-passible rꜽnes*   ❌
-
-how could my beloed rāma come to know all aboutŧisi sĕḍĕṅkwi ṅūni inalap ni rāwaṇa,   ❌
-tĕmu taŋ gūnuŋ lwaḥ ādālĕm lāwan n alas,   ❌
-pāḍa kapwa ƀīṣaṇa kābèḥ āmānuṣa,   ❌
-Ālīwat ta riŋ tasik ‌Asiŋ wīśāla ya*   ❌
-
-rwa jūgékānā wĕnaŋ ālintāṅĕn tasik,   ❌
-hyaŋ āṅin lāwan garūḍa lèna tan hana,   ❌
-ndya ta hétu niŋ wray ūmāra tĕkéry aku,   ❌
-ya mātaŋ nya bañcana ni rawāṇékihan*   ❌
-
-ti nā ta saṅśāya nīré dalĕm hati,   ❌
-māwīwéka wèt nira gĕlĕm bīnañcana,   ❌
-Ūmāsö ta saŋ pinākāduta māmruti,   ❌
-prāṇātāṙ pānĕmbaḥ āśīlawāraḥ sira*   ❌
-
-jāya dèwi haywa kīta saŋsāyèŋ manaḥ,   ❌
-pāwānātmāja ṅhulun ‌Iké kīnon marā,   ❌
-nrèpāputra rāma mākācarāké ṅhulun,   ❌
-lūmāwad hūrip nrĕpāsūta nāhan ‌ya don*   ❌
-
-d,   ❌
-Acde nrĕpāsūtār*   ❌
-
-messeṅeṙ to ṣind ‌Out ‌About you*   ❌
-
-kāhānān nāréndra nrĕpāputra rāǥawa,   ❌
-rīkānaŋ gūnuŋ pratītānama mālyawān,   ❌
-gīri winđya yékana kīdul nīkāparö,   ❌
-wwāra rĕṣyāmūkagīri loṙ nya tan madoḥ*   ❌
-
-mālyāwān*   ❌
-
-wāhu mèḥ pītu ŋ tabĕha ṅuni riŋ kulĕm,   ❌
-Ūmāhas ‌ṅhūlun tĕka māsuk ‌rīkaŋ taman,   ❌
-ri sĕḍĕŋ nīkaŋ daśāmūkaṅūnus tĕwĕk,   ❌
-māhārĕp ‌ṅhūlun pwa lūmāgé ya mapraṅa*   ❌
-
-dāśāmūꝁa drew his sword,   ❌
-I wanted to ṣiǥt him in battle*   ❌
-
-Iīwāhu mèḥ umaṅswa maṅāṅĕn-naṅĕn ‌ṅhulun,   ❌
-ri īwĕḥ nīkaŋ wwaŋ āmĕnaŋ rīkaŋ raṇa,   ❌
-Īkānaŋ pākon ƀiṣāma yan kāsiđđa ya,   ❌
-ya dūmèḥ ṅhūlun wuruŋ ‌Umaṅswa maṅlagm*   ❌
-
-ṣiǥt him*   ❌
-
-wwāra mitra rāka dèwī,   ❌
-saŋ sugrīwa ṅāran nīra,   ❌
-rātu niŋ wré śakti tĕmĕn,   ❌
-sīra kūmon ‌ṅhūlun dūtmè*   ❌
-
-Ūmāhas ‌ṅhūlun ‌Anūsup,   ❌
-ri kāḍatwan ‌Umèt dèwī,   ❌
-mamriḥ ta ṅhūlun maniñjo,   ❌
-nda tan paṅguḥ rīkaŋ rajya*   ❌
-
-makwèḥ tāpsārī kapaṅguḥ,   ❌
-sĕḍĕŋ rārā ta manojña,   ❌
-lāwan rākṣāsa makĕmit,   ❌
-wīpārīta kābèḥ nidrmè*   ❌
-
-guaṙdded by demons who were ‌In deep sleep,   ❌
-(‌As ‌Iṣ ŧey were ‌Uñcons-cious)*   ❌
-
-nārānāŧa rāǥusūta,   ❌
-glānākiṅkiŋ māṅĕn dèwī,   ❌
-wèt niŋ ūnĕŋ sīrakūrī,   ❌
-mātaŋ nyākon ‌ṅhūlun dūtā*   ❌
-
-I īnāṅĕn-nāṅĕn nīrākūŋ,   ❌
-ri tan pāṙcꞓāya riŋ dūta,   ❌
-nya ta simsim nīraṙ pāwèḥ,   ❌
-nīré ṅhūlun cihna donya*   ❌
-
-tūwi rāntĕn dèwi mākūŋ,   ❌
-saŋ lakṣmāṇa śoka sīra,   ❌
-magyā ta sīrān parā ṅké,   ❌
-mātyānaŋ rāwāṇan mūṙkka*   ❌
-
-Éalso youṙ yoūṅeṙ broŧer,   ❌
-priñce lakṣmāṇa is eceediṅly ‌Upset*   ❌
-
-he bāla wānāra ‌Umāḍaŋ,   ❌
-māhöm mākolīha ŋ śatru,   ❌
-ya mātaŋ nyan ddèwi t-aṅhèr,   ❌
-haywa gym rākṣan hūripta*   ❌
-
-ṣore pleāse wꜽt,   ❌
-do not be impātient,   ❌
-look aṣṭeṙ youṙ līṣe*   ❌
-
-mātākut ta ṅhūlun ṅūni,   ❌
-sĕḍĕŋ ta mojaṙ iŋ mūṙkka,   ❌
-yukti pūwiḥ bīṣa tĕmĕn,   ❌
-lĕpas ‌riŋ rākṣāsa duṣṭa*   ❌
-
-demon*   ❌
-
-nīyāta ŋ rāwāṇa pĕjaḥ,   ❌
-dé śrī rāma riŋ palāgan,   ❌
-prāṇa nya pānāhuranya,   ❌
-doṣa nyan mālap ‌ri dèwr*   ❌
-
-māwĕkāsa māhadèwī,   ❌
-ri sīra saŋ rāǥusūta,   ❌
-pĕpöṅĕn tāya nikānaŋ,   ❌
-mākĕmit ‌ya hūwus luṅhā*   ❌
-
-y *   ❌
-
-w,   ❌
-wāre not here ‌Anymore*   ❌
-
-kūnaŋ sīra rāka dèwī,   ❌
-kāwĕkas ‌rīkaŋ malyāwān,   ❌
-sātus tāhun ‌Ikanaŋ wé,   ❌
-sowé-sowé wèt nirāgyām*   ❌
-
-nā liŋ nīra saŋ hanūmīn,   ❌
-dèwī sītā sīraśꞓarya,   ❌
-rūmĕṅö pāwāraḥ i saŋ,   ❌
-mārutsūta haṙṣacitta*   ❌
-
-hé pāwānātmāja t-aṅsö,   ❌
-tuṣṭāmbĕkwi dènta dūta,   ❌
-cūḍāmāṇiṅku ya téki,   ❌
-wĕhākĕna ri saŋ rāma*   ❌
-
-0‍hey pāwānātmāja,   ❌
-step ṣoṙwward ‌ ‌I‌Am‌happy ŧat you were oṙddered tolawan ta rékaṅku wanèḥ,   ❌
-cihnaṅku mālāra monĕŋ,   ❌
-ya ta wāwan ‌Iki dènta,   ❌
-sīnūṅākĕn ‌I saŋ rāma*   ❌
-
-It to rāma*   ❌
-
-mwaŋ taṅgūhi sīra nīhan,   ❌
-māṅānāturwa haywākūŋ,   ❌
-tāya soka ṅwaŋ maṅāraŋ,   ❌
-ṅhūlun hūwus ‌wruḥ ri donya*   ❌
-
-nāhan tojaṙ māhadèwī,   ❌
-tan sandéha mānaḥ nīra,   ❌
-tūmon simsim nīraŋ rāma,   ❌
-ya dūmèḥ sīra niścāya*   ❌
-
-mārutsūta sīromaṅsö,   ❌
-māṇik ‌ya téka tinaṅgap,   ❌
-māṅañjāli sīranĕmbaḥ,   ❌
-mādĕg ta sīra śiǥra ya*   ❌
-
-mānaḥ nīra sāhaṙṣātaḥ,   ❌
-hūwus tūmĕmu ri dèwī,   ❌
-wīsāta māṅĕn-aṅĕn,   ❌
-ta sīra ri sākamantyan*   ❌
-
-ṣoṙ a whīle to ŧink*   ❌
-
-nīhan pīnūji niŋ dūta,   ❌
-Īkaŋ tūmĕmwa ri donya,   ❌
-Amdètāyāsā yaśa nya,   ❌
-Ānuŋ taŋ adƀūta cihnā*   ❌
-
-hūwus ta yāku umaṅguḥ,   ❌
-ri sīraŋ jānākaputrī,   ❌
-nda tan hāna ya wanèhan,   ❌
-Ānuŋ āyāsā yaśaṅkwa*   ❌
-
-Āśokāwāna ya téki,   ❌
-tāman ‌Atīśāya riŋ lwā,   ❌
-ya téki rāƀāsanaṅkwa,   ❌
-kāyu nya ya ta śiṙṇnānĕn*   ❌
-
-ŧis ‌Aśoka-gaṙdden is ‌A laṙgge gaṙdden*   ❌
+{}
+
+ya ikā paran saŋ anilātmajāṙ pamèt,
+maṅikis sirāṙ téka manèk ‌rikaŋ kayu,
+ri takut nirān kawurugāŋ manuk pijĕr,
+maturū ri pāŋ nikaŋ aśoka pādapa*
+
+kramakāla mèḥ rahina yaṙ pituŋ tabĕḥ,
+Umiriṙ ṅ aṅin pracalitékanaŋ kayu,
+Aṅatag mawuṅwa juga yāṅgugaḥ sĕkar,
+dadi jāgra taŋ kusuma māmri yākucup*
+
+matakut ta saŋ pawanaputra riŋ aṅin,
+tumahā pawuṅwa nikanaŋ manuk kabèḥ,
+humĕnĕŋ sirāmriḥ aṅuḍampĕl iŋ kayu,
+cala pāŋ nya tulya ya maṅulyat aṅlilir*
+
+maṇi candrakānta tamalaḥ rikaŋ taman,
+kĕna raśmi ya drawa humīs nirantara,
+kadi luḥ nya yaṙ wulat i dèwī jānakī,
+manaṅis ‌rikaŋ wĕṅi tamaṙ kĕnĕŋ turū*
+
+Ikanaŋ sĕkaṙ ‌ya rinurū rikaŋ aṅin,
+manaṅis jugān paguliṅan ‌rikaŋ ‌lĕmaḥ,
+tumibāŋ hĕbun kabarabas ‌ya luḥ nikā,
+malarāṙ wulat ‌ri sira dèwī jānakuī*
+
+Aŧa möĕḥ wwaluŋ tabĕḥ ajāgra taŋ manuk,
+mrĕdu komala swara manoharān uni,
+kadi śabda niŋ kayu ya kāsihan mulat,
+Umahā tumaṅguhana saŋ kĕnèŋ lara*
+
+janakātmajā ta rumĕṅö manuk humuŋ,
+tuwi suswarān uni manojña yaṙ hiḍĕp,
+mahĕbaŋ-hĕbaŋ hati nirāgiraŋ manaḥ,
+Umaṅĕn-n aṅĕn prawara rāǥawān mara*
+
+pawanītmajātiśaya haṙṣajāṅrĕṅö,
+Uni niŋ manuk śuƀanimitta liŋ nira,
+saꝑaléki ṅèlku wĕkasanta yaṙ hiḍĕp,
+niyatān katĕmwa sira dèwiī jānakī*
+
+tinabĕḥ tikaŋ bahiri riŋ taman wawanŋ,
+kataraṅgulādƀuta ta saŋ marutsuta,
+hana dūta yékana tĕkā mĕné r-hiḍsp,
+kadi maṅkanāèn uni makin ta yānitir*
+
+wahu mèḥ umĕtwa ta ƀaṭāra ƀāmskara,
+makucĕm wulan kadi wulat nikaŋ laṅit,
+kalaran manon alara rūkṣa kāsyasiḥ,
+milu téki duḥka mawĕnĕs tikaŋ śaśī*
+
+nayawit widagđa sira saŋ marutsuta,
+maḍĕmit sawut sira sawèt nikaŋ naya,
+tumulaṙ-tulaṙ sira lumumpat iŋ kayu,
+kumĕtĕṙ-kĕtĕṙ tika wugat-wugat nira*
+
+Umulat sirèŋ lemaḥ anon ta yānaṅis,
+wwaŋ akūŋ sĕḍĕŋ malara tībra kāsyasiḥ,
+kadi rūpa niŋ priyawijaya duḥkita,
+A-ha dèwi liŋ nira saniśꞓayèŋ manaḥ*
+
+maṅiṅĕt-iṅĕt maṅujiwat sirāṙ wulat,
+mĕtu kawrayan nira tumuṅkul aṅjĕṅok,
+masĕkĕl tikā hati nirāṙ wulat masiḥ,
+lara niŋ kasaḥ priyawiyoga liŋ nira*
+
+makurū ŋ awak raga-ragékanaŋ igām,
+kuruṅañ jugāraŋ anipis yayénaṅit,
+Ikanaŋ manaḥ kadi manuk jugéniṅu,
+kinuruŋ kinuṅkuŋ aṅaraŋ makin makuŋ*
+
+gĕluṅan masāk ‌ya makusut kĕn ‌ṅ-lĕbu,
+magĕlöḥ apan maguliṅan ‌rikaŋ ‌lĕmaḥ,
+sumaput pwa yé muka nirākilāputiḥ,
+kadi candra pūṙṇnama kĕnèŋ lamad-lamad*
+
+I hana saṅgrahé sira umaḥ hĕmīs tuwi,
+taṙ ahūrakĕn ‌ya gumuliŋ sirèŋ ‌lĕmaḥ,
+kadi duḥka saŋ raǥusutāṙ hanèŋ alas,
+hiḍepĕṅkwa liŋ nira mataŋ nya taṙ ‌lĕgö*
+
+baribin manaḥ niran inambulan nikaŋ,
+kala rākṣasī tan anumāna riŋ kasaḥ,
+maṅidīdi mèdi ri siraŋ kĕnèŋ unĕŋ,
+Awijaḥ mamid maṅujiwat alaḥ puji*
+
+Umulat sirékanaŋ agupyan aṅdĕlö,
+mawisik-wisik mrisakiti ŋ wiyoga wèḥ,
+j lukān iké tan anumāna duṙjjana,
+ya ta liŋ nirojaṙ-ujaṙ iŋ dalem hati*
+
+maṅisĕk-k isèk sira sĕsök tikaŋ hati,
+Ibskan unĕŋ ika manaḥ nirāsĕkĕl,
+Ikanaŋ taṅis juga lanā hané sira,
+kadi gambaṙ wālaka raré wahū mĕtu*
+
+nda tatīta saŋ malara kaṣṭa duḥkita,
+daśadéśa māwa ya mawmès huwus katon,
+ƀuwanāntarāla malilaŋ hilaŋ pĕtĕŋ,
+hati saŋ wiyoga winĕgil nya yan pasuk*
+
+nira saŋ daśānana glāna taŋ manaḥ,
+Inusī nikaŋ wiṣaya lèn unĕŋ lanā,
+dadi śīǥra yaṙ laku marèŋ taman muwaḥ,
+maluyāmujuk-mujukanéki don ira*
+
+saḍateŋ nirāṙ ujaṙ i dèwi jānakī,
+Ari mꜽŧilī lalu lalista ri ṅhulun,
+ṇarakāku tāri yadiyan mrĕṣodita,
+kita tāri kéwala gumantuŋ iŋ mata*
+
+janakātmajātiśaya maṅkin aṅlaré,
+ṣa-ulaḥta tan malalisāta liṅkwari,
+ṇya laraṅku dènta kalalaḥ ‌lĕhöŋ pĕjaḥ,
+kaśulmpa tan hana asiḥta ri ṅhulun*
+
+sira saŋ daśānana nahan ta liŋ nira,
+mawuwus glāna sira kāma mohita,
+maṇiratna ƀūṣaṇa asiŋ saménaka,
+ya pawèḥ nirāmujuki maṅgiraŋ-giraŋ*
+
+janakātmajātiśaya satya riŋ priya,
+Ikanaŋ manaḥ sŧiti taman parĕŋ wanèḥ,
+kadi paṙwwaténugaḥ-ugaḥ nikaŋ aṅin,
+kṣaṇamātra tañcala manaḥ nirāpagĕḥ*
+
+Umuwaḥ manantwa sira saŋ daśānana,
+humĕnĕŋ ataḥ janakarājaputrikām,
+dadi héwa citta nira saŋ daśānana,
+ndan ikaŋ gĕlĕŋ ya ta ginūḍa tan katon*
+
+so janakātmajāpa ta guṇā ni ko t-hĕnĕŋ,
+taṙ ikā dumĕḥ aku umāṙyya mojara,
+Apa tan salaḥ iki ulaḥku liṅkwari,
+prakrĕtiṅku rākṣasa tinūtku tan kalèn*
+
+kalawan n anuŋ matakutèŋ ulaḥ salaḥ,
+Ikanaŋ tĕbĕŋ-tĕbĕŋ inak nya māđyama,
+kami kām huwus warĕg amukti riŋ jagat,
+mari yan prayatna riŋ ulaḥ salaḥ kĕna*
+
+ya mataŋ nya tañ jalani haywa tālara,
+tamataṙ pahīṅan ikanaŋ aṅĕn-n aṅĕn,
+Apa saṅśayéry aku jayèḥ jagat kabèḥ,
+tuwi ƀaktya tāku ri kitāri adyana*
+
+nyaŋ umaḥ maṇik kita sinaṅgrahérikā,
+ta-turū yaŧāsuka lawan ‌ṅhulun n ari,
+lalu tan matīs maguliṅan kitèŋ ‌lĕmaḥ,
+ri ḍaḍaṅku t-uṅgu ta-turū saménaka*
+
+ri hatiṅku t-uṅgu ta kunĕŋ misan-misan,
+mara tan madoḥ ry aku asiŋ parankwari,
+Aŧawī hatinta kahanan hanā ṅhulun,
+mara tan madoḥ ri kita nitya hé priyā*
+
+pituhun pwa tāri sawuwusku yukti ya,
+Apa tan wanđ kita siwinku kāsiha,
+kalawan huripta saꝑalān paréry aku,
+raǥuputra kiṅkiṅĕn apā guṇā nikām*
+
+yadiyan hanoliha susun pamö hĕnī,
+ya ikā manĕmwa hayu dé ni rāǥawa,
+ya mataŋ nya haywa ta wihaŋ ry ujaṙkkwari,
+Aku kéwalékana siwinta rākṣakā*
+
+yadiyan kènéka pasiwinta ri ṅhulun,
+kita ratwa niŋ triƀuwanāta dèṅkwari,
+Ikanaŋ taṅis apa guṇa nya târyakĕn,
+Aku toṣađā lumipura ŋ putĕk hati*
+
+nya balaṅku rākṣasa baśā kitériya,
+sapininta yékana pawèha ni ṅhulun,
+yadiyan hyaŋ indra kaharĕpta séwakā,
+Atiwāhya ménak ari yan ‌ya kahyuna*
+
+you may reign oeṙ my demon-aṙmmy*
+
+All what you wisḥ,
+I will gie toyou*
+
+Iṣyou want indra to wꜽt upon you,
+just say so*
+
+do not woṙry,
+Iṣṫat is what you want*
+
+Ilti nā wuwus nira ta saŋ daśānana,
+janakātmajātiśaya đīra niśꞓaya,
+raǥuputra kéwala hané manaḥ nira,
+sumahuṙ sa-niṣṭura ujaṙ nirāpĕḍĕs*
+
+kala đik daśānana si rāwaṇāđama,
+jaḍa ḍūṙtta moha ya piśaca kaśmala,
+yadiyan paḍāna sira saŋ raǥūttama,
+Apa ko malap ry aku sèḍĕŋ nya tan hana*
+
+ṣlŧy imp*
+
+Iṣ you dare to ṣǥt priñce raǥūttama,
+why did you abductyadiyan prawīra kamu wāni riŋ raṇa,
+ndya mataŋ nya taṙ papagakĕn sirèŋ alas,
+syapa śūra maṅraƀasa yan taya ŋ musuḥ,
+ya ta hīna śakti tĕṅsranmu duṙjjana*
+
+teṅĕranyu yan wĕdi-wĕdī raṇāṅgaṇa,
+paradāra kéwala manahmu taṙ wanèḥ,
+rineṅöṅku dé nikana saŋ jayèŋ musuḥ,
+Ikanaŋ tawan ‌ya ta winĕḥ yaŧāsuka*
+
+A real hero,
+Ictorious oeṙ his enemies,
+Is ŧat he gies ṣreedom to hiscapties*
+
+Iapa paṅrĕṅömu i siraŋ raǥūttama,
+takarin sirékana đanuṙdđarèŋ jagat,
+puruṣottamāṅśa sira déwamānwṣa,
+niyatāta ko pĕjaha dé nirèŋ raṇa*
+
+A diine man*
+
+you will surely be killed in battle by him*
+
+yadiyan palaywa masĕnötanĕŋ tasik,
+mahiranđra duṙgga giri gahwarā kunĕŋ,
+gawayanta sūkṣma ta awakmwatindriya,
+luputāta dūran ika dé nirèŋ raṇa*
+
+Earŧ,
+Oṙ on an impassible oṙ inaccessible mountꜽn,
+Oṙ you make youṙṣelṣṫere is no way to escape ṣrom him in battle*
+
+Aŧawā yadin wĕgila riŋ praƀūttama,
+ratu śaktimānta ya ta liṅmu āśrayan,
+tuwi tan panĕmwa śaraṇā nrĕpodđata,
+mapaga praƀāwa nira saŋ raǥūttama*
+
+paraméśwarātiśaya śakti riŋ jagat,
+tuwi dadya saŋ raǥusutomapag sira,
+kimuta ŋ surāsura manuṣya rīmkṣasa,
+panahĕn pisan niyata yan pĕjaḥ kabèḥ*
+
+titans*
+
+wiŧ a siṅle aṙrow he can surely kill ŧem all*
+
+lalu kasyasihmu lumawan sirātukar,
+laku tām panĕmbaḥ i narāṙyya rāǥawa,
+sira śūra taṙ papaḍa riŋ parakrama,
+yadi taṙ panĕmbaha awāms ta ko pĕjaḥ*
+
+Alour*
+
+Iṣ you do not submit to him,
+cleaṙlly you will be slꜽn*
+
+Iti nā sahuṙ nira ta dèwi jānakī,
+wĕkasan madĕg ta sira saŋ daśānana,
+maṅunus tĕwĕk tudiṅi dèwi jānakī,
+mĕlĕlö wulat nira mahāṅgĕmĕṙ-gĕmĕr*
+
+And ery ŧreateniŋ*
+
+janakātmajā taṅa-taṅāparan n iké,
+kadi mrĕtyu muṅgu ri taṅanku ƀīṣaṇa,
+sabarin ‌ya tan pamatihé si rāwaṇa,
+niyatān tibā nya ri gulū nyu sāhasa*
+
+ṣall upon youṙ neck saagely*
+
+ri huwus nirāṅgĕmĕṙ ahos ikaŋ hati,
+Umuliḥ marèŋ nagara kéraṅan sira,
+hana rākṣasī paḍa-paḍā tigyaŋ atus,
+ya kinon irāṅgĕmĕra śīǥra yaṙ tĕka*
+
+he oṙddered to intimidate sītā*
+
+soon ŧey aṙried*
+
+paḍa kapwa sāhasa parĕŋ maṅĕmbuli,
+mawuwus mamātyana kabèḥ nya maṅgĕmĕr,
+janakātmajātiśaya niṙƀayā ŋ manaḥ,
+humĕnĕŋ suniśꞓala tumon ‌ya sāhasa*
+
+did not moe an inꞓ ŧouǥ knowiŋ ŧey were brutal*
+
+hana rākṣasī atiśayèŋ mahāṙdđika,
+saꝑalān anak nira ta saŋ wiƀīṣaṇa,
+trijaṭī ṅaranya ya amoǥa kāsihan,
+ya rumākṣa dèwi janakātmajè>ŋ taman*
+
+tudiṅtkanāŋ ađama rākṣasī kabèḥ,
+Apa donmu koŋ kala kabĕhmu duṙjjana,
+sira tan padoṣa mapasaḥ lawan priya,
+sira patyamwa lalu đūṙtta niṙǥrĕṇa*
+
+tuwi satya taṙ papaḍa riŋ patibrata,
+saꝑalān siwin huluna tāku dé nira,
+yadiyan sahāsa ta manahmwamātyana,
+niyatāku mātya rumuhun sakè sira*
+
+tṢhe is also ery loyal to heṙ husband wiŧout eual,
+woṙŧy to be my mis-hae to kill me ṣrṣṭ beṣore her*
+
+trijaṭā nahan ‌ya ta wuwus nya niṣṭura,
+rikanaŋ maṅĕmbuli muliḥ ya kéraṅan,
+kawĕkas ta saŋ janakarājaputrikā,
+trijaṭā ya téka tan adoḥ saké sira*
+
+wiŧ trijaṭā who came to stay wiŧ her*
+
+ya ta sāđu dibya winaraḥ nirèŋ lara,
+kalawan n unĕŋ nira ri saŋ raǥūttama,
+mwaŋ asiḥ nirè>ŋ priya ya téka pāmjarĕn,
+ya winaṙṇnanā nira samantarānaṅis*
+
+loed whiꞓ she described,
+while teaṙṣ were trickliŋ down heṙ ꞓeekṣ*
+
+trijaṭāri haywa upahāsa ri ṅhulun,
+ndak ajaṙ kité lara ni tībra duḥkita,
+hrĕdayaṅku śīṙṇna ya dinagđa riŋ unĕŋ,
+ṣinarik nikaŋ wiđiwaśāku kāsyasiḥ*
+
+kita kanyakāri tamatan ‌wruḥ iŋ lara,
+Aku mānasān mapa manaḥta ri ṅhulun,
+saꝑalātisāđu wĕka niŋ mahāṙdđika,
+ya mataŋ nya kājaṙ ari tan hanā ŋ iraŋ*
+
+you are a youŋ girl,
+my dear,
+you hae not known soṙrow yet*
+
+I amdear,
+wiŧout shame*
+
+nya ta-takwa-takwana kitāri tā-rĕṅö,
+tat-anon ‌rikaŋ ƀuwana tībra duḥkita,
+Umaḍāna téki kalaraṅku tan sipi,
+sinaranta riŋ wiđi huripku saŋsara*
+
+0‍‌I beg you,
+my dear,
+to listen*
+
+you hae neeṙ known a deep soṙrow inŧis world ŧat could be compared wiŧ my immense distress*
+
+I‌Am‌toṙ-nya tiké hiḍĕpku rika tan hanā juga,
+kadi pāpakaṙmma ni awakku mandadi,
+A-ha mandaƀāgya mapasaḥ sĕḍĕŋ masiḥ,
+Aparanta ménaka iké awakkwari*
+
+sinṣul deeds*
+
+Aḥ‌ ‌Ahl how unṣoṙttunate i am,
+to be separated while inndya kunĕŋ kaŧā carita pūṙwwakāmla ya,
+Irikaŋ purāṇa aji paṙwwa kāṇḍa lèn,
+mapasaḥ gĕlāna rasa mātya tambayan,
+wĕkasan mapaṅguḥ aduluṙ lawan sĕnĕŋ*
+
+0‍but in stories oṙ añcient naṙraties,
+ṣound in holy bookṣ,
+scriptures,
+parw-was (mahāƀārata) ‌Oṙ kāṇps (rāmāmyaṇa),
+Is sꜽd ŧat separation,
+ya tikā saménaka rĕṅönku lālanan,
+maluyākwapaṅguha ƀaṭāra māsiha,
+mahurip kariḥ sira kunèŋ paḍāṅunĕŋ,
+yadiyan pĕjaḥ nrĕpati hāḥ ndya mājara*
+
+0‍let me heaṙ it in relaation to comṣort my soul,
+to gie me hope ŧat iwho would tell me ŧat*
+
+syapa déwa mmsiha tĕkāwaraḥ kunĕŋ,
+ndya siraŋ mahāṙṣi rikanaŋ tapowana,
+lalu nisꝑalāŋ parahitèŋ jagat kabèḥ,
+tuwi déwatā wimuka đik tamaṙ mawulat*
+
+Atitibra riŋ lara wimoha bāmp aku,
+satinonkwasiŋ sarinĕṅöṅku yāṅlaré,
+tuwi baṅsi kinnara ya kaṙṇnaśūla ya,
+lara niŋ wiyoga kadurus niroṣađa*
+
+nya ta ya ŋ paṅan n inum anékawaṙṇna ya,
+kadi tāmaṅan wiṣa pasuk nya riŋ gulū,
+Ikanaŋ kulĕm kĕlu rikaŋ palaṅka lèn,
+kadi pañjarékana hiḍĕpkwalaḥ makūŋ*
+
+baribin manaḥku mulat iŋ sĕkaṙ marūm,
+suka tāpuluŋ jĕnu suganđa utkata,
+paḍa maṅlaréki sahana nya niṙgguṇa,
+magawé prapañca ya mawèḥ unĕŋ magöŋ*
+
+kapanānta nora ta kunĕŋ ŋ ikèŋ ŋ unĕŋ,
+mananā manaḥku manasaṙ manāŋ lanā,
+manaranta saŋ madana mèdi maṅlaré,
+mamanaḥ sirāmanasi maṅruraḥ hati*
+
+hati niŋ wiyoga juga tībra yāgĕsĕŋ,
+dadi kaṣṭa dé ni śara saŋ manoƀawa,
+pariƀūta đuṙtta kadi ƀūta yan tamé,
+hrèdayātutuṙ katutupan rajaḥ tamaḥ*
+
+tamataṙ ‌wruḥ iŋ asiḥ atīta niṙǥrĕṇa,
+sira śatru niŋ ƀuwana sūkṣma tan katon,
+kusummyuđām nira tajĕm ‌ya soṙ taji,
+ya panaḥ nirāṅjaya-jayèŋ jagattraya*
+
+mapa déwa manmaŧa kitāŧa mānuṣa,
+mara yan ‌wruḥ iŋ lara marān kĕnĕŋ ŋ unĕŋ,
+kadurus kitéki malarāku dènta wèḥ,
+pinanaḥ nda tan mati winĕḥta monĕṅa*
+
+do not kill me,
+you just make me loesick*
+
+I pĕpĕk-opĕk-āpĕga manaḥku riŋ umaḥ,
+tumurun matāku maturū hanèŋ ‌lĕmaḥ,
+trijaṭā tumūt ry aku lumālana ŋ manaḥ,
+Anumāna riŋ priyawiyoga duḥkita*
+
+pinipis nya tan suluṙ atīs lawan n usör,
+paṅasaḥ nya caṇḍana atīta śitala,
+siniram nya tékana awakku toṣađmè,
+tuwi tan suka pwaku makin aliṅsaṅĕn*
+
+“she grinds reṣrcshiŋ roots togeŧeṙ wiŧ ery sooŧiŋ sandalwood andmakes a cream*
+
+she rubs my body wiŧ it,
+yet it does not help,
+Iam not ikanāŋ aśoka suƀagèŋ jagat kabèḥ,
+Atiśoƀa saśrī ya hayu nya riŋ maṅöb,
+ri sawèt ni tībra ni laraṅku tan suka,
+lara śoka téki hiniḍĕpku tan wanèḥ*
+
+marurū sĕkaṙ nikanaŋ aśoka śīṙṇna ya,
+tuwi pādapa nya manĕḍĕŋ manohara,
+tinulup nikāŋ anila cāla yomirir,
+kadi māsiḥ iŋ kapanasan kĕnèŋ unĕŋ*
+
+hana nāgapuṣpa paripūṙṇna riŋ halĕp,
+matatā manojña manĕḍèŋ rikaŋ natar,
+ri wĕruḥ nya yaṙ wiraha duḥkitālara,
+puya kapwa yāsĕkaṙ awèḥ unĕŋ magöŋ*
+
+loe*
+
+tan akūŋ manahkwi kusumāti utkatṭa,
+magawé raras hati kucup nya komala,
+mrĕdu pallawa nya ya mawèḥ lulut masiḥ,
+humilī ta luḥku maṅadĕg wulat ‌riya*
+
+tamatan tulaṙ haṅĕn-aṅĕnku kāsrĕpan,
+mulat iŋ śilātala i soṙ nya yālilaŋ,
+katutuṙ pwa tāmĕŋ-amĕŋ iŋ tapowana,
+kalawan priyottama naréndra rāǥawa*
+
+®my mind is bewildered beyond compare,
+when i see a clean ṣlat stonemaṅesaḥ tamolaḥ aku moha mūṙcꞓita,
+balisaḥ masārabali māmtya tan mati,
+tamataṙ kĕjĕp mataha-taha taṙ padon,
+Apa tan tumon priya manaḥku duṙyyaśa*
+
+grows eeṙ ‌stroṅer*
+
+I want to die but i cannot*
+
+I cannot sleep,
+Alwaysŧinkiŋ ꜽmlessly*
+
+becꜷse i‌Am‌separated ṣrom my beloed,
+my mindstrays away*
+
+nya ta lèn mawèḥ unĕŋ atīta maṅlaré,
+winarāwa naṣṭa maṅuyūyu riŋ kulĕm,
+kiniduŋ nya taŋ priyawiyoga suswara,
+rumarab ta luḥku rumĕṅö ya kāsrepan*
+
+hana maṇdamāruta miriṙ ‌ya śītala,
+marurū ikaŋ kusuma dé nya riŋ ‌lĕmaḥ,
+mapupul ta ganđa nikanaŋ sĕkaṙ kabèḥ,
+tumĕñuḥ hatiṅku ya sumāṙ marèŋ iruŋ*
+
+nostrils*
+
+tamataṙ hanékana hiḍĕpku sakṣaṇa,
+wiparīta taṙ wĕnaŋ aśabda mohita,
+kumĕtĕṙ ta sanđi nikanāŋ awak kabèḥ,
+Ikanaŋ hurip kadi ta līna tan hana*
+
+Umiriṙ tikāŋ aṅin atīs mawoṙ hrĕbuk,
+mapanas hiḍĕpku riya mimbuhīŋ unĕŋ,
+kumĕlab hatiṅku rumĕṅö gĕrĕḥ malon,
+tumibā hudan kadi ya mèdi lot humuŋ*
+
+“ŧe cool breeze blows,
+takiŋ aloŋ pollen whiꞓ to my sensation is not,
+Emotions*
+
+ri śilātala rikāku tĕka maṅö,
+swāmi nitya ya lanā maṅaway-away,
+toḥ ndya tā ya hana tamba k-aṅĕn-aṅĕn,
+tā kadaŋ taṅisi tāwaku n-agati*
+
+¢0ṇ ŧat ṣat stone i come to ŧink about my lord who seems to beckonṇo broŧeṙ oṙ sisteṙ to whom i can complꜽn*
+
+I become hopeless*
+
+syuk nikaŋ jawĕḥ awĕḥ unĕŋ amatī,
+hrū nikaŋ madana sūkṣma ya maṅani,
+rāḥ nikaŋ hati humīs mĕtu ri mata,
+mandamāruta miriṙ kadi matuluŋ*
+
+hyaŋ aṅin kita ta māmāsiha śaraṇm,
+sanmatèŋ kasiharĕp sĕḍĕŋ apasaḥ,
+saŋ raǥūttama riŋ āśrama warahĕn,
+yak hanèŋ kalana rākṣasa tinawan*
+
+Am here,
+kept in captie by a demon*
+
+ƀakti niŋ ŋ unĕŋ akūŋ nya ta tĕkakĕn,
+mwaŋ laraṅku mapasaḥ asama-sama,
+moǥa mātya yak adoḥ saka ri sira,
+nī ta pājara ri saŋ priyawiraha*
+
+monĕŋ āmbkk i siraŋ ratu janaka,
+ƀakti ni ṅhulun agöŋ ya tĕkakĕna,
+liṅku yaṙ wiraha duḥkita tinawan,
+nā ta pājara rikā ta laku huwus*
+
+I loŋ ṣoṙ my ṣaŧeṙ kiŋ janaka,
+take to him my deep reereñce ṣoṙ himhaḥ bapaṅku umapmā ta lara nira,
+tībra māsiḥ iŋ anak sira maharis,
+ḍū ndya tolahan ikin priyawiraha,
+yak hanèŋ kalana rākṣasa tinawan*
+
+0‍‌Aḥ my ṣaŧer,
+how deep would be youṙ soṙrow,
+As you loe youṙ dꜷǥteṙmme do now ŧat i‌Am‌kept captie by a demon0‍*
+
+krama lumaku ta kāliḥ riŋ prasāda r-pamīmjā,
+mapunagi ta ri saŋ hyaŋ prāṙŧanākèn naréndra,
+ri hurip nira lawan ménakékaŋ paluṅguḥ,
+ya ikana ta sināđyā tan kalèn dé nirāsiḥ*
+
+An oaŧ to god to oṣṣeṙ someŧiŋ iṣ god would gie his blessiṅs toanilātmajātiśaya haṙṣa yaṙ wulat,
+tumurun sakèh ‌ṅ-kayu ḍatĕŋ sirèŋ ‌lĕmaḥ,
+ri harĕp nirāṙ ‌wruha ta dèwī jānakī,
+maṅuliḥ-uliḥ macaritā makin masö*
+
+papasaḥ niraŋ raǥusuténucap nira,
+kalawan n unĕŋ nira ināryakĕn wanèḥ,
+panaṅis nirèŋ alas umèt priyā nira,
+ya winaṙṇnanī nira ta saŋ marutsuta*
+
+Umulat pwa dèwi janakātmajé sira,
+dadi saṅśayékana manaḥ nirāṙ wulat,
+wrayapéki mĕṅgĕp aṅuliḥ-huliḥ masö,
+si daśānanéki juga lihkwamañcana*
+
+deceie me*
+
+ri lamĕḥ nya kawruhana yan si rāwaṇa,
+ginawé nya tékana awak nya wānara,
+carita nya bañcana waliṅku tan tuhu,
+ri harèp nya yan syaṅana māṙyya rākṣasa*
+
+to be addressed,
+he does not appeaṙ in his ṣorm as a demon*
+
+hana paṅrĕṅöṅku tuwi wrĕttamātra ya,
+pawaraḥ nikaŋ pinakacāra rākṣasa,
+wwara rakwa wānara kinon marī ry aku,
+ndan asamƀawa ŋ prawaga yan ‌ya cārakā*
+
+Impossible ŧat he would send a monkey as messeṅer*
+
+nya wanèḥ dumèḥ aku ya saŋsayérikām,
+Ikanaŋ nimitta sakatambayadƀuta,
+Uni niŋ manuk paḍa ya komalaswara,
+ndan ikāpi rakwa śuƀadūta wāèkta ya*
+
+ndya kunĕŋ anuŋ mutusana ŋ sinaṅśaya,
+Ikanmè ri daṇḍaka atīta riŋ madoḥ,
+mahĕlĕt tasik gunuŋ alas juraŋ trĕbis,
+passible rꜽnes*
+
+how could my beloed rāma come to know all aboutŧisi sĕḍĕṅkwi ṅūni inalap ni rāwaṇa,
+tĕmu taŋ gunuŋ lwaḥ adalĕm lawan n alas,
+paḍa kapwa ƀīṣaṇa kabèḥ amānuṣa,
+Aliwat ta riŋ tasik asiŋ wiśāla ya*
+
+rwa jugékanā wĕnaŋ alintaṅĕn tasik,
+hyaŋ aṅin lawan garuḍa lèna tan hana,
+ndya ta hétu niŋ wray umarā tĕkéry aku,
+ya mataŋ nya bañcana ni rāwaṇékihan*
+
+ti nā ta saṅśaya niré dalĕm hati,
+mawiwéka wèt nira gĕlĕm binañcana,
+Umasö ta saŋ pinakadūta māmruti,
+praṇatāṙ panĕmbaḥ aśilāwaraḥ sira*
+
+jaya dèwi haywa kita saŋsayèŋ manaḥ,
+pawanātmaja ṅhulun iké kinon marā,
+nrèpaputra rāma makacāraké ṅhulun,
+lumawad hurip nrĕpasutā nahan ‌ya don*
+
+d,
+Acde nrĕpasutār*
+
+messeṅeṙ to ṣind out about you*
+
+kahanān naréndra nrĕpaputra rāǥawa,
+rikanaŋ gunuŋ pratitanāma mālyawān,
+giri winđya yékana kidul nikāparö,
+wwara rĕṣyamūkagiri loṙ nya tan madoḥ*
+
+mālyawān*
+
+wahu mèḥ pitu ŋ tabĕha ṅūni riŋ kulĕm,
+Umahas ‌ṅhulun tĕka masuk ‌rikaŋ taman,
+ri sĕḍĕŋ nikaŋ daśamukāṅunus tĕwĕk,
+maharĕp ‌ṅhulun pwa lumagé ya mapraṅa*
+
+daśamuꝁa drew his sword,
+I wanted to ṣiǥt him in battle*
+
+Iīwahu mèḥ umaṅswa maṅaṅĕn-naṅĕn ‌ṅhulun,
+ri iwĕḥ nikaŋ wwaŋ amĕnaŋ rikaŋ raṇa,
+Ikanaŋ pakon ƀīṣama yan kasiđđa ya,
+ya dumèḥ ṅhulun wuruŋ umaṅswa maṅlagm*
+
+ṣiǥt him*
+
+wwara mitra rāka dèwī,
+saŋ sugrīwa ṅaran nira,
+ratu niŋ wré śakti tĕmĕn,
+sira kumon ‌ṅhulun dūtmè*
+
+Umahas ‌ṅhulun anusup,
+ri kaḍatwan umèt dèwī,
+mamriḥ ta ṅhulun maniñjo,
+nda tan paṅguḥ rikaŋ rajya*
+
+makwèḥ tāpsarī kapaṅguḥ,
+sĕḍĕŋ rarā ta manojña,
+lawan rākṣasa makĕmit,
+wiparīta kabèḥ nidrmè*
+
+guaṙdded by demons who were in deep sleep,
+(‌As iṣ ŧey were uñcons-cious)*
+
+naranāŧa raǥusuta,
+glānākiṅkiŋ maṅĕn dèwī,
+wèt niŋ unĕŋ sirākurī,
+mataŋ nyākon ‌ṅhulun dūtā*
+
+I inaṅĕn-naṅĕn nirākūŋ,
+ri tan pāṙcꞓaya riŋ dūta,
+nya ta simsim nirāṙ pawèḥ,
+niré ṅhulun cihnā donya*
+
+tuwi rāntĕn dèwi makūŋ,
+saŋ lakṣmaṇa śoka sira,
+magyā ta sirān parā ṅké,
+mātyanaŋ rāwaṇān mūṙkka*
+
+Éalso youṙ youṅeṙ broŧer,
+priñce lakṣmaṇa is eceediṅly upset*
+
+he bala wānara umaḍaŋ,
+mahöm makoliha ŋ śatru,
+ya mataŋ nyan ddèwi t-aṅhèr,
+haywa gym rākṣan huripta*
+
+ṣore please wꜽt,
+do not be impatient,
+look aṣṭeṙ youṙ liṣe*
+
+matakut ta ṅhulun ṅūni,
+sĕḍĕŋ ta mojaṙ iŋ mūṙkka,
+yukti puwiḥ biṣa tĕmĕn,
+lĕpas ‌riŋ rākṣasa duṣṭa*
+
+demon*
+
+niyata ŋ rāwaṇa pĕjaḥ,
+dé śrī rāma riŋ palagan,
+prāṇa nya panahuranya,
+doṣa nyan mālap ‌ri dèwr*
+
+mawĕkasa mahādèwī,
+ri sira saŋ raǥusuta,
+pĕpöṅĕn taya nikanaŋ,
+makĕmit ‌ya huwus luṅhā*
+
+y *
+
+w,
+ware not here anymore*
+
+kunaŋ sira rāka dèwī,
+kawĕkas ‌rikaŋ mālyawān,
+sātus tahun ikanaŋ wé,
+sowé-sowé wèt nirāgyām*
+
+nā liŋ nira saŋ hanūmīn,
+dèwī sītā sirāśꞓarya,
+rumĕṅö pawaraḥ i saŋ,
+marutsuta haṙṣacitta*
+
+hé pawanātmaja t-aṅsö,
+tuṣṭāmbĕkwi dènta dūta,
+cūḍāmaṇiṅku ya téki,
+wĕhakĕna ri saŋ rāma*
+
+0‍hey pawanātmaja,
+step ṣoṙwward ‌ ‌I‌Am‌happy ŧat you were oṙddered tolawan ta rékaṅku wanèḥ,
+cihnaṅku malara monĕŋ,
+ya ta wawan iki dènta,
+sinūṅakĕn i saŋ rāma*
+
+It to rāma*
+
+mwaŋ taṅguhi sira nihan,
+maṅanāturwa haywākūŋ,
+taya soka ṅwaŋ maṅaraŋ,
+ṅhulun huwus ‌wruḥ ri donya*
+
+nahan tojaṙ mahādèwī,
+tan sandéha manaḥ nira,
+tumon simsim niraŋ rāma,
+ya dumèḥ sira niścaya*
+
+marutsuta siromaṅsö,
+maṇik ‌ya téka tinaṅgap,
+maṅañjali sirānĕmbaḥ,
+madĕg ta sira śīǥra ya*
+
+manaḥ nira sahaṙṣātaḥ,
+huwus tumĕmu ri dèwī,
+wisāta maṅĕn-aṅĕn,
+ta sira ri sakamantyan*
+
+ṣoṙ a while to ŧink*
+
+nihan pinuji niŋ dūta,
+Ikaŋ tumĕmwa ri donya,
+Amdètayasā yaśa nya,
+Anuŋ taŋ adƀuta cihnā*
+
+huwus ta yāku umaṅguḥ,
+ri siraŋ janakaputrī,
+nda tan hana ya wanèhan,
+Anuŋ ayasā yaśaṅkwa*
+
+Aśokawana ya téki,
+taman atiśaya riŋ lwā,
+ya téki raƀasanaṅkwa,
+kayu nya ya ta śīṙṇnanĕn*
+
+ŧis aśoka-gaṙdden is a laṙgge gaṙdden*
 
 I will destroy it by smashiŋ downŧe trees*
 
-yādīyan hāna masĕṅhit,   ❌
-ya tékāna lāganaṅkwa,   ❌
-pèjaḥ pwa īka ya dèṅku,   ❌
-yāśaṅku tūwi ya wrĕdđya*   ❌
+yadiyan hana masĕṅhit,
+ya tékana laganaṅkwa,
+pèjaḥ pwa ika ya dèṅku,
+yaśaṅku tuwi ya wrĕdđya*
 
-ḍṣ ŧere āre demons who become aṅry,
-I will ñǥt ŧem*   ❌
+ḍṣ ŧere are demons who become aṅry,
+I will ñǥt ŧem*
 
-I will kill ŧem,   ❌
-so ŧat my merits will ‌Iñcreāse*   ❌
+I will kill ŧem,
+so ŧat my merits will iñcrease*
 
-Āŧa hūwus nīra māṅĕn-aṅĕn madĕg,   ❌
-ṛāƀāsa taŋ kāyu rāmya rikaŋ taman,   ❌
-syāpa ta rākṣāsa wānya masö huwus,   ❌
-pāpāgākĕnta si mārūti liŋ nira*   ❌
+Aŧa huwus nira māṅĕn-aṅĕn madĕg,
+ṛaƀasa taŋ kayu rāmya rikaŋ taman,
+syapa ta rākṣasa wānya masö huwus,
+papagakĕnta si māruti liŋ nira*
 
-mgāmrūtil he sꜽd*   ❌
+mgāmrutil he sꜽd*
 
-prācālīta puṣpa niŋ kāyu rūrūī sari nya ya mĕlĕk kadi pwa ya kukus,   ❌
-kālāwan ‌Ikaŋ palāśa tumībā sĕkaṙ nya ya mabāŋ akĕn hudan apuwy,   ❌
-Ībekan ‌Ikaŋ ‌lĕmaḥ kādi dīlaḥ nya riŋ pralayakāla ƀīṣaṇa katon,   ❌
-,   ❌
-Ūru kĕna lèn kidaŋ māsasāran kadi pwa matakut inanon hudan apuy*   ❌
+pracalita puṣpa niŋ kayu rurūī sari nya ya mĕlĕk kadi pwa ya kukus,
+kalawan ikaŋ palāśa tumibā sĕkaṙ nya ya mabāŋ akĕn hudan apuwy,
+Ibekan ikaŋ ‌lĕmaḥ kadi dilaḥ nya riŋ pralayakāla ƀīṣaṇa katon,
+,
+Uru kĕna lèn kidaŋ masasaran kadi pwa matakut inanon hudan apuy*
 
-nāwāmas saṙggahcuaṙppreṙ i*   ❌
+nawamas saṙggahcuaṙppreṙ i*
 
-Āŧa ri sĕḍĕŋ nyañcālīta nānā rūg,   ❌
-kāyu nīkaŋ udyanāwāna ya śīṙṇna,   ❌
-mākāpārāpal paŋ nya ya paḍa sempal,   ❌
-mānuk ‌Umībĕṙ ǥuṙṇnīta paḍa kagyat*   ❌
+Aŧa ri sĕḍĕŋ nyāñcalita nanā rūg,
+kayu nikaŋ udyānawana ya śīṙṇna,
+makaparapal pāŋ nya ya paḍa sempal,
+manuk umibĕṙ ǥūṙṇnita paḍa kagyat*
 
-shocked birds ṣuttered noīsily*   ❌
+shocked birds ṣuttered noisily*
 
-*   ❌
+*
 
-Īkaŋ ākĕmit kadƀūta sahāna nya,   ❌
-dādi mālāyū riŋ nāgāra pāranya,   ❌
-tèka ya nīkaŋ rajya pāḍa mānĕmbaḥ,   ❌
-ri sūku nīraŋ rawāṇa dadi mojar*   ❌
+Ikaŋ akĕmit kādƀuta sahana nya,
+dadi malayū riŋ nagara paranya,
+tèka ya nikaŋ rājya paḍa manĕmbaḥ,
+ri suku niraŋ rāwaṇa dadi mojar*
 
-*   ❌
+*
 
-tūmāḍāha sojaṙ sūrāripūnāŧa,   ❌
-wwāra ya māhāwanāra awāmāna,   ❌
-rūmābāśa ŋ ‌Udyanāwāna nānī rūg,   ❌
-Āwu tĕmāhanya ŋ kūsūmawīcitra*   ❌
+tumaḍaha sojaṙ suraripunāŧa,
+wwara ya mahāwānara awamāna,
+rumabaśa ŋ udyānawana nanī rūg,
+Awu tĕmahanya ŋ kusumawicitra*
 
-*   ❌
+*
 
-Īkāna dāṅū déwāta tuwi matwaŋ,   ❌
-kīmūta īkaŋ manūṣa paḍa ƀakti,   ❌
-tātan ‌Ujārĕn ‌wré āđāma ya tiṙyyak,   ❌
-kim ‌Api mĕné wanāra ya tan ‌Atwaŋ*   ❌
+Ikana daṅū déwata tuwi matwaŋ,
+kimuta ikaŋ mānuṣa paḍa ƀakti,
+tatan ujarĕn ‌wré ađama ya tiṙyyak,
+kim api mĕné wānara ya tan atwaŋ*
 
-I-~dīnākāra tikṣṇāmānasi tsṅaḥ ṅ wé,   ❌
-kādi tan ‌Atis ŋ ‌Ātīśāya ya tīkṣṇa,   ❌
-tĕka ri tāman naŧa tan ‌Apānas ‌ya,   ❌
-dūmādak ‌Atis twaŋ nya mākadé ya*
+I-~dinakara tīkṣṇāmanasi tsṅaḥ ṅ wé,
+kadi tan atis ŋ ātiśaya ya tīkṣṇa,
+tĕka ri taman nāŧa tan apanas ‌ya,
+dumadak atis twaŋ nya makadé ya*
 
-*   ❌
+*
 
-hāna ta hāṅiŋ séḍuŋ ātiśāyèŋ drĕs,   ❌
-kāyu kāhāwā dé nya pāḍa rĕbaḥ rūg,   ❌
-tĕka ya riŋ udyana māri ya mādrĕs,   ❌
-Ālaḥ ‌Atākut komāla ta gāti nya*   ❌
+hana ta haṅiŋ séḍuŋ atiśayèŋ drĕs,
+kayu kahawā dé nya paḍa rĕbaḥ rūg,
+tĕka ya riŋ udyāna mari ya mādrĕs,
+Alaḥ atakut komala ta gati nya*
 
-*   ❌
+*
 
-wūlan ‌Awĕlū puṙṇnāma ya hāna ṅkā,   ❌
-rīkaŋ āmāwāsya tūwi ta ya māwgā,   ❌
-sātāta tan ‌Aṅluḥ māṅūrugi téja,   ❌
-sūmūlūhi ŋ udyanāwāna gāwé nya*   ❌
+wulan awĕlū pūṙṇnama ya hana ṅkā,
+rikaŋ amawāsyā tuwi ta ya māwgā,
+satata tan aṅluḥ maṅurugi téja,
+sumuluhi ŋ udyānawana gawé nya*
 
-*   ❌
+*
 
-kāŧam ‌Api maṅké lālu wipārīta,   ❌
-wrāyāđāma jāti nya tūwitan ‌Atwaŋ,   ❌
-nīyāta tāman ƀupāti ya ta śiṙṇna,   ❌
-dādi ta wāmānat hĕnĕṅakĕna ŋ wré*   ❌
+kaŧam api maṅké lalu wiparīta,
+wrayađama jāti nya tuwitan atwaŋ,
+niyata taman ƀupati ya ta śiṙṇna,
+dadi ta wamānāt hĕnĕṅakĕna ŋ wré*
 
-low class has no respect*   ❌
+low class has no respect*
 
-It ‌Is cleaṙ ŧat my lord0‍s gaṙdden will be destroyed*   ❌
+It is cleaṙ ŧat my lord0‍s gaṙdden will be destroyed*
 
-Āŧa ri hūwus niŋ mākĕmit ānĕmbaḥ,   ❌
-dāśāmūꝁa sakrođa sīra kābāṅan,   ❌
-dādi īnātag rakṣāsābala maṅswa,   ❌
-mĕjāhāna saŋ marūtāsuta donya*   ❌
+Aŧa ri huwus niŋ makĕmit anĕmbaḥ,
+daśamuꝁa sakrođa sira kabāṅan,
+dadi inatag rākṣasabala maṅswa,
+mĕjahana saŋ mārutasuta donya*
 
-pāḍa ya mādĕg satus-īwu sènadđa,   ❌
-pārāśu līpuŋ ꝁaḍga ya wināwa nya,   ❌
-pālu-pālu laṅkap wātu lawan ‌Umban,   ❌
-ya wīnāwa niŋ wira pārĕŋ ūmaṅkat*   ❌
+paḍa ya madĕg sātus-iwu sènadđa,
+paraśu lipuŋ ꝁaḍga ya winawa nya,
+palu-palu laṅkap watu lawan umban,
+ya winawa niŋ wira parĕŋ umaṅkat*
 
-teka ya riŋ udyana pāḍa ya mahyā,   ❌
-kādi ta gerĕḥ ǥuṙṇnīta ya gūmĕntĕr,   ❌
-pāwānāsūta krođa wādana humrĕŋ,   ❌
-jālāda si sambaṙttāka juga moni*   ❌
+teka ya riŋ udyāna paḍa ya mahyā,
+kadi ta gerĕḥ ǥūṙṇnita ya gumĕntĕr,
+pawanasuta krođa wadana humrĕŋ,
+jalada si sambaṙttaka juga moni*
 
-sāha bāla taŋ rakṣāsa kahāran lwaḥ,   ❌
-tĕka gūmūruḥ ǥora kādi sĕḍĕŋ wāmḥ,   ❌
-pāwānāsūtāṅkĕn jālāđi suđrra,
-prātīdīna taŋ waḥ tĕka riya tan sök*   ❌
+saha bala taŋ rākṣasa kaharan lwaḥ,
+tĕka gumuruḥ ǥora kadi sĕḍĕŋ wāmḥ,
+pawanasutāṅkĕn jalađi suđrra,
+pratidina taŋ wāḥ tĕka riya tan sök*
 
-ŧe demons wiŧ ŧeiṙ troops were like a rier,   ❌
-comiŋ closer,   ❌
-ŧunderiṅṣloods reāꞓed it eeryday,   ❌
-It would not become ṣull*   ❌
+ŧe demons wiŧ ŧeiṙ troops were like a rier,
+comiŋ closer,
+ŧunderiṅṣloods reaꞓed it eeryday,
+It would not become ṣull*
 
-bābāhāniŋ udyanāwāna ya māwān,   ❌
-hāna kātīmaŋ gĕŋ nya sātakūraŋ twas,   ❌
-dādi ūmānèk saŋ ānīlasūta ṅkm,
-hūmārĕpākĕn rakṣāsābala māṅsö*   ❌
+babahaniŋ udyānawana ya māwān,
+hana katīmaŋ gĕŋ nya satakuraŋ twas,
+dadi umanèk saŋ anilasuta ṅkm,
+humarĕpakĕn rākṣasabala māṅsö*
 
-pāḍa ya tūmaṇḍĕm hāna ta hūmaṇḍĕm,   ❌
-hāna māṅārug rodra pāḍa tūmĕṅhā,   ❌
-wūgāri hīlaŋ yéka mākahālintaŋ,   ❌
-hāna māmānaḥ lèn mānūligi maṇḍuk*   ❌
+paḍa ya tumaṇḍĕm hana ta humaṇḍĕm,
+hana maṅarug rodra paḍa tumĕṅhā,
+wugari hilaŋ yéka makahalintaŋ,
+hana mamanaḥ lèn manuligi maṇḍuk*
 
-ka mākāhālintaŋ (‌I*   ❌
+ka makahalintaŋ (‌I*
 
-14c) to tuṅgal (‌I*   ❌
+14c) to tuṅgal (‌I*
 
-15d) whiꞓ ‌Is ṣound back ‌Inseṙtted in i*   ❌
+15d) whiꞓ is ṣound back inseṙtted in i*
 
-17a*   ❌
+17a*
 
-ŧe demon-soldieṙṣ were takiŋ positions,   ❌
-some were sguattiŋ,   ❌
-some wereīkana kābèḥ tan hana maṅani ṅkām,   ❌
-mākāpālĕyö hru wūgāri kāwaṅsul,   ❌
-Ārug ‌Apūpug kapwa kāpĕluk ‌Āpĕs,   ❌
-wūlu nīra tuṅgal tūwi taya siṅsal*   ❌
+ŧe demon-soldieṙṣ were takiŋ positions,
+some were sguattiŋ,
+some wereikana kabèḥ tan hana maṅani ṅkām,
+makapalĕyö hru wugari kawaṅsul,
+Arug apupug kapwa kapĕluk āpĕs,
+wulu nira tuṅgal tuwi taya siṅsal*
 
-hāna ta kāyū candāna madāwāgöŋ*   ❌
+hana ta kayū candana madawāgöŋ*
 
-pāḍa ya sākol göŋ nya mālurus ‌Atwas,   ❌
-ya ta ḍīnāwut saŋ prāwāga hānūmān,   ❌
-pāmālu nīrèŋ wwil māti ya kāriṅkĕl*   ❌
+paḍa ya sakol göŋ nya malurus atwas,
+ya ta ḍinawut saŋ prawaga hanūmān,
+pamalu nirèŋ wwil mati ya kariṅkĕl*
 
-ŧe demons,   ❌
-who were killed,   ❌
-wiŧ ŧeiṙ bodies crumbliŋ*   ❌
+ŧe demons,
+who were killed,
+wiŧ ŧeiṙ bodies crumbliŋ*
 
-hāna sūmīrat raḥ nya lāwan ūtĕk nya,   ❌
-mākākĕrĕpĕk kapwa rĕmĕk īgā nya,   ❌
-kāgūliŋ īkaŋ wwil pīnālu gūlū nya,   ❌
-māṅūtāhākĕn raḥ māti kagūlimpaŋ*   ❌
+hana sumirat rāḥ nya lawan utĕk nya,
+makakĕrĕpĕk kapwa rĕmĕk igā nya,
+kaguliŋ ikaŋ wwil pinalu gulū nya,
+maṅutahakĕn rāḥ mati kagulimpaŋ*
 
-hāna sīpi-simpiṙ saꝑāla māmūka,   ❌
-prīhāwak ‌Aṅiṅkis lūmāku rūmuṅkuŋ,   ❌
-Īkānaŋ ‌Umaṇḍĕm pāḍa ya kāhaṇḍĕm,   ❌
-pīnālu pīsan suḥ īkāna pūpū nya*   ❌
+hana sipi-simpiṙ saꝑala mamūka,
+prihawak aṅiṅkis lumaku rumuṅkuŋ,
+Ikanaŋ umaṇḍĕm paḍa ya kahaṇḍĕm,
+pinalu pisan sūḥ ikana pupū nya*
 
-stroke*   ❌
+stroke*
 
-hāna kābūbat bĕntis ‌Ika wĕtĕŋ nya,   ❌
-pāḍa ya tĕḍas rodra mĕtu ‌Usus nya,   ❌
-Īkaŋ ālāras yalāra kapāliṇḍĕs,   ❌
-pīnālu lāras nyan kāpālu wĕhaŋ nya*   ❌
+hana kabubat bĕntis ika wĕtĕŋ nya,
+paḍa ya tĕḍas rodra mĕtu usus nya,
+Ikaŋ alaras yālara kapaliṇḍĕs,
+pinalu laras nyān kapalu wĕhaŋ nya*
 
-Oŧeṙ demons were struck by his tꜽl on ŧeiṙ stomaꞓ,   ❌
-whiꞓ were torn ūpand ŧeiṙ intestines issued hoṙriṣyiṅly*   ❌
+Oŧeṙ demons were struck by his tꜽl on ŧeiṙ stomaꞓ,
+whiꞓ were torn upand ŧeiṙ intestines issued hoṙriṣyiṅly*
 
 ŧose aṙmmed wiŧ bows wereoeṙrun,
-As ŧeiṙ bows were hit,   ❌
-ŧeiṙ jaws were smashed*   ❌
+As ŧeiṙ bows were hit,
+ŧeiṙ jaws were smashed*
 
-hāna ta wānèḥ wwil wĕdi-wĕdi hīna,   ❌
-ya ta īnūsī san pāwānasūtādrĕs,   ❌
-kĕna wālākaŋ nyan pīnālu kāraṅkaŋ,   ❌
-māwūṅu rūmĕṅkĕŋ lūmāku rūmunkuŋ*   ❌
+hana ta wanèḥ wwil wĕdi-wĕdi hīna,
+ya ta inusī san pawanasutādrĕs,
+kĕna walakaŋ nyān pinalu karaṅkaŋ,
+mawuṅu rumĕṅkĕŋ lumaku rumunkuŋ*
 
-ŧere were also cowaṙddly demons,   ❌
-who were aṣrꜽd and ran ‌Away*   ❌
+ŧere were also cowaṙddly demons,
+who were aṣrꜽd and ran away*
 
-ŧeywere uickly ꞓased by pāwanāsuta,   ❌
-his ṣrṣṭ ‌stroke hit ŧeiṙ backṣ ‌Anđana ta luput śīǥra ta ya lumumpat,   ❌
-lūmāku mūliḥ tan hāna ya mānoliḥ,   ❌
-kādi ta kīdaŋ siṅha ya ta mūsī ya,   ❌
-mākābālāsaḥ duṙbbāla paḍa mosaḥ*   ❌
+ŧeywere uickly ꞓased by pawanasuta,
+his ṣrṣṭ ‌stroke hit ŧeiṙ backṣ anđana ta luput śīǥra ta ya lumumpat,
+lumaku muliḥ tan hana ya manoliḥ,
+kadi ta kidaŋ siṅha ya ta musī ya,
+makabalasaḥ duṙbbala paḍa mosaḥ*
 
-weārily*   ❌
+wearily*
 
-hāna ta wānèḥ rakṣāsābala wīra,   ❌
-ya ta māpūliḥ śiǥra tĕka sĕnadđa,   ❌
-gāja rāŧa lāwan kūda ya dālanya,   ❌
-Ātīrāƀāsāṅĕmbūli tĕka maṅduk*   ❌
+hana ta wanèḥ rākṣasabala wīra,
+ya ta mapuliḥ śīǥra tĕka sĕnadđa,
+gaja raŧa lāwan kuda ya dalanya,
+Atiraƀasāṅĕmbuli tĕka maṅduk*
 
-ŧen ŧere cāme ‌Oŧeṙ demon-waṙrioṙṣ,   ❌
-who māde a counteṙ attack,   ❌
-mākin ‌Agālak saŋ pāwānasūtāṅhrĕŋ,   ❌
-jūmĕṅat ‌Ikéku nīra madāwāgöŋ,   ❌
-Ūmāṅun ‌Umuṙggaŋ wūlu nira maṅkak,   ❌
-māluy ‌Umānèk ‌riŋ kātīmaŋ ānumpak*   ❌
+ŧen ŧere came oŧeṙ demon-waṙrioṙṣ,
+who made a counteṙ attack,
+makin agalak saŋ pawanasutāṅhrĕŋ,
+jumĕṅat ikékū nira madawāgöŋ,
+Umaṅun umuṙggaŋ wulu nira maṅkak,
+maluy umanèk ‌riŋ katimaŋ anumpak*
 
-māṅāmaḥ-āmaḥ rakṣāsa ya tūmĕṅhā,   ❌
-wātu sākĕbo göŋ ni pāmugāri nya,   ❌
-ḍāḍa nīra saŋ mamrūti kĕna paṇḍĕm,   ❌
-mākākĕrĕtĕg ndam ‌tan ‌Alara dé nya*   ❌
+maṅamaḥ-amaḥ rākṣasa ya tumĕṅhā,
+watu sakĕbo göŋ ni pamugari nya,
+ḍaḍa nira saŋ māmruti kĕna paṇḍĕm,
+makakĕrĕtĕg ndām ‌tan alara dé nya*
 
-tsḍūni tīkaŋ wwil marāŧa kagöman,
-pīnālu nīrèŋ ḍaṇḍa māti kāriṅkĕl,   ❌
-mākābālāsaḥ sarāŧi ya lūmumpat,   ❌
-Ūmĕgil ‌Awak nyan pāti ni tūha nya*   ❌
+tsḍuni tikaŋ wwil maraŧa kagöman,
+pinalu nirèŋ ḍaṇḍa mati kariṅkĕl,
+makabalasaḥ sāraŧi ya lumumpat,
+Umĕgil awak nyān pati ni tuha nya*
 
-hāna ta wānèḥ wwil mākūda tūmandaŋ,   ❌
-māpūliḥ āsĕṅhit māmāwa krĕtāla,   ❌
-sālāhāsa mö>ḥ mamrāṅa ya gīnĕgwan,   ❌
-māti kāpīsan ‌tan pābīṣa tīnampyal*   ❌
+hana ta wanèḥ wwil makuda tumandaŋ,
+mapuliḥ asĕṅhit mamawa krĕtāla,
+salahasa mö>ḥ mamraṅa ya ginĕgwan,
+mati kapisan ‌tan pabiṣa tinampyal*
 
-him*   ❌
+him*
 
-hāna lén ālīman ‌ya dālanya masö,   ❌
-bīnūlus nya lūput sīra ślǥra mĕsat,
-mātākut ‌ya tūmon sīra sahāsika,   ❌
-tūmĕḍun ‌ya sākèŋ ālīman mālayū*   ❌
+hana lén aliman ‌ya dalanya masö,
+binulus nya luput sira ślǥra mĕsat,
+matakut ‌ya tumon sira sāhasika,
+tumĕḍun ‌ya sakèŋ aliman malayū*
 
-pīnūpuḥ nīra kumƀa nīkaŋ āliman,   ❌
-sūmīrat ta ūtĕk nya māta nya mulū*   ❌
+pinupuḥ nira kumƀa nikaŋ aliman,
+sumirat ta utĕk nya mata nya mulū*
 
-pīnūpak nīra téka gāḍiŋ nya tikṣl,
-kādi siṅha sīradƀūta rodra dahat*   ❌
+pinupak nira téka gaḍiŋ nya tikṣl,
+kadi siṅha sirādƀuta rodra dahat*
 
-ṣerocious,   ❌
-līke a wild lion*   ❌
+ṣerocious,
+like a wild lion*
 
-bāla rākṣāsa śura pādati masö,   ❌
-sūmīliḥ māpūliḥ mālĕmöḥ sūruda,   ❌
-lāju hīna nīkaŋ mālāyu ūmuliḥ,   ❌
-ya ta liŋ nya māṅĕmbūli kapwa mamīk*   ❌
+bala rākṣasa śūra padāti masö,
+sumiliḥ mapuliḥ malĕmöḥ suruda,
+laju hīna nikaŋ malayū umuliḥ,
+ya ta liŋ nya maṅĕmbuli kapwa mamīk*
 
-A counteṙ-attack,   ❌
-As ŧey did not want to retreat*   ❌
+A counteṙ-attack,
+As ŧey did not want to retreat*
 
-0‍ŧose runniŋ homemāmĕkul ‌ya sadaṙppa hana ta manĕwĕk,   ❌
-pīnĕrĕp tīnĕkĕk sīnīku ya dinĕdĕl,   ❌
-kābūbat ‌riŋ īku kūmĕbu-kĕbu tibm,   ❌
-māti tan hāna mamyāti matītiḥ atap*   ❌
+0‍ŧose runniŋ homemamĕkul ‌ya sadaṙppa hana ta manĕwĕk,
+pinĕrĕp tinĕkĕk siniku ya dinĕdĕl,
+kabubat ‌riŋ ikū kumĕbu-kĕbu tibm,
+mati tan hana mamyati matitiḥ atap*
 
-hāna śéṣa nīkaŋ māti ya ta malayū,   ❌
-sīpi tan kāpīsan sīnīku jūga pisan,   ❌
-tīnūkup nya hāti nya mākĕsĕl ‌Ahĕnĕk,   ❌
-mānānaŋ mānāṅis tĕka mawāra-waraḥ*   ❌
+hana śéṣa nikaŋ mati ya ta malayū,
+sipi tan kapisan siniku juga pisan,
+tinukup nya hati nya makĕsĕl ahĕnĕk,
+mananaŋ manaṅis tĕka mawara-waraḥ*
 
-ŧe sūrioṙṣ ṣled away,   ❌
-but ‌A ṣew were ‌Only oñce hit*   ❌
+ŧe surioṙṣ ṣled away,
+but a ṣew were only oñce hit*
 
-ŧey coered ŧeiria-ha nāŧa nanā sahana-hana mami,   ❌
-tūwi sāyūđa saśwārāŧagāja kabĕḥ,   ❌
-pāḍa śakti dāṅu tūwi taya mamales,   ❌
-wray ‌Apéki kūnĕŋ sārāƀasa ya biṣa*   ❌
+ŧey coered ŧeiria-ha nāŧa nanā sahana-hana mami,
+tuwi sāyuđa sāśwaraŧagaja kabĕḥ,
+paḍa śakti daṅū tuwi taya mamales,
+wray apéki kunĕŋ saraƀasa ya biṣa*
 
-dāṅerous*   ❌
+daṅerous*
 
-Āŧa sāmpun ‌Anĕmbaḥ ‌Ikanaŋ ‌Alayū,   ❌
-mākin ‌Udđāta saŋ dāśāmuꝁa mabutĕŋ,   ❌
-bāla mantri kīnon īra mapūlihana,   ❌
-tāmātaṙ pāmīhaŋ lūmāku sāha bala*   ❌
+Aŧa sāmpun anĕmbaḥ ikanaŋ alayū,
+makin udđata saŋ daśamuꝁa mabutĕŋ,
+bala mantri kinon ira mapulihana,
+tamataṙ pamihaŋ lumaku saha bala*
 
-counteṙ-attack*   ❌
+counteṙ-attack*
 
-wīŧout reluctañce ŧey maṙcꞓed out wiŧ ŧeiṙ troops*   ❌
+wiŧout reluctañce ŧey maṙcꞓed out wiŧ ŧeiṙ troops*
 
-jāyāśatru dāṅu lāgi maṅālahakĕn,   ❌
-tāhu riŋ rāṇa sayūđa asāma-sama,   ❌
-hāna konta kāla ya ta wināwa nikā,   ❌
-tĕka matri hūmuŋ prākāṭa kādi gĕlap*   ❌
+jayaśatru daṅū lagi maṅalahakĕn,
+tahu riŋ raṇa sāyuđa asama-sama,
+hana konta kalā ya ta winawa nikā,
+tĕka matri humuŋ prakaṭa kadi gĕlap*
 
-mākūwal pāṅāwak nya mābukĕt ‌Abikal,   ❌
-kādi paṙwwāta ƀiṣṣāṇa kagīri-giri,   ❌
-kādi méǥa kūmis nya māhirĕŋ asukĕt,   ❌
-māsālit ta sīhuŋ nya kādi ta ya kilat*   ❌
+makuwal paṅawak nya mabukĕt abikal,
+kadi paṙwwata ƀīṣṣaṇa kagiri-giri,
+kadi méǥa kumis nya mahirĕŋ asukĕt,
+masalit ta sihuŋ nya kadi ta ya kilat*
 
-ŧeiṙ cānīne teeŧ sharp like liǥtniŋ*   ❌
+ŧeiṙ canine teeŧ sharp like liǥtniŋ*
 
-māsèluk pāmāta nya dūmilaḥ awĕlū,   ❌
-kādi sūṙyya sāhasra kīraṇa kumĕñar,   ❌
-māpānas kādi bahni ya malātu-latu,   ❌
-mākūsut ta hālis nya kādi ta ya kukus*   ❌
+masèluk pamata nya dumilaḥ awĕlū,
+kadi sūṙyya sahasra kiraṇa kumĕñar,
+mapanas kadi bahni ya malatu-latu,
+makusut ta halis nya kadi ta ya kukus*
 
-Entaṅled,   ❌
-līke smoke whiṙlliŋ up*   ❌
+Entaṅled,
+like smoke whiṙlliŋ up*
 
-mūrīriŋ mārāröm sūrāwara umulat,   ❌
-pāwānātmāja đirātāra tan ‌Atakut,   ❌
-kādi sianha manon gāja sĕḍĕŋ agalak,   ❌
-tāmātaṙ kāgĕmĕṙ sīra makin ‌Umasö*   ❌
+muririŋ mararöm surawara umulat,
+pawanātmaja điratara tan atakut,
+kadi sianha manon gaja sĕḍĕŋ agalak,
+tamataṙ kagĕmĕṙ sira makin umasö*
 
-līke a lion ṣaciŋ a mad eleꝑant,   ❌
-he stepped ṣoṙwward wiŧout ṣear*   ❌
+like a lion ṣaciŋ a mad eleꝑant,
+he stepped ṣoṙwward wiŧout ṣear*
 
-lūmĕkas ‌ya māṅĕmbūli tĕka sumahab,   ❌
-māṅālā ya māṅonta hāna mānuriga,   ❌
-mānūhuk ‌ya māñakra hāna ya mamalu,   ❌
-pāḍa sāhāsīkakīra-kira r-ahata*   ❌
+lumĕkas ‌ya maṅĕmbuli tĕka sumahab,
+maṅalā ya maṅonta hana manuriga,
+manuhuk ‌ya mañakra hana ya mamalu,
+paḍa sāhasikākira-kira r-ahata*
 
-Ānīlātmāja niṙƀāya pinārĕbutan,   ❌
-pīnūtĕṙ nīra taŋ pālu-palu ya satal,   ❌
-Ūmāsö mānālandāṅi sira mamalu,   ❌
-mārĕmuk ‌ya āsiŋ kĕna mati kapisan*   ❌
+Anilātmaja niṙƀaya pinarĕbutan,
+pinutĕṙ nira taŋ palu-palu ya satal,
+Umasö manalandaṅi sira mamalu,
+marĕmuk ‌ya asiŋ kĕna mati kapisan*
 
-hāna mè,   ❌
-h māti yādƀūta ya kātātakut,   ❌
-pāḍa kapwa māṅohan ‌Awurāhan awū,   ❌
-kādi paṙwwāta ƀiṣāṇa juga ya rubuḥ,   ❌
-Ībĕkan prĕŧīwi gāgānatāla pĕpĕt*   ❌
+hana mè,
+h mati yādƀuta ya katatakut,
+paḍa kapwa maṅohan awurahan awū,
+kadi paṙwwata ƀiṣaṇa juga ya rubuḥ,
+Ibĕkan prĕŧiwi gaganatala pĕpĕt*
 
-ri pĕjaḥ nya kābèḥ śāwa ya māguliṅan,   ❌
-sāgūnuŋ jūga göŋ nya pāḍa ta ya kanin,   ❌
-Ūmīlī mĕtu raḥ nya ri muka ya mabāŋ,   ❌
-kādi đātu sākĕŋ gīrīwiwāra mulĕk*   ❌
+ri pĕjaḥ nya kabèḥ śawa ya maguliṅan,
+sagunuŋ juga göŋ nya paḍa ta ya kanin,
+Umilī mĕtu rāḥ nya ri muka ya mabāŋ,
+kadi đātu sakĕŋ giriwiwara mulĕk*
 
-sāmpun śīṙṇnā rākṣasābāla māṅadĕg saŋ hanūmān sadaṙppa,   ❌
-riŋ udyāna ṅkān ‌ya māra rumāƀasā ŋ pārijātātiśoƀa,   ❌
-māwān pāŋ nyāgöŋ kadi ta ya hīmawān méru mās wit nya téja,   ❌
-kwèḥ pāŋ nyomĕṇḍuḥ paḍa ya satākuraŋ pāŋ ni pāŋ nyān samèŋ göŋ*   ❌
+sāmpun śīṙṇnā rākṣasabala maṅadĕg saŋ hanūmān sadaṙppa,
+riŋ udyāna ṅkān ‌ya mara rumaƀasā ŋ pārijātātiśoƀa,
+māwān pāŋ nyāgöŋ kadi ta ya himawān méru mās wit nya téja,
+kwèḥ pāŋ nyomĕṇḍuḥ paḍa ya satakuraŋ pāŋ ni pāŋ nyān samèŋ göŋ*
 
-gantiŋ kuṅkuŋ nopura kānaka kilatbāhu lèn brahmasūtra,   ❌
-simsim ‌mwaŋ cūḍāmaṇi ya ta pīnakawwaḥ nya néka prakāra,   ❌
-lunsiṙ déwāṅga pracālīta ya mabāŋ lèn jamaŋ ronya kumelab,   ❌
-mūwaŋ mutyāhārojwālīta ya mamilĕt pāŋ nya yékā pralĕmba*   ❌
+gantiŋ kuṅkuŋ nopura kanaka kilatbāhu lèn brahmasūtra,
+simsim ‌mwaŋ cūḍāmaṇi ya ta pinakawwaḥ nya néka prakāra,
+lunsiṙ déwāṅga pracalita ya mabāŋ lèn jamaŋ ronya kumelab,
+muwaŋ mutyāhārojwalita ya mamilĕt pāŋ nya yékā pralĕmba*
 
-saśrī taŋ wwad-wad kanāka ya māmilĕd pāŋ nikaŋ pārijāta,   ❌
-salwiṙ niŋ kĕmbaŋ ya ta pīnakāsĕkaṙ nyéka māmbö sumāṙ mrik,   ❌
-tuñjuŋ taṅjuŋ cāmpaka sūraƀi puḍak mandarāśoka mĕṇḍur,   ❌
-nĕp punnāga mwaŋ kurāwa asāna lèn dālima śrīgaḍiŋ poḥ*   ❌
+saśrī taŋ wwad-wad kanaka ya mamilĕd pāŋ nikaŋ pārijāta,
+salwiṙ niŋ kĕmbaŋ ya ta pinakasĕkaṙ nyéka māmbö sumāṙ mrik,
+tuñjuŋ taṅjuŋ cāmpaka suraƀi puḍak mandarāśoka mĕṇḍur,
+nĕp punnāga mwaŋ kurawa asana lèn dālima śrīgaḍiŋ poḥ*
 
-yékānuŋ śīṙṇnān ‌rināƀāsa mānanā dé niraŋ bāyuputra,   ❌
-sĕmpal pāŋ nyāgöŋ ya ta mākabārubuḥ puḥ gumenteṙ tibm nya,   ❌
-liṇḍu taŋ ‌lĕṅkā kadi ya ‌lĕbūra lūd ǥūṙṇnita ŋ rākṣasāwū,   ❌
-cihna nyān ƀraṣṭā sahāna-hana nikaŋ rākṣasa krūrakaṙmma*   ❌
+yékānuŋ śīṙṇnān ‌rinaƀasa mananā dé niraŋ bāyuputra,
+sĕmpal pāŋ nyāgöŋ ya ta makabarubuḥ puḥ gumenteṙ tibm nya,
+liṇḍu taŋ ‌lĕṅkā kadi ya ‌lĕbura lūd ǥūṙṇnita ŋ rākṣasāwū,
+cihna nyān ƀraṣṭā sahana-hana nikaŋ rākṣasa krūrakaṙmma*
 
-tatkāla nyan śīṙṇna kāyu-kayu riŋ udyāna dé saŋ hanūmān,   ❌
-maṅkat ta ŋ sy-akṣa prakāśīta ya anak saŋ daśāsyāđirāja,   ❌
-śūrèŋ praŋ wīrātiśāya ya ta mahāśaktimāntāđikmra,   ❌
-gaṇḍéwa nyāgöŋ ya ta wīnawa nikā mwaŋ panaḥ nyāstra tīkṣṇa*   ❌
+tatkāla nyan śīṙṇna kayu-kayu riŋ udyāna dé saŋ hanūmān,
+maṅkat ta ŋ sy-akṣa prakaśita ya anak saŋ daśāsyāđirāja,
+śūrèŋ praŋ wīrātiśaya ya ta mahāśaktimāntāđikmra,
+gaṇḍéwa nyāgöŋ ya ta winawa nikā mwaŋ panaḥ nyāstra tīkṣṇa*
 
-bow wiŧ sharp ‌Aṙrows*   ❌
+bow wiŧ sharp aṙrows*
 
-‌ṙyyaṅkat nyān ton taŋ kayu-kāyu mānanā rūg rĕbaḥ pāŋ nya sĕmpal,   ❌
-wĕṇṭaŋ laṅkap nyān tujun ‌Ata sīra saŋ mārutīŋ aṙdđacandra,   ❌
-tātan madwékām lagi ta ya māpisan yaṙ kĕnāŋ śatrū dé nya,   ❌
-tātaṙ pawyat saŋ bayūsūta kĕna ta pyaḥ nirā ṅkān tĕka syuḥ*   ❌
+‌ṙyyaṅkat nyān ton taŋ kayu-kayu mananā rūg rĕbaḥ pāŋ nya sĕmpal,
+wĕṇṭaŋ laṅkap nyān tujun ata sira saŋ mārutīŋ aṙdđacandra,
+tātan madwékām lagi ta ya mapisan yaṙ kĕnāŋ śatrū dé nya,
+tātaṙ pawyat saŋ bayusuta kĕna ta pyaḥ nirā ṅkān tĕka syuḥ*
 
-Āloŋ his way he saw ṣallen trees wiŧ broken branꞓes smashed intoimpact*   ❌
+Aloŋ his way he saw ṣallen trees wiŧ broken branꞓes smashed intoimpact*
 
-krođékāmbĕk saŋ pawānāsuta sira krūra maṅsö tumandaŋ,   ❌
-sāmbut tékaŋ pāŋ ya ta pāmalu nirèŋ rākṣasa sy-akṣa śīǥra,   ❌
-rĕñcĕm bāhu nyān pinālu ya kāpisan mūṙcꞓitāmriḥ lumumpat,   ❌
-moruk méraŋ mūṙ mari ta ya sākarĕŋ riŋ raŧa ṅkān parāṙyyan*   ❌
+krođékāmbĕk saŋ pawanasuta sira krūra maṅsö tumandaŋ,
+sāmbut tékaŋ pāŋ ya ta pamalu nirèŋ rākṣasa sy-akṣa śīǥra,
+rĕñcĕm bāhu nyān pinalu ya kapisan mūṙcꞓitāmriḥ lumumpat,
+moruk méraŋ mūṙ mari ta ya sakarĕŋ riŋ raŧa ṅkān parāṙyyan*
 
-ménak pwékāmbĕk nya māri ya māhuyaŋ śīǥra gumrit raŧa nya,   ❌
-sāmbut tékaŋ hrū ‌Umālūya ta manaḥ saŋ hanūmān ‌riŋ astra,   ❌
-mākrĕp ta hrū nyān kadi ta ya hīnatĕp ‌lwiṙ niŋ ākāśa dé nya,   ❌
-kṣmbaŋ tulya nyān tĕka ri ḍāḍa nīrĕŋ māruti syuḥ wiśīṙṇna*   ❌
+ménak pwékāmbĕk nya mari ya mahuyaŋ śīǥra gumrit raŧa nya,
+sāmbut tékaŋ hrū umaluya ta manaḥ saŋ hanūmān ‌riŋ astra,
+mākrĕp ta hrū nyān kadi ta ya hinatĕp ‌lwiṙ niŋ ākāśa dé nya,
+kṣmbaŋ tulya nyān tĕka ri ḍaḍa nirĕŋ māruti syuḥ wiśīṙṇna*
 
-ŧem,   ❌
-but to mmrūti ŧey were just like ṣoweṙṣ ṣalliŋ on his breast,   ❌
-tomaṅkin sakrođan kāpālupuy ‌Ikanaŋ hrū tĕkap saŋ hanūmāèn,   ❌
-maṅsö sy-akṣa ṅkān muwaḥ āmanāhi riŋ astra saṅhārarmja,   ❌
-ṭātandwan tandaŋ saŋ ānīlasūta yaṙ duk tikaŋ sy-akṣa riŋ paŋ,   ❌
-ssmpal bāhu nyān kĕna māti kapīsan rāḥ nya muñcaṙ ‌ya mūṙcca*   ❌
+ŧem,
+but to mmruti ŧey were just like ṣoweṙṣ ṣalliŋ on his breast,
+tomaṅkin sakrođān kapalupuy ikanaŋ hrū tĕkap saŋ hanūmāèn,
+maṅsö sy-akṣa ṅkān muwaḥ amanahi riŋ astra saṅhārarmja,
+ṭātandwan tandaŋ saŋ anilasuta yaṙ duk tikaŋ sy-akṣa riŋ paŋ,
+ssmpal bāhu nyān kĕna mati kapisan rāḥ nya muñcaṙ ‌ya mūṙcca*
 
-ṣell līṣeless*   ❌
+ṣell liṣeless*
 
-hūwus nyān pĕjaḥ sy-akṣa dé saŋ hānūmān,   ❌
-lūmumpat sīrè sagāra ṅkan pārādyus,   ❌
-ri dé nyān māṅèl wèt ni sowé nīrāpraŋ,   ❌
-mātaŋ nyāṙ pārèŋ sagārān maṇḍi moǥa*   ❌
+huwus nyān pĕjaḥ sy-akṣa dé saŋ hanūmān,
+lumumpat sirè sāgara ṅkān parādyus,
+ri dé nyān maṅèl wèt ni sowé nirāpraŋ,
+mataŋ nyāṙ parèŋ sāgarān maṇḍi moǥa*
 
-hūwus trĕpti madyus mĕsat śiǥra luṅhā,   ❌
-māluy ‌riŋ tāman rugākĕn parijmāta,   ❌
-kāyuḥ pāŋ nya sĕmpal rūrū ronya lumrā,   ❌
-lāwan ‌wwaḥ nya kégu kāböbĕl tībĕ bāmp*   ❌
+huwus trĕpti madyus mĕsat śīǥra luṅhā,
+maluy ‌riŋ taman rūgakĕn pārijmāta,
+kayuḥ pāŋ nya sĕmpal rurū ronya lumrā,
+lawan ‌wwaḥ nya kégū kaböbĕl tibĕ bāmp*
 
-sekaṙ niŋ āśokakūsut sak sāri nya,   ❌
-rūjit śīṙṇna tātan pāśèṣa ŋ pālāśa,   ❌
-lāwan nāgāpuṣpapĕpĕs paŋ nya māmpés,   ❌
-pūkaḥ puḥ īkaŋ poḥ pāpal ron i pāŋ nya*   ❌
+sekaṙ niŋ aśokākusut sāk sari nya,
+rujit śīṙṇna tātan paśèṣa ŋ palāśa,
+lawan nāgapuṣpāpĕpĕs pāŋ nya māmpés,
+pukaḥ puḥ ikaŋ poḥ papal ron i pāŋ nya*
 
-torn*   ❌
+torn*
 
-gāḍuŋ soṇḍuŋ-uṇḍuŋ ūmĕṇḍuŋ kātuṇḍuŋ,   ❌
-kārūgan kāpuṇḍuŋ ūmeṇḍuḥ ya kāṇḍsḥ,
-māḍĕmpĕl māḍām ‌wwaḥ nya soṇḍuḥ ya koṇḍuḥ,   ❌
-kāsaṇḍuŋ seḍeŋ saŋ hānūman lūmumpat*   ❌
+gaḍuŋ soṇḍuŋ-uṇḍuŋ umĕṇḍuŋ katuṇḍuŋ,
+karūgan kapuṇḍuŋ umeṇḍuḥ ya kāṇḍsḥ,
+maḍĕmpĕl maḍām ‌wwaḥ nya soṇḍuḥ ya koṇḍuḥ,
+kasaṇḍuŋ seḍeŋ saŋ hanūmān lumumpat*
 
-kicked by hānūmān duriŋ his leaps*   ❌
+kicked by hanūmān duriŋ his leaps*
 
-nānā tékānaŋ nyu kĕna ŋ naṅka dénya,   ❌
-cācal caṇḍānāpan kĕné wit nīkaŋ nyū,   ❌
-Ānak niŋ mānuk glana monĕŋ ya moni,   ❌
-mānuṅsuŋ ‌Inaŋ nyan ūmaṅsö mānambwer*   ❌
+nanā tékanaŋ nyū kĕna ŋ naṅka dénya,
+cacal caṇḍanāpan kĕné wit nikaŋ nyū,
+Anak niŋ manuk glāna monĕŋ ya moni,
+manuṅsuŋ inaŋ nyan umaṅsö manambwer*
 
-wūru-wūru kāwurug ‌rīkaŋ wrĕkṣa mawwaḥ wwara wwawwa yāwū lawanwūt mawūŋ jīwa-jiwāwĕdi wwawwa yāwok umūṙ ‌mwaŋ lutuŋ,   ❌
-kāḍāwa wūru kutut kātut yān tumūt ‌riŋ ŋ atat yātatā yātakut n-ton ikaṅlomaśa mriḥ mibĕṙ ‌mwaŋ mayūrāduluṙ syuŋ swarī,   ❌
-Ūmūlat ‌Umūtutuŋ lūtuŋ tuṅga-tuṅgal manuṅtuŋ ri tuṅtuŋ nikaŋ gintuṅantaṙ paṅan ‌wwaḥ nya kéṅin-iṅin,   ❌
-ƀrāmāra māra mariŋ rīkaŋ kaṙṇnikārārurū rūg karūgan paḍāntĕn sarinyéniriṙ dé nikaŋ māruta*   ❌
+wuru-wuru kawurug ‌rikaŋ wrĕkṣa mawwaḥ wwara wwawwa yāwū lawanwūt mawūŋ jīwa-jiwāwĕdi wwawwa yāwok umūṙ ‌mwaŋ lutuŋ,
+kaḍawa wuru kutut katūt yān tumūt ‌riŋ ŋ atat yātatā yātakut n-ton ikaṅlomaśa mriḥ mibĕṙ ‌mwaŋ mayūrāduluṙ syuŋ swarī,
+Umulat umututuŋ lutuŋ tuṅga-tuṅgal manuṅtuŋ ri tuṅtuŋ nikaŋ gintuṅantaṙ paṅan ‌wwaḥ nya kéṅin-iṅin,
+ƀramara mara mariŋ rikaŋ kaṙṇnikārārurū rūg karūgan paḍāntĕn sarinyéniriṙ dé nikaŋ māruta*
 
-sāƀāya māsāsaran śāśana nyān saśokānusup ‌ṅkām ‌ri soṙ niŋ saruṇyārĕṇöbronya mākrĕp sukĕt wit nya śūnyomasuk taŋ śaśa ṅkmṅikiṙ mīs awaknyomahīm yāṅrĕpīṅhèṙ hana pwéki kañcil kumuñṅcaŋ lumumpat mĕsat taṅśaśān śīǥra kagyat kabèḥ nyālayū,   ❌
-cāmāra mārārakan pārĕŋ yālayū līla yālon lumonlon laku nyābalĕmmiṅgut-iṅgut liman glāna abwat maṅaṇḍuŋ wĕtĕŋ nyān palaṇḍuŋ ikātan wĕnaŋ yan maṅèl kāpwa mĕṅgaḥ umaṅguḥ gulū nyāṅĕliḥ lolya molahilat nyāmalāṅèl mĕhāḥ,   ❌
-sārāƀa sārāƀasan mĕsat śīǥra luṅhā milu ŋ tiṅgiliŋ tan n ilu ŋ tanléeg niścayāpan subadđāṅrasuk ‌riŋ sukĕt héwa riŋ laṇḍak amrihmakuṇḍaŋ priyā maṅrĕpātaḥ ri soṙ niŋ puḍak döḥ aḥ o hina yām liṅnikaŋ tiṅgiliŋ,   ❌
-nīkaŋ tiṅgāluŋ*   ❌
+saƀaya masasaran śaśana nyān saśokānusup ‌ṅkām ‌ri soṙ niŋ saruṇyārĕṇöbronya mākrĕp sukĕt wit nya śūnyomasuk taŋ śaśa ṅkmṅikiṙ mīs awaknyomahīm yāṅrĕpīṅhèṙ hana pwéki kañcil kumuñṅcaŋ lumumpat mĕsat taṅśaśān śīǥra kagyat kabèḥ nyālayū,
+camara mararakan parĕŋ yālayū līla yālon lumonlon laku nyābalĕmmiṅgut-iṅgut liman glāna abwat maṅaṇḍuŋ wĕtĕŋ nyān palaṇḍuŋ ikātan wĕnaŋ yan maṅèl kāpwa mĕṅgaḥ umaṅguḥ gulū nyāṅĕliḥ lolya molahilat nyāmalāṅèl mĕhāḥ,
+saraƀa saraƀasan mĕsat śīǥra luṅhā milu ŋ tiṅgiliŋ tan n ilu ŋ tanléeg niścayāpan subadđāṅrasuk ‌riŋ sukĕt héwa riŋ laṇḍak amrihmakuṇḍaŋ priyā maṅrĕpātaḥ ri soṙ niŋ puḍak döḥ aḥ o hina yām liṅnikaŋ tiṅgiliŋ,
+nikaŋ tiṅgaluŋ*
 
-pāti sūsu-sūsup iŋ sūkĕt rūm nya rūkṣāpasaḥ kāsyasiḥ satwa sakwèḥ nyanuṅgwiŋ taman maṅkana wwa-wwahan kapwa héman manis nyénigū saṅhanūmān babaṙ yyan tibā riŋ ‌lĕmaḥ kapwa kāmbaḥ humis duḥ nyaduḥkānaṅis ‌lwiṙ nya yāpan salaḥ lwiṙ ṙṣmĕk yārĕmuk*   ❌
+pati susu-susup iŋ sukĕt rūm nya rūkṣāpasaḥ kāsyasiḥ satwa sakwèḥ nyanuṅgwiŋ taman maṅkana wwa-wwahan kapwa héman manis nyénigū saṅhanūmān babaṙ yyan tibā riŋ ‌lĕmaḥ kapwa kāmbaḥ humis duḥ nyaduḥkānaṅis ‌lwiṙ nya yāpan salaḥ lwiṙ ṙṣmĕk yārĕmuk*
 
-Īṣaltered ṣorŧ weārily,   ❌
+Iṣaltered ṣorŧ wearily,
 As ŧey were buṙddened by ŧeiṙ stomaꞓs*
 
-ŧeycould not ‌stretꞓ ŧemseles out to rest ŧouǥ ehꜷsted,   ❌
-ŧey breāŧedṣemale,   ❌
-lyiŋ down undeṙṇneaŧ a pandanus-ower*   ❌
-
-0‍‌Aḥ,   ❌
-how disgustiŋ,   ❌
-hūwus saŋ hānūnan rūmūg parījāta,   ❌
-mārāṙyyan sīrèŋ hèh ‌ṅ-niŋ udyana kulwan,   ❌
-hūmèṙhèṙ ‌rīkaŋ rakṣāsānuŋ māsĕṅhit,   ❌
-hānāmbĕk nīkā saŋ dāśāsyaṅlāgāna*   ❌
-
-yādin rāwāṇāsĕṅhītātaḥ mārā ṅké,   ❌
-lāgānaṅkwa tĕṇḍas nya yékolīhaṅkwa,   ❌
-ya pawwat-wwātaṅkwi sīraŋ rama tuṣṭmè,   ❌
-lāwan dbwi sītā ya sāhaṙṣa dèṅku*
-
-As ‌A giṣṭ to rāma who will ceṙttꜽnly be happy*   ❌
-
-Also priñcess sīta will bepleāsed*
-
-nāhan liŋ nīrāṅĕn-āṅĕn ‌tan māsowé,   ❌
-tèkā rājāputréndrājit kyati riŋ rāt,   ❌
-Ānak saŋ dāśasyottāmā śaktīmānta,   ❌
-prāśāstèŋ jāgat śura saŋ méǥānāda*   ❌
-
-ŧus he sꜽd to himselṣ*   ❌
-
-not loŋ aṣṭeṙwwards,   ❌
-priñce indrājit,   ❌
-ṣāmousyātéka māsĕṅhit pĕjaḥ sy-akṣa ṅūni,   ❌
-prātijñā nya saŋ bayūputrolīha nya,   ❌
-tātan madwa maṅsö lāwan n ‌Ayūđa nya,   ❌
-tītaḥ téka wadwa nya wīnani-wāni*   ❌
-
-ṣiǥt braely*   ❌
-
-rāŧa nyādƀūtāgöŋ ya malwa ya mādrĕs,   ❌
-lāwan tuṅgāṅan saṅkĕpan yéka mīṙ ‌ya,   ❌
-pānaḥ tīkṣṇa tan kraḥ ūmuṅgwi rāŧa nya,   ❌
-lāwan rākṣāsāṅrakṣā yéka pānĕṇḍas*   ❌
-
-Ādañce-guards*   ❌
-
-teka nyèŋ tāman ǥuṙṇnītāṅin-āṅinya,   ❌
-mākin ślrna ŋ udyāna kégū sĕkaṙ nya,
-mūlat saŋ hānūman ūmaṅsö mānuṅsuŋ,   ❌
-sīnambé nīrāŋ indrājit śiǥra mojar*   ❌
-
-delay:‌Āsö ko durācāra sakwèöhmu duṣṭa,   ❌
-pāpag tékīhĕn duta saŋ ramādéwa,   ❌
-sākakwĕhmwi leṅka wīśīrnmè ta dèṅku,   ❌
-ya tan ƀaktya ri śri māhāraja rāma*   ❌
-
-nāhan liŋ nīraŋ mamrūtī méǥānāda,   ❌
-Ūmaṇḍem ‌ya lāwan bāla nyatīrodra,   ❌
-pārĕŋ yomānaḥ saŋ hānūman sādaṙppa,   ❌
-n-ārāraḥ sīrèŋ hru nya nāracāƀalla*   ❌
-
-ŧus sꜽd mārūti to méǥānada,   ❌
-who tākiŋ posītion wiŧ ‌All his ‌Etremelymalaṇḍĕp ikā hrū nya mākrĕp tibā nya,   ❌
-nda tan pamyātī saŋ hānūman tĕka syuḥ,   ❌
-kādīkaŋ hūdan ‌riŋ gūnuŋ kwèḥ wātu nya,   ❌
-wīśīṙṇnāpāsaḥ yaṙ tībā tan pāśéṣa*   ❌
-
-hānūmāèn,   ❌
-but were smashed on impact*   ❌
-
-It looked līke heay rꜽn ṣalliṅdown on a rocky mountꜽn,   ❌
-ŧey were completely shattered*   ❌
-
-Ṣāka kwèḥ ni wadwa nīraŋ méǥānāda,   ❌
-māhāǥora rūpanđākāratīdaṙppa,   ❌
-Ūmaṅsö pwa yāṅĕmbūli ƀraṣṭāśīṙṇna,   ❌
-hānūmān sīrāditya sākṣat mūsus ‌ya*   ❌
-
-mākin daṙppa saŋ marūtī r-paṅālapā,   ❌
-ya paṅduk nīrèa rākṣāsasiŋ umaṅsö,   ❌
-gĕlāna ŋ bālān ton sīrānékārūpa,   ❌
-kāpūhan kābèḥ nyadƀūtānon sīrākwèḥ*   ❌
-
-I hānānuṅga-nuṅgal hānasbwu saṅkya,   ❌
-~‌Īnaṅsö lūmumpat ‌riŋ ākaśa r-uṅgu,   ❌
-tūmūt maṅlāyaŋ rakṣāsātyanta śīǥra,   ❌
-māluy ‌riŋ ‌lĕmaḥ saŋ hānūman ūmiṅsor*   ❌
-
-pārĕŋ yan tĕḍun tuītākĕn saŋ hanūmān,   ❌
-tĕka nyè>ŋ ‌lĕmaḥ kapwa maṅsö tūmandaŋ,   ❌
-mūwaḥ saŋ hānūman mĕsat sèp īkaŋ wwil,   ❌
-tūmĕṅhā kābèḥ nyaṅĕsaḥ kapwa képwan*   ❌
-
-looked up,   ❌
-ŧey moāned as ŧey were tired*   ❌
-
-mākin tībra yānliḥ pwa ya glana mosaḥ,   ❌
-sīraŋ mārūtī pöṅākĕn téka ṅèl nya,   ❌
-n-ālap pāŋ nīkaŋ parījāṭata tuṅgal,   ❌
-pūpuḥ tékānaŋ muṙkka sakwèḥ nya śīṙṇna*   ❌
-
-ppĕjaḥ pwékānaŋ rakṣāsānuŋ sūrākṣa,   ❌
-māsö ŋ indrājit śiǥra gumrit rāŧa nya,   ❌
-pānaḥ téka saŋ marūtīŋ astra tīkṣṇa,   ❌
-tātaṙ pāṅāpātaḥ pānaḥ nyaṙ pūpug ‌ya*   ❌
-
-wiŧ sharp ‌Aṙrows,   ❌
-but ŧey did no harm to him,   ❌
-ŧey becāme blunt ‌Onimpact*   ❌
-
-māsö tuṅgāṅan tulya yā siṅha maṅhrik,   ❌
-pārĕŋ yāṅdĕmak saŋ hānūman lūmumpat,   ❌
-tūhuk pyaḥ nīkaŋ tuṅgāṅan ‌riŋ nākāgra,   ❌
-mĕtu ŋ rāḥ sākéruŋ nya jīwa nya luṅhā*   ❌
-
-pĕjaḥ nyékānāśꞓarya saŋ méǥānāda,   ❌
-Āpan ‌riŋ dāṅū tan hānātaḥ mātī ya,   ❌
-Āsiŋ lwīra niŋ śatru śīwrniè ta dé nya,   ❌
-lūkan yān pĕjaḥ dé nīraŋ bayūputra*   ❌
-
-were killed by bāyuputra*   ❌
-
-gūmantīkānaŋ tuṅgāṅan dibya śakti,   ❌
-Ūmīṙ taŋ rāŧāgöŋ ya sāmpun dīnānan,   ❌
-ṣssök rākṣāsānuŋ surākṣa nya sèwu,
-hūwus muṅgu maṅsö pāḍānuŋ senadđa*   ❌
-
-well aṙmmed*   ❌
-
-dīnānan ‌Ikaŋ rakṣāsānuŋ prāwīra,   ❌
-Āsiŋ tan sūrud ‌riŋ mūsuḥ śura sāra,   ❌
-ya muṅgwī hārĕp niŋ rāŧānuŋ pānĕṇḍas,   ❌
-ṅāranyāhālep śakāṭabyuhānāma*   ❌
-
-(wāgon-battle aṙray)*   ❌
-
-hūwus tékānaŋ rakṣāsābyuha saṅkĕp,   ❌
-pāḍātuṅgālan kadga gaṇḍéwa konta,   ❌
-tūmandaŋ kābèḥ nyamānaḥ saŋ hānūmān,   ❌
-sĕsök hrū nya yātip lāṅit wuntu dé nya*   ❌
-
-Īkā tèŋ dāṅū tan hānānuŋ māpag ‌ya,   ❌
-hyaŋ indrātākut dé nīkā hru nya tikṣṇa,   ❌
-Āpan yāwat ‌Aŋ wwaŋ kĕnī dé nya śīṙṇna,   ❌
-pĕjaḥ tan pāśéṣa īkaŋ śatru dé nya*   ❌
-
-Īkaŋ bwat nīkā tan hānānuŋ māpag ‌ya,   ❌
-nda tan paṅlāré yan tĕké saŋ hānūmān,   ❌
-tūhun trus pūpū saŋ mārutputra dé nya,   ❌
-nda tāṙ ambīli hru tāmolaḥ tūmaṅgö*   ❌
-
-but he did not pull ‌It out,   ❌
-he let it stay*   ❌
-
-pājātyan nīkā saŋ māhāśura riŋ praŋ,   ❌
-tan ‌Aṅgĕḥ ta yāmbĕk nīrān ‌tan pācihnā,   ❌
-mātaŋ nyān hĕnĕŋ saŋ hānūman suđrra,
-tūmaṅgö pānaḥ riŋ pūpū taṙ wātĕk ‌ya*   ❌
-
-mūlat t ‌Indrājit ‌Aṙdđa sakrođa yaṙ ton,   ❌
-kāđīran nīraŋ bayūputrèŋ rāṇāṅga,   ❌
-wīnĕṇṭaŋ nya laṅkap nya ākara pūṙṇna,   ❌
-pānaḥ saŋ hānūman ‌rīkaŋ nagāpāśa*   ❌
-
-wiŧ ‌A nāgāpāśa (snāke-issuiŋ aṙrow)*   ❌
-
-Ūlā lwiṙ nīkā hru nya sākṣat ‌ya māwān,   ❌
-sātal göŋ nya lāwan dāwā nyaprāméya,   ❌
-māpañjaŋ sīhuŋ nyamsālit yatīrodra,   ❌
-mīṅis krūra huntu nya bajropāma nya*   ❌
+ŧeycould not ‌stretꞓ ŧemseles out to rest ŧouǥ ehꜷsted,
+ŧey breaŧedṣemale,
+lyiŋ down undeṙṇneaŧ a pandanus-ower*
+
+0‍‌Aḥ,
+how disgustiŋ,
+huwus saŋ hanūnān rumūg pārijāta,
+marāṙyyan sirèŋ hèh ‌ṅ-niŋ udyāna kulwan,
+humèṙhèṙ ‌rikaŋ rākṣasānuŋ masĕṅhit,
+hanāmbĕk nikā saŋ daśāsyāṅlagāna*
+
+yadin rāwaṇāsĕṅhitātaḥ marā ṅké,
+lagānaṅkwa tĕṇḍas nya yékolihaṅkwa,
+ya pawwat-wwataṅkwī siraŋ rāma tuṣṭmè,
+lawan dbwi sītā ya sahaṙṣa dèṅku*
+
+As a giṣṭ to rāma who will ceṙttꜽnly be happy*
+
+Also priñcess sītā will bepleased*
+
+nahan liŋ nirāṅĕn-aṅĕn ‌tan masowé,
+tèkā rājaputréndrajit kyāti riŋ rāt,
+Anak saŋ daśasyottamā śaktimānta,
+praśāstèŋ jagat śūra saŋ méǥanāda*
+
+ŧus he sꜽd to himselṣ*
+
+not loŋ aṣṭeṙwwards,
+priñce indrajit,
+ṣamousyatékā masĕṅhit pĕjaḥ sy-akṣa ṅūni,
+pratijñā nya saŋ bāyuputroliha nya,
+tatan madwa maṅsö lawan n ayuđa nya,
+titaḥ téka wadwā nya wīnāni-wāni*
+
+ṣiǥt braely*
+
+rāŧa nyādƀūtāgöŋ ya malwā ya mādrĕs,
+lawan tuṅgaṅan saṅkĕpan yéka mīṙ ‌ya,
+panaḥ tīkṣṇa tan kraḥ umuṅgwī raŧa nya,
+lawan rākṣasāṅrakṣā yéka panĕṇḍas*
+
+Adañce-guards*
+
+teka nyèŋ taman ǥūṙṇnitāṅin-aṅinya,
+makin ślrna ŋ udyāna kégū sĕkaṙ nya,
+mulat saŋ hanūmān umaṅsö manuṅsuŋ,
+sinambé nirāŋ indrajit śīǥra mojar*
+
+delay:‌Asö ko durācāra sakwèöhmu duṣṭa,
+papag tékihĕn dūta saŋ rāmadéwa,
+sakakwĕhmwi leṅkā wiśīrnmè ta dèṅku,
+ya tan ƀaktya ri śrī mahārāja rāma*
+
+nahan liŋ niraŋ māmrutī méǥanāda,
+Umaṇḍem ‌ya lāwan bala nyātirodra,
+parĕŋ yomanaḥ saŋ hanūmān sadaṙppa,
+n-arāraḥ sirèŋ hrū nya nārācaƀalla*
+
+ŧus sꜽd māruti to méǥanāda,
+who takiŋ position wiŧ all his etremelymalaṇḍĕp ikā hrū nya mākrĕp tibā nya,
+nda tan pamyatī saŋ hanūmān tĕka syuḥ,
+kadīkaŋ hudan ‌riŋ gunuŋ kwèḥ watu nya,
+wiśīṙṇnāpasaḥ yaṙ tibā tan paśéṣa*
+
+hanūmāèn,
+but were smashed on impact*
+
+It looked like heay rꜽn ṣalliṅdown on a rocky mountꜽn,
+ŧey were completely shattered*
+
+Ṣaka kwèḥ ni wadwā niraŋ méǥanāda,
+mahāǥora rūpānđakārātidaṙppa,
+Umaṅsö pwa yāṅĕmbuli ƀraṣṭaśīṙṇna,
+hanūmān sirāditya sākṣāt musus ‌ya*
+
+makin daṙppa saŋ mārutī r-pāṅalapā,
+ya paṅduk nirèa rākṣasāsiŋ umaṅsö,
+gĕlāna ŋ balān ton sirānékarūpa,
+kapūhan kabèḥ nyādƀutānon sirākwèḥ*
+
+I hanānuṅga-nuṅgal hanāsbwu saṅkya,
+~‌Inaṅsö lumumpat ‌riŋ ākāśa r-uṅgu,
+tumūt maṅlayaŋ rākṣasātyanta śīǥra,
+maluy ‌riŋ ‌lĕmaḥ saŋ hanūmān umiṅsor*
+
+parĕŋ yan tĕḍun tūītakĕn saŋ hanūmān,
+tĕka nyè>ŋ ‌lĕmaḥ kapwa maṅsö tumandaŋ,
+muwaḥ saŋ hanūmān mĕsat sèp ikaŋ wwil,
+tumĕṅhā kabèḥ nyāṅĕsaḥ kapwa képwan*
+
+looked up,
+ŧey moaned as ŧey were tired*
+
+makin tībra yānliḥ pwa ya glāna mosaḥ,
+siraŋ mārutī pöṅakĕn téka ṅèl nya,
+n-alap pāŋ nikaŋ parijāṭāta tuṅgal,
+pupuḥ tékanaŋ mūṙkka sakwèḥ nya śīṙṇna*
+
+ppĕjaḥ pwékanaŋ rākṣasānuŋ surākṣa,
+masö ŋ indrajit śīǥra gumrit raŧa nya,
+panaḥ téka saŋ mārutīŋ astra tīkṣṇa,
+tataṙ pāṅapātaḥ panaḥ nyāṙ pupug ‌ya*
+
+wiŧ sharp aṙrows,
+but ŧey did no harm to him,
+ŧey became blunt onimpact*
+
+masö tuṅgaṅan tulya yā siṅha maṅhrik,
+parĕŋ yāṅdĕmak saŋ hanūmān lumumpat,
+tuhuk pyaḥ nikaŋ tuṅgaṅan ‌riŋ nakāgra,
+mĕtu ŋ rāḥ sakéruŋ nya jīwa nya luṅhā*
+
+pĕjaḥ nyékanāśꞓarya saŋ méǥanāda,
+Apan ‌riŋ daṅū tan hanātaḥ matī ya,
+Asiŋ lwīra niŋ śatru śīwrnīè ta dé nya,
+lukan yān pĕjaḥ dé niraŋ bāyuputra*
+
+were killed by bāyuputra*
+
+gumantīkanaŋ tuṅgaṅan dibya śakti,
+Umīṙ taŋ raŧāgöŋ ya sāmpun dinānan,
+ṣssök rākṣasānuŋ surākṣa nya sèwu,
+huwus muṅgu maṅsö paḍānuŋ senadđa*
+
+well aṙmmed*
+
+dinānan ikaŋ rākṣasānuŋ prawīra,
+Asiŋ tan surud ‌riŋ musuḥ śūra sāra,
+ya muṅgwī harĕp niŋ raŧānuŋ panĕṇḍas,
+ṅaranyāhalep śākaṭabyūhanāma*
+
+(wagon-battle aṙray)*
+
+huwus tékanaŋ rākṣasābyūha saṅkĕp,
+paḍātuṅgalan kadga gaṇḍéwa konta,
+tumandaŋ kabèḥ nyāmanaḥ saŋ hanūmān,
+sĕsök hrū nya yātip laṅit wuntu dé nya*
+
+Ikā tèŋ daṅū tan hanānuŋ mapag ‌ya,
+hyaŋ indrātakut dé nikā hrū nya tikṣṇa,
+Apan yāwat aŋ wwaŋ kĕnī dé nya śīṙṇna,
+pĕjaḥ tan paśéṣā ikaŋ śatru dé nya*
+
+Ikaŋ bwat nikā tan hanānuŋ mapag ‌ya,
+nda tan paṅlaré yan tĕké saŋ hanūmān,
+tuhun trus pupū saŋ marutputra dé nya,
+nda tāṙ ambili hrū tamolaḥ tumaṅgö*
+
+but he did not pull it out,
+he let it stay*
+
+pajātyan nikā saŋ mahāśūra riŋ praŋ,
+tan aṅgĕḥ ta yāmbĕk nirān ‌tan pacihnā,
+mataŋ nyān hĕnĕŋ saŋ hanūmān suđrra,
+tumaṅgö panaḥ riŋ pupū taṙ watĕk ‌ya*
+
+mulat t indrajit aṙdđa sakrođa yaṙ ton,
+kađīran niraŋ bāyuputrèŋ raṇāṅga,
+winĕṇṭaŋ nya laṅkap nya ākāra pūṙṇna,
+panaḥ saŋ hanūmān ‌rikaŋ nāgapāśa*
+
+wiŧ a nāgapāśa (snake-issuiŋ aṙrow)*
+
+Ulā lwiṙ nikā hrū nya sākṣāt ‌ya māwān,
+satal göŋ nya lāwan dawā nyāpraméya,
+mapañjaŋ sihuŋ nyāmsalit yātirodra,
+miṅis krūra huntu nya bajropama nya*
 
-ya tékomīlĕt bahu saŋ bayūputra,   ❌
-Āpit taŋ īgā dé nīkaŋ nagāpāśa,   ❌
-pūpū yāpīsit kapwa kāpus tĕkèna tūr,   ❌
-tībā saŋ hānūman kĕnèŋ nagāpāśa*   ❌
+ya tékomilĕt bāhu saŋ bāyuputra,
+Apit taŋ igā dé nikaŋ nāgapāśa,
+pupū yāpisit kapwa kāpus tĕkèna tūr,
+tibā saŋ hanūmān kĕnèŋ nāgapāśa*
 
-nda tan saṅka riŋ hina śakti n kāpāśa,   ❌
-Āwās yékānaŋ paśa śīṙṇni yaṙ ahyun,   ❌
-Ūpāyā nīrāṙ tona saŋ rawāṇèkā,   ❌
-mātaŋ nyān hĕnĕŋ riŋ ƀūjaṅgaprāyāta*   ❌
-
-tat kāla n kāpūsan saŋ pāwanāsuta humuŋ taŋ rākṣasabala,   ❌
-lāwan saŋ méǥānadāṅāmaḥ-āmaḥ umahöm mahygī saha bala,   ❌
-kapwomaṅsö sĕsök sāhāsa māṅĕsĕs-ĕsĕs māmrĕp ‌ya mamalu,   ❌
-taṙ pawyat saŋ hānumān kādi wĕsi pinupuḥ riŋ mudgara timaḥ*   ❌
+nda tan saṅka riŋ hīna śakti n kapāśa,
+Awās yékanaŋ pāśa śīṙṇnī yaṙ ahyun,
+Upāyā nirāṙ tona saŋ rāwaṇèkā,
+mataŋ nyān hĕnĕŋ riŋ ƀujaṅgaprayāta*
+
+tat kāla n kāpusan saŋ pawanasuta humuŋ taŋ rākṣasabala,
+lāwan saŋ méǥanādāṅamaḥ-amaḥ umahöm mahygī saha bala,
+kapwomaṅsö sĕsök sāhasa maṅĕsĕs-ĕsĕs māmrĕp ‌ya mamalu,
+taṙ pawyat saŋ hanūmān kadi wĕsi pinupuḥ riŋ mudgara timaḥ*
 
-And méǥānāda crowded āround togeŧeṙ wiŧ his joyous soldieṙṣ ŧeymojaṙ saŋ méǥanādé harĕp ira hagahĕn dé saŋ daśamuꝁa,   ❌
-Ꜽ haywāta sādé nyān āhurīpa takariḥ tan dadya luputa,   ❌
-toḥ priḥ puṇḍut kābèhi d-wāwa ta ri harĕpan śrī rākṣasapati,   ❌
-tontonĕn dé nīraŋ ƀūpāti bīśa nikanaŋ pāśāsama-sama*   ❌
+And méǥanāda crowded around togeŧeṙ wiŧ his joyous soldieṙṣ ŧeymojaṙ saŋ méǥanādé harĕp ira hagahĕn dé saŋ daśamuꝁa,
+Ꜽ haywāta sadé nyān ahuripa takariḥ tan dadya luputa,
+toḥ priḥ puṇḍut kabèhi d-wawa ta ri harĕpan śrī rākṣasapati,
+tontonĕn dé niraŋ ƀūpati biśa nikanaŋ pāśāsama-sama*
 
-snāke-aṙrow*   ❌
+snake-aṙrow*
 
-nā liŋ san méǥānadāṙ ūjari sahana niŋ wadwa nira kabèḥ,   ❌
-māri n-pāmrĕp ‌ya śiǥrénūsuŋ-ūsuŋ ika saŋ bāywātmaja wawaŋ,   ❌
-hāḥ wré duṣṭāṭīđurtŧāđāma pĕjahi huwus tunwīka ta mĕné,   ❌
-ndaḥ krĕt tĕṅgĕk nya raḥ nyénīnum āŧa ca pupuḥ tĕṇḍas nya rĕmukĕn*   ❌
+nā liŋ san méǥanādāṙ ujari sahana niŋ wadwa nira kabèḥ,
+māri n-pāmrĕp ‌ya śiǥrénusuŋ-usuŋ ika saŋ bāywātmaja wawaŋ,
+hāḥ wré duṣṭāṭiđūrtŧāđama pĕjahi huwus tunwīka ta mĕné,
+ndaḥ krĕt tĕṅgĕk nya rāḥ nyéninum aŧa ca pupuḥ tĕṇḍas nya rĕmukĕn*
 
-ŧus sꜽd méǥānāda ‌Addressiŋ all his soldieṙṣ*   ❌
+ŧus sꜽd méǥanāda addressiŋ all his soldieṙṣ*
 
-ŧey stopped beātiṅđūṙttèki dūta niŋ rāǥawa mamati-matī donyāṅalaḥ-alaḥ,   ❌
-mĕṅgĕp śāntān tīnonton īniṅet-iṅĕtakĕn caṇḍala ya wĕgig,   ❌
-niṙ dosa ŋ rākṣāsataḥ tūwi yātika pĕjaḥ dé nyāsiŋ umasö,   ❌
-ndya ŋ đaṙmma ndya ŋ kāwikwan ‌rīya māmati-matī đik ‌tan tuhu wiku*   ❌
-
-nā liŋ nīkānaŋ muṙkka kābèḥ,   ❌
-mahym ‌ya riŋ ākāśa hūmuŋ,   ❌
-luṅhī ya mūliḥ ś1ǥra ḍātĕŋ,   ❌
-winwat nya ta saŋ bayūsūta*   ❌
+ŧey stopped beatiṅđūṙttèkī dūta niŋ rāǥawa mamati-matī donyāṅalaḥ-alaḥ,
+mĕṅgĕp śāntān tinonton iniṅet-iṅĕtakĕn caṇḍala ya wĕgig,
+niṙ dosa ŋ rākṣasātaḥ tuwi yatika pĕjaḥ dé nyāsiŋ umasö,
+ndya ŋ đaṙmma ndya ŋ kawikwan ‌riya mamati-matī đik ‌tan tuhu wiku*
+
+nā liŋ nikanaŋ mūṙkka kabèḥ,
+mahym ‌ya riŋ ākāśa humuŋ,
+luṅhī ya muliḥ ś1ǥra ḍatĕŋ,
+winwat nya ta saŋ bāyusuta*
 
-hé nāŧa ya téki ŋ māhāla,   ❌
-mraṣṭākĕn ‌Ikaŋ kalpātāru,   ❌
-śtrna ŋ kāyu rūg dé nya rĕbaḥ,   ❌
-sbsī nīkaŋ udyānawāna*   ❌
+hé nāŧa ya téki ŋ mahala,
+mraṣṭākĕn ikaŋ kalpataru,
+śtrna ŋ kayu rūg dé nya rĕbaḥ,
+sbsī nikaŋ udyānawana*
 
-tat kāla sĕḍèŋ nya wīnāraḥ,   ❌
-saŋ rāwāṇa sakrođa sīra,   ❌
-wré duṣṭa dūrācmra pāti,   ❌
-nā liŋ nīra wèt nyaṙ māgĕlĕŋ*   ❌
+tat kāla sĕḍèŋ nya winaraḥ,
+saŋ rāwaṇa sakrođa sira,
+wré duṣṭa durācmra pati,
+nā liŋ nira wèt nyāṙ magĕlĕŋ*
 
-saŋ wīƀīṣāṇa sira mūlat,   ❌
-n-ton mārutsūta ināpūsan,   ❌
-kāsīhan ta sīra kārūṇa,   ❌
-yatna śīǥra sīra māwūwus*   ❌
+saŋ wiƀīṣaṇa sira mulat,
+n-ton marutsuta inapusan,
+kāsihan ta sira karuṇa,
+yatna śīǥra sira mawuwus*
 
-ṣully he spoke :ƀūmināŧa daśāwadana,   ❌
-sojāriŋ āji ya pītūhun,   ❌
-dūta tan dādi pinĕjāhan,   ❌
-yadyāpin ‌ya wĕgiga tūwi*   ❌
+ṣully he spoke :ƀūmināŧa daśawadana,
+sojariŋ aji ya pituhun,
+dūta tan dadi pinĕjahan,
+yadyapin ‌ya wĕgiga tuwi*
 
-scriptūres*   ❌
+scriptures*
 
-A messeṅeṙ may not be senteñced to deaŧ,   ❌
-Een iṣ he īsetremely wicked*   ❌
+A messeṅeṙ may not be senteñced to deaŧ,
+Een iṣ he isetremely wicked*
 
-daŚśāmas saṙggahcnaṙrer*   ❌
+daŚśamas saṙggahcnaṙrer*
 
-Īti nā liŋ nīra mojar,   ❌
-Īrīkaŋ śāsāna yukti,   ❌
-sīra saŋ rāwāṇa mūṙkka,   ❌
-sūmāhuṙ maṅkin ‌Asĕṅhit*   ❌
+Iti nā liŋ nira mojar,
+Irikaŋ śāsana yukti,
+sira saŋ rāwaṇa mūṙkka,
+sumahuṙ maṅkin asĕṅhit*
 
-rāwāṇa replied wiŧ ‌Iñcreāsiŋ ṣury:*   ❌
+rāwaṇa replied wiŧ iñcreasiŋ ṣury:*
 
-ndya mātaŋ nyān lūputéki,   ❌
-pĕjāhātaḥ ya awās ‌ya,   ❌
-Āpan ‌Atyanta wĕgig nya,   ❌
-nūmānākĕn tānĕmaṅku*   ❌
+ndya mataŋ nyān luputéki,
+pĕjahātaḥ ya awās ‌ya,
+Apan atyanta wĕgig nya,
+numanākĕn tanĕmaṅku*
 
-0‍why should he escāpe ṣrom pūnishmentj? ceṙttꜽnly he should be brouǥt,   ❌
-nya wānèḥ doṣa nikaŋ wrö,   ❌
-Ūmātī rākṣāsa ƀrĕtya,   ❌
-bāla mantrī tūwi śtrnmè,   ❌
-yādi tan patyāna liṅta*   ❌
+0‍why should he escape ṣrom punishmentj? ceṙttꜽnly he should be brouǥt,
+nya wanèḥ doṣa nikaŋ wrö,
+Umatī rākṣasa ƀrĕtya,
+bala mantrī tuwi śtrnmè,
+yadi tan patyana liṅta*
 
-you hae sꜽd*   ❌
+you hae sꜽd*
 
-*   ❌
+*
 
-nīyāta ŋ rājya wiśīrṅnā,   ❌
-rāƀāsānyékā kabèḥ nya,   ❌
-ya mātaŋ nyān pĕjahātaḥ,   ❌
-*   ❌
+niyata ŋ rājya wiśīrṅnā,
+raƀasānyékā kabèḥ nya,
+ya mataŋ nyān pĕjahātaḥ,
+*
 
-Īkānāsiŋ ‌Awamāna*   ❌
+Ikanāsiŋ awamana*
 
-must die,   ❌
-As ‌Anyone who ‌Insults me*   ❌
+must die,
+As anyone who insults me*
 
-,   ❌
-Īkānaŋ wwaŋ kāwamāna,   ❌
-hūmĕnĕŋ yan hāna śatru,   ❌
-nīyāta śrī nya umiṅgat,   ❌
-mātākut ‌riŋ pāriƀūta*   ❌
+,
+Ikanaŋ wwaŋ kawamāna,
+humĕnĕŋ yan hana śatru,
+niyata śrī nya umiṅgat,
+matakut ‌riŋ pariƀūta*
 
-¢‌An ‌Insulted man who does not stand ‌Up agꜽnst on-comiŋ enemies,   ❌
-will*   ❌
+¢‌An insulted man who does not stand up agꜽnst on-comiŋ enemies,
+will*
 
-kālāwan ndya ŋ wwaŋ asampay,   ❌
-sālāwaskuñ jāyaśatru,   ❌
-prāṇāta ŋ rāt sāhana nya,   ❌
-Īkānaŋ hyaŋ tūwi ƀakti*   ❌
+kalawan ndya ŋ wwaŋ asampay,
+salawaskuñ jayaśatru,
+praṇata ŋ rāt sahana nya,
+Ikanaŋ hyaŋ tuwi ƀakti*
 
-subjects*   ❌
+subjects*
 
---*   ❌
+--*
 
-ya mātaŋ nyān pĕjahéki,   ❌
-Īkānaŋ wré ya masampè,   ❌
-nūmānākĕn tānĕmaṅku,   ❌
-sĕḍĕŋ ‌Awwaḥ ya rinūg nya*   ❌
+ya mataŋ nyān pĕjahéki,
+Ikanaŋ wré ya masampè,
+numanakĕn tanĕmaṅku,
+sĕḍĕŋ awwaḥ ya rinūg nya*
 
-my plants,   ❌
-whīle ŧey were beāriŋ ṣruit*   ❌
+my plants,
+while ŧey were beariŋ ṣruit*
 
-sātĕka ṅkmī ri tamanku,   ❌
-mārārĕm kapwa kumöl ‌ya,   ❌
-Īkānaŋ wé tĕka yātīs,   ❌
-hāṅīnādrĕs tĕka manda*   ❌
+satĕka ṅkmī ri tamanku,
+mararĕm kapwa kumöl ‌ya,
+Ikanaŋ wé tĕka yātīs,
+haṅinādrĕs tĕka manda*
 
-Āpa sādyanta riki ŋ wré,   ❌
-kīta trĕṣṇāè ri hūrip nya,   ❌
-tūwi tiṙyyak māpacmra,   ❌
-Ūmĕnaŋ sāhāsika ṅké*   ❌
+Apa sādyanta riki ŋ wré,
+kita trĕṣṇāè ri hurip nya,
+tuwi tiṙyyak mapacmra,
+Umĕnaŋ sāhasika ṅké*
 
-0‍what do you want wiŧ ŧat monkey*   ❌
+0‍what do you want wiŧ ŧat monkey*
 
-why do you wisḥ to keep him na ta wuwus saŋ rāwaṇa maswī,   ❌
-mātyāna saŋ bāywitmāja tan lèn,   ❌
-śīǥra mālĕs saŋ marūti mojar,   ❌
-mĕṅgĕp ‌Anantwāmbĕk nīra humrĕŋ*   ❌
+why do you wisḥ to keep him nā ta wuwus saŋ rāwaṇa maswī,
+mātyana saŋ bāywītmaja tan lèn,
+śīǥra malĕs saŋ māruti mojar,
+mĕṅgĕp anantwāmbĕk nira humrĕŋ*
 
-heart*   ❌
+heart*
 
-rākṣāsānāŧa wyaṙŧa gĕlĕṅta,   ❌
-tan hāna yukti nyan tĕka riŋ wré,   ❌
-dūta ya ékāki kĕna paśa,   ❌
-tan pĕjāhātaḥ wanāra dènta*   ❌
+rākṣasanāŧa wyaṙŧa gĕlĕṅta,
+tan hana yukti nyān tĕka riŋ wré,
+dūta ya ékākī kĕna pāśa,
+tan pĕjahātaḥ wānara dènta*
 
-you should not kill a monkey*   ❌
+you should not kill a monkey*
 
-jāti nīkā saŋ dibya jāyèŋ praŋ,   ❌
-lajjīta méraŋ riŋ ṅāpāliṅa,   ❌
-tan dādi sakrođèŋ āđāmataḥ,   ❌
-solāha niŋ satwénānūmana*   ❌
+jāti nikā saŋ dibya jayèŋ praŋ,
+lajjita méraŋ riŋ ṅapalīṅa,
+tan dadi sakrođèŋ ađamātaḥ,
+solaha niŋ satwénanumāna*
 
-lāwan ‌Ikā saŋ raǥāwa śađu,   ❌
-nitya rūmākṣèŋ rat sīra dibya,   ❌
-taṙ wījīgī riŋ śatru taṙ élik,   ❌
-ndan kīta mūṙkkāmoǥa māsĕṅhit*   ❌
+lāwan ikā saŋ rāǥawa śāđu,
+nitya rumākṣèŋ rāt sira dibya,
+taṙ wijigī riŋ śatru taṙ élik,
+ndan kita mūṙkkāmoǥa masĕṅhit*
 
-strī kālāwan mās ratna wīśéṣa,   ❌
-lāƀa niŋ apraŋ yaṅñ jāyāśatru,   ❌
-yapwan ‌Ikā sāđyam tat ‌Anĕmwa,   ❌
-wèt ni kāduḥkan saŋ rāǥūputra*   ❌
+strī kalawan mās ratna wiśéṣa,
+laƀa niŋ apraŋ yaṅñ jayaśatru,
+yapwan ikā sāđyām tat anĕmwa,
+wèt ni kaduḥkan saŋ raǥuputra*
 
-you cꜷse rāǥuputra soṙrow*   ❌
-
-rāǥāwa sugrīwa ta wānèhan,   ❌
-yat pākāmitrātaḥ sīra kaliḥ,   ❌
-byakta sūkā ŋ rāt ‌wrĕdđya hāyunta,   ❌
-haywa ta sandéha ṅhāti śanta*   ❌
-
-tulya tāsik saŋ rama kāpindra,   ❌
-śakti nīrāgöŋ yékāna ratna,   ❌
-yapwat ‌Amitra byakta hāyunta,   ❌
-hyaŋ hīmāwān māwak kīta sampat*   ❌
-
-kāma ya sāđyan laƀa kāniṣṭa,   ❌
-Aṙŧa ya sāđyan mađyāma laƀa,   ❌
-mitra ya sāđyan ‌Uttāma laƀa,   ❌
-yéka mātaŋ nyān yogya sāmitrā*   ❌
-
-ṣoṙ ṣriendship*   ❌
-
-*   ❌
-
-kyāti sīrèa rat lakṣmāṇa sāđu,
-śūra sīrāntĕn saŋ rāǥūputra,   ❌
-ƀakti sīrojaṙ iŋ kāka satya,   ❌
-tan wīhāṅātaḥ milwa sāmitrā*   ❌
-
-maṅkāna tékaŋ wanārāwira,   ❌
-śakti ya ƀaktī saŋ kāpīraja,   ❌
-nāpārīcārāsiŋ sāpākona,   ❌
-taṙ wīlummèsiŋ kaṙyya kāsidđa*   ❌
-
-kwèeḥ pwa īkā laƀā niŋ amitra,
-haywa ta sakrođa ṅhāti śanta,   ❌
-sĕmbāhākĕn dèwi nīra sitā,   ❌
-saŋ rāǥūputrāwms sira haṙṣā*   ❌
-
-cool*   ❌
-
-return his wīṣe sitā,   ❌
-ŧen ceṙttꜽnly rāǥūputra would be happy*
-
-đaṙmma lāwan ‌Aṙŧottāma kama,   ❌
-nya ŋ tīga yékāwims ‌ya tĕmunta,   ❌
-sĕṣṭi niŋ āmbĕk byakta kātĕmwa,   ❌
-yat prāṇātāpī saŋ rāǥūputra*   ❌
-
-will ceṙttꜽnly come true,   ❌
-Iṣ you submit to rāǥūputra*   ❌
-
-yogya ātaḥ saŋ raǥāwa naŧā,   ❌
-taṙ pāpāḍèŋ rāt ‌riŋ jāyāśatru,   ❌
-hrū nīra tuṅgal mrĕtyu pāḍa nya,   ❌
-yaṙ prālāyākĕn śatrwānīwaṙyya*   ❌
-
-nūmerous ‌Opponents*   ❌
-
-tāṭāka bālī yojānābahu,   ❌
-dūṣāṇa lèn mārica wīrađa,   ❌
-yéka pĕjaḥ dé saŋ rāǥūputra,   ❌
-kabwātākĕn ‌yan śakti kābèḥ nya*   ❌
-
-tātan ‌Ikā hétwanta māsĕṅhit,   ❌
-yadyāpin ‌Akwèḥ rakṣāsa śiṙṇna,   ❌
-Āpan ‌Ikā wadwanta ya duṣṭa,   ❌
-mātyāna saŋ rāmékāna donya*   ❌
-
-demon-subjects were killed,   ❌
-It ‌Is becꜷse youṙ subjects were eil ones whowanted to kill rāma*   ❌
-
-yukti tsmĕn dé saŋ raǥūputra,   ❌
-Aṙ prālāyākĕn rakṣāsa muṙkka,   ❌
-mūlya āwak niŋ waŋ ya rīnakṣa,   ❌
-yéka pānāđyān đaṙmma wīśèṣa*   ❌
-
-nā ta wūwus saŋ marūtāputra,   ❌
-rāwāṇa maṅkin krođa kābaṅan,   ❌
-krođa niŋ āṅin bajra pāḍa nya,   ❌
-ǥūṙṇnīta molaḥ taŋ mūkāpadma*   ❌
-
-hāḥ āđāmékiŋ wanāra duṣṭa,   ❌
-mūḍa māpuṅguŋ tan tūhu duta,   ❌
-tan pāti mojaṙ ‌tan pāti molaḥ,   ❌
-donya ya donyātaḥ ya ta duta*   ❌
-
-ko pwa ya mĕṅgĕp duta hīḍĕpmu,   ❌
-rākṣas ‌ṅ-tan kraḥ śiṙṇna ya dému,   ❌
-tan pānĕpĕṙ kon rug tānĕmaṅku,   ❌
-śāsāna niŋ dūta ndi tīnutmu*   ❌
-
-ko pwa mūjī śakti nya si rama,   ❌
-swaŋ pūji tan ‌wruḥ riŋ sāpūjinmwa,   ❌
-
-wruḥ kāri ko riŋ yojānābahu,   ❌
-duṙbbāla paṅguḥ yékāna timpaŋ,   ❌
-yéka pĕjaḥ dé niŋ rāǥūputra,   ❌
-pātāka ko đik niṙǥrĕṇa duṣṭa*   ❌
-
-tāṭāka tātan yogya ya matya,   ❌
-strī tūwi lāwan ‌tan pāsahmya,   ❌
-ya pwa pīnatyan dé ni si rama,   ❌
-hāḥ kāla tan ‌wriŋ wĕlas ‌Apalwṅa*   ❌
-
-ratna māṇik ‌strī laƀa niŋ apraŋ,   ❌
-yèkāna pājaṙmmwiry āku ṅuni,   ❌
-tātan ‌Ikā don saŋ āƀīmana,   ❌
-kīṙtti yāśātaḥ don īra tan lèn*   ❌
-
-jāti nīkā saŋ göŋ āƀīmana,   ❌
-đīra tan ‌Aṅgā yaṙ kāpāḍana,   ❌
-ƀaktya nīkaŋ lèn yékāna pinriḥ,   ❌
-yan pwa tan ‌Aṅgā ƀaktya pīnatyan*   ❌
-
-nī ta sīnāđyā saŋ tūhu wira,   ❌
-śrī ya ta tūtūta nya sīnađyā,   ❌
-Āpan ‌Ikā bwat cañcāla méṅīz,   ❌
-yāta mātaŋ nyān ‌tan ‌ya sīnađyā*   ❌
-
-huḥ lālu tan ‌wruḥ riŋ pārāmaṙŧa,   ❌
-Anđya mātaŋ nyān kadƀūta dému,   ❌
-jāti wĕgig taŋ rakṣāsa wira,   ❌
-đaṙmma nīkin hīnapārādara*   ❌
-
-rāma lāwan sugriwa ya mitran,   ❌
-yéka ūjaṙmmun muḍa māpuṅguŋ,   ❌
-yogya kāri ŋ wwil ‌wwaŋ wrāyāmitra,   ❌
-tan pātut ‌Iŋ śīla nya ūlaḥ nya*   ❌
-
-wīra wīrāđānuŋ māti dé nya,   ❌
-tan pĕjāhékāki nya ya tuṅgal,   ❌
-rāǥāwa đūrtŧātyanta tan ‌Éraŋ,   ❌
-lakṣmāṇa yékānuŋ tūmūluŋ ya*   ❌
-
-lāwan ‌Ikaŋ mārica kāniṣṭa,   ❌
-tan sāpūjimwīkaŋ mĕjāhikām,   ❌
-kātāra yan ton śatru ya méṅas,   ❌
-tulya kĕnas ‌yan ton īkānaŋ moŋ*   ❌
-
-nūni sèḍeŋ kwākon ‌ya lūmakwa,   ❌
-mamriḥ ānĕmbaḥ wèt ni tākut nya,   ❌
-twaŋ nya kūnĕŋ ‌ṙyyājñṅaṅku n ālaṅǥya,   ❌
-yéka dūmèḥ nyāmriḥ-mrīha wanya*   ❌
-
-wgānāra bīlī śakti ya liṅmu,   ❌
-Andya mātaŋ nyān trus pīnānaḥ pwa,   ❌
-yan tūhu śakti syuha īkaŋ hrū,   ❌
-yéka mātaŋ nyān hina si bali*   ❌
-
-maṅkāna tékī papa si rama,   ❌
-mūṙkka mātīkaŋ bali si balī,   ❌
-ndan sĕḍĕŋ ‌Apraŋ lawan ‌Ari nya,   ❌
-hāḥ hāhaḥ ho hāḥ hina si rama*   ❌
-
-dāśāwādāna huwus mojar,   ❌
-jwālīta hāti nirān krođa,   ❌
-pāwānāsūta malĕs mojar,   ❌
-hāti nīra mātĕguḥ đīra*   ❌
-
-pāwāna-āpa kita mūpawādāku,   ❌
-rāƀāsa kāyu riŋ udyāna,   ❌
-mākīra-kīra maraŋ dūta,   ❌
-māṅĕn-āṅĕn mopaya*   ❌
-
-Āku īkāna kinon dūta,   ❌
-lūmāwāda hāna saŋ sītm,   ❌
-ndan ‌Alĕmĕḥ ‌Aku maṅrakwa,   ❌
-wrūha ri sīra ataḥ byakta*   ❌
-
-nāhan ‌Ikāna ya don kwaṅrug,   ❌
-kāyu sāhāna riŋ udyāna,   ❌
-tat ‌Agĕlĕṅa tatat krođa,   ❌
-Āpa ta hālĕpakĕn molaḥ*   ❌
-
-Āku mĕjāhīkana sy ‌Akṣa,   ❌
-kālāwan ‌Ikāna wadwāènta,   ❌
-sāha bāla ya pĕjaḥ dèṅku,   ❌
-kīra-kīra ya tikā tan lèn*   ❌
-
-kālāwan ‌Ika kabèḥ mūṙkka,   ❌
-sāhāna-hāna ni wadwānta,   ❌
-pĕjāhāna ya kayogyanya,   ❌
-sārāƀāsa nūmanākĕn rāt*   ❌
-
-Āŧāwa ya ta kunĕŋ donku,   ❌
-mĕjāhi sāhāna niŋ mūṙkka,   ❌
-prakrĕti jūga ikaŋ māna,   ❌
-ri hāti nīkāna saŋ đīra*   ❌
-
-kīta tūwi māwaraḥ ṅūni,   ❌
-yāśa jūga ya ta doniŋ praŋ,   ❌
-tan ‌Ahāla ta kariḥ donku,   ❌
-mĕjāhi sāhāna niŋ mūṙkka*   ❌
-
-kīta tūwi māgawè śīla,   ❌
-prakrĕti jūga tinūtanta,   ❌
-Īkaŋ āđāma karākṣasyan,   ❌
-ya pīnākālārapan dènta*   ❌
-
-swaŋ āwāra-wāraḥ iŋ đaṙmma,   ❌
-tākāri nāya nikaŋ jāti,   ❌
-bāli kāri tāhu riŋ śāstra,   ❌
-gūrāgāḍa jūga mĕṅgĕp ‌wruḥ*   ❌
-
-ndya ta ya pārāmađaṙmmanta,   ❌
-prakrĕti ya kāwĕkas ṅūni,   ❌
-sātāta kīta rumākṣāŋ rīt,   ❌
-ya ta tūhu-tūhu ta rākṣasyan*   ❌
-
-saŋ ātāpa hāna riŋ śūnya,   ❌
-sīra tīka tūwi rākṣanta,   ❌
-yādi tūhu-tūhu rākṣasyan,   ❌
-tan ‌Ikānaŋ ‌Amati ŋ rāt pwa*   ❌
-
-Āḍaḥ ‌Ađāma dahat mūṙkka,   ❌
-kālīku kīta ri janmanta,   ❌
-tūhāgāṇa māgawè pāpa,   ❌
-ri hāla-hāyu ni jātinta*   ❌
-
-Āku mūjāri kitāmitrām,   ❌
-kālāwan ‌Ikāna saṅṇ rāma,   ❌
-tat ‌Amītūhu alaḥ mūḍa,   ❌
-tūhu-tūhu tāhu riŋ pāpa*   ❌
-
-byāsāna lāwan ‌Ikaŋ śīla,   ❌
-ya māpa sālāha nīm liṅta,   ❌
-tūhun ‌Ikāna apan mūṙkka,   ❌
-tāmat ‌Aṅāṅĕn-aṅĕn đaṙmma*   ❌
-
-lāwan ‌Ika si wirāđāmkya,   ❌
-saŋ ātāpa ya winiǥna nya,   ❌
-ya pīnĕjāhan ‌Iraŋ rāma,   ❌
-ri hāti nīra pi tan krođa*   ❌
-
-saꝑāla sīra siwin liṅku,   ❌
-hāti nīra mūditī riŋ rāt,   ❌
-saŋ ātāpa pīnaritrānan,   ❌
-sꝑāṭīka pāḍa nikaŋ citta*   ❌
-
-kālāwan ‌Ika si mārīca,   ❌
-yan ‌Apa sālāha dé niŋ hrū,   ❌
-tūwi ya dādi kidaŋ māya,   ❌
-māsāsāran ‌Alayū méṅas*   ❌
-
-pūnaṙ āpi kāpisan dé saŋ,   ❌
-rāǥūsūta ūmanaḥ pyaḥ nya,   ❌
-syāpa ta rātu wanèḥ śaktya,   ❌
-nuŋ āmānāha kidaŋ māmya*   ❌
-
-kīta ūmūpĕt ‌Ikaŋ bālī,   ❌
-Āpa kīta mālupān śakti,   ❌
-hāna māra ya huwus mūṙcca,   ❌
-Īnāpītan ‌Ikanaŋ bmlī*   ❌
-
-ndak ‌Acārīta rĕṅöntéki,   ❌
-prāŧāma sĕḍĕŋ ‌Ikaŋ bāmlī,   ❌
-mājāpa ya rīkanaŋ sanđyā,   ❌
-pījéṙ ūmāṅĕn-aṅĕn saŋ hyaŋ*   ❌
-
-kāŧam ‌Api hāna téki wwaŋ,   ❌
-kādi āyūyu taṅanyākwèḥ,   ❌
-māṅāwāra ya mahā mĕdi,   ❌
-ri sīra saŋ ājapāmūjā*   ❌
-
-tĕka māmĕlĕg ‌Ikaŋ duṣṭa,   ❌
-māmārīmīsi ri saŋ sāđu,   ❌
-kādi tūhu ya mahāśaktya,   ❌
-gūrāgāḍa jūga yāsampay*   ❌
-
-sĕḍĕŋ ‌Amĕlĕg ‌Ikaŋ duṣṭa,   ❌
-dādi ya īnāpitan mosaḥ,   ❌
-sāgīla māti alaḥ mopĕk,   ❌
-syāpa ta kūnĕŋ ikaŋ tan ‌wruḥ*   ❌
-
-dāśāmūka ya mataŋ nya śantācittā,   ❌
-tat ‌Atūkāra lawan ƀāṭara rāma,   ❌
-mārat ‌Anĕmu wiƀūti yaprāméya,   ❌
-yat ‌Atūkāra kita prālaya ‌lĕṅkā*   ❌
-
-rāǥūsūta ya nahan sīwinta nāŧā,   ❌
-jānākāsūta ta tulya déwātānta,   ❌
-wālūyākĕna ri saŋ nāréndra rāma,   ❌
-kānāka māṇi wawan sāha prāṇamya*   ❌
-
-pāwānāsūta nahan wūwus nīrojar,   ❌
-Ātīśāya sīra niṙƀāyĕŋ swācitta,   ❌
-mārūti ya māpĕḍĕs wāliŋ nīrālon,   ❌
-ri hārĕp ‌I bālamantri rakṣāsākwèḥ*   ❌
-
-dāśāmūka māgalak mādĕg sīrāglis,   ❌
-tūdīṅi ta pāwanātmājé kiwmtaḥ,
-ƀrūkūṭi kūṭīla ƀīṣāṇa ŋ mūkābaŋ,   ❌
-kādi dūmīlaḥ ikā wūlat nīrācrĕŋ*   ❌
-
-wrāyāpa nārāka đik lūluy nya mojar,   ❌
-kādi māṅājap-ajap wūwus nya jañjan,   ❌
-Āpūsi pāhātĕguḥ īku nya tunwi,   ❌
-prīsākīti ta hati nya wĕḥ sārantmè*   ❌
-
-dāśāwādāna huwus nīrojaṙ madĕg tèkanaŋ rākṣasa,   ❌
-hāna ālālaŋ ‌Akiŋ pāmuṅkus nya rīkū niraŋ māmruti,   ❌
-Āpūsi ta dāluwaŋ lāwan bwat kĕliŋ kusyara mwaŋ jamaŋ,   ❌
-Āsiŋ-āsiŋ ānipis dīlaḥ nyāhaṅan ndan bĕbĕd nyāpagĕḥ*   ❌
-
-krāma hūwus ‌Inapus pwa ya dyus ta riŋ tꜽla lāwan miñak,   ❌
-tĕka ŋ āmāwa suluḥ ‌Umaṅsö sĕsök sāhasāṅĕmbuli,   ❌
-pāḍa tan ‌Anūmanān pānunwī murub tékanékū nira,   ❌
-kāgīri-gīri dilaḥ nya tèja nya maƀrā sinaŋ loṙ kidul*   ❌
+you cꜷse raǥuputra soṙrow*
+
+rāǥawa sugrīwa ta wanèhan,
+yat pakamitrātaḥ sira kāliḥ,
+byakta sukā ŋ rāt ‌wrĕdđya hayunta,
+haywa ta sandéha ṅhati śānta*
+
+tulya tasik saŋ rāma kapīndra,
+śakti nirāgöŋ yékana ratna,
+yapwat amitra byakta hayunta,
+hyaŋ himawān māwak kita sampat*
+
+kāma ya sāđyan lāƀa kaniṣṭa,
+Aṙŧa ya sāđyan mađyama lāƀa,
+mitra ya sāđyan uttama lāƀa,
+yéka mataŋ nyān yogya samitrā*
+
+ṣoṙ ṣriendship*
+
+*
+
+kyāti sirèa rāt lakṣmaṇa sāđu,
+śūra sirāntĕn saŋ raǥuputra,
+ƀakti sirojaṙ iŋ kaka satya,
+tan wihaṅātaḥ milwa samitrā*
+
+maṅkana tékaŋ wānarawīra,
+śakti ya ƀaktī saŋ kapirāja,
+nāparicārāsiŋ sapakona,
+taṙ wilummèsiŋ kāṙyya kasidđa*
+
+kwèeḥ pwa ikā lāƀā niŋ amitra,
+haywa ta sakrođa ṅhati śānta,
+sĕmbahakĕn dèwī nira sītā,
+saŋ raǥuputrāwms sira haṙṣā*
+
+cool*
+
+return his wiṣe sītā,
+ŧen ceṙttꜽnly raǥuputra would be happy*
+
+đaṙmma lawan aṙŧottama kāma,
+nya ŋ tiga yékāwīms ‌ya tĕmunta,
+sĕṣṭi niŋ āmbĕk byakta katĕmwa,
+yat praṇatāpī saŋ raǥuputra*
+
+will ceṙttꜽnly come true,
+Iṣ you submit to raǥuputra*
+
+yogya ataḥ saŋ rāǥawa nāŧā,
+taṙ papaḍèŋ rāt ‌riŋ jayaśatru,
+hrū nira tuṅgal mrĕtyu paḍa nya,
+yaṙ pralayākĕn śatrwaniwāṙyya*
+
+numerous opponents*
+
+tāṭaka bālī yojanabāhu,
+dūṣaṇa lèn mārīca wirāđa,
+yéka pĕjaḥ dé saŋ raǥuputra,
+kabwatakĕn ‌yan śakti kabèḥ nya*
+
+tātan ikā hétwanta masĕṅhit,
+yadyapin akwèḥ rākṣasa śiṙṇna,
+Āpan ikā wadwānta ya duṣṭa,
+mātyana saŋ rāmékana donya*
+
+demon-subjects were killed,
+It is becꜷse youṙ subjects were eil ones whowanted to kill rāma*
+
+yukti tsmĕn dé saŋ raǥuputra,
+Aṙ pralayākĕn rākṣasa mūṙkka,
+mūlya awak niŋ waŋ ya rinākṣa,
+yéka panāđyān đaṙmma wiśèṣa*
+
+nā ta wuwus saŋ mārutaputra,
+rāwaṇa maṅkin krođa kabāṅan,
+krođa niŋ āṅin bajra paḍa nya,
+ǥūṙṇnita molaḥ taŋ mukapadma*
+
+hāḥ ađamékiŋ wānara duṣṭa,
+muḍa mapuṅguŋ tan tuhu dūta,
+tan pati mojaṙ ‌tan pati molaḥ,
+donya ya donyātaḥ ya ta dūta*
+
+ko pwa ya mĕṅgĕp dūta hiḍĕpmu,
+rākṣas ‌ṅ-tan kraḥ śiṙṇna ya dému,
+tan panĕpĕṙ kon rūg tanĕmaṅku,
+śāsana niŋ dūta ndi tinūtmu*
+
+ko pwa mujī śakti nya si rāma,
+swaŋ puji tan ‌wruḥ riŋ sapujinmwa,
+
+wruḥ kari ko riŋ yojanabāhu,
+duṙbbala paṅguḥ yékana timpaŋ,
+yéka pĕjaḥ dé niŋ raǥuputra,
+pātaka ko đik niṙǥrĕṇa duṣṭa*
+
+tāṭaka tātan yogya ya mātya,
+strī tuwi lāwan ‌tan pasahmya,
+ya pwa pinatyan dé ni si rāma,
+hāḥ kala tan ‌wriŋ wĕlas apalwṅa*
+
+ratna maṇik ‌strī lāƀa niŋ apraŋ,
+yèkana pājaṙmmwiry aku ṅūni,
+tātan ikā don saŋ aƀimāna,
+kīṙtti yaśātaḥ don ira tan lèn*
+
+jāti nikā saŋ göŋ aƀimāna,
+đira tan aṅgā yaṙ kapaḍāna,
+ƀaktya nikaŋ lèn yékana pinriḥ,
+yan pwa tan aṅgā ƀaktya pinatyan*
+
+nī ta sināđyā saŋ tuhu wīra,
+śrī ya ta tūtūta nya sināđyā,
+Āpan ikā bwat cañcala méṅīz,
+yāta mataŋ nyān ‌tan ‌ya sināđyā*
+
+huḥ lalu tan ‌wruḥ riŋ paramāṙŧa,
+Anđya mataŋ nyān kādƀuta dému,
+jāti wĕgig taŋ rākṣasa wīra,
+đaṙmma nikin hīnāparadāra*
+
+rāma lawan sugrīwa ya mitran,
+yéka ujaṙmmun mūḍa mapuṅguŋ,
+yogya kari ŋ wwil ‌wwaŋ wrayamitra,
+tan patut iŋ śila nya ulaḥ nya*
+
+wira wirāđānuŋ mati dé nya,
+tan pĕjahékākī nya ya tuṅgal,
+rāǥawa đūrtŧātyanta tan éraŋ,
+lakṣmaṇa yékānuŋ tumuluŋ ya*
+
+lāwan ikaŋ mārīca kaniṣṭa,
+tan sapujimwikaŋ mĕjahīkām,
+kātara yan ton śatru ya méṅas,
+tulya kĕnas ‌yan ton ikanaŋ moŋ*
+
+nuni sèḍeŋ kwākon ‌ya lumakwa,
+mamriḥ anĕmbaḥ wèt ni takut nya,
+twaŋ nya kunĕŋ ‌ṙyyājñṅaṅku n alaṅǥya,
+yéka dumèḥ nyāmriḥ-mriha wānya*
+
+wgānara bīlī śakti ya liṅmu,
+Andya mataŋ nyān trus pinanaḥ pwa,
+yan tuhu śakti syūha ikaŋ hrū,
+yéka mataŋ nyān hīna si bāli*
+
+maṅkana tékī pāpa si rāma,
+mūṙkka matīkaŋ bāli si bālī,
+ndan sĕḍĕŋ apraŋ lāwan ari nya,
+hāḥ hahaḥ ho hāḥ hina si rāma*
+
+daśawadana huwus mojar,
+jwalita hati nirān krođa,
+pawanasuta malĕs mojar,
+hati nira matĕguḥ đīra*
+
+pawana-apa kita mupawādāku,
+raƀasa kayu riŋ udyāna,
+makira-kira maraŋ dūta,
+maṅĕn-aṅĕn mopaya*
+
+Aku ikana kinon dūta,
+lumawada hana saŋ sītm,
+ndan alĕmĕḥ aku maṅrakwa,
+wruha ri sira ataḥ byakta*
+
+nahan ikana ya don kwaṅrug,
+kayu sahana riŋ udyāna,
+tat agĕlĕṅa tatat krođa,
+Apa ta halĕpakĕn molaḥ*
+
+Aku mĕjahīkana sy akṣa,
+kalawan ikana wadwāènta,
+saha bala ya pĕjaḥ dèṅku,
+kira-kira ya tikā tan lèn*
+
+kalawan ika kabèḥ mūṙkka,
+sahana-hana ni wadwānta,
+pĕjahana ya kayogyanya,
+saraƀasa numanakĕn rāt*
+
+Aŧawa ya ta kunĕŋ donku,
+mĕjahi sahana niŋ mūṙkka,
+prakrĕti juga ikaŋ māna,
+ri hati nikana saŋ đīra*
+
+kita tuwi mawaraḥ ṅūni,
+yaśa juga ya ta doniŋ praŋ,
+tan ahala ta kariḥ donku,
+mĕjahi sahana niŋ mūṙkka*
+
+kita tuwi magawè śīla,
+prakrĕti juga tinūtanta,
+Ikaŋ ađama karākṣasyan,
+ya pinakalarapan dènta*
+
+swaŋ awara-waraḥ iŋ đaṙmma,
+takari naya nikaŋ jāti,
+bali kari tahu riŋ śāstra,
+guragaḍa juga mĕṅgĕp ‌wruḥ*
+
+ndya ta ya paramađaṙmmanta,
+prakrĕti ya kawĕkas ṅūni,
+satata kita rumākṣāŋ rīt,
+ya ta tuhu-tuhu ta rākṣasyan*
+
+saŋ atapa hana riŋ śūnya,
+sira tika tuwi rākṣanta,
+yadi tuhu-tuhu rākṣasyan,
+tan ikanaŋ amati ŋ rāt pwa*
+
+Aḍaḥ ađama dahat mūṙkka,
+kaliku kita ri janmanta,
+tuhagaṇa magawè pāpa,
+ri hala-hayu ni jātinta*
+
+Aku mujari kitāmitrām,
+kalawan ikana saṅṇ rāma,
+tat amituhu alaḥ mūḍa,
+tuhu-tuhu tahu riŋ pāpa*
+
+byasana lawan ikaŋ śīla,
+ya mapa salaha nīm liṅta,
+tuhun ikana apan mūṙkka,
+tamat aṅaṅĕn-aṅĕn đaṙmma*
+
+lawan ika si wirāđāmkya,
+saŋ atapa ya winiǥna nya,
+ya pinĕjahan iraŋ rāma,
+ri hati nira pi tan krođa*
+
+saꝑala sira siwin liṅku,
+hati nira muditī riŋ rāt,
+saŋ atapa pinaritrānan,
+sꝑaṭika paḍa nikaŋ citta*
+
+kalawan ika si mārica,
+yan apa salaha dé niŋ hrū,
+tuwi ya dadi kidaŋ māya,
+masasaran alayū méṅas*
+
+punaṙ api kapisan dé saŋ,
+raǥusuta umanaḥ pyaḥ nya,
+syapa ta ratu wanèḥ śaktya,
+nuŋ amanaha kidaŋ māmya*
+
+kita umupĕt ikaŋ bālī,
+Apa kita malupān śakti,
+hana mara ya huwus mūṙcca,
+Inapitan ikanaŋ bmlī*
+
+ndak acarita rĕṅöntéki,
+praŧama sĕḍĕŋ ikaŋ bāmlī,
+majapa ya rikanaŋ sanđyā,
+pijéṙ umaṅĕn-aṅĕn saŋ hyaŋ*
+
+kaŧam api hana téki wwaŋ,
+kadi ayuyu taṅanyākwèḥ,
+maṅawara ya mahā mĕdi,
+ri sira saŋ ajapāmūjā*
+
+tĕka mamĕlĕg ikaŋ duṣṭa,
+mamarimisi ri saŋ sāđu,
+kadi tuhu ya mahāśaktya,
+guragaḍa juga yāsampay*
+
+sĕḍĕŋ amĕlĕg ikaŋ duṣṭa,
+dadi ya inapitan mosaḥ,
+sagila mati alaḥ mopĕk,
+syapa ta kunĕŋ ikaŋ tan ‌wruḥ*
+
+daśamuka ya mataŋ nya śāntacittā,
+tat atukara lawan ƀaṭāra rāma,
+marat anĕmu wiƀūti yāpraméya,
+yat atukara kita pralāya ‌lĕṅkā*
+
+raǥusuta ya nahan siwinta nāŧā,
+janakasuta ta tulya déwatānta,
+waluyakĕna ri saŋ naréndra rāma,
+kanaka maṇi wawan saha praṇamya*
+
+pawanasuta nahan wuwus nirojar,
+Atiśaya sira niṙƀayĕŋ swacitta,
+maruti ya mapĕḍĕs waliŋ nirālon,
+ri harĕp i balamantri rākṣasākwèḥ*
+
+daśamuka magalak madĕg sirāglis,
+tudiṅi ta pawanātmajé kiwmtaḥ,
+ƀrukuṭi kuṭila ƀīṣaṇa ŋ mukābaŋ,
+kadi dumilaḥ ikā wulat nirācrĕŋ*
+
+wrayapa naraka đik luluy nya mojar,
+kadi maṅajap-ajap wuwus nya jañjan,
+Apusi pahatĕguḥ ikū nya tunwi,
+prisakiti ta hati nya wĕḥ sarantmè*
+
+daśawadana huwus nirojaṙ madĕg tèkanaŋ rākṣasa,
+hana alalaŋ akiŋ pamuṅkus nya rīkū niraŋ māmruti,
+Apusi ta daluwaŋ lawan bwat kĕliŋ kusyara mwaŋ jamaŋ,
+Asiŋ-asiŋ anipis dilaḥ nyāhaṅan ndan bĕbĕd nyāpagĕḥ*
+
+krama huwus inapus pwa ya dyus ta riŋ tꜽla lāwan miñak,
+tĕka ŋ amawa suluḥ umaṅsö sĕsök sāhasāṅĕmbuli,
+paḍa tan anumanān panunwī murub tékanékū nira,
+kagiri-giri dilaḥ nya tèja nya maƀrā sinaŋ loṙ kidul*
 
 <daṇḍaka>:11.
 ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×29 : 93
