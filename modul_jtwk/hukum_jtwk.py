@@ -33,8 +33,9 @@ HUKUM_ṙ_MAHAPRANA = {
     'ṙḋ': 'ṙdḋ', 'ṙc': 'ṙcc', 'ṙꞓ': 'ṙcꞓ'
 }
 PENGGANTIAN_SPESIAL = {
-    r'y\b\s+': 'y-', 
-    r'w\b\s+': 'w-',
+    rf'(?<![{DAFTAR_VOKAL}])y\b\s+': 'y-', 
+    rf'(?<![{DAFTAR_VOKAL}])w\b\s+': 'w-',
+
     r'ṙs': 'ṙṣ', r'ṛs': 'ṛṣ',
     r'ṙṣik\b': 'ṙsik', r'ṙṇny': 'ṙny', r'aṙyy([aā])': r'ary\1',
     r'āś([cꞓ])ary': r'āś\1aṙyy', r'ṙyyakĕn\b': 'ryakĕn', r'uṙww': 'urw',

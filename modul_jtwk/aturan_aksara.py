@@ -310,7 +310,7 @@ def hukum_penulisan(text):
     patterns = [
     r'\bww', r'\byw', r'wr', r'\brw', r'lwi(r|ṙ)', r'\byan\b', r'\btan\b',
     r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")", r'\bmw', r'\bstr', r'\brkw', r'\bri', r'\bnṛ',
-    r'\bdwa\b', r'\bya\b', r'[' + daftar_konsonan + r']ta(?:n|ṅ|ŋ)?\b']
+    r'\bdwa\b', r'\bya\b', r'[' + daftar_konsonan + r']\s+ta(?:n|ṅ|ŋ)?\b']
     text = add_zwnj_awal_kata_bulk(text, patterns, '\u200C', daftar_konsonan) 
 
     #cegah pasangan lebih dari tumpuk tiga
@@ -330,7 +330,6 @@ def hukum_penulisan(text):
 def finalisasi(hasil):
 # Menghapus semua spasi setelah konversi
     hasil = hasil.replace("\t", " ")
-    hasil = hasil.replace("~", " ")
     hasil = hasil.replace("_", " ")
     hasil = hasil.replace(" ", "")
 
