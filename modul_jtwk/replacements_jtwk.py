@@ -39,22 +39,6 @@ replacements = {
 
         'Ōm' : 'Ŏṃ','Ŏm' : 'Ōṃ','Ōm' : 'Ŏṃ', 'Om̃' : 'Ōṃ',
     },
-    'lampah': {
-        'kh': 'ꝁ','gh': 'ǥ','ch': 'ꞓ','jh': 'ɉ',
-        'ṭh': 'ṫ','ḍh': 'ḋ','th': 'ŧ','dh': 'đ',
-        'ph': 'ꝑ','bh': 'ƀ','au': 'ꜷ','ai': 'ꜽ',
-        '-' : ' ',
-        '’' : '0‍',
-        'v' : 'w',
-        'ṁ' : 'ŋ',
-        
-
-        #'le': 'ḷ','ṛe': 'ṛ',
-
-        'e' : 'è','E' : 'È', 'ê' : 'è', 'Ê' : 'È',#'sh' : 'ś','ss' : 'ṣ',
-        'â':'ā', 'î':'ī', 
-        'Ōm' : 'Ŏṃ','Ŏm' : 'Ōṃ','Ōm' : 'Ŏṃ',
-    },
     'jawa': {
         'kh': 'ꝁ','gh': 'ǥ','ch': 'ꞓ','jh': 'ɉ',
         'ṭh': 'ṫ','ḍh': 'ḋ','th': 'ŧ','dh': 'đ',
@@ -123,7 +107,7 @@ replacements = {
 
 # Mode kakawin mewarisi mode normal dan menambahkan/menimpa beberapa entri
 #replacements['lampah'] = replacements['kakawin'].copy()
-replacements['modern_lampah'] = replacements['sriwedari'].copy()
+replacements['lampah'] = replacements['kakawin'].copy()
 #replacements['satya'] = replacements['sriwedari'].copy()
 
 def replace_numbers_with_colon(text):

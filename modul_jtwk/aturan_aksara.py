@@ -70,6 +70,11 @@ swara = {
     # Swara
     'A': 'ꦄ', 'Ā': 'ꦄꦴ', 'I': 'ꦅ', 'Ī': 'ꦇ', 'U': 'ꦎ', 'Ū': 'ꦎꦴ', 'O': 'ꦈ',
     'Ꜷ': 'ꦈꦴ', 'Ꜽ': 'ꦍ', 'Ö': 'ꦄꦼꦴ',
+    
+    **{bunyi: 'ꦄꦴ' for bunyi in ('Ā', 'Â')},
+    **{bunyi: 'ꦇ' for bunyi in ('Ī', 'Î')},
+    **{bunyi: 'ꦎꦴ' for bunyi in ('Ū', 'Û')},
+    **{bunyi: 'ꦈ' for bunyi in ('Ō', 'Ô')},
     **{bunyi: 'ꦌ' for bunyi in ('E', 'È','É')},
     **{bunyi: 'ꦄꦼ' for bunyi in ('Ĕ')},
     **{bunyi: 'ꦈꦴ' for bunyi in ('Ŏ', 'Ō')},
@@ -271,17 +276,10 @@ def hukum_sandi(text):
     lambda m: (m.group(1) + m.group(2) + ('' if m.group(3).lower() in pengecualian_ya else '\u200C')),text)
 
     identik = [('a', 'ā'), ('i', 'ī'), ('u', 'ū'), ('e', 'ꜽ'), ('o', 'ꜷ')]
-    for base, long_form in identik:
-        cap = base.upper()
-        long_cap = long_form.upper()
-        
+    for base, long_form in identik:   
         # Gabungan vokal identik kecil → vokal panjang
         text = re.sub(rf'{base}[^\S\n]*{base}', long_form, text)
         text = re.sub(rf'{long_form}[^\S\n]*{long_form}', long_form, text)
-        
-        # Gabungan vokal kapital + kecil → vokal panjang kapital
-        #text = re.sub(rf'{cap}[^\S\n]*{base}', long_cap, text)
-        #text = re.sub(rf'{base}[^\S\n]*{cap}', long_cap, text)
 
     # Kombinasi sandhi vokal yang disederhanakan
     text = re.sub(r'[aā][^\S\n]+[iī]', 'e', text)   # a atau ā + i atau ī menjadi e
@@ -303,19 +301,15 @@ def hukum_sandi(text):
     #Menyambung vokal dan konsonan yang terpisah spasi
     text = re.sub(r'([bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ])[^\S\n]*([aāiīuūeèoōöŏĕꜷꜽ])', r'\1\2', text)
 
-    
-
-    
     return text
 
 def hukum_penulisan(text):
 
     daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
-    
     #tambah zwnj depan kata
     patterns = [
     r'\bww', r'\byw', r'wr', r'\brw', r'lwi(r|ṙ)', r'\byan\b', r'\btan\b',
-    r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")", r'\bmw', r'\bstr', r'\brkw', r'\bri',
+    r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")", r'\bmw', r'\bstr', r'\brkw', r'\bri', r'\bnṛ',
     r'\bdwa\b', r'\bya\b', r'[' + daftar_konsonan + r']ta(?:n|ṅ|ŋ)?\b']
     text = add_zwnj_awal_kata_bulk(text, patterns, '\u200C', daftar_konsonan) 
 

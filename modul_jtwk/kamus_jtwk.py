@@ -67,7 +67,7 @@ substitutions = {
     #backsplash buat pemutus
     r'\\\|': '\u200D',  # input literal \| jadi ZWJ
     r'\\': '\u200C',  # input literal \\ jadi ZWNJ
-    r'!': '\u200C',
+    r'`': '\u200C',
     #r'' : ''
 
     #Pembalik layar-mahaprana

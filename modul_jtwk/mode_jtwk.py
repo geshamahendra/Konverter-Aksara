@@ -1,12 +1,10 @@
 import re
 
 # Definisi variabel global
-daftar_vokal = "ꜷꜽaāiīuūeèoōöŏĕ"  # Daftar vokal
-vokal_lampah_spesial = "AIU"
-vokal_kapital = "AĀIĪUŪEÈOŌÖŎĔꜶꜼ"  # Daftar vokal kapital
-vokal_gabungan = "aāiīuūeèoōöŏĕꜷꜽAĀIĪUŪEÈOŌÖŎĔꜶꜼ"
-daftar_konsonan = "bdfhjnptvwyzḋḍŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"  # Daftar konsonan
-daftar_konsonan_sigeg = "ŋḥṃṙ"  # Daftar konsonan
+daftar_vokal = "aiuĕāâîīûūêôeèéöoꜽꜷ"  # Daftar vokal
+vokal_kapital = "AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ"  # Daftar vokal kapital
+vokal_gabungan = "aiuĕāâîīûūêôeèéöoꜽꜷAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ"
+daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳ"  # Daftar konsonan
 zwnj = '\u200C'  # Zero-width non-joiner (ZWNJ)
 
 def add_h_between_vowels(text):
@@ -82,9 +80,8 @@ def mode_modern_lampah(text):
 def mode_kakawin(text):
     #Mode kakawin adalah transliterasi yang memaksa semua huruf vokal jadi kecil, pengkapitalan akan dilakukan oleh algoritma metrum
 
-    #paksa jadi huruf kecil semua
-    text = re.sub(r'(?<!\u200C)([A-Z])', lambda m: m.group(1).lower(), text)
-
+    #paksa  kapital swara jadi huruf kecil semua
+    text = text.lower()
     #Bahasa kawi tidak kenal ṙṇṇ
     text = re.sub(r'rṇ', 'rn', text) # khusus bahasa jawa kuno
 
@@ -92,9 +89,16 @@ def mode_kakawin(text):
 
 def mode_lampah(text):
 
-    #paksa jadi huruf kecil kecuali vokal ini
-    vokal_khusus = "AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ"
-    text = re.sub(rf'(?<!\u200C)(?![{vokal_khusus}])([A-Z])',lambda m: m.group(1).lower(),text)
+    #paksa konsonan jadi huruf kecil kecuali vokal kapital
+    def paksa_konsonan_kecil(text):
+        return re.sub(
+            r'(?<!\u200C)(.)',
+            lambda m: m.group(1).lower() if (
+                m.group(1).isupper() and m.group(1) not in vokal_kapital
+            ) else m.group(1),
+            text
+    )
+    text = paksa_konsonan_kecil(text)
 
     return text
 
