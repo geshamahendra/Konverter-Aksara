@@ -2,13 +2,26 @@ import re
 daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
 daftar_vokal = 'a', 'ā', 'i', 'ī', 'u', 'ū', 'e', 'è', 'é', 'o', 'ō', 'ö', 'ŏ', 'ĕ', 'ꜷ', 'ꜽ', 'â', 'î', 'ê', 'û', 'ô'
 vokal_regex = ''.join(daftar_vokal)
+# Set vokal untuk pencocokan cepat dalam logika
+set_vokal = set(daftar_vokal)
 konsonan = '[' + re.escape(daftar_konsonan) + ']'
-huruf_dikecualikan = "ymg"
-
+huruf_dikecualikan = "gblmjy"
 daftar_konsonan_tanpa_dikecualikan = daftar_konsonan
 for huruf in huruf_dikecualikan:
     daftar_konsonan_tanpa_dikecualikan = daftar_konsonan_tanpa_dikecualikan.replace(huruf, '')
 zwnj = "\u200C"
+
+
+#=======Definisi variabel global============
+
+#Fungsi untuk menyisipkan ZWNJ setelah nir/dur jika sisanya mengandung ≥2 vokal
+def sisipkan_zwnj_setelah_nir_dur(match):
+    awalan = match.group(1)
+    sisanya = match.group(2)
+    jumlah_vokal = sum(1 for c in sisanya if c in daftar_vokal)
+    if jumlah_vokal >= 2:
+        return awalan + '\\' + sisanya  #gunakan \ biar kelihatan, zwnj tidak bisa terlihat
+    return awalan + sisanya
 
 substitutions = {
     #Aksara Suci
@@ -32,6 +45,15 @@ substitutions = {
     r'sa(ng|ṅ)ṣ': 'saŋṣ',
     r'\bnir([' + daftar_konsonan_tanpa_dikecualikan + '])': 'nir\u200c\\1', #nir+zwnj
     r'\bdur([' + daftar_konsonan_tanpa_dikecualikan + '])': 'dur\u200c\\1', #durr+zwnj
+
+    #sisipkan zwnj setelah imbuhan
+    #r'\b(nir|dur|tĕr|bĕr|pĕr)(\w+)': sisipkan_zwnj_setelah_nir_dur,
+
+    #kembalikan setelah imbuhan
+    #r'\bp(e|ĕ)rtama\b': 'prĕtama',
+
+    r'\bnirw': r'nir\\w',
+    
     
     #--akhiran
     r'hku\b': 'ḥku', r'hta\b': 'ḥta',
