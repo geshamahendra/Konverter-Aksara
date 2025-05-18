@@ -1,12 +1,13 @@
 import re
 
 RE_METRUM_SIMBOL = re.compile(r'[–⏑⏓]')
-RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéöoꜽꜷAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ]')
+RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶ]')
 RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳŋḥṙ]')
 ZWNJ = '\u200C'
-VOWELS = 'aiuĕāâîīûūêôeèéöoꜽꜷAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
+ZWJ = '\u200D'
+VOWELS = 'aiuĕāâîīûūêôeèéöoŏꜽꜷAĀÂIĪÎUŪÛO‌ŎŌÔEÊÉÈꜼꜶ'
 VOWEL_PENDEK = 'aiuĕAIUĔ'
-VOWEL_PANJANG = 'āâîīûūêôeèéoöꜽꜷĀÂÎĪÛŪÊÔÉÈÖŌꜼꜶ'
+VOWEL_PANJANG = 'āâîīûūêôeèéoöŏꜽꜷĀÂÎĪÛŪÊŎÔÉÈÖŌꜼꜶ'
 KHUSUS_KONSONAN = 'ṅŋḥṙ'
 TANDA_SALAH = '❌'
 JARAK_TANDA_SALAH = 3
@@ -91,12 +92,42 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
     for i, line in enumerate(puisi_buffer):
         selected_metrum = current_metrum[i % panjang_metrum]
+        
+        # Bersihkan karakter tak terlihat untuk matching vokal dengan metrum
+        clean_line = bersihkan_karakter_tak_terlihat(line)
+        
+        # Temukan semua posisi vokal dalam baris bersih untuk dikaitkan dengan metrum
+        vokal_posisi_clean = []
+        for idx, char in enumerate(clean_line):
+            if char.lower() in VOWELS:
+                vokal_posisi_clean.append(idx)
+        
+        # Pemetaan indeks vokal baris bersih ke baris asli
         vokal_posisi = []
-        idx_metrum = 0
-        for idx, char in enumerate(line):
-            if char.lower() in VOWELS and idx_metrum < len(selected_metrum):
-                vokal_posisi.append((idx, char, selected_metrum[idx_metrum]))
-                idx_metrum += 1
+        clean_idx = 0  # Indeks saat ini di clean_line
+        orig_idx = 0   # Indeks saat ini di line asli
+        clean_vokal_idx = 0  # Indeks saat ini di vokal_posisi_clean
+        
+        while clean_idx < len(clean_line) and clean_vokal_idx < len(vokal_posisi_clean):
+            # Jika posisi di clean_line adalah posisi vokal
+            if clean_idx == vokal_posisi_clean[clean_vokal_idx]:
+                # Cari posisi vokal yang sesuai di line asli
+                while orig_idx < len(line):
+                    if line[orig_idx].lower() in VOWELS:
+                        # Tambahkan mapping (indeks asli, karakter, metrum yang sesuai)
+                        metrum_idx = clean_vokal_idx % len(selected_metrum)
+                        vokal_posisi.append((orig_idx, line[orig_idx], selected_metrum[metrum_idx]))
+                        orig_idx += 1
+                        break
+                    orig_idx += 1
+                clean_vokal_idx += 1
+            clean_idx += 1
+            
+            # Tambahkan indeks orig_idx hingga mencapai karakter yang sama di clean_line
+            if clean_idx < len(clean_line) and orig_idx < len(line):
+                # Lompati karakter tak terlihat di line asli 
+                while orig_idx < len(line) and (line[orig_idx] == ZWNJ or line[orig_idx] == ZWJ):
+                    orig_idx += 1
 
         hasil_line = list(line)
         i_vokal = 0
@@ -144,17 +175,30 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
             i_vokal += 1
 
-        # Logika pemanjangan/pemendekan vokal satu-per-satu
+        # MODIFIKASI: Sekarang pemanjangan dan pemendekan vokal memeriksa pola KVKV dalam kata yang sama
         for idx_vokal, vokal, metrum_vokal in vokal_posisi:
             vokal_lower = vokal.lower()
-            # Pemanjangan vokal
-            if vokal_lower in 'aiuĕ' and metrum_vokal == '–':
-                next1_idx = idx_vokal + 1
-                next2_idx = idx_vokal + 2
-                if next2_idx < len(line):
-                    char1 = line[next1_idx]
-                    char2 = line[next2_idx]
-                    if RE_KONSONAN.match(char1) and RE_VOKAL.match(char2):
+            
+            # Temukan kata yang mengandung vokal ini
+            kata_kata = list(re.finditer(r'\S+', line))
+            kata_list = [(m.start(), m.end(), m.group()) for m in kata_kata]
+            kata_v = next((k for k in kata_list if k[0] <= idx_vokal < k[1]), None)
+            
+            if kata_v:
+                kata = kata_v[2]
+                idx_rel = idx_vokal - kata_v[0]  # Posisi relatif dalam kata
+                
+                # Cek apakah vokal ini didahului oleh konsonan (pola KVKV)
+                konsonan_sebelum = idx_rel > 0 and RE_KONSONAN.match(kata[idx_rel - 1])
+                
+                # Pemeriksaan pola KVKV dalam kata yang sama
+                if (konsonan_sebelum and 
+                    idx_rel + 2 < len(kata) and 
+                    RE_KONSONAN.match(kata[idx_rel + 1]) and 
+                    RE_VOKAL.match(kata[idx_rel + 2])):
+                    
+                    # Pemanjangan vokal - hanya untuk metrum panjang (–)
+                    if vokal_lower in 'aiuĕ' and metrum_vokal == '–':
                         if vokal_lower == 'a':
                             hasil_line[idx_vokal] = 'ā'
                         elif vokal_lower == 'i':
@@ -162,21 +206,21 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         elif vokal_lower == 'u':
                             hasil_line[idx_vokal] = 'ū'
                         elif vokal_lower == 'ĕ':
-                            hasil_line[idx_vokal] = 'ö'    
-            #Pemendekan vokal                
-            elif vokal_lower in 'āīūö' and metrum_vokal == '⏑':
-                if vokal_lower == 'ā':
-                    hasil_line[idx_vokal] = 'a'
-                elif vokal_lower == 'ī':
-                    hasil_line[idx_vokal] = 'i'
-                elif vokal_lower == 'ū':
-                    hasil_line[idx_vokal] = 'u'
-                elif vokal_lower == 'ö':
-                    hasil_line[idx_vokal] = 'ĕ'
+                            hasil_line[idx_vokal] = 'ö'
+                    
+                    # Pemendekan vokal - untuk metrum pendek (⏑)               
+                    elif vokal_lower in 'âîûāīūö' and metrum_vokal == '⏑':
+                        if vokal_lower == 'ā' or vokal_lower == 'â':
+                            hasil_line[idx_vokal] = 'a'
+                        elif vokal_lower == 'ī'or vokal_lower == 'î':
+                            hasil_line[idx_vokal] = 'i'
+                        elif vokal_lower == 'ū' or vokal_lower == 'û':
+                            hasil_line[idx_vokal] = 'u'
+                        elif vokal_lower == 'ö':
+                            hasil_line[idx_vokal] = 'ĕ'              
 
         processed.append(''.join(hasil_line))
     return processed
-
 
 def aplikasikan_metrum_dan_tandai_vokal(teks):
     """
@@ -230,7 +274,9 @@ def aplikasikan_metrum_dan_tandai_vokal(teks):
             # Cek kesesuaian dan tandai error
             processed_with_error = []
             for i, processed_line in enumerate(processed_puisi):
-                jumlah_vokal = sum(1 for char in processed_line if char.lower() in VOWELS)
+                # Membersihkan karakter tak terlihat hanya untuk perhitungan jumlah vokal
+                cleaned_line = bersihkan_karakter_tak_terlihat(processed_line)
+                jumlah_vokal = sum(1 for char in cleaned_line if char.lower() in VOWELS)
                 jumlah_metrum_baris = len(current_metrum[i % len(current_metrum)]) if current_metrum else 0
                 if jumlah_vokal != jumlah_metrum_baris and jumlah_metrum_baris != 0:
                     processed_with_error.append(processed_line + " " * JARAK_TANDA_SALAH + TANDA_SALAH)
@@ -296,7 +342,7 @@ def tandai_vokal_pendek_dalam_pasangan(text):
                     hasil_blok.extend(processed)
                     puisi_buffer = []
                 jumlah = hitung_jumlah_metrum(line)
-                metrum_line = f"{line} : {jumlah}"
+                metrum_line = f"{line} = {jumlah}"
                 metrum_lines.append(metrum_line)
                 current_metrum.append(get_clean_metrum(line))
             else:
@@ -308,7 +354,9 @@ def tandai_vokal_pendek_dalam_pasangan(text):
             processed = proses_puisi_buffer(puisi_buffer, current_metrum)
             #cek kesesuaian disini
             for i, processed_line in enumerate(processed):
-                jumlah_vokal = sum(1 for char in processed_line if char.lower() in VOWELS)
+                # Membersihkan karakter tak terlihat hanya untuk perhitungan jumlah vokal
+                cleaned_line = bersihkan_karakter_tak_terlihat(processed_line)
+                jumlah_vokal = sum(1 for char in cleaned_line if char.lower() in VOWELS)
                 if current_metrum and len(current_metrum) > 0:
                   jumlah_metrum_baris = len(current_metrum[i % len(current_metrum)])
                 else:
@@ -319,9 +367,6 @@ def tandai_vokal_pendek_dalam_pasangan(text):
         hasil_blok.append("")
     hasil_akhir = "\n".join(hasil_blok).strip()
     return hasil_akhir
-
-
-
 '''
 paling stabil tapi gabisa tabrakan antara panjang+pendek+kapital
 def proses_puisi_buffer(puisi_buffer, current_metrum):

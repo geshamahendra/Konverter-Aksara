@@ -37,20 +37,24 @@ PENGGANTIAN_SPESIAL = {
     rf'(?<![{DAFTAR_VOKAL}])w\b\s+': 'w-',
 
     r'ṙs': 'ṙṣ', r'ṛs': 'ṛṣ',
-    r'ṙṣik\b': 'ṙsik', r'ṙṇny': 'ṙny', r'aṙyy([aā])': r'ary\1',
+    r'ṙṣik\b': 'ṙsik', 
+    r'ṙṇny': 'ṙny',
+
+    r'aṙyy([aā])': r'ary\1',
     r'āś([cꞓ])ary': r'āś\1aṙyy', r'ṙyyakĕn\b': 'ryakĕn', r'uṙww': 'urw',
-    r'ṙmmu ': 'ṙmu ', r'[^\S\n]+lĕ': ' ‌lĕ', r'r\u200c': 'ṙ', r'ṙ\u200c': 'ṙ',
+    r'ṙmmu ': 'ṙmu ', 
+    r'r\u200c': 'ṙ', r'ṙ\u200c': 'ṙ',
     r'^ŋ': 'ṅ'
 }
+
 FINALISASI_PENGGANTI = [
-    (re.compile(rf'(?<=([{DAFTAR_KONSONAN}]))(lĕ|ḷĕ|ḷ)'), r'\1‍'), #mempertahankan le
     (re.compile(rf'([rhṅ])(?=nṇ?y{VOKAL_REGEX})'), lambda m: {'r': 'ṙ', 'h': 'ḥ', 'ṅ': 'ŋ'}[m.group(1)]), #kasus spesial pasanyan nya
     (re.compile(r'ṙ[^\S\n]*ŋ'), r'ṙ ṅ'), #sigeg bertemu sigeg
     (re.compile(r'ḥ[^\S\n]*ŋ'), r'ḥ ṅ'), #sigeg bertemu sigeg
     (re.compile(r'^[^\S\n]*ŋ', re.MULTILINE), r'ṅ'), #ubah ṙ jadi r diujung baris
     (re.compile(r'ṙ[ \t]*\n'), r'r\n'), #ubah ṙ jadi r diujung baris
     (re.compile(r'ry\s+\u200c'), r'ry '),
-    (re.compile(rf'\b({VOKAL_REGEX})(m|ṃ)\b'), lambda m: f" \u200C{m.group(1).upper()}{m.group(2)}\u200C "), #aksara suci
+
     (re.compile(rf'^([{DAFTAR_VOKAL}])', re.MULTILINE), lambda m: {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}.get(m.group(1), m.group(1).upper())), #Kapitalkan vokal di awal baris
     (re.compile(rf'{NON_HURUF_PENDAHULU}({VOKAL_REGEX})'), lambda m: f"{m.group(1)}{m.group(2)}{m.group(3).upper()}") #Kapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
 ]
@@ -72,13 +76,6 @@ def lower_capital_vowels(match):
     capital_vowel = match.group(1)
     return KAPITAL_KE_KECIL.get(capital_vowel, capital_vowel.lower()) # Menggunakan .lower() sebagai fallback
 
-#hukum aksara suci
-def replace_vokal_m(match):
-    vokal_kecil = match.group(1)
-    mm = match.group(2)
-    vokal_kapital = vokal_kecil.upper()
-    return f"\u200C{vokal_kapital}{mm}\u200C "
-
 # Fungsi untuk mengubah hukum aksara
 def hukum_aksara(text):
 
@@ -95,7 +92,7 @@ def hukum_sigeg(text):
     #kasus " ṅ h..."
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
     #kasus ŋ berdiri di depan konsonan
-    text = re.sub(rf"([{DAFTAR_KONSONAN}])\s*(ŋ)\s+([{DAFTAR_KONSONAN}])", r"\1 ṅ-\3", text, flags=re.IGNORECASE)
+    text = re.sub(rf"([{DAFTAR_KONSONAN}])\s*(ŋ)\s+([{DAFTAR_VOKAL}])", r"\1 ṅ-\3", text, flags=re.IGNORECASE)
     #kasus ṅ berulang
     #text = re.sub(r'(\w)(\w)ṅ-(\1\2)ŋ', r'\1\2ŋ\1\2ŋ', text)
 
@@ -129,7 +126,7 @@ def hukum_ṙ(text):
 
     #kasus ry ṙyy
     text = re.sub(
-    r'(?:(?<=^)|(?<=\s))ry(?=\S)|(?:rī\b[^\S\n]+a|[^\S\n]+ṙyy)', '\u200cṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
+    r'(?:(?<=^)|(?<=\s))ry(?=\S)|(?:\brī\b[^\S\n]+a|[^\S\n]+ṙyy)', ' ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
     # ganti 'r' jadi ṙ jika diikuti spasi atau tanda hubung
     text = re.sub(r'(?<=\w)r(?=[\s-])', 'ṙ', text)
 

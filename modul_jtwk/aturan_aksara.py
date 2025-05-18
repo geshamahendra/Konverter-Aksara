@@ -255,6 +255,18 @@ def add_zwnj_awal_kata_bulk(text, patterns, replacement, daftar_konsonan):
     return ''.join(result)
 
 def hukum_sandi(text):
+    #Aksara suci
+    DAFTAR_VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
+    VOKAL_REGEX = f"[{DAFTAR_VOKAL}]" 
+    text = re.sub(rf'\b({VOKAL_REGEX})(m|ṃ)\b', lambda m: f" \u200C{m.group(1).upper()}{m.group(2)}\u200C ", text)
+
+    #pertahankan le
+    DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
+    text = re.sub(rf'(?<=([{DAFTAR_KONSONAN}]))(lĕ|ḷĕ|ḷ)',lambda m: m.group(2) + '\u200D',text)
+    #hapus strip depan konsonan agar tidak menjadi kata baru
+    text = re.sub(rf'-([{DAFTAR_KONSONAN}])',r'\1',text)
+    
+
     text = text.replace("-", " ")
 
     #agar aksara swara tidak dijadikan pasangan
@@ -264,10 +276,6 @@ def hukum_sandi(text):
     # Regex penyeragaman vokal
     text = re.sub('|'.join(re.escape(k) for k in penyeragaman_vokal.keys()), 
                 lambda match: penyeragaman_vokal[match.group(0)], text)
-    
-    text = re.sub(r'\u200cṙyy', '\u200cꦪꦾꦂ', text, flags=re.MULTILINE) 
-    text = re.sub(r'akhir', 'ꦄꦏ꦳ꦶꦂ', text, flags=re.IGNORECASE)
-    text = re.sub(r'\brŧ', '\u200Cꦡꦂ', text)
 
     #cegah ya dipasangi
     pengecualian_ya = set('aāiīuūeèoōöŏĕꜷꜽlwyr')
@@ -294,23 +302,34 @@ def hukum_sandi(text):
     #text = insert_h_between_unmerged_vowels(text)
     
     # Untuk beberapa kasus khusus
-    vokal = "aāiīuūeèoōöŏĕꜷꜽ"
+    vokal = "aiuĕāâîīûūêôeèéöoꜽꜷ"
     text = re.sub(rf'ḥ[^\S\n]+([{vokal}])', lambda m: f"h{m.group(1).lower()}", text)
     text = re.sub(rf'ŋ[^\S\n]+([{vokal}])', lambda m: f"ṅ{m.group(1).lower()}", text)
 
     #Menyambung vokal dan konsonan yang terpisah spasi
-    text = re.sub(r'([bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ])[^\S\n]*([aāiīuūeèoōöŏĕꜷꜽ])', r'\1\2', text)
+    text = re.sub(r'([bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ])[^\S\n]*([aiuĕāâîīûūêôeèéöoꜽꜷ])', r'\1\2', text)
 
     return text
 
 def hukum_penulisan(text):
 
-    daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
+    
+    text = re.sub(r' ṙyy', '\u200cꦪꦾꦂ', text, flags=re.MULTILINE) 
+    text = re.sub(r'akhir', 'ꦄꦏ꦳ꦶꦂ', text, flags=re.IGNORECASE)
+    text = re.sub(r'\brŧ', '\u200Cꦡꦂ', text)
+
+    daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳŋḥṙ"
     #tambah zwnj depan kata
     patterns = [
-    r'\bww', r'\byw', r'wr', r'\brw', r'lwi(r|ṙ)', r'\byan\b', r'\btan\b',
-    r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")", r'\bmw', r'\bstr', r'\brkw', r'\bri', r'\bnṛ',
-    r'\bdwa\b', r'\bya\b', r'[' + daftar_konsonan + r']\s+ta(?:n|ṅ|ŋ)?\b']
+    r'\b(ḷ|ḹ)',    
+    r'\bw',    
+    r'\bww', 
+    r'\byw', r'w(r|ṛ|ḷ|ṝ|ḹ)', r'\brw', r'\bnṛ',
+    r'lwi(r|ṙ)', r'\byan\b',
+    r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")", r'\bmw', r'\bstr', r'\brkw', r'\bri', 
+    r'\bdwa\b', r'\bya\b', 
+    r'[' + daftar_konsonan + r']\s+ta(?:n|ṅ|ŋ)?\b',
+    ]
     text = add_zwnj_awal_kata_bulk(text, patterns, '\u200C', daftar_konsonan) 
 
     #cegah pasangan lebih dari tumpuk tiga
@@ -320,27 +339,26 @@ def hukum_penulisan(text):
     text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙṅ', text)
     text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥṅ', text)
 
-
     # Gabungkan ZWNJ dan ZWJ yang berulang menjadi satu saja
     text = re.sub(r"^(?:\u200D|\u200C)+", "", text,flags=re.MULTILINE)
-
 
     return(text)
 
 def finalisasi(hasil):
-# Menghapus semua spasi setelah konversi
-    hasil = hasil.replace("\t", " ")
-    hasil = hasil.replace("_", " ")
-    hasil = hasil.replace(" ", "")
-
     #pasangan la pepet dan la utuh
     hasil = hasil.replace('꧀ꦭꦼ', '꧀ꦊ') #le + zwnj menjadi la pepet
     hasil = hasil.replace('꧀ꦊ\u200D', '꧀ꦭꦼ') #le + zwnj menjadi la pepet
     
     #metrum
     #tambahkan spasi antar metrum
-    hasil = re.sub(r'[^\S\r\n]*([|–⏑⏓])[^\S\r\n]*', r' \1 ', hasil)  # hilangkan ZWNJ dari grup
-    hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)  # bersihkan spasi berlebih tapi tetap pertahankan newline
+    #hasil = re.sub(r'[^\S\r\n]*([|–⏑⏓])[^\S\r\n]*', r' \1 ', hasil)  # hilangkan ZWNJ dari grup
+    #hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)  # bersihkan spasi berlebih tapi tetap pertahankan newline
+    #hasil=ganti_tanda_metrum(hasil)
+
+    # Menghapus semua spasi setelah konversi
+    hasil = hasil.replace("\t", " ")
+    hasil = hasil.replace("_", " ")
+    hasil = hasil.replace(" ", "")
     
     penggantian_final = {
         "꧀ꦪ": "ꦾ",
@@ -352,12 +370,17 @@ def finalisasi(hasil):
         '⏒꧇': '⏒ ꧇',
         r'^\u200C':'',
         r'^\u200D':'',
+        #ganti simbol metrum
+        '–' : '‐',
+        '⏑' : '0',
+        '⏓' : '0̲',
+        '=' :' = '
     }
 
     for cari, ganti in penggantian_final.items():
         hasil = hasil.replace(cari, ganti)
         
-    hasil=ganti_tanda_metrum(hasil)
+    
     hasil = hapus_ulang_zw(hasil, "\u200C")
     hasil = hapus_ulang_zw(hasil, "\u200D")
     return hasil
