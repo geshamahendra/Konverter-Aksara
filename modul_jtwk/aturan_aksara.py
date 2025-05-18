@@ -322,7 +322,7 @@ def hukum_penulisan(text):
     #tambah zwnj depan kata
     patterns = [
     r'\b(ḷ|ḹ)',    
-    r'\bw',    
+    r'\b(w|ṅ)',
     r'\bww', 
     r'\byw', r'w(r|ṛ|ḷ|ṝ|ḹ)', r'\brw', r'\bnṛ',
     r'lwi(r|ṙ)', r'\byan\b',
