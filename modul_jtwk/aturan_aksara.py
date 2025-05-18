@@ -349,7 +349,7 @@ def finalisasi(hasil):
     hasil = hasil.replace('꧀ꦭꦼ', '꧀ꦊ') #le + zwnj menjadi la pepet
     hasil = hasil.replace('꧀ꦊ\u200D', '꧀ꦭꦼ') #le + zwnj menjadi la pepet
     
-    #metrum
+    #metrum disimpan saja sewaktu2 pakai simbol metrum lagi
     #tambahkan spasi antar metrum
     #hasil = re.sub(r'[^\S\r\n]*([|–⏑⏓])[^\S\r\n]*', r' \1 ', hasil)  # hilangkan ZWNJ dari grup
     #hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)  # bersihkan spasi berlebih tapi tetap pertahankan newline
