@@ -43,8 +43,8 @@ substitutions = {
     r'sa(ng|ṅ)k(s|ṣ)': 'saŋkṣ',
     r'sa(ng|ṅ)s': 'saŋs',
     r'sa(ng|ṅ)ṣ': 'saŋṣ',
-    r'\bnir([' + daftar_konsonan_tanpa_dikecualikan + '])': 'nir\u200c\\1', #nir+zwnj
-    r'\bdur([' + daftar_konsonan_tanpa_dikecualikan + '])': 'dur\u200c\\1', #durr+zwnj
+    #r'\bnir([' + daftar_konsonan_tanpa_dikecualikan + '])': 'nir\u200c\\1', #nir+zwnj
+    #r'\bdur([' + daftar_konsonan_tanpa_dikecualikan + '])': 'dur\u200c\\1', #durr+zwnj
 
     #sisipkan zwnj setelah imbuhan
     #r'\b(nir|dur|tĕr|bĕr|pĕr)(\w+)': sisipkan_zwnj_setelah_nir_dur,
@@ -52,7 +52,8 @@ substitutions = {
     #kembalikan setelah imbuhan
     #r'\bp(e|ĕ)rtama\b': 'prĕtama',
 
-    r'\bnirw': r'nir\\w',
+    r'\bnir(w|g|ś)': r'nir\\\1',
+    r'\bpar(w|g|ś)': r'par\\\1',
     
     
     #--akhiran

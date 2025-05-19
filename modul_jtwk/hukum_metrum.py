@@ -1,13 +1,13 @@
 import re
 
 RE_METRUM_SIMBOL = re.compile(r'[–⏑⏓]')
-RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶ]')
+RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶ]')
 RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳŋḥṙ]')
 ZWNJ = '\u200C'
 ZWJ = '\u200D'
-VOWELS = 'aiuĕāâîīûūêôeèéöoŏꜽꜷAĀÂIĪÎUŪÛO‌ŎŌÔEÊÉÈꜼꜶ'
+VOWELS = 'aiuĕāâîīûūêôeèéöoōŏꜽꜷAĀÂIĪÎUŪÛO‌ŎŌÔEÊÉÈꜼꜶ'
 VOWEL_PENDEK = 'aiuĕAIUĔ'
-VOWEL_PANJANG = 'āâîīûūêôeèéoöŏꜽꜷĀÂÎĪÛŪÊŎÔÉÈÖŌꜼꜶ'
+VOWEL_PANJANG = 'āâîīûūêôeèéoōöŏꜽꜷĀÂÎĪÛŪÊŎÔÉÈÖŌꜼꜶ'
 KHUSUS_KONSONAN = 'ṅŋḥṙ'
 TANDA_SALAH = '❌'
 JARAK_TANDA_SALAH = 3
@@ -243,10 +243,14 @@ def aplikasikan_metrum_dan_tandai_vokal(teks):
         baris = blok.strip().splitlines()
         is_metrum_blok = any(RE_METRUM_SIMBOL.search(b) for b in baris)
         header_blok = [b for b in baris if (b.startswith("<") and ">" in b) or
-                                           (b.startswith("{") and "}" in b)]
+                                           (b.startswith("{") and "}" in b) or
+                                           (b.startswith("]") and "]" in b)or
+                                           (b.startswith("[") and "[" in b)]
         puisi_baris = [b for b in baris if not RE_METRUM_SIMBOL.search(b) and
                                            not (b.startswith("<") and ">" in b or
-                                                b.startswith("{") and "}" in b)]
+                                                b.startswith("{") and "}" in b or
+                                                b.startswith("]") and "]" in b or
+                                                b.startswith("[") and "[" in b)]
         metrum_baris_temp = [get_clean_metrum(b) for b in baris if RE_METRUM_SIMBOL.search(b)]
 
         hasil_blok.extend(header_blok)
@@ -325,6 +329,28 @@ def tandai_vokal_pendek_dalam_pasangan(text):
                 hasil_blok.append(line)
                 current_metrum = []
             elif line.startswith("{") and "}" in line: # perubahan disini
+                # Judul metrum ditemukan
+                if puisi_buffer:
+                    processed = proses_puisi_buffer(puisi_buffer, current_metrum)
+                    hasil_blok.extend(processed)
+                    puisi_buffer = []
+                if metrum_lines:
+                    hasil_blok.extend(metrum_lines)
+                    metrum_lines = []
+                hasil_blok.append(line)
+                current_metrum = []
+            elif line.startswith("]") and "]" in line: # perubahan disini
+                # Judul metrum ditemukan
+                if puisi_buffer:
+                    processed = proses_puisi_buffer(puisi_buffer, current_metrum)
+                    hasil_blok.extend(processed)
+                    puisi_buffer = []
+                if metrum_lines:
+                    hasil_blok.extend(metrum_lines)
+                    metrum_lines = []
+                hasil_blok.append(line)
+                current_metrum = []
+            elif line.startswith("[") and "[" in line: # perubahan disini
                 # Judul metrum ditemukan
                 if puisi_buffer:
                     processed = proses_puisi_buffer(puisi_buffer, current_metrum)
