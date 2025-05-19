@@ -9,7 +9,9 @@ sys.path.append(root_path)
 from modul_jtwk.mode_jtwk import mode_normal, mode_lampah, mode_sriwedari, mode_modern_lampah, mode_cerita, mode_sanskrit, mode_satya, mode_kakawin
 from modul_jtwk.hukum_jtwk import kata_baku, hukum_aksara, hukum_sigeg, hukum_ṙ, finalisasi 
 from modul_jtwk.replacements_jtwk import replacements, replace_numbers_with_colon
-from modul_jtwk.hukum_metrum import tandai_vokal_pendek_dalam_pasangan#, debug_metrum_pada_puisi, hitung_jumlah_metrum, aplikasikan_metrum_dan_tandai_vokal #process_baris, 
+from modul_jtwk.hukum_kakawin import cek_kakawin
+from modul_jtwk.hukum_macapat import cek_macapat
+#, debug_metrum_pada_puisi, hitung_jumlah_metrum, aplikasikan_metrum_dan_tandai_vokal #process_baris, 
 
 def replace_characters(text, mode):
 
@@ -54,8 +56,11 @@ def replace_characters(text, mode):
     text = replace_numbers_with_colon(text)
     #Baris metrum
     #text = "\n".join(process_baris(baris) for baris in text.splitlines())
+    #penghitung metrum/puisi
     if mode in {'kakawin'}:
-        text = tandai_vokal_pendek_dalam_pasangan(text)
+        text = cek_kakawin(text)
+    if mode in {'macapat'}:
+        text = cek_macapat(text)
     #finalisasi
     text = finalisasi(text)
 
@@ -72,7 +77,7 @@ def process_file(input_file, output_file):
 # Ganti dengan nama file input dan output sesuai kebutuhan
 input_file = 'input.txt'  # Nama file input
 output_file = 'output/input_jawa.txt'  # Nama file output
-mode = 'kakawin'
+mode = 'macapat'
 
 # Memproses file
 process_file(input_file, output_file)

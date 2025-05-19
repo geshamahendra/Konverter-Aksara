@@ -313,14 +313,18 @@ def hukum_sandi(text):
 
 def hukum_penulisan(text):
 
-    
-    text = re.sub(r' ṙyy', '\u200cꦪꦾꦂ', text, flags=re.MULTILINE) 
-    text = re.sub(r'akhir', 'ꦄꦏ꦳ꦶꦂ', text, flags=re.IGNORECASE)
-    text = re.sub(r'\brŧ', '\u200Cꦡꦂ', text)
+
+    SUBSTITUTION_REGEX = [
+    (re.compile(r' ṙyy'), '\u200cꦪꦾꦂ'),
+    (re.compile(r'akhir'), 'ꦄꦏ꦳ꦶꦂ'),
+    (re.compile(r'\brŧ'), '\u200Cꦡꦂ'),]
+    for pattern, replacement in SUBSTITUTION_REGEX:
+        text = pattern.sub(replacement, text)
 
     daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳŋḥṙ"
     #tambah zwnj depan kata
     patterns = [
+    r'\bhy',
     r'\b(ḷ|ḹ)',    
     r'\b(w|ṅ)',
     r'\bww', 

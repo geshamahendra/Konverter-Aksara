@@ -43,6 +43,8 @@ substitutions = {
     r'sa(ng|ṅ)k(s|ṣ)': 'saŋkṣ',
     r'sa(ng|ṅ)s': 'saŋs',
     r'sa(ng|ṅ)ṣ': 'saŋṣ',
+    r'jarkw': 'jar kw', #biasanya ujar ku-
+    
     #r'\bnir([' + daftar_konsonan_tanpa_dikecualikan + '])': 'nir\u200c\\1', #nir+zwnj
     #r'\bdur([' + daftar_konsonan_tanpa_dikecualikan + '])': 'dur\u200c\\1', #durr+zwnj
 
@@ -52,16 +54,23 @@ substitutions = {
     #kembalikan setelah imbuhan
     #r'\bp(e|ĕ)rtama\b': 'prĕtama',
 
-    r'\bnir(w|g|ś)': r'nir\\\1',
-    r'\bpar(w|g|ś)': r'par\\\1',
-    
+    #r'\bnir(w|g|ś)': r'nir\\\1',
+    #r'\bpar(w|g|ś)': r'par\\\1',
+
+    #Hukum dwikrama sanskerta
+    # Regex substitusi
+    r'\b(nir|dur|par)(?![' + vokal_regex + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
+    r'\bnir(g)': r'nir\\\1', #nir guna
+    r'\bdur\\(y)': r'dur\1', #durya
+    r'\bpar\\(w)': r'par\1', #parwa
+
     
     #--akhiran
     r'hku\b': 'ḥku', r'hta\b': 'ḥta',
     r'rku\b': 'ṙ\u200cku',
 
 
-    r'(s|ś)unya': 'śūnya', r'(?i)budi': 'budđi', r'(?i)purna': 'pūrna',
+    r'(s|ś)unya': 'śūnya', r'(?i)budi': 'budđi', r'(?i)purna': 'pūrna', r'hidĕp': 'hiḍĕp', 
     r'tir(t|ŧ)a': 'tīṙŧa', r'(?i)ningrat': 'niṅrāt', r'\bsabda\b': 'śabda',
     r'purwa': 'pūrwa', r'\bsirna\b': 'śīrna', 
     r'\bmurti\b': 'mūrti', r'(ś|s)ighra': 'śīghra', r'prapta': 'prāpta',
