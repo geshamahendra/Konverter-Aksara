@@ -132,7 +132,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                             line = 'I' + line[1:]
                         elif vokal_awal == 'ū' or vokal_awal == 'û':
                             line = 'U' + line[1:]
-                        elif vokal_awal == 'ö' or vokal_lower == 'e' or vokal_lower == 'è' or vokal_lower == 'é':
+                        elif vokal_awal == 'ö' or vokal_awal == 'e' or vokal_awal == 'è' or vokal_awal == 'é':
                             line = 'Ĕ' + line[1:]
                         # Tambahkan untuk vokal lain jika perlu
         
