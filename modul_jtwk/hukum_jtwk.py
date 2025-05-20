@@ -33,8 +33,8 @@ HUKUM_ṙ_MAHAPRANA = {
     'ṙḋ': 'ṙdḋ', 'ṙc': 'ṙcc', 'ṙꞓ': 'ṙcꞓ'
 }
 PENGGANTIAN_SPESIAL = {
-    rf'(?<![{DAFTAR_VOKAL}])y\b\s+': 'y-', 
-    rf'(?<![{DAFTAR_VOKAL}])w\b\s+': 'w-',
+    #rf'(?<![{DAFTAR_VOKAL}])y\b\s+': 'y-', 
+    #rf'(?<![{DAFTAR_VOKAL}])w\b\s+': 'w-',
 
     r'ṙs': 'ṙṣ', r'ṛs': 'ṛṣ',
     r'ṙṣik\b': 'ṙsik', 
@@ -53,7 +53,7 @@ FINALISASI_PENGGANTI = [
     (re.compile(r'ḥ[^\S\n]*ŋ'), r'ḥ ṅ'), #sigeg bertemu sigeg
     (re.compile(r'^[^\S\n]*ŋ', re.MULTILINE), r'ṅ'), #ubah ṙ jadi r diujung baris
     (re.compile(r'ṙ[ \t]*\n'), r'r\n'), #ubah ṙ jadi r diujung baris
-    (re.compile(r'ry\s+\u200c'), r'ry '),
+    (re.compile(r'[^\S\n]+'), ' '), #hapus spasi yang terlalu banyak
 
     (re.compile(rf'^([{DAFTAR_VOKAL}])', re.MULTILINE), lambda m: {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}.get(m.group(1), m.group(1).upper())), #Kapitalkan vokal di awal baris
     (re.compile(rf'{NON_HURUF_PENDAHULU}({VOKAL_REGEX})'), lambda m: f"{m.group(1)}{m.group(2)}{m.group(3).upper()}") #Kapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
@@ -87,12 +87,15 @@ def hukum_aksara(text):
 # Fungsi untuk mengatur hukum sigeg
 def hukum_sigeg(text):
 
-    text = re.sub(r'(?<!^)(?<!\n)ṅ\b', 'ŋ', text)
-    text = re.sub(r'(?<!^)(?<!\n)h\b', 'ḥ', text)
+    #Kasus konsonan berdiri diantara spasi
+    text = re.sub(rf"([{DAFTAR_KONSONAN}])(\s*|-)([{DAFTAR_KONSONAN}])\s+([{DAFTAR_VOKAL}])", r"\1\2\3-\4", text, flags=re.IGNORECASE)
+
+    #kecualikan penyigegan jika setelahnya - dari regex diatas
+    text = re.sub(r'(?<!^)(?<!\n)ṅ\b(?!-)', 'ŋ', text)
+    text = re.sub(r'(?<!^)(?<!\n)h\b(?!-)', 'ḥ', text)
     #kasus " ṅ h..."
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
-    #kasus ŋ berdiri di depan konsonan
-    text = re.sub(rf"([{DAFTAR_KONSONAN}])\s*(ŋ)\s+([{DAFTAR_VOKAL}])", r"\1 ṅ-\3", text, flags=re.IGNORECASE)
+
     #kasus ṅ berulang
     #text = re.sub(r'(\w)(\w)ṅ-(\1\2)ŋ', r'\1\2ŋ\1\2ŋ', text)
 
@@ -126,7 +129,8 @@ def hukum_ṙ(text):
 
     #kasus ry ṙyy
     text = re.sub(
-    r'(?:(?<=^)|(?<=\s))ry(?=\S)|(?:\brī\b[^\S\n]+a|[^\S\n]+ṙyy)', ' ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
+    r'(?:(?<=^)|(?<=\s))ry(?=[^\s-])|(?:\brī\b[^\S\n]+a)', ' ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
+    
     # ganti 'r' jadi ṙ jika diikuti spasi atau tanda hubung
     text = re.sub(r'(?<=\w)r(?=[\s-])', 'ṙ', text)
 

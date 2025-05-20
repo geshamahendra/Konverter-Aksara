@@ -3139,10 +3139,10 @@ n-ton kilat ya lumarap nirantara,
 luh tibā kabarabas sakiṅ mata,
 dhairyya niṅ hati teñuh jugānilī*
 
-Tar wĕnaṅ tumahĕnékanaṅ taṅis,===
+Tar wĕnaṅ tumahĕnékanaṅ taṅis,
 kaṇṭa gadgada gulū nirāsĕkĕl,
 Maithilī sira katon ta ménaka,
-nī ta hétu nikanaṅ taṅis mĕtu*
+nā ta hétu nikanaṅ taṅis mĕtu*
 
 Hāh samīraṇa mirir ya lor kidul,
 rūm nya rāmya sakadamba wāsita,
@@ -3159,7 +3159,7 @@ tar paḍĕm paḍa-paḍān kĕḍap-kĕḍap,
 maṅraras-rarasakĕn manah mibĕr,
 hāh manahku baribin tumon ikā*
 
-Lĕn kilat marimisī matāhulap,
+Lèn kilat marimisī matāhulap,
 glāna kagyat aku dé nya yan larap,
 tan lanā pwa ya hilah wawaṅ muwah,
 hāh mahā juga ya médi maṅlaré*
@@ -3169,7 +3169,7 @@ ndan tahāṅkw iriya śabda niṅ laras,
 kāmadéwa umanah jagat kabèh,
 nya ṅ gĕlap uni nikā panah nira*
 
-Byakta Manmatha sirāmanah jagat,===
+Byakta Manmatha sirāmanah jagat,
 ndan rinambutan ĕmās panah nira,
 yéka nitya lumarap rikaṅ laṅit,
 hāh Manobhawa lukan tamar maṅèl*
@@ -3177,26 +3177,26 @@ hāh Manobhawa lukan tamar maṅèl*
 Cātakāmuhara kūṅ jugān uni,
 harṣa yan syaṅi ikā priyā nya wèh,
 mārmadoh ya sakarĕṅ maluy masö,
-mĕdi riṅ madanawédanātura*
+mèdi riṅ madanawédanātura*
 
 Nyā ṅ aṅin ya winaliṅku oṣadha,
 śitalātiśaya tīs nya riṅ awak,
 ndān apuy juga hiḍĕpku tar pahi,
-śurṇna téki hrĕdayaṅku yāgĕsöṅ*
+śīrṇna téki hrĕdayaṅku yāgĕsöṅ*
 
 Nyā ṅ mayūra ya umūra ménaka,
-mogha moruk aku dé nya yan n uni,
+mogha moruk aku dé nya yan n-uni,
 wruh nya yan priyawiyoga duhkita,
 mohita ṅwaṅ umawāṅ unĕṅ magöṅ*
 
 Nyā ṅ hudan tan anumāna riṅ kasah,
 médi riṅ kinawaśākĕn iṅ lulut,
-tan parāryyan amĕwĕh nirantara,
+tan pararyan amĕwĕh nirantara,
 hāh warĕg g aku huwus rikaṅ lara*
 
 Saṅ mahāmuni hanèṅ alas kabèh,
 kölan iṅ daṅū-daṅū tatan lĕgö,
-wèt nikaṅ diwasa rĕṅ-rĕṅ aṅgĕges,
+wèt nikaṅ diwasa rĕṅ-rĕṅ aṅgĕgĕs,
 mohitā ta sira liṅku tar suka*
 
 Nyā ṅ wihuṅ muni lawan manuk humuṅ,
@@ -3205,9 +3205,13 @@ moni tar pahuwusan rikaṅ kulĕm,
 hāh tan éraṅ aṅidīdi maṅlarè*
 
 Jānakī mapa kunaṅ laranta wèh,
-ṭan kasah daṅu-daṅū saké ry aku,
+tan kasah daṅu-daṅū saké ry aku,===
 Lāh-ah-o lalu lalis nikaṅ Widhi,
 wèh kitāri mapasāha sāhasa*
+
+{}
+
+ryakuk ry amban ryamban
 
 Trĕpra tékana unĕṅku tan sipi,
 ḍurbbalālara mataṅku yan wulat,

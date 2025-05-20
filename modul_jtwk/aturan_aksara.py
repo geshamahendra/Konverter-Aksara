@@ -315,7 +315,7 @@ def hukum_penulisan(text):
 
 
     SUBSTITUTION_REGEX = [
-    (re.compile(r' ṙyy'), '\u200cꦪꦾꦂ'),
+    (re.compile(r'(?<=\s)ṙyy|^ṙyy', flags=re.MULTILINE), '\u200cꦪꦾꦂ'),
     (re.compile(r'akhir'), 'ꦄꦏ꦳ꦶꦂ'),
     (re.compile(r'\brŧ'), '\u200Cꦡꦂ'),
     #substitusi sigeg + zwnj
