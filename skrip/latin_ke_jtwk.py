@@ -77,7 +77,7 @@ def process_file(input_file, output_file):
 # Ganti dengan nama file input dan output sesuai kebutuhan
 input_file = 'input.txt'  # Nama file input
 output_file = 'output/input_jawa.txt'  # Nama file output
-mode = 'macapat'
+mode = 'kakawin'
 
 # Memproses file
 process_file(input_file, output_file)

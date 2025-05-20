@@ -59,7 +59,7 @@ substitutions = {
 
     #Hukum dwikrama sanskerta
     # Regex substitusi
-    r'\b(nir|dur|par)(?![' + vokal_regex + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
+    r'\b(nir|dur|par|pār)(?![' + vokal_regex + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
     r'\bnir(g)': r'nir\\\1', #nir guna
     r'\bdur\\(y)': r'dur\1', #durya
     r'\bpar\\(w)': r'par\1', #parwa

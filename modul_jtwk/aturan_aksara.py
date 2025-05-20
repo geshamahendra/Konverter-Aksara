@@ -266,7 +266,7 @@ def hukum_sandi(text):
     #hapus strip depan konsonan agar tidak menjadi kata baru
     text = re.sub(rf'-([{DAFTAR_KONSONAN}])',r'\1',text)
     
-
+    # Hapus strip di tahap ini
     text = text.replace("-", " ")
 
     #agar aksara swara tidak dijadikan pasangan
@@ -317,7 +317,10 @@ def hukum_penulisan(text):
     SUBSTITUTION_REGEX = [
     (re.compile(r' ṙyy'), '\u200cꦪꦾꦂ'),
     (re.compile(r'akhir'), 'ꦄꦏ꦳ꦶꦂ'),
-    (re.compile(r'\brŧ'), '\u200Cꦡꦂ'),]
+    (re.compile(r'\brŧ'), '\u200Cꦡꦂ'),
+    #substitusi sigeg + zwnj
+    (re.compile(r'ṅ‌'), 'ŋ')
+    ]
     for pattern, replacement in SUBSTITUTION_REGEX:
         text = pattern.sub(replacement, text)
 
@@ -353,11 +356,11 @@ def finalisasi(hasil):
     hasil = hasil.replace('꧀ꦭꦼ', '꧀ꦊ') #le + zwnj menjadi la pepet
     hasil = hasil.replace('꧀ꦊ\u200D', '꧀ꦭꦼ') #le + zwnj menjadi la pepet
     
-    #metrum disimpan saja sewaktu2 pakai simbol metrum lagi
+    #khusus escape |[] agar ga jadi pemada jawa
     #tambahkan spasi antar metrum
-    #hasil = re.sub(r'[^\S\r\n]*([|–⏑⏓])[^\S\r\n]*', r' \1 ', hasil)  # hilangkan ZWNJ dari grup
-    #hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)  # bersihkan spasi berlebih tapi tetap pertahankan newline
-    #hasil=ganti_tanda_metrum(hasil)
+    hasil = re.sub(r'[^\S\r\n]*([|–⏑⏓])[^\S\r\n]*', r' \1 ', hasil)  # hilangkan ZWNJ dari grup
+    hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)  # bersihkan spasi berlebih tapi tetap pertahankan newline
+    hasil=ganti_tanda_metrum(hasil)
 
     # Menghapus semua spasi setelah konversi
     hasil = hasil.replace("\t", " ")
