@@ -335,7 +335,7 @@ def hukum_penulisan(text):
     r'lwi(r|ṙ)', r'\byan\b',
     r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")", r'\bmw', r'\bstr', r'\brkw', r'\bri', 
     r'\bdwa\b', r'\bya\b', 
-    r'[' + daftar_konsonan + r']\s+ta(?:n|ṅ|ŋ)?\b',
+    r'\bta(?:n|ṅ|ŋ)?\b',
     ]
     text = add_zwnj_awal_kata_bulk(text, patterns, '\u200C', daftar_konsonan) 
 
