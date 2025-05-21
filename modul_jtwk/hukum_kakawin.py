@@ -11,7 +11,7 @@ VOWEL_PENDEK = 'aiuĕAIUĔ'
 VOWEL_PANJANG = 'āâîīûūêôeèéoōöŏꜽꜷĀÂÎĪÛŪÊŎÔÉÈÖŌꜼꜶ'
 KHUSUS_KONSONAN = 'ṅŋḥṙ'
 TANDA_SALAH = '❌'
-JARAK_TANDA_SALAH = 3
+JARAK_TANDA_SALAH = 2
 konsonan_pattern = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳ"
 
 def bersihkan_karakter_tak_terlihat(teks):

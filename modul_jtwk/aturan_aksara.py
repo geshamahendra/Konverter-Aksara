@@ -377,6 +377,9 @@ def finalisasi(hasil):
         '⏒꧇': '⏒ ꧇',
         r'^\u200C':'',
         r'^\u200D':'',
+
+        r'❌':'  ❌',
+        
         #ganti simbol metrum
         '–' : '‐',
         '⏑' : '0',
