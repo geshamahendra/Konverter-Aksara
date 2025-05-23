@@ -64,6 +64,9 @@ substitutions = {
     r'\bdur\\(y)': r'dur\1', #durya
     r'\bpar\\(w)': r'par\1', #parwa
 
+    #Kasus duhka
+    r'(duhk|duhꝁ)([' + vokal_regex + '])' : r'duḥk\2',
+
     
     #--akhiran
     r'hku\b': 'ḥku', r'hta\b': 'ḥta',
@@ -98,7 +101,7 @@ substitutions = {
     #backsplash buat pemutus
     r'\\\|': '\u200D',  # input literal \| jadi ZWJ
     r'\\': '\u200C',  # input literal \\ jadi ZWNJ
-    r'`': '\u200C',
+    #r'`': '\u200C',
     #r'' : ''
 
     #Pembalik layar-mahaprana

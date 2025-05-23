@@ -143,11 +143,6 @@ def insert_zwnj_between_consonants(text):
 
     # Lakukan substitusi pada teks
     return re.sub(pattern, replace_consonants, text)
-
-def hapus_ulang_zw(text, char):
-    while f"{char}{char}" in text:
-        text = text.replace(f"{char}{char}", char)
-    return text
     
 #Daftar sandi vokal
 vowel_merge_rules_with_space = [
@@ -261,8 +256,8 @@ def hukum_sandi(text):
     text = re.sub(rf'\b({VOKAL_REGEX})(m|ṃ)\b', lambda m: f" \u200C{m.group(1).upper()}{m.group(2)}\u200C ", text)
 
     #pertahankan le
-    DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
-    text = re.sub(rf'(?<=([{DAFTAR_KONSONAN}]))(lĕ|ḷĕ|ḷ)',lambda m: m.group(2) + '\u200D',text)
+    DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ"
+    text = re.sub(rf'(?<=([{DAFTAR_KONSONAN}]))(ḷ|ḹ)',lambda m: m.group(2) + '\u200D',text)
     #hapus strip depan konsonan agar tidak menjadi kata baru
     text = re.sub(rf'-([{DAFTAR_KONSONAN}])',r'\1',text)
     
@@ -313,7 +308,6 @@ def hukum_sandi(text):
 
 def hukum_penulisan(text):
 
-
     SUBSTITUTION_REGEX = [
     (re.compile(r'(?<=\s)ṙyy|^ṙyy', flags=re.MULTILINE), '\u200cꦪꦾꦂ'),
     (re.compile(r'akhir'), 'ꦄꦏ꦳ꦶꦂ'),
@@ -324,7 +318,7 @@ def hukum_penulisan(text):
     for pattern, replacement in SUBSTITUTION_REGEX:
         text = pattern.sub(replacement, text)
 
-    daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳŋḥṙ"
+    daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳŋḥṙʰ"
     #tambah zwnj depan kata
     patterns = [
     r'\bhy',
@@ -347,50 +341,51 @@ def hukum_penulisan(text):
     text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥṅ', text)
 
     # Gabungkan ZWNJ dan ZWJ yang berulang menjadi satu saja
-    text = re.sub(r"^(?:\u200D|\u200C)+", "", text,flags=re.MULTILINE)
+    text = re.sub(r'([\u200C\u200D])[\u200C\u200D]+', r'\1', text)
+    text = re.sub(r'^[\u200C\u200D]+', '', text, flags=re.MULTILINE)
 
     return(text)
 
-def finalisasi(hasil):
-    #pasangan la pepet dan la utuh
-    hasil = hasil.replace('꧀ꦭꦼ', '꧀ꦊ') #le + zwnj menjadi la pepet
-    hasil = hasil.replace('꧀ꦊ\u200D', '꧀ꦭꦼ') #le + zwnj menjadi la pepet
-    
-    #khusus escape |[] agar ga jadi pemada jawa
-    #tambahkan spasi antar metrum
-    hasil = re.sub(r'[^\S\r\n]*([|–⏑⏓])[^\S\r\n]*', r' \1 ', hasil)  # hilangkan ZWNJ dari grup
-    hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)  # bersihkan spasi berlebih tapi tetap pertahankan newline
-    hasil=ganti_tanda_metrum(hasil)
+def finalisasi(hasil):   
 
-    # Menghapus semua spasi setelah konversi
-    hasil = hasil.replace("\t", " ")
-    hasil = hasil.replace("_", " ")
-    hasil = hasil.replace(" ", "")
+    # Langkah 1: Lakukan regexp untuk spasi di sekitar metrum
+    hasil = re.sub(r'[^\S\r\n]*([|–⏑⏓])[^\S\r\n]*', r' \1 ', hasil)
+    hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)
     
-    penggantian_final = {
-        "꧀ꦪ": "ꦾ",
-        "꧀ꦫ": "ꦿ",
-        "ꦈꦴꦁ": "ꦈꦴꦀ",
-        "꧀ꦗ꧀ꦚ": "꧀\u200Dꦗ꧀ꦚ",
-        "ꦫ꧀ꦮ": "ꦫ꧀ꦮ\u200D",
-        r'ꦉꦴ': 'ꦉ\u200Cꦴ',
-        '⏒꧇': '⏒ ꧇',
-        r'^\u200C':'',
-        r'^\u200D':'',
+    # Langkah 2: Panggil fungsi ganti_tanda_metrum
+    hasil = ganti_tanda_metrum(hasil)
 
-        r'❌':'  ❌',
+    penggantian = {
+        # Pasangan la pepet dan la utuh
+        '꧀ꦊ':'꧀ꦭꦼ',
+       '꧀ꦭꦼ\u200D' : '꧀ꦊ',
         
-        #ganti simbol metrum
-        '–' : '‐',
-        '⏑' : '0',
-        '⏓' : '0̲',
-        '=' :' = '
+        # Penggantian karakter dan simbol
+        '꧀ꦪ': 'ꦾ',
+        '꧀ꦫ': 'ꦿ',
+        'ꦈꦴꦁ': 'ꦈꦴꦀ',
+        '꧀ꦗ꧀ꦚ': '꧀\u200Dꦗ꧀ꦚ',
+        'ꦫ꧀ꦮ': 'ꦫ꧀ꦮ\u200D',
+        'ꦉꦴ': 'ꦉ\u200Cꦴ',
+        '⏒꧇': '⏒ ꧇',
+        ' ' : '', # Hapus spasi
+        
+        # Ganti simbol metrum
+        '–': '‐',
+        '⏑': '0',
+        '⏓': '0̲',
+        '=': ' = ',
+        '❌': ' ❌',
+        
+        # Hapus karakter spasi dan tab
+        '\t': ' ',
+        '_': ' ',
     }
 
-    for cari, ganti in penggantian_final.items():
+    # Langkah 3: Lakukan penggantian sederhana dalam satu iterasi
+    for cari, ganti in penggantian.items():
         hasil = hasil.replace(cari, ganti)
-        
+
+    hasil = re.sub(r"=\s+=\s*", '==', hasil)
     
-    hasil = hapus_ulang_zw(hasil, "\u200C")
-    hasil = hapus_ulang_zw(hasil, "\u200D")
     return hasil

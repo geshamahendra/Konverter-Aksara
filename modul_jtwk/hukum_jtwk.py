@@ -56,7 +56,8 @@ FINALISASI_PENGGANTI = [
     (re.compile(r'[^\S\n]+'), ' '), #hapus spasi yang terlalu banyak
 
     (re.compile(rf'^([{DAFTAR_VOKAL}])', re.MULTILINE), lambda m: {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}.get(m.group(1), m.group(1).upper())), #Kapitalkan vokal di awal baris
-    (re.compile(rf'{NON_HURUF_PENDAHULU}({VOKAL_REGEX})'), lambda m: f"{m.group(1)}{m.group(2)}{m.group(3).upper()}") #Kapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
+    (re.compile(rf'{NON_HURUF_PENDAHULU}({VOKAL_REGEX})'), lambda m: f"{m.group(1)}{m.group(2)}{m.group(3).upper()}"), #Kapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
+    (re.compile(rf'`({VOKAL_REGEX})'),lambda m: m.group(1).upper()) #kapitalkan vokal jika didepannya ada backtick
 ]
 
 # Fungsi untuk memperbaiki kata baku
@@ -98,9 +99,6 @@ def hukum_sigeg(text):
 
     #kasus ṅ berulang
     #text = re.sub(r'(\w)(\w)ṅ-(\1\2)ŋ', r'\1\2ŋ\1\2ŋ', text)
-
-    #khusus duhka
-    text = re.sub(r'(duhk|duhꝁ)([{VOKAL_REGEX}])', lambda m: ('duḥk' if m.group(1) == 'duhk' else 'duḥꝁ') + m.group(2), text)
 
     return text
 
