@@ -37,6 +37,10 @@ def renumber_canto(text):
     # Hapus baris kosong tepat sebelum baris yang mengandung /1/
     result = re.sub(r'\n\s*\n(?=.*?/1/)', r'\n', result)
 
+    # Ganti * ujung pupuh
+    result = re.sub(r'(\*)(\s+\<)', r'#\2', result)
+
+
     # Stabilkan spasi antar simbol metrum
     result = stabilkan_spasi_metrum(result)
 

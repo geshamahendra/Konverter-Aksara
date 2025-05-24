@@ -41,10 +41,17 @@ PENGGANTIAN_SPESIAL = {
     r'ṙṇny': 'ṙny',
 
     r'aṙyy([aā])': r'ary\1',
-    r'āś([cꞓ])ary': r'āś\1aṙyy', r'ṙyyakĕn\b': 'ryakĕn', r'uṙww': 'urw',
+
+    r'(ā|a)ś([cꞓ])ary': r'\1ś\2aṙyy',
+
+    #kembalikan aryan jika depannya tepat satu konsonan
+    rf'\b([{DAFTAR_KONSONAN}])aryan\b' : r'\1aṙyyan',
+    #kembalikan aryan jika memang aryan (aren)
+    rf'\baryan\b' : r'aṙyyan',
+
+    r'ṙyyakĕn\b': 'ryakĕn', r'uṙww': 'urw',
     r'ṙmmu ': 'ṙmu ', 
     r'r\u200c': 'ṙ', r'ṙ\u200c': 'ṙ',
-    r'^ŋ': 'ṅ'
 }
 
 FINALISASI_PENGGANTI = [

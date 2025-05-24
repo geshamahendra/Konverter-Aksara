@@ -3,7 +3,7 @@ import re
 
 RE_METRUM_SIMBOL = re.compile(r'[–⏑⏓]')
 RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶ]')
-RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳŋḥṙ]')
+RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳŋḥṙ]')
 ZWNJ = '\u200C'
 ZWJ = '\u200D'
 VOWELS = 'aiuĕāâîīûūêôeèéöoōŏꜽꜷAĀÂIĪÎUŪÛO‌ŎŌÔEÊÉÈꜼꜶ'

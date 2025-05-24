@@ -6,7 +6,7 @@ root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(root_path)
 
 from modul_jtwk.aturan_aksara import aksara, sandhangan, simbol, swara
-from modul_jtwk.aturan_aksara import hukum_sandi, finalisasi, hukum_penulisan
+from modul_jtwk.aturan_aksara import inisialisasi, hukum_sandi, finalisasi, hukum_penulisan
 
 
 def handle_vokal_khusus(char, hasil, last_char, last_aksara):
@@ -29,6 +29,7 @@ def handle_vokal_khusus(char, hasil, last_char, last_aksara):
 
 
 def latin_to_jawa(text, line_spacing):
+    text = inisialisasi(text)
     text = hukum_sandi(text)
     text = hukum_penulisan(text)
 

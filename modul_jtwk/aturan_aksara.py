@@ -91,7 +91,8 @@ simbol = {
     '(': '꧌', ')': '꧍', 
     '<': '꧁', '>': '꧂',
     '{': '꧁', '}': '꧂', # untuk sub pupuh
-    ':': '꧇', '*': '꧄', '@': '꧄', '#' : '꧄꧐꧄', '$' : '꧅', '%' : '꧄‍'
+    ':': '꧇', '*': '꧄', '@': '꧄', '#' : '꧄꧐꧄', '$' : '꧅', 
+    '%' : '\u200B꧄‍꧉ꦧ꧀ꦖ꧉꧄‍\u200B', '^' : '\u200B꧄‍꧉ꦟ꧀ꦢꦿ꧉꧄‍\u200B', '&' : '\u200B꧄‍꧉ꦅ꧉꧄‍\u200B'
 }
 penyeragaman_vokal = {
     'â': 'ā',
@@ -249,6 +250,16 @@ def add_zwnj_awal_kata_bulk(text, patterns, replacement, daftar_konsonan):
     result.append(text[last_idx:])
     return ''.join(result)
 
+def inisialisasi(text):
+    DAFTAR_VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
+    NON_HURUF_PENDAHULU = r'([^\w\s-])(\s*)'
+    VOKAL_REGEX = f"[{DAFTAR_VOKAL}]"
+
+    (re.compile(rf'^([{DAFTAR_VOKAL}])', re.MULTILINE), lambda m: {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}.get(m.group(1), m.group(1).upper())), #Kapitalkan vokal di awal baris
+    (re.compile(rf'{NON_HURUF_PENDAHULU}({VOKAL_REGEX})'), lambda m: f"{m.group(1)}{m.group(2)}{m.group(3).upper()}"), #Kapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
+
+    return text
+
 def hukum_sandi(text):
     #Aksara suci
     DAFTAR_VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
@@ -322,14 +333,13 @@ def hukum_penulisan(text):
     #tambah zwnj depan kata
     patterns = [
     r'\bhy',
+    rf'\b([{daftar_konsonan}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)',
     r'\b(ḷ|ḹ)',    
     r'\b(w|ṅ)',
-    r'\bww', 
-    r'\byw', r'w(r|ṛ|ḷ|ṝ|ḹ)', r'\brw', r'\bnṛ',
-    r'lwi(r|ṙ)', r'\byan\b',
-    r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")", r'\bmw', r'\bstr', r'\brkw', r'\bri', 
-    r'\bdwa\b', r'\bya\b', 
-    r'\bta(?:n|ṅ|ŋ)?\b',
+    r'lwi(r|ṙ)', 
+    r'\byan\b', r'\bya\b', r'\bta(?:n|ṅ|ŋ)?\b',
+    r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")",  
+    r'\bstr', r'\brkw', r'\bri', r'\bdwa\b',  
     ]
     text = add_zwnj_awal_kata_bulk(text, patterns, '\u200C', daftar_konsonan) 
 
@@ -386,6 +396,6 @@ def finalisasi(hasil):
     for cari, ganti in penggantian.items():
         hasil = hasil.replace(cari, ganti)
 
-    hasil = re.sub(r"=\s+=\s*", '==', hasil)
+    hasil = re.sub(r"=[^\S\n]+=[^\S\n]*", '==', hasil)
     
     return hasil

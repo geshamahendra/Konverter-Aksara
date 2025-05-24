@@ -73,20 +73,24 @@ substitutions = {
     r'rku\b': 'ṙ\u200cku',
 
 
-    r'(s|ś)unya': 'śūnya', r'(?i)budi': 'budđi', r'(?i)purna': 'pūrna', r'hidĕp': 'hiḍĕp', 
-    r'tir(t|ŧ)a': 'tīṙŧa', r'(?i)ningrat': 'niṅrāt', r'\bsabda\b': 'śabda',
+    r'(s|ś)unya': 'śūnya', r'budi': 'budđi', r'purna': 'pūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
+    r'tir(t|ŧ)a': 'tīṙŧa', r'ningrat': 'niṅrāt', r'\bsabda\b': 'śabda',
     r'purwa': 'pūrwa', r'\bsirna\b': 'śīrna', 
     r'\bmurti\b': 'mūrti', r'(ś|s)ighra': 'śīghra', r'prapta': 'prāpta',
     r'\bmus(t|ṭ)i': 'muṣṭi', r'na(th|ŧ)a': 'nāŧa',
     r'prabu': 'praƀu', 
     r'\bmèga\b': 'mèǥa', r'\brat\b': 'rāt',
     r'\bbra\b': 'ƀra', r'\b(bh|ƀ)a(t|ṭ)ar': 'ƀaṭār', r'\bsampun\b': 'sāmpun',
-    r'(?i)puspa': 'puṣpa', r'(s|ś)astra': 'śāstra', 
+    r'(p|m)uspa': r'\1uṣpa', r'(s|ś)astra': 'śāstra', 
     r'\bwirya': 'wīrya',  
     r'suksma': 'sūkṣma',
     r'\bmaha\b': 'mahā', r'\bmahar(s|ṣ)i\b': 'mahāṙṣi', r'\biswara': 'iśwara',
     r'ramya': 'rāmya', r'(s|ś)iǥra': 'śīǥra', r'saksat': 'sākṣāt',
-    r'datĕṅ': 'ḍatĕṅ', 
+    r'datĕṅ': 'ḍatĕṅ', r'\bpad(a|ā)': r'paḍ\1',
+    r'rana': 'raṇa', r'g(a|u)n(a|ā)': r'g\1ṇ\2', 
+    r'm(u|e)sti\b': r'm\1ṣṭi',
+    r'hid(ĕ|e)p': 'hiḍĕp', r'yogi(s|ś)wara': 'yogīśwara', r'datĕṅ': 'ḍatĕŋ', r'dusta': 'duṣṭa', 
+    r'padaṅ': 'paḍaṅ', r'pandita': 'paṇḍita', r'\bsirna\b': 'śīrna',
 
     #bisa merubah wirama
     #r'(ṅ|ng)uni': 'ṅūni',
@@ -119,7 +123,7 @@ substitutions = {
 #Bahasa Kawi
     r'(s|ś)unya': 'śūnya', r'(?i)budi': 'budđi', r'(?i)purna': 'pūrna',
     r'(?i)tirta': 'tīṙŧa', r'(?i)ningrat': 'niṅrāt', r'\bsabda\b': 'śabda',
-    r'purwa': 'pūrwa', r'\bsirna\b': 'śīrna', r'\bpuja\b': 'pūjā', r'rupa\b': 'rūpa',
+    r'purwa': 'pūrwa',  r'\bpuja\b': 'pūjā', r'rupa\b': 'rūpa',
     r'\bmurti\b': 'mūrti', r'(ś|s)ighra': 'śīghra', r'prapta': 'prāpta',
     r'\bmus(t|ṭ)i': 'muṣṭi', r'\bbyatitan': 'byātītan', r'na(th|ŧ)a': 'nāŧa',
     r'prabu': 'praƀu', r'(ṅ|ng)uni': 'ṅūni', r'\bmèga\b': 'mèǥa', r'\brat\b': 'rāt',
@@ -133,8 +137,7 @@ substitutions = {
     r'krti\b': 'krĕti', r'\bnrp': 'nrĕp', r'mrti': 'mrĕti', 
     r'rana': 'raṇa', r'gana': 'gaṇa', r'guna': 'guṇa', 
     r'musti\b': 'muṣṭi', r'mesti\b': 'meṣṭi', 
-    r'hid(ĕ|e)p': 'hiḍĕp', 
-    r'\bpada\b': 'paḍa', r'\braksasa\b': 'rākṣasa',  r'\bsĕdĕṅ\b': 'sĕḍĕŋ', r'pandita': 'paṇḍita', r'ƀumi': 'ƀūmi', r'rasa': 'raṣa', r'ƀhupati': 'ƀūpati', r'yogi(s|ś)wara': 'yogīśwara', r'datĕṅ': 'ḍatĕŋ', r'dusta': 'duṣṭa', 
-    r'padaṅ': 'paḍaṅ', r'kala': 'kāla', r'byatita': 'byatīta', #r'tinut\b': 'tinūt', r'\bbyatitan': 'byātītan'
+    
+     r'\braksasa\b': 'rākṣasa',  r'\bsĕdĕṅ\b': 'sĕḍĕŋ',  r'ƀumi': 'ƀūmi', r'rasa': 'raṣa', r'ƀhupati': 'ƀūpati',  r'kala': 'kāla', r'byatita': 'byatīta', #r'tinut\b': 'tinūt', r'\bbyatitan': 'byātītan'
     
 '''
