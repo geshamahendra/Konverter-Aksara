@@ -33,8 +33,6 @@ HUKUM_ṙ_MAHAPRANA = {
     'ṙḋ': 'ṙdḋ', 'ṙc': 'ṙcc', 'ṙꞓ': 'ṙcꞓ'
 }
 PENGGANTIAN_SPESIAL = {
-    #rf'(?<![{DAFTAR_VOKAL}])y\b\s+': 'y-', 
-    #rf'(?<![{DAFTAR_VOKAL}])w\b\s+': 'w-',
 
     r'ṙs': 'ṙṣ', r'ṛs': 'ṛṣ',
     r'ṙṣik\b': 'ṙsik', 
@@ -99,8 +97,9 @@ def hukum_sigeg(text):
     text = re.sub(rf"([{DAFTAR_KONSONAN}])(\s*|-)([{DAFTAR_KONSONAN}])\s+([{DAFTAR_VOKAL}])", r"\1\2\3-\4", text, flags=re.IGNORECASE)
 
     #kecualikan penyigegan jika setelahnya - dari regex diatas
-    text = re.sub(r'(?<!^)(?<!\n)ṅ\b(?!-)', 'ŋ', text)
-    text = re.sub(r'(?<!^)(?<!\n)h\b(?!-)', 'ḥ', text)
+    text = re.sub(rf'(?<!^)(?<!\n)ṅ\b(?!-[{DAFTAR_VOKAL}])', 'ŋ', text)
+    text = re.sub(rf'(?<!^)(?<!\n)h\b(?!-[{DAFTAR_VOKAL}])', 'ḥ', text)
+    
     #kasus " ṅ h..."
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
 

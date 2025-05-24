@@ -277,7 +277,7 @@ def hukum_sandi(text):
 
     #agar aksara swara tidak dijadikan pasangan
     vokal_spesial = "AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ"
-    text = re.sub(rf'(?<!^)(?<!\n)([{vokal_spesial}])',lambda m: '\u200C' + m.group(1),text)
+    text = re.sub(rf"(?<=[{DAFTAR_KONSONAN.replace('ṙ','')}])[^\S\n]*([{vokal_spesial}])", lambda m: '\u200C' + m.group(1), text)
 
     # Regex penyeragaman vokal
     text = re.sub('|'.join(re.escape(k) for k in penyeragaman_vokal.keys()), 
@@ -311,6 +311,7 @@ def hukum_sandi(text):
     vokal = "aiuĕāâîīûūêôeèéöoꜽꜷ"
     text = re.sub(rf'ḥ[^\S\n]+([{vokal}])', lambda m: f"h{m.group(1).lower()}", text)
     text = re.sub(rf'ŋ[^\S\n]+([{vokal}])', lambda m: f"ṅ{m.group(1).lower()}", text)
+    text = re.sub(rf'ṙ[^\S\n]+([{vokal}])', lambda m: f"r{m.group(1).lower()}", text)
 
     #Menyambung vokal dan konsonan yang terpisah spasi
     text = re.sub(r'([bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ])[^\S\n]*([aiuĕāâîīûūêôeèéöoꜽꜷ])', r'\1\2', text)
@@ -333,7 +334,7 @@ def hukum_penulisan(text):
     #tambah zwnj depan kata
     patterns = [
     r'\bhy',
-    rf'\b([{daftar_konsonan}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)',
+    rf'\b([{daftar_konsonan}])(r|ṛ|ḷ|ṝ|ḹ|w|l)',
     r'\b(ḷ|ḹ)',    
     r'\b(w|ṅ)',
     r'lwi(r|ṙ)', 
