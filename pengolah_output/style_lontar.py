@@ -45,6 +45,7 @@ def renumber_canto(text):
 
     result = '\n'.join(output)
     result = re.sub(r'(,)\n', r'\1', result)
+    result = re.sub(r'>(.*\n.*\n.*.*\n.*)(\*)(\d+)(:)(\d+:\d+.*)', r'>:\3\1\2\3\4\5', result)
     result = stabilkan_spasi_metrum(result)
     return result
 

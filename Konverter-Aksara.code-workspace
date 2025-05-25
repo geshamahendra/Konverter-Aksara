@@ -1,0 +1,17 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "**/output/**/*.txt": "aksara"
+    },
+    "[aksara]": {
+      "editor.fontFamily": "'jayaƀaya', Natya",
+      "editor.fontSize": 22,
+      "editor.lineHeight": 28
+    }
+  }
+}

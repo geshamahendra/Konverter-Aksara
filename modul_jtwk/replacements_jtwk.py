@@ -106,7 +106,6 @@ replacements = {
 }
 
 # Mode kakawin mewarisi mode normal dan menambahkan/menimpa beberapa entri
-#replacements['lampah'] = replacements['kakawin'].copy()
 replacements['lampah'] = replacements['kakawin'].copy()
 replacements['macapat'] = replacements['kakawin'].copy()
 #replacements['satya'] = replacements['sriwedari'].copy()

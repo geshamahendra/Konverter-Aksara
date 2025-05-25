@@ -1,3 +1,14 @@
 {
-    "auto-scroll.enabled": true
+  "files.associations": {
+    "**/output/**/*.txt": "aksara"
+  },
+  "[aksara]": {
+    "editor.fontFamily": "'natya', jayaƀaya",
+    "editor.fontSize": 20,
+    "editor.fontLigatures": true,
+    "explorer.confirmDelete": false,
+    "editor.letterSpacing": 0.5,
+    "editor.wordWrap": "on",
+    "editor.lineHeight": 2.2
+  }
 }

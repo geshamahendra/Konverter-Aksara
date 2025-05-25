@@ -37,18 +37,19 @@ PENGGANTIAN_SPESIAL = {
     r'ṙs': 'ṙṣ', r'ṛs': 'ṛṣ',
     r'ṙṣik\b': 'ṙsik', 
     r'ṙṇny': 'ṙny',
-
     r'aṙyy([aā])': r'ary\1',
-
     r'(ā|a)ś([cꞓ])ary': r'\1ś\2aṙyy',
+    r'ṙyyakĕn\b': 'ryakĕn', r'uṙww': 'urw',
+    r'ṙmmu ': 'ṙmu ', #akhiran mu
 
+    #=====Kata khusus=====#
     #kembalikan aryan jika depannya tepat satu konsonan
     rf'\b([{DAFTAR_KONSONAN}])aryan\b' : r'\1aṙyyan',
+    
     #kembalikan aryan jika memang aryan (aren)
-    rf'\baryan\b' : r'aṙyyan',
+    rf'(b|h|p|g)arya' : r'\1aṙyya',
+    #rf'garyaŋ\b' : r'gaṙyyaŋ',
 
-    r'ṙyyakĕn\b': 'ryakĕn', r'uṙww': 'urw',
-    r'ṙmmu ': 'ṙmu ', 
     r'r\u200c': 'ṙ', r'ṙ\u200c': 'ṙ',
 }
 
@@ -62,7 +63,10 @@ FINALISASI_PENGGANTI = [
 
     (re.compile(rf'^([{DAFTAR_VOKAL}])', re.MULTILINE), lambda m: {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}.get(m.group(1), m.group(1).upper())), #Kapitalkan vokal di awal baris
     (re.compile(rf'{NON_HURUF_PENDAHULU}({VOKAL_REGEX})'), lambda m: f"{m.group(1)}{m.group(2)}{m.group(3).upper()}"), #Kapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
-    (re.compile(rf'`({VOKAL_REGEX})'),lambda m: m.group(1).upper()) #kapitalkan vokal jika didepannya ada backtick
+    (re.compile(rf'`({VOKAL_REGEX})'),lambda m: m.group(1).upper()), #kapitalkan vokal jika didepannya ada backtick
+
+    # Ganti * ujung pupuh
+    (re.compile(r'\*(\s*[#{\<])'), lambda m: '#' + m.group(1))
 ]
 
 # Fungsi untuk memperbaiki kata baku

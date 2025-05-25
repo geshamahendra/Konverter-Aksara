@@ -57,25 +57,6 @@ def mode_normal(text):
 
     return text
 
-def mode_modern_lampah(text):
-    #Menambahkan a didepan untuk ater2 anuswara cth nduwe=anduwe
-    text = re.sub(r'\b(n)([bcdfghjklmnpqrstvwxyz])(?=\w*)', r'a\1\2', text)
-
-    # Mengubah vokal menjadi uppercase jika didahului oleh spasi dan vokal, tanpa menghapus spasi tersebut
-    text = re.sub(rf'(?<=\b[{daftar_vokal}])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
-    # Mengubah vokal pertama setelah spasi menjadi uppercase jika didahului oleh spasi
-    text = re.sub(rf'(?<=\s)([{daftar_vokal}])', lambda m: m.group(1).upper(), text)
-    # Menghapus spasi sebelum vokal jika didahului oleh konsonan
-    text = re.sub(rf'(?<=[^{daftar_vokal}])\s([{daftar_vokal}])', r'\1', text)
-
-    text = re.sub(r'-', '', text, flags=re.IGNORECASE)
-    # Fungsi untuk menambahkan 'h' di depan kata yang dimulai dengan vokal setelah spasi
-    text = add_h_between_vowels(text)
-
-    # Inserting ZWNJ after the consonant if followed by space and capital vowel
-    text = re.sub(rf'([{daftar_konsonan}])(\s)([{vokal_kapital}])', r'\1' + zwnj + r'\2\3', text)
-
-    return (text)
 
 def mode_kakawin(text):
     #Mode kakawin adalah transliterasi yang memaksa semua huruf vokal jadi kecil, pengkapitalan akan dilakukan oleh algoritma metrum
@@ -90,45 +71,14 @@ def mode_kakawin(text):
 def mode_lampah(text):
 
     #paksa konsonan jadi huruf kecil kecuali vokal kapital
-    def paksa_konsonan_kecil(text):
-        return re.sub(
-            r'(?<!\u200C)(.)',
-            lambda m: m.group(1).lower() if (
-                m.group(1).isupper() and m.group(1) not in vokal_kapital
-            ) else m.group(1),
-            text
-    )
-    text = paksa_konsonan_kecil(text)
+    def paksa_huruf_kecil(text):
+        return ''.join(
+            c if c in vokal_kapital else c.lower()
+            for c in text
+        )
+    text = paksa_huruf_kecil(text)
 
     return text
-
-
-##def mode_lampah(text):
-'''
-    #kapitalkan dan berikan zwnj jika bertemu huruf ini
-    text = re.sub(r"([AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ])", r"\u200C\1", text); print(text)
-
-    # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf dan spasi
-    text = re.sub(rf'([^\w\s])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2) + m.group(3).upper(), text)
-
-    # Mengubah vokal menjadi uppercase jika didahului oleh tanda baca non-huruf
-    text = re.sub(rf'([^\w\s])([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
-
-    # Kapitalkan vokal di awal baris
-    text = re.sub(rf'(^|\n)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
-
-    # Aturan baru: menambahkan '/' sebelum spasi jika diapit oleh konsonan di kiri dan vokal uppercase di kanan
-    text = re.sub(r'([{daftar_konsonan}])\s([AIUĀĪŪEOÖŎĔÈ])', r'\1/ \2', text)
-    
-    #khusus kakawin, urai vokal kapital yang didahuli spasi+konsonan
-    text = re.sub(r"(?<=[daftar_konsonan][daftar_konsonan]) (A|I|U)", 
-                lambda m: {'A': 'ā', 'I': 'ī', 'U': 'ū'}[m.group(1)], 
-                text)
-
-    
-
-    return text
-'''
 
 def mode_sriwedari(text):
     # Fungsi untuk menambahkan 'h' di depan kata yang dimulai dengan vokal setelah spasi

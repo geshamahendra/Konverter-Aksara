@@ -335,6 +335,7 @@ def hukum_penulisan(text):
     patterns = [
     r'\bhy',
     rf'\b([{daftar_konsonan}])(r|ṛ|ḷ|ṝ|ḹ|w|l)',
+    #rf'\b([{daftar_konsonan.replace("p", "")}])(r|ṛ|ḷ|ṝ|ḹ|w|l)'
     r'\b(ḷ|ḹ)',    
     r'\b(w|ṅ)',
     r'lwi(r|ṙ)', 
