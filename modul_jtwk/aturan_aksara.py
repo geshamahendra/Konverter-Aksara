@@ -219,12 +219,13 @@ def insert_h_between_unmerged_vowels(text):
     return re.sub(pattern, repl, text)
 
 zwnj = "\u200C"
+
 # Fungsi untuk menambahkan ZWNJ di awal kata jika didepannya konsonan
 def add_zwnj_awal_kata_bulk(text, patterns, replacement, daftar_konsonan):
     def is_prev_char_konsonan(text, pos):
         # Lewati spasi/tab/newline ke belakang hingga ketemu huruf bukan spasi
         i = pos - 1
-        while i >= 0 and text[i] in ' \t\r\n':
+        while i >= 0 and text[i] in ' \t\r\n-':
             i -= 1
         return i >= 0 and text[i] in daftar_konsonan
 
@@ -273,7 +274,7 @@ def hukum_sandi(text):
     DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ"
     text = re.sub(rf'(?<=([{DAFTAR_KONSONAN}]))(ḷ|ḹ)',lambda m: m.group(2) + '\u200D',text)
     #hapus strip depan konsonan agar tidak menjadi kata baru
-    text = re.sub(rf'-([{DAFTAR_KONSONAN}])',r'\1',text)
+    text = re.sub(rf'-([{DAFTAR_KONSONAN}])',r' \1',text)
     
     # Hapus strip di tahap ini
     text = text.replace("-", " ")
@@ -346,8 +347,8 @@ def hukum_penulisan(text):
     r"\bṅ(-)?(" + f"[{daftar_konsonan}]" + r")",  
     r'\bstr', r'\brkw', r'\bri', r'\bdwa\b',  
     ]
-    text = add_zwnj_awal_kata_bulk(text, patterns, '\u200C', daftar_konsonan) 
-
+    text = add_zwnj_awal_kata_bulk(text, patterns, '\u200C', daftar_konsonan)
+    
     #cegah pasangan lebih dari tumpuk tiga
     text = insert_zwnj_between_consonants(text)
 

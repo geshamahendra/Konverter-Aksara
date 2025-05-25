@@ -73,8 +73,9 @@ substitutions = {
     r'rku\b': 'ṙ\u200cku',
 
 
-    r'(s|ś)unya': 'śūnya', r'budi': 'budđi', r'purna': 'pūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
-    r'tir(t|ŧ)a': 'tīṙŧa', r'ningrat': 'niṅrāt', r'\bsabda\b': 'śabda',
+    r'(s|ś)unya': 'śūnya', r'budi': 'budđi', 
+    r'purna': 'pūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
+    r'tir(t|ŧ)a': 'tīṙŧa', r'\bsabda\b': 'śabda',
     r'purwa': 'pūrwa', r'\bsirna\b': 'śīrna', 
     r'\bmurti\b': 'mūrti', r'(ś|s)ighra': 'śīghra', r'prapta': 'prāpta',
     r'\bmus(t|ṭ)i': 'muṣṭi', r'na(th|ŧ)a': 'nāŧa',
@@ -86,8 +87,7 @@ substitutions = {
     r'suksma': 'sūkṣma',
     r'\bmaha\b': 'mahā', r'\bmahar(s|ṣ)i\b': 'mahāṙṣi', r'\biswara': 'iśwara',
     r'ramya': 'rāmya', r'(s|ś)iǥra': 'śīǥra', r'saksat': 'sākṣāt',
-    r'datĕṅ': 'ḍatĕṅ', r'\bpad(a|ā)': r'paḍ\1',
-    r'rana': 'raṇa', r'g(a|u)n(a|ā)': r'g\1ṇ\2', 
+    r'datĕṅ': 'ḍatĕṅ', 
     r'm(u|e)sti\b': r'm\1ṣṭi',
     r'hid(ĕ|e)p': 'hiḍĕp', r'yogi(s|ś)wara': 'yogīśwara', r'datĕṅ': 'ḍatĕŋ', r'dusta': 'duṣṭa', 
     r'padaṅ': 'paḍaṅ', r'pandita': 'paṇḍita', r'\bsirna\b': 'śīrna',
@@ -135,9 +135,9 @@ substitutions = {
 
     #khusus sutasoma
     r'krti\b': 'krĕti', r'\bnrp': 'nrĕp', r'mrti': 'mrĕti', 
-    r'rana': 'raṇa', r'gana': 'gaṇa', r'guna': 'guṇa', 
-    r'musti\b': 'muṣṭi', r'mesti\b': 'meṣṭi', 
+    r'rana': 'raṇa',
     
-     r'\braksasa\b': 'rākṣasa',  r'\bsĕdĕṅ\b': 'sĕḍĕŋ',  r'ƀumi': 'ƀūmi', r'rasa': 'raṣa', r'ƀhupati': 'ƀūpati',  r'kala': 'kāla', r'byatita': 'byatīta', #r'tinut\b': 'tinūt', r'\bbyatitan': 'byātītan'
+    r'\braksasa\b': 'rākṣasa',  r'\bsĕdĕṅ\b': 'sĕḍĕŋ',  r'ƀumi': 'ƀūmi', r'rasa': 'raṣa', r'ƀhupati': 'ƀūpati',  r'kala': 'kāla', r'byatita': 'byatīta', #r'tinut\b': 'tinūt', r'\bbyatitan': 'byātītan', #r'\bpad(a|ā)': r'paḍ\1',
+    #r'rana\b': 'raṇa', #r'g(a|u)n(a|ā)': r'g\1ṇ\2', 
     
 '''
