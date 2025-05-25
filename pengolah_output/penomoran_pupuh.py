@@ -38,7 +38,7 @@ def renumber_canto(text):
     result = re.sub(r'\n\s*\n(?=.*?/1/)', r'\n', result)
 
     # Ganti * ujung pupuh
-    result = re.sub(r'(\*)(\s+\<)', r'#\2', result)
+    #result = re.sub(r'(\*)(\s+\<)', r'#\2', result)
 
 
     # Stabilkan spasi antar simbol metrum

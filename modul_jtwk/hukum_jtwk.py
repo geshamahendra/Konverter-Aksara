@@ -39,15 +39,19 @@ PENGGANTIAN_SPESIAL = {
     r'ṙṇny': 'ṙny',
     r'aṙyy([aā])': r'ary\1',
     r'(ā|a)ś([cꞓ])ary': r'\1ś\2aṙyy',
-    r'ṙyyakĕn\b': 'ryakĕn', r'uṙww': 'urw',
+    r'ṙyyakĕn\b': 'ryakĕn', 
     r'ṙmmu ': 'ṙmu ', #akhiran mu
 
     #=====Kata khusus=====#
+    r'uṙww': 'urw',
+    r'kaṙww(a|â|ā)': r'karw\1', #dua
+    r'tumiṙwwâ': 'tumirwa',
+
     #kembalikan aryan jika depannya tepat satu konsonan
-    rf'\b([{DAFTAR_KONSONAN}])aryan\b' : r'\1aṙyyan',
+    rf'\b((?!r)[{DAFTAR_KONSONAN}])aryan\b' : r'\1aṙyyan',
     
     #kembalikan aryan jika memang aryan (aren)
-    rf'(b|h|p|g)arya' : r'\1aṙyya',
+    rf'\b(b|h|p|g)arya' : r'\1aṙyya',
     #rf'garyaŋ\b' : r'gaṙyyaŋ',
 
     r'r\u200c': 'ṙ', r'ṙ\u200c': 'ṙ',
@@ -64,9 +68,6 @@ FINALISASI_PENGGANTI = [
     (re.compile(rf'^([{DAFTAR_VOKAL}])', re.MULTILINE), lambda m: {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}.get(m.group(1), m.group(1).upper())), #Kapitalkan vokal di awal baris
     (re.compile(rf'{NON_HURUF_PENDAHULU}({VOKAL_REGEX})'), lambda m: f"{m.group(1)}{m.group(2)}{m.group(3).upper()}"), #Kapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
     (re.compile(rf'`({VOKAL_REGEX})'),lambda m: m.group(1).upper()), #kapitalkan vokal jika didepannya ada backtick
-
-    # Ganti * ujung pupuh
-    (re.compile(r'\*(\s*[#{\<])'), lambda m: '#' + m.group(1))
 ]
 
 # Fungsi untuk memperbaiki kata baku
@@ -108,7 +109,7 @@ def hukum_sigeg(text):
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
 
     #kasus ṅ berulang
-    #text = re.sub(r'(\w)(\w)ṅ-(\1\2)ŋ', r'\1\2ŋ\1\2ŋ', text)
+    text = re.sub(r'(\w[aeiouĕêôâîûōāīūöèé])[ŋṅ](\1)([ŋṅ])', r'\1ŋ\2\3', text)
 
     return text
 

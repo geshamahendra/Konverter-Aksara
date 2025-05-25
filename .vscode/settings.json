@@ -4,11 +4,11 @@
   },
   "[aksara]": {
     "editor.fontFamily": "'natya', jayaƀaya",
-    "editor.fontSize": 20,
+    "editor.fontSize": 21,
     "editor.fontLigatures": true,
     "explorer.confirmDelete": false,
-    "editor.letterSpacing": 0.5,
+    "editor.letterSpacing": 1.5,
     "editor.wordWrap": "on",
-    "editor.lineHeight": 2.2
+    "editor.lineHeight": 1.8
   }
 }

@@ -1,6 +1,6 @@
 [kakawin sumanasāntaka,
 
-*Awiǥnama astu*
+#Awiǥnama astu#
 
 <jagadđita> 
 – – – | ⏑⏑– | ⏑– ⏑| ⏑⏑– | ⏑⏑⏑| ⏑⏑⏑| – ⏑– | ⏑⏓ = 23
@@ -23,7 +23,7 @@ sakweḥ niŋ hyaŋ anaṅśayê hyuna nirâṅadĕha ri paṅadĕg surāđipa*
 ndan saŋ hyaŋ suranāŧa muꝁya pinakādi niŋ awĕdi manaṅśayê hati,
 lwiṙ tan duḥka sira ndan i twas awiweka riŋ aṅĕnana de niŋ olaha,
 gūḋākāra nira n wikalpa kadi tan hana panaha nahā nirâlaha,
-prāyê saŋ suyaśa n tĕka ŋ ƀaya sakêŋ musuḥ awĕdi kaciṙyyanâwĕdi*
+prāyê saŋ suyaśa n tĕka ŋ ƀaya sakêŋ musuḥ awĕdi kaciry-anâwĕdi*
 
 wwantĕn rakwa warāpsarī linĕwiḥ iŋ sa haripada wagĕd wicakṣaṇa,
 prajña dyaḥ hariṇīṅaranya tuwi waṅśaja wĕka wĕka dewaputrikā,
@@ -116,7 +116,7 @@ lumrâkweḥ tumibêŋ gĕluŋ kadi tinap sawaŋ aṅit aṅitan sĕkaṙ taji,
 kady-âṅĕmbaŋ akon aṅantya pakamaṅgala nika tanĕmĕn ya dewatī*
 
 lĕŋlĕŋ niŋ talagânamaṙ tasik anak tuna tuna kawi nora maṅlĕṅĕŋ,
-paṅgaŋ wwadnya kakumbaḥ iŋ bañu suluṙnya wahu mĕtu satuṅtuŋ iŋ tanaḥ,
+paṅgaŋ wwadnya kakumbaḥ iŋ bañu suluṙnya wahu mĕtu satuŋtuŋ iŋ tanaḥ,
 I groŋ groŋ i pasiṙ pasiṙnya mawatu dyan aniru niru piṇḍa niŋ karas,
 līlâṅanti darā putiḥnya kadi śaṅꝁa maduluṙ aṅurambat iŋ hĕnī*
 
@@ -269,7 +269,7 @@ hīs niŋ tusāra rumarab makajanma luḥta*
 
 sandeha budđi mami de ni halĕpta māsku,
 dūra n manuṣya kita kewala dewaputrī,
-de niŋ manaṙkka ri ḍatĕṅta mahāpraƀāwa,
+de niŋ manaṙkka ri ḍatĕŋta mahāpraƀāwa,
 saṅkê hyaŋ indra mapa donta waraḥ kamîbu*
 
 nāhan panaṙkka nira maṙmma dahat rasanya,
@@ -336,7 +336,7 @@ Apan harĕp iŋ antaśāpa karaṇanya n aṅucap amanis maṅañjali*
 dwijaṙṣi huripĕn ṅhulun titisanâmrĕta waluyakĕnêŋ kadewatan,
 Ĕmās maṇik anekawastu kĕta ŋ enaka panĕbusa ni ṅhulun hurip,
 ṅhulun pwa kasihan muwaḥ syapa pametana pirak i rikaŋ tapowana,
-mataŋnya k anaṅis panĕmbaha ri jöṅta panĕbusa ri jīwa ni ṅhulun*
+mataŋnya k anaṅis panĕmbaha ri jöŋta panĕbusa ri jīwa ni ṅhulun*
 
 tuhanku ƀagawānku hāḥ sipi lalista wulatana manĕḥta kāsy-asiḥ,
 harĕp muliha tan wĕnaŋ muliḥ aṅantya ri kita kita melik i ṅhulun,
@@ -349,7 +349,7 @@ prasidđa kita paṇḍitânumata riŋ wiguṇa wipaŧa tan wruḥ iŋ krama,
 si sĕmbaḥ ika jampya niŋ kadi kita n lumĕkasa wuyuŋ iŋ kadi ṅhulun*
 
 kucup niŋ asanâluru ndan amalaṙ karirisana ri taṅgal iŋ kapat,
-gaḍuŋ lumay aṅolakĕn tawaŋ aluṅluṅan amalaṙ anĕmwa rambatan,
+gaḍuŋ lumay aṅolakĕn tawaŋ aluŋluṅan amalaṙ anĕmwa rambatan,
 hĕlaŋ midĕṙ anambayaŋ saha taṅis kapanasan amalaṙ drĕs iŋ jawuḥ,
 ṅhulun pwa kalaran mataŋnya k amalaṙ turunana wara de dwijeśwara*
 
@@ -389,11 +389,11 @@ gĕmuḥ ni susu ni ṅhulun wahu mijil tuhañaṅakĕna riŋ pucaŋ gaḍiŋ,
 wĕnĕs ni muꝁa ni ṅhulun hañutĕn iŋ wulan inĕmukan iŋ lamad lamad*
 
 pamādapa ni mađya ni ṅhulun aros kirimakĕn iŋ aśokapādapa,
-Ĕbun hana ri tuṅtuŋ iŋ trĕṇalatāṅkura patuwawanê luḥ i ṅhulun,
+Ĕbun hana ri tuŋtuŋ iŋ trĕṇalatāṅkura patuwawanê luḥ i ṅhulun,
 lawan pañurigênunus ni paṅawakku rakĕtakĕna denta riŋ tulis,
 luṅid ni kuku ni ṅhulun turuŋ aṅanya ri jaja jajaṙ iŋ sĕkaṙ taji*
 
-nahan śruti ni de nikânaṅis atuṅtuŋ ucapan amĕlas mĕlas harĕp,
+nahan śruti ni de nikânaṅis atuŋtuŋ ucapan amĕlas mĕlas harĕp,
 samasta para dèwa sūkṣma humĕnĕŋ tinaṅisan ika tan hanâṅlawad,
 Arĕs hawa hawākĕnâwĕdi kumöl wruḥ i gĕgĕḥ i wuyuŋ dwijeśwara,
 paḍâṅrĕs anaṅis naṅis taṅis ikā piniturun ika muṅgu riŋ waneḥ*
@@ -448,7 +448,7 @@ maṅke pwâṅdadi rājaputra kita heṙ ṅhulun atĕmaha rājaputrikā*
 
 hāḥ swāmiṅku dudut ṅhulun ri juraŋ iŋ lĕpihan alal aṅölakĕn laṅö,
 hĕmban riŋ wwat aśokapādapa tĕṅaḥku pagamĕlana luṅgaḥ iŋ gaḍuŋ,
-suṅsuŋ riŋ maṅunĕŋ galuḥ lulut unĕṅku ri kita kaka tan wĕnaŋ kinas,
+suŋsuŋ riŋ maṅunĕŋ galuḥ lulut unĕṅku ri kita kaka tan wĕnaŋ kinas,
 riŋ paṇḍan haḍaṅĕn ṅhulun lumaku śoka laku laku ṭikâhawan puḍak*
 
 nāhan ṅrĕs ṅrĕs i samba sambat ika kāsihan alal apasaḥ lawan priya,
@@ -498,7 +498,7 @@ de niŋ mĕñcuḥ aṅambĕk ambĕki saƀāwa nira tĕka hirĕŋ kineriṅan,
 suswan bāhwan agasyak aṅhalĕpakĕn wruḥ iŋ aṅinakanê tuhan tuhan*
 
 lāwan towi nirâhalĕp marĕka hadyana kunaŋ asawaŋ priyambada,
-ndan paṙṇnaḥ kaka de nirêña nira kaṙwwa sira paḍa suśīla wīṙyyawan,
+ndan paṙṇnaḥ kaka de nirêña nira karwa sira paḍa suśīla wīṙyyawan,
 kāliḥ kāliḥ irâṅharis haris anuswani rahina wĕṅî suputrikā,
 saṅkêŋ swaṙgga hulun tuhâṅgĕḥ ira ṅūni ri hana nira riŋ kadewatan*
 
@@ -513,7 +513,7 @@ nistanya n wiparīta rūpa nika tan kasaḥ i paḍa narendraputrikā,
 himpĕṙ peka minantryakĕn huwus aƀūṣaṇa hinalĕpakĕn yayâhala*
 
 rakryan rājasutânwam eṅgal atuhâṅiṅĕt iṅĕtakĕn aṅdĕlö tawaŋ,
-Aṅliṅliŋ kinahaṙṣan iŋ kaka kakâmwaṅi sira rinĕbut pinaṅkwakĕn,
+Aṅliŋliŋ kinahaṙṣan iŋ kaka kakâmwaṅi sira rinĕbut pinaṅkwakĕn,
 kahyun hyun kumurĕb kurĕb kumĕdal asriŋ aniru niru putra niŋ pĕñu,
 wahw-âhuntw-aputiḥ katon sĕḍĕŋ irâsĕmu guyu baṅun aṅhĕmū mĕnur*
 
@@ -530,7 +530,7 @@ maṅkin tībra raras narendratanayâhayu ri huwus ira n paweḥ ala*
 Anwam tapwan apâsarik hayu nirân inaṅĕtan apupuk ri wunbunan,
 tan paṅde hala tambĕḥ iŋ hayu bajaŋ bajaŋ ira mata niŋ lawak bulu,
 pantĕs yan pagĕlaŋ lawe wĕnaŋ i kāla nira kapĕjahan rare bajaŋ,
-tambā niŋ sĕgu tuṅtuŋ iŋ sĕrĕḥ aṅimbuhi manis ira yan hanê rahi*
+tambā niŋ sĕgu tuŋtuŋ iŋ sĕrĕḥ aṅimbuhi manis ira yan hanê rahi*
 
 ndi nyū danta paḍā mĕne n lĕwiha yan marĕk i sira sĕḍĕŋ pinaṅkwakĕn,
 lāwan ketaka dūra n aṅhiriba nista nika n inuparĕṅgan iŋ ṭikā,
@@ -567,7 +567,7 @@ yan paṅhyas hyasi moǥa tan kawanĕhan tiniru tiru sade nirâṅhyasi,
 sotan ta ṅhyaŋ iŋ indraloka kapana n tan apĕnĕda tĕmaḥnya mānuṣa,
 lakṣmī niŋ nagarâhulap mulat i rūpa nira n ahayu katwaŋ iŋ tulis*
 
-miṅkil tapwan agöŋ payođara nirâṅlĕwihi buṅaḥ i tuṅtuŋ iŋ gaḍiŋ,
+miṅkil tapwan agöŋ payođara nirâṅlĕwihi buṅaḥ i tuŋtuŋ iŋ gaḍiŋ,
 hyaŋ hiŋ tāman aṅiṇḍarat sĕmu ni rūpa nira n ahayu muṅgu riŋ taman,
 tistis lālana tan hanâṅiriṅakĕn laku nira kadi tan tuhan tuhan,
 molaḥ sumpiŋ irâsanâlum awĕnĕs baṅun awĕdi ri luñcip iŋ mata*
@@ -575,7 +575,7 @@ molaḥ sumpiŋ irâsanâlum awĕnĕs baṅun awĕdi ri luñcip iŋ mata*
 paṅrāt niŋ kalaṅön tinurwakĕn irêŋ watu karaŋ aṅilo wway iŋ ranu,
 tan śoƀā humiriŋ lumaḥ makakaraŋ hulu lĕṅĕn ira mūṙcꞓitâṅligā,
 paṇḍan raṅkaŋ aṅöbi tan panisi mātra ri sira n apulaŋ lawan hrĕbuk,
-Amrĕm kaṙwwa karas lĕṅĕŋ kadi ṭikā piniturun inamĕṙ sakêŋ puḍak*
+Amrĕm karwa karas lĕṅĕŋ kadi ṭikā piniturun inamĕṙ sakêŋ puḍak*
 
 maṅkin maṙmma narendra māsiḥ anĕkāni samaṅinakanê manaḥ nira,
 budđi śrī parameśwarī suꝁa makānak i sira samanaḥ nirênariḥ,
@@ -625,7 +625,7 @@ himpĕṙ hantiga niŋ manuk taḍahasiḥ sy-anaku tinuwawākĕn iŋ waneḥ*
 wuṅsw-amwīta bibinta matya tumutê kapati saŋ ahulun ṅhulun tuhan,
 lwâmbĕk māsku saŋ aprihêŋ ƀuwana sĕmbahĕn iŋ amawa rāt kitânaku,
 Ꜽ putrîndumatīṅku māsku t ahurup tapiḥ alaḥ ibu kenku kenakĕn,
-soṅsoṅaṅkwa tapiḥta kaṙwwana lawan haji lĕpasa mamukṣa mukṣana*
+soŋsoṅaṅkwa tapiḥta karwana lawan haji lĕpasa mamukṣa mukṣana*
 
 sĕmbaḥ ni ṅhulun alpađaṙmma ri paḍadwaya paramawiśeṣapaṇḍita,
 pun dewîndumatī kayatnakĕna de wiwuđapati bapebwa māsiha,
@@ -650,7 +650,7 @@ mājaṙ yan sira milwa matya pawaraḥ nira karaṇa ni luḥ niŋ aṅrĕṅö
 he nāŧaṅku nihan ṅhulun praṇata ƀakti tumuta saparanta tan saha,
 yadyastun kita dewatâŧawa manuṣya huluna pakĕnaṅkwa de haji,
 putrī putra rarā sĕḍĕŋ mĕrĕ mĕrĕḥ kaŧamapi tan ikā katoliha,
-patrĕmta praƀu yeki haṇḍĕmana ni ṅhulun amaḥ aku suṅsuŋ iŋ hĕnū*
+patrĕmta praƀu yeki haṇḍĕmana ni ṅhulun amaḥ aku suŋsuŋ iŋ hĕnū*
 
 nā liŋ śrī parameśwarī nĕhĕṙ apatrĕm amĕkasi hurip sirâsĕgu,
 himpĕṙ waṙṣa tibā nikaŋ luḥ i widaṙbƀanagara humilī mawaḥ wahan,
@@ -664,7 +664,7 @@ his hīs niŋ bañu muṅgu riŋ tarĕtĕpan kadi luḥ iŋ anaṅis pinaṅkwak
 
 muṅgw-iŋ maṇḍyusa kāli kāliḥ ira moǥa kadi kinasut iŋ pasaṅgaman,
 keṅĕṙ mātra gulū narendramahiṣī kadi cala cala tan panūt kinol,
-piṅgiṙ niŋ kanin iŋ jajâsĕmu miraḥ kadi karagĕt i tuṅtuŋ iŋ kuku,
+piṅgiṙ niŋ kanin iŋ jajâsĕmu miraḥ kadi karagĕt i tuŋtuŋ iŋ kuku,
 rāhĕn siñjaŋ ira n lume miṅay awaṙṇna wahu kawawa de nareśwara*
 
 śrī dewîndumatī lĕwĕs lara nira n panaṅis asidĕhâṅure gĕluŋ,
@@ -749,7 +749,7 @@ tiṅkaḥ niŋ hurip iŋ manuṣya juti tattwa nika tan alawas wawaŋ hilaŋ,
 kintw-îkaŋ pati jāti tattwa nika tan kṣaṇika pinakađaṙmma niŋ dadi*
 
 Eman ṅwaŋ lumĕkas mamet pati sakêŋ lumĕkasa ri kapetan iŋ hurip,
-pöṅpöṅĕn ta huripta yogya dadahanta makahuluna de munīśwara,
+pöŋpöṅĕn ta huripta yogya dadahanta makahuluna de munīśwara,
 Āpan yan wruḥ i ƀeda saŋ rwa kalawan wruha ri pasamudāya niŋ tiga,
 Icꞓā nora kasaṅśayêŋ hala lawan hayu niyata luput sakêrika*
 
@@ -839,7 +839,7 @@ Anwam muwaḥ nrĕpati liŋnya muwaḥ manĕmbaḥ*
 
 sāmpun sirâyugala ratna wiśeṣaputrī,
 rājāṅkurâwilĕt ikaŋ pakurĕn sawanđu,
-soluṙ lulut sahati lĕŋlĕŋ aluṅluṅan kuŋ,
+soluṙ lulut sahati lĕŋlĕŋ aluŋluṅan kuŋ,
 saśrī sakĕmbaŋ alaṅö sakurā sawīja*
 
 kaywan ragas paḍa nikaŋ nagarî widaṙbƀa,
@@ -944,7 +944,7 @@ simpaŋ niŋ hati yeki kāraṇa nirânaṅhāra saŋ hyaŋ śiwātma*
 ri huwus ira mamūjā līlā śudđa manaḥ ira,
 Aṅusapi muꝁa saśrī de niŋ candana karakĕt,
 mijil aṅinaŋ aṅicꞓā riŋ wwꜽ niŋ ranu maṅilo,
-nĕhĕṙ anisigi dantê tuṅtuŋ niŋ gagaŋ inapi*
+nĕhĕṙ anisigi dantê tuŋtuŋ niŋ gagaŋ inapi*
 
 tucapa ta para mantrī śꜽwa brāhmaṇa sugata,
 parĕŋ apupul asewa ṅkānê jro paḍa humatur,
@@ -1036,7 +1036,7 @@ ndaḥ rakryan jayawaspa teki wĕkasan ṅaran ika satĕwĕk nikā marĕk*
 para praƀu kaḍaṅhanan turida rāga nira sinaput iŋ smarâmulaṅuni,
 huwus katĕka kuŋ nirâhawan ujaṙ tuhun amĕlas arĕp riniptakĕn ira,
 lawan punagi kesy-anambaha ri jöŋ nrĕpawaraduhitā hana hyuna nira,
-Akiṅkiŋ aṅalap kasoṙ paḍa tan apraƀu sahana nirârĕbut kahulunan*
+Akiŋkiŋ aṅalap kasoṙ paḍa tan apraƀu sahana nirârĕbut kahulunan*
 
 wawaŋ nrĕpatiputrikā rinĕbut iŋ hiḍĕp inaṅĕn aṅĕn raras raras ira,
 hanan kahiḍĕp iŋ mađubrata rĕṅiḥ rĕṅiha nira n arĕs kapaṅkwa harasĕn,
@@ -1140,7 +1140,7 @@ toḥ toḥ nyân iŋ agĕgwan ambĕk apagĕḥ mapa tiki n alaḥ aṅgĕgö sm
 Aṅlampwâṅusirê paḍadwaya nirân panikĕlakĕna tuṙ humaṇḍĕma*
 
 strī saŋsāra sarāga mohita sawaŋ wana gahana kalahrwan iŋ kapat,
-trāsa twasnya kakiṅkiṅan ginĕsĕṅan pinarawaśa tinunwan iŋ smara,
+trāsa twasnya kakiŋkiṅan ginĕsĕṅan pinarawaśa tinunwan iŋ smara,
 norânīsi manaḥnya kewala panasbaran alisuḥ aṅölakĕn lara,
 maṅke pwa n karĕṅö gĕrĕḥ saŋ aja mañjiŋ aluŋ asĕmi kuŋ nikâsĕwö*
 
@@ -1258,9 +1258,10 @@ halisnya minahānya molaḥ amaṅun gĕt unĕŋ arĕṅu maṅlare ri saŋ aja*
 strī stry-âṅucap sojaṙ ikā yinuktyan,
 liŋnyê narendrātmaja mūḋabudđi,
 Akweḥ sira ṅke nagarī ry-ayođyā,
+sāmantaputrī paḍa yogya-yogyan*
 
 yadyan tĕkā dlāha sirê widaṙbƀa,
-tan suṅsuṅĕn riŋ kakawin wilāpa,
+tan suŋsuṅĕn riŋ kakawin wilāpa,
 tan kewwa riŋ rāga tĕkap suputrī,
 ƀagnapratijñā mulihêraŋ eraŋ*
 
@@ -1370,7 +1371,7 @@ pinĕga tinĕpa de niŋ molaḥ ṅūni riŋ alawas,
 sahaja maliwat i jro ṅkân līlâmĕkasi parab,
 dadali nika laki strī prāptânambĕṙ asahuran*
 
-lura luraḥ aparĕk lwaḥ guṅguŋ wwꜽnya ḍinawuhan,
+lura luraḥ aparĕk lwaḥ guŋguŋ wwꜽnya ḍinawuhan,
 papupulan ikaŋ aṅhwan ramyâḍöm aṅariŋ ariŋ,
 paḍa marĕk adum uṅgwan yan wwaŋ śreṣṫi humaliwat,
 Asila sila ri piṅgiṙ niŋ māṙggâmalaku sĕrĕḥ*
@@ -1417,15 +1418,15 @@ pinakabañu bañu ṅke ṅhiŋ yan len juga yan ikā*
 
 wulatana kakudeśanyâŧānî gĕgĕṙ asĕpi,
 ya tuna tuna sĕrĕḥ wwaḥ tĕkwan tan hana dinadak,
-palapat alas agaṙyyaŋ gaṙyyaŋ tan sawĕgilana,
+palapat alas agaryaŋ gaṙyyaŋ tan sawĕgilana,
 linĕṅĕṅakĕn iŋ ambĕk maṙmmanya n rĕsĕp alaṅö*
 
 Aluru wahu kalahrwan kaywanya n śrawaṇamasa,
 Asĕpa humuraŋ awyaŋ rurwan ronya kapawanan,
 Analukati tĕlā wwad niŋ saṙwwatrĕṇa riŋ ayun,
-pĕjaḥ amĕkasi kiṅkiŋ luŋ niŋ jaṅga kapanasan*
+pĕjaḥ amĕkasi kiŋkiŋ luŋ niŋ jaṅga kapanasan*
 
-tĕwĕk i ragas i kaywanya n kaṙwwâraras alaṅö,
+tĕwĕk i ragas i kaywanya n karwâraras alaṅö,
 tĕṅaḥ i tal ika mambĕt mambĕt kāṅinan aṅĕliḥ,
 manis i lahaŋ ikâṅhiŋ panraŋ nraŋ wulat amanis,
 tiniru tiru niŋ ahyas ronyâṙjjâpataḥ akiris*
@@ -1500,7 +1501,7 @@ kadi baribina saŋ hyaŋ riŋ swaṙggâtukupa kapö*
 
 luṅhā ŋ māsa piliḥ tĕṅaḥ wĕṅi tiḍĕm sahana niŋ aṅinum paḍâturū,
 tistis nora mumik tuhun saŋ aja tan mrĕm amaṅu maṅu tan kĕnêŋ turū,
-Aṅhiŋ rāmya rinĕṅwakĕn panalimuṙ nalimuṙ ira ri kiṅkiŋ iŋ hati,
+Aṅhiŋ rāmya rinĕṅwakĕn panalimuṙ nalimuṙ ira ri kiŋkiŋ iŋ hati,
 gĕṇḍiŋ walyan arūm swaranya karĕṅö sawĕṅi kiniduṅan kiduŋ buwun*
 
 loṙ wetan pamalantĕnan kaparĕk iŋ lwaḥ adalĕm asamīpa paṅdyunan,
@@ -1508,7 +1509,7 @@ wwaŋnyâwuṅw-amasaŋ damaṙ wruḥ i masanya n amalu malu meḥ tibā ṅĕn
 tan paśrī swara niŋ palu dyun asarag tĕwas amaribini ŋ wwaŋ aṅrĕṅö,
 Endaḥ mwaŋ palu wastra rāmya kadi de niŋ amalu daluwaŋ rinĕṅwakĕn*
 
-Aṅdyun kaṙwwa rabinya tan padiwasâwiḍiṅan awurahan siliḥ cacad,
+Aṅdyun karwa rabinya tan padiwasâwiḍiṅan awurahan siliḥ cacad,
 nitya ŋ śabda paḍêṅgal asrak amalĕs hinalan uliḥ ikâgawe ǥaṭa,
 strīnyâmet parihāra tan wĕdi kadūṣana n ahala gawe nikā paṭa,
 kahyun hyun kadi śꜽwa sogata mapaṅǥaṭapaṭa juga hetu niŋ humuŋ*
@@ -1671,7 +1672,7 @@ sirâdiganđaṙwwapatî kadewatan*
 
 ṅhulun sakêŋ swaṙgga wiśāta lālana,
 Anuṅga nuṅgal mahas iŋ wanāntara,
-tĕkêŋ pasiṙ tan hana tan kalaṅlaṅan,
+tĕkêŋ pasiṙ tan hana tan kalaŋlaṅan,
 laṅö niŋ ambĕk saparan tinūtakĕn*
 
 <basantatilaka> 
@@ -1700,7 +1701,7 @@ maṅhyaŋ ry-anugraha nirê rikaŋ antaśāpa*
 mojaṙ sirâsĕmu manis tĕkap iŋ tumiṅhal,
 Om haywa saṅśaya ri sidđa niŋ antaśāpa,
 tan lupta yan tĕka hĕlĕm saŋ ajâhawan ṅke,
-tuṅtuŋ ni sañjata nikā hawananta mantuk*
+tuŋtuŋ ni sañjata nikā hawananta mantuk*
 
 sāmpun sirâmĕkasakĕn wacanântaśāpa,
 luṅhā sira ṅhulun aṅanti humeṙ tĕkanta,
@@ -1724,7 +1725,7 @@ jñānanta maṅlĕpasakĕn saha mantra sidđi*
 
 Atyanta yogya yan ajinta ya kawruhanta,
 kārāđananya saha mantra sahêndikanya,
-pöṅpöŋ ṅhulun wruḥ i wĕkas ni rusit rusitnya,
+pöŋpöŋ ṅhulun wruḥ i wĕkas ni rusit rusitnya,
 śaktinya kawruhan anambĕhanê guṇanta*
 
 ndātan pamatyani guṇanya yadin guṇanta,
@@ -1734,7 +1735,7 @@ nistanya maṅkana yayā kita yan jayêŋ praŋ*
 
 he saŋ priyambada kita n paṅutus paṅajya,
 moǥâwiraŋ hulun apan gumawe laranta,
-ṅūnî sĕḍĕṅta matĕmaḥ gajamattarūpa,
+ṅūnî sĕḍĕŋta matĕmaḥ gajamattarūpa,
 tan len ṅhulun kaṅaraṇan karaṇanta māti*
 
 hā hāḥ hade saŋ aja denta manaṅgaḥ eraŋ,
@@ -1797,11 +1798,11 @@ runtuḥ piṅgiṙ ikâtĕmaḥ jawuḥ anūtakĕn aṅin alaṅö tibânisiḥ
 
 rāmya lwiṙ siluman karaŋ ri muꝁa niŋ muhara paḍa paḍâṅhapit bañu,
 Alwā tiṅkaḥ i meꝁalanya ri tĕṅaḥ paṅadĕg adĕgan iŋ marâṅlĕṅĕŋ,
-kaṙwwânuṅgul apāntaran sapaṅuhuḥ kadi gupura śiwak sakêŋ adoḥ,
+karwânuṅgul apāntaran sapaṅuhuḥ kadi gupura śiwak sakêŋ adoḥ,
 lwiṙ hambal sꝑaṭikâŋ alun turunan iŋ kawi pĕjaḥ atuhâṅhañut laṅö*
 
 priṅgâhrit tĕpi niŋ samudra kadi paṅhinĕpan i lĕṅĕŋ iŋ labuḥ kapat,
-lwiṙ prāsāda pukaḥ karaŋ ni paraṅanya hana kadi siluṅluŋ iŋ kawi,
+lwiṙ prāsāda pukaḥ karaŋ ni paraṅanya hana kadi siluŋluŋ iŋ kawi,
 Ꜽṙttambaŋnya baṅun wwit iŋ truḥ asĕwö kilat awilĕt alūŋ awaṅkawa,
 lumrâwaṙṇna rĕṅit kukusnya sinawat sawat inidĕran iŋ guruṇḍaya*
 
@@ -1921,7 +1922,7 @@ Akweḥ pahutaṅan i sawaḥ gaganya paḍa tan hana maṅinak inak,
 lumbuŋnya kasiḥ arĕp aninya ya n milu katuṅkĕb alawas aṅariŋ*
 
 Akweḥ wray anusup anukĕt nukĕt baṅun amet kayu parĕŋ adulur,
-ḍaṅḍaŋnya lumĕkas aṅatĕṙ sĕsĕḥ kaṅĕlihan sawaŋ aṅipil ipil,
+ḍaŋḍaŋnya lumĕkas aṅatĕṙ sĕsĕḥ kaṅĕlihan sawaŋ aṅipil ipil,
 pakṣinya palatuk amaduŋ maduŋ kahiḍĕpanya n amahayu kuwuŋ,
 wwaḥ niŋ kamalagi tumatiŋ katon kadi caluk niŋ anutu nutuhi*
 
@@ -1964,7 +1965,7 @@ yayâtaḥ wrĕtta śrī raǥusuta karĕṅw-an sira tĕka,
 wulat herĕn taŋ wwaŋ sanagara paḍâlaḥ rĕṅĕ rĕṅön*
 
 lumampaḥ saŋ ƀojâmapag i saŋ ajâpan sira tĕka,
-kasuṅsuŋ riŋ māṙggâṅucap ucap aluṅguḥ paḍa suꝁa,
+kasuŋsuŋ riŋ māṙggâṅucap ucap aluṅguḥ paḍa suꝁa,
 parĕŋ maṅkat ramyâduluṙ iniriŋ iŋ wwaŋ sanagara,
 Ikaŋ rājya lwiṙ bĕntara muꝁa nikân aṙdđa marupĕk*
 
@@ -2070,7 +2071,7 @@ tañjuŋ muṅgw-i kapö nira n mrik inaṅit marĕk araras anulya nulyani*
 prāptôliḥ kalaṅön ikāŋ asana rāmya pinakakalasā nirâturū,
 mwaŋ roṇḍonya tinap rinūpaka tilam sinalinan i sĕḍĕŋ nikâluñut,
 maṅgā sĕmpalĕn aṅkĕn eñjiŋ alapĕn humatura śayanā nira n rimaŋ,
-swaṙgga n māti kakiṅkiṅan huwus akīṙtty-amihutaṅi laṅö ri jöŋ nira*
+swaṙgga n māti kakiŋkiṅan huwus akīṙtty-amihutaṅi laṅö ri jöŋ nira*
 
 moliḥ waṙṣa sipat nirârahat i solaḥ ika tĕka hirĕŋ hanê mata,
 kālanya n kahĕmū sĕpaḥ nira baṅun pinakaliḍaḥ ira n hanê tutuk,
@@ -2115,7 +2116,7 @@ wiđi saŋ praƀu samƀawa kĕkĕsakĕnê hati yogya dahat,
 dumadak pwa hade n katĕkana rinasan ri manaḥta tuhan,
 pira haywa nikâṅucapa n ahala yan hiniḍĕp mahala*
 
-pituhun wiđi saŋ praƀu tuhan anipis kawiraṅta hade,
+pituhun wiđi saŋ praƀu tuhan anipis kawiraŋta hade,
 paḍa wāhu ḍatĕŋ sahana hana nikaŋ pariwāra marĕk,
 Amahuṙ hurakĕn ri para ratu pinetnya sirêŋ wĕgilĕn,
 sira saŋ kinabehan inalĕm ika rĕṅwakĕnanta tuhan*
@@ -2125,7 +2126,7 @@ sira saŋ kinabehan inalĕm ika rĕṅwakĕnanta tuhan*
 
 saŋ nāŧêŋ magađa praƀāwa nira tan patĕpi kadi laṅit maṅambara,
 lwiṙ widyāđara daṙśśanīya pakatonan i bala nira śūra dug siṅī,
-Ahyaŋ solaḥ irâmanis kawadi de nira lituhayu tan pasiṅsiṅan,
+Ahyaŋ solaḥ irâmanis kawadi de nira lituhayu tan pasiŋsiṅan,
 sākṣāt indra sakêŋ surālaya kaweni tumuta mijilêŋ swayambara*
 
 krūrākāra saŋ aṅgaṇāŧa sanirukti sira yan aruhuṙ sulakṣaṇa,
@@ -2270,14 +2271,14 @@ Ikaŋ apalaran anwam wruḥ têŋ śāstra wiku haji,
 lilu tumakula lampūn dan yan paṇḍita nagara,
 Atuha tuha bagañjiŋ byaktâṅhöbi yan inusir*
 
-kunaŋ amuhara kiṅkiŋ yan bot swan sipi mararas,
+kunaŋ amuhara kiŋkiŋ yan bot swan sipi mararas,
 wiku miraḥ aguṇâśrī maṅgĕḥ wikwa narapati,
-sira ta siwin ahaṙyyan santoṣâmalara dĕmak,
+sira ta siwin aharyan santoṣâmalara dĕmak,
 palumutana yan anwam yan wrĕdđâpuput anadi*
 
 taha sanu yan i rantĕntâṅhiŋ tyāga juga siwin,
 sipi raras iŋ ataṇḍaŋ deśâdoḥ mahas alaṅö,
-lĕwu suꝁa niŋ akaṙwwan soṅsoŋ yan jamaŋ anipis,
+lĕwu suꝁa niŋ akarwan soŋsoŋ yan jamaŋ anipis,
 pakararas ika paṅkun gantin mwaŋ palu daluwaŋ*
 
 tuhu marika wuwusta ndan son moǥa salaḥ ile,
@@ -2364,7 +2365,7 @@ paṙṇnaḥ loṙ maṅuṅaŋ tasik muꝁa nikā dunuṅan i kĕñaṙ iŋ ni
 tĕkwan pwêki n anak wĕsi nrĕpati kawwaṅan ika wĕka niŋ sinanmata,
 yadyastun kilalan tĕkap saŋ ahulun pawĕkasakĕna riŋ marêŋ pasir,
 byakta n mantuka moliḥ oliḥ alaṅö haturakĕna ri jöŋ nareśwara,
-cihnanya n kawi kaṙwwa kāsiḥ ika wāhu wihikan asaƀā saƀâmasir*
+cihnanya n kawi karwa kāsiḥ ika wāhu wihikan asaƀā saƀâmasir*
 
 nāhan wastu ni denya mojaṙ api doḥ ndan aƀimata nikê suputrikā,
 śrī dewîndumatī huwus wruḥ iŋ apa n kasiliba riŋ ujaṙ samaṅkana,
@@ -2394,7 +2395,7 @@ Eñjiŋ meḥ tumibā ŋ ḍawuḥ pitu samaṅkana mawuṅu tinaṅhi niŋ cucu
 Aƀrā kaywan ikaŋ wukiṙ wijaḥ arūm kadi pinisalinan sĕkaṙ miṅiŋ,
 len taŋ saṙwwalatâwilĕt samaṙ arok baṅun ahurupa luṅgu luṅguhan,
 sakweḥ niŋ kayu mās lawan kayu puriŋ paḍa paḍa masuṅut wĕlas harĕp,
-ṅkānê piṅgiṙ ikaŋ juraŋ pĕtuŋ ikā paḍa kadi pinituṅtuṅan limut*
+ṅkānê piṅgiṙ ikaŋ juraŋ pĕtuŋ ikā paḍa kadi pinituŋtuṅan limut*
 
 sore ry-ampĕḥ ikaŋ jawuḥ kari gĕrĕḥnya muni pinakarāmya niŋ wukir,
 lāwan meǥa marantayan tura turaḥnya siniriṙ iŋ aṅin pĕgat pĕgat,
@@ -2432,7 +2433,7 @@ kunaŋ pwâpan prajñā sira sumahuṙ apyak saha guyu*
 ndatan moli n hyaŋ śrī winijilakĕn iŋ kṣīrajalađi,
 parĕŋ lāwan catrāśwa kapat ira tekîkaŋ amrĕta,
 Apaṅgiḥ mwaŋ hyaŋ wiṣṇu hana riŋ anantāsana sadā,
-ya hetunya n soṙ liṅta ŋ acala tĕkap niŋ jalaniđi*
+ya hetunya n soṙ liŋta ŋ acala tĕkap niŋ jalaniđi*
 
 kaka ndi n sora ŋ paṙwwata tĕkap i rūm niŋ jalaniđi,
 Apan lwiṙ wruḥ riŋ swaṙgga ŋ aṅahasi puñcak niŋ acala,
@@ -2515,11 +2516,11 @@ tuṅgal waṙṇna nikâbuṅaḥ kadi wulan sasiki pinarawĕñca niŋ smara*
 Aśrī waṙṇna saŋ aṅgaṇāŧa sawatĕk watĕk ira mapupul paḍâhalĕp,
 himpĕṙ sāgara lakwa lakwan ira rāmya tan asĕpi kapiŋ rwa niŋ laku,
 tĕkwan rūpa nirâsĕḍĕp tan ahañaŋ huwus amuyahi ri twas iŋ rimaŋ,
-tan tuṅgal stry-aṅaraŋ tumon sira manaḥnya kalara lara kaṙwwaban laṅö*
+tan tuṅgal stry-aṅaraŋ tumon sira manaḥnya kalara lara karwaban laṅö*
 
 lwiṙ guntuṙ saŋ awantināŧa tĕka gumrĕbĕg ahalĕp anuṅgaŋ iŋ raŧa,
 himpĕṙ truḥ sumaput lĕbū nira mĕlĕk pĕtĕŋ alimunan aṅhudan hawu,
-sakweḥ niŋ maṅuṅaŋ paḍa mrĕm apĕpĕt mĕpĕti muꝁa ri tuṅtuŋ iŋ sabuk,
+sakweḥ niŋ maṅuṅaŋ paḍa mrĕm apĕpĕt mĕpĕti muꝁa ri tuŋtuŋ iŋ sabuk,
 Agraḥ rūpa nikaŋ kaḍatwan i kĕtug ni paḍahi nira mapratiđwani*
 
 <sragđara> 
@@ -2554,7 +2555,7 @@ tiṅhalnyâdu baṅun kilat lumarap aṅluru luru ri huwus nikaŋ jawuḥ,
 sambat sambat ikā ginūḋa kadi mĕtwa marĕṅana kalaṅwan iŋ patĕr*
 
 liŋnyê twasnya ƀaṭāra manmaŧa manĕḥta kawĕlas arĕp aṅhiḍĕp lara,
-kiṅkiŋ rāga tĕkânaput prihati māṙ pinuhara nika tan wĕnaŋ kinas,
+kiŋkiŋ rāga tĕkânaput prihati māṙ pinuhara nika tan wĕnaŋ kinas,
 maṅke kāla nikaŋ swayambara tĕkâmarupuhi sahasâṅrĕmĕk hati,
 Aṅgyat lwiṙ hudan adrĕs iŋ katiga tan pakakaraṇa karĕṅwan iŋ gĕrĕḥ*
 
@@ -2712,7 +2713,7 @@ tan paṅgintiṙ i rūm nirâsĕmu jamuṙ hapa hapa marĕk iŋ jamuṙ wulan*
 denyâṅlaṅkahakĕn sukunya kadi tan lĕpasa tĕkap i lon ikaŋ laku,
 mĕñcuḥ mĕñcuḥ aṅambĕk ambĕki pupūnya hana bĕnĕṙ adĕgnya pet ulaḥ,
 kahyun hyun laris iŋ wĕtis tan alaris laku nika minahā hinerakĕn,
-Aṅjiṅjiŋ sasisiḥ mĕluk tuṙ ika mātra wagĕd aniru lampaḥ iŋ tulis*
+Aṅjiŋjiŋ sasisiḥ mĕluk tuṙ ika mātra wagĕd aniru lampaḥ iŋ tulis*
 
 strī strī saƀya wicakṣaṇânagara nora kakuraŋ ika pantĕs iŋ saƀā,
 kady-ânaṇḍuṅakĕn rwi de nika lumampaḥ arĕṅu sahajâṅhĕmū guyu,
@@ -2798,7 +2799,7 @@ Aṅhiŋ gīta panĕmba nĕmbaha nika n huwus inuƀaya mantukêŋ bibi*
 <śāṙddūlawikrīḍita> 
 – – – | ⏑⏑– | ⏑– ⏑| ⏑⏑– | – – ⏑| – – ⏑| ⏓ = 19
 
-nāhan liŋ nira n aṅlipuṙ lipurakĕn kiṅkiŋ nirê twas nira,
+nāhan liŋ nira n aṅlipuṙ lipurakĕn kiŋkiŋ nirê twas nira,
 kāsiḥ kāsiḥ irâṅlawan lawani goṣṫy âpan huwus wruḥ kawi,
 wwaŋ śrĕṅgāra wicakṣaṇâṅrahati sojaṙnyân asiḥ saŋ praƀu,
 pet pet haṙṣa sahuṙnya rāgakaraṇa wruḥ riŋ kasöṅan smara*
@@ -2808,23 +2809,23 @@ tonĕn de nrĕpati ndya taŋ mađukarā hānê kucup niŋ sĕkar,
 lāwan yan lĕwasa ŋ rarâpa pakĕnanyâpan lĕwas riŋ raras,
 paṅliṅganya sĕkaṙ lĕwas pisaniṅū kumbaŋ marâṅambuṅa*
 
-saŋkṣepanya sĕḍĕŋ rarā bwatana kiṅkiŋ hundaṅĕn riŋ ṭikā,
+saŋkṣepanya sĕḍĕŋ rarā bwatana kiŋkiŋ hundaṅĕn riŋ ṭikā,
 maṅgĕḥ de niŋ aṅolakĕn tĕṅaḥ ikā sāmpun pinaṅkw-âṅliga,
 kady-aṅgān i sĕkaṙ nikāŋ asana yan mĕmbaŋ katampwan riris,
 ṅkāna ŋ ṣaṭpada miwya yan ƀramara saṅjñānya n jĕnĕk tan midĕr*
 
 nāhan denya n apet sahuṙ mĕtu rarasnya n pāwak iŋ rāsika,
 tambā niŋ rimaŋ aṅlawaŋ lawaṅi kuŋ pet rāga denyâṅucap,
-lwiṙ truḥ niŋ mađumāsa kāraṇa ni kiṅkiŋ śrī narendrâsĕwö,
-mambö ken lukaṙ iŋ tilam sahuṙ irâtuṅtuŋ rum iŋ saṅgama*
+lwiṙ truḥ niŋ mađumāsa kāraṇa ni kiŋkiŋ śrī narendrâsĕwö,
+mambö ken lukaṙ iŋ tilam sahuṙ irâtuŋtuŋ rum iŋ saṅgama*
 
 <jagadđita> 
 – – – | ⏑⏑– | ⏑– ⏑| ⏑⏑– | ⏑⏑⏑| ⏑⏑⏑| – ⏑– | ⏑⏓ = 23
 
-kanyā liṅta hade kahaṙṣana paḍanya salaga kapana n kakūṅana,
+kanyā liŋta hade kahaṙṣana paḍanya salaga kapana n kakūṅana,
 kuŋ jaṅgâṅalayan taŧāpi kapana n pamilĕta raras iŋ rara n lĕwas,
 drĕṣṭāntanya sĕkaṙ lĕwas riŋ apa rakwa wulatana mĕne n kasumpiṅa,
-kiṅkiŋ tībra yan iŋ sĕḍĕŋ rara rarasnya paḍa paḍa lawan jraḥ iŋ sĕkar*
+kiŋkiŋ tībra yan iŋ sĕḍĕŋ rara rarasnya paḍa paḍa lawan jraḥ iŋ sĕkar*
 
 yêkā têka hade paṅawruhana campaka salaga nika n kinahyunan,
 yadyan sumpiṅa niŋ maṅālihi hulĕs lĕwu raras ika yan pagantyana,
@@ -2882,12 +2883,12 @@ mūṙcꞓâpan wahu wahw-anon rakĕt aṅiṇḍarat anĕmu ṭikā tĕkâlulut
 paŋ niŋ kūŋ asĕwö wilāpa kakawin tinama tama nirê dalĕm hati*
 
 rakryan ṅke kahananku māsku mapa hetu niŋ asĕmu wiwal salaḥ wulat,
-Ahyun suṅsuṅĕn i ṅhulun karika māsku karaṇa niŋ arĕṅwa pet ulaḥ,
+Ahyun suŋsuṅĕn i ṅhulun karika māsku karaṇa niŋ arĕṅwa pet ulaḥ,
 Om om haywa miṅe nihan ṅhulun amaṅkwakĕna ri kita milw-aḍampana,
 taṅgap māsku sĕpaḥku sāmpun amiraḥ rumĕsĕpakĕna rāga ni ṅhulun*
 
 dyaḥ saŋ sāgara katruhan luḥ apasiṙ panĕpi saŋ ahĕnī hĕnī pupur,
-muṅgw-î jro hati kuṅta māsku kapana n rwaba sumapatanê kuŋ i ṅhulun,
+muṅgw-î jro hati kuŋta māsku kapana n rwaba sumapatanê kuŋ i ṅhulun,
 Ambĕk ni ṅhulun amriḥ aṅlayari tan wĕdi kajahata kombakan halis,
 swaṙggâku n karĕmêŋ tĕṅaḥta suꝁa kaprĕma kapaguta riŋ karaŋ susu*
 
@@ -2914,7 +2915,7 @@ heman māsku yatan papaṅgiha lawan ṅhulun apan awatāra niŋ smara*
 
 wruḥ ku n tan hana sanmatanta hana duṣṭa marĕki ri kitâmadohakĕn,
 tonton denta matanta mĕṅgĕp amanis dumadak arĕṅu yan tumon ṅhulun,
-paṅron wimba nikuŋ halista n abĕnĕṙ kuṭila milu ri tuṅtuŋ iŋ hiḍĕp,
+paṅron wimba nikuŋ halista n abĕnĕṙ kuṭila milu ri tuŋtuŋ iŋ hiḍĕp,
 tan saṅkêŋ hana doṣa kimburu manaḥta tĕka wiwal apeda ri ṅhulun*
 
 rakryan janma ni janma ni ṅhulun adadyana ratu tumutêŋ swayambara,
@@ -2984,7 +2985,7 @@ trĕṣṇā kūŋ ira tan katoliḥ inatīta nĕhĕṙ inilagan yayan tumūt*
 
 śrī dewîndumatī lumampaḥ aṅĕliḥ prāptê saŋ aṅgāđipa,
 ndātan wany-asaƀâhaliŋ haliṅan iŋ ceṭī paḍâkweḥ marĕk,
-tan saḥ dyaḥ jayawaspa lot linihaṅan bāhunya kaṙwwâwiḍaŋ,
+tan saḥ dyaḥ jayawaspa lot linihaṅan bāhunya karwâwiḍaŋ,
 Āpan kāsiḥ irâlawas tuwin arūm tan soṙ dahat riŋ hayu*
 
 <jagadđita> 
@@ -2996,12 +2997,12 @@ mojaṙ tan panahânĕkākĕn i lulut lulut ira ri nareśwarātmajā,
 hāḥ wāliṅku tĕkâkisapwana kita n tĕka dumadak adoḥ tĕka ŋ tamuy*
 
 Antĕnku n tuna kapwa siḥta winaliṅku tumuta saparanku tan saha,
-māskw-induŋ ndi wĕkas ni kuṅta palakuṅkwa hurupĕn i lara priḥ i ṅhulun,
-rāganta mwaŋ unĕṅku denya n ahurup tali paṅuwata kiṅkiŋ i ṅhulun,
+māskw-induŋ ndi wĕkas ni kuŋta palakuṅkwa hurupĕn i lara priḥ i ṅhulun,
+rāganta mwaŋ unĕṅku denya n ahurup tali paṅuwata kiŋkiŋ i ṅhulun,
 wet niŋ tan hana sanmatanta palarĕṅkwa karika karaṇanta tan sahur*
 
 dyaḥ saŋ haṙṣa piniṇḍa ratnawanitâṅaraṅa karaṇa niŋ lanā lulut,
-saŋ kiṅkiŋ ginawe rarâhayu sujanma karaṇa niŋ akuŋ tumon kita,
+saŋ kiŋkiŋ ginawe rarâhayu sujanma karaṇa niŋ akuŋ tumon kita,
 saŋ rāgānala maṅdadi wwaŋ amanas manasi hati kita n kinonĕṅan,
 saŋ rĕs maṅdadi janma rājaduhitâmuhara wĕdi niŋ ahyunê kita*
 
@@ -3028,10 +3029,10 @@ hetu śrī naranāŧa tan sŧiti pijĕṙ luṅhā madewāśraya,
 de niŋ hyūn ira n aṅhyaṅa ŋ nagara moǥa n kewĕhan tan hana,
 ṅhiŋ rakryan pakarājalakṣmi nira maṙmmā de nirâṅundaṅa*
 
-rakryan yan hana sanmatanta ri sirânambāna kiṅkiŋ nira,
+rakryan yan hana sanmatanta ri sirânambāna kiŋkiŋ nira,
 ndak pinta nya sĕkaṙ tajinta pamahugya mwaŋ sĕrĕḥ riŋ kajaŋ,
-taṅgap denta mĕne sĕpaḥ nira katon heman yatan suṅsuṅĕn,
-nya ŋ siṅhāsana kaṙwwananta pakisapwan māskw-i paṅkwan haji*
+taṅgap denta mĕne sĕpaḥ nira katon heman yatan suŋsuṅĕn,
+nya ŋ siṅhāsana karwananta pakisapwan māskw-i paṅkwan haji*
 
 nāhan denya n aṅĕdwakĕn nrĕpasutâhyun waspadê saŋ praƀu,
 mogâcūm ararĕm wulat nira sinuṅsuŋ riŋ wulat löṙ miṅe,
@@ -3045,7 +3046,7 @@ de niŋ ƀrānta nirâṅikĕt rasa palambaŋ paṅlipuṙ luḥ pinöm,
 
 rakryan saŋ maliŋ iŋ matâmatik i rūpaṅkw-âṅĕḍap yan wulat,
 kālap denta manaḥku mĕṅgĕp amanis rūpanta duṣṭêŋ hati,
-mukṣa twaskw-i sĕḍĕṅta mūṙ syapa ta len saṅkê kitâṅambila,
+mukṣa twaskw-i sĕḍĕŋta mūṙ syapa ta len saṅkê kitâṅambila,
 Eman māsku tuhan tuhan maliŋ atimpuḥ duṙyyaśakṣatriya*
 
 rakryan haywa kita pramāda ri surup niŋ lek mĕne riŋ wĕṅi,
@@ -3093,7 +3094,7 @@ kuṇḍaŋ kuṇḍaṅa ni ṅhulun kita mulat mulata ri kawaninku riŋ raṇa
 – – – | ⏑⏑– | ⏑– ⏑| ⏑⏑– | – – ⏑| – – ⏑| ⏓ = 19
 
 nāhan de naranāŧa mojaṙ araras mambö laṅö niŋ jinĕm,
-siṅgiḥ yan pracacaḥ karas waśa ri tuṅtuŋ niŋ tanaḥ riŋ kapö,
+siṅgiḥ yan pracacaḥ karas waśa ri tuŋtuŋ niŋ tanaḥ riŋ kapö,
 siŋ soṅkab ni tutuk nirâwĕtu laṅö kāmīrasâpet manis,
 pöḥ niŋ haṙṣa pinöm atūt guru laǥunyâṙjjâṅĕnoḥ lambaṅa*
 
@@ -3182,7 +3183,7 @@ lukaṙ iŋ tapiḥ salinanaṅkwa karatala mĕne n pamaṅkwakĕn*
 
 ndaḥ yêki n liŋ narendrârasa mijila sakêŋ ƀāṣa lāwan palambaŋ,
 sotan ta ŋ sāri niŋ rāga piturun i laṅö niŋ kawi ƀrāntacitta,
-tan paṅgintiṙ manis niŋ tĕbu sawukiṙ apan tan patuṅtuŋ manisnya,
+tan paṅgintiṙ manis niŋ tĕbu sawukiṙ apan tan patuŋtuŋ manisnya,
 maṙmmânyuḥ prāṇa rūmnyâsĕmu paṅucapan iŋ wahw-amaṅkw-âṅdudut ken*
 
 rakryan putrī mulat riŋ nrĕpati kadi wulat niŋ ṭikā riŋ wilāpa,
@@ -3211,7 +3212,7 @@ Awās rakryan glānâhuyaŋ apupul i jro pakasutan,
 hana lwaḥ ramyâlwā prakaśita si rewā ṅaran ika,
 kitâdyūsa ṅkānêsuḥ isuhana lāwan saŋ ahulun*
 
-raras niŋ kaṙwwa swāmi paran ika rakwâṅlĕwihana,
+raras niŋ karwa swāmi paran ika rakwâṅlĕwihana,
 marā riŋ tāman tan hana marĕka līlā ṅwaŋ aṅĕnĕs,
 yadin madyūsêŋ lwaḥ talaga wulakan śūnya kasĕnĕt,
 wĕnaŋ sāmbĕk niŋ swāmi tariman apan tan hana mulat*
@@ -3237,7 +3238,7 @@ tambā niŋ keraṅan tan winadal i liḍaḥ iŋ kāma nāhan rasanya*
 <nawahaṙṣa> 
 ⏑⏑– | ⏑⏑– | ⏑⏑⏑| ⏑⏑⏑| – ⏑⏑| – ⏑⏑| ⏓ = 19
 
-Ibu tan paꝑala pwa ŋ amalaṙ i hayunta sĕḍĕṅta rare,
+Ibu tan paꝑala pwa ŋ amalaṙ i hayunta sĕḍĕŋta rare,
 syapa māsku kadi ṅhulun aṅurati rāga lawan turida,
 katunan lĕpihan kita kinirimakĕnku karaskw-i kita,
 tĕka riŋ kararan pwa kita mapa tiki n sahajâpi lupa*
@@ -3268,7 +3269,7 @@ haṙṣâgyā gyān anuṅsuŋ riŋ ujaṙ akakawin lwiṙ katonêŋ palambaŋ*
 <jagadđita> 
 – – – | ⏑⏑– | ⏑– ⏑| ⏑⏑– | ⏑⏑⏑| ⏑⏑⏑| – ⏑– | ⏑⏓ = 23
 
-rakryan saŋ pinunagyakĕnku śaraṇāśraya tumuluṅa kiṅkiŋ i ṅhulun,
+rakryan saŋ pinunagyakĕnku śaraṇāśraya tumuluṅa kiŋkiŋ i ṅhulun,
 Aṅlū māsku kisapwan i ṅhulun aluṅguha kita yayi haywa saṅśaya,
 t asy-âsiḥ kita māsihê kawi guṇaṅku palaṙ amalĕsêŋ karāsikan,
 lambā kapraƀun i ṅhulun kita rumaṅkĕpana saꝑala yogya tuṅgalĕn*
@@ -3287,7 +3288,7 @@ lagy-emö pipi ni ṅhulun saƀa saƀā ni waja niŋ anulak wineḥ sĕpaḥ*
 – – – | – ⏑– | – ⏑⏑| ⏑⏑⏑| ⏑– – | ⏑– – | ⏑– ⏓ = 21
 
 sojaṙ saŋ nāŧa kady-âṅalapana kasusuk niŋ kĕnêŋ rāgapāśa,
-kady-ânambāna kiṅkiŋ niŋ amalaku suwal kewĕhan kāladeśa,
+kady-ânambāna kiŋkiŋ niŋ amalaku suwal kewĕhan kāladeśa,
 sākṣāt sambat niŋ onĕŋ kinirimakĕn apet pet manis de ni kuŋnya,
 mambö rūm niŋ katurwan winuṅu ni jarumanyânĕkākĕn wilāpa*
 
@@ -3332,10 +3333,10 @@ wwāgan moǥa gumanty-amukti lara rāga niyata sira tan kinahyunan*
 <śāṙddūlawikrīḍita> 
 – – – | ⏑⏑– | ⏑– ⏑| ⏑⏑– | – – ⏑| – – ⏑| ⏓ = 19
 
-śrī dewîndumatī ḍatĕŋ sira ri saŋ sāmpun kaciṙyyan smara,
+śrī dewîndumatī ḍatĕŋ sira ri saŋ sāmpun kaciry-an smara,
 Ewĕḥ tan kahiḍĕp harĕp nira lawan tan hyūn irê saŋ praƀu,
 ndān eman wĕkasan kataṙkkan i kalis ny-ambĕk nira n tan rimaŋ,
-Aṅhiŋ piŋ rwa mulat kapiŋ rwa sahajâtuṅtuŋ tikĕl niŋ halis*
+Aṅhiŋ piŋ rwa mulat kapiŋ rwa sahajâtuŋtuŋ tikĕl niŋ halis*
 
 sāmpun waspada doḥ i rāga nira tan tuṅgal panononana,
 suṅsut suṅsut ira n kinon marĕka len tiṅhal nirâṅrĕṅwani,
@@ -3403,7 +3404,7 @@ Antuk niŋ maṅalap manis ni kakawin saŋ wrĕḍđa wrĕdđîŋ laṅö,
 ndātan paṅgarit aṙdđa tan rĕsĕp i budđi śrī narendrātmajā,
 luṅhā wruḥ tumuluy sira n kinĕḍapan de saŋ sunandâṅaliḥ*
 
-śrī hemāṅgada kāri keraṅan akiṅkiŋ tan wĕnaŋ sāhasa,
+śrī hemāṅgada kāri keraṅan akiŋkiŋ tan wĕnaŋ sāhasa,
 maṅgâmora makilya kilyana tumūtê śrī narendrātmajā,
 saŋ hyaŋ manmaŧa duṣṭa tan rwa tĕlu pat rowaŋ nirâśâlara,
 yêkī hetu nirâṅikĕt rasa wilāpâṅras rasanyê hati*
@@ -3419,7 +3420,7 @@ māyā muṅgw-iŋ crĕmin lwiṙtta riŋ apa wĕnaṅaṅkwâṅisapwê tuwuḥ
 saŋ lwīṙ aṙccâṅaraŋ byakta pan ulaha ni māskw-i ṅhulun yan pamaṅkwa,
 saŋ lwiṙ dewî tulis tan wuruṅa kasarikâku n marê pamrĕmanta,
 saŋ lwiṙ wwe niŋ samudrâṅaraṅakĕn i manaḥku n surud siḥta māsku,
-saŋ tuṅtuŋ ni rwi niŋ ketaka kari kacarik twaskw-i luṅhānta maṅko*
+saŋ tuŋtuŋ ni rwi niŋ ketaka kari kacarik twaskw-i luṅhānta maṅko*
 
 <basantatilaka> 
 – – ⏑| – ⏑⏑| ⏑– ⏑| ⏑– ⏑| – ⏓ = 14
@@ -3490,12 +3491,12 @@ mojaṙ tuhun pali palin ya tĕkapnya mojar*
 
 nāhan śrī naranāŧa pāṇḍya sira yogya paṅayatan i māsku riŋ hayu,
 heman rūmta yatan pagĕgwan i manis manis ira n aṅisapw-aṅolakĕn,
-Aṅhiŋ samƀawa rakwaṅöbana huyaṅta saꝑala parĕkĕnta riŋ tilam,
+Aṅhiŋ samƀawa rakwaṅöbana huyaŋta saꝑala parĕkĕnta riŋ tilam,
 siŋ sojaṙ haji yan rahasya rasan iŋ śayana kĕmitananta cupwana*
 
 yadyastun kita māsku n âmĕŋ amĕṅêŋ tuha rawa kalawan nareśwara,
 byaktânaṅśaya cakrawāka dadi mānuṣa maṭika ṭikan mariŋ ḍarat,
-mwaŋ yan kaṙwwa narendra māsku mahasêŋ pasisi mĕgila riŋ wwaŋ iŋ pasir,
+mwaŋ yan karwa narendra māsku mahasêŋ pasisi mĕgila riŋ wwaŋ iŋ pasir,
 byaktânĕṅgaha dèwa niŋ miŧuna rāśi mĕtu harĕp ahimya himyana*
 
 Atyantêŋ kalaṅön lĕyĕp winulatan patĕmu ni lĕṅĕŋ iŋ pasiṙ wukir,
@@ -3527,7 +3528,7 @@ romantâjumĕn i ṅhulun sadakanaṅkwa n anĕsĕpi laṭinta riŋ tilam*
 kocap māsku wicakṣaṇôṇḍahagi yogya panagara bisâmaṅun lulut,
 ṅke ta dyaḥ mata ni ṅhulun sipatananta pĕnĕdĕn usapanta riŋ pusuḥ,
 yan kālanta pinaṅkwakĕn wwaya jajaṅku rari siku sikunta yan cala,
-kuṅta mwaŋ turidaṅku pādwakĕna māsku patitisana luḥ maran rapĕt*
+kuŋta mwaŋ turidaṅku pādwakĕna māsku patitisana luḥ maran rapĕt*
 
 <jagadnāŧa> 
 ⏑– ⏑| ⏑⏑– | ⏑– ⏑| ⏑⏑– | ⏑⏑⏑| ⏑⏑⏑| – ⏑– | ⏑⏓ = 23
@@ -3558,7 +3559,7 @@ saŋ truḥ truḥ ni laṅöṅku mukṣa hiniḍĕp kinisapu sahajâtĕmaḥ r
 donkw-aṅlitlita roma rakryan anapak napaka hayu ni māsku riŋ tilam,
 Āpan tan hana len pramāṇa ri rarasta n aṅaraŋ aṅisapwakĕn puḍak,
 māskw-induŋ huniṅan ṅhulun ri manis iŋ mata sarasija kābunan mađu,
-suṅsuŋ rāga tĕṅaḥ puriḥta kalawan pipi taḍaha ni luḥta pintanĕn*
+suŋsuŋ rāga tĕṅaḥ puriḥta kalawan pipi taḍaha ni luḥta pintanĕn*
 
 paṅkwankw-îbu wĕtĕḥ turuŋ pinakapaṅrĕṅihan iŋ aṅĕsaḥ pinaṅkwakĕn,
 tapwan kāni lĕṅĕnku de ni kuku niŋ hinari hari miṅe kinolakĕn,
@@ -3620,7 +3621,7 @@ tĕkêruŋ ira tan pakāla kumĕsut sĕmu sĕmu niŋ asĕṅhit iŋ pipi*
 saŋ mambaŋ kawidoṣa tan saḥ i narendrasuta marĕk amaṅku pawwahan,
 lāwan dyaḥ jayawaspa kāsiḥ ika tan saḥ i paḍa naranāŧaputrikā,
 ndan rakwênalapan sĕḍĕŋnya n ahañaŋ tinut ika mapasaḥ madum tuhan,
-tĕmbenya n sapatiṅhalan paḍa lumuḥ kawĕlas arĕp aluṅluṅan taṅis*
+tĕmbenya n sapatiṅhalan paḍa lumuḥ kawĕlas arĕp aluŋluṅan taṅis*
 
 saŋ mambaŋ kawidoṣa mājaṙ i narendratanaya nĕhĕṙ aṅhĕmū taṅis,
 rakryan honya manĕḥta tiṅhalana pun marika makaṅaran mađūdakā,
@@ -3655,7 +3656,7 @@ pun ṅgānyêka dumeḥ pun ahyuna mulat mulata juga sawet ny-unĕŋ nipun*
 hāḥ rakryan siha rakryan iŋ manĕ manĕḥ ṅhulun ibu pituhun ṅhulun tuhan,
 nāhan śrī naranāŧaputra pakisapwan ibu ri sira haywa tâwihaŋ,
 Āpan yan tuna kūŋ i māsku ri sirâpa ta hamĕṅana ni ṅhulun mĕne,
-tan wanđyā mati kaṙwwa pun mađu manĕḥta tuhan i huwus iŋ swayambara*
+tan wanđyā mati karwa pun mađu manĕḥta tuhan i huwus iŋ swayambara*
 
 maṙmmā de jayawaspa mojaṙ ataṅis tĕka hirĕŋ i narendrakanyakā,
 pantĕs pantĕs apolahan marĕk atakwan i manaḥ ira riŋ nrĕpātmajā,
@@ -3857,7 +3858,7 @@ hanâtĕkap len sinameni riŋ kiduŋ,
 ṇḍĕk ĕṇḍĕkan prāya ni de nikā muni,
 lĕṅĕŋ karĕṅw-âsĕmu paṅgyat iŋ jawuḥ*
 
-payuŋ putiḥ rwaṙwwa manimbaṅî sira,
+payuŋ putiḥ rwa-rwa manimbaṅî sira,
 parĕŋ lumampaḥ tan adoḥ paḍâṅadĕg,
 pujut lawan jĕṅgi rarâmawâhirĕŋ,
 baṅun graha rwa rwa paḍâṅgayaṙ wulan*
@@ -3984,7 +3985,7 @@ tan pātmā kinisapwakĕn twas ira tan pajajamuga rĕmĕk sakê taṅan*
 lĕŋlĕŋ niŋ lod lĕyĕp niŋ wukiṙ inayu papaṅgiḥ nirârok piniṇḍa,
 kālaṅkyaŋ mwaŋ rĕrĕb waṙṇna nira kadi liraŋ kāmukan saṅhub awrā,
 himpĕṙ saŋ hyaŋ śaśī kĕmbaṙ apupul akĕmul truḥ truḥ iŋ kāla sanđyā,
-dewī dewâṙdđanārīśwara patĕmu nira lwiṙ ṭikâkaṙwwa kaṙwwan*
+dewī dewâṙdđanārīśwara patĕmu nira lwiṙ ṭikâkarwa karwan*
 
 saŋ kady-ânaṅga māry-âtanu mijil atĕmaḥ rājaputrâdwitīya,
 maṙmmâpet siḥ tan imbâmĕkul aṅamĕṙ amĕṙ cumbu cumbw-âṅalap sor,
@@ -4055,9 +4056,9 @@ twaskw-apriḥ binĕbĕdta riŋ tali gĕluŋ cinucuk i luṅid iŋ matâluru,
 mogâṅde wulaṅun manista rinasan tuhu tuhu n agĕlaŋ gĕlaŋ kuniŋ,
 ṅhiŋ yan rakryan aṅastwa riŋ luḥ uwatanya marasana ri rāga ni ṅhulun*
 
-pintĕn māsku wuyuṅta tan hana waneḥ pinalaṙ asiha sanmatêŋ akuŋ,
-cĕp tênduŋ taha tan taṅis kaharĕp i ṅhulun aṅisapu jöṅta sewaka,
-luhtâdrĕs humilī pasuṅta karikā taham ibu tan ikā prayojana,
+pintĕn māsku wuyuŋta tan hana waneḥ pinalaṙ asiha sanmatêŋ akuŋ,
+cĕp tênduŋ taha tan taṅis kaharĕp i ṅhulun aṅisapu jöŋta sewaka,
+luhtâdrĕs humilī pasuŋta karikā taham ibu tan ikā prayojana,
 Aṅhiŋ prāṙŧana moǥa sidđa katĕkāna siliḥ usapa luḥ lawan kita*
 
 Intaṙ haywa marĕk paran karika donta paran iku kināṙyya niŋ marĕk,
@@ -4115,7 +4116,7 @@ Om yan humĕnĕṅa sakarĕŋ maṅantyakĕna rāga nira saŋ anukĕr,
 saŋ hyaŋ smara ri manaḥ irâṅalaḥ pisaniṅūn wĕnaṅa pihĕraṇa*
 
 saŋ śrī niŋ ahayu sakaḍatwan osaḥ aṅĕliḥ kawarĕgan anukĕr,
-wahw-âlupa taṅan ira riŋ tapiḥ tuṙ ira kaṙwwa lumay akilusū,
+wahw-âlupa taṅan ira riŋ tapiḥ tuṙ ira karwa lumay akilusū,
 mwaŋ puṇḍutan ira tumibā lukaṙ tali talinya paḍa tan iniwö,
 Aṅlampw-anaṅis aṅĕsĕsan paṅewala narendrasuta tinarima*
 
@@ -4223,13 +4224,13 @@ Aṅamĕṙ amĕṙ amakpak wruḥ ry-ambĕk niŋ aṅĕsaha,
 lwiṙ anadaki kĕnêŋ hrū maṙmmâṅrehi tan asarag*
 
 ri huwus ira kapiṅrwan saŋ śrī niŋ tulis aṅaraŋ,
-lara nira mahĕli prīty-âluṅluŋ hyun aṅalaya,
+lara nira mahĕli prīty-âluŋluŋ hyun aṅalaya,
 manaḥ ira wahu tūtūt kālap de nrĕpatanaya,
 turida nira kahĕnti mwaŋ siḥ niŋ hati kapulut*
 
 paṅusĕŋ ira ri lambe lambe tan tĕka ri hati,
 panĕpak ira huwus mūṙ mukṣâṅdohi taṅan ira,
-mari marĕṅu tumiṅhal tuṅtuŋ niŋ halis alaris,
+mari marĕṅu tumiṅhal tuŋtuŋ niŋ halis alaris,
 manis i guyu nirâṅdyun wruḥ giṅgaŋ wahu kasiṅī*
 
 patĕmu nira winaswās kady-anwam yumayi yayi,
@@ -4242,7 +4243,7 @@ paḍa kumĕsĕk iŋ ambĕk tan kewrān awuda wudā*
 
 riŋ krāban kalasā mijil sira sumaṅgraha wali nira pūṙṇna tan kuraŋ,
 sāmpun kewwan irânaḍaḥ sira pĕnuḥ sama marĕk i sira wwaŋ uttama,
-ramyâtiṅkaḥ atūt paluṅguḥ ira saŋ huwus agati wineḥ akaṙwwana,
+ramyâtiṅkaḥ atūt paluṅguḥ ira saŋ huwus agati wineḥ akarwana,
 Ācārī kalawan karaṇḍan ira muꝁya pinituhu paḍa wruḥ iŋ krama*
 
 ṅkānê soṙ apupul paḍâruhuṙ iŋ ambĕk aruhu ruhuran paḍâṅaliḥ,
@@ -4263,8 +4264,8 @@ denyâbudđy-âmanis mĕṅgĕp upaśama tinon mewĕḥ olaḥ tiniṅkaḥ,
 Aṅdoḥ tan saṅgrahêŋ uṅgwan aruhuṙ alĕmĕḥ worĕn iŋ tan kaśudđi,
 maṅgā muṅgwêŋ asoṙ ndan yan apupul atatā sabrayârok sahāṙyyan*
 
-guṇḍik rwaṙwwâpupul tan wĕnaŋ apasaḥ adoḥ de ni göŋ iŋ pamitran,
-kady-âkaṙwwan swarūpanya paḍa paḍa siliḥ mūla tuṅgal pināliḥ,
+guṇḍik rwa-rwâpupul tan wĕnaŋ apasaḥ adoḥ de ni göŋ iŋ pamitran,
+kady-âkarwan swarūpanya paḍa paḍa siliḥ mūla tuṅgal pināliḥ,
 solaḥ seṅĕṙnya mogâṅinaki ri panunasnyêŋ tuhan sāri sāri,
 denyâniṅkaḥ ry-awaknyâṅruhuri rinuhuran rāmya sawyāpasawya*
 
@@ -4330,7 +4331,7 @@ sĕlaŋ māꜽn pojaṙ saŋ aja mawaraḥ ry-antuka nira,
 manaḥ dewī kagyat gyat asĕkĕl ikaŋ twas kapĕnĕtan,
 kumĕmbĕŋ kĕmbĕŋ luḥ nira mijil aṅeṙttambaŋ asayut*
 
-sĕnĕŋ yan yogyê jöṅta wawarĕṅĕhĕn luḥku k anaṅis,
+sĕnĕŋ yan yogyê jöŋta wawarĕṅĕhĕn luḥku k anaṅis,
 wiraṅrwaŋ de niŋ tan wĕnaŋ apasaḥ i śrī narapati,
 manĕḥ rakryan ndi n yogya kawĕkasa tan tūta ri kita,
 mataŋnya n paṅheṙ ṅke kahuluna kĕnaṅkwê kita sadā*
@@ -4391,17 +4392,17 @@ niyata papagĕn iŋ strī sāyođyā n kita ḍatĕṅa*
 
 sāmpun māyu wuwus nrĕpātmaja lawan dewī nira n maṅkata,
 ṅkānê wwit niŋ aśoka rambay anaḍaḥ prāpta ŋ madaṅgâṅhaḍĕp,
-luṅhā ŋ kāla huwus hyaŋ aṙkka sumurup sanđyā masĕṅsĕŋ miraḥ,
+luṅhā ŋ kāla huwus hyaŋ aṙkka sumurup sanđyā masĕŋsĕŋ miraḥ,
 mambö kasturi niŋ paturwan araras kady-âṅutus mañjiṅa*
 
 Ambĕk niŋ paḍa haṙṣa sāmpun amatĕḥ riŋ rāga soluṙ lulut,
 trĕṣṇêŋ saṅgama tan kawaṙṣihan apöm māywan raras riŋ prĕman,
 yan līlā mijil iŋ nataṙ pinanasan de niŋ smarâṅras hati,
-Oṅsil tuṅtuŋ ikaŋ halis jaruman aṅgyākĕn marā riŋ tilam*
+Oṅsil tuŋtuŋ ikaŋ halis jaruman aṅgyākĕn marā riŋ tilam*
 
 sāmpun muṅgaḥ aṅanti riŋ pasamayan saŋ hyaŋ hyaŋ iŋ pamrĕman,
 maṙmmâsiḥ paḍa de nirâṅĕnahi rāga wruḥ ri tuṅgal nira,
-Aṙwwa rwan manaḍaḥ manis niŋ upadeśâtyanta riŋ rāsika,
+A-rwa-rwan manaḍaḥ manis niŋ upadeśâtyanta riŋ rāsika,
 nora ŋ saṅśaya riŋ rahasya winĕḍaṙ kāgĕm rasanyê hati*
 
 saŋ raśmînayu niŋ smarâṅucap ucap riŋ pamrĕman tan bĕsur,
@@ -4439,13 +4440,13 @@ nrĕpātmaja mañumbu ñumbu mamibik tapiḥ aharĕp i buṅkaḥ iŋ tĕṅaḥ
 
 ri luṅsuṙ i tapiḥ nirârukĕt ikaŋ luṅayan asĕmu luṅgaḥ iŋ gaḍuŋ,
 Ikaŋ gĕlaŋ ataṅkis iŋ wĕtis apiṇḍa mađukara marâhyun iŋ puḍak,
-payođara lanâpipit kadi wĕdinya kaharasa ri tuṅtuŋ iŋ kuku,
+payođara lanâpipit kadi wĕdinya kaharasa ri tuŋtuŋ iŋ kuku,
 Ikaŋ muꝁa sawaŋ wulan marĕk i wimba nira sĕḍĕŋ ira n sapamrĕman*
 
 <śāṙddūlawikrīḍita> 
 – – – | ⏑⏑– | ⏑– ⏑| ⏑⏑– | – – ⏑| – – ⏑| ⏓ = 19
 
-maṅkin wrĕdđi wijil ni rāsika nira n paṙwwaṙwwan iŋ pamrĕman,
+maṅkin wrĕdđi wijil ni rāsika nira n pa-rwa-rwan iŋ pamrĕman,
 nidrâcumbana ta pwa nitya ginawe maṅde suꝁê twas nira,
 söṙ mambö waṅi niŋ sĕkaṙ kadi mahā mañjiŋ mamuṅw-î sira,
 tan wruḥ yan rahinâpaḍaŋ paḍa mijil de niŋ hrĕbuk niŋ puḍak*
@@ -4519,7 +4520,7 @@ sāmpun karĕgĕp i hati de patik haji minuṣṭi maṅinaki hati,
 
 Atyanta hĕla hĕla niŋ aṅrĕṅö wacana rakryan aṅinaki hati,
 niṙwiǥna kita bapa tĕkêŋ sināđya wĕnaŋ uṅsirĕn iŋ aśaraṇa,
-śānti dwijawara ri bapaṅku kesyana tumiṙwwa narapati raǥu,
+śānti dwijawara ri bapaṅku kesyana tumirw-a narapati raǥu,
 swasty-astu saha tanaya dāra māsku saŋ anĕmwa jayaꝑala sadā*
 
 mwaŋ yan pawuwuha kita ǥāra pat lima sujanma wĕka wĕka ratu,
@@ -4611,7 +4612,7 @@ glānânaṅis kasiḥ arĕp twas ira wyamoha,
 sambat nirâmuhara luḥ pamĕlas harĕpnya*
 
 Ꜽ rāma rena kita saŋ lumaḥ iŋ kaḍatwan,
-ṅūni n maṇusya kita kaṙwwa bapêbu liṅku,
+ṅūni n maṇusya kita karwa bapêbu liṅku,
 maṅke dadi hyaŋ inalĕmbana sāṙdđadeha,
 hā hāḥ yayā bapa hajîbu hajîki liṅku*
 
@@ -4779,7 +4780,7 @@ wwatnya katiṅgal adoḥ anĕmu maru hĕnū pamĕnĕṙ mĕnĕran*
 piṅgiṙ ikaŋ pagagan harata hara hara n pamuraŋ muraṅan,
 luñcip ikaŋ rwi kulampis i pagĕṙ ika waṙṇna tanaḥ kinikir,
 wwaḥ ni saganya baṅun mata hañaṙ asipat pinuyuṙ puyuran,
-daṅdaṅan aṅgarit iŋ wĕtis aniru kuriñjĕm umuṅgw-i pipi*
+daŋdaṅan aṅgarit iŋ wĕtis aniru kuriñjĕm umuṅgw-i pipi*
 
 sīma kawaṅśan alas juraŋ anasarakĕn sinĕpĕṙ sĕpĕran,
 saṅkawilanya mañaṇḍĕt i rusit i hĕnūnya lawan wadara,
@@ -4878,7 +4879,7 @@ syapa ta wruha takwanakĕn sī,
 Aḥ aḥ aḥ sy-apĕṅiŋ kadi wāni*
 
 Alupâku paran pwa katiṅgal,
-ri sĕḍĕṅta siliḥ galaḥ oliḥ,
+ri sĕḍĕŋta siliḥ galaḥ oliḥ,
 kawĕkas ni wĕtis ni lawanta,
 si ḍulîka paṅenak uwanya*
 
@@ -4898,7 +4899,7 @@ maḥ alap haḍug ību taluḥnya,
 ndwa kamal ḍiḍikan hibu rakryan*
 
 laku t aṅkat amaḥ bĕkĕlanta,
-ndwa ta sī mapa liṅta malīya,
+ndwa ta sī mapa liŋta malīya,
 ndwa ta sī mapa hāḥ hapi tan wruḥ,
 ndwa ta sī si putiḥ pisane wus*
 
@@ -4976,7 +4977,7 @@ wadwā pekâsĕmu preta hana kadi piśācâlapā raḥ paḍâṅhruk,
 Agyā gyān apraṅâgyâṅrujaka hati nikaŋ śūra sāmpun pinökan*
 
 nā liŋ saŋ mambaŋ ojaṙ saŋ aja mijil ikaŋ budđi kakṣatriyāṅśan,
-siṅgiḥ kweḥ niŋ musuḥ liṅta kadi jalađi bahny-atrigañcâṅgaluntaŋ,
+siṅgiḥ kweḥ niŋ musuḥ liŋta kadi jalađi bahny-atrigañcâṅgaluntaŋ,
 ndātan waŋ mātra wĕdy-âku dan irika kabeḥ mon patambĕḥ samāna,
 siṅhâṅantî guhā byūha nika surupi wūk hĕntyakĕn hīnaśakti*
 
@@ -5064,7 +5065,7 @@ teg tog ḍaḍap nika bubul ginalaḥ tinaṅkis,
 gĕntöṙ i śabda ni gubaṙnya baṅun siliḥ prĕp,
 kady-âcakĕp đwani nikaŋ kukulan karĕsrĕs,
 kaṅsinya lāgi manaḥ ambĕk iŋ ajriḥ iŋ praŋ,
-moṅmoṅan aṅgyat anamaṙ macan asriŋ oliḥ*
+moŋmoṅan aṅgyat anamaṙ macan asriŋ oliḥ*
 
 wadwā nrĕpātmaja tumampuhakĕn gadānya,
 rwaŋ lakṣa tan kuraŋ asĕṅhit asiṅhanāda,
@@ -5434,7 +5435,7 @@ kāruṇya māsiḥ amalĕs ri waluy nira hyaŋ,
 saṅmohanêkaŋ inajinta kĕnoḥ parīkṣan*
 
 An maṅkanôjaṙ ira śīǥra narendraputra,
-mārāđanâmrĕta sinrĕṣṭi ri tuṅtuŋ iŋ hrū,
+mārāđanâmrĕta sinrĕṣṭi ri tuŋtuŋ iŋ hrū,
 sumyuk sakêŋ awaŋ awaŋ kadi riŋ paṅipyan,
 đwasta ŋ śarânala paḍĕm paḍa ƀasmiƀūta*
 
@@ -5470,8 +5471,8 @@ mombak raṅin gajaḥ aǥaṇṭa karaŋ liman ya*
 
 sāmpun jayêŋ raṇasaƀā naranāŧaputra,
 saŋ saptarāja kadi māti parĕŋ katurwan,
-tĕkwan huwus kacuriṅan raḥ i tuṅtuŋ iŋ hrū,
-yêkā siluṅluŋ ira yan kaparājayêŋ praŋ*
+tĕkwan huwus kacuriṅan raḥ i tuŋtuŋ iŋ hrū,
+yêkā siluŋluŋ ira yan kaparājayêŋ praŋ*
 
 saŋ hyaŋ sirâjaya jayêŋ gagaṇāntarāla,
 mwaŋ puṣpawaṙṣa tumibā kadi kasturi mrik,
@@ -5581,7 +5582,7 @@ lāwan mađya nira pramāṇa ri kĕlab ni lĕmĕs ikaŋ aśokapādapa,
 śrī śrī niŋ muꝁa śudđa pūṙṇna gumawaŋ tuhu tuhu ratu niŋ niśākara*
 
 sāmpun śrī naranāŧaputra kalawan nrĕpawaraduhitā marê dalĕm,
-ƀakty-ânĕmbaḥ i jöŋ narendra raǥu kaṙwwa nrĕpatimahiṣī sirâpupul,
+ƀakty-ânĕmbaḥ i jöŋ narendra raǥu karwa nrĕpatimahiṣī sirâpupul,
 budđi śrī parameśwarī makamuꝁa nrĕpati suꝁa tumon anak nira,
 prajñā śāstrawit iṅgitajña wani śakti lituhayu dumeḥ sirâsiha*
 
@@ -5623,7 +5624,7 @@ hanânak anakanku ketaka miṅiŋ sahaja tan inakunta rakwa ya,
 putiḥ siki kaduṙyyaśaśruti wawaŋ katalu sagalakanta tak wĕdi,
 manaḥku wani tan surud pwa ya tat antu kita ya karaṇaṅku tan rara*
 
-Ahum yayi saliṅta māsku n awuyuŋ sapaṅucapan i māsku lampunĕn,
+Ahum yayi saliŋta māsku n awuyuŋ sapaṅucapan i māsku lampunĕn,
 ṅhulun yayi turuŋ wĕnaŋ maṅawayuḥ rumatakĕna wilāpa ni ṅhulun,
 ya hetu ni kakanta tan wĕnaŋ asiḥ lĕwu marika siḥ i ṅhulun yayi,
 hĕlĕm ṅhulun atĕmwa māsku kalawan kita ratakĕna haywa saṅśaya*
@@ -5733,7 +5734,7 @@ wahw-âṅajy-âhiḍĕp wruḥ ri samaya ni rusit niŋ đanurwedaśāstra*
 <jagadđita> 
 – – – | ⏑⏑– | ⏑– ⏑| ⏑⏑– | ⏑⏑⏑| ⏑⏑⏑| – ⏑– | ⏑⏓ = 23
 
-saŋ mambaŋ kawidoṣa kaṙwwa jayawaspa suꝁa manĕmu wīṙyya de haji,
+saŋ mambaŋ kawidoṣa karwa jayawaspa suꝁa manĕmu wīṙyya de haji,
 sedĕmpaty-aduluṙ marĕk siliḥ asiḥ tumĕmu ꝑala nikâmalaṙ malar,
 sojaṙ saŋ praƀu kewalôjaṙ ika siŋ sawacana nika śabda saŋ praƀu,
 wet niŋ sāmpun anĕmwakĕn kahulunan satirun iŋ amalaṙ tuhan tuhan*
@@ -5883,7 +5884,7 @@ kāry-âśâlara piṇḍa niŋ gupit arūm sawaŋ anaṅis inambilan sĕkar,
 Akweḥ ṣaṭpada maṅrubuŋ milu katūt humuŋ aliwĕran iŋ naƀastala,
 saŋ hyaŋ lek alaṅö lumöŋ sĕmu nikaŋ sumanasa ḍumawuḥ sakêŋ tawaŋ*
 
-haṙṣa śrîndumatī mulat ri sĕkaṙ iŋ sumanasa kadi tan pamatyana 
+haṙṣa śrîndumatī mulat ri sĕkaṙ iŋ sumanasa kadi tan pamatyana, 
 Āpan de ni laṅönya kāṅinan amet ri sira katĕmu riŋ pasaṅgaman,
 ndātan wruḥ sira yan sināđya ya ta hetu nira kahĕnĕṅan pijĕṙ maṅö,
 ndaḥ yêkī karaṇanya śīǥra tumibā ri jaja nira kasuṅsaŋ iŋ susu*
@@ -5911,9 +5912,9 @@ siḥ sihkw-î kita tan pahīṅan ibu sugyan asĕbĕla hatinta yan pĕjaḥ*
 maṅke n tan pakakāraṇa ŋ lara patinta pĕjaḥ i taṅan i ṅhulun kita,
 t asy-âsiḥ pawaraḥ ri doṣa ni kakanta karaṇa niŋ atiṅgal i ṅhulun,
 paṅheṙ māsku waluy muwaḥ ri śawa rakryan apa hamĕṅanaṅkw-inaryakĕn,
-suṅsuŋ wāhu ḍatĕŋ kisapwakĕn anakta si daśaraŧa māsku hĕmbanĕn*
+suŋsuŋ wāhu ḍatĕŋ kisapwakĕn anakta si daśaraŧa māsku hĕmbanĕn*
 
-kaṙwwânakta karîŋ kaḍatwan aku denta yayi kadi linad twas i ṅhulun,
+karwânakta karîŋ kaḍatwan aku denta yayi kadi linad twas i ṅhulun,
 sambatnya n patañê nimitta ni patinta kawĕlas arĕp aṅgamĕl taṅan,
 yâṅde syuḥ ni hatiṅku māṙ kapĕnĕtan humĕnĕŋ apĕga tan wĕnaŋ mulat,
 Aṅhiŋ luḥku lawan taṅisku sahuṙ i ṅhulun ibu ri kĕdö nikâtaña*
@@ -5973,7 +5974,7 @@ lalun patiṅku n lumaḥ iŋ kisapwan*
 yadyan kitâṅjanma muwaḥ dĕlāha,
 tĕṅaḥku tan sāha sakê lĕṅĕnta,
 haṙṣanta rokĕn kalawan lulutku,
-Iruṅta sotpattya lawan pipiṅku*
+Iruŋta sotpattya lawan pipiṅku*
 
 nāhan taṅis śrī naranāŧapatnī,
 rasâmĕlas haṙṣa tĕkap nirâmwit,
@@ -6011,12 +6012,12 @@ keṅĕṙ muꝁa śrîndumatī kalĕṅgak,
 huwus katon līna yayan tinaṅhi*
 
 Induŋ pawuṅw-îbu lihat kakanta,
-Ikaŋ turū haywa ginöṅta māsku,
+Ikaŋ turū haywa ginöŋta māsku,
 Āḍā pĕjaḥ kapwa tuhanku maṅke,
 dumeḥ si tan paṅliliṙ an tinaṅhi*
 
 Atyanta sihtêry-aku tan pahīṅan,
-Ujaṙtta matyê kapatiṅku liṅta,
+Ujaṙtta matyê kapatiṅku liŋta,
 maṅke kitâniṅgalakĕn huripku,
 waliṅku tuhw-âsiha miŧya māsku*
 
@@ -6124,7 +6125,7 @@ tĕka ŋ antaśāpa maṅutus muliha,
 maluyê swajāti nira dewasutā,
 tumibā ŋ sĕkaṙ sumanasâmĕjahi*
 
-kaliṅanya saŋ praƀu hade kalarā 
+kaliṅanya saŋ praƀu hade kalarā,
 kĕna saŋ pĕjaḥ muliḥ iŋ indrapada,
 Apa tan wuruŋ haji matĕmwa muwaḥ,
 kalawan sirêŋ amaraloka hĕlĕm*
@@ -6139,7 +6140,7 @@ pitutuṙ nirê saŋ aja rakwa tumūt*
 ⏑– ⏑| – – ⏑| ⏑– ⏑| – ⏓ = 11
 
 sāmpun śawa śrîndumatī ƀinasmi,
-murub siluṅluŋ nira ratnacetya,
+murub siluŋluŋ nira ratnacetya,
 maṅkin prapañca nrĕpati wyamoha,
 wwaluŋ tahun kāla nira n katiṅgal*
 
@@ -6161,7 +6162,7 @@ muliḥ iŋ surālaya maluy surāpsarī*
 
 hana tīṙŧa niṙmmala wĕkas niŋ anindyaśuci,
 I patĕmwan iŋ suraṇadī kalawan sarayū,
-naranāŧa kaṙwwa kawidoṣa pĕjaḥ lumabuḥ,
+naranāŧa karwa kawidoṣa pĕjaḥ lumabuḥ,
 muliḥ iŋ surālayapadântya pinaṅgiḥ ira*
 
 jayaluḥ dadi hyaŋ aṅaraŋ rumuhun katĕmu,
@@ -6233,7 +6234,7 @@ kaka de ni laraṅkwa pinasahakĕn iŋ wiđi niṣkaraṇa*
 <jagadđita> 
 – – – | ⏑⏑– | ⏑– ⏑| ⏑⏑– | ⏑⏑⏑| ⏑⏑⏑| – ⏑– | ⏑⏓ = 23
 
-wruḥ kw-î tan wĕnaṅanta đāraka kumölakĕna lulut unĕṅta ri ṅhulun,
+wruḥ kw-î tan wĕnaṅanta đāraka kumölakĕna lulut unĕŋta ri ṅhulun,
 wwat niŋ lwaḥ luḥ ariṅguṅan hawana saŋ praƀu tumutuṙ i līna ni ṅhulun,
 tiṅhaltê lara ni ṅhulun winaṅun akṣara rasa kakawin pralāpita,
 byaktâdadyana luḥ tutuṙtta ri hatinta yak amaca ri lambaŋ i ṅhulun*
@@ -6277,10 +6278,10 @@ saswaṙgga paḍa suꝁa tumon i rāmya ni papaṅgiḥ ira siliḥ asiḥ,
 ṅūnî sĕḍĕŋ ira ratu cakrawaṙtti suꝁa niŋ ratu tinĕmu nira,
 maṅke n suꝁa riŋ amaraloka maṅdaśaguṇê suꝁa nira mawa rāt*
 
-riŋ nandanawana sira kaṙwwa raśmi niŋ asaṅgama hinarĕp ira,
+riŋ nandanawana sira karwa raśmi niŋ asaṅgama hinarĕp ira,
 riŋ pūṙṇnama mijil amaḍaŋ wulan sira marêŋ taman aṭika ṭikan,
 riŋ swapna tuwi sira yayâmanĕḥ manĕhi rāga nira tan awanĕḥ,
-kiṅkiŋ ni hati nira miniśra kāraṇa ni tuṅgal i turida nira*
+kiŋkiŋ ni hati nira miniśra kāraṇa ni tuṅgal i turida nira*
 
 riŋ nandanawana wĕkas iŋ kaŧā sumanasāntaka riŋ aji raǥu,
 pinrākrĕta rasa kakawin tinīṙŧakĕn i jöŋ nrĕpati rasa laṅö,
@@ -6301,4 +6302,4 @@ salwiṙ saŋ makapustaka ŋ sumanasāntaka kasihana de nareśwara,
 sidđi mpuṅkw-i garuŋ tirun saŋ anulis katĕkana sasināđya saŋ wiku*
 
 {}
-&Iti sumanasāntaka samānta, sāmpun pinrêhna swaṙggya-kawi kakawin punika, sinalinakên geśa mahendra cunyađa, puput riŋ rahinā, śaniścara lĕgi wurukuŋ, waṙṣa :1947:, śaśiḥ wꜽśāꝁa, piŋ :12:, Utawi :24:mey:2025:, riŋ bintaro, taṅĕraŋ sĕlatan, pinunasakên iŋ sajroniŋ sucīŋ manaḥ, Amrĕta-madu riŋ śabda, tan hana dosa, tan hana daṙppa, mugi laṅgĕŋ pinaṅgiḥ śuƀāya, Ōṃ sidiṙ astu, Astu, Ōṃ saraswatyꜽ namaḥ, Ōṃ hri rĕk swāhā, Ōṃ śrī guruƀyomanaḥ * Ōṃ śāntiḥ śāntiḥ śāntiḥ ōṃ *
+&Iti sumanasāntaka samānta, sinalinakên geśa mahendra cunyađa, puput riŋ rahinā, śaniścara lĕgi wurukuŋ, waṙṣa :1947:, śaśiḥ wꜽśāꝁa, piŋ :12:, Utawi :24:mey:2025:, riŋ bintaro, taṅĕraŋ sĕlatan, pinunasakên iŋ sajroniŋ sucīŋ manaḥ, Amrĕta-madu riŋ śabda, tan hana dosa, tan hana daṙppa, mugi laṅgĕŋ pinaṅgiḥ śuƀāya, Ōṃ sidiṙ astu, Astu, Ōṃ saraswatyꜽ namaḥ, Ōṃ hri rĕk swāhā, Ōṃ śrī guruƀyomanaḥ * Ōṃ śāntiḥ śāntiḥ śāntiḥ ōṃ

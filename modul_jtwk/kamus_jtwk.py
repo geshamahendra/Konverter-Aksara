@@ -64,12 +64,12 @@ substitutions = {
     r'\bdur\\(y)': r'dur\1', #durya
     r'\bpar\\(w)': r'par\1', #parwa
 
-    #Kasus duhka
-    r'(duhk|duhꝁ)([' + vokal_regex + '])' : r'duḥk\2',
-
+    #Kasus khusus
+    r'(duhk|duhꝁ)([' + vokal_regex + '])' : r'duḥk\2',  #duhka
+    r'rwarw(a|ā|â)' : r'rwa-rw\1', # rwa rwa
     
     #--akhiran
-    r'hku\b': 'ḥku', r'hta\b': 'ḥta',
+    r'hku\b': 'ḥku', r'hta\b': 'ḥta', r'ṅta\b': 'ŋta',
     r'rku\b': 'ṙ\u200cku',
 
 

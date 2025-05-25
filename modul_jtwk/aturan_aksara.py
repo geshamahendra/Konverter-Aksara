@@ -251,6 +251,9 @@ def add_zwnj_awal_kata_bulk(text, patterns, replacement, daftar_konsonan):
     return ''.join(result)
 
 def inisialisasi(text):
+    # Ganti * ujung pupuh
+    (re.compile(r'\*(\s*[#{\<])'), lambda m: '#' + m.group(1))
+    
     DAFTAR_VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
     NON_HURUF_PENDAHULU = r'([^\w\s-])(\s*)'
     VOKAL_REGEX = f"[{DAFTAR_VOKAL}]"
