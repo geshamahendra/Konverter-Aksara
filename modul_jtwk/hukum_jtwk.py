@@ -3,6 +3,7 @@ from modul_jtwk.kamus_jtwk import substitutions
 
 # Daftar vokal, konsonan, dan simbol yang digunakan untuk regex
 DAFTAR_VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
+VOKAL_NON_KAPITAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûô'
 VOKAL_REGEX = f"[{DAFTAR_VOKAL}]"
 VOKAL_REGEX_GROUPED = f"({VOKAL_REGEX})"
 DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
@@ -109,7 +110,10 @@ def hukum_sigeg(text):
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
 
     #kasus ṅ berulang
-    text = re.sub(r'(\w[aeiouĕêôâîûōāīūöèé])[ŋṅ](\1)([ŋṅ])', r'\1ŋ\2\3', text)
+    #text = re.sub(r'(\w)([aeiouĕêôâîûōāīūöèé])[ŋṅ](\1)(\2)([ŋṅ])', r'\1\2ŋ\3\4\5', text)
+    
+    ṅ_ulang = re.compile(fr'(\w)([{VOKAL_NON_KAPITAL}])[ŋṅ](\1)([{VOKAL_NON_KAPITAL}])([ŋṅ])')
+    text = ṅ_ulang.sub(r'\1\2ŋ\3\4\5', text)
 
     return text
 
@@ -138,7 +142,7 @@ def hukum_ṙ(text):
 
     #kasus ry ṙyy
     text = re.sub(
-    r'(?:(?<=^)|(?<=\s))ry(?=[^\s-])|(?:\brī\b[^\S\n]+a)', ' ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
+    r'(?:(?<=^)|(?<=\s))ry(?=[^\s-])|(?:\brī\b[^\S\n]+a)', 'ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
     
     # ganti 'r' jadi ṙ jika diikuti spasi atau tanda hubung
     text = re.sub(r'(?<=\w)r(?=[\s-])', 'ṙ', text)

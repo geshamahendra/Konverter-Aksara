@@ -33,7 +33,7 @@ substitutions = {
     r'wi(s|ś)(è|e)sa': 'wiśèṣa',
     r'r(e|è|ĕ)?sn': 'ṛĕṣṇ', r'\bkar(ĕ|e)na': 'karĕṇa', r'\bwau\b': 'wawu',
     r'\bwong\b': 'wwoŋ', r'\bdewa\b': 'dèwa', r'\bdewi\b': 'dèwī',
-    r'\bsasangka\b': 'śaśāṅka', r'\b(s|ś)ri\b': 'śrī', r'\brsi\b': 'ṛṣi',
+    r'\bsasangka\b': 'śaśāṅka', r'\b(s|ś)r(i|ī)\b': 'śrī', r'\brsi\b': 'ṛṣi',
     r'(?i)mahadewi': 'mahādèwi', r'(?i)mahadewa': 'mahādèwa', r'(?i)wisnu': 'wiṣṇu',
     r'(?i)siwa': 'śīwa', r'(?i)ganesha': 'ganèśa', r'(?i)mataram': 'matāram',
 
