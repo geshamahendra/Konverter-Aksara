@@ -117,23 +117,23 @@ PENGGANTIAN_SPESIAL = {
 # Fungsi untuk mengatur hukum sigeg
 def hukum_sigeg(text):
 
-    #kecualikan penyigegan jika setelahnya - dan vokal dari regex diatas
-    text = re.sub(rf'(?<!^)(?<!\n)ṅ\b(?! ?[{VOKAL_NON_KAPITAL}]|-)', 'ŋ', text)
-    text = re.sub(rf'(?<!^)(?<!\n)h\b(?! ?[{VOKAL_NON_KAPITAL}]|-)', 'ḥ', text)
-    text = re.sub(rf'(?<!^)(?<!\n)r\b(?! ?[{VOKAL_NON_KAPITAL}]|-)', 'ṙ', text)
+    def apply_penyigegan(text):
+        VOKAL_NON_KAPITAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûô'
+        
+        for old, new in [('ṅ', 'ŋ'), ('h', 'ḥ'), ('r', 'ṙ')]:
+            text = re.sub(rf'(?<!^)(?<!\n){old}\b(?!(?: ?|- ?)[{VOKAL_NON_KAPITAL}])', new, text)
+        
+        return text
+    
+    text = apply_penyigegan(text)
 
     #kasus " ṅ h..."
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
 
-    #kasus ṅ berulang
-    #text = re.sub(r'(\w)([aeiouĕêôâîûōāīūöèé])[ŋṅ](\1)(aeiouĕêôâîûōāīūöèé)([ŋṅ])', r'\1\2ŋ\3\4\5', text)
-    #REGEX = re.compile(fr'(\w)([{VOKAL_NON_KAPITAL}])[ŋṅ](\1)#([{VOKAL_NON_KAPITAL}])([ŋṅ])')
-    #text = REGEX.sub(r'\1\2ŋ\3\4\5', text)
-
     ṅ_ulang = re.compile(fr'(\w)([{VOKAL_NON_KAPITAL}])[ŋṅ][-]*(\1)(\2)([ŋṅ])')
     text = ṅ_ulang.sub(r'\1\2ŋ\3\4\5', text)
 
-     # Daftar penggantian spesial
+    # Daftar penggantian spesial
     for pola, ganti in PENGGANTIAN_SPESIAL.items():
         text = re.sub(pola, ganti, text)
 
