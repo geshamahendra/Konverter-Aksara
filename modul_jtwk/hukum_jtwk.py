@@ -94,7 +94,7 @@ PENGGANTIAN_SPESIAL = {
     r'ṙṇny': 'ṙny',
     r'aṙyy([aā])': r'ary\1',
     r'(ā|a)ś([cꞓ])ary': r'\1ś\2aṙyy',
-    r'ṙyyakĕn\b': 'ryakĕn', 
+    r'ṙyyakĕn': 'ryakĕn', 
     r'ṙmmu ': 'ṙmu ', #akhiran mu
 
     #=====Kata khusus=====#
@@ -137,14 +137,17 @@ def hukum_sigeg(text):
     for pola, ganti in PENGGANTIAN_SPESIAL.items():
         text = re.sub(pola, ganti, text)
 
+    #ubah ṙ jadi r diujung baris atau kalimat
+    pattern = re.compile(r'ṙ([ \-]*)(.)')
+    text = pattern.sub(lambda m: ('r' if not m.group(2).isalpha() else 'ṙ') + m.group(1) + m.group(2),text)
+
     return text
 
 FINALISASI_PENGGANTI = [
     (re.compile(rf'([rhṅ])(?=nṇ?y{VOKAL_REGEX})'), lambda m: {'r': 'ṙ', 'h': 'ḥ', 'ṅ': 'ŋ'}[m.group(1)]), #kasus spesial pasanyan nya
     (re.compile(r'ṙ[^\S\n]*ŋ'), r'ṙ ṅ'), #sigeg bertemu sigeg
     (re.compile(r'ḥ[^\S\n]*ŋ'), r'ḥ ṅ'), #sigeg bertemu sigeg
-    (re.compile(r'^[^\S\n]*ŋ', re.MULTILINE), r'ṅ'), #ubah ṙ jadi r diujung baris
-    (re.compile(r'ṙ[ \t]*\n'), r'r\n'), #ubah ṙ jadi r diujung baris
+    
     (re.compile(r'[^\S\n]+'), ' '), #hapus spasi yang terlalu banyak
 
     (re.compile(rf'^([{DAFTAR_VOKAL}])', re.MULTILINE), lambda m: {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}.get(m.group(1), m.group(1).upper())), #Kapitalkan vokal di awal baris

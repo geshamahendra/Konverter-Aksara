@@ -232,13 +232,13 @@ def insert_h_between_unmerged_vowels(text):
     return re.sub(pattern, repl, text)
 
 # Fungsi untuk menambahkan ZWNJ di awal kata jika didepannya konsonan
-def add_zwnj_awal_kata_bulk(text, patterns, replacement, daftar_konsonan):
+def add_zwnj_awal_kata_bulk(text, patterns, replacement, DAFTAR_KONSONAN):
     def is_prev_char_konsonan(text, pos):
         # Lewati spasi/tab/newline ke belakang hingga ketemu huruf bukan spasi
         i = pos - 1
         while i >= 0 and text[i] in ' \t\r\n-':
             i -= 1
-        return i >= 0 and text[i] in daftar_konsonan
+        return i >= 0 and text[i] in DAFTAR_KONSONAN
 
     combined_pattern = '|'.join(f'(?:{p})' for p in patterns)
     regex = re.compile(combined_pattern, flags=re.IGNORECASE)
@@ -345,6 +345,7 @@ def hukum_penulisan(text):
 
     #tambah zwnj depan kata
     patterns = [
+    r'jñ',
     r'\b(p|s|ṣ)(o|e|è|é|ꜽ|ꜷ)',
     r'\bhy',
     rf'\b([{DAFTAR_KONSONAN}])(r|ṛ|ḷ|ṝ|ḹ|w|l)',
@@ -389,7 +390,6 @@ def finalisasi(hasil):
         '꧀ꦪ': 'ꦾ',
         '꧀ꦫ': 'ꦿ',
         'ꦈꦴꦁ': 'ꦈꦴꦀ',
-        '꧀ꦗ꧀ꦚ': f'꧀{ZWNJ}ꦗ꧀ꦚ',
         'ꦫ꧀ꦮ': f'ꦫ꧀ꦮ{ZWNJ}',
         'ꦉꦴ': f'ꦉ{ZWNJ}ꦴ',
         '⏒꧇': '⏒ ꧇',

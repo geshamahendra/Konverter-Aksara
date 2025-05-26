@@ -10,13 +10,12 @@ def latin_to_jawa(text, line_spacing):
     #text = re.sub(r'ṙ', 'r\u200D', text, flags=re.IGNORECASE)
     text = re.sub(r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ', text)
     text = re.sub(r'ꦫ꧀ꦮ', 'ꦫ꧀ꦮ\u200D', text)
-    text = re.sub(r'ꦫꦾ', 'ꦫꦾ\u200D', text)
+    #text = re.sub(r'ꦫꦾ', 'ꦫꦾ\u200D', text)
     #text = re.sub(r'ꦿ', '꧀ꦫ', text, flags=re.IGNORECASE)
     #text = re.sub(r'ꦾ', '꧀ꦪ', text, flags=re.IGNORECASE)
     
-    text = re.sub(r'\u200Dꦫ꧀ꦮ', '\u200Cꦫ꧀ꦮ\u200D', text)
-    #text = re.sub(r'ꦂ', 'ꦂ\u200D', text, flags=re.IGNORECASE)#layar ke layar
-    text = re.sub(r'ꦂ', 'ꦫ꧀', text, flags=re.IGNORECASE) #layar ke ra pangku
+    text = re.sub(r'ꦂ', 'ꦂ\u200D', text, flags=re.IGNORECASE)#layar ke layar
+    #text = re.sub(r'ꦂ', 'ꦫ꧀', text, flags=re.IGNORECASE) #layar ke ra pangku
 
     #text = re.sub(r'ꦫ꧀ꦪ', '\u200Cꦫ꧀ꦮ\u200D', text)
 
