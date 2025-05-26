@@ -178,7 +178,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
             text_between = line[idx1 + 1:idx2]
 
             # Logika untuk kasus "vokal spasi vokal"
-            if re.fullmatch(r'[^\S\n]+', text_between):
+            if re.fullmatch(r'[^\S\n]*', text_between):
                 if met1 == '⏑' and met2 == '⏑' and v1_lower in VOWEL_PENDEK and v2_lower in VOWEL_PENDEK:
                     hasil_line[idx2] = v2.upper()
                     i_vokal += 1

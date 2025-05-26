@@ -345,6 +345,7 @@ def hukum_penulisan(text):
 
     #tambah zwnj depan kata
     patterns = [
+    r'\b(p|s|ṣ)(o|e|è|é|ꜽ|ꜷ)',
     r'\bhy',
     rf'\b([{DAFTAR_KONSONAN}])(r|ṛ|ḷ|ṝ|ḹ|w|l)',
     #rf'\b([{DAFTAR_KONSONAN.replace("p", "")}])(r|ṛ|ḷ|ṝ|ḹ|w|l)'
