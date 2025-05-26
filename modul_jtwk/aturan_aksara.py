@@ -350,18 +350,12 @@ def hukum_penulisan(text):
     r' (r|ṙ)',
     r' yan\b', r' ya\b', r' ta(?:n|ṅ|ŋ)?\b',
     r" ṅ(-)?(" + f"[{DAFTAR_KONSONAN}]" + r")",
-    r' str', r' rkw', r' ri', r' dwa\b',
+    r' str', r' rkw', r' ri', r' dwa',
     ]
     text = add_zwnj_awal_kata_bulk(text, patterns, ZWNJ, DAFTAR_KONSONAN)
 
     #cegah pasangan lebih dari tumpuk tiga
     text = insert_zwnj_between_consonants(text)
-
-    #Hapus zwnj awal baris
-    text = re.sub(r'^[ \u200C\u200D]+', '', text, flags=re.MULTILINE)
-
-    # Gabungkan ZWNJ dan ZWJ yang berulang menjadi satu saja
-    text = re.sub(r'[ \u200C\u200D]{2,}', lambda m: m.group(0)[0], text, flags=re.MULTILINE)
 
     return(text)
 
@@ -405,5 +399,12 @@ def finalisasi(hasil):
         hasil = hasil.replace(cari, ganti)
 
     hasil = re.sub(r"=[^\S\n]+=[^\S\n]*", '==', hasil)
+
+    # Hapus zwnj awal baris
+    hasil = re.sub(r'^[ \u200C\u200D]+', '', hasil, flags=re.MULTILINE)
+
+    # Gabungkan ZWNJ dan ZWJ yang berulang menjadi satu saja
+    hasil = re.sub(r'[^\S\n]*[\u200C\u200D]{2,}', lambda m: m.group(0)[0], hasil, flags=re.MULTILINE)
+
 
     return hasil
