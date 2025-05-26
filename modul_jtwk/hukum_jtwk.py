@@ -83,7 +83,7 @@ def hukum_ṙ(text):
 
     #kasus ry ṙyy
     text = re.sub(
-    r'(?:(?<=^)|(?<=\s))ry(?=[^\s-])|(?:\brī\b[^\S\n]+a)', 'ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
+    r'(?:(?<=^)|(?<=\s))ry(?=[^\s-])|(?<=-)ry(?=[^\s-])|(?:\brī\b[^\S\n]+a)', 'ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
 
     return text
 
