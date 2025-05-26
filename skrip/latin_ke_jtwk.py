@@ -25,8 +25,6 @@ def replace_characters(text, mode):
     #=======Mulai transliterasi mentah========
     #Aplikasikan kata baku terlebih dahulu
     text = kata_baku(text)
-    # Masukkan hukum sigeg
-    text = hukum_sigeg(text)
     # Tingkat Ketiga: Modifikasi lebih lanjut
     text = hukum_aksara(text) 
    
@@ -45,20 +43,21 @@ def replace_characters(text, mode):
         text = mode_sanskrit(text)
     if mode in ('satya'):
         text = mode_satya(text)
-        
-    # Masukkan hukum r
-    text = hukum_ṙ(text)
 
-    #=====Modifikasi terakhir====
-    # Mengubah angka dengan format angka. menjadi :angka:
-    text = replace_numbers_with_colon(text)
-    #Baris metrum
-    #text = "\n".join(process_baris(baris) for baris in text.splitlines())
     #penghitung metrum/puisi
     if mode in {'kakawin'}:
         text = cek_kakawin(text)
     if mode in {'macapat'}:
         text = cek_macapat(text)
+
+    # Masukkan hukum r
+    text = hukum_ṙ(text)
+    # Masukkan hukum sigeg
+    text = hukum_sigeg(text)
+
+    #=====Modifikasi terakhir====
+    # Mengubah angka dengan format angka. menjadi :angka:
+    text = replace_numbers_with_colon(text)
     #finalisasi
     text = finalisasi(text)
 

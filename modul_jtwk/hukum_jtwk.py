@@ -4,7 +4,9 @@ from modul_jtwk.kamus_jtwk import substitutions
 # Daftar vokal, konsonan, dan simbol yang digunakan untuk regex
 DAFTAR_VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
 VOKAL_NON_KAPITAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûô'
+VOKAL_KAPITAL = 'AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
 VOKAL_REGEX = f"[{DAFTAR_VOKAL}]"
+VOKAL_NON_KAPITAL_REGEX = f"[{VOKAL_NON_KAPITAL}]"
 VOKAL_REGEX_GROUPED = f"({VOKAL_REGEX})"
 DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
 SEMI_VOKAL = 'lwyr'
@@ -33,7 +35,27 @@ HUKUM_ṙ_MAHAPRANA = {
     'ṙn': 'ṙṇn', 'ṙd': 'ṙdd', 'ṙđ': 'ṙdđ', 'ṙḍ': 'ṙdḍ',
     'ṙḋ': 'ṙdḋ', 'ṙc': 'ṙcc', 'ṙꞓ': 'ṙcꞓ'
 }
-PENGGANTIAN_SPESIAL = {
+
+# Fungsi untuk memperbaiki kata baku
+def kata_baku(text):
+    # Kapitalkan huruf vokal pada awal baris
+    text = re.sub(rf'{AWAL_BARIS}({VOKAL_REGEX})', lambda m: m.group(1) + m.group(2).upper(), text)
+
+    # Terapkan substitusi kamus_jtwk
+    for pattern, replacement in SUBSTITUTION_REGEX:
+        text = pattern.sub(replacement, text)
+
+    return text
+
+# Fungsi untuk mengubah hukum aksara
+def hukum_aksara(text):
+
+    #==============Hukum konsonan=================
+    for pattern, replacement in HUKUM_AKSARA_REPLACEMENTS.items():
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+    return text
+
+PENGGANTIAN_SPESIAL_R = {
 
     r'ṙs': 'ṙṣ', r'ṛs': 'ṛṣ',
     r'ṙṣik\b': 'ṙsik', 
@@ -46,7 +68,7 @@ PENGGANTIAN_SPESIAL = {
     #=====Kata khusus=====#
     r'uṙww': 'urw',
     r'kaṙww(a|â|ā)': r'karw\1', #dua
-    r'tumiṙwwâ': 'tumirwa',
+    r'tumiṙww(a|â|ā)': 'tumirw\1',
 
     #kembalikan aryan jika depannya tepat satu konsonan
     rf'\b((?!r)[{DAFTAR_KONSONAN}])aryan\b' : r'\1aṙyyan',
@@ -55,8 +77,69 @@ PENGGANTIAN_SPESIAL = {
     rf'\b(b|h|p|g)arya' : r'\1aṙyya',
     #rf'garyaŋ\b' : r'gaṙyyaŋ',
 
+    #kasus dua kata cecek
+    rf'kiŋkiŋ' : r'kiṅkiŋ',
     r'r\u200c': 'ṙ', r'ṙ\u200c': 'ṙ',
 }
+
+# Fungsi untuk mengubah hukum ṙ
+def hukum_ṙ(text):
+    # Bersihkan konsonan yang digandakan setelah ṙ/r (misalnya ṙjj → rj)
+    text = re.sub(r'[rṙ]([' + DAFTAR_KONSONAN + r'])\1', r'r\1', text)
+    # Step tambahan untuk menangani kluster seperti "gra", "kra", "dra", dll
+    text = re.sub(rf'(?<=\w)r(?=([{DAFTAR_KONSONAN}])([{SEMI_VOKAL}]))', 'ṙ', text)
+    # 1. Ubah 'r' menjadi 'ṙ' jika setelahnya konsonan + vokal non kapital
+    text = re.sub(rf'(?<=\w)r(?=([{DAFTAR_KONSONAN}])({VOKAL_NON_KAPITAL_REGEX}))', 'ṙ', text)
+    #2. gandakan huruf konsonan setelah ṙ, kecuali yang dalam TIDAK_DIGANDAKAN
+    text = re.sub(rf'(?<=ṙ)([{DAFTAR_KONSONAN}])', lambda m: m.group(1) if m.group(1) in TIDAK_DIGANDAKAN else m.group(1) * 2, text)
+    # 3. ROLLBACK: Jika sebelum ṙ ada konsonan
+    def rollback_if_preceded_by_consonant(match):
+        prev = match.group(1)
+        kons = match.group(2)
+        return f'{prev}r{kons}'
+    text = re.sub(rf'([{DAFTAR_KONSONAN}])ṙ([{DAFTAR_KONSONAN}])\2?', rollback_if_preceded_by_consonant, text)
+    # ubah kembali ṙ ke r jika setelahnya justru vokal
+    text = re.sub(rf'(?<=ṙ)(?={VOKAL_NON_KAPITAL_REGEX})', 'r', text)
+
+    # Mahaprana
+    for pattern, replacement in HUKUM_ṙ_MAHAPRANA.items():
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
+
+    #kasus ry ṙyy
+    text = re.sub(
+    r'(?:(?<=^)|(?<=\s))ry(?=[^\s-])|(?:\brī\b[^\S\n]+a)', 'ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
+
+    # Daftar penggantian spesial
+    for pola, ganti in PENGGANTIAN_SPESIAL_R.items():
+        text = re.sub(pola, ganti, text)
+
+    return text
+
+
+# Fungsi untuk mengatur hukum sigeg
+def hukum_sigeg(text):
+    VOKAL_NON_KAPITAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûô'
+    #Kasus konsonan berdiri diantara spasi
+    text = re.sub(rf"([{DAFTAR_KONSONAN}])(\s*|-)([{DAFTAR_KONSONAN}])\s+([{DAFTAR_VOKAL}])", r"\1\2\3-\4", text, flags=re.IGNORECASE)
+
+    #kecualikan penyigegan jika setelahnya - dan vokal dari regex diatas
+    text = re.sub(rf'(?<!^)(?<!\n)ṅ\b(?! ?[{VOKAL_NON_KAPITAL}]|-)', 'ŋ', text)
+    text = re.sub(rf'(?<!^)(?<!\n)h\b(?! ?[{VOKAL_NON_KAPITAL}]|-)', 'ḥ', text)
+    text = re.sub(rf'(?<!^)(?<!\n)r\b(?! ?[{VOKAL_NON_KAPITAL}]|-)', 'ṙ', text)
+
+    #kasus " ṅ h..."
+    text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
+
+    #kasus ṅ berulang
+    #text = re.sub(r'(\w)([aeiouĕêôâîûōāīūöèé])[ŋṅ](\1)(aeiouĕêôâîûōāīūöèé)([ŋṅ])', r'\1\2ŋ\3\4\5', text)
+    REGEX = re.compile(fr'\b(\w)([{VOKAL_NON_KAPITAL}])[ŋṅ](\1)([{VOKAL_NON_KAPITAL}])([ŋṅ])')
+    text = REGEX.sub(r'\1\2ŋ\3\4\5', text)
+
+    #VOKAL_SATU_KATA = 'aāiīuūeèéoĕꜷꜽ'
+    #ṅ_ulang = re.compile(fr'(\w)([{VOKAL_SATU_KATA}])[ŋṅ][-]*(\1)(\2)([ŋṅ])')
+    #text = ṅ_ulang.sub(r'\1\2ŋ\3\4\5', text)
+
+    return text
 
 FINALISASI_PENGGANTI = [
     (re.compile(rf'([rhṅ])(?=nṇ?y{VOKAL_REGEX})'), lambda m: {'r': 'ṙ', 'h': 'ḥ', 'ṅ': 'ŋ'}[m.group(1)]), #kasus spesial pasanyan nya
@@ -70,88 +153,6 @@ FINALISASI_PENGGANTI = [
     (re.compile(rf'{NON_HURUF_PENDAHULU}({VOKAL_REGEX})'), lambda m: f"{m.group(1)}{m.group(2)}{m.group(3).upper()}"), #Kapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
     (re.compile(rf'`({VOKAL_REGEX})'),lambda m: m.group(1).upper()), #kapitalkan vokal jika didepannya ada backtick
 ]
-
-# Fungsi untuk memperbaiki kata baku
-def kata_baku(text):
-    # Kapitalkan huruf vokal pada awal baris
-    text = re.sub(rf'{AWAL_BARIS}({VOKAL_REGEX})', lambda m: m.group(1) + m.group(2).upper(), text)
-
-    # Terapkan substitusi kamus_jtwk
-    for pattern, replacement in SUBSTITUTION_REGEX:
-        text = pattern.sub(replacement, text)
-
-    return text
-
-
-#Fungsi untuk mengubah kapital
-def lower_capital_vowels(match):
-    capital_vowel = match.group(1)
-    return KAPITAL_KE_KECIL.get(capital_vowel, capital_vowel.lower()) # Menggunakan .lower() sebagai fallback
-
-# Fungsi untuk mengubah hukum aksara
-def hukum_aksara(text):
-
-    #==============Hukum konsonan=================
-    for pattern, replacement in HUKUM_AKSARA_REPLACEMENTS.items():
-        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
-    return text
-
-# Fungsi untuk mengatur hukum sigeg
-def hukum_sigeg(text):
-
-    #Kasus konsonan berdiri diantara spasi
-    text = re.sub(rf"([{DAFTAR_KONSONAN}])(\s*|-)([{DAFTAR_KONSONAN}])\s+([{DAFTAR_VOKAL}])", r"\1\2\3-\4", text, flags=re.IGNORECASE)
-
-    #kecualikan penyigegan jika setelahnya - dari regex diatas
-    text = re.sub(rf'(?<!^)(?<!\n)ṅ\b(?!-[{DAFTAR_VOKAL}])', 'ŋ', text)
-    text = re.sub(rf'(?<!^)(?<!\n)h\b(?!-[{DAFTAR_VOKAL}])', 'ḥ', text)
-    
-    #kasus " ṅ h..."
-    text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
-
-    #kasus ṅ berulang
-    #text = re.sub(r'(\w)([aeiouĕêôâîûōāīūöèé])[ŋṅ](\1)(\2)([ŋṅ])', r'\1\2ŋ\3\4\5', text)
-    
-    ṅ_ulang = re.compile(fr'(\w)([{VOKAL_NON_KAPITAL}])[ŋṅ](\1)([{VOKAL_NON_KAPITAL}])([ŋṅ])')
-    text = ṅ_ulang.sub(r'\1\2ŋ\3\4\5', text)
-
-    return text
-
-# Fungsi untuk mengubah hukum ṙ
-def hukum_ṙ(text):
-    # Bersihkan konsonan yang digandakan setelah ṙ/r (misalnya ṙjj → rj)
-    text = re.sub(r'[rṙ]([' + DAFTAR_KONSONAN + r'])\1', r'r\1', text)
-    # Step tambahan untuk menangani kluster seperti "gra", "kra", "dra", dll
-    text = re.sub(rf'(?<=\w)r(?=([{DAFTAR_KONSONAN}])([{SEMI_VOKAL}]))', 'ṙ', text)
-    # 1. Ubah 'r' menjadi 'ṙ' jika setelahnya konsonan + vokal
-    text = re.sub(rf'(?<=\w)r(?=([{DAFTAR_KONSONAN}])({VOKAL_REGEX}))', 'ṙ', text)
-    #2. gandakan huruf konsonan setelah ṙ, kecuali yang dalam TIDAK_DIGANDAKAN
-    text = re.sub(rf'(?<=ṙ)([{DAFTAR_KONSONAN}])', lambda m: m.group(1) if m.group(1) in TIDAK_DIGANDAKAN else m.group(1) * 2, text)
-    # 3. ROLLBACK: Jika sebelum ṙ ada konsonan
-    def rollback_if_preceded_by_consonant(match):
-        prev = match.group(1)
-        kons = match.group(2)
-        return f'{prev}r{kons}'
-    text = re.sub(rf'([{DAFTAR_KONSONAN}])ṙ([{DAFTAR_KONSONAN}])\2?', rollback_if_preceded_by_consonant, text)
-    # ubah kembali ṙ ke r jika setelahnya justru vokal
-    text = re.sub(rf'(?<=ṙ)(?={VOKAL_REGEX})', 'r', text)
-
-    # Mahaprana
-    for pattern, replacement in HUKUM_ṙ_MAHAPRANA.items():
-        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
-
-    #kasus ry ṙyy
-    text = re.sub(
-    r'(?:(?<=^)|(?<=\s))ry(?=[^\s-])|(?:\brī\b[^\S\n]+a)', 'ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
-    
-    # ganti 'r' jadi ṙ jika diikuti spasi atau tanda hubung
-    text = re.sub(r'(?<=\w)r(?=[\s-])', 'ṙ', text)
-
-    # Daftar penggantian spesial
-    for pola, ganti in PENGGANTIAN_SPESIAL.items():
-        text = re.sub(pola, ganti, text)
-
-    return text
 
 # Fungsi untuk finalisasi (penyesuaian akhir)
 def finalisasi(text):

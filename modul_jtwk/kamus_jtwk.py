@@ -40,9 +40,9 @@ substitutions = {
     #aturan baku
     r'lĕṅlĕṅ':'lĕŋlĕŋ',
     r'rĕṅrĕṅ':'rĕŋrĕŋ',
-    r'sa(ng|ṅ)k(s|ṣ)': 'saŋkṣ',
-    r'sa(ng|ṅ)s': 'saŋs',
-    r'sa(ng|ṅ)ṣ': 'saŋṣ',
+    r'\bsa(ng|ṅ)k(s|ṣ)(e|è|é)pa': 'saŋkṣepa',
+    r'\bsa(ng|ṅ)sipta': 'saŋsipta',
+    r'\bsa(ng|ṅ)ṣipta': 'saŋṣ',
     r'jarkw': 'jar kw', #biasanya ujar ku-
     
     #r'\bnir([' + daftar_konsonan_tanpa_dikecualikan + '])': 'nir\u200c\\1', #nir+zwnj

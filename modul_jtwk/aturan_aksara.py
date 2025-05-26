@@ -8,6 +8,8 @@ ZWJ = '\u200D'
 DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ"
 DAFTAR_VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
 VOKAL_KAPITAL = "AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ"
+VOKAL_NON_KAPITAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûô'
+VOKAL_NON_KAPITAL_REGEX = f"[{VOKAL_NON_KAPITAL}]"
 
 # Peta karakter Latin ke aksara Jawa (dalam bentuk dimatikan secara default)
 aksara = {
@@ -173,7 +175,7 @@ def ganti_tanda_metrum(hasil):
 
 def insert_zwnj_between_consonants(text):
     # Pola pencocokan: konsonan + spasi + konsonan + konsonan
-    pattern = r'([bcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([ybcdfghjklmnqtvwzɉḋḍŧṭñṇṅŋꝁǥꞓƀśʰ])[^\S\n]*([ḷḹbcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅŋꝁǥꞓƀśʰ])'
+    pattern = r'([bcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅꝁǥꞓƀśʰ])[^\S\n]*([ybcdfghjklmnqtvwzɉḋḍŧṭñṇṅꝁǥꞓƀśʰ])[^\S\n]*([ḷḹbcdfghjklmnpqstvzɉḋḍŧṭṣñṇṅꝁǥꞓƀśʰ])'
 
     # Konsonan yang dikecualikan dari penyisipan ZWNJ
     # pengecualian = {'y', 'w', 'r'} #, 'r', 'ṛ', 'ṝ', 'ḷ', 'ḹ'
@@ -318,9 +320,9 @@ def hukum_sandi(text):
     #text = insert_h_between_unmerged_vowels(text)
 
     # Untuk beberapa kasus khusus
-    text = re.sub(rf'ḥ[^\S\n]+([{DAFTAR_VOKAL}])', lambda m: f"h{m.group(1).lower()}", text)
-    text = re.sub(rf'ŋ[^\S\n]+([{DAFTAR_VOKAL}])', lambda m: f"ṅ{m.group(1).lower()}", text)
-    text = re.sub(rf'ṙ[^\S\n]+([{DAFTAR_VOKAL}])', lambda m: f"r{m.group(1).lower()}", text)
+    #text = re.sub(rf'ḥ[^\S\n]+([{DAFTAR_VOKAL}])', lambda m: f"h{m.group(1).lower()}", text)
+    #text = re.sub(rf'ŋ[^\S\n]+([{DAFTAR_VOKAL}])', lambda m: f"ṅ{m.group(1).lower()}", text)
+    #text = re.sub(rf'ṙ[^\S\n]+([{DAFTAR_VOKAL}])', lambda m: f"r{m.group(1).lower()}", text)
 
     #Menyambung vokal dan konsonan yang terpisah spasi
     text = re.sub(rf'([{DAFTAR_KONSONAN}])[^\S\n]*([{DAFTAR_VOKAL}])', r'\1\2', text)
@@ -364,7 +366,6 @@ def hukum_penulisan(text):
 
     # Gabungkan ZWNJ dan ZWJ yang berulang menjadi satu saja
     text = re.sub(r'([\u200C\u200D])[\u200C\u200D]+', r'\1', text)
-
     text = re.sub(r'^[ \u200C\u200D]+', '', text, flags=re.MULTILINE)
 
     return(text)
