@@ -234,7 +234,7 @@ def insert_h_between_unmerged_vowels(text):
 # Fungsi untuk menambahkan ZWNJ di awal kata jika didepannya konsonan
 def add_zwnj_awal_kata_bulk(text, patterns, replacement, DAFTAR_KONSONAN):
     def is_prev_char_konsonan(text, pos):
-        # Lewati spasi/tab/newline ke belakang hingga ketemu huruf bukan spasi
+        # Lewati spasi/tab/newline ke depan hingga ketemu huruf bukan spasi
         i = pos - 1
         while i >= 0 and text[i] in ' \t\r\n-':
             i -= 1
@@ -250,7 +250,7 @@ def add_zwnj_awal_kata_bulk(text, patterns, replacement, DAFTAR_KONSONAN):
         start = m.start()
         result.append(text[last_idx:start])
 
-        if start == 0 or text[start - 1] == '\n':
+        if start == 0 or text[start - 1] in ' \n':
             result.append(m.group(0))
         elif is_prev_char_konsonan(text, start):
             result.append(replacement + m.group(0))
@@ -319,11 +319,6 @@ def hukum_sandi(text):
     text = apply_vowel_merges(text, VOWEL_MERGE_RULES)
     #text = insert_h_between_unmerged_vowels(text)
 
-    # Untuk beberapa kasus khusus
-    #text = re.sub(rf'ḥ[^\S\n]+([{DAFTAR_VOKAL}])', lambda m: f"h{m.group(1).lower()}", text)
-    #text = re.sub(rf'ŋ[^\S\n]+([{DAFTAR_VOKAL}])', lambda m: f"ṅ{m.group(1).lower()}", text)
-    #text = re.sub(rf'ṙ[^\S\n]+([{DAFTAR_VOKAL}])', lambda m: f"r{m.group(1).lower()}", text)
-
     #Menyambung vokal dan konsonan yang terpisah spasi
     text = re.sub(rf'([{DAFTAR_KONSONAN}])[^\S\n]*([{DAFTAR_VOKAL}])', r'\1\2', text)
 
@@ -345,30 +340,28 @@ def hukum_penulisan(text):
 
     #tambah zwnj depan kata
     patterns = [
-    r'jñ',
-    r'\b(p|s|ṣ)(o|e|è|é|ꜽ|ꜷ)',
-    r'\bhy',
-    rf'\b([{DAFTAR_KONSONAN}])(r|ṛ|ḷ|ṝ|ḹ|w|l)',
-    #rf'\b([{DAFTAR_KONSONAN.replace("p", "")}])(r|ṛ|ḷ|ṝ|ḹ|w|l)'
-    r'\b(ḷ|ḹ)',
-    r'\b(w|ṅ)',
-    r'lwi(r|ṙ)',
-    r'\byan\b', r'\bya\b', r'\bta(?:n|ṅ|ŋ)?\b',
-    r"\bṅ(-)?(" + f"[{DAFTAR_KONSONAN}]" + r")",
-    r'\bstr', r'\brkw', r'\bri', r'\bdwa\b',
+    r' duḥk',
+    r' jñ',
+    r' (p|s|ṣ)(o|e|è|é|ꜽ|ꜷ)',
+    r' hy',
+    rf' ([{DAFTAR_KONSONAN}])(r|ṛ|ḷ|ṝ|ḹ|w|l)',
+    r' (ḷ|ḹ)',
+    r' (w|ṅ)',
+    r' (r|ṙ)',
+    r' yan\b', r' ya\b', r' ta(?:n|ṅ|ŋ)?\b',
+    r" ṅ(-)?(" + f"[{DAFTAR_KONSONAN}]" + r")",
+    r' str', r' rkw', r' ri', r' dwa\b',
     ]
     text = add_zwnj_awal_kata_bulk(text, patterns, ZWNJ, DAFTAR_KONSONAN)
 
     #cegah pasangan lebih dari tumpuk tiga
     text = insert_zwnj_between_consonants(text)
 
-    #kasus sigeg-sigeg
-    text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙṅ', text)
-    text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥṅ', text)
+    #Hapus zwnj awal baris
+    text = re.sub(r'^[ \u200C\u200D]+', '', text, flags=re.MULTILINE)
 
     # Gabungkan ZWNJ dan ZWJ yang berulang menjadi satu saja
-    text = re.sub(r'([\u200C\u200D])[\u200C\u200D]+', r'\1', text)
-    text = re.sub(r'^[ \u200C\u200D]+', '', text, flags=re.MULTILINE)
+    text = re.sub(r'[ \u200C\u200D]{2,}', lambda m: m.group(0)[0], text, flags=re.MULTILINE)
 
     return(text)
 

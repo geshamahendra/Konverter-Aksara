@@ -90,7 +90,7 @@ substitutions = {
     r'datĕṅ': 'ḍatĕṅ', 
     r'm(u|e)sti\b': r'm\1ṣṭi',
     r'hid(ĕ|e)p': 'hiḍĕp', r'yogi(s|ś)wara': 'yogīśwara', r'datĕṅ': 'ḍatĕŋ', r'dusta': 'duṣṭa', 
-    r'padaṅ': 'paḍaṅ', r'pandita': 'paṇḍita', r'\bsirna\b': 'śīrna',
+    r'padaṅ': 'paḍaṅ', r'pandita': 'paṇḍita', r'\bsirna\b': 'śīrna', r'\bsarira': 'śarīra', r'atmaja': 'ātmaja',
 
     #bisa merubah wirama
     #r'(ṅ|ng)uni': 'ṅūni',
