@@ -1,12 +1,12 @@
 import re
 daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
-daftar_vokal = 'a', 'ā', 'i', 'ī', 'u', 'ū', 'e', 'è', 'é', 'o', 'ō', 'ö', 'ŏ', 'ĕ', 'ꜷ', 'ꜽ', 'â', 'î', 'ê', 'û', 'ô'
-vokal_regex = ''.join(daftar_vokal)
+daftar_vokal = "aāiīuūeèéêoōöŏĕꜷꜽâîûô"
 # Set vokal untuk pencocokan cepat dalam logika
 set_vokal = set(daftar_vokal)
 konsonan = '[' + re.escape(daftar_konsonan) + ']'
 huruf_dikecualikan = "gblmjy"
 daftar_konsonan_tanpa_dikecualikan = daftar_konsonan
+
 for huruf in huruf_dikecualikan:
     daftar_konsonan_tanpa_dikecualikan = daftar_konsonan_tanpa_dikecualikan.replace(huruf, '')
 zwnj = "\u200C"
@@ -43,7 +43,6 @@ substitutions = {
     r'\bsa(ng|ṅ)k(s|ṣ)(e|è|é)pa': 'saŋkṣepa',
     r'\bsa(ng|ṅ)sipta': 'saŋsipta',
     r'\bsa(ng|ṅ)ṣipta': 'saŋṣ',
-    r'jarkw': 'jar kw', #biasanya ujar ku-
     
     #r'\bnir([' + daftar_konsonan_tanpa_dikecualikan + '])': 'nir\u200c\\1', #nir+zwnj
     #r'\bdur([' + daftar_konsonan_tanpa_dikecualikan + '])': 'dur\u200c\\1', #durr+zwnj
@@ -59,20 +58,27 @@ substitutions = {
 
     #Hukum dwikrama sanskerta
     # Regex substitusi
-    r'\b(nir|dur|pār)(?![' + vokal_regex + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
+    r'\b(nir|dur|pār)(?![' + daftar_vokal + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
     r'\bnir(g)': r'nir\\\1', #nir guna
     r'\bdur\\(y)': r'dur\1', #durya
     r'\bpar\\(w)': r'par\1', #parwa
 
+    #Imbuhan aṅr
+    r'\b(m|p)aṅr(\w+)': lambda m: m.group(1) + 'aŋr' + m.group(2) if sum(c in daftar_vokal for c in m.group(2)) >= 2 else m.group(0),
+
     #Kasus khusus
-    r'(duhk|duhꝁ)([' + vokal_regex + '])' : r'duḥk\2',  #duhka
+    r'(duhk|duhꝁ)([' + daftar_vokal + '])' : r'duḥk\2',  #duhka
     r'rwarw(a|ā|â)' : r'rwa-rw\1', # rwa rwa
     
     #--akhiran
-    r'hku\b': 'ḥku', r'hta\b': 'ḥta', r'ṅta\b': 'ŋta',
-    r'rku\b': 'ṙ\u200cku',
-
-
+    r'h(m|k)u\b': r'ḥ\1u',
+    r'r(m|k)u\b': r'ṙ\\\1u',
+    r'ṅmu\b': r'ŋu', 
+    r'hta\b': 'ḥta', r'ṅta\b': 'ŋta',
+    
+    #spesial kw (ingat ṅ itu ṅku itu gapakai cecak)
+    r'([' + daftar_konsonan + '])([' + daftar_vokal + '])(r|h)kw([' + daftar_vokal + '])': r'\1\2\3 kw\4', 
+    
     r'(s|ś)unya': 'śūnya', r'budi': 'budđi', 
     r'purna': 'pūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
     r'tir(t|ŧ)a': 'tīṙŧa', r'\bsabda\b': 'śabda',
@@ -90,7 +96,7 @@ substitutions = {
     r'datĕṅ': 'ḍatĕṅ', 
     r'm(u|e)sti\b': r'm\1ṣṭi',
     r'hid(ĕ|e)p': 'hiḍĕp', r'yogi(s|ś)wara': 'yogīśwara', r'datĕṅ': 'ḍatĕŋ', r'dusta': 'duṣṭa', 
-    r'padaṅ': 'paḍaṅ', r'pandita': 'paṇḍita', r'\bsirna\b': 'śīrna', r'\bsarira': 'śarīra', r'atmaja': 'ātmaja',
+    r'padaṅ': 'paḍaṅ', r'pandita': 'paṇḍita', r'\bsirna\b': 'śīrna', r'\bsarira': 'śarīra', r'atmaj': 'ātmaj',
 
     #bisa merubah wirama
     #r'(ṅ|ng)uni': 'ṅūni',

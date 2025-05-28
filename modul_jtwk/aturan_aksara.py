@@ -98,7 +98,7 @@ swara = {
 }
 
 simbol = {
-     # Simbol lainnya
+    # Simbol lainnya
     '1': '꧑', '2': '꧒', '3': '꧓', '4': '꧔', '5': '꧕', '6': '꧖', '7': '꧗', '8': '꧘', '9': '꧙', '0': '꧐',
     '.': '꧉', ',': '꧈', ']': '꧊', '[': '꧋',
     '(': '꧌', ')': '꧍',
@@ -338,7 +338,7 @@ def hukum_penulisan(text):
     for pattern, replacement in SUBSTITUTION_REGEX:
         text = pattern.sub(replacement, text)
 
-    #tambah zwnj depan kata
+    #tambah zwnj depan kata (tambahkan spasi daripada \b untuk keakuratan)
     patterns = [
     r' duḥk',
     r' jñ',
@@ -346,11 +346,13 @@ def hukum_penulisan(text):
     r' hy',
     rf' ([{DAFTAR_KONSONAN}])(r|ṛ|ḷ|ṝ|ḹ|w|l)',
     r' (ḷ|ḹ)',
-    r' (w|ṅ)',
-    r' (r|ṙ)',
+    r' (r|ṅ)',
     r' yan\b', r' ya\b', r' ta(?:n|ṅ|ŋ)?\b',
     r" ṅ(-)?(" + f"[{DAFTAR_KONSONAN}]" + r")",
-    r' str', r' rkw', r' ri', r' dwa',
+    r' str',
+
+    #bentuk khusus (tanpa spasi) jangan sampai terlalu banyak tumpuk tiga (bisa jadi ini akhiran spesial)
+    r'mw',  
     ]
     text = add_zwnj_awal_kata_bulk(text, patterns, ZWNJ, DAFTAR_KONSONAN)
 
@@ -398,6 +400,7 @@ def finalisasi(hasil):
     for cari, ganti in penggantian.items():
         hasil = hasil.replace(cari, ganti)
 
+    #tanda sama dengan di lebih dari satu
     hasil = re.sub(r"=[^\S\n]+=[^\S\n]*", '==', hasil)
 
     # Hapus zwnj awal baris
