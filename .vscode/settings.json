@@ -3,12 +3,12 @@
     "**/output/**/*.txt": "aksara"
   },
   "[aksara]": {
-    "editor.fontFamily": "'natya', jayaƀaya",
-    "editor.fontSize": 21,
+    "editor.fontFamily": "'natya', 'jayaƀaya'", //rāmāyaṇa linuwiḥ2
+    "editor.fontSize": 16,
     "editor.fontLigatures": true,
     "explorer.confirmDelete": false,
-    "editor.letterSpacing": 1.5,
+    "editor.letterSpacing": 1.8,
     "editor.wordWrap": "on",
-    "editor.lineHeight": 1.8
+    "editor.lineHeight": 2
   }
 }

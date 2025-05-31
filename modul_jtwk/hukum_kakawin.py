@@ -197,7 +197,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                     continue
 
             # Logika untuk kasus "vokal konsonan spasi vokal"
-            if met1 == '–' and v1_lower in VOWEL_PENDEK:
+            if met1 == '–' and v1_lower in VOWEL_PENDEK:   #VOWEL_PENDEK
                 kata_kata = list(re.finditer(r'\S+', line))
                 kata_list = [(m.start(), m.end(), m.group()) for m in kata_kata]
                 kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)

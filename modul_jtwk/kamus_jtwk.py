@@ -64,20 +64,27 @@ substitutions = {
     r'\bpar\\(w)': r'par\1', #parwa
 
     #Imbuhan aṅr
-    r'\b(m|p)aṅr(\w+)': lambda m: m.group(1) + 'aŋr' + m.group(2) if sum(c in daftar_vokal for c in m.group(2)) >= 2 else m.group(0),
+    r'\b(m|p)aṅr(\w+)': lambda m: 
+        m.group(1) + 'aŋr' + m.group(2) if sum(c in daftar_vokal for c in m.group(2)) >= 2 else m.group(0),
+    #Imbuhan aṅ lainnya
+    #rf'\b(m|p)aṅ([{daftar_konsonan}])(\w+)': lambda m:    m.group(1) + 'aŋ' + m.group(2) + m.group(3) if sum(c in daftar_vokal for c in m.group(3)) >= 2 else m.group(0),
 
     #Kasus khusus
     r'(duhk|duhꝁ)([' + daftar_vokal + '])' : r'duḥk\2',  #duhka
     r'rwarw(a|ā|â)' : r'rwa-rw\1', # rwa rwa
     
     #--akhiran
-    r'h(m|k)u\b': r'ḥ\1u',
-    r'r(m|k)u\b': r'ṙ\\\1u',
-    r'ṅmu\b': r'ŋu', 
+    #khusus ṅ 
+    r'(li|sĕḍĕ)ṅk(u|w)':r'\1ŋk\2',
+    r'ṅmu\b': r'ŋmu',
+
+    r'h(m|k)(u|w)': r'ḥ\1\2',
+    r'r(m|k)(u|w)': r'ṙ\\\1\2',
     r'hta\b': 'ḥta', r'ṅta\b': 'ŋta',
     
     #spesial kw (ingat ṅ itu ṅku itu gapakai cecak)
-    r'([' + daftar_konsonan + '])([' + daftar_vokal + '])(r|h)kw([' + daftar_vokal + '])': r'\1\2\3 kw\4', 
+    r'([' + daftar_konsonan + '])([' + daftar_vokal + '])r(k|m)w([' + daftar_vokal + '])': r'\1\2ṙ\\\3w\4',
+    r'([' + daftar_konsonan + '])([' + daftar_vokal + '])h(k|m)w([' + daftar_vokal + '])': r'\1\2ḥ\3w\4',    
     
     r'(s|ś)unya': 'śūnya', r'budi': 'budđi', 
     r'purna': 'pūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
@@ -91,12 +98,16 @@ substitutions = {
     r'(p|m)uspa': r'\1uṣpa', r'(s|ś)astra': 'śāstra', 
     r'\bwirya': 'wīrya',  
     r'suksma': 'sūkṣma',
-    r'\bmaha\b': 'mahā', r'\bmahar(s|ṣ)i\b': 'mahāṙṣi', r'\biswara': 'iśwara',
-    r'ramya': 'rāmya', r'(s|ś)iǥra': 'śīǥra', r'saksat': 'sākṣāt',
+    r'\bmaha': 'mahā', r'\bmahar(s|ṣ)i': 'mahāṙṣi', r'\biswara': 'iśwara',
+    r'ramya': 'rāmya', r'(s|ś)iǥra': 'śīǥra', r's(a|ā)k(s|ṣ)(a|ā)t': 'sākṣāt',
     r'datĕṅ': 'ḍatĕṅ', 
     r'm(u|e)sti\b': r'm\1ṣṭi',
     r'hid(ĕ|e)p': 'hiḍĕp', r'yogi(s|ś)wara': 'yogīśwara', r'datĕṅ': 'ḍatĕŋ', r'dusta': 'duṣṭa', 
     r'padaṅ': 'paḍaṅ', r'pandita': 'paṇḍita', r'\bsirna\b': 'śīrna', r'\bsarira': 'śarīra', r'atmaj': 'ātmaj',
+    r'raksasa': 'rākṣasa', r'datwan': 'ḍatwan',
+    r'karana': 'karaṇa', r'\brana\b': 'raṇa',
+
+    
 
     #bisa merubah wirama
     #r'(ṅ|ng)uni': 'ṅūni',

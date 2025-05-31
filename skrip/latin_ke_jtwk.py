@@ -26,7 +26,7 @@ def replace_characters(text, mode):
     #Aplikasikan kata baku terlebih dahulu
     text = kata_baku(text)
     # Tingkat Ketiga: Modifikasi lebih lanjut
-    text = hukum_aksara(text) 
+    text = hukum_aksara(text)
    
     #========Aturan Berdasarkan Mode========
     if mode in {'sriwedari'}:
@@ -44,14 +44,15 @@ def replace_characters(text, mode):
     if mode in ('satya'):
         text = mode_satya(text)
 
+    # Masukkan hukum r
+    text = hukum_ṙ(text) 
+
     #penghitung metrum/puisi
     if mode in {'kakawin'}:
         text = cek_kakawin(text)
     if mode in {'macapat'}:
         text = cek_macapat(text)
 
-    # Masukkan hukum r
-    text = hukum_ṙ(text)
     # Masukkan hukum sigeg
     text = hukum_sigeg(text)
 

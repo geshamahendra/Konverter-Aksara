@@ -58,6 +58,38 @@ def hukum_aksara(text):
         text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
     return text
 
+PENGGANTIAN_SPESIAL_ṙ = {
+
+    r'ṙs': 'ṙṣ', r'ṛs': 'ṛṣ',
+    r'ṙṣik\b': 'ṙsik', 
+    r'ṙṇny': 'ṙny',
+    r'aṙyy([aā])': r'ary\1',
+    r'(ā|a)ś([cꞓ])ary': r'\1ś\2aṙyy',
+    r'ṙyyakĕn': 'ryakĕn', 
+    r'ṙmmu ': 'ṙmu ', #akhiran mu
+
+    #=====Kata khusus=====#
+    r'uṙww': 'urw',
+    r'kaṙww(a|â|ā)': r'karw\1', #dua
+    r'tumiṙww(a|â|ā)': 'tumirw\1',
+
+    #kembalikan aryan jika depannya tepat satu konsonan
+    rf'\b((?!r)[{DAFTAR_KONSONAN}])aryan\b' : r'\1aṙyyan',
+    
+    #kembalikan aryan jika memang aryan (aren)
+    rf'\b(b|h|p|g)arya' : r'\1aṙyya',
+    #rf'garyaŋ\b' : r'gaṙyyaŋ',
+
+    #kasus dua kata cecek
+    rf'kiŋki(ṅ|ŋ)' : r'kiṅki\1',
+
+    #Kembalikan ṙ jika setelahnya zwj-zwnj
+    r'r\u200c': 'ṙ', r'r\u200d': 'ṙ',
+
+    #hapus zwnj-zwj biar tidak mengganggu logika pengecekan kakawin
+    r'\u200c': '', r'\u200d': ''
+}
+
 # Fungsi untuk mengubah hukum ṙ
 def hukum_ṙ(text):
     # Bersihkan konsonan yang digandakan setelah ṙ/r (misalnya ṙjj → rj)
@@ -85,38 +117,17 @@ def hukum_ṙ(text):
     text = re.sub(
     r'(?:(?<=^)|(?<=\s))ry(?=[^\s-])|(?<=-)ry(?=[^\s-])|(?:\brī\b[^\S\n]+a)', 'ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
 
+    print(text)
+
+    # Daftar penggantian spesial
+    for pola, ganti in PENGGANTIAN_SPESIAL_ṙ.items():
+        text = re.sub(pola, ganti, text)
+
     return text
-
-PENGGANTIAN_SPESIAL = {
-
-    r'ṙs': 'ṙṣ', r'ṛs': 'ṛṣ',
-    r'ṙṣik\b': 'ṙsik', 
-    r'ṙṇny': 'ṙny',
-    r'aṙyy([aā])': r'ary\1',
-    r'(ā|a)ś([cꞓ])ary': r'\1ś\2aṙyy',
-    r'ṙyyakĕn': 'ryakĕn', 
-    r'ṙmmu ': 'ṙmu ', #akhiran mu
-
-    #=====Kata khusus=====#
-    r'uṙww': 'urw',
-    r'kaṙww(a|â|ā)': r'karw\1', #dua
-    r'tumiṙww(a|â|ā)': 'tumirw\1',
-
-    #kembalikan aryan jika depannya tepat satu konsonan
-    rf'\b((?!r)[{DAFTAR_KONSONAN}])aryan\b' : r'\1aṙyyan',
-    
-    #kembalikan aryan jika memang aryan (aren)
-    rf'\b(b|h|p|g)arya' : r'\1aṙyya',
-    #rf'garyaŋ\b' : r'gaṙyyaŋ',
-
-    #kasus dua kata cecek
-    rf'kiŋki(ṅ|ŋ)' : r'kiṅki\1',
-    r'r\u200c': 'ṙ', r'ṙ\u200c': 'ṙ',
-}
 
 # Fungsi untuk mengatur hukum sigeg
 def hukum_sigeg(text):
-
+    
     def apply_penyigegan(text):
         VOKAL_NON_KAPITAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûô'
         
@@ -130,12 +141,8 @@ def hukum_sigeg(text):
     #kasus " ṅ h..."
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, flags=re.IGNORECASE)
 
-    ṅ_ulang = re.compile(fr'(\w)([{VOKAL_NON_KAPITAL}])[ŋṅ][-]*(\1)(\2)([ŋṅ])')
+    ṅ_ulang = re.compile(fr'([{DAFTAR_KONSONAN}])([{VOKAL_NON_KAPITAL}])[ŋṅ][-]*(\1)(\2)([ŋṅ])')
     text = ṅ_ulang.sub(r'\1\2ŋ\3\4\5', text)
-
-    # Daftar penggantian spesial
-    for pola, ganti in PENGGANTIAN_SPESIAL.items():
-        text = re.sub(pola, ganti, text)
 
     #ubah ṙ jadi r diujung baris atau kalimat
     pattern = re.compile(r'ṙ([ \-]*)(.)')

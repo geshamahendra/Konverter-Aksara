@@ -296,7 +296,7 @@ def hukum_sandi(text):
                 lambda match: PENYERAGAMAN_VOKAL[match.group(0)], text)
 
     #cegah ya dipasangi
-    pengecualian_ya = set('aāiīuūeèoōöŏĕꜷꜽlwyr')
+    pengecualian_ya = set('aāiīuūeèoōöŏĕꜷꜽwyr')
     text = re.sub(
     r'([yw])([^\S\n]+|-)(?=([^\s]))',
     lambda m: (m.group(1) + m.group(2) + ('' if m.group(3).lower() in pengecualian_ya else ZWNJ)),text)
@@ -340,14 +340,13 @@ def hukum_penulisan(text):
 
     #tambah zwnj depan kata (tambahkan spasi daripada \b untuk keakuratan)
     patterns = [
-    r' duḥk',
+    r' (duḥk|jñ)',
     r' jñ',
-    r' (p|s|ṣ)(o|e|è|é|ꜽ|ꜷ)',
-    r' hy',
-    rf' ([{DAFTAR_KONSONAN}])(r|ṛ|ḷ|ṝ|ḹ|w|l)',
-    r' (ḷ|ḹ)',
-    r' (r|ṅ)',
-    r' yan\b', r' ya\b', r' ta(?:n|ṅ|ŋ)?\b',
+    #r' (p|s|ṣ)(o|e|è|é|ꜽ|ꜷ)',
+    #r' hy', r' ky',
+    rf' ([{DAFTAR_KONSONAN}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)',
+    r' (ḷ|ḹ|r|ṅ|y|ś|ǥ|ñ)',
+    r' ta(?:n|ṅ|ŋ)?\b', #r' ta(?:\b|(?![nṅŋ]))'
     r" ṅ(-)?(" + f"[{DAFTAR_KONSONAN}]" + r")",
     r' str',
 
@@ -380,7 +379,7 @@ def finalisasi(hasil):
         '꧀ꦫ': 'ꦿ',
         'ꦈꦴꦁ': 'ꦈꦴꦀ',
         'ꦫ꧀ꦮ': f'ꦫ꧀ꦮ{ZWNJ}',
-        'ꦉꦴ': f'ꦉ{ZWNJ}ꦴ',
+        #'ꦉꦴ': f'ꦉ{ZWNJ}ꦴ',
         '⏒꧇': '⏒ ꧇',
         ' ' : '', # Hapus spasi
 
