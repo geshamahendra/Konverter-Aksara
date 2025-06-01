@@ -44,14 +44,26 @@ HUKUM_ṙ_MAHAPRANA = [
 ]
 
 PENGGANTIAN_ṙ = [
+    #pengecualian vokal a
     (r'ṙs', 'ṙṣ'), (r'ṛs', 'ṛṣ'), (r'ṙṣik\b', 'ṙsik'), 
     (r'ṙṇny', 'ṙny'), (r'aṙyy([aā])', r'ary\1'),
-    (r'(ā|a)ś([cꞓ])ary', r'\1ś\2aṙyy'), (r'ṙyyakĕn', 'ryakĕn'),
-    (r'ṙmmu ', 'ṙmu '), (r'uṙww', 'urw'), (r'kaṙww(a|â|ā)', r'karw\1'),
-    (r'tumiṙww(a|â|ā)', 'tumirw\1'), (r'p(a|ā)ṙśś', r'p\1ṙś'),
+    (r'(ā|a)ś([cꞓ])ary', r'\1ś\2aṙyy'), (r'ṙyyakĕn', 'ryakĕn'), 
+    (r'p(a|ā)ṙśś', r'p\1ṙś'),
     (rf'\b((?!r)[{KONSONAN}])aryan\b', r'\1aṙyyan'),
-    (rf'\b(b|h|p|g)arya', r'\1aṙyya'), (r'r\u200c', 'ṙ'),
-    (r'r\u200d', 'ṙ'), (r'\u200c', ''), (r'\u200d', '')
+    (rf'\b(b|h|p|g)arya', r'\1aṙyya'),
+
+    #pengecualian vokal u
+
+    (rf'\b(niṙ|duṙ|pāṙ)([{KONSONAN}])\2([{KONSONAN}])', r'\1\2\3'),
+    (r'ṙmmu ', 'ṙmu '), (r'uṙww', 'urw'), 
+    (r'kaṙww(a|â|ā)', r'karw\1'),
+    (r'tumiṙww(a|â|ā)', 'tumirw\1'),
+
+    #cegah r+zwj-zwnj agar tidal jadi ra pangku 
+    (r'r\u200c', 'ṙ'), (r'r\u200d', 'ṙ'),
+
+    #hapus zwj-zwnj 
+    (r'\u200c', ''), (r'\u200d', '')
 ]
 
 def kata_baku(text):
@@ -71,7 +83,7 @@ def hukum_aksara(text):
     """Terapkan hukum aksara Jawa"""
     # Konsonan berdiri di antara spasi
     #Kasus konsonan berdiri diantara spasi
-    text = re.sub(rf"([{KONSONAN}])(\s*|-)([{KONSONAN}])\s+([{VOKAL}])", r"\1\2\3-\4", text, flags=re.IGNORECASE)
+    text = re.sub(rf"([{KONSONAN}])([^\S\n]*|-)([{KONSONAN}])[^\S\n]+([{VOKAL}])", r"\1\2\3-\4", text, flags=re.IGNORECASE)
 
     # Terapkan aturan hukum aksara biasa
     for pattern, replacement in HUKUM_AKSARA_CLUSTER:
@@ -110,10 +122,6 @@ def hukum_ṙ(text):
     # Ubah ṙ kembali ke r jika diikuti vokal
     text = re.sub(rf'ṙ(?=[{VOKAL_KECIL}])', 'r', text)
     
-    # Mahaprana
-    for pattern, replacement in HUKUM_ṙ_MAHAPRANA:
-        text = re.sub(pattern, replacement, text, re.IGNORECASE)
-    
     # Kasus ry -> ṙyy (di awal kata atau setelah spasi/tanda hubung)
     # Pola regex yang digunakan untuk mencari 'ry' yang perlu diganti menjadi 'ṙyy'
     pattern = (
@@ -128,10 +136,14 @@ def hukum_ṙ(text):
     text = re.sub(pattern, 'ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
     
     #print(text)  # Debug print seperti kode asli
+
+    # Mahaprana
+    for pattern, replacement in HUKUM_ṙ_MAHAPRANA:
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
     
     # Penggantian spesial
     for pattern, replacement in PENGGANTIAN_ṙ:
-        text = re.sub(pattern, replacement, text)
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
     
     return text
 
