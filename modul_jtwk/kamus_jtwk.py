@@ -80,7 +80,8 @@ substitutions = {
 
     r'h(m|k)(u|w)': r'ḥ\1\2',
     r'r(m|k)(u|w)': r'ṙ\\\1\2',
-    r'hta\b': 'ḥta', r'ṅta\b': 'ŋta',
+    r'ht([' + daftar_vokal + r'])\b': r'ḥt\1',
+    r'ṅt([' + daftar_vokal + r'])\b': r'ŋt\1',
     
     #spesial kw (ingat ṅ itu ṅku itu gapakai cecak)
     r'([' + daftar_konsonan + '])([' + daftar_vokal + '])r(k|m)w([' + daftar_vokal + '])': r'\1\2ṙ\\\3w\4',

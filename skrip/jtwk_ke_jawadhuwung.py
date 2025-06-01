@@ -50,6 +50,7 @@ def latin_to_jawa(text, line_spacing):
     text = re.sub(r'ꦫ꧀ꦮ\u200c', '꧞', text)
     text = re.sub(r'ꦾ', '꧀ꦪ', text)
     text = re.sub(r'ꦿ', '꧀ꦫ', text)
+    text = re.sub(r'ꦂ', 'ꦂ', text, flags=re.IGNORECASE)#layar ke layar
 
     '''
     #text = re.sub(r'ṙ', 'r\u200D', text, flags=re.IGNORECASE)
