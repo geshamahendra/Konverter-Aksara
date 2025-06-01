@@ -115,10 +115,17 @@ def hukum_ṙ(text):
         text = re.sub(pattern, replacement, text, re.IGNORECASE)
     
     # Kasus ry -> ṙyy (di awal kata atau setelah spasi/tanda hubung)
-    text = re.sub(
-        r'(?:(?<=^)|(?<=\s))ry(?=[^\s-])|(?<=-)ry(?=[^\s-])|(?:\brī\b[^\S\n]+a)',
-        'ṙyy', text, re.MULTILINE | re.IGNORECASE
+    # Pola regex yang digunakan untuk mencari 'ry' yang perlu diganti menjadi 'ṙyy'
+    pattern = (
+        fr'(?:(?<=[{KONSONAN}]\s)'  # cocok jika didahului konsonan + spasi
+        r'|(?<=^)'                 # atau berada di awal baris
+        r'|(?<=-))'                # atau setelah tanda hubung '-'
+        r'ry(?=[^\s-])'            # dan diikuti huruf (bukan spasi atau tanda hubung)
+        r'|(?:\brī\b[^\S\n]+a)'    # atau kasus khusus: rī (kata sendiri) lalu spasi dan 'a'
     )
+    
+    # Ganti semua pola yang cocok dengan 'ṙyy'
+    text = re.sub(pattern, 'ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
     
     #print(text)  # Debug print seperti kode asli
     
