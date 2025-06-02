@@ -297,7 +297,7 @@ def hukum_sandi(text):
                 lambda match: PENYERAGAMAN_VOKAL[match.group(0)], text)
 
     #cegah ya dipasangi
-    pengecualian_ya = set('aāiīuūeèéoōöŏĕꜷꜽwyr')
+    pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyr')
     text = re.sub(
     r'([yw])([^\S\n]*|-)(?=([^\s]))',
     lambda m: (m.group(1) + m.group(2) + ('' if m.group(3).lower() in pengecualian_ya else ZWNJ)),text)
