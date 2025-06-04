@@ -52,9 +52,10 @@ PENGGANTIAN_ṙ = [
     (rf'\b((?!r)[{KONSONAN}])aryan\b', r'\1aṙyyan'),
     (rf'\b(b|h|p|g)arya', r'\1aṙyya'),
 
-    #pengecualian vokal u
-    #(rf'\b(niṙ|duṙ|pāṙ)(w)\2', r'\1\2'),
+    #cegah setelah nir durpar konsonan tumpuk tiga
     (rf'\b(niṙ|duṙ|pāṙ)([{KONSONAN}])\2([{KONSONAN}])', r'\1\2\3'),
+
+    #pengecualian vokal u
     (r'ṙmmu ', 'ṙmu '), 
     (r'uṙww', 'urw'), 
     (r'kaṙww(a|â|ā)', r'karw\1'),

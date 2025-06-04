@@ -14,6 +14,21 @@ TANDA_SALAH = '❌'
 JARAK_TANDA_SALAH = 2
 konsonan_pattern = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳ"
 
+# Kamus Pemetaan Vokal (Bisa didefinisikan secara global jika digunakan di banyak tempat)
+VOWEL_PENDEK_KE_PANJANG = {
+    'a': 'ā',
+    'i': 'ī',
+    'u': 'ū',
+    'ĕ': 'ö',
+}
+
+VOWEL_PANJANG_KE_PENDEK = {
+    'ā': 'a', 'â': 'a',
+    'ī': 'i', 'î': 'i',
+    'ū': 'u', 'û': 'u',
+    'ö': 'ĕ', 'e': 'ĕ', 'è': 'ĕ', 'é': 'ĕ',
+}
+
 def bersihkan_karakter_tak_terlihat(text):
     """
     Membersihkan karakter tak terlihat (zero-width non-joiner, spasi) dari text.
@@ -75,21 +90,6 @@ def hitung_jumlah_metrum(line):
             return (jumlah_dalam_blok * perkalian) + jumlah_di_luar
     
     return sum(1 for _ in RE_METRUM_SIMBOL.finditer(line))
-
-# Kamus Pemetaan Vokal (Bisa didefinisikan secara global jika digunakan di banyak tempat)
-VOWEL_PENDEK_KE_PANJANG = {
-    'a': 'ā',
-    'i': 'ī',
-    'u': 'ū',
-    'ĕ': 'ö',
-}
-
-VOWEL_PANJANG_KE_PENDEK = {
-    'ā': 'a', 'â': 'a',
-    'ī': 'i', 'î': 'i',
-    'ū': 'u', 'û': 'u',
-    'ö': 'ĕ', 'e': 'ĕ', 'è': 'ĕ', 'é': 'ĕ',
-}
 
 # --- Fungsi Pembantu ---
 def ubah_vokal_sesuai_metrum(vokal_char, metrum_target, is_first_char=False):
