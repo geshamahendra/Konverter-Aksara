@@ -27,8 +27,7 @@ HUKUM_AKSARA_CLUSTER = [
     (r'nḍ', 'ṇḍ'), (r'nḋ', 'ṇḋ'), (r'nṭ', 'ṇṭ'), (r'nṫ', 'ṇṫ'),
     (r'nc', 'ñc'), (r'nj', 'ñj'), (r'ks', 'kṣ'), (r'ꝁs', 'ꝁṣ'),
     (r'gs', 'gṣ'), (r'ǥs', 'ǥṣ'), (r'jn', 'jñ'), (r'rs', 'ṙṣ'),
-    (r'ṣt', 'ṣṭ'), (r'sṭ', 'ṣṭ'), (r'ṣŧ', 'ṣṫ'), (r'sry', 'śry'),
-    (r'sṫ', 'ṣṫ')
+    (r'ṣt', 'ṣṭ'), (r'sṭ', 'ṣṭ'), (r'ṣŧ', 'ṣṫ'), (r'sry', 'śry'), (r'sṫ', 'ṣṫ')
 ]
 
 # Aturan khusus dengan lambda function
@@ -44,6 +43,7 @@ HUKUM_ṙ_MAHAPRANA = [
 ]
 
 PENGGANTIAN_ṙ = [
+
     #pengecualian vokal a
     (r'ṙs', 'ṙṣ'), (r'ṛs', 'ṛṣ'), (r'ṙṣik\b', 'ṙsik'), 
     (r'ṙṇny', 'ṙny'), (r'aṙyy([aā])', r'ary\1'),
@@ -53,15 +53,16 @@ PENGGANTIAN_ṙ = [
     (rf'\b(b|h|p|g)arya', r'\1aṙyya'),
 
     #pengecualian vokal u
-
+    #(rf'\b(niṙ|duṙ|pāṙ)(w)\2', r'\1\2'),
     (rf'\b(niṙ|duṙ|pāṙ)([{KONSONAN}])\2([{KONSONAN}])', r'\1\2\3'),
-    (r'ṙmmu ', 'ṙmu '), (r'uṙww', 'urw'), 
+    (r'ṙmmu ', 'ṙmu '), 
+    (r'uṙww', 'urw'), 
     (r'kaṙww(a|â|ā)', r'karw\1'),
-    (r'tumiṙww(a|â|ā)', 'tumirw\1'),
+    (r'tumiṙww(a|â|ā)', r'tumirw\1'),
+    (r'ṙwwaṅ\b', r'rwaṅ'),
 
     #cegah r+zwj-zwnj agar tidal jadi ra pangku 
     (r'r\u200c', 'ṙ'), (r'r\u200d', 'ṙ'),
-
     #hapus zwj-zwnj 
     (r'\u200c', ''), (r'\u200d', '')
 ]
@@ -164,7 +165,7 @@ def hukum_sigeg(text):
     
     # Ubah ṙ jadi r di ujung baris/kalimat
     text = re.sub(
-        r'ṙ([ \-]*)(.)', 
+        r'ṙ([ \-~]*)(.)', 
         lambda m: ('r' if not m.group(2).isalpha() else 'ṙ') + m.group(1) + m.group(2),
         text
     )

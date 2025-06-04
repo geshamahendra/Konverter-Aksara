@@ -76,6 +76,51 @@ def hitung_jumlah_metrum(line):
     
     return sum(1 for _ in RE_METRUM_SIMBOL.finditer(line))
 
+# Kamus Pemetaan Vokal (Bisa didefinisikan secara global jika digunakan di banyak tempat)
+VOWEL_PENDEK_KE_PANJANG = {
+    'a': 'ā',
+    'i': 'ī',
+    'u': 'ū',
+    'ĕ': 'ö',
+}
+
+VOWEL_PANJANG_KE_PENDEK = {
+    'ā': 'a', 'â': 'a',
+    'ī': 'i', 'î': 'i',
+    'ū': 'u', 'û': 'u',
+    'ö': 'ĕ', 'e': 'ĕ', 'è': 'ĕ', 'é': 'ĕ',
+}
+
+# --- Fungsi Pembantu ---
+def ubah_vokal_sesuai_metrum(vokal_char, metrum_target, is_first_char=False):
+    """
+    Mengubah vokal berdasarkan metrum target.
+    Args:
+        vokal_char (str): Karakter vokal asli.
+        metrum_target (str): Simbol metrum yang dituju ('–' untuk panjang, '⏑' untuk pendek).
+        is_first_char (bool): True jika vokal adalah karakter pertama baris (untuk kapitalisasi).
+
+    Returns:
+        str: Vokal yang sudah diubah atau vokal asli jika tidak ada perubahan.
+    """
+    vokal_lower = vokal_char.lower()
+    
+    if metrum_target == '–': # Metrum panjang, coba panjangkan
+        if vokal_lower in VOWEL_PENDEK_KE_PANJANG:
+            transformed_vowel = VOWEL_PENDEK_KE_PANJANG[vokal_lower]
+            return transformed_vowel.upper() if is_first_char else transformed_vowel
+    elif metrum_target == '⏑': # Metrum pendek, coba pendekkan
+        if vokal_lower in VOWEL_PANJANG_KE_PENDEK:
+            transformed_vowel = VOWEL_PANJANG_KE_PENDEK[vokal_lower]
+            return transformed_vowel.upper() if is_first_char else transformed_vowel
+    
+    # Jika tidak ada perubahan atau vokal tidak ada dalam kamus pemetaan
+    # Pertahankan kapitalisasi asli jika bukan karakter pertama, atau kapitalisasi pertama jika diminta
+    if is_first_char:
+        return vokal_char.upper()
+    return vokal_char
+
+
 def proses_puisi_buffer(puisi_buffer, current_metrum):
     """
     Menerapkan metrum pada baris-baris puisi dalam buffer.
@@ -100,41 +145,19 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
         
         # PERBAIKAN: Periksa vokal di awal baris dengan pola VCV
         if clean_line and RE_VOKAL.match(clean_line[0]):
-            # Jika karakter pertama adalah vokal (tepat di awal baris)
             metrum_awal = selected_metrum[0]  # Metrum untuk posisi pertama
-            vokal_awal = clean_line[0].lower()
-            
+            vokal_awal = clean_line[0] # Ambil karakter asli untuk diubah
+
             # Periksa apakah vokal diikuti oleh pola konsonan-vokal (CV)
             if len(clean_line) >= 3:
-                # Periksa karakter kedua adalah konsonan dan karakter ketiga adalah vokal
                 if (RE_KONSONAN.match(clean_line[1]) and 
                     RE_VOKAL.match(clean_line[2]) and 
                     clean_line[1].lower() not in KHUSUS_KONSONAN):
                     
-                    # Jika metrum menuntut vokal panjang (–) dan vokal awal pendek
-                    if metrum_awal == '–' and vokal_awal in VOWEL_PENDEK:
-                        if vokal_awal == 'a':
-                            # Vokal di awal baris selalu kapital
-                            line = 'Ā' + line[1:]
-                        elif vokal_awal == 'i':
-                            line = 'Ī' + line[1:]
-                        elif vokal_awal == 'u':
-                            line = 'Ū' + line[1:]
-                        elif vokal_awal == 'ĕ':
-                            line = 'Ö' + line[1:]
-                        # Tambahkan untuk vokal lain jika perlu
-                    
-                    # Jika metrum menuntut vokal pendek (⏑) dan vokal awal panjang
-                    elif metrum_awal == '⏑' and vokal_awal in VOWEL_PANJANG:
-                        if vokal_awal == 'ā' or vokal_awal == 'â':
-                            line = 'A' + line[1:]
-                        elif vokal_awal == 'ī' or vokal_awal == 'î':
-                            line = 'I' + line[1:]
-                        elif vokal_awal == 'ū' or vokal_awal == 'û':
-                            line = 'U' + line[1:]
-                        elif vokal_awal == 'ö' or vokal_awal == 'e' or vokal_awal == 'è' or vokal_awal == 'é':
-                            line = 'Ĕ' + line[1:]
-                        # Tambahkan untuk vokal lain jika perlu
+                    # Gunakan fungsi pembantu untuk pemanjangan/pemendekan
+                    new_vokal_awal = ubah_vokal_sesuai_metrum(vokal_awal, metrum_awal, is_first_char=True)
+                    if new_vokal_awal != vokal_awal:
+                        line = new_vokal_awal + line[1:]
         
         # Temukan semua posisi vokal dalam baris bersih untuk dikaitkan dengan metrum
         vokal_posisi_clean = []
@@ -149,12 +172,9 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
         clean_vokal_idx = 0  # Indeks saat ini di vokal_posisi_clean
         
         while clean_idx < len(clean_line) and clean_vokal_idx < len(vokal_posisi_clean):
-            # Jika posisi di clean_line adalah posisi vokal
             if clean_idx == vokal_posisi_clean[clean_vokal_idx]:
-                # Cari posisi vokal yang sesuai di line asli
                 while orig_idx < len(line):
                     if line[orig_idx].lower() in VOWELS:
-                        # Tambahkan mapping (indeks asli, karakter, metrum yang sesuai)
                         metrum_idx = clean_vokal_idx % len(selected_metrum)
                         vokal_posisi.append((orig_idx, line[orig_idx], selected_metrum[metrum_idx]))
                         orig_idx += 1
@@ -163,13 +183,14 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                 clean_vokal_idx += 1
             clean_idx += 1
             
-            # Tambahkan indeks orig_idx hingga mencapai karakter yang sama di clean_line
-            if clean_idx < len(clean_line) and orig_idx < len(line):
-                # Lompati karakter tak terlihat di line asli 
-                while orig_idx < len(line) and (line[orig_idx] == ZWNJ or line[orig_idx] == ZWJ):
-                    orig_idx += 1
+            while orig_idx < len(line) and (line[orig_idx] == ZWNJ or line[orig_idx] == ZWJ):
+                orig_idx += 1
 
         hasil_line = list(line)
+        
+        kata_kata = list(re.finditer(r'\S+', line))
+        kata_list = [(m.start(), m.end(), m.group()) for m in kata_kata]
+
         i_vokal = 0
         while i_vokal < len(vokal_posisi) - 1:
             idx1, v1, met1 = vokal_posisi[i_vokal]
@@ -179,6 +200,8 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
             # Logika untuk kasus "vokal spasi vokal"
             if re.fullmatch(r'[^\S\n]*', text_between):
+                # Ini lebih tentang kapitalisasi, bukan pemanjangan/pemendekan struktural
+                # Jadi logika aslinya mungkin tetap relevan di sini jika memang hanya kapitalisasi yang diinginkan
                 if met1 == '⏑' and met2 == '⏑' and v1_lower in VOWEL_PENDEK and v2_lower in VOWEL_PENDEK:
                     hasil_line[idx2] = v2.upper()
                     i_vokal += 1
@@ -197,9 +220,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                     continue
 
             # Logika untuk kasus "vokal konsonan spasi vokal"
-            if met1 == '–' and v1_lower in VOWEL_PENDEK:   #VOWEL_PENDEK
-                kata_kata = list(re.finditer(r'\S+', line))
-                kata_list = [(m.start(), m.end(), m.group()) for m in kata_kata]
+            if met1 == '–' and v1_lower in VOWEL_PENDEK:
                 kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
                 kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
                 if kata_v1 and kata_v2 and kata_v1 != kata_v2:
@@ -209,124 +230,95 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                     if idx_v1_relatif + 1 < len(akhir_kata1):
                         konsonan_akhir_kata1 = akhir_kata1[idx_v1_relatif + 1]
                         if RE_KONSONAN.match(konsonan_akhir_kata1) and awal_kata2 and awal_kata2[0].lower() == v2_lower and ' ' in text_between:
+                            # Ini juga lebih ke kapitalisasi
                             hasil_line[idx2] = v2.upper()
                             i_vokal += 1
                             continue
 
-            # PERBAIKAN: Kasus "vokal saat ini + spasi + satu konsonan + vokal lain" (seperti "wāna ra")
-            # Periksa apakah vokal saat ini (v1) perlu dipanjangkan berdasarkan metrum
+            # Kasus "vokal saat ini + spasi + satu konsonan + vokal lain" (seperti "wāna ra")
+            # Pemanjangan
             if met1 == '–' and v1_lower in VOWEL_PENDEK:
-                # Dapatkan semua konsonan dengan mengecualikan karakter khusus
-                konsonan_pattern = RE_KONSONAN.pattern[1:-1]  # Hapus ^ dan $ dari pola RE_KONSONAN
-                
-                # Periksa pola: vokal diikuti spasi kemudian konsonan tunggal dan vokal berikutnya
-                # Ini mencari pola seperti dalam "wāna ra" di mana 'a' diikuti oleh spasi, 'r', dan 'a'
+                konsonan_pattern = RE_KONSONAN.pattern[1:-1]
                 vokal_spasi_konsonan_pattern = re.fullmatch(r'\s+([' + konsonan_pattern + '])\s*', text_between)
-                
-                # Jika pola ditemukan dan konsonan berikutnya bukan konsonan khusus
                 if vokal_spasi_konsonan_pattern and vokal_spasi_konsonan_pattern.group(1).lower() not in KHUSUS_KONSONAN:
                     konsonan = vokal_spasi_konsonan_pattern.group(1)
-                    
-                    # Jika kata berikutnya dimulai dengan konsonan yang ditemukan dan diikuti vokal
                     kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
                     if kata_v2:
                         awal_kata2 = kata_v2[2]
-                        # Pastikan kata kedua dimulai dengan konsonan yang sama dan diikuti oleh vokal
                         if awal_kata2.startswith(konsonan) and len(awal_kata2) > 1 and RE_VOKAL.match(awal_kata2[1]):
-                            # Panjangkan vokal v1 karena metrum menuntut vokal panjang
-                            if v1_lower == 'a':
-                                hasil_line[idx1] = 'ā'
-                            elif v1_lower == 'i':
-                                hasil_line[idx1] = 'ī'
-                            elif v1_lower == 'u':
-                                hasil_line[idx1] = 'ū'
-                            elif v1_lower == 'ĕ':
-                                hasil_line[idx1] = 'ö'
-                            # Kasus lain jika diperlukan
+                            new_vokal = ubah_vokal_sesuai_metrum(v1, met1)
+                            if new_vokal != v1:
+                                hasil_line[idx1] = new_vokal
+            # Pemendekan
+            elif met1 == '⏑' and v1_lower in VOWEL_PANJANG:
+                konsonan_pattern = RE_KONSONAN.pattern[1:-1]
+                vokal_spasi_konsonan_pattern = re.fullmatch(r'\s+([' + konsonan_pattern + '])\s*', text_between)
+                if vokal_spasi_konsonan_pattern and vokal_spasi_konsonan_pattern.group(1).lower() not in KHUSUS_KONSONAN:
+                    konsonan = vokal_spasi_konsonan_pattern.group(1)
+                    kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
+                    if kata_v2:
+                        awal_kata2 = kata_v2[2]
+                        if awal_kata2.startswith(konsonan) and len(awal_kata2) > 1 and RE_VOKAL.match(awal_kata2[1]):
+                            new_vokal = ubah_vokal_sesuai_metrum(v1, met1)
+                            if new_vokal != v1:
+                                hasil_line[idx1] = new_vokal
 
-            # PERBAIKAN TAMBAHAN: Khusus untuk pola seperti "wāna ra"
-            # Periksa jika vokal di akhir kata diikuti oleh kata yang terdiri dari satu konsonan dan satu vokal
+            # Khusus untuk pola seperti "wāna ra" (akhir kata vokal + awal kata konsonan+vokal)
+            # Pemanjangan
             if met1 == '–' and v1_lower in VOWEL_PENDEK:
-                # Cari kata yang mengandung vokal ini
-                kata_kata = list(re.finditer(r'\S+', line))
-                kata_list = [(m.start(), m.end(), m.group()) for m in kata_kata]
                 kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
-                
                 if kata_v1:
                     kata = kata_v1[2]
-                    idx_rel = idx1 - kata_v1[0]  # Posisi relatif dalam kata
-                    
-                    # Periksa apakah vokal ini berada di akhir kata
-                    if idx_rel == len(kata) - 1:
-                        # Cari kata berikutnya dalam baris
+                    idx_rel = idx1 - kata_v1[0]
+                    if idx_rel == len(kata) - 1: # Vokal di akhir kata
                         next_kata_idx = kata_list.index(kata_v1) + 1
                         if next_kata_idx < len(kata_list):
                             next_kata = kata_list[next_kata_idx][2]
-                            # Periksa apakah kata berikutnya mengikuti pola konsonan+vokal (CV)
                             if len(next_kata) == 2 and RE_KONSONAN.match(next_kata[0]) and RE_VOKAL.match(next_kata[1]):
-                                # Pastikan konsonan bukan dari daftar khusus
                                 if next_kata[0].lower() not in KHUSUS_KONSONAN:
-                                    # Panjangkan vokal karena metrum menuntut vokal panjang
-                                    if v1_lower == 'a':
-                                        hasil_line[idx1] = 'ā'
-                                    elif v1_lower == 'i':
-                                        hasil_line[idx1] = 'ī'
-                                    elif v1_lower == 'u':
-                                        hasil_line[idx1] = 'ū'
-                                    elif v1_lower == 'ĕ':
-                                        hasil_line[idx1] = 'ö'
-                                    # Kasus lain jika diperlukan
+                                    new_vokal = ubah_vokal_sesuai_metrum(v1, met1)
+                                    if new_vokal != v1:
+                                        hasil_line[idx1] = new_vokal
+            # Pemendekan
+            elif met1 == '⏑' and v1_lower in VOWEL_PANJANG:
+                kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
+                if kata_v1:
+                    kata = kata_v1[2]
+                    idx_rel = idx1 - kata_v1[0]
+                    if idx_rel == len(kata) - 1:
+                        next_kata_idx = kata_list.index(kata_v1) + 1
+                        if next_kata_idx < len(kata_list):
+                            next_kata = kata_list[next_kata_idx][2]
+                            if len(next_kata) == 2 and RE_KONSONAN.match(next_kata[0]) and RE_VOKAL.match(next_kata[1]):
+                                if next_kata[0].lower() not in KHUSUS_KONSONAN:
+                                    new_vokal = ubah_vokal_sesuai_metrum(v1, met1)
+                                    if new_vokal != v1:
+                                        hasil_line[idx1] = new_vokal
 
-            # Kasus KVKV dalam kata yang sama (kode sebelumnya)
-            # Dapatkan semua konsonan dengan mengecualikan karakter khusus (definisi ulang)
-            konsonan_pattern = RE_KONSONAN.pattern[1:-1]  # Hapus ^ dan $ dari pola RE_KONSONAN
+            # Kasus KVKV dalam kata yang sama
+            # Ini adalah loop utama untuk setiap vokal, jadi saya biarkan logika di sini.
+            # Dapatkan semua konsonan dengan mengecualikan karakter khusus
+            konsonan_pattern = RE_KONSONAN.pattern[1:-1]
             vokal_konsonan_pattern = re.search(r'^(\s+)([' + konsonan_pattern + '])(' + RE_VOKAL.pattern[1:-1] + ')', text_between, re.IGNORECASE)
             
             if vokal_konsonan_pattern:
-                # Debug: Cetak nilai yang ditemukan untuk membantu debugging
-                spasi = vokal_konsonan_pattern.group(1)
                 konsonan = vokal_konsonan_pattern.group(2)
-                vokal_setelah = vokal_konsonan_pattern.group(3)
-                
-                # Pastikan konsonan bukan salah satu dari karakter khusus
-                if konsonan.lower() not in 'ṅŋḥṙ':
-                    # Jika v1 perlu dipanjangkan (metrum panjang)
-                    if met1 == '–' and v1_lower in VOWEL_PENDEK:
-                        if v1_lower == 'a':
-                            hasil_line[idx1] = 'ā'
-                        elif v1_lower == 'i':
-                            hasil_line[idx1] = 'ī'
-                        elif v1_lower == 'u':
-                            hasil_line[idx1] = 'ū'
-                        elif v1_lower == 'ĕ':
-                            hasil_line[idx1] = 'ö'
-                        # Tambahkan untuk vokal lain jika perlu
-                    
-                    # Jika v1 perlu dipendekkan (metrum pendek)
-                    elif met1 == '⏑' and v1_lower in VOWEL_PANJANG:
-                        if v1_lower == 'ā' or v1_lower == 'â':
-                            hasil_line[idx1] = 'a'
-                        elif v1_lower == 'ī' or v1_lower == 'î':
-                            hasil_line[idx1] = 'i'
-                        elif v1_lower == 'ū' or v1_lower == 'û':
-                            hasil_line[idx1] = 'u'
-                        elif v1_lower == 'ö' or vokal_lower == 'e' or vokal_lower == 'è' or vokal_lower == 'é':
-                            hasil_line[idx1] = 'ĕ'
-                        # Tambahkan untuk vokal lain jika perlu
+                if konsonan.lower() not in KHUSUS_KONSONAN:
+                    new_vokal = ubah_vokal_sesuai_metrum(v1, met1)
+                    if new_vokal != v1:
+                        hasil_line[idx1] = new_vokal
 
             i_vokal += 1
+        
         # MODIFIKASI: Sekarang pemanjangan dan pemendekan vokal memeriksa pola KVKV dalam kata yang sama
         for i, (idx_vokal, vokal, metrum_vokal) in enumerate(vokal_posisi):
             vokal_lower = vokal.lower()
             
-            # Temukan kata yang mengandung vokal ini
-            kata_kata = list(re.finditer(r'\S+', line))
-            kata_list = [(m.start(), m.end(), m.group()) for m in kata_kata]
             kata_v = next((k for k in kata_list if k[0] <= idx_vokal < k[1]), None)
             
             if kata_v:
                 kata = kata_v[2]
-                idx_rel = idx_vokal - kata_v[0]  # Posisi relatif dalam kata
+                idx_rel = idx_vokal - kata_v[0]
                 
                 # Cek apakah vokal ini didahului oleh konsonan (pola KVKV)
                 konsonan_sebelum = idx_rel > 0 and RE_KONSONAN.match(kata[idx_rel - 1])
@@ -337,27 +329,27 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                     RE_KONSONAN.match(kata[idx_rel + 1]) and 
                     RE_VOKAL.match(kata[idx_rel + 2])):
                     
-                    # Pemanjangan vokal - hanya untuk metrum panjang (–)
-                    if vokal_lower in 'aiuĕ' and metrum_vokal == '–':
-                        if vokal_lower == 'a':
-                            hasil_line[idx_vokal] = 'ā'
-                        elif vokal_lower == 'i':
-                            hasil_line[idx_vokal] = 'ī'
-                        elif vokal_lower == 'u':
-                            hasil_line[idx_vokal] = 'ū'
-                        elif vokal_lower == 'ĕ':
-                            hasil_line[idx_vokal] = 'ö'
+                    new_vokal = ubah_vokal_sesuai_metrum(vokal, metrum_vokal)
+                    if new_vokal != vokal:
+                        hasil_line[idx_vokal] = new_vokal
+
+                # Logika untuk pola 2+ konsonan + vokal + 1 konsonan + 1 vokal
+                konsonan_sebelum_count = 0
+                temp_idx = idx_rel - 1
+                while temp_idx >= 0 and RE_KONSONAN.match(kata[temp_idx]):
+                    konsonan_sebelum_count += 1
+                    temp_idx -= 1
+                
+                if (konsonan_sebelum_count >= 2 and 
+                    idx_rel + 2 < len(kata) and 
+                    RE_KONSONAN.match(kata[idx_rel + 1]) and 
+                    RE_VOKAL.match(kata[idx_rel + 2])):
                     
-                    # Pemendekan vokal - untuk metrum pendek (⏑)               
-                    elif vokal_lower in 'âîûāīūöeèé' and metrum_vokal == '⏑':
-                        if vokal_lower == 'ā' or vokal_lower == 'â':
-                            hasil_line[idx_vokal] = 'a'
-                        elif vokal_lower == 'ī'or vokal_lower == 'î':
-                            hasil_line[idx_vokal] = 'i'
-                        elif vokal_lower == 'ū' or vokal_lower == 'û':
-                            hasil_line[idx_vokal] = 'u'
-                        elif vokal_lower == 'ö' or vokal_lower == 'e' or vokal_lower == 'è' or vokal_lower == 'é':
-                            hasil_line[idx_vokal] = 'ĕ'
+                    konsonan_setelah = kata[idx_rel + 1]
+                    if konsonan_setelah.lower() not in KHUSUS_KONSONAN:
+                        new_vokal = ubah_vokal_sesuai_metrum(vokal, metrum_vokal)
+                        if new_vokal != vokal:
+                            hasil_line[idx_vokal] = new_vokal
                 
         processed.append(''.join(hasil_line))
     return processed

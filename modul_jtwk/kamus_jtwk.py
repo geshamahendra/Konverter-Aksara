@@ -25,13 +25,14 @@ def sisipkan_zwnj_setelah_nir_dur(match):
 
 substitutions = {
     #Aksara Suci
-    r'Ai': 'Ꜽ', r'Au': 'Ꜷ',
+    r'Ai': 'Ꜽ', r'Au': 'Ꜷ', r'(\*|\#)Om': r'\1Ōṃ',
     r'ai': 'ꜽ', r'au': 'ꜷ', 
     r'ng': 'ṅ', r'\b^h' : 'ʰ',
-    r'\bAwi(g|ǥ)?(h)?namastu\b': 'Awiǥnamāstu', 
+    r'\b(A|a)wi(g|ǥ)?(h)?namastu\b': r'`Awiǥnamāstu', 
     
     r'wi(s|ś)(è|e)sa': 'wiśèṣa',
-    r'r(e|è|ĕ)?sn': 'ṛĕṣṇ', r'\bkar(ĕ|e)na': 'karĕṇa', r'\bwau\b': 'wawu',
+    r'r(e|è|ĕ)?sn((?![' + daftar_konsonan + ']))': r'ṛĕṣṇ\2', 
+    r'\bkar(ĕ|e)na': 'karĕṇa', r'\bwau\b': 'wawu',
     r'\bwong\b': 'wwoŋ', r'\bdewa\b': 'dèwa', r'\bdewi\b': 'dèwī',
     r'\bsasangka\b': 'śaśāṅka', r'\b(s|ś)r(i|ī)\b': 'śrī', r'\brsi\b': 'ṛṣi',
     r'(?i)mahadewi': 'mahādèwi', r'(?i)mahadewa': 'mahādèwa', r'(?i)wisnu': 'wiṣṇu',
@@ -56,13 +57,6 @@ substitutions = {
     #r'\bnir(w|g|ś)': r'nir\\\1',
     #r'\bpar(w|g|ś)': r'par\\\1',
 
-    #Hukum dwikrama sanskerta
-    # Regex substitusi
-    r'\b(nir|dur|pār)(?![' + daftar_vokal + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
-    r'\bnir(g)': r'nir\\\1', #nir guna
-    r'\bdur\\(y)': r'dur\1', #durya
-    r'\bpar\\(w)': r'par\1', #parwa
-
     #Imbuhan aṅr
     r'\b(m|p)aṅr(\w+)': lambda m: 
         m.group(1) + 'aŋr' + m.group(2) if sum(c in daftar_vokal for c in m.group(2)) >= 2 else m.group(0),
@@ -85,7 +79,14 @@ substitutions = {
     
     #spesial kw (ingat ṅ itu ṅku itu gapakai cecak)
     r'([' + daftar_konsonan + '])([' + daftar_vokal + '])r(k|m)w([' + daftar_vokal + '])': r'\1\2ṙ\\\3w\4',
-    r'([' + daftar_konsonan + '])([' + daftar_vokal + '])h(k|m)w([' + daftar_vokal + '])': r'\1\2ḥ\3w\4',    
+    r'([' + daftar_konsonan + '])([' + daftar_vokal + '])h(k|m)w([' + daftar_vokal + '])': r'\1\2ḥ\3w\4',   
+
+    #Hukum dwikrama sanskerta
+    # Regex substitusi
+    r'\b(nir|dur|pār)(?![' + daftar_vokal + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
+    r'\bnir(g)': r'nir\\\1', #nir guna
+    r'\bdur\\(y)': r'dur\1', #durya
+    r'\bpar\\(w)': r'par\1', #parwa 
     
     r'(s|ś)unya': 'śūnya', r'budi': 'budđi', 
     r'purna': 'pūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
@@ -105,7 +106,7 @@ substitutions = {
     r'm(u|e)sti\b': r'm\1ṣṭi',
     r'hid(ĕ|e)p': 'hiḍĕp', r'yogi(s|ś)wara': 'yogīśwara', r'datĕṅ': 'ḍatĕŋ', r'dusta': 'duṣṭa', 
     r'padaṅ': 'paḍaṅ', r'pandita': 'paṇḍita', r'\bsirna\b': 'śīrna', r'\bsarira': 'śarīra', r'atmaj': 'ātmaj',
-    r'raksasa': 'rākṣasa', r'datwan': 'ḍatwan',
+    r'raksasa': 'rākṣasa', r'dat(w|u)': 'ḍat\1',
     r'karana': 'karaṇa', r'\brana\b': 'raṇa',
 
     

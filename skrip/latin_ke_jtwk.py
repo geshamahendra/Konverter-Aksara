@@ -15,6 +15,15 @@ from modul_jtwk.hukum_macapat import cek_macapat
 
 def replace_characters(text, mode):
 
+    #paksa konsonan jadi huruf kecil kecuali vokal kapital
+    def paksa_huruf_kecil(text):
+        vokal_kapital = "AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ"
+        return ''.join(
+            c if c in vokal_kapital else c.lower()
+            for c in text
+        )
+    text = paksa_huruf_kecil(text)
+
     #======Mulai transliterasi sesuai file replacements.py=====
     # Pilih set transliterasi sesuai mode
     mode_replacements = replacements.get(mode, replacements)

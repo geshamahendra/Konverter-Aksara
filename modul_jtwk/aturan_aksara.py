@@ -108,23 +108,20 @@ simbol = {
     '%' : f'{ZWSP}꧄‍꧉ꦧ꧀ꦖ꧉꧄‍{ZWSP}', '^' : f'{ZWSP}꧄‍꧉ꦟ꧀ꦢꦿ꧉꧄‍{ZWSP}', '&' : f'{ZWSP}꧄‍꧉ꦅ꧉꧄‍{ZWSP}'
 }
 
-PENYERAGAMAN_VOKAL = {
-    'â': 'ā',
-    'î': 'ī',
-    'ô': 'o',
-    'ê': 'e',
-    'é': 'e',
-    'è': 'e',
-    'û': 'ū',
-    'lĕ': 'ḷ',
-    'ḷĕ': 'ḷ',
-    'lö': 'ḹ',
-    'ḹö': 'ḹ',
-    'rĕ': 'ṛ',
-    'ṛĕ': 'ṛ',
-    'rö': 'ṝ',
-    'ṝö': 'ṝ'
-}
+PENYERAGAMAN_VOKAL = {}
+for kunci, nilai in [
+    (['â'], 'ā'),
+    (['î'], 'ī'),
+    (['ô'], 'o'),
+    (['ê', 'é', 'è'], 'e'),
+    (['û'], 'ū'),
+    (['ē','~'], ''),
+    (['lĕ', 'ḷĕ'], 'ḷ'),
+    (['lö', 'ḹö'], 'ḹ'),
+    (['rĕ', 'ṛĕ'], 'ṛ'),
+    (['rö', 'ṝö'], 'ṝ'),
+]:
+    PENYERAGAMAN_VOKAL.update(dict.fromkeys(kunci, nilai))
 
 VOWEL_MERGE_RULES_WITH_SPACE = [
     # hanya untuk kasus vokal dengan spasi antaranya
@@ -297,7 +294,7 @@ def hukum_sandi(text):
                 lambda match: PENYERAGAMAN_VOKAL[match.group(0)], text)
 
     #cegah ya dipasangi
-    pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyr')
+    pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyrṛṝl')
     text = re.sub(
     r'([yw])([^\S\n]*|-)(?=([^\s]))',
     lambda m: (m.group(1) + m.group(2) + ('' if m.group(3).lower() in pengecualian_ya else ZWNJ)),text)
@@ -328,6 +325,7 @@ def hukum_sandi(text):
 def hukum_penulisan(text):
 
     SUBSTITUTION_REGEX = [
+    #Kasus ryy dan rth
     (re.compile(r'(?<=\s)ṙyy|^ṙyy', flags=re.MULTILINE), f'{ZWNJ}ꦪꦾꦂ'),
     (re.compile(r'\brŧ'), f'{ZWNJ}ꦡꦂ'),
     

@@ -70,14 +70,6 @@ def mode_kakawin(text):
 
 def mode_lampah(text):
 
-    #paksa konsonan jadi huruf kecil kecuali vokal kapital
-    def paksa_huruf_kecil(text):
-        return ''.join(
-            c if c in vokal_kapital else c.lower()
-            for c in text
-        )
-    text = paksa_huruf_kecil(text)
-
     return text
 
 def mode_sriwedari(text):
