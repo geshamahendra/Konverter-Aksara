@@ -55,12 +55,20 @@ INIT_NORMALIZATION_MAP = {
     'rö': 'ṝ',
     'lĕ': 'ḷ',
     'lö': 'ḹ',
+    'Rĕ': 'ṛ',
+    'Rö': 'ṝ',
+    'Lĕ': 'ḷ',
+    'Lö': 'ḹ',
 }
 FINAL_NORMALIZATION_MAP = {
     'Ṛ' : 'rĕ', # Mengubah kapital Ṛ (dari input atau kapitalisasi lain) ke ṛ
     'Ḷ': 'lĕ',  # Mengubah kapital Ḷ (dari input atau kapitalisasi lain) ke ḷ
     'Ṝ': 'rö',  # Mengubah kapital Ṝ ke ṛ
     'Ḹ': 'lö',  # Mengubah kapital Ḹ ke ḷ
+    'ṛ': 'rĕ',
+    'ṝ': 'rö',
+    'ḷ': 'lĕ',
+    'ḹ': 'lö',
 }
 
 def bersihkan_karakter_tak_terlihat(text):
