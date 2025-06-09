@@ -48,19 +48,19 @@ VOWEL_PANJANG_KE_PENDEK = {
     'ḹ': 'ḷ',
 }
 
-# --- Kamus Pemetaan Akhir untuk Normalisasi ---
+# --- Kamus Pemetaanuntuk Normalisasi ---
 # Ini akan mengubah karakter kapital khusus ke bentuk lowercase-nya atau padanannya
+INIT_NORMALIZATION_MAP = {
+    'rĕ': 'ṛ',
+    'rö': 'ṝ',
+    'lĕ': 'ḷ',
+    'lö': 'ḹ',
+}
 FINAL_NORMALIZATION_MAP = {
-    'Ṛ' : 'ṛ', # Mengubah kapital Ṛ (dari input atau kapitalisasi lain) ke ṛ
-    'Ḷ': 'ḷ',  # Mengubah kapital Ḷ (dari input atau kapitalisasi lain) ke ḷ
-    'Ṝ': 'ṛ',  # Mengubah kapital Ṝ ke ṛ
-    'Ḹ': 'ḷ',  # Mengubah kapital Ḹ ke ḷ
-    # Jika Anda ingin Ṝ menjadi 'rö' dan Ḹ menjadi 'lö', maka gunakan:
-    # 'Ṝ': 'rö',
-    # 'Ḹ': 'lö',
-    # Dan pastikan mereka tidak dikapitalisasi lagi di tempat lain.
-    # Namun, karena permintaan Anda "kembali ke bentuk kecil tanpa kapital",
-    # pemetaan di atas ('Ṝ': 'ṛ', 'Ḹ': 'ḷ') lebih sesuai.
+    'Ṛ' : 'rĕ', # Mengubah kapital Ṛ (dari input atau kapitalisasi lain) ke ṛ
+    'Ḷ': 'lĕ',  # Mengubah kapital Ḷ (dari input atau kapitalisasi lain) ke ḷ
+    'Ṝ': 'rö',  # Mengubah kapital Ṝ ke ṛ
+    'Ḹ': 'lö',  # Mengubah kapital Ḹ ke ḷ
 }
 
 def bersihkan_karakter_tak_terlihat(text):
@@ -146,6 +146,20 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
     for i, line in enumerate(puisi_buffer):
         current_line_has_error_marker = False
         current_line_error_message = ""
+
+        # --- Langkah Pra-pemrosesan Karakter Khusus (BARU) ---
+        # Lakukan pemetaan dari kombinasi konsonan+vokal ke karakter khusus
+        original_line = line # Simpan baris asli untuk referensi
+        for old_seq, new_char in INIT_NORMALIZATION_MAP.items():
+            # Menggunakan re.sub dengan fungsi pengganti untuk mempertahankan kapitalisasi awal jika diperlukan
+            # Ini sedikit lebih kompleks karena PRA_PROSES_KARAKTER_KHUSUS memetakan 2 karakter menjadi 1
+            # Kita perlu memastikan bahwa karakter khusus yang baru dimasukkan juga dihitung sebagai vokal
+            # Cara paling sederhana adalah mengganti langsung dan memastikan regex VOWELS mengenalnya.
+            # Ini juga berarti kita harus menangani UPPERCASE/lowercase di PRA_PROSES_KARAKTER_KHUSUS jika ada varian
+            # Saat ini, saya mengasumsikan input 'rĕ' dll. adalah lowercase
+            line = line.replace(old_seq, new_char)
+            # Juga tangani kapitalisasi jika 'Rĕ' -> 'Ṛ', dll.
+            line = line.replace(old_seq.capitalize(), new_char.upper())
 
         selected_metrum = current_metrum[i % panjang_metrum]
 

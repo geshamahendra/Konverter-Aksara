@@ -15,8 +15,6 @@ substitutions = {
     #Aksara Suci
     'Ai': 'Ꜽ', 'Au': 'Ꜷ', r'(\*|\#)Om': r'\1Ōṃ',
     'ai': 'ꜽ', 'au': 'ꜷ', 
-    'rĕ': 'ṛ', 'rö': 'ṝ',
-    'lĕ': 'ḷ', 'lö': 'ḹ',
     'ng': 'ṅ', r'\b^h' : 'ʰ',
     r'\b(A|a)wi(g|ǥ)?(h)?namastu\b': r'`Awiǥnamāstu', 
     
