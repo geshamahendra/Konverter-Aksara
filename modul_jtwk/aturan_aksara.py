@@ -331,8 +331,10 @@ def hukum_penulisan(text):
     
     #substitusi sigeg + zwnj
     (re.compile(r'ṅ‌'), 'ŋ'),
+
     #zwnj sebelum konsonan+vokal+ŋ
-    (re.compile(rf'\b([{DAFTAR_KONSONAN}])([{DAFTAR_VOKAL}])ŋ'), rf'{ZWNJ}\1\2ŋ')
+    (re.compile(rf'\b([{DAFTAR_KONSONAN.replace('n', '')}])([{DAFTAR_VOKAL}])ŋ'), rf'{ZWNJ}\1\2ŋ')
+
     ]
     for pattern, replacement in SUBSTITUTION_REGEX:
         text = pattern.sub(replacement, text)
@@ -350,7 +352,7 @@ def hukum_penulisan(text):
     r' str',
 
     #bentuk khusus (tanpa spasi) jangan sampai terlalu banyak tumpuk tiga (bisa jadi ini akhiran spesial)
-    r'mw',  
+    #r'mw',  
     ]
     text = add_zwnj_awal_kata_bulk(text, patterns, ZWNJ, DAFTAR_KONSONAN)
 
