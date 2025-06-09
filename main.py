@@ -6,7 +6,7 @@ root_path = os.path.abspath(os.path.dirname(__file__))
 sys.path.append(root_path)
 
 # Daftar file Python yang ingin dijalankan satu per satu
-file_list = ["skrip/latin_ke_jtwk.py", "skrip/jtwk_ke_jawa.py", "skrip/jawa_ke_bali.py", "skrip/jawa_ke_kawi.py", "skrip/jtwk_ke_jawarepha.py", "skrip/jtwk_ke_latin_normal.py", "skrip/jtwk_ke_jawadhuwung.py"]
+file_list = ["skrip/latin_ke_jtwk.py", "skrip/jtwk_ke_latin_normal.py", "skrip/jtwk_ke_jawa.py", "skrip/jawa_ke_bali.py", "skrip/jawa_ke_kawi.py", "skrip/jtwk_ke_jawarepha.py",]# "skrip/jtwk_ke_jawadhuwung.py"]
 
 for file in file_list:
     try:

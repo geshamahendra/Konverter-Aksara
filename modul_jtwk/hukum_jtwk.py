@@ -6,7 +6,7 @@ VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼ�
 VOKAL_KECIL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûô'
 KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
 SEMI_VOKAL = 'lwyr'
-TIDAK_DIGANDAKAN = set('nṅṇhṣscꞓrṙṫŧꝑǥɉƀꝁkdḍḋdđ')
+TIDAK_DIGANDAKAN = set('nṅṇhṣsścꞓrṙṫŧꝑǥɉƀꝁkdḍḋdđ')
 
 # Pre-compiled regex patterns
 REGEX_CACHE = {
@@ -45,7 +45,7 @@ HUKUM_ṙ_MAHAPRANA = [
 PENGGANTIAN_ṙ = [
 
     #pengecualian vokal a
-    (r'ṙs', 'ṙṣ'), (r'ṛs', 'ṛṣ'), (r'ṙṣik\b', 'ṙsik'), 
+    (r'ṙs', 'ṙṣ'), (r'ṙṣik\b', 'ṙsik'), 
     (r'ṙṇny', 'ṙny'), (r'aṙyy([aā])', r'ary\1'),
     (r'(ā|a)ś([cꞓ])ary', r'\1ś\2aṙyy'), (r'ṙyyakĕn', 'ryakĕn'), 
     (r'p(a|ā)ṙśś', r'p\1ṙś'),

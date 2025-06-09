@@ -18,12 +18,8 @@ DAFTAR_KONVERSI = {
     'đ': 'dh', 'Đ': 'Dh',
     'ꝑ': 'ph', 'Ꝑ': 'Ph',
     'ƀ': 'bh', 'Ƀ': 'Bh',
-    #'Ꜷ': 'Au',
-    #'Ꜽ':'Ai',
-    #'ꜷ': 'au', 
-    #'ꜽ' : 'ai', 
-    #'ṅ': 'ng', 'Ṅ': 'Ng',
-
+    'ṛ': 'rĕ', r'ṝ': 'rö',
+    'ḷ': 'lĕ', r'ḹ': 'lö',
 }
 
 # Konversi karakter spesial ke latin
@@ -43,55 +39,17 @@ def ganti_vokal_panjang(text):
 
 # Ganti ṙ diikuti 1–2 konsonan jadi r + konsonan-konsonan itu
 def ganti_hukum_r(text):
-    #konsonan = 'bcdfghjklmnpqrstvwxyzḍḋḷṅṇñśṣṭṯṝꝁǥꞓƀ'
-
-    # Ubah ṙ + konsonan ganda menjadi r + satu konsonan saja (misalnya ṙjj → rj)
-    #text = re.sub(r'ṙ([' + konsonan + r'])\1', r'r\1', text)
-
-    # Ubah ṙ + konsonan tunggal (tidak digandakan)
-    #text = re.sub(r'ṙ([' + konsonan + r'])', r'r\1', text)
 
     #kasus re
     text = re.sub(r'ṛĕ', 'rĕ', text)
     text = re.sub(r'(?<!ĕ)ṛ', 'rĕ', text)
 
-
-    # Ganti 'w' di akhir kata menjadi 'u'
-    #text = re.sub(r'w\b', 'u', text)
-
-    # Ganti 'y' di akhir kata menjadi 'i'
-    #text = re.sub(r'y\b', 'i', text)
-
-    # Kombinasi sandhi vokal yang disederhanakan
-    #text = re.sub(r'[aā]\s+[aā]', 'â', text, flags=re.IGNORECASE)
-    #text = re.sub(r'[iī]\s+[iī]', 'î', text, flags=re.IGNORECASE)
-    #text = re.sub(r'[aā]\s+[iī]', 'ê', text, flags=re.IGNORECASE)   # a atau ā + i atau ī menjadi e
-    #text = re.sub(r'[aā]\s+[uū]', 'ô', text, flags=re.IGNORECASE)   # a atau ā + u atau ū menjadi o
     text = re.sub(r'â', 'a a', text, flags=re.IGNORECASE)
     text = re.sub(r'î', 'i i', text, flags=re.IGNORECASE)
     text = re.sub(r'ê', 'a i', text, flags=re.IGNORECASE)
     text = re.sub(r'û', 'u u', text, flags=re.IGNORECASE)
     text = re.sub(r'ô', 'a u', text, flags=re.IGNORECASE)
 
-    #kasus ww
-    #text = re.sub(r'(?<=\w)ww(?=\w)', r' ww', text)
-    text = re.sub(r'\\', '\u200C', text)
-
-    #text = re.sub(r'\u200C', r'', text)
-    #text = re.sub(r'\u200D', r'', text)
-
-    # Untuk bahasa jawa kuno
-    #text = re.sub(r'ṙṇ', 'rn', text)
-    #text = re.sub(r'rṇn', 'rn', text)
-    #text = re.sub(r'rṇṇ', 'rṇ', text)
-
-    #paksa jadi huruf kecil
-    text = re.sub(r'(?<!\u200C)([A-Z])', lambda m: m.group(1).lower(), text)
-
-
-    #hapus zwnj zwj
-    text = re.sub(r'\u200c', '', text)
-    text = re.sub(r'\u200d', '', text)
 
     return text
 
@@ -121,9 +79,9 @@ def process_file(input_file, output_file):
 
     # Langkah-langkah konversi
     text = konversi_aksara_ke_latin(text, DAFTAR_KONVERSI)
-    text = ganti_vokal_panjang(text)
-    text = gabungkan_kata_ulang(text)
-    text = ganti_hukum_r(text)
+    #text = ganti_vokal_panjang(text)
+    #text = gabungkan_kata_ulang(text)
+    #text = ganti_hukum_r(text)
 
     with open(output_file, 'w', encoding='utf-8') as outfile:
         outfile.write(text)

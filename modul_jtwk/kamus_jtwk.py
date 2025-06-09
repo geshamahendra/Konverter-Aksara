@@ -13,9 +13,11 @@ zwnj = "\u200C"
 
 substitutions = {
     #Aksara Suci
-    r'Ai': 'Ꜽ', r'Au': 'Ꜷ', r'(\*|\#)Om': r'\1Ōṃ',
-    r'ai': 'ꜽ', r'au': 'ꜷ', 
-    r'ng': 'ṅ', r'\b^h' : 'ʰ',
+    'Ai': 'Ꜽ', 'Au': 'Ꜷ', r'(\*|\#)Om': r'\1Ōṃ',
+    'ai': 'ꜽ', 'au': 'ꜷ', 
+    'rĕ': 'ṛ', 'rö': 'ṝ',
+    'lĕ': 'ḷ', 'lö': 'ḹ',
+    'ng': 'ṅ', r'\b^h' : 'ʰ',
     r'\b(A|a)wi(g|ǥ)?(h)?namastu\b': r'`Awiǥnamāstu', 
     
     r'wi(s|ś)(è|e)sa': 'wiśèṣa',
@@ -37,7 +39,7 @@ substitutions = {
     # Regex substitusi
     r'\b(nir|dur|pār)(?![' + daftar_vokal + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
     r'\bnir(g)': r'nir\\\1', #nir guna
-    r'\bdur\\(y)': r'dur\1', #durya
+    r'\bdur\\(y|n)': r'dur\1', #durya
     r'\bpar\\(w)': r'par\1', #parwa 
 
     #Imbuhan aṅr
@@ -54,12 +56,15 @@ substitutions = {
     #khusus ṅ 
     r'(li|sĕḍĕ)ṅk(u|w)':r'\1ŋk\2',
     r'ṅmu\b': r'ŋmu',
+    r'ṅt([' + daftar_vokal + r'])\b': r'ŋt\1',
 
+    #khusus r dan h
     r'h(m|k)(u|w)': r'ḥ\1\2',
     r'r(m|k)(u|w)': r'ṙ\\\1\2',
+    r'rt([' + daftar_vokal + r'])\b': r'r\\t\1',
     r'ht([' + daftar_vokal + r'])\b': r'ḥt\1',
-    r'ṅt([' + daftar_vokal + r'])\b': r'ŋt\1',
     
+
     #spesial kw (ingat ṅ itu ṅku itu gapakai cecak)
     r'([' + daftar_konsonan + '])([' + daftar_vokal + '])r(k|m)w([' + daftar_vokal + '])': r'\1\2ṙ\\\3w\4',
     r'([' + daftar_konsonan + '])([' + daftar_vokal + '])h(k|m)w([' + daftar_vokal + '])': r'\1\2ḥ\3w\4',   
@@ -82,7 +87,7 @@ substitutions = {
     r'm(u|e)sti\b': r'm\1ṣṭi',
     r'hid(ĕ|e)p': 'hiḍĕp', r'yogi(s|ś)wara': 'yogīśwara', r'datĕṅ': 'ḍatĕŋ', r'dusta': 'duṣṭa', 
     r'padaṅ': 'paḍaṅ', r'pandita': 'paṇḍita', r'\bsirna\b': 'śīrna', r'\bsarira': 'śarīra', r'atmaj': 'ātmaj',
-    r'raksasa': 'rākṣasa', r'dat(w|u)': 'ḍat\1',
+    r'raksasa': 'rākṣasa', r'dat(w|u)': r'ḍat\1',
     r'karana': 'karaṇa', r'\brana\b': 'raṇa',
 
     #bisa merubah wirama

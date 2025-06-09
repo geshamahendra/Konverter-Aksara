@@ -343,9 +343,9 @@ def hukum_penulisan(text):
     r' jñ',
     #r' (p|s|ṣ)(o|e|è|é|ꜽ|ꜷ)',
     #r' hy', r' ky',
-    rf" ([{DAFTAR_KONSONAN.replace('p', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)",
+    rf" ([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)",
     r' (ḷ|ḹ|r|ṅ|y|ś|ǥ|ñ)',
-    r' ta(?:n|ṅ|ŋ)?\b', #r' ta(?:\b|(?![nṅŋ]))'
+    #r' ta(?:n|ṅ|ŋ)?\b', #r' ta(?:\b|(?![nṅŋ]))'
     r" ṅ(-)?(" + f"[{DAFTAR_KONSONAN}]" + r")",
     r' str',
 
