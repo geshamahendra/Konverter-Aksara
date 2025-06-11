@@ -177,7 +177,7 @@ def hukum_sigeg(text):
     
     return text
 
-def finalisasi(text):
+def finalisasi_jtwk(text):
     """Finalisasi dan kapitalisasi"""
     # Kasus spesial pasanyan nya
     text = re.sub(

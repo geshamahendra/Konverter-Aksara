@@ -7,7 +7,7 @@ root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(root_path)
 
 from modul_jtwk.mode_jtwk import mode_normal, mode_sriwedari, mode_cerita, mode_sanskrit, mode_satya, mode_kakawin, mode_lampah
-from modul_jtwk.hukum_jtwk import kata_baku, hukum_aksara, hukum_sigeg, hukum_ṙ, finalisasi 
+from modul_jtwk.hukum_jtwk import kata_baku, hukum_aksara, hukum_sigeg, hukum_ṙ, finalisasi_jtwk
 from modul_jtwk.replacements_jtwk import replacements, replace_numbers_with_colon
 from modul_jtwk.hukum_kakawin import cek_kakawin
 from modul_jtwk.hukum_macapat import cek_macapat
@@ -17,7 +17,7 @@ def replace_characters(text, mode):
 
     #paksa konsonan jadi huruf kecil kecuali vokal kapital
     def paksa_huruf_kecil(text):
-        vokal_kapital = "AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ"
+        vokal_kapital = "AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ"
         return ''.join(
             c if c in vokal_kapital else c.lower()
             for c in text
@@ -69,7 +69,7 @@ def replace_characters(text, mode):
     # Mengubah angka dengan format angka. menjadi :angka:
     text = replace_numbers_with_colon(text)
     #finalisasi
-    text = finalisasi(text)
+    text = finalisasi_jtwk(text)
 
     return text
 

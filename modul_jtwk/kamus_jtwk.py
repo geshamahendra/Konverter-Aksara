@@ -73,7 +73,7 @@ substitutions = {
     r'purwa': 'pūrwa', r'\bsirna\b': 'śīrna', 
     r'\bmurti\b': 'mūrti', r'(ś|s)ighra': 'śīghra', r'prapta': 'prāpta',
     r'\bmus(t|ṭ)i': 'muṣṭi', r'na(th|ŧ)a': 'nāŧa',
-    r'prabu': 'praƀu', 
+    r'prabu': 'praƀu', r'\bguna\b': 'guṇa', 
     r'\bmèga\b': 'mèǥa', r'\brat\b': 'rāt',
     r'\bbra\b': 'ƀra', r'\b(bh|ƀ)a(t|ṭ)ar': 'ƀaṭār', r'\bsampun\b': 'sāmpun',
     r'(p|m)uspa': r'\1uṣpa', r'(s|ś)astra': 'śāstra', 
