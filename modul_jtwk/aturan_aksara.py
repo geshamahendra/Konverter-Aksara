@@ -56,7 +56,8 @@ aksara = {
     **{huruf: 'ꦘ꧀' for huruf in ('z', 'Z')},
     **{huruf: 'ꦥ꦳꧀' for huruf in ('f', 'F')},
     **{huruf: 'ꦮ꦳꧀' for huruf in ('v', 'V')},
-    **{huruf: 'ꦏ꦳꧀' for huruf in ('ḳ', 'Ḳ')},
+    **{huruf: 'ꦏ꦳꧀' for huruf in ('ḳ', 'Ḳ', 'q', 'Q')},
+    **{huruf: 'ꦏ꧀ꦰ꧀' for huruf in ('v', 'V')},
 }
 
 sandhangan = {
@@ -260,7 +261,7 @@ def add_zwnj_awal_kata_bulk(text, patterns, replacement, DAFTAR_KONSONAN):
     result.append(text[last_idx:])
     return ''.join(result)
 
-def inisialisasi(text):
+def inisialisasi_aksara(text):
     # Ganti * ujung pupuh
     text = re.sub(r'\*(\s*[#{\<])', r'#\1', text)
 

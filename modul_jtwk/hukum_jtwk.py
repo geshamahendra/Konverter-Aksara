@@ -2,8 +2,8 @@ import re
 from modul_jtwk.kamus_jtwk import substitutions
 
 # Character sets
-VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
-VOKAL_KECIL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûô'
+VOKAL = 'aāiīuūeèéêĕoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
+VOKAL_KECIL = 'aāiīuūeèéêĕoōöŏĕꜷꜽâîûô'
 KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
 SEMI_VOKAL = 'lwyr'
 TIDAK_DIGANDAKAN = set('nṅṇhṣsścꞓrṙṫŧꝑǥɉƀꝁkdḍḋdđ')
@@ -166,9 +166,9 @@ def hukum_sigeg(text):
     
     # Ubah ṙ jadi r di ujung baris/kalimat
     text = re.sub(
-        r'ṙ([ \-~]*)(.)', 
-        lambda m: ('r' if not m.group(2).isalpha() else 'ṙ') + m.group(1) + m.group(2),
-        text
+    r'ṙ([ \-~]*)([^a-zA-Z\n]|$)', # Memperbolehkan non-alfabet atau akhir string
+    r'r\1\2',
+    text
     )
 
     # Kasus khusus

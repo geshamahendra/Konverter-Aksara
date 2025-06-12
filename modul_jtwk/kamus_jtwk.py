@@ -40,6 +40,8 @@ substitutions = {
     r'\bdur\\(y|n)': r'dur\1', #durya
     r'\bpar\\(w)': r'par\1', #parwa 
 
+    r'\b(pĕr|bĕr|tĕr)(?![' + daftar_vokal + '])' : r'\1\\',
+
     #Imbuhan aṅr
     r'\b(m|p)aṅr(\w+)': lambda m: 
         m.group(1) + 'aŋr' + m.group(2) if sum(c in daftar_vokal for c in m.group(2)) >= 2 else m.group(0),

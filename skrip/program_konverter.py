@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import scrolledtext
+from tkinter import scrolledtext, ttk
 import sys
 import os
 import re
@@ -11,249 +11,331 @@ sys.path.append(root_path)
 
 # --- IMPOR MODUL DAN FUNGSI ANDA ---
 try:
-    from modul_jtwk.aturan_aksara import aksara, sandhangan, simbol, swara
-    from modul_jtwk.aturan_aksara import inisialisasi, hukum_sandi, finalisasi, hukum_penulisan
-    from modul_jtwk.hukum_jtwk import kata_baku, hukum_aksara, hukum_sigeg, hukum_ṙ, finalisasi_jtwk
-    from modul_jtwk.replacements_jtwk import replacements, replace_numbers_with_colon
-
+    from jtwk_ke_jawa import latin_to_jawa
+    from latin_ke_jtwk import replace_characters
+    from jawa_ke_bali import konversi_aksara_ke_bali
+    from jawa_ke_kawi import konversi_aksara_ke_kawi
 except ImportError as e:
     print(f"Error importing modules: {e}")
-    print("Pastikan folder 'modul_jtwk' ada di direktori yang benar dan berisi file-file yang diperlukan.")
+    print("Pastikan modul ada di direktori yang benar dan berisi file-file yang diperlukan.")
+    sys.exit(1)
 
-    def inisialisasi(text): return text.lower()
-    def hukum_sandi(text): return text
-    def hukum_penulisan(text): return text
-    def finalisasi(text): return text
+def main_convertion(text, line_spacing, mode, aksara_type):
+    """
+    Fungsi konversi utama yang disesuaikan untuk berbagai jenis aksara.
+    """
+    text = replace_characters(text, mode)
+    converted_jawa = latin_to_jawa(text, line_spacing)
 
-# --- Fungsi handle_vokal_khusus Anda ---
-def handle_vokal_khusus(char, hasil, last_char, last_aksara):
-    vokal_khusus = {
-        'ṛ':  ('ꦉ', 'ꦽ', 'ꦽꦴ', swara.get('ṛ', 'ꦉ')),
-        'ṝ':  ('ꦉꦴ', 'ꦽꦴ', 'ꦽꦴ', swara.get('ṝ', 'ꦉꦴ')),
-        'ḷ':  ('ꦊ', '꧀ꦭꦼ', '꧀ꦭꦼꦴ', swara.get('ḷ', 'ꦊ')),
-        'ḹ':  ('ꦋ', '꧀ꦭꦼꦴ', '꧀ꦭꦼꦴ', swara.get('ḹ', 'ꦋ')),
-    }
-    if char not in vokal_khusus:
-        return hasil + char, char
-
-    awal, tengah, panjang, default = vokal_khusus[char]
-    if last_aksara and last_aksara.endswith('꧀'):
-        return hasil[:-1] + tengah, tengah
-    elif last_char in [' ', '\n'] or not last_char:
-        return hasil + awal, awal
+    if aksara_type == "jawa":
+        # Khusus font Jayabaya untuk Aksara Jawa
+        text_output = re.sub(r'ꦈ', '#', converted_jawa)
+        text_output = re.sub(r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ', text_output)
+        text_output = re.sub(r'ꦫ꧀ꦮ', 'ꦫ꧀ꦮ\u200D', text_output)
+        text_output = re.sub(r'ꦎ', 'ꦈ', text_output)
+        text_output = re.sub(r'#', 'ꦎ', text_output)
+        text_output = re.sub(r'ꦂ', 'ꦂ\u200D', text_output, flags=re.IGNORECASE)
+    elif aksara_type == "bali":
+        text_output = konversi_aksara_ke_bali(converted_jawa)
+    elif aksara_type == "kawi":
+        text_output = konversi_aksara_ke_kawi(converted_jawa)
     else:
-        return hasil + default, default
+        text_output = "Pilihan aksara tidak valid."
 
-karakter_baku = {
-    'ng': 'ṅ',
-    'kh': 'ꝁ','gh': 'ǥ','ch': 'ꞓ','jh': 'ɉ',
-    'th': 'ŧ','ṭh': 'ṫ','ḍh': 'ḋ','dh': 'đ',
-    'ph': 'ꝑ','bh': 'ƀ',
-    'ai': 'ꜽ', 'au': 'ꜷ', 
-    #'-' : ' ', 
-    'Ç' : 'Ś', 'ç' : 'ś',
-    '’' : '0‍',
-    '‘' : '0‍',
-
-    "x" : 'ś', "f" : 'ṣ', "t'" : 'ṭ', "d'" : 'ḍ', "q" : 'ĕ', "n`" : 'ñ', "n'" : 'ṇ', "o'" : 'ö', 'v' : 'w',
-    #'ṃ' : 'ŋ',  
-    'ṁ' : 'ŋ',
-    #'sh' : 'ś','ss' : 'ṣ',
-
-    'Ōm' : 'Ŏṃ','Ŏm' : 'Ōṃ','Ōm' : 'Ŏṃ', 'Om̃' : 'Ōṃ',
-}
-
-# --- Fungsi latin_to_jawa Anda ---
-def latin_to_jawa(text, line_spacing=1):
-
-    #paksa konsonan jadi huruf kecil kecuali vokal kapital
-    def paksa_huruf_kecil(text):
-        vokal_kapital = "AĀÂIĪÎUŪÛOŌÔĔEÊÉÈꜼꜶ"
-        return ''.join(
-            c if c in vokal_kapital else c.lower()
-            for c in text
-        )
-    text = paksa_huruf_kecil(text)
-
-    # Terapkan perubahan dari dictionary perubahan_awal_input
-    for key, value in karakter_baku.items():
-        text = text.replace(key, value)
-
-    #replacement
-
-    #=======Mulai transliterasi mentah========
-    #Aplikasikan kata baku terlebih dahulu
-    text = kata_baku(text)
-    # Tingkat Ketiga: Modifikasi lebih lanjut
-    text = hukum_aksara(text)
-
-    # Masukkan hukum r
-    text = hukum_ṙ(text) 
-
-    # Masukkan hukum sigeg
-    text = hukum_sigeg(text)
-
-    #=====Modifikasi terakhir====
-    # Mengubah angka dengan format angka. menjadi :angka:
-    text = replace_numbers_with_colon(text)
-    #finalisasi
-    text = finalisasi_jtwk(text)
-
-
-
-    text = inisialisasi(text)
-    text = hukum_sandi(text)
-    text = hukum_penulisan(text)
-
-    hasil = ""
-    last_aksara = ""
-    last_char = ""
-    is_new_line = True
-
-    for i, char in enumerate(text):
-        if char == '\n':
-            hasil += '\n' * line_spacing
-            is_new_line = True
-            last_char = '\n'
-            last_aksara = ""
-            continue
-
-        if char == ' ' and i > 0 and i < len(text) - 1:
-            prev_char = text[i - 1]
-            next_char = text[i + 1]
-            if prev_char in aksara and next_char in sandhangan:
-                hasil = hasil[:-1] + aksara[prev_char][:-1] + sandhangan[next_char]
-                last_char = next_char
-                continue
-
-        if char in ['ṛ', 'ṝ', 'ḷ', 'ḹ']:
-            hasil, last_aksara = handle_vokal_khusus(char, hasil, last_char, last_aksara)
-            last_char = char
-            continue
-
-        if char.isupper() and char in swara:
-            hasil += swara[char]
-            last_aksara = swara[char]
-            last_char = char
-            is_new_line = False
-            continue
-
-        if char in simbol:
-            hasil += simbol[char]
-            last_aksara = ""
-            last_char = char
-            is_new_line = False
-            continue
-
-        if char in aksara:
-            hasil += aksara[char]
-            last_aksara = aksara[char]
-            last_char = char
-            is_new_line = False
-            continue
-
-        if char in sandhangan:
-            if is_new_line and not last_aksara:
-                hasil += sandhangan[char].upper()
-                last_aksara = sandhangan[char].upper()
-            elif last_aksara and last_aksara.endswith('꧀'):
-                if hasil:
-                    hasil = hasil[:-1]
-                sand_char = sandhangan[char]
-                hasil += sand_char
-                last_aksara = last_aksara[:-1] + sand_char
-            else:
-                hasil += sandhangan[char]
-                last_aksara += sandhangan[char]
-            last_char = char
-            is_new_line = False
-            continue
-
-        hasil += char
-        last_aksara = ""
-        last_char = char
-        is_new_line = False
-
-    hasil = finalisasi(hasil)
-    hasil = re.sub(r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ', hasil)
-    hasil = re.sub(r'ꦫ꧀ꦮ', 'ꦫ꧀ꦮ\u200D', hasil)
-
-    #khusus font jayabaya
-    hasil = re.sub(r'ꦈ', '#', hasil)
-    hasil = re.sub(r'ꦎ', 'ꦈ', hasil)
-    hasil = re.sub(r'#', 'ꦎ', hasil)
-    
-    hasil = re.sub(r'ꦂ', 'ꦂ\u200D', hasil, flags=re.IGNORECASE)
-    return hasil
+    return text_output
 
 # --- FUNGSI UTAMA UNTUK INTERAKSI GUI ---
 conversion_cache = {}
+last_active_widget = None
 
 def process_input(event=None):
+    global last_active_widget
     current_text = input_text_widget.get("1.0", tk.END).strip()
+    selected_aksara = aksara_var.get() # Ambil pilihan aksara
 
     if not current_text:
-        display_output_jawa("")
+        display_output_aksara("")
         return
 
-    # Konversi seluruh teks input ke Aksara Jawa
-    converted_full_text = latin_to_jawa(current_text, line_spacing=1)
-
-    # Hapus semua spasi dari hasil akhir, kecuali jika spasi digunakan sebagai simbol tertentu
-    # Jika spasi murni pemisah kata, maka ini yang Anda inginkan.
-    # Jika simbol[' '] adalah spasi ' ', maka kita perlu logika yang lebih canggih di latin_to_jawa.
-    final_jawa_output = converted_full_text.replace(" ", "") 
+    # Lakukan konversi berdasarkan pilihan aksara
+    converted_full_text = main_convertion(current_text, line_spacing=1, mode='lampah', aksara_type=selected_aksara)
     
-    # Tampilkan seluruh hasil konversi
-    display_output_jawa(final_jawa_output)
+    # Untuk aksara jawa, kita bisa hapus spasi jika diinginkan
+    if selected_aksara == "jawa":
+        final_output = converted_full_text.replace(" ", "")
+    else:
+        final_output = converted_full_text
+        
+    display_output_aksara(final_output)
 
-def display_output_jawa(text):
-    # Hapus konten lama
-    output_jawa_widget.config(state=tk.NORMAL) # Atur ke normal untuk edit
-    output_jawa_widget.delete("1.0", tk.END)
-    # Sisipkan teks baru
-    output_jawa_widget.insert("1.0", text)
-    output_jawa_widget.config(state=tk.DISABLED) # Atur kembali ke disabled (read-only)
+    if event and (event.type == '2' or event.type == '4' or event.type == '6'):
+        sync_cursors(event)
+
+def display_output_aksara(text):
+    output_aksara_widget.config(state=tk.NORMAL)
+    output_aksara_widget.delete("1.0", tk.END)
+    output_aksara_widget.insert("1.0", text)
+    output_aksara_widget.config(state=tk.DISABLED)
+
+# --- FUNGSI UNTUK SINKRONISASI KURSOR DENGAN HIGHLIGHT ---
+def sync_cursors(event):
+    active_widget = event.widget
+    
+    if not isinstance(active_widget, scrolledtext.ScrolledText):
+        return
+
+    current_line = int(active_widget.index(tk.INSERT).split('.')[0])
+    
+    other_widget = None
+    if active_widget == input_text_widget:
+        other_widget = output_aksara_widget
+    elif active_widget == output_aksara_widget:
+        other_widget = input_text_widget
+    
+    if other_widget:
+        input_text_widget.tag_remove("highlight", "1.0", tk.END)
+        output_aksara_widget.tag_remove("highlight", "1.0", tk.END)
+
+        original_state_other = other_widget.cget("state")
+        if original_state_other == tk.DISABLED:
+            other_widget.config(state=tk.NORMAL)
+        
+        other_widget.mark_set(tk.INSERT, f"{current_line}.0")
+        other_widget.see(tk.INSERT)
+
+        start_index = f"{current_line}.0"
+        end_index = f"{current_line}.end"
+        
+        input_text_widget.tag_add("highlight", start_index, end_index)
+        output_aksara_widget.tag_add("highlight", start_index, end_index)
+
+        root.after(1500, lambda: input_text_widget.tag_remove("highlight", start_index, end_index))
+        root.after(1500, lambda: output_aksara_widget.tag_remove("highlight", start_index, end_index))
+
+        if original_state_other == tk.DISABLED:
+            other_widget.config(state=tk.DISABLED)
+
+# --- FUNGSI UNTUK MENGUBAH FONT OUTPUT ---
+def change_output_font(*args):
+    selected_aksara = aksara_var.get()
+    
+    # Ambil nilai font dan ukuran dari Combobox
+    font_family = font_family_vars[selected_aksara].get()
+    font_size = font_size_vars[selected_aksara].get()
+
+    try:
+        font_size_int = int(font_size)
+    except ValueError:
+        font_size_int = 14 # Default jika ada kesalahan input
+
+    # Update font widget output
+    output_aksara_widget.config(font=(font_family, font_size_int))
+
+    # Trigger konversi ulang untuk memastikan tampilan sesuai font baru
+    process_input()
+
+# --- FUNGSI UNTUK MEMPERTAHANKAN KESEIMBANGAN PANEL ---
+def maintain_balance(*args):
+    """
+    Fungsi untuk menjaga keseimbangan 50:50 antara panel input dan output
+    saat window di-resize
+    """
+    # Dapatkan tinggi total area yang tersedia untuk panel
+    total_height = main_paned_window.winfo_height()
+    
+    # Bagi dua secara merata (dikurangi sedikit untuk sash/separator)
+    half_height = (total_height - 10) // 2
+    
+    # Set posisi sash di tengah
+    if total_height > 100:  # Pastikan window sudah ter-render dengan benar
+        try:
+            main_paned_window.sash_place(0, half_height)
+        except tk.TclError:
+            # Abaikan error jika sash belum tersedia
+            pass
 
 # --- SETUP GUI TKINTER ---
 root = tk.Tk()
-root.title("Aplikasi Konversi Latin ke Aksara Jawa")
+root.title("Aplikasi Konversi Latin ke Aksara")
 
-# Membuat PanedWindow sebagai kontainer utama
-# orient=tk.VERTICAL akan membuat panel atas dan bawah dengan pembatas horizontal
-main_paned_window = tk.PanedWindow(root, orient=tk.VERTICAL, sashrelief=tk.RAISED)
-main_paned_window.pack(fill=tk.BOTH, expand=True, padx=10, pady=10) # Isi seluruh jendela
+# Set ukuran awal window dan posisi tengah layar
+window_width = 900
+window_height = 700
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+x = (screen_width - window_width) // 2
+y = (screen_height - window_height) // 2
 
-# 1. Frame untuk Panel Output Aksara Jawa (atas)
-# Kita perlu Frame untuk menampung Label dan ScrolledText di dalam PanedWindow
+root.geometry(f"{window_width}x{window_height}+{x}+{y}")
+root.minsize(600, 500)  # Ukuran minimum window
+
+# Frame untuk kontrol (radio button dan font)
+control_frame = tk.Frame(root)
+control_frame.pack(side=tk.TOP, fill=tk.X, padx=10, pady=5)
+
+# --- Pilihan Aksara (Radio Button) ---
+aksara_label = tk.Label(control_frame, text="Pilih Aksara:")
+aksara_label.pack(side=tk.LEFT, padx=(0, 10))
+
+aksara_var = tk.StringVar(value="jawa") # Default ke Aksara Jawa
+
+jawa_radio = tk.Radiobutton(control_frame, text="Aksara Jawa", variable=aksara_var, value="jawa", command=change_output_font)
+jawa_radio.pack(side=tk.LEFT)
+
+bali_radio = tk.Radiobutton(control_frame, text="Aksara Bali", variable=aksara_var, value="bali", command=change_output_font)
+bali_radio.pack(side=tk.LEFT, padx=(10, 0))
+
+kawi_radio = tk.Radiobutton(control_frame, text="Aksara Kawi", variable=aksara_var, value="kawi", command=change_output_font)
+kawi_radio.pack(side=tk.LEFT, padx=(10, 0))
+
+# Bind aksara_var ke process_input saat berubah
+def on_aksara_change(*args):
+    # Update combobox font dan trigger konversi
+    update_font_comboboxes()
+    process_input() 
+aksara_var.trace_add("write", on_aksara_change)
+
+# --- Pengaturan Font (Combobox) ---
+font_frame = tk.Frame(control_frame)
+font_frame.pack(side=tk.RIGHT, padx=(20, 0))
+
+font_label = tk.Label(font_frame, text="Font Aksara:")
+font_label.pack(side=tk.LEFT)
+
+# Daftar font yang mungkin tersedia (Anda bisa menambahkan lebih banyak)
+available_fonts = ["jayaƀaya", "vimala", "natya"]
+
+font_sizes = [str(i) for i in range(8, 30, 2)] # Ukuran font dari 8 hingga 28
+
+# Dictionary untuk menyimpan StringVar untuk font dan ukuran per aksara
+font_family_vars = {
+    "jawa": tk.StringVar(value="jayaƀaya"), # Default font for Jawa
+    "bali": tk.StringVar(value="vimala"),   # Default font for Bali
+    "kawi": tk.StringVar(value="jayaƀaya")    # Default font for Kawi
+}
+font_size_vars = {
+    "jawa": tk.StringVar(value="14"),
+    "bali": tk.StringVar(value="14"),
+    "kawi": tk.StringVar(value="14")
+}
+
+# Combobox untuk family font
+font_family_combobox = ttk.Combobox(font_frame, textvariable=font_family_vars[aksara_var.get()], values=available_fonts, state="readonly", width=15)
+font_family_combobox.pack(side=tk.LEFT, padx=(5, 0))
+font_family_combobox.bind("<<ComboboxSelected>>", change_output_font)
+
+# Combobox untuk ukuran font
+font_size_combobox = ttk.Combobox(font_frame, textvariable=font_size_vars[aksara_var.get()], values=font_sizes, state="readonly", width=5)
+font_size_combobox.pack(side=tk.LEFT, padx=(5, 0))
+font_size_combobox.bind("<<ComboboxSelected>>", change_output_font)
+
+# Update Combobox textvariable saat pilihan aksara berubah
+def update_font_comboboxes(*args):
+    selected_aksara = aksara_var.get()
+    font_family_combobox.config(textvariable=font_family_vars[selected_aksara])
+    font_size_combobox.config(textvariable=font_size_vars[selected_aksara])
+    # Set combobox values to the current variables to reflect change
+    font_family_combobox.set(font_family_vars[selected_aksara].get())
+    font_size_combobox.set(font_size_vars[selected_aksara].get())
+    change_output_font() # Apply the new font settings
+
+# --- Normalisasi Keyboard ---
+# Peta normalisasi (Anda bisa sesuaikan ini)
+NORMALIZATION_MAP = {
+    'q': 'ĕ', # q menjadi ĕ
+    'x': 'ṅ', # x menjadi ṅ
+    'z': 'ñ', # Untuk huruf kapital juga
+    'v': 'ś', 'V': 'Ś',
+    'f': 'ṣ', 'F': 'Ṣ',
+    "n'": 'ṇ', "m`": 'ṃ',
+    "d'": 'ḍ', "t`": 'ṭ',
+    # Tambahkan pemetaan lain yang Anda inginkan di sini
+}
+
+# Variabel kontrol untuk toggle normalisasi
+normalize_keyboard_var = tk.BooleanVar(value=False) # Default nonaktif
+
+# Fungsi untuk menangani penekanan tombol
+def normalize_input(event):
+    if normalize_keyboard_var.get(): # Jika normalisasi aktif
+        char = event.char
+        if char in NORMALIZATION_MAP:
+            # Dapatkan posisi kursor saat ini
+            current_index = input_text_widget.index(tk.INSERT)
+            
+            # Masukkan karakter yang dinormalisasi
+            input_text_widget.insert(current_index, NORMALIZATION_MAP[char])
+            
+            # Panggil process_input untuk memperbarui output
+            process_input()
+            
+            return "break" # Mencegah karakter asli masuk ke widget
+    
+    # Jika normalisasi tidak aktif atau karakter tidak ada di peta, biarkan Tkinter memprosesnya
+    return None
+
+# Checkbutton untuk Normalisasi Keyboard
+normalize_checkbox = tk.Checkbutton(control_frame, text="Normalisasi Keyboard", variable=normalize_keyboard_var, command=process_input)
+normalize_checkbox.pack(side=tk.LEFT, padx=(20, 0))
+
+# Main PanedWindow for text areas dengan konfigurasi seimbang
+main_paned_window = tk.PanedWindow(root, orient=tk.VERTICAL, sashrelief=tk.RAISED, sashwidth=8)
+main_paned_window.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+# Output Frame (Panel Atas)
 output_frame = tk.Frame(main_paned_window)
-output_frame.pack(fill=tk.BOTH, expand=True) # Fill the frame
+output_aksara_label = tk.Label(output_frame, text="Teks Aksara:")
+output_aksara_label.pack(anchor=tk.W, pady=(0, 5))
 
-output_jawa_label = tk.Label(output_frame, text="Hasil Aksara Jawa:")
-output_jawa_label.pack(anchor=tk.W, pady=(0, 5))
+output_aksara_widget = scrolledtext.ScrolledText(output_frame, wrap=tk.WORD, font=("Jayabaya", 14))
+output_aksara_widget.pack(fill=tk.BOTH, expand=True)
+output_aksara_widget.config(state=tk.DISABLED)
 
-output_jawa_widget = scrolledtext.ScrolledText(output_frame, wrap=tk.WORD, width=60, height=10, font=("jayaƀaya", 14))
-output_jawa_widget.pack(fill=tk.BOTH, expand=True) # Penting: fill=BOTH dan expand=True
-output_jawa_widget.config(state=tk.DISABLED) # Membuatnya read-only
-
-# 2. Frame untuk Panel Input Latin (bawah)
+# Input Frame (Panel Bawah)
 input_frame = tk.Frame(main_paned_window)
-input_frame.pack(fill=tk.BOTH, expand=True) # Fill the frame
-
 input_label = tk.Label(input_frame, text="Ketik Teks Latin di sini:")
 input_label.pack(anchor=tk.W, pady=(0, 5))
 
-input_text_widget = scrolledtext.ScrolledText(input_frame, wrap=tk.WORD, width=60, height=10, font=("Arial", 12))
-input_text_widget.pack(fill=tk.BOTH, expand=True) # Penting: fill=BOTH dan expand=True
-input_text_widget.bind("<KeyRelease>", process_input)
+input_text_widget = scrolledtext.ScrolledText(input_frame, wrap=tk.WORD, font=("Arial", 12))
+input_text_widget.pack(fill=tk.BOTH, expand=True)
 
-# --- Menambahkan Frame ke PanedWindow ---
-# Order matters: output_frame akan di atas, input_frame di bawah
-main_paned_window.add(output_frame)
-main_paned_window.add(input_frame)
+# Tambahkan panel ke PanedWindow dengan pengaturan seimbang
+main_paned_window.add(output_frame, minsize=150, sticky="nsew")
+main_paned_window.add(input_frame, minsize=150, sticky="nsew")
 
-# Opsional: Atur initial sash position (posisi pembatas awal)
-# main_paned_window.sash_place(0, 0, 200) # Atur panel atas ke tinggi 200 piksel, panel bawah akan mengisi sisanya
+# Bind event untuk menjaga keseimbangan panel saat resize
+root.bind("<Configure>", maintain_balance)
 
-# Menjalankan loop utama aplikasi GUI
+# Set posisi awal sash di tengah setelah window dimuat
+def set_initial_balance():
+    """Set posisi awal sash di tengah setelah window selesai dimuat"""
+    root.update_idletasks()  # Pastikan semua komponen sudah ter-render
+    total_height = main_paned_window.winfo_height()
+    if total_height > 100:
+        half_height = (total_height - 10) // 2
+        try:
+            main_paned_window.sash_place(0, half_height)
+        except tk.TclError:
+            pass
+
+# Jalankan set_initial_balance setelah delay singkat
+root.after(100, set_initial_balance)
+
+# --- BIND EVENT UNTUK SINKRONISASI KURSOR ---
+input_text_widget.bind("<KeyRelease>", process_input) 
+input_text_widget.bind("<ButtonRelease-1>", sync_cursors) 
+
+output_aksara_widget.bind("<KeyRelease>", sync_cursors)
+output_aksara_widget.bind("<ButtonRelease-1>", sync_cursors)
+
+# Bind fungsi normalisasi ke event <Key> (sebelum KeyRelease)
+input_text_widget.bind("<Key>", normalize_input)
+
+# Konfigurasi tag highlight setelah widget dibuat
+input_text_widget.tag_configure("highlight", background="lightyellow", relief="ridge", borderwidth=1)
+output_aksara_widget.tag_configure("highlight", background="lightyellow", relief="ridge", borderwidth=1)
+
+# Inisialisasi font output awal
+change_output_font()
+
 root.mainloop()
