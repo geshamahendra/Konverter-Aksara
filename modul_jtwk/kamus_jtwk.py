@@ -91,11 +91,12 @@ substitutions = {
     r'karana': 'karaṇa', r'\brana\b': 'raṇa',
 
     #bisa merubah wirama
-    #r'(ṅ|ng)uni': 'ṅūni',
-    #r'nagara': 'nāgara',
-    #r'\braja\b': 'rāja',
-    #r'\b(s|ś)arira\b': 'śarīra',
-    #r'\bpuja\b': 'pūjā', r'rupa\b': 'rūpa', 
+    r'(ṅ|ng)uni': 'ṅūni',
+    r'nagara': 'nāgara',
+    r'\braja\b': 'rāja',
+    r'\b(s|ś)arira\b': 'śarīra',
+    r'\bpuja\b': 'pūjā', r'rupa\b': 'rūpa',
+    r'\blila\b': 'lilā',  r'\brat\b': 'rāt',
 
     #############################################################
     #backsplash buat pemutus
@@ -110,5 +111,9 @@ substitutions = {
     r'(ṙ|r)ṇn': r'rn', r'(ṙ|r)nn': r'rn',
     r'(ṙ|r)dd': r'rd', r'(ṙ|r)dđ': r'rđ', 
     r'(ṙ|r)dḍ': r'rḍ', r'(ṙ|r)dḋ': r'rḋ', 
-    r'(ṙ|r)cc': r'rc', r'(ṙ|r)cꞓ': r'rꞓ'
+    r'(ṙ|r)cc': r'rc', r'(ṙ|r)cꞓ': r'rꞓ',
+
+    #khusus ṙṇṇ tidak ada di jawa kuno
+    r'(ṙ|r)ṇ': r'rn',
+
 }

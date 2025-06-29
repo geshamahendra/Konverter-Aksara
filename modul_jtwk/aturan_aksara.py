@@ -5,6 +5,7 @@ import re
 ZWNJ = '\u200C'
 ZWSP = '\u200B'
 ZWJ = '\u200D'
+ZWNBSP = '\uFEFF'
 DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ"
 DAFTAR_VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
 VOKAL_KAPITAL = "AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ"
@@ -297,7 +298,7 @@ def hukum_sandi(text):
     #cegah ya dipasangi
     pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyrṛṝl')
     text = re.sub(
-    r'([yw])([^\S\n]*|-)(?=([^\s]))',
+    r'([y])([^\S\n]*|-)(?=([^\s]))',
     lambda m: (m.group(1) + m.group(2) + ('' if m.group(3).lower() in pengecualian_ya else ZWNJ)),text)
 
     identik = [('a', 'ā'), ('i', 'ī'), ('u', 'ū'), ('e', 'ꜽ'), ('o', 'ꜷ')]
@@ -380,7 +381,6 @@ def finalisasi(hasil):
         '꧀ꦪ': 'ꦾ',
         '꧀ꦫ': 'ꦿ',
         'ꦈꦴꦁ': 'ꦈꦴꦀ',
-        'ꦫ꧀ꦮ': f'ꦫ꧀ꦮ{ZWNJ}',
         #'ꦉꦴ': f'ꦉ{ZWNJ}ꦴ',
         '⏒꧇': '⏒ ꧇',
         ' ' : '', # Hapus spasi

@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import scrolledtext, ttk
+from tkinter import scrolledtext, ttk, messagebox
 import sys
 import os
 import re
@@ -20,28 +20,86 @@ except ImportError as e:
     print("Pastikan modul ada di direktori yang benar dan berisi file-file yang diperlukan.")
     sys.exit(1)
 
-def main_convertion(text, line_spacing, mode, aksara_type):
+# --- DEFINISI ATURAN REGEX SPESIFIK FONT YANG BERBAGI ---
+# Definisikan set aturan regex yang umum atau sering digunakan
+# Ini membuat FONT_SPECIFIC_REGEX_RULES lebih bersih dan mudah dikelola
+WASKITA_RULES = [
+    (r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ'),
+    (r'ꦫ꧀ꦮ', 'ꦫ꧀ꦮ\u200D'), # Tambahkan Zero-Width Joiner (ZWJ) untuk penyambungan yang lebih baik
+    (r'ꦂ', 'ꦂ\u200D', re.IGNORECASE) # Tambahkan ZWJ setelah pangkon (ꦂ)
+]
+GAYATRI_RULES = [
+    (r'ꦈ', '#'),
+    (r'ꦎ', 'ꦈ'),
+    (r'#', 'ꦎ'),
+    (r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ'),
+    (r'ꦫꦾ', '꧟'),
+    (r'ꦫ꧀ꦮ\u200c', '꧞'),
+    (r'ꦾ', '꧀ꦪ'),
+    (r'ꦿ', '꧀ꦫ'),
+    (r'ꦂ', 'ꦂ', re.IGNORECASE)#layar ke layar
+] # Aturan untuk font Vimala (saat ini kosong, tambahkan jika diperlukan)
+
+# Jika ada aturan umum lain untuk Bali, Kawi, atau font lain, definisikan di sini.
+# Contoh:
+# VIMALA_BALI_RULES = [
+#     (r'aturan_khusus_vimala_bali_1', 'pengganti_1'),
+#     (r'aturan_khusus_vimala_bali_2', 'pengganti_2'),
+# ]
+
+# --- DEFINISI ATURAN REGEX SPESIFIK FONT ---
+# Dictionary ini menyimpan aturan regex yang perlu diterapkan untuk font tertentu
+# Kunci: aksara_type -> font_family -> daftar_aturan (pattern, replacement, flags)
+FONT_SPECIFIC_REGEX_RULES = {
+    "jawa": {
+        "jayaƀaya": WASKITA_RULES, # Referensikan set aturan yang sudah didefinisikan
+        "Asta Gayatri 09": GAYATRI_RULES, # Aturan untuk font Vimala (saat ini kosong)
+        "natya": []                       # Aturan untuk font Natya (saat ini kosong)
+    },
+    "bali": {
+        "vimala": [], # Contoh: VIMALA_BALI_RULES, # Jika ada, referensikan di sini
+        "natya": []
+    },
+    "kawi": {
+        "jayaƀaya": [] # Aturan untuk font Jayabaya Aksara Kawi (saat ini kosong)
+    }
+}
+
+def main_convertion(text, line_spacing, mode, aksara_type, font_family):
     """
-    Fungsi konversi utama yang disesuaikan untuk berbagai jenis aksara.
+    Fungsi konversi utama yang disesuaikan untuk berbagai jenis aksara dan font.
     """
+    # Langkah 1: Proses awal teks Latin dan konversi ke Jawa
     text = replace_characters(text, mode)
     converted_jawa = latin_to_jawa(text, line_spacing)
 
+    # Langkah 2: Konversi berdasarkan jenis aksara yang dipilih
     if aksara_type == "jawa":
-        # Khusus font Jayabaya untuk Aksara Jawa
-        text_output = re.sub(r'ꦈ', '#', converted_jawa)
-        text_output = re.sub(r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ', text_output)
-        text_output = re.sub(r'ꦫ꧀ꦮ', 'ꦫ꧀ꦮ\u200D', text_output)
-        text_output = re.sub(r'ꦎ', 'ꦈ', text_output)
-        text_output = re.sub(r'#', 'ꦎ', text_output)
-        text_output = re.sub(r'ꦂ', 'ꦂ\u200D', text_output, flags=re.IGNORECASE)
+        text_output = converted_jawa
+        # Khusus untuk font Jayabaya, lakukan swap karakter ꦈ dan ꦎ menggunakan str.replace()
+        # Ini menghindari masalah dengan re.sub dan karakter Unicode tertentu
+        if font_family == "jayaƀaya":
+            # Lakukan swap tiga arah
+            text_output = text_output.replace('ꦈ', 'TEMP_JAYABAYA_U_PLACEHOLDER')
+            text_output = text_output.replace('ꦎ', 'ꦈ')
+            text_output = text_output.replace('TEMP_JAYABAYA_U_PLACEHOLDER', 'ꦎ')
     elif aksara_type == "bali":
         text_output = konversi_aksara_ke_bali(converted_jawa)
     elif aksara_type == "kawi":
         text_output = konversi_aksara_ke_kawi(converted_jawa)
     else:
-        text_output = "Pilihan aksara tidak valid."
+        return "Pilihan aksara tidak valid."
 
+    # Langkah 3: Terapkan manipulasi spesifik font (regex) jika ada
+    # Cek apakah ada aturan regex yang didefinisikan untuk kombinasi aksara dan font ini
+    if aksara_type in FONT_SPECIFIC_REGEX_RULES and \
+       font_family in FONT_SPECIFIC_REGEX_RULES[aksara_type]:
+        
+        rules_to_apply = FONT_SPECIFIC_REGEX_RULES[aksara_type][font_family]
+        for pattern, replacement, *flags in rules_to_apply:
+            current_flags = flags[0] if flags else 0 # Ambil flags jika ada, default 0 (tidak ada flags)
+            text_output = re.sub(pattern, replacement, text_output, flags=current_flags)
+    
     return text_output
 
 # --- FUNGSI UTAMA UNTUK INTERAKSI GUI ---
@@ -52,15 +110,17 @@ def process_input(event=None):
     global last_active_widget
     current_text = input_text_widget.get("1.0", tk.END).strip()
     selected_aksara = aksara_var.get() # Ambil pilihan aksara
+    selected_font_family = font_family_vars[selected_aksara].get() # Ambil pilihan font
 
     if not current_text:
         display_output_aksara("")
         return
 
-    # Lakukan konversi berdasarkan pilihan aksara
-    converted_full_text = main_convertion(current_text, line_spacing=1, mode='lampah', aksara_type=selected_aksara)
+    # Lakukan konversi berdasarkan pilihan aksara dan font
+    converted_full_text = main_convertion(current_text, line_spacing=1, mode='lampah', 
+                                          aksara_type=selected_aksara, font_family=selected_font_family)
     
-    # Untuk aksara jawa, kita bisa hapus spasi jika diinginkan
+    # Untuk aksara jawa, kita bisa hapus spasi jika diinginkan (ini adalah aturan umum, bukan font-spesifik)
     if selected_aksara == "jawa":
         final_output = converted_full_text.replace(" ", "")
     else:
@@ -119,7 +179,7 @@ def sync_cursors(event):
 def change_output_font(*args):
     selected_aksara = aksara_var.get()
     
-    # Ambil nilai font dan ukuran dari Combobox
+    # Ambil nilai font dan ukuran dari Combobox yang sedang aktif
     font_family = font_family_vars[selected_aksara].get()
     font_size = font_size_vars[selected_aksara].get()
 
@@ -154,6 +214,18 @@ def maintain_balance(*args):
             # Abaikan error jika sash belum tersedia
             pass
 
+# --- FUNGSI COPY KE CLIPBOARD ---
+def copy_to_clipboard(text_widget):
+    """Menyalin seluruh isi widget teks ke clipboard."""
+    content = text_widget.get("1.0", tk.END).strip()
+    if content:
+        root.clipboard_clear()
+        root.clipboard_append(content)
+        #messagebox.showinfo("Berhasil", "Teks berhasil disalin ke clipboard!")
+    #else:
+        #messagebox.showinfo("Informasi", "Tidak ada teks untuk disalin.")
+
+
 # --- SETUP GUI TKINTER ---
 root = tk.Tk()
 root.title("Aplikasi Konversi Latin ke Aksara")
@@ -179,13 +251,13 @@ aksara_label.pack(side=tk.LEFT, padx=(0, 10))
 
 aksara_var = tk.StringVar(value="jawa") # Default ke Aksara Jawa
 
-jawa_radio = tk.Radiobutton(control_frame, text="Aksara Jawa", variable=aksara_var, value="jawa", command=change_output_font)
+jawa_radio = tk.Radiobutton(control_frame, text="Jawa", variable=aksara_var, value="jawa", command=change_output_font)
 jawa_radio.pack(side=tk.LEFT)
 
-bali_radio = tk.Radiobutton(control_frame, text="Aksara Bali", variable=aksara_var, value="bali", command=change_output_font)
+bali_radio = tk.Radiobutton(control_frame, text="Bali", variable=aksara_var, value="bali", command=change_output_font)
 bali_radio.pack(side=tk.LEFT, padx=(10, 0))
 
-kawi_radio = tk.Radiobutton(control_frame, text="Aksara Kawi", variable=aksara_var, value="kawi", command=change_output_font)
+kawi_radio = tk.Radiobutton(control_frame, text="Kawi", variable=aksara_var, value="kawi", command=change_output_font)
 kawi_radio.pack(side=tk.LEFT, padx=(10, 0))
 
 # Bind aksara_var ke process_input saat berubah
@@ -203,7 +275,7 @@ font_label = tk.Label(font_frame, text="Font Aksara:")
 font_label.pack(side=tk.LEFT)
 
 # Daftar font yang mungkin tersedia (Anda bisa menambahkan lebih banyak)
-available_fonts = ["jayaƀaya", "vimala", "natya"]
+available_fonts = ["jayaƀaya", "vimala", "natya", "Asta Gayatri 09"]
 
 font_sizes = [str(i) for i in range(8, 30, 2)] # Ukuran font dari 8 hingga 28
 
@@ -282,19 +354,33 @@ normalize_checkbox.pack(side=tk.LEFT, padx=(20, 0))
 main_paned_window = tk.PanedWindow(root, orient=tk.VERTICAL, sashrelief=tk.RAISED, sashwidth=8)
 main_paned_window.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
 
-# Output Frame (Panel Atas)
+# --- Output Frame (Panel Atas) ---
 output_frame = tk.Frame(main_paned_window)
-output_aksara_label = tk.Label(output_frame, text="Teks Aksara:")
-output_aksara_label.pack(anchor=tk.W, pady=(0, 5))
+# Frame untuk label dan tombol copy di output panel
+output_header_frame = tk.Frame(output_frame)
+output_header_frame.pack(fill=tk.X, pady=(0, 5))
+
+output_aksara_label = tk.Label(output_header_frame, text="Teks Aksara:")
+output_aksara_label.pack(side=tk.LEFT)
+
+copy_output_button = tk.Button(output_header_frame, text="Salin Teks Aksara", command=lambda: copy_to_clipboard(output_aksara_widget))
+copy_output_button.pack(side=tk.RIGHT)
 
 output_aksara_widget = scrolledtext.ScrolledText(output_frame, wrap=tk.WORD, font=("Jayabaya", 14))
 output_aksara_widget.pack(fill=tk.BOTH, expand=True)
 output_aksara_widget.config(state=tk.DISABLED)
 
-# Input Frame (Panel Bawah)
+# --- Input Frame (Panel Bawah) ---
 input_frame = tk.Frame(main_paned_window)
-input_label = tk.Label(input_frame, text="Ketik Teks Latin di sini:")
-input_label.pack(anchor=tk.W, pady=(0, 5))
+# Frame untuk label dan tombol copy di input panel
+input_header_frame = tk.Frame(input_frame)
+input_header_frame.pack(fill=tk.X, pady=(0, 5))
+
+input_label = tk.Label(input_header_frame, text="Ketik Teks Latin di sini:")
+input_label.pack(side=tk.LEFT)
+
+copy_input_button = tk.Button(input_header_frame, text="Salin Teks Latin", command=lambda: copy_to_clipboard(input_text_widget))
+copy_input_button.pack(side=tk.RIGHT)
 
 input_text_widget = scrolledtext.ScrolledText(input_frame, wrap=tk.WORD, font=("Arial", 12))
 input_text_widget.pack(fill=tk.BOTH, expand=True)

@@ -27,7 +27,7 @@ HUKUM_AKSARA_CLUSTER = [
     (r'nḍ', 'ṇḍ'), (r'nḋ', 'ṇḋ'), (r'nṭ', 'ṇṭ'), (r'nṫ', 'ṇṫ'),
     (r'nc', 'ñc'), (r'nj', 'ñj'), (r'ks', 'kṣ'), (r'ꝁs', 'ꝁṣ'),
     (r'gs', 'gṣ'), (r'ǥs', 'ǥṣ'), (r'jn', 'jñ'), (r'rs', 'ṙṣ'),
-    (r'ṣt', 'ṣṭ'), (r'sṭ', 'ṣṭ'), (r'ṣŧ', 'ṣṫ'), (r'sry', 'śry'), (r'sṫ', 'ṣṫ')
+    (r'sṭ', 'ṣṭ'), (r'ṣŧ', 'ṣṫ'), (r'sry', 'śry'), (r'sṫ', 'ṣṫ')
 ]
 
 # Aturan khusus dengan lambda function
@@ -110,9 +110,9 @@ def hukum_ṙ(text):
     
     # 2. Gandakan konsonan setelah ṙ (kecuali yang dalam TIDAK_DIGANDAKAN)
     text = re.sub(
-        rf'(?<=ṙ)([{KONSONAN}])', 
-        lambda m: m.group(1) if m.group(1) in TIDAK_DIGANDAKAN else m.group(1) * 2, 
-        text
+    rf'(?<=ṙ)([{KONSONAN}])(?![{KONSONAN}])', # Tambahkan (?![{KONSONAN}])
+    lambda m: m.group(1) if m.group(1) in TIDAK_DIGANDAKAN else m.group(1) * 2,
+    text
     )
     
     # 3. ROLLBACK: Jika sebelum ṙ ada konsonan
@@ -166,10 +166,14 @@ def hukum_sigeg(text):
     
     # Ubah ṙ jadi r di ujung baris/kalimat
     text = re.sub(
-    r'ṙ([ \-~]*)([^a-zA-Z\n]|$)', # Memperbolehkan non-alfabet atau akhir string
-    r'r\1\2',
-    text
+        r'ṙ([ \-~]*)(.)', 
+        lambda m: ('r' if not m.group(2).isalpha() else 'ṙ') + m.group(1) + m.group(2),
+        text
     )
+    # Ubah ṙ jadi r di ujung baris/kalimat dan tidak ada karakter lagi
+    text = re.sub(
+        r'ṙ *$', r'r',text)
+    
 
     # Kasus khusus
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, re.IGNORECASE)
