@@ -40,7 +40,9 @@ substitutions = {
     r'\bdur\\(y|n)': r'dur\1', #durya
     r'\bpar\\(w)': r'par\1', #parwa 
 
-    r'\b(pĕr|bĕr|tĕr)(?![' + daftar_vokal + '])' : r'\1\\',
+    rf'(pĕr|bĕr|tĕr|mĕṅ)([{daftar_konsonan}])(\w*)':
+        lambda m: f'{m.group(1)}\\{m.group(2)}{m.group(3)}'
+        if sum(c in daftar_vokal for c in m.group(3).lower()) > 1 else m.group(0),
 
     #Imbuhan aṅr
     r'\b(m|p)aṅr(\w+)': lambda m: 
@@ -57,6 +59,7 @@ substitutions = {
     r'(li|sĕḍĕ)ṅk(u|w)':r'\1ŋk\2',
     r'ṅmu\b': r'ŋmu',
     r'ṅt([' + daftar_vokal + r'])\b': r'ŋt\1',
+    r'ṅ\\': r'ŋ',
 
     #khusus r dan h
     r'h(m|k)(u|w)': r'ḥ\1\2',
@@ -67,9 +70,12 @@ substitutions = {
 
     #spesial kw (ingat ṅ itu ṅku itu gapakai cecak)
     r'([' + daftar_konsonan + '])([' + daftar_vokal + '])r(k|m)w([' + daftar_vokal + '])': r'\1\2ṙ\\\3w\4',
-    r'([' + daftar_konsonan + '])([' + daftar_vokal + '])h(k|m)w([' + daftar_vokal + '])': r'\1\2ḥ\3w\4',   
+    r'([' + daftar_konsonan + '])([' + daftar_vokal + '])h(k|m)w([' + daftar_vokal + '])': r'\1\2ḥ\3w\4', 
+
+    #Bahasa Indonesia
+    rf'([{daftar_vokal}])([{daftar_konsonan}])lah\b': r'\1\2 laḥ',  
     
-    r'(s|ś)unya': 'śūnya', r'budi': 'budđi', 
+    r'\b(s|ś)unya': 'śūnya', r'budi': 'budđi', 
     r'purna': 'pūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
     r'tir(t|ŧ)a': 'tīṙŧa', r'\bsabda\b': 'śabda',
     r'purwa': 'pūrwa', r'\bsirna\b': 'śīrna', 

@@ -106,6 +106,8 @@ def konversi_aksara_ke_kawi(text):
     # Aturan penggantian khusus sebelum konversi karakter per karakter
     text = re.sub(r'(?<=\b)ꦪꦾꦂ', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
     text = re.sub(r'ꦉ\u200Cꦴ', '𑼋', text, flags=re.IGNORECASE)
+    text = re.sub(r'ꦫꦾ', '𑼬𑽂𑼫\u200D', text, flags=re.IGNORECASE)
+    text = re.sub(r'ꦫ꧀ꦮ', '𑼬𑽂𑼮\u200D', text, flags=re.IGNORECASE)
 
     hasil = []
     # Lakukan konversi karakter per karakter menggunakan daftar_konversi global

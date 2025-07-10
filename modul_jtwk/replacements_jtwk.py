@@ -111,6 +111,19 @@ replacements['macapat'] = replacements['kakawin'].copy()
 #replacements['satya'] = replacements['sriwedari'].copy()
 
 def replace_numbers_with_colon(text):
+    # Aturan awal: beri tanda : di awal dan akhir tanggal atau format mirip (angka/angka/angka)
     text = re.sub(r'([\dA-Za-z]+[/\\][\dA-Za-z]+[/\\][\dA-Za-z]+)', r':\1:', text)
-    return text
+
+    # Tangkap angka yang boleh punya 0–2 pemisah titik/koma
+    pattern = re.compile(r'\b\d+(?:[.,]\d+){0,2}\b')
+
+    def pengganti(m):
+        start, end = m.start(), m.end()
+        sebelum = text[start - 1] if start > 0 else ''
+        sesudah = text[end] if end < len(text) else ''
+        if sebelum in ':=' or sesudah in ':=':
+            return m.group(0)  # jangan ubah jika sudah diapit : atau =
+        return f':{m.group(0)}:'
+
+    return pattern.sub(pengganti, text)
 

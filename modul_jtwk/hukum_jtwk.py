@@ -27,7 +27,8 @@ HUKUM_AKSARA_CLUSTER = [
     (r'nḍ', 'ṇḍ'), (r'nḋ', 'ṇḋ'), (r'nṭ', 'ṇṭ'), (r'nṫ', 'ṇṫ'),
     (r'nc', 'ñc'), (r'nj', 'ñj'), (r'ks', 'kṣ'), (r'ꝁs', 'ꝁṣ'),
     (r'gs', 'gṣ'), (r'ǥs', 'ǥṣ'), (r'jn', 'jñ'), (r'rs', 'ṙṣ'),
-    (r'sṭ', 'ṣṭ'), (r'ṣŧ', 'ṣṫ'), (r'sry', 'śry'), (r'sṫ', 'ṣṫ')
+    (r'sṭ', 'ṣṭ'), (r'ṣŧ', 'ṣṫ'), (r'sry', 'śry'), (r'sṫ', 'ṣṫ'),
+    (r'kṣn', 'kṣṇ')
 ]
 
 # Aturan khusus dengan lambda function
@@ -47,7 +48,7 @@ PENGGANTIAN_ṙ = [
     #pengecualian vokal a
     (r'ṙs', 'ṙṣ'), (r'ṙṣik\b', 'ṙsik'), 
     (r'ṙṇny', 'ṙny'), (r'aṙyy([aā])', r'ary\1'),
-    (r'(ā|a)ś([cꞓ])ary', r'\1ś\2aṙyy'), (r'ṙyyakĕn', 'ryakĕn'), 
+    (r'(ā|a)ś([cꞓ])ary', r'\1ś\2aṙyy'), (r'ṙyy(akĕn|aku)', r'ry\1'), 
     (r'p(a|ā)ṙśś', r'p\1ṙś'),
     (rf'\b((?!r)[{KONSONAN}])aryan\b', r'\1aṙyyan'),
     (rf'\b(b|h|p|g)arya', r'\1aṙyya'),
@@ -55,10 +56,13 @@ PENGGANTIAN_ṙ = [
     #cegah setelah nir durpar konsonan tumpuk tiga
     (rf'\b(niṙ|duṙ|pāṙ)([{KONSONAN}])\2([{KONSONAN}])', r'\1\2\3'),
 
+    #khusus durnaya
+    (rf'\bduṙṇn([{VOKAL}])', r'duṙnn\1'),
+
     #pengecualian vokal u
     (r'ṙmmu ', 'ṙmu '), 
     (r'uṙww', 'urw'), 
-    (r'kaṙww(a|â|ā)', r'karw\1'),
+    (rf'([{KONSONAN}])aṙww(a|â|ā)', r'\1arw\2'),
     (r'tumiṙww(a|â|ā)', r'tumirw\1'),
     (r'ṙwwaṅ\b', r'rwaṅ'),
 
@@ -132,10 +136,14 @@ def hukum_ṙ(text):
         r'|(?<=-))'                # atau setelah tanda hubung '-'
         r'ry(?=[^\s-])'            # dan diikuti huruf (bukan spasi atau tanda hubung)
         r'|(?:\brī\b[^\S\n]+a)'    # atau kasus khusus: rī (kata sendiri) lalu spasi dan 'a'
+        r'|(?:\brī\b[^\S\n]+a)'
     )
     
     # Ganti semua pola yang cocok dengan 'ṙyy'
     text = re.sub(pattern, 'ṙyy', text, flags=re.MULTILINE | re.IGNORECASE)
+
+    #Kasus ry+satu vokal
+    text = re.sub(rf' ry([{VOKAL}])\b', r' ṙyy\1', text, flags=re.IGNORECASE)
     
     #print(text)  # Debug print seperti kode asli
 
@@ -152,7 +160,48 @@ def hukum_ṙ(text):
 def hukum_sigeg(text):
     """Terapkan hukum sigeg (tanda akhir kata)"""
     # Penyigegan dasar
-    for old, new in [('ṅ', 'ŋ'), ('h', 'ḥ'), ('r', 'ṙ')]:
+    # Ganti khusus untuk 'ṅ'
+    SPECIFIC_FOLLOWING = r'(?:lĕ|rĕ|ḷ|ṛ)' # Pola khusus setelah 'ṅ'
+    VOKALPANJANG = 'āâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌṝḹ'
+
+    # --- Langkah 1: Proses kasus ' ṅ ' yang diapit spasi (prioritas tinggi) ---
+
+    # Kriteria 3: Vokal Panjang + ' ṅ ' + pola khusus -> ' ṅ-'
+    text = re.sub(
+        rf'(?<=[{VOKALPANJANG}]) ṅ (?={SPECIFIC_FOLLOWING})',
+        r' ṅ-',
+        text
+    )
+
+    # Kriteria 1: Vokal + ' ṅ ' + Konsonan -> '-ŋ '
+    text = re.sub(
+        rf'(?<=[{VOKAL}]) ṅ (?=[{KONSONAN}])',
+        r'-ŋ ',
+        text
+    )
+
+    # Kriteria 2: Konsonan + ' ṅ ' + Konsonan -> ' ṅ-'
+    text = re.sub(
+        rf'(?<=[{KONSONAN}]) ṅ (?=[{KONSONAN}])',
+        r' ṅ-',
+        text
+    )
+
+    # Kriteria 4: vokal + ' ṅ ' + vokal -> ' ṅ-'
+    text = re.sub(
+        rf'(?<=[{VOKAL}]) ṅ (?=[{VOKAL}])',
+        r' ṅ-',
+        text
+    )
+
+    text = re.sub(
+        rf'(?<!^)(?<!\n)(?<=\w|-)ṅ\b(?!-)(?!(?: ?|- ?)[{VOKAL}])',
+        'ŋ',
+        text
+    )
+
+    # Ganti untuk 'h' dan 'r' sesuai aturan sebelumnya
+    for old, new in [('h', 'ḥ'), ('r', 'ṙ')]:
         text = re.sub(
             rf'(?<!^)(?<!\n){old}\b(?!(?: ?|- ?)[{VOKAL_KECIL}])',
             new, text

@@ -57,8 +57,8 @@ aksara = {
     **{huruf: 'ꦘ꧀' for huruf in ('z', 'Z')},
     **{huruf: 'ꦥ꦳꧀' for huruf in ('f', 'F')},
     **{huruf: 'ꦮ꦳꧀' for huruf in ('v', 'V')},
-    **{huruf: 'ꦏ꦳꧀' for huruf in ('ḳ', 'Ḳ', 'q', 'Q')},
-    **{huruf: 'ꦏ꧀ꦰ꧀' for huruf in ('v', 'V')},
+    **{huruf: 'ꦏ꦳꧀' for huruf in ('ḳ', 'Ḳ', 'q', 'Q')}
+    #**{huruf: 'ꦏ꧀ꦰ꧀' for huruf in ('v', 'V')},
 }
 
 sandhangan = {
@@ -391,6 +391,7 @@ def finalisasi(hasil):
         '⏓': '0̲',
         '=': ' = ',
         '❌': ' ❌',
+        '`': f'{ZWNJ}',
 
         # Hapus karakter spasi dan tab
         '\t': ' ',

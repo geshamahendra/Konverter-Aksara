@@ -4,7 +4,8 @@
   },
   "[aksara]": {
     "editor.fontFamily": "'natya', 'jayaƀaya', Menlo, Monaco, Courier New, monospace", //'natya', 'jayaƀaya',  rāmāyaṇa linuwiḥ2
-    "editor.fontSize": 15,
+    //"editor.fontFamily": "Asta Gayatri 13",
+    "editor.fontSize": 22,
     "editor.fontLigatures": true,
     "explorer.confirmDelete": false,
     "editor.letterSpacing": 1.8,
