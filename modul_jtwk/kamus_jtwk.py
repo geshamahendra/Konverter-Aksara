@@ -6,6 +6,7 @@ set_vokal = set(daftar_vokal)
 konsonan = '[' + re.escape(daftar_konsonan) + ']'
 huruf_dikecualikan = "gblmjy"
 daftar_konsonan_tanpa_dikecualikan = daftar_konsonan
+SH = '\u00AD' #soft hypen
 
 for huruf in huruf_dikecualikan:
     daftar_konsonan_tanpa_dikecualikan = daftar_konsonan_tanpa_dikecualikan.replace(huruf, '')
@@ -35,18 +36,18 @@ substitutions = {
 
     # Hukum Imbuhan sanskrit
     # Regex substitusi
-    r'\b(nir|dur|pār)(?![' + daftar_vokal + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
+    r'\b(nir|dur|pār|dūr)(?![' + daftar_vokal + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
     r'\bnir(g)': r'nir\\\1', #nir guna
     r'\bdur\\(y|n)': r'dur\1', #durya
     r'\bpar\\(w)': r'par\1', #parwa 
 
     rf'(pĕr|bĕr|tĕr|mĕṅ)([{daftar_konsonan}])(\w*)':
-        lambda m: f'{m.group(1)}\\{m.group(2)}{m.group(3)}'
+        lambda m: f'{m.group(1)}{SH}{m.group(2)}{m.group(3)}'
         if sum(c in daftar_vokal for c in m.group(3).lower()) > 1 else m.group(0),
 
     #Imbuhan aṅr
     r'\b(m|p)aṅr(\w+)': lambda m: 
-        m.group(1) + 'aŋr' + m.group(2) if sum(c in daftar_vokal for c in m.group(2)) >= 2 else m.group(0),
+        m.group(1) + f'aŋ{SH}r' + m.group(2) if sum(c in daftar_vokal for c in m.group(2)) >= 2 else m.group(0),
     #Imbuhan aṅ lainnya
     #rf'\b(m|p)aṅ([{daftar_konsonan}])(\w+)': lambda m:    m.group(1) + 'aŋ' + m.group(2) + m.group(3) if sum(c in daftar_vokal for c in m.group(3)) >= 2 else m.group(0),
 
@@ -118,6 +119,7 @@ substitutions = {
     r'(ṙ|r)dd': r'rd', r'(ṙ|r)dđ': r'rđ', 
     r'(ṙ|r)dḍ': r'rḍ', r'(ṙ|r)dḋ': r'rḋ', 
     r'(ṙ|r)cc': r'rc', r'(ṙ|r)cꞓ': r'rꞓ',
+    r'(ṙ|r)tŧ': r'rŧ',
 
     #khusus ṙṇṇ tidak ada di jawa kuno
     r'(ṙ|r)ṇ': r'rn',

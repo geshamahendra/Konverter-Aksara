@@ -71,7 +71,7 @@ sandhangan = {
     **{tanda: 'ꦴ' for tanda in ('ā', 'â')},
     **{tanda: 'ꦼꦴ' for tanda in ('ö', 'ŏ')},
     **{tanda: 'ꦷ' for tanda in ('ī', 'î')},
-    **{tanda: 'ꦼ' for tanda in ('ĕ')},
+    **{tanda: 'ꦼ' for tanda in ('ĕ', 'ě')},
     **{tanda: 'ꦺꦴ' for tanda in ('o', 'ô')},
     **{tanda: 'ꦺ' for tanda in ('è', 'é', 'e', 'ê')},
     **{tanda: 'ꦀ' for tanda in ('ṃ', 'm̃', 'ᶆ', 'ṁ')},
@@ -264,7 +264,7 @@ def add_zwnj_awal_kata_bulk(text, patterns, replacement, DAFTAR_KONSONAN):
 
 def inisialisasi_aksara(text):
     # Ganti * ujung pupuh
-    text = re.sub(r'\*(\s*[#{\<])', r'#\1', text)
+    text = re.sub(r'\*(\s*[#\<])', r'#\1', text)
 
     NON_HURUF_PENDAHULU = r'([^\w\s-])(\s*)'
     VOKAL_REGEX = f"[{DAFTAR_VOKAL}]"
@@ -348,7 +348,7 @@ def hukum_penulisan(text):
     #r' (p|s|ṣ)(o|e|è|é|ꜽ|ꜷ)',
     #r' hy', r' ky',
     rf" ([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)",
-    r' (ḷ|ḹ|r|ṅ|y|ś|ǥ|ñ)',
+    r' (ḷ|ḹ|r|ṅ|y|ǥ|ñ|ɉ)',
     #r' ta(?:n|ṅ|ŋ)?\b', #r' ta(?:\b|(?![nṅŋ]))'
     r" ṅ(-)?(" + f"[{DAFTAR_KONSONAN}]" + r")",
     r' str',
@@ -410,6 +410,5 @@ def finalisasi(hasil):
 
     # Gabungkan ZWNJ dan ZWJ yang berulang menjadi satu saja
     hasil = re.sub(r'[^\S\n]*[\u200C\u200D]{2,}', lambda m: m.group(0)[0], hasil, flags=re.MULTILINE)
-
 
     return hasil

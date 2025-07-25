@@ -4,56 +4,10 @@ import re
 daftar_vokal = "aiuĕāâîīûūêôeèéöoꜽꜷ"  # Daftar vokal
 vokal_kapital = "AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ"  # Daftar vokal kapital
 vokal_gabungan = "aiuĕāâîīûūêôeèéöoꜽꜷAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ"
-daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳ"  # Daftar konsonan
+daftar_konsonan = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳʰ"  # Daftar konsonan
 zwnj = '\u200C'  # Zero-width non-joiner (ZWNJ)
 
-def add_h_between_vowels(text):
-    # Pola untuk mencocokkan vokal yang didahului oleh karakter selain huruf atau di awal kata
-    pattern_non_letter = rf"(^|[^a-zA-Zḋḍŧṭṣñṇṅŋṛṝḷḹꝁǥꞓƀśyḳ-])([{daftar_vokal}])"
-
-    # Pola untuk mencocokkan vokal yang berturut-turut di dalam kata
-    pattern_consecutive_vowels = rf"([{daftar_vokal}])([{daftar_vokal}])"
-
-    # Fungsi untuk menyisipkan 'h' sebelum vokal jika perlu
-    def insert_h(match):
-        sebelum_vokal = match.group(1)  # Karakter sebelum vokal
-        vokal = match.group(2)  # Vokal yang ditemukan
-        
-        # Tambahkan 'h' sebelum vokal
-        return sebelum_vokal + 'ʰ' + vokal
-
-    # Fungsi untuk menyisipkan 'h' di antara dua vokal berturut-turut
-    def insert_h_between_vowels(match):
-        vokal_pertama = match.group(1)  # Vokal pertama
-        vokal_kedua = match.group(2)    # Vokal kedua
-        
-        # Tambahkan 'h' di antara kedua vokal
-        return vokal_pertama + 'ʰ' + vokal_kedua
-
-    # Terapkan substitusi untuk pola yang mencocokkan vokal yang didahului oleh karakter non-huruf
-    text = re.sub(pattern_non_letter, insert_h, text)
-
-    # Terapkan substitusi untuk pola yang mencocokkan vokal berturut-turut di dalam kata
-    return re.sub(pattern_consecutive_vowels, insert_h_between_vowels, text)
-
 def mode_normal(text):
-
-    # Mengubah vokal menjadi uppercase jika didahului oleh spasi dan vokal, tanpa menghapus spasi tersebut
-    text = re.sub(rf'(?<=\b[{daftar_vokal}])(\s)([{daftar_vokal}])', lambda m: m.group(1) + m.group(2).upper(), text)
-    # Mengubah vokal pertama setelah spasi menjadi uppercase jika didahului oleh spasi
-    text = re.sub(rf'(?<=\s)([{daftar_vokal}])', lambda m: m.group(1).upper(), text)
-    # Menghapus spasi sebelum vokal jika didahului oleh konsonan
-    text = re.sub(rf'(?<=[^{daftar_vokal}])\s([{daftar_vokal}])', r'\1', text)
-
-    text = re.sub(r'-', '', text, flags=re.IGNORECASE)
-    # Fungsi untuk menambahkan 'h' di depan kata yang dimulai dengan vokal setelah spasi
-    text = add_h_between_vowels(text)
-
-    # Inserting ZWNJ after the consonant if followed by space and capital vowel
-    text = re.sub(rf'([{daftar_konsonan}])(\s)([{vokal_kapital}])', r'\1' + zwnj + r'\2\3', text)
-
-    # Aturan baru: menambahkan '\u200C' sebelum spasi jika diapit oleh konsonan di kiri dan vokal uppercase di kanan
-    text = re.sub(rf'([{daftar_konsonan}])\s([AIUĀĪŪEOÖŎĔÈ])', lambda m: m.group(1) + '\u200C' + ' ' + m.group(2), text)
 
     return text
 
@@ -62,7 +16,7 @@ def mode_kakawin(text):
     #Mode kakawin adalah transliterasi yang memaksa semua huruf vokal jadi kecil, pengkapitalan akan dilakukan oleh algoritma metrum
 
     #paksa  kapital swara jadi huruf kecil semua
-    text = text.lower()
+    #text = text.lower()
     #Bahasa kawi tidak kenal ṙṇṇ
     text = re.sub(r'rṇ', 'rn', text) # khusus bahasa jawa kuno
 
@@ -74,11 +28,15 @@ def mode_lampah(text):
 
 def mode_sriwedari(text):
     # Fungsi untuk menambahkan 'h' di depan kata yang dimulai dengan vokal setelah spasi
-    text = add_h_between_vowels(text)
+    text = re.sub(rf"([{daftar_vokal}])([{daftar_vokal}])", r"\1ʰ\2",
+             re.sub(rf"(\s)([{daftar_vokal}])", r"\1ʰ\2", text))
+    
     text = re.sub(r'-', '', text, flags=re.IGNORECASE)
+
     # Regex untuk mengganti "ṅṅ" dengan "ŋŋ" sambil mempertahankan vokal
     text = re.sub(rf'(ṅṅ)([{daftar_vokal}])\b', r'ŋṅ\2', text, flags=re.IGNORECASE)
     text = re.sub(rf'(hh)([{daftar_vokal}])\b', r'ḥh\2', text, flags=re.IGNORECASE)
+
     #text = re.sub(rf'\b(ṅg)([{daftar_vokal}])', r'haṅg\2', text, flags=re.IGNORECASE)
     text = re.sub(rf'\b(ñj)([{daftar_vokal}])', r'hañj\2', text, flags=re.IGNORECASE)
     return text
@@ -88,7 +46,6 @@ def mode_cerita(text):
     text = re.sub(r'-', '', text, flags=re.IGNORECASE)
 
     # Fungsi untuk menambahkan 'h' di depan kata yang dimulai dengan vokal setelah spasi
-    text = add_h_between_vowels(text)
     # Regex untuk mengganti "ṅṅ" dengan "ŋŋ" sambil mempertahankan vokal
     #text = re.sub(rf'(ṅṅ)([{daftar_vokal}])\b', r'ŋṅ\2', text, flags=re.IGNORECASE)
     #text = re.sub(rf'(hh)([{daftar_vokal}])\b', r'ḥh\2', text, flags=re.IGNORECASE)

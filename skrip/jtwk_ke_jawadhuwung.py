@@ -54,6 +54,11 @@ def latin_to_jawa(text, line_spacing):
     text = re.sub(r'꧄꧐꧄', '꧅꧐꧅', text)
     text = re.sub(r'꧁', '꧄', text)
     text = re.sub(r'꧂', '꧄', text)
+
+    #khusus font jayabaya
+    text = re.sub(r'ꦈ', '#', text)
+    text = re.sub(r'ꦎ', 'ꦈ', text)
+    text = re.sub(r'#', 'ꦎ', text)
     
     '''
     #text = re.sub(r'ṙ', 'r\u200D', text, flags=re.IGNORECASE)

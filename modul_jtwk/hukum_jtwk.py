@@ -4,7 +4,7 @@ from modul_jtwk.kamus_jtwk import substitutions
 # Character sets
 VOKAL = 'aāiīuūeèéêĕoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
 VOKAL_KECIL = 'aāiīuūeèéêĕoōöŏĕꜷꜽâîûô'
-KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳk"
+KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ"
 SEMI_VOKAL = 'lwyr'
 TIDAK_DIGANDAKAN = set('nṅṇhṣsścꞓrṙṫŧꝑǥɉƀꝁkdḍḋdđ')
 
@@ -40,7 +40,7 @@ HUKUM_ṙ_MAHAPRANA = [
     ('ṙk', 'ṙkk'), ('ṙꝁ', 'ṙkꝁ'), ('ṙṫ', 'ṙṭṫ'), ('ṙꝑ', 'ṙpꝑ'),
     ('ṙǥ', 'ṙgǥ'), ('ṙɉ', 'ṙjɉ'), ('ṙƀ', 'ṙbƀ'), ('ṙṇ', 'ṙṇṇ'),
     ('ṙn', 'ṙṇn'), ('ṙd', 'ṙdd'), ('ṙđ', 'ṙdđ'), ('ṙḍ', 'ṙdḍ'),
-    ('ṙḋ', 'ṙdḋ'), ('ṙc', 'ṙcc'), ('ṙꞓ', 'ṙcꞓ')
+    ('ṙḋ', 'ṙdḋ'), ('ṙc', 'ṙcc'), ('ṙꞓ', 'ṙcꞓ'), ('ṙŧ', 'ṙtŧ')
 ]
 
 PENGGANTIAN_ṙ = [
@@ -167,38 +167,17 @@ def hukum_sigeg(text):
     # --- Langkah 1: Proses kasus ' ṅ ' yang diapit spasi (prioritas tinggi) ---
 
     # Kriteria 3: Vokal Panjang + ' ṅ ' + pola khusus -> ' ṅ-'
-    text = re.sub(
-        rf'(?<=[{VOKALPANJANG}]) ṅ (?={SPECIFIC_FOLLOWING})',
-        r' ṅ-',
-        text
-    )
-
+    text = re.sub(rf'(?<=[{VOKALPANJANG}]) ṅ (?={SPECIFIC_FOLLOWING})',r' ṅ-',text)
     # Kriteria 1: Vokal + ' ṅ ' + Konsonan -> '-ŋ '
-    text = re.sub(
-        rf'(?<=[{VOKAL}]) ṅ (?=[{KONSONAN}])',
-        r'-ŋ ',
-        text
-    )
-
+    text = re.sub(rf'(?<=[{VOKAL}]) ṅ (?=[{KONSONAN}])',r'-ŋ ',text)
     # Kriteria 2: Konsonan + ' ṅ ' + Konsonan -> ' ṅ-'
-    text = re.sub(
-        rf'(?<=[{KONSONAN}]) ṅ (?=[{KONSONAN}])',
-        r' ṅ-',
-        text
-    )
-
+    text = re.sub(rf'(?<=[{KONSONAN}]) ṅ (?=[{KONSONAN}])',r' ṅ-',text)
     # Kriteria 4: vokal + ' ṅ ' + vokal -> ' ṅ-'
-    text = re.sub(
-        rf'(?<=[{VOKAL}]) ṅ (?=[{VOKAL}])',
-        r' ṅ-',
-        text
-    )
+    text = re.sub(rf'(?<=[{VOKAL}]) ṅ (?=[{VOKAL}])',r' ṅ-',text)
+    text = re.sub(rf'(?<!^)(?<!\n)(?<=\w|-)ṅ\b(?!-)(?!(?: ?|- ?)[{VOKAL}])','ŋ',text)
 
-    text = re.sub(
-        rf'(?<!^)(?<!\n)(?<=\w|-)ṅ\b(?!-)(?!(?: ?|- ?)[{VOKAL}])',
-        'ŋ',
-        text
-    )
+    #Kriteria 5 vokal + ṅ - konsonan
+    text = re.sub(rf'(?<=[{VOKAL}])ṅ-(?=[{KONSONAN}])',r'ŋ-',text)
 
     # Ganti untuk 'h' dan 'r' sesuai aturan sebelumnya
     for old, new in [('h', 'ḥ'), ('r', 'ṙ')]:
@@ -215,7 +194,7 @@ def hukum_sigeg(text):
     
     # Ubah ṙ jadi r di ujung baris/kalimat
     text = re.sub(
-        r'ṙ([ \-~]*)(.)', 
+        r'ṙ([ \-~$]*)(.)', 
         lambda m: ('r' if not m.group(2).isalpha() else 'ṙ') + m.group(1) + m.group(2),
         text
     )
@@ -237,6 +216,9 @@ def finalisasi_jtwk(text):
         rf'([rhṅ])(?=nṇ?y[{VOKAL}])',
         lambda m: {'r': 'ṙ', 'h': 'ḥ', 'ṅ': 'ŋ'}[m.group(1)], text
     )
+
+    #kasus spesial ṅ-konsonan-konsonan
+    text = re.sub(rf'ṅ([{KONSONAN}])([{KONSONAN}])', r'ŋ\1\2', text)
     
     # Sigeg bertemu sigeg
     text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙ ṅ', text)
@@ -244,6 +226,17 @@ def finalisasi_jtwk(text):
     
     # Normalisasi spasi
     text = re.sub(r'[^\S\n]+', ' ', text)
+    
+    # vokal diapit spasi
+    text = re.sub(rf' ([{VOKAL}]) ',r' \1-',text)
+
+    #konsonan non ṅ,ḥ,ṙ berdiri diantara spasi
+    # 1. Jika ada vokal + spasi + konsonan tunggal non-ṅḥṙ
+    text = re.sub(rf'([{VOKAL}]) (\b(?![ṅḥṙ])[{KONSONAN}]\b) ', r'\1-\2 ', text)
+
+    # 2. Else, jika ada konsonan tunggal non-ṅḥṙ + spasi + vokal
+    text = re.sub(rf' (\b(?![ṅḥṙ])[{KONSONAN}]\b) ([{VOKAL}])', r'\1-\2 ', text)
+
     
     # Kapitalisasi vokal awal baris
     text = REGEX_CACHE['awal_baris_vokal'].sub(
@@ -260,5 +253,10 @@ def finalisasi_jtwk(text):
     text = REGEX_CACHE['backtick_vokal'].sub(
         lambda m: m.group(1).upper(), text
     )
+
+    # Pengulangan
+    text = re.sub(r'\b(\w{3,})\s+\1\b', r'\1-\1', text)  # pengulangan utuh
+    text = re.sub(r'\b(\w*?)(\w{3,})\s+\2(\w+)\b', r'\1\2-\2\3', text)  # awalan + akar + akhiran
+    text = re.sub(r'\b(\w+)\s+\1(\w+)\b', r'\1-\1\2', text)  # akar + akar+akhiran (tanpa awalan)
     
     return text

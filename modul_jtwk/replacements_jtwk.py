@@ -65,6 +65,7 @@ replacements = {
         'e' : 'è', 'E': 'È',
         'le': 'ḷ', 'ṛe': 'ṛ', 'ia' : 'y',
     },
+    '''
     'sriwedari': {
         'kh': 'ꝁ','gh': 'ǥ','ch': 'ꞓ','jh': 'ɉ',
         'ṭh': 'ṫ','ḍh': 'ḋ','th': 'ŧ','dh': 'ḍ',
@@ -75,6 +76,7 @@ replacements = {
         'é' : 'è', 'É' : 'È', 
         'le': 'ḷ', 'ṛe': 'ṛ', 'ia' : 'ya',
     },
+    '''
     'satya': {
         'kh': 'ꝁ','gh': 'ǥ','ch': 'ꞓ','jh': 'ɉ',
         'ṭh': 'ṫ','ḍh': 'ḋ','th': 'ṭ','dh': 'ḍ',
@@ -108,6 +110,7 @@ replacements = {
 # Mode kakawin mewarisi mode normal dan menambahkan/menimpa beberapa entri
 replacements['lampah'] = replacements['kakawin'].copy()
 replacements['macapat'] = replacements['kakawin'].copy()
+replacements['sriwedari'] = replacements['kakawin'].copy()
 #replacements['satya'] = replacements['sriwedari'].copy()
 
 def replace_numbers_with_colon(text):
