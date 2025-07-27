@@ -56,13 +56,13 @@ PENGGANTIAN_ṙ = [
     #cegah setelah nir durpar konsonan tumpuk tiga
     (rf'\b(niṙ|duṙ|pāṙ)([{KONSONAN}])\2([{KONSONAN}])', r'\1\2\3'),
 
-    #khusus durnaya
-    (rf'\bduṙṇn([{VOKAL}])', r'duṙnn\1'),
+    (rf'\bduṙṇn([{VOKAL}])', r'duṙnn\1'), #khusus durnaya
+    (rf'(a|ā)ṙwwud(a|ā)', r'\1ṙwud\2'), #khusus arwuda
 
     #pengecualian vokal u
     (r'ṙmmu ', 'ṙmu '), 
     (r'uṙww', 'urw'), 
-    (rf'([{KONSONAN}])aṙww(a|â|ā)', r'\1arw\2'),
+    (rf'([{KONSONAN}])aṙww(a|â|ā)\b', r'\1arw\2'),
     (r'tumiṙww(a|â|ā)', r'tumirw\1'),
     (r'ṙwwaṅ\b', r'rwaṅ'),
 
@@ -202,7 +202,6 @@ def hukum_sigeg(text):
     text = re.sub(
         r'ṙ *$', r'r',text)
     
-
     # Kasus khusus
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, re.IGNORECASE)
     text = re.sub(rf'kiŋki(ṅ|ŋ)', r'kiṅki\1', text)
@@ -216,9 +215,6 @@ def finalisasi_jtwk(text):
         rf'([rhṅ])(?=nṇ?y[{VOKAL}])',
         lambda m: {'r': 'ṙ', 'h': 'ḥ', 'ṅ': 'ŋ'}[m.group(1)], text
     )
-
-    #kasus spesial ṅ-konsonan-konsonan
-    text = re.sub(rf'ṅ([{KONSONAN}])([{KONSONAN}])', r'ŋ\1\2', text)
     
     # Sigeg bertemu sigeg
     text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙ ṅ', text)

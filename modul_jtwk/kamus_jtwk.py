@@ -33,6 +33,7 @@ substitutions = {
     r'\bsa(ng|ṅ)k(s|ṣ)(e|è|é)pa': 'saŋkṣepa',
     r'\bsa(ng|ṅ)sipta': 'saŋsipta',
     r'\bsa(ng|ṅ)ṣipta': 'saŋṣ',
+    r'ṅkt': 'ŋkt',
 
     # Hukum Imbuhan sanskrit
     # Regex substitusi
@@ -67,6 +68,7 @@ substitutions = {
     r'r(m|k)(u|w)': r'ṙ\\\1\2',
     r'rt([' + daftar_vokal + r'])\b': r'r\\t\1',
     r'ht([' + daftar_vokal + r'])\b': r'ḥt\1',
+    r'([' + daftar_vokal + r'])r(w|b)ud(a|ā)' : r'\1r\\\2ud\3',
     
 
     #spesial kw (ingat ṅ itu ṅku itu gapakai cecak)
