@@ -38,7 +38,43 @@ daftar_konversi = {
     '꧆': '᭜', '꧇': '᭝', '꧈': '᭞', '꧉': '᭟', '꧊': '᭚', '꧅': '᭾', '꧄': '᭛', '꧃': '᭛', '꧋': '᭽', '꧁': '᭛', '꧂': '᭛', 
 }
 
-## Fungsi konversi_ke_bali yang Diperbaiki
+def perbaiki_repha(teks_jawa):
+    sandhangan_chars = "ꦶꦸꦻꦴꦹꦼꦷꦺꦀꦁꦃꦾꦿꦽ"
+    result = ""
+    i = 0
+
+    while i < len(teks_jawa):
+        if teks_jawa[i] == 'ꦂ':
+            i += 1  # Lewatkan repha
+            chars_to_add = ""
+
+            # Lihat satu karakter ke depan
+            if i < len(teks_jawa):
+                next_char = teks_jawa[i]
+                chars_to_add += next_char
+
+                # Kalau karakter setelah ini adalah pangkon
+                if i + 1 < len(teks_jawa) and teks_jawa[i + 1] == '꧀':
+                    chars_to_add += teks_jawa[i + 1]  # Tambah pangkon
+                    if i + 2 < len(teks_jawa):
+                        chars_to_add += teks_jawa[i + 2]  # Tambah pasangan
+                    i += 3  # Lewatkan aksara awal, pangkon, pasangan
+                else:
+                    i += 1
+
+            # Cek sandhangan setelah pasangan
+            while i < len(teks_jawa) and teks_jawa[i] in sandhangan_chars:
+                chars_to_add += teks_jawa[i]
+                i += 1
+
+            # Tempelkan repha di akhir rangkaian
+            result += chars_to_add + 'ꦂ'
+        else:
+            result += teks_jawa[i]
+            i += 1
+
+    return result
+
 
 def konversi_aksara_ke_bali(text):
     """
@@ -53,6 +89,8 @@ def konversi_aksara_ke_bali(text):
     hasil = []
     # Bersihkan karakter zero-width joiner jika ada
     text = re.sub(r'\u200D', '', text)
+    text = re.sub(r'ꦪꦾꦂ', 'ꦂꦪꦾ', text)
+    #text = perbaiki_repha(text)
     for karakter in text:
         hasil.append(daftar_konversi.get(karakter, karakter))  # Gunakan karakter asli jika tidak ditemukan
     return ''.join(hasil)

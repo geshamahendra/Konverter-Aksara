@@ -15,13 +15,13 @@ ENABLE_KONSONAN_GANDA_CHECK = _ENABLE_KONSONAN_GANDA_CHECK_STR.lower() in ('true
 
 # --- Regex dan Konstanta Lainnya ---
 RE_METRUM_SIMBOL = re.compile(r'[–⏑⏓]')
-RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶṝḹṛḷ]')
-RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳŋḥṙʰ]')
+RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶṝḹṛḷ❓]')
+RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳŋḥṙʰ-]')
 ZWNJ = '\u200C'
 ZWJ = '\u200D'
 # Definisi ṝḹṛḷ sebagai vokal
-VOWELS = 'aiuĕāâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ'
-VOWEL_PENDEK = 'aiuĕAIUĔṛḷ'
+VOWELS = 'aiuĕāâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
+VOWEL_PENDEK = 'aiuĕAIUĔṛḷ❓'
 VOWEL_PANJANG = 'āâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌṝḹ'
 KHUSUS_KONSONAN = 'ṅŋḥṙ'
 konsonan_pattern = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳ"
@@ -46,6 +46,7 @@ VOWEL_PANJANG_KE_PENDEK = {
     'ō': 'o',
     'ṝ': 'ṛ',
     'ḹ': 'ḷ',
+    'o': '❓', 'ꜷ': '❓', 'ꜽ': '❓',
 }
 
 # --- Kamus Pemetaanuntuk Normalisasi ---
@@ -284,6 +285,57 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                             if RE_KONSONAN.match(konsonan_akhir_kata1) and (konsonan_akhir_kata1.lower()) and ' ' in text_between:
                                 if kata_v2 and len(kata_v2[2]) > 0 and kata_v2[2][0].lower() == v2_lower_temp:
                                     hasil_line[idx2] = v2.upper()
+                
+                # --- BLOK LOGIKA BARU UNTUK SKENARIO ANDA ---
+                # Kondisi: vokal1 pendek, metrum vokal1 pendek, vokal2 di awal kata, metrum vokal2 panjang
+                if met1 == '⏑' and v1_lower_temp in VOWEL_PENDEK: # Vokal 1 pendek dan metrumnya pendek
+                    # Pastikan ada vokal kedua yang valid
+                    if i_vokal_curr + 1 < len(vokal_posisi_in_original_line):
+                        idx2, v2, met2 = vokal_posisi_in_original_line[i_vokal_curr + 1] # Ambil detail vokal 2
+
+                        kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
+                        kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
+                        
+                        # Pastikan vokal 1 dan 2 berbeda kata, ada konsonan di antara vokal 1 & spasi
+                        if kata_v1 and kata_v2 and kata_v1 != kata_v2:
+                            akhir_kata1 = kata_v1[2]
+                            idx_v1_relatif = idx1 - kata_v1[0]
+                            if idx_v1_relatif + 1 < len(akhir_kata1):
+                                konsonan_akhir_kata1 = akhir_kata1[idx_v1_relatif + 1]
+                                
+                                # Cek konsonan setelah vokal pertama, spasi, dan vokal kedua di awal kata
+                                if RE_KONSONAN.match(konsonan_akhir_kata1) and (konsonan_akhir_kata1.lower() not in KHUSUS_KONSONAN) and ' ' in line[idx1+1:idx2]:
+                                    if kata_v2 and len(kata_v2[2]) > 0 and kata_v2[2][0].lower() == v2.lower(): # Pastikan v2 adalah awal kata kedua
+                                        
+                                        # --- TAMBAHAN LOGIKA BARU DI SINI ---
+                                        # Cek apakah setelah vokal kedua hanya ada satu konsonan saja (misal: "atisaya", bukan "anntila")
+                                        # Kita perlu memeriksa karakter kedua dari kata_v2 (yaitu kata_v2[2][1])
+                                        # dan memastikan karakter ketiga bukan konsonan.
+                                        
+                                        is_single_consonant_after_v2 = False
+                                        if len(kata_v2[2]) >= 2 and RE_KONSONAN.match(kata_v2[2][1]) and kata_v2[2][1].lower() not in KHUSUS_KONSONAN:
+                                            # Jika ada karakter kedua dan itu konsonan (dan bukan konsonan khusus)
+                                            if len(kata_v2[2]) == 2: # Kata hanya punya vokal dan satu konsonan
+                                                is_single_consonant_after_v2 = True
+                                            elif len(kata_v2[2]) > 2:
+                                                # Pastikan karakter ketiga BUKAN konsonan
+                                                if not RE_KONSONAN.match(kata_v2[2][2]) or kata_v2[2][2].lower() in KHUSUS_KONSONAN:
+                                                    is_single_consonant_after_v2 = True
+                                            
+                                        # Hanya lanjutkan jika ada satu konsonan setelah vokal kedua ATAU jika vokal kedua adalah karakter terakhir kata
+                                        if is_single_consonant_after_v2 or len(kata_v2[2]) == 1: # Tambahan: atau jika kata hanya terdiri dari vokal itu sendiri
+                                            # Kondisi terakhir: metrum vokal 2 harus panjang
+                                            if met2 == '–': # Metrum vokal kedua adalah panjang
+                                                # Lakukan pemanjangan vokal kedua
+                                                new_vokal_v2 = ubah_vokal_sesuai_metrum(v2, met2) # met2 harusnya '–' di sini
+                                                if new_vokal_v2 != v2:
+                                                    hasil_line[idx2] = new_vokal_v2
+                                            # Tambahkan juga jika metrum vokal 2 pendek dan vokal 2 awalnya panjang,
+                                            # maka pendekkan vokal kedua. (Jika ini yang Anda inginkan juga)
+                                            elif met2 == '⏑' and v2.lower() in VOWEL_PANJANG:
+                                                new_vokal_v2 = ubah_vokal_sesuai_metrum(v2, met2) # met2 harusnya '⏑' di sini
+                                                if new_vokal_v2 != v2:
+                                                    hasil_line[idx2] = new_vokal_v2
 
                 if met1 == '–' and v1_lower_temp in VOWEL_PENDEK:
                     konsonan_pattern_str = RE_KONSONAN.pattern[1:-1]
@@ -294,9 +346,10 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         if kata_v2:
                             awal_kata2 = kata_v2[2]
                             if awal_kata2.startswith(konsonan) and len(awal_kata2) > 1 and RE_VOKAL.match(awal_kata2[1]):
-                                new_vokal = ubah_vokal_sesuai_metrum(v1, met1) # is_first_char=False di sini
+                                new_vokal = ubah_vokal_sesuai_metrum(v1, met1) 
                                 if new_vokal != v1:
                                     hasil_line[idx1] = new_vokal
+
                 elif met1 == '⏑' and v1_lower_temp in VOWEL_PANJANG:
                     konsonan_pattern_str = RE_KONSONAN.pattern[1:-1]
                     vokal_spasi_konsonan_pattern = re.fullmatch(r'\s+' + r'([' + konsonan_pattern_str + r'])\s*', text_between)
@@ -306,7 +359,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         if kata_v2:
                             awal_kata2 = kata_v2[2]
                             if awal_kata2.startswith(konsonan) and len(awal_kata2) > 1 and RE_VOKAL.match(awal_kata2[1]):
-                                new_vokal = ubah_vokal_sesuai_metrum(v1, met1) # is_first_char=False di sini
+                                new_vokal = ubah_vokal_sesuai_metrum(v1, met1) 
                                 if new_vokal != v1:
                                     hasil_line[idx1] = new_vokal
 
@@ -324,6 +377,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                                         new_vokal = ubah_vokal_sesuai_metrum(v1, met1) # is_first_char=False di sini
                                         if new_vokal != v1:
                                             hasil_line[idx1] = new_vokal
+
                 elif met1 == '⏑' and v1_lower_temp in VOWEL_PANJANG:
                     kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
                     if kata_v1:
@@ -413,7 +467,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         while j < len(substring_between_vowels_clean):
                             char = substring_between_vowels_clean[j]
 
-                            if RE_KONSONAN.match(char.lower()):
+                            if RE_KONSONAN.match(char.lower()) and char != '-':
                                 konsonan_count_between += 1 
                             j += 1
 
@@ -471,11 +525,11 @@ def aplikasikan_metrum_dan_tandai_vokal(text):
     for blok in blok_list:
         baris = blok.strip().splitlines()
         is_metrum_blok = any(RE_METRUM_SIMBOL.search(b) for b in baris)
-        header_blok = [b for b in baris if (b.startswith("<") and ">" in b) or
-                                           (b.startswith("{") and "}" in b) or
+        header_blok = [b for b in baris if (b.startswith("<") and ">" in b) or #penanda sargah/pupuh utama
+                                           (b.startswith("{") and "}" in b) or #penanda sub pupuh
                                            (b.startswith("]") and "]" in b) or
                                            (b.startswith("[") and "[" in b) or
-                                           (b.startswith("!") and "!" in b) or
+                                           (b.startswith("!") and "!" in b) or #penanda wirama yang tidak diketahui 
                                            (b.startswith("#") and b.endswith("#"))]
         puisi_baris = [b for b in baris if not RE_METRUM_SIMBOL.search(b) and
                                            not (b.startswith("<") and ">" in b or

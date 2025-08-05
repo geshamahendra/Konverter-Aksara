@@ -3,7 +3,7 @@
     "**/output/**/*.txt": "aksara"
   },
   "[aksara]": {
-    "editor.fontFamily": "'Simbar Dwijendra', 'jayabaya', Menlo, Monaco, Courier New, monospace", //'natya', 'jayaƀaya',  rāmāyaṇa linuwiḥ2
+    "editor.fontFamily": "'Simbar Dwijendra 2', 'jayabaya', Menlo, Monaco, Courier New, monospace", //'natya', 'jayaƀaya',  rāmāyaṇa linuwiḥ2
     //"editor.fontFamily": "Sima Jaya (asta Gayatri 13)",
     "editor.fontSize": 16,
     "editor.fontLigatures": true,

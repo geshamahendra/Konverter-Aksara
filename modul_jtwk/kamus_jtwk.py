@@ -50,7 +50,7 @@ substitutions = {
     r'\b(m|p)aṅr(\w+)': lambda m: 
         m.group(1) + f'aŋ{SH}r' + m.group(2) if sum(c in daftar_vokal for c in m.group(2)) >= 2 else m.group(0),
     #Imbuhan aṅ lainnya
-    #rf'\b(m|p)aṅ([{daftar_konsonan}])(\w+)': lambda m:    m.group(1) + 'aŋ' + m.group(2) + m.group(3) if sum(c in daftar_vokal for c in m.group(3)) >= 2 else m.group(0),
+    rf'\b(m|p)aṅ((?![gk])[{daftar_konsonan}])(\w+)': lambda m:    m.group(1) + 'aŋ' + m.group(2) + m.group(3) if sum(c in daftar_vokal for c in m.group(3)) >= 2 else m.group(0),
 
     #Kasus khusus
     r'(duhk|duhꝁ)([' + daftar_vokal + '])' : r'duḥk\2',  #duhka

@@ -294,6 +294,9 @@ def hukum_sandi(text):
     # Regex penyeragaman vokal
     text = re.sub('|'.join(re.escape(k) for k in PENYERAGAMAN_VOKAL.keys()),
                 lambda match: PENYERAGAMAN_VOKAL[match.group(0)], text)
+    
+    #kasus tabrakan font bagian taling
+    text = re.sub(rf'ṙ([{DAFTAR_KONSONAN}])\1([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}])+(e|o)',rf'ṙ\1\1\2{ZWNJ}\3\4\5',text)
 
     #cegah ya dipasangi
     pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyrṛṝl')
@@ -348,7 +351,7 @@ def hukum_penulisan(text):
     #r' (p|s|ṣ)(o|e|è|é|ꜽ|ꜷ)',
     #r' hy', r' ky',
     rf" ([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)",
-    r' (ḷ|ḹ|r|ṅ|y|ǥ|ñ|ɉ)',
+    r' (ḷ|ḹ|r|y|ǥ|ñ|ɉ)', #ṅ
     #r' ta(?:n|ṅ|ŋ)?\b', #r' ta(?:\b|(?![nṅŋ]))'
     r" ṅ(-)?(" + f"[{DAFTAR_KONSONAN}]" + r")",
     r' str',
@@ -383,6 +386,8 @@ def finalisasi(hasil):
         'ꦈꦴꦁ': 'ꦈꦴꦀ',
         #'ꦉꦴ': f'ꦉ{ZWNJ}ꦴ',
         '⏒꧇': '⏒ ꧇',
+        '!': '',
+        '_': f'{ZWNJ}',
         ' ' : '', # Hapus spasi
 
         # Ganti simbol metrum
@@ -395,7 +400,7 @@ def finalisasi(hasil):
 
         # Hapus karakter spasi dan tab
         '\t': ' ',
-        '_': ' ',
+        #'_': ' ',
     }
 
     # Langkah 3: Lakukan penggantian sederhana dalam satu iterasi

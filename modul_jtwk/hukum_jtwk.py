@@ -58,11 +58,12 @@ PENGGANTIAN_ṙ = [
 
     (rf'\bduṙṇn([{VOKAL}])', r'duṙnn\1'), #khusus durnaya
     (rf'(a|ā)ṙwwud(a|ā)', r'\1ṙwud\2'), #khusus arwuda
+    (rf'paṙggata', r'paṙgata'), # khusus ghana dari sanskrit, par ghana ta
 
     #pengecualian vokal u
     (r'ṙmmu ', 'ṙmu '), 
     (r'uṙww', 'urw'), 
-    (rf'([{KONSONAN}])aṙww(a|â|ā)\b', r'\1arw\2'),
+    (rf'((!đ)[{KONSONAN}])aṙww(a|â|ā)\b', r'\1arw\2'),
     (r'tumiṙww(a|â|ā)', r'tumirw\1'),
     (r'ṙwwaṅ\b', r'rwaṅ'),
 
@@ -171,11 +172,13 @@ def hukum_sigeg(text):
     # Kriteria 1: Vokal + ' ṅ ' + Konsonan -> '-ŋ '
     text = re.sub(rf'(?<=[{VOKAL}]) ṅ (?=[{KONSONAN}])',r'-ŋ ',text)
     # Kriteria 2: Konsonan + ' ṅ ' + Konsonan -> ' ṅ-'
-    text = re.sub(rf'(?<=[{KONSONAN}]) ṅ (?=[{KONSONAN}])',r' ṅ-',text)
+    text = re.sub(rf'(?<=[{KONSONAN}]) ṅ (?=[{KONSONAN}])',r' ṅ ',text)
     # Kriteria 4: vokal + ' ṅ ' + vokal -> ' ṅ-'
     text = re.sub(rf'(?<=[{VOKAL}]) ṅ (?=[{VOKAL}])',r' ṅ-',text)
-    text = re.sub(rf'(?<!^)(?<!\n)(?<=\w|-)ṅ\b(?!-)(?!(?: ?|- ?)[{VOKAL}])','ŋ',text)
 
+    #rf'(?<!^)(?<!\n)(?<=\w|-)ṅ\b(?!-)(?!(?: ?|- ?)[{VOKAL}])'
+    text = re.sub(rf'(?<!^)(?<!\n)(?<=\w|-)ṅ\b(?!-)(?!(?: ?|- ?)[{VOKAL}])','ŋ',text)
+    
     #Kriteria 5 vokal + ṅ - konsonan
     text = re.sub(rf'(?<=[{VOKAL}])ṅ-(?=[{KONSONAN}])',r'ŋ-',text)
 
@@ -215,6 +218,12 @@ def finalisasi_jtwk(text):
         rf'([rhṅ])(?=nṇ?y[{VOKAL}])',
         lambda m: {'r': 'ṙ', 'h': 'ḥ', 'ṅ': 'ŋ'}[m.group(1)], text
     )
+
+    # Regex ini mencari 'h', 'ṅ', atau 'r' + SPASI + Vokal Kapital, lalu mengubah huruf pertama tapi tetap ada spasinya.
+    text = re.sub(
+    r'(h|ṅ|r)(\s)([AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ])', # Cari Grup 1, SPASI (Grup 2), Vokal Kapital (Grup 3)
+    lambda m: {'h': 'ḥ', 'ṅ': 'ŋ', 'r': 'ṙ'}[m.group(1)] + m.group(2) + m.group(3), 
+    text)
     
     # Sigeg bertemu sigeg
     text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙ ṅ', text)
