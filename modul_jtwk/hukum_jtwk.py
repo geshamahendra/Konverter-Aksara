@@ -40,7 +40,7 @@ HUKUM_ṙ_MAHAPRANA = [
     ('ṙk', 'ṙkk'), ('ṙꝁ', 'ṙkꝁ'), ('ṙṫ', 'ṙṭṫ'), ('ṙꝑ', 'ṙpꝑ'),
     ('ṙǥ', 'ṙgǥ'), ('ṙɉ', 'ṙjɉ'), ('ṙƀ', 'ṙbƀ'), ('ṙṇ', 'ṙṇṇ'),
     ('ṙn', 'ṙṇn'), ('ṙd', 'ṙdd'), ('ṙđ', 'ṙdđ'), ('ṙḍ', 'ṙdḍ'),
-    ('ṙḋ', 'ṙdḋ'), ('ṙc', 'ṙcc'), ('ṙꞓ', 'ṙcꞓ'), ('ṙŧ', 'ṙtŧ')
+    ('ṙḋ', 'ṙdḋ'), ('ṙc', 'ṙcc'), ('ṙꞓ', 'ṙcꞓ')
 ]
 
 PENGGANTIAN_ṙ = [
@@ -63,9 +63,9 @@ PENGGANTIAN_ṙ = [
     #pengecualian vokal u
     (r'ṙmmu ', 'ṙmu '), 
     (r'uṙww', 'urw'), 
-    (rf'((!đ)[{KONSONAN}])aṙww(a|â|ā)\b', r'\1arw\2'),
     (r'tumiṙww(a|â|ā)', r'tumirw\1'),
     (r'ṙwwaṅ\b', r'rwaṅ'),
+    (rf'([{KONSONAN.replace('đ','')}])aṙww(a|â|ā)\b', r'\1arw\2'),
 
     #cegah r+zwj-zwnj agar tidal jadi ra pangku 
     (r'r\u200c', 'ṙ'), (r'r\u200d', 'ṙ'),
@@ -221,7 +221,7 @@ def finalisasi_jtwk(text):
 
     # Regex ini mencari 'h', 'ṅ', atau 'r' + SPASI + Vokal Kapital, lalu mengubah huruf pertama tapi tetap ada spasinya.
     text = re.sub(
-    r'(h|ṅ|r)(\s)([AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ])', # Cari Grup 1, SPASI (Grup 2), Vokal Kapital (Grup 3)
+    r'(h|ṅ|r)(\s|-)([AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ])', # Cari Grup 1, SPASI (Grup 2), Vokal Kapital (Grup 3)
     lambda m: {'h': 'ḥ', 'ṅ': 'ŋ', 'r': 'ṙ'}[m.group(1)] + m.group(2) + m.group(3), 
     text)
     

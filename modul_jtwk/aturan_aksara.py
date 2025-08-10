@@ -296,7 +296,7 @@ def hukum_sandi(text):
                 lambda match: PENYERAGAMAN_VOKAL[match.group(0)], text)
     
     #kasus tabrakan font bagian taling
-    text = re.sub(rf'ṙ([{DAFTAR_KONSONAN}])\1([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}])+(e|o)',rf'ṙ\1\1\2{ZWNJ}\3\4\5',text)
+    text = re.sub(rf'ṙ([{DAFTAR_KONSONAN}])\1([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}]+)(e|o)',rf'ṙ\1\1\2{ZWNJ}\3\4\5',text)
 
     #cegah ya dipasangi
     pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyrṛṝl')
@@ -341,6 +341,7 @@ def hukum_penulisan(text):
     (re.compile(rf'\b([{DAFTAR_KONSONAN.replace('n', '')}])([{DAFTAR_VOKAL}])ŋ'), rf'{ZWNJ}\1\2ŋ')
 
     ]
+    
     for pattern, replacement in SUBSTITUTION_REGEX:
         text = pattern.sub(replacement, text)
 
@@ -351,10 +352,10 @@ def hukum_penulisan(text):
     #r' (p|s|ṣ)(o|e|è|é|ꜽ|ꜷ)',
     #r' hy', r' ky',
     rf" ([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)",
-    r' (ḷ|ḹ|r|y|ǥ|ñ|ɉ)', #ṅ
+    r' (ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ)', #ṅ
     #r' ta(?:n|ṅ|ŋ)?\b', #r' ta(?:\b|(?![nṅŋ]))'
     r" ṅ(-)?(" + f"[{DAFTAR_KONSONAN}]" + r")",
-    r' str',
+    r' (str|sꝑ)',
 
     #bentuk khusus (tanpa spasi) jangan sampai terlalu banyak tumpuk tiga (bisa jadi ini akhiran spesial)
     #r'mw',  
@@ -363,6 +364,7 @@ def hukum_penulisan(text):
 
     #cegah pasangan lebih dari tumpuk tiga
     text = insert_zwnj_between_consonants(text)
+    
 
     return(text)
 

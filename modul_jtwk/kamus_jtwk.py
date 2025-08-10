@@ -39,6 +39,7 @@ substitutions = {
     # Regex substitusi
     r'\b(nir|dur|pār|dūr)(?![' + daftar_vokal + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
     r'\bnir(g)': r'nir\\\1', #nir guna
+    r'\bnir(l)': r'nir\\\1', #nir labha
     r'\bdur\\(y|n)': r'dur\1', #durya
     r'\bpar\\(w)': r'par\1', #parwa 
 
