@@ -5,7 +5,7 @@
   "[aksara]": {
     "editor.fontFamily": "'Simbar Dwijendra 2', 'jayabaya', Menlo, Monaco, Courier New, monospace", //'natya', 'jayaƀaya',  rāmāyaṇa linuwiḥ2
     //"editor.fontFamily": "Sima Jaya (asta Gayatri 13)",
-    "editor.fontSize": 16,
+    "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "explorer.confirmDelete": false,
     "editor.letterSpacing": 1.8,

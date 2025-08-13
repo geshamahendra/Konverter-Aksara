@@ -23,15 +23,19 @@ ZWJ = '\u200D'
 VOWELS = 'aiuĕāâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
 VOWEL_PENDEK = 'aiuĕAIUĔṛḷ❓'
 VOWEL_PANJANG = 'āâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌṝḹ'
-KHUSUS_KONSONAN = 'ṅŋḥṙ'
+KHUSUS_KONSONAN = 'ŋḥṙ'
 konsonan_pattern = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳ"
 
 # Kamus Pemetaan Vokal
 VOWEL_PENDEK_KE_PANJANG = {
     'a': 'ā',
+    'A': 'Ā',
     'i': 'ī',
+    'I': 'Ī',
     'u': 'ū',
+    'U': 'Ū',
     'ĕ': 'ö',
+    'Ĕ': 'Ö',
     'ṛ': 'ṝ',
     'ḷ': 'ḹ',
     # 'ṛ': 'ṝ', # Duplikat, dihapus
@@ -39,10 +43,19 @@ VOWEL_PENDEK_KE_PANJANG = {
 }
 
 VOWEL_PANJANG_KE_PENDEK = {
-    'ā': 'a', 'â': 'a',
-    'ī': 'i', 'î': 'i',
-    'ū': 'u', 'û': 'u',
-    'ö': 'ĕ', 'e': 'ĕ', 'è': 'ĕ', 'é': 'ĕ',
+    'ā': 'a', 
+    'â': 'a',
+    'Ā': 'A',
+    'ī': 'i', 
+    'î': 'i',
+    'Ī': 'I',
+    'ū': 'u', 
+    'û': 'u',
+    'Ū': 'U',
+    'ö': 'ĕ', 
+    'e': 'ĕ', 
+    'è': 'ĕ', 
+    'é': 'ĕ',
     'ō': 'o',
     'ṝ': 'ṛ',
     'ḹ': 'ḷ',
@@ -273,30 +286,53 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                     elif v1_lower_temp in VOWELS and v2_lower_temp in VOWELS and met1 == '–' and met2 == '–': #VOWEL_PANJANG
                         hasil_line[idx2] = v2.upper()
 
-                # vokal+konsonan+spasi+vokal
-                if met1 == '–' and v1_lower_temp in VOWEL_PENDEK:
-                    kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
-                    kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
-                    
-                    if kata_v1 and kata_v2 and kata_v1 != kata_v2:
-                        akhir_kata1 = kata_v1[2]
-                        idx_v1_relatif = idx1 - kata_v1[0]
-                        
-                        if idx_v1_relatif + 1 < len(akhir_kata1):
-                            konsonan_akhir_kata1 = akhir_kata1[idx_v1_relatif + 1]
-                            
-                            # --- MODIFIKASI BARU DI SINI ---
-                            # Dapatkan substring antara kata pertama dan vokal kedua.
-                            # String ini akan berisi pemisah (spasi/-) dan mungkin karakter lain (misal: " n-").
-                            text_between_words = line[kata_v1[1]:idx2]
+                # vokal1+konsonan+spasi+vokal2
+                # Aturan 1: Tentukan apakah vokal kedua harus dikapitalisasi
+                should_capitalize = (met1 == '–' and v1_lower_temp in VOWEL_PENDEK)
+                kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
+                kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
 
-                            # Periksa apakah ada spasi atau tanda hubung.
-                            if re.search(r'[ -]+', text_between):
-                                # Pastikan tidak ada konsonan lain di 'text_between_words'
-                                # sebelum vokal kedua.
-                                if not any(RE_KONSONAN.match(char) for char in text_between_words.replace(' ', '').replace('-', '')):
-                                    if kata_v2 and len(kata_v2[2]) > 0 and kata_v2[2][0].lower() == v2_lower_temp:
-                                        hasil_line[idx2] = v2.upper()
+                if kata_v1 and kata_v2 and kata_v1 != kata_v2:
+                    akhir_kata1 = kata_v1[2]
+                    idx_v1_relatif = idx1 - kata_v1[0]
+                    if idx_v1_relatif + 1 < len(akhir_kata1):
+                        konsonan_akhir_kata1 = akhir_kata1[idx_v1_relatif + 1]
+                        text_between_words = line[kata_v1[1]:idx2]
+
+                        if re.search(r'[ -]+', text_between_words) and not any(RE_KONSONAN.match(char) for char in text_between_words.replace(' ', '').replace('-', '')):
+                            if kata_v2 and len(kata_v2[2]) > 0 and kata_v2[2][0].lower() == v2_lower_temp:
+                                # --- MODIFIKASI BARU: Pengecekan Konsonan Ganda setelah Vokal2 ---
+                                # Mulai pencarian dari karakter setelah vokal kedua hingga akhir baris
+                                konsonan_count_after_v2 = 0
+                                has_special_consonant = False
+
+                                # Iterasi dari posisi setelah vokal kedua hingga akhir baris
+                                for i in range(idx2 + 1, len(line)):
+                                    char = line[i]
+
+                                    if RE_KONSONAN.match(char):
+                                        konsonan_count_after_v2 += 1
+                                        if char in KHUSUS_KONSONAN:
+                                            has_special_consonant = True
+                                    elif RE_VOKAL.match(char):
+                                        # Hentikan hitungan jika vokal lain ditemukan, terlepas dari batas kata
+                                        break
+                                    # Mengabaikan spasi
+
+                                # Inisialisasi vokal_final dengan vokal asli
+                                vokal_final = v2
+
+                                # Logika pemanjangan/pemendekan (hanya jika kondisi konsonan terpenuhi)
+                                if konsonan_count_after_v2 <= 1 and not has_special_consonant:
+                                    vokal_final = ubah_vokal_sesuai_metrum(v2, met2)
+
+                                # Logika kapitalisasi (ini terpisah dan selalu diperiksa)
+                                if should_capitalize:
+                                    vokal_final = vokal_final.upper()
+
+                                # Terapkan perubahan pada baris jika ada perbedaan
+                                if vokal_final != v2:
+                                    hasil_line[idx2] = vokal_final
                 
                 # --- BLOK LOGIKA BARU UNTUK SKENARIO ANDA ---
                 # Kondisi: vokal1 pendek, metrum vokal1 pendek, vokal2 di awal kata, metrum vokal2 panjang
@@ -417,10 +453,10 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                     if new_vokal != vokal:
                         hasil_line[idx_vokal] = new_vokal
         
-        # --- BLOK LOGIKA BARU UNTUK SKENARIO ANDA ---
-        # Kondisi: vokal1+konsonan+spasi+vokal2 dan vokal 1 jatuh pada nada pendek
-        # Logika ini harus dijalankan setelah semua pemanjangan-pemendekan vokal utama selesai
-        # sehingga ia dapat "membatalkan" atau memodifikasi hasil sebelumnya jika diperlukan.
+            # --- BLOK LOGIKA BARU UNTUK SKENARIO ANDA ---
+            # Kondisi: vokal1+konsonan+spasi+vokal2 dan vokal 1 jatuh pada nada pendek
+            # Logika ini harus dijalankan setelah semua pemanjangan-pemendekan vokal utama selesai
+            # sehingga ia dapat "membatalkan" atau memodifikasi hasil sebelumnya jika diperlukan.
             if i_vokal_curr + 1 < len(vokal_posisi_in_original_line):
                 idx2, v2, met2 = vokal_posisi_in_original_line[i_vokal_curr + 1]
                 v1_lower_temp = vokal.lower()

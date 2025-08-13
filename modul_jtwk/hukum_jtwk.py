@@ -6,7 +6,7 @@ VOKAL = 'aāiīuūeèéêĕoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼ
 VOKAL_KECIL = 'aāiīuūeèéêĕoōöŏĕꜷꜽâîûô'
 KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ"
 SEMI_VOKAL = 'lwyr'
-TIDAK_DIGANDAKAN = set('nṅṇhṣsścꞓrṙṫŧꝑǥɉƀꝁkdḍḋdđ')
+TIDAK_DIGANDAKAN = set('nṅṇhṣsścꞓrṙṫŧꝑǥɉƀꝁkdḍḋdđfv')
 
 # Pre-compiled regex patterns
 REGEX_CACHE = {
@@ -54,7 +54,9 @@ PENGGANTIAN_ṙ = [
     (rf'\b(b|h|p|g)arya', r'\1aṙyya'),
 
     #cegah setelah nir durpar konsonan tumpuk tiga
-    (rf'\b(niṙ|duṙ|pāṙ)([{KONSONAN}])\2([{KONSONAN}])', r'\1\2\3'),
+    #(rf'\b(niṙ|duṙ|pāṙ([{KONSONAN}])\2([{KONSONAN}])', r'\1\2\3'),
+
+    (rf'ṙ([{KONSONAN}])\1([{KONSONAN}])', r'ṙ\1\2'),
 
     (rf'\bduṙṇn([{VOKAL}])', r'duṙnn\1'), #khusus durnaya
     (rf'(a|ā)ṙwwud(a|ā)', r'\1ṙwud\2'), #khusus arwuda
@@ -62,10 +64,10 @@ PENGGANTIAN_ṙ = [
 
     #pengecualian vokal u
     (r'ṙmmu ', 'ṙmu '), 
-    (r'uṙww', 'urw'), 
+    (r'uṙww(a|i|u)', r'ur\1'), 
     (r'tumiṙww(a|â|ā)', r'tumirw\1'),
     (r'ṙwwaṅ\b', r'rwaṅ'),
-    (rf'([{KONSONAN.replace('đ','')}])aṙww(a|â|ā)\b', r'\1arw\2'),
+    (rf'([{KONSONAN.replace('đ','')}])aṙww(a|â|ā)', r'\1arw\2'),
 
     #cegah r+zwj-zwnj agar tidal jadi ra pangku 
     (r'r\u200c', 'ṙ'), (r'r\u200d', 'ṙ'),
@@ -145,8 +147,6 @@ def hukum_ṙ(text):
 
     #Kasus ry+satu vokal
     text = re.sub(rf' ry([{VOKAL}])\b', r' ṙyy\1', text, flags=re.IGNORECASE)
-    
-    #print(text)  # Debug print seperti kode asli
 
     # Mahaprana
     for pattern, replacement in HUKUM_ṙ_MAHAPRANA:

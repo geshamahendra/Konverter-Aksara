@@ -18,7 +18,8 @@ replacements = {
         'ph': 'ꝑ','bh': 'ƀ','au': 'ꜷ','ai': 'ꜽ',
         #'le': 'ḷ','ṛe': 'ṛ',
 
-        'e' : 'ĕ','E' : 'Ĕ','sh' : 'ś','ss' : 'ṣ',
+        'e' : 'ĕ', 'ě' : 'ĕ',
+        'E' : 'Ĕ','sh' : 'ś','ss' : 'ṣ',
         'Ōm' : 'Ŏṃ','Ŏm' : 'Ōṃ','Ōm' : 'Ŏṃ',
     },
         'kakawin': {
@@ -65,18 +66,15 @@ replacements = {
         'e' : 'è', 'E': 'È',
         'le': 'ḷ', 'ṛe': 'ṛ', 'ia' : 'y',
     },
-    '''
     'sriwedari': {
         'kh': 'ꝁ','gh': 'ǥ','ch': 'ꞓ','jh': 'ɉ',
         'ṭh': 'ṫ','ḍh': 'ḋ','th': 'ŧ','dh': 'ḍ',
         'ph': 'ꝑ','bh': 'ƀ', 'ny': 'ñ', 'iè': 'iyè',
 
-        'ê' : 'ĕ', 'Ê' : 'Ĕ',
-        'e' : 'ĕ', 'E': 'Ĕ',
-        'é' : 'è', 'É' : 'È', 
+        'ê' : 'ĕ', 'Ê' : 'Ĕ', 'ě' : 'ĕ',
+        'e' : 'è', 'É' : 'È', 
         'le': 'ḷ', 'ṛe': 'ṛ', 'ia' : 'ya',
     },
-    '''
     'satya': {
         'kh': 'ꝁ','gh': 'ǥ','ch': 'ꞓ','jh': 'ɉ',
         'ṭh': 'ṫ','ḍh': 'ḋ','th': 'ṭ','dh': 'ḍ',
@@ -110,7 +108,7 @@ replacements = {
 # Mode kakawin mewarisi mode normal dan menambahkan/menimpa beberapa entri
 replacements['lampah'] = replacements['kakawin'].copy()
 replacements['macapat'] = replacements['kakawin'].copy()
-replacements['sriwedari'] = replacements['kakawin'].copy()
+#replacements['sriwedari'] = replacements['kakawin'].copy()
 #replacements['satya'] = replacements['sriwedari'].copy()
 
 def replace_numbers_with_colon(text):

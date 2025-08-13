@@ -89,7 +89,8 @@ def konversi_aksara_ke_bali(text):
     hasil = []
     # Bersihkan karakter zero-width joiner jika ada
     text = re.sub(r'\u200D', '', text)
-    text = re.sub(r'ꦪꦾꦂ', 'ꦂꦪꦾ', text)
+    #text = re.sub(r'ꦂ', 'ꦫ꧀', text)
+    #text = re.sub(r'ꦪꦾꦂ', 'ꦂꦪꦾ', text)
     #text = perbaiki_repha(text)
     for karakter in text:
         hasil.append(daftar_konversi.get(karakter, karakter))  # Gunakan karakter asli jika tidak ditemukan

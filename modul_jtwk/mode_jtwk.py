@@ -19,6 +19,7 @@ def mode_kakawin(text):
     #text = text.lower()
     #Bahasa kawi tidak kenal ṙṇṇ
     text = re.sub(r'rṇ', 'rn', text) # khusus bahasa jawa kuno
+    text = re.sub(r'ṅlĕ', 'ŋlĕ', text)
 
     return text
 
@@ -39,6 +40,7 @@ def mode_sriwedari(text):
 
     #text = re.sub(rf'\b(ṅg)([{daftar_vokal}])', r'haṅg\2', text, flags=re.IGNORECASE)
     text = re.sub(rf'\b(ñj)([{daftar_vokal}])', r'hañj\2', text, flags=re.IGNORECASE)
+    text = re.sub(rf'wong', r'wwong', text, flags=re.IGNORECASE)
     return text
 
 def mode_cerita(text):

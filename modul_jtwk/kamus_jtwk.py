@@ -29,7 +29,7 @@ substitutions = {
 
     #aturan baku
     r'lĕṅlĕṅ':'lĕŋlĕŋ',
-    r'rĕṅrĕṅ':'rĕŋrĕŋ',
+    r'rĕṅrĕṅ':'rĕŋrĕṅ',
     r'\bsa(ng|ṅ)k(s|ṣ)(e|è|é)pa': 'saŋkṣepa',
     r'\bsa(ng|ṅ)sipta': 'saŋsipta',
     r'\bsa(ng|ṅ)ṣipta': 'saŋṣ',
@@ -67,7 +67,7 @@ substitutions = {
     #khusus r dan h
     r'h(m|k)(u|w)': r'ḥ\1\2',
     r'r(m|k)(u|w)': r'ṙ\\\1\2',
-    r'rt([' + daftar_vokal + r'])\b': r'r\\t\1',
+    r'rt([' + daftar_vokal + r'])\b': r'ṙ\\t\1',
     r'ht([' + daftar_vokal + r'])\b': r'ḥt\1',
     r'([' + daftar_vokal + r'])r(w|b)ud(a|ā)' : r'\1r\\\2ud\3',
     
@@ -98,7 +98,7 @@ substitutions = {
     r'hid(ĕ|e)p': 'hiḍĕp', r'yogi(s|ś)wara': 'yogīśwara', r'datĕṅ': 'ḍatĕŋ', r'dusta': 'duṣṭa', 
     r'padaṅ': 'paḍaṅ', r'pandita': 'paṇḍita', r'\bsirna\b': 'śīrna', r'\bsarira': 'śarīra', r'atmaj': 'ātmaj',
     r'raksasa': 'rākṣasa', r'dat(w|u)': r'ḍat\1',
-    r'karana': 'karaṇa', r'\brana\b': 'raṇa',
+    r'karana': 'karaṇa', r'\brana\b': 'raṇa', r'\b(đ|dh)anur':r'đanur\\',
 
     #bisa merubah wirama
     r'(ṅ|ng)uni': 'ṅūni',
