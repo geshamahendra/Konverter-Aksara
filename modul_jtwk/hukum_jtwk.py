@@ -64,7 +64,7 @@ PENGGANTIAN_ṙ = [
 
     #pengecualian vokal u
     (r'ṙmmu ', 'ṙmu '), 
-    (r'uṙww(a|i|u)', r'ur\1'), 
+    (r'uṙww(a|i|u)', r'urw\1'), 
     (r'tumiṙww(a|â|ā)', r'tumirw\1'),
     (r'ṙwwaṅ\b', r'rwaṅ'),
     (rf'([{KONSONAN.replace('đ','')}])aṙww(a|â|ā)', r'\1arw\2'),
