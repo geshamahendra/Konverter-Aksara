@@ -334,9 +334,10 @@ def hukum_penulisan(text):
         (r"l\b ", r"h"),  # 'l' di akhir kata + spasi diikuti 'h'
         (r"t\b ", r"c"),
         (r"s\b ", r"w"),
-        (konsonan_spasi, r"(duḥk|jñ)"),
+        (r"n\b ", r"ś"), (r"n\b ", r"sŧ"),
+        (konsonan_spasi, r"(duḥk|duḥꝁ|jñ)"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)"),
-        (konsonan_spasi, r"(ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ|h)"),  #ṅ
+        (konsonan_spasi, r"(ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ|h|w)"),  #ṅ
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
         (konsonan_spasi, r"(str|sꝑ)"), 
     ]

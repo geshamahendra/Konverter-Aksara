@@ -56,6 +56,10 @@ substitutions = {
     #Kasus khusus
     r'(duhk|duhꝁ)([' + daftar_vokal + '])' : r'duḥk\2',  #duhka
     r'rwarw(a|ā|â)' : r'rwa-rw\1', # rwa rwa
+
+    #r'duh(k|ꝁ)(a|ā|e|è|é)' : r'duḥꝁ\2',  #duhka
+    #duhk-lainnya
+    #r'duh(k|ꝁ)(^[aāeèé])' : r'duḥ\1\2',  #non duhka
     
     #--akhiran
     #khusus ṅ 
