@@ -28,16 +28,16 @@ substitutions = {
     r'(?i)siwa': 'śīwa', r'(?i)ganesha': 'ganèśa', r'(?i)mataram': 'matāram',
 
     #aturan baku
-    r'lĕṅlĕṅ':'lĕŋlĕŋ',
+    r'lĕṅlĕṅ':'lĕŋlĕŋ', r'nuṅ(s|t)uṅ':r'nuŋ\1uṅ',
     r'rĕṅrĕṅ':'rĕŋrĕṅ',
     r'\bsa(ng|ṅ)k(s|ṣ)(e|è|é)pa': 'saŋkṣepa',
     r'\bsa(ng|ṅ)sipta': 'saŋsipta',
     r'\bsa(ng|ṅ)ṣipta': 'saŋṣ',
-    r'ṅkt': 'ŋkt',
+    r'ṅkt': 'ŋkt', r'ṅṣṭr': 'ŋṣṭr',
 
     # Hukum Imbuhan sanskrit
     # Regex substitusi
-    r'\b(nir|dur|pār|dūr)(?![' + daftar_vokal + 'bgmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
+    r'\b(nir|dur|pār|dūr)(?![' + daftar_vokal + 'bngmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
     r'\bnir(g)': r'nir\\\1', #nir guna
     r'\bnir(l)': r'nir\\\1', #nir labha
     r'\bdur\\(y|n)': r'dur\1', #durya
@@ -52,18 +52,10 @@ substitutions = {
         m.group(1) + f'aŋ{SH}r' + m.group(2) if sum(c in daftar_vokal for c in m.group(2)) >= 2 else m.group(0),
     #Imbuhan aṅ lainnya
     rf'\b(m|p)aṅ((?![gk])[{daftar_konsonan}])(\w+)': lambda m:    m.group(1) + 'aŋ' + m.group(2) + m.group(3) if sum(c in daftar_vokal for c in m.group(3)) >= 2 else m.group(0),
-
-    #Kasus khusus
-    r'(duhk|duhꝁ)([' + daftar_vokal + '])' : r'duḥk\2',  #duhka
-    r'rwarw(a|ā|â)' : r'rwa-rw\1', # rwa rwa
-
-    #r'duh(k|ꝁ)(a|ā|e|è|é)' : r'duḥꝁ\2',  #duhka
-    #duhk-lainnya
-    #r'duh(k|ꝁ)(^[aāeèé])' : r'duḥ\1\2',  #non duhka
     
     #--akhiran
     #khusus ṅ 
-    r'(li|sĕḍĕ)ṅk(u|w)':r'\1ŋk\2',
+    r'(sĕḍĕ)ṅk(u|w)':r'\1ŋk\2',
     r'ṅmu\b': r'ŋmu',
     r'ṅt([' + daftar_vokal + r'])\b': r'ŋt\1',
     r'ṅ\\': r'ŋ',
@@ -75,10 +67,14 @@ substitutions = {
     r'ht([' + daftar_vokal + r'])\b': r'ḥt\1',
     r'([' + daftar_vokal + r'])r(w|b)ud(a|ā)' : r'\1r\\\2ud\3',
     
-
     #spesial kw (ingat ṅ itu ṅku itu gapakai cecak)
     r'([' + daftar_konsonan + '])([' + daftar_vokal + '])r(k|m)w([' + daftar_vokal + '])': r'\1\2ṙ\\\3w\4',
     r'([' + daftar_konsonan + '])([' + daftar_vokal + '])h(k|m)w([' + daftar_vokal + '])': r'\1\2ḥ\3w\4', 
+
+    #Kasus khusus
+    r'(duhk|duhꝁ)([' + daftar_vokal + '])' : r'duḥk\2',  #duhka
+    r'rwarw(a|ā|â)' : r'rwa-rw\1', # rwa rwa
+    #r'\b(p|m)aṅ(duk|rug)' : r'\1aŋ\2',
 
     #Bahasa Indonesia
     rf'([{daftar_vokal}])([{daftar_konsonan}])lah\b': r'\1\2 laḥ',  

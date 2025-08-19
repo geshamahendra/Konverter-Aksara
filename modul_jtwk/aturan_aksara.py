@@ -6,7 +6,7 @@ ZWNJ = '\u200C'
 ZWSP = '\u200B'
 ZWJ = '\u200D'
 ZWNBSP = '\uFEFF'
-DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṛṝḷḹꝁǥꞓƀśḳkʰ"
+DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṙṛṝḷḹꝁǥꞓƀśḳkʰ"
 DAFTAR_VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
 VOKAL_KAPITAL = "AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ"
 VOKAL_NON_KAPITAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûô'
@@ -292,7 +292,7 @@ def hukum_sandi(text):
     #text = insert_h_between_unmerged_vowels(text)
 
     #konsonan rangkap setelah perpisahan kata
-    text = re.sub(rf'([{DAFTAR_KONSONAN}]\s+)([{'whgm'}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])', rf'\1{ZWNJ}\2', text)####
+    text = re.sub(rf'([{DAFTAR_KONSONAN}]\s+)([{'dwhgm'}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])', rf'\1{ZWNJ}\2', text)####
 
     #Menyambung vokal dan konsonan yang terpisah spasi
     text = re.sub(rf'([{DAFTAR_KONSONAN}])[^\S\n]*([{DAFTAR_VOKAL}])', r'\1\2', text)
@@ -333,7 +333,8 @@ def hukum_penulisan(text):
     pola_list = [
         (r"l\b ", r"h"),  # 'l' di akhir kata + spasi diikuti 'h'
         (r"t\b ", r"c"),
-        (r"s\b ", r"w"),
+        (r"s\b ", r"w"), (r"s\b ", r"k"),
+        (r"k\b ", r"l"), (r"k\b ", r"w"), (r"k\b ", r"p"),
         (r"n\b ", r"ś"), (r"n\b ", r"sŧ"),
         (konsonan_spasi, r"(duḥk|duḥꝁ|jñ)"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)"),
@@ -367,6 +368,7 @@ def finalisasi(hasil):
         '꧀ꦪ': 'ꦾ',
         '꧀ꦫ': 'ꦿ',
         'ꦈꦴꦁ': 'ꦈꦴꦀ',
+        '꧀ꦭꦼ': '꧀ꦭ‍ꦼ',
         #'ꦉꦴ': f'ꦉ{ZWNJ}ꦴ',
         '⏒꧇': '⏒ ꧇',
         '!': '',

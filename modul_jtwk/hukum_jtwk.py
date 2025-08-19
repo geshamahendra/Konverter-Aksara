@@ -55,12 +55,15 @@ PENGGANTIAN_ṙ = [
 
     #cegah setelah nir durpar konsonan tumpuk tiga
     #(rf'\b(niṙ|duṙ|pāṙ([{KONSONAN}])\2([{KONSONAN}])', r'\1\2\3'),
-
     (rf'ṙ([{KONSONAN}])\1([{KONSONAN}])', r'ṙ\1\2'),
 
-    (rf'\bduṙṇn([{VOKAL}])', r'duṙnn\1'), #khusus durnaya
+    #kata khusus
+    #(rf'\bduṙṇn([{VOKAL}])', r'duṙn\1'), #khusus durnaya
+    (rf'mātsyarya', r'mātsyaṙyya'),
+    (rf'\bduṙṇn([{VOKAL}])', r'duṙn\1'), #khusus durnaya
     (rf'(a|ā)ṙwwud(a|ā)', r'\1ṙwud\2'), #khusus arwuda
     (rf'paṙggata', r'paṙgata'), # khusus ghana dari sanskrit, par ghana ta
+    (rf'\bhoṙwwi\b', r'horwi'),
 
     #pengecualian vokal u
     (r'ṙmmu ', 'ṙmu '), 

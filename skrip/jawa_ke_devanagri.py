@@ -72,7 +72,7 @@ def process_file(input_file, output_file, daftar_konversi):
 
 if __name__ == '__main__':
     # Nama file input dan output
-    input_file = 'output/output_jawa.txt'  
+    input_file = 'input_devanagri.txt'  
     output_file = 'output/output_devanagri.txt'  
 
     # Memproses file
