@@ -47,6 +47,7 @@ def renumber_canto(text):
     result = re.sub(r'(,)\n', r'\1', result)
     result = re.sub(r'>(.*\n.*\n.*.*\n.*)(\*)(\d+)(:)(\d+:\d+.*)', r'>:\3\1\2\3\4\5', result)
     result = stabilkan_spasi_metrum(result)
+    #result = re.sub(r'^\d.*\n', r'', result)
     return result
 
 # Uji coba
@@ -54,6 +55,7 @@ with open("pengolah_output/input_lontar.txt", "r", encoding="utf-8") as f:
     teks = f.read()
 
 hasil = renumber_canto(teks)
+hasil = re.sub(r'\n(\d.*\n)', r'\n', hasil)
 
 with open("pengolah_output/output_lontar.txt", "w", encoding="utf-8") as f:
     f.write(hasil)

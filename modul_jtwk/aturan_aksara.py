@@ -233,7 +233,7 @@ def insert_h_between_unmerged_vowels(text):
 
 def inisialisasi_aksara(text):
     # Ganti * ujung pupuh
-    text = re.sub(r'\*(\s*[#\<])', r'#\1', text)
+    text = re.sub(r'\*(\s*[#\<{])', r'#\1', text)
 
     NON_HURUF_PENDAHULU = r'([^\w\s-])(\s*)'
     VOKAL_REGEX = f"[{DAFTAR_VOKAL}]"
@@ -292,7 +292,7 @@ def hukum_sandi(text):
     #text = insert_h_between_unmerged_vowels(text)
 
     #konsonan rangkap setelah perpisahan kata
-    text = re.sub(rf'([{DAFTAR_KONSONAN}]\s+)([{'dwhgm'}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])', rf'\1{ZWNJ}\2', text)####
+    text = re.sub(rf'([{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}]\s+)([{'dwhgm'}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])', rf'\1{ZWNJ}\2', text)####
 
     #Menyambung vokal dan konsonan yang terpisah spasi
     text = re.sub(rf'([{DAFTAR_KONSONAN}])[^\S\n]*([{DAFTAR_VOKAL}])', r'\1\2', text)
@@ -327,20 +327,27 @@ def hukum_penulisan(text):
             text = regex.sub(rf"\1{ZWNJ}\2", text)
         return text
 
+    # Helper function untuk pola berulang
+    def buat_pola(huruf, targets):
+        """Membuat multiple pola dari satu huruf ke multiple target"""
+        return [(rf"{huruf}\b ", target) for target in targets]
+
     konsonan_spasi = rf"[{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}][^\S\n]+"
 
-    # Contoh pemakaian:
+    # Sekarang lebih ringkas:
     pola_list = [
-        (r"l\b ", r"h"),  # 'l' di akhir kata + spasi diikuti 'h'
-        (r"t\b ", r"c"),
-        (r"s\b ", r"w"), (r"s\b ", r"k"),
-        (r"k\b ", r"l"), (r"k\b ", r"w"), (r"k\b ", r"p"),
-        (r"n\b ", r"ś"), (r"n\b ", r"sŧ"),
+        *buat_pola("l", ["h", "t"]), 
+        *buat_pola("t", ["c", "l", "b", "k", "ḍ"]),   
+        *buat_pola("s", ["w", "k", "ḍ", "n"]),           
+        *buat_pola("k", ["l", "w", "p", "ś", "j"]),      
+        *buat_pola("n", ["ś", "sŧ", "l", "j"]),          
+        *buat_pola("p", ["j", "ś", "g"]),           
         (konsonan_spasi, r"(duḥk|duḥꝁ|jñ)"),
-        (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)"),
-        (konsonan_spasi, r"(ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ|h|w)"),  #ṅ
+        (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y|w)"),
+        #(konsonan_spasi.replace("t","").replace("d",""), r"w"),
+        (konsonan_spasi, r"(ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ|h)"),#|ṛ|ṝ
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
-        (konsonan_spasi, r"(str|sꝑ)"), 
+        (konsonan_spasi, r"(str|sꝑ)"),
     ]
 
     text = sisipkan_zwnj_pola(text, pola_list)

@@ -64,10 +64,13 @@ PENGGANTIAN_ṙ = [
     (rf'(a|ā)ṙwwud(a|ā)', r'\1ṙwud\2'), #khusus arwuda
     (rf'paṙggata', r'paṙgata'), # khusus ghana dari sanskrit, par ghana ta
     (rf'\bhoṙwwi\b', r'horwi'),
+    (rf'\bmaṙkkata\b', r'maṙkata'), #hijau
+    (rf'\bmaṙbbuk\b', r'maṙbuk'), 
+    #(rf'daryas', r'daṙyyas'),
 
     #pengecualian vokal u
     (r'ṙmmu ', 'ṙmu '), 
-    (r'uṙww(a|i|u)', r'urw\1'), 
+    (rf'([{KONSONAN}])uṙww(a|i|u)', r'\1urw\2'), 
     (r'tumiṙww(a|â|ā)', r'tumirw\1'),
     (r'ṙwwaṅ\b', r'rwaṅ'),
     (rf'([{KONSONAN.replace('đ','')}])aṙww(a|â|ā)', r'\1arw\2'),
@@ -184,6 +187,9 @@ def hukum_sigeg(text):
     
     #Kriteria 5 vokal + ṅ - konsonan
     text = re.sub(rf'(?<=[{VOKAL}])ṅ-(?=[{KONSONAN}])',r'ŋ-',text)
+
+    #Kriteria 6
+    #text = re.sub(rf'(?<=[{VOKAL}])ŋ\s+h',r'ṅh',text)
 
     # Ganti untuk 'h' dan 'r' sesuai aturan sebelumnya
     for old, new in [('h', 'ḥ'), ('r', 'ṙ')]:

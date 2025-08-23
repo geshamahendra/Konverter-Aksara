@@ -44,6 +44,11 @@ def renumber_canto(text):
     # Stabilkan spasi antar simbol metrum
     result = stabilkan_spasi_metrum(result)
 
+    # Kembalikan spasi dandaka
+    result = re.sub(r',\n\{daṇḍaka\}', r',\n\n{daṇḍaka}', result)
+    result = re.sub(r'([>}]):[0-9.,]+\n', r'\1\n', result)
+    result = re.sub(r':\n\n', r':\n', result)
+
     return result
 
 # Uji coba
