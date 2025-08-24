@@ -20,7 +20,7 @@ substitutions = {
     r'\b(A|a)wi(g|ǥ)?(h)?namastu\b': r'`Awiǥnamāstu', 
     
     r'wi(s|ś)(è|e)sa': 'wiśèṣa',
-    r'r(e|è|ĕ)?sn((?![' + daftar_konsonan + ']))': r'ṛĕṣṇ\2', 
+    r'r(e|è|ĕ)?sn((?![' + daftar_konsonan + ']))': r'rĕṣṇ', 
     r'\bkar(ĕ|e)na': 'karĕṇa', r'\bwau\b': 'wawu',
     r'\bwong\b': 'wwoŋ', r'\bdewa\b': 'dèwa', r'\bdewi\b': 'dèwī',
     r'\bsasangka\b': 'śaśāṅka', r'\b(s|ś)r(i|ī)\b': 'śrī', r'\brsi\b': 'ṛṣi',
