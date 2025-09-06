@@ -14,7 +14,7 @@ zwnj = "\u200C"
 
 substitutions = {
     #Aksara Suci
-    'Ai': 'Ꜽ', 'Au': 'Ꜷ', r'(\*|\#)Om': r'\1Ōṃ',
+    'Ai': 'Ꜽ', 'Au': 'Ꜷ', r'(\*|\#)(O|o)m': r'\1Ōṃ',
     'ai': 'ꜽ', 'au': 'ꜷ', 
     'ng': 'ṅ', r'\b^h' : 'ʰ',
     r'\b(A|a)wi(g|ǥ)?(h)?namastu\b': r'`Awiǥnamāstu', 
@@ -31,7 +31,7 @@ substitutions = {
     r'lĕṅlĕṅ':'lĕŋlĕŋ', r'nuṅ(s|t)uṅ':r'nuŋ\1uṅ',
     r'rĕṅrĕṅ':'rĕŋrĕṅ',
     r'\bsa(ng|ṅ)k(s|ṣ)(e|è|é)pa': 'saŋkṣepa',
-    r'\bsa(ng|ṅ)sipta': 'saŋsipta',
+    rf'\bsa(ng|ṅ)(s|ṣ)ipt([{daftar_vokal}])': r'saŋ\2ipt\3',
     r'\bsa(ng|ṅ)ṣipta': 'saŋṣ',
     r'ṅkt': 'ŋkt', r'ṅṣṭr': 'ŋṣṭr',
 
@@ -47,14 +47,35 @@ substitutions = {
         lambda m: f'{m.group(1)}{SH}{m.group(2)}{m.group(3)}'
         if sum(c in daftar_vokal for c in m.group(3).lower()) > 1 else m.group(0),
 
-    #Imbuhan aṅr
-    r'\b(m|p)aṅr(\w+)': lambda m: 
-        m.group(1) + f'aŋ{SH}r' + m.group(2) if sum(c in daftar_vokal for c in m.group(2)) >= 2 else m.group(0),
+    # Imbuhan aṅr / āṅr
+    # Imbuhan aṅr / āṅr
+    r'(?:\b(m|p)aṅr|(\w+)āṅr|([{daftar_konsonan}]) aṅr)(\w+)': lambda m: (
+        (m.group(1) or m.group(2) or m.group(3)) +
+        ('aŋ' if m.group(1) or m.group(3) else 'āŋ') +
+        r'r' + m.group(4)
+        if sum(c in daftar_vokal for c in m.group(4)) >= 2 else m.group(0)
+    ),
 
-    r'\b(m|p)aṅrw(a|ā)': r'\1aŋ\\rw\2',
+    # Imbuhan aṅrw / āṅrw(a|ā)
+    r'(?:\b(m|p)aṅrw|(\w+)āṅrw|([{daftar_konsonan}]) aṅrw)(a|ā)': lambda m: (
+        (m.group(1) or m.group(2) or m.group(3)) +
+        ('aŋ' if m.group(1) or m.group(3) else 'āŋ') +
+        r'\rw' + m.group(4)
+    ),
 
-    #Imbuhan aṅ lainnya
-    rf'\b(m|p)aṅ((?![gk])[{daftar_konsonan}])(\w+)': lambda m:    m.group(1) + 'aŋ' + m.group(2) + m.group(3) if sum(c in daftar_vokal for c in m.group(3)) >= 2 else m.group(0),
+
+    # Imbuhan aṅ lainnya (selain g/k)
+    rf'(?:\b(m|p)aṅ|(\w+)āṅ|([{daftar_konsonan}]) aṅ)((?![gk])[{daftar_konsonan}])(\w+)': (
+    lambda m: (
+        (m.group(1) or m.group(2) or m.group(3))
+        + ('aŋ' if m.group(1) or m.group(3) else 'āŋ')
+        + m.group(4) + m.group(5)
+        if sum(c in daftar_vokal for c in m.group(5)) >= 2
+        else m.group(0)
+        )
+    ),
+
+
     
     #--akhiran
     #khusus ṅ 

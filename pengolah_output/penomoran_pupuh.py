@@ -48,6 +48,8 @@ def renumber_canto(text):
     result = re.sub(r',\n\{daṇḍaka\}', r',\n\n{daṇḍaka}', result)
     result = re.sub(r'([>}]):[0-9.,]+\n', r'\1\n', result)
     result = re.sub(r':\n\n', r':\n', result)
+    result = re.sub(r'=\s*', r'=', result)
+    result = re.sub(r':\s*\n(\w)', r':\n\n\1', result)
 
     return result
 

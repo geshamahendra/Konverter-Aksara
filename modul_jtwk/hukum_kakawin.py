@@ -14,7 +14,7 @@ _ENABLE_KONSONAN_GANDA_CHECK_STR = '1' # <-- Ubah ini sesuai kebutuhan Anda
 ENABLE_KONSONAN_GANDA_CHECK = _ENABLE_KONSONAN_GANDA_CHECK_STR.lower() in ('true', '1')
 
 # --- Regex dan Konstanta Lainnya ---
-RE_METRUM_SIMBOL = re.compile(r'[–⏑⏓]')
+RE_METRUM_SIMBOL = re.compile(r'[—⏑⏓]')
 RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶṝḹṛḷ❓]')
 RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳŋḥṙʰ-]')
 ZWNJ = '\u200C'
@@ -95,13 +95,13 @@ def get_clean_metrum(line):
     """
     Mengekstrak simbol-simbol metrum dari sebuah baris text. Menangani pengulangan metrum.
     """
-    line = line.replace('-', '–') #normalisasi
+    line = line.replace('-', '—') #normalisasi
     hasil = []
     def extract_metrum_segment(segment):
-        return [c for c in segment if c in ['–', '⏑', '⏓']]
+        return [c for c in segment if c in ['—', '⏑', '⏓']]
 
     if "[" in line and "]" in line:
-        match = re.search(r'\[([–⏑⏓\s\u200C\u200D]*)][^\S\n]*×(\d+)', line)
+        match = re.search(r'\[([—⏑⏓\s\u200C\u200D]*)][^\S\n]*×(\d+)', line)
         if match:
             isi = match.group(1)
             perkalian = int(match.group(2))
@@ -110,19 +110,19 @@ def get_clean_metrum(line):
             luar = extract_metrum_segment(line_di_luar)
             return luar[:match.start()] + blok + luar[match.end():]
 
-    return [c for c in line if c in ['–', '⏑', '⏓']]
+    return [c for c in line if c in ['—', '⏑', '⏓']]
 
 def hitung_jumlah_metrum(line):
     """
     Menghitung jumlah simbol metrum dalam sebuah baris text, termasuk yang ada dalam pengulangan.
     """
     if "[" in line and "]" in line:
-        match = re.search(r'\[([–⏑⏓\s\u200C\u200D]*)][^\S\n]*×(\d+)', line)
+        match = re.search(r'\[([—⏑⏓\s\u200C\u200D]*)][^\S\n]*×(\d+)', line)
         if match:
             isi = match.group(1)
             perkalian = int(match.group(2))
             isi_bersih = bersihkan_karakter_tak_terlihat(isi)
-            jumlah_dalam_blok = sum(1 for _ in re.finditer(r'[–⏑⏓-]', isi_bersih))
+            jumlah_dalam_blok = sum(1 for _ in re.finditer(r'[—⏑⏓-]', isi_bersih))
             baris_di_luar = line[:match.start()] + line[match.end():]
             jumlah_di_luar = sum(1 for _ in RE_METRUM_SIMBOL.finditer(baris_di_luar))
             return (jumlah_dalam_blok * perkalian) + jumlah_di_luar
@@ -137,7 +137,7 @@ def ubah_vokal_sesuai_metrum(vokal_char, metrum_target, is_first_char=False):
     Normalisasi ke lowercase ṛ dan ḷ dilakukan di langkah akhir.
     """
 
-    if metrum_target == '–': # Metrum panjang, coba panjangkan
+    if metrum_target == '—': # Metrum panjang, coba panjangkan
         if vokal_char in VOWEL_PENDEK_KE_PANJANG:
             transformed_vowel = VOWEL_PENDEK_KE_PANJANG[vokal_char]
             # Kapitalisasi jika ini adalah karakter pertama baris
@@ -310,7 +310,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                 
                 # Aturan 0.2: Jika vokal2 panjang namun jatuh metrum pendek dan bukan diakhir kata, maka pendekkan keduanya
                 # Modifikasi baru: Tambahkan kondisi untuk pemanjangan vokal2
-                if v2_lower_temp in VOWEL_PENDEK and met2 == '–':
+                if v2_lower_temp in VOWEL_PENDEK and met2 == '—':
                     
                     # Inisialisasi variabel untuk kondisi pemanjangan
                     should_prolong = False
@@ -336,7 +336,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
                 # Aturan 1: Tentukan apakah vokal kedua harus dikapitalisasi
                 should_capitalize = False
-                should_capitalize = (met1 == '–' and v1_lower_temp in VOWEL_PENDEK)
+                should_capitalize = (met1 == '—' and v1_lower_temp in VOWEL_PENDEK)
                 kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
                 kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
 
@@ -360,7 +360,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
                 #konsonan+vokal1+konsonan+vokal2
                 # Refactor 1: Gabungkan logika serupa
-                is_metrum_panjang_valid = (met1 == '–' and v1_lower_temp in VOWEL_PENDEK)
+                is_metrum_panjang_valid = (met1 == '—' and v1_lower_temp in VOWEL_PENDEK)
                 is_metrum_pendek_valid = (met1 == '⏑' and v1_lower_temp in VOWEL_PANJANG)
 
                 if is_metrum_panjang_valid or is_metrum_pendek_valid:
@@ -382,7 +382,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                 kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
 
                 if kata_v1:
-                    is_metrum_panjang_valid_2 = (met1 == '–' and v1_lower_temp in VOWEL_PENDEK)
+                    is_metrum_panjang_valid_2 = (met1 == '—' and v1_lower_temp in VOWEL_PENDEK)
                     is_metrum_pendek_valid_2 = (met1 == '⏑' and v1_lower_temp in VOWEL_PANJANG)
                     
                     if is_metrum_panjang_valid_2 or is_metrum_pendek_valid_2:
@@ -534,7 +534,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
             if final_vokal_count > metrum_length_for_line:
                 plus_minus_indicator = f'"+{final_vokal_count - metrum_length_for_line}"'
             elif final_vokal_count < metrum_length_for_line:
-                plus_minus_indicator = f'"–{metrum_length_for_line - final_vokal_count}"'
+                plus_minus_indicator = f'"—{metrum_length_for_line - final_vokal_count}"'
 
         if current_line_has_error_marker or plus_minus_indicator:
             error_details = []

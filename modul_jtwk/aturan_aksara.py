@@ -82,16 +82,15 @@ sandhangan = {
 
 swara = {
     # Swara
-    'A': 'ꦄ', 'Ā': 'ꦄꦴ', 'I': 'ꦅ', 'Ī': 'ꦇ', 'U': 'ꦎ', 'Ū': 'ꦎꦴ', 'O': 'ꦈ',
-    'Ꜷ': 'ꦈꦴ', 'Ꜽ': 'ꦍ', 'Ö': 'ꦄꦼꦴ', 'Ĕ': 'ꦄꦼ',
+    'A': 'ꦄ','I': 'ꦅ', 'U': 'ꦎ','O': 'ꦈ',
+    'Ꜽ': 'ꦍ', 'Ö': 'ꦄꦼꦴ', 'Ĕ': 'ꦄꦼ',
 
     **{bunyi: 'ꦄꦴ' for bunyi in ('Ā', 'Â')},
     **{bunyi: 'ꦇ' for bunyi in ('Ī', 'Î')},
     **{bunyi: 'ꦎꦴ' for bunyi in ('Ū', 'Û')},
-    **{bunyi: 'ꦈ' for bunyi in ('Ō', 'Ô')},
     **{bunyi: 'ꦌ' for bunyi in ('E', 'È','É')},
     **{bunyi: 'ꦄꦼ' for bunyi in ('Ĕ')},
-    **{bunyi: 'ꦈꦴ' for bunyi in ('Ŏ', 'Ō')},
+    **{bunyi: 'ꦈꦴ' for bunyi in ('Ŏ', 'Ō', 'Ꜷ')},
     # Swara spesial
     **{bunyi: 'ꦉ' for bunyi in ('ṛ', 'Ṛ')},
     **{bunyi: 'ꦉꦴ' for bunyi in ('ṝ', 'Ṝ')},
@@ -168,8 +167,8 @@ def ganti_tanda_metrum(hasil):
         baris = re.sub(r'꧊[\u200C\u200D]*', ']', baris)
         return baris
 
-    hasil = re.sub(r'^.*[–⏑⏓].*꧋[\u200C\u200D]*.*$', ganti_tanda, hasil, flags=re.MULTILINE)
-    hasil = re.sub(r'^.*[–⏑⏓].*꧊[\u200C\u200D]*.*$', ganti_tanda, hasil, flags=re.MULTILINE)
+    hasil = re.sub(r'^.*[—⏑⏓].*꧋[\u200C\u200D]*.*$', ganti_tanda, hasil, flags=re.MULTILINE)
+    hasil = re.sub(r'^.*[—⏑⏓].*꧊[\u200C\u200D]*.*$', ganti_tanda, hasil, flags=re.MULTILINE)
     hasil = hasil.replace("]×","] × ")
     return hasil
 
@@ -332,7 +331,7 @@ def hukum_penulisan(text):
         """Membuat multiple pola dari satu huruf ke multiple target"""
         return [(rf"{huruf}\b ", target) for target in targets]
 
-    konsonan_spasi = rf"[{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}][^\S\n]+"
+    konsonan_spasi = rf"[^ā][{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}][^\S\n]+"
 
     # Sekarang lebih ringkas:
     pola_list = [
@@ -340,14 +339,14 @@ def hukum_penulisan(text):
         *buat_pola("t", ["c", "l", "b", "k", "ḍ"]),   
         *buat_pola("s", ["w", "k", "ḍ", "n"]),           
         *buat_pola("k", ["l", "w", "p", "ś", "j"]),      
-        *buat_pola("n", ["ś", "sŧ", "l", "j"]),          
+        *buat_pola("n", ["ś", "l", "j"]),          
         *buat_pola("p", ["j", "ś", "g"]),           
         (konsonan_spasi, r"(duḥk|duḥꝁ|jñ)"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y|w)"),
         #(konsonan_spasi.replace("t","").replace("d",""), r"w"),
         (konsonan_spasi, r"(ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ|h)"),#|ṛ|ṝ
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
-        (konsonan_spasi, r"(str|sꝑ)"),
+        (konsonan_spasi, r"(str|sꝑ|sŧ)"),
     ]
 
     text = sisipkan_zwnj_pola(text, pola_list)
@@ -358,13 +357,6 @@ def hukum_penulisan(text):
     return(text)
 
 def finalisasi(hasil):
-
-    # Langkah 1: Lakukan regexp untuk spasi di sekitar metrum
-    hasil = re.sub(r'[^\S\r\n]*([|–⏑⏓])[^\S\r\n]*', r' \1 ', hasil)
-    hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)
-
-    # Langkah 2: Panggil fungsi ganti_tanda_metrum
-    hasil = ganti_tanda_metrum(hasil)
 
     penggantian = {
         # Pasangan la pepet dan la utuh
@@ -383,7 +375,6 @@ def finalisasi(hasil):
         ' ' : '', # Hapus spasi
 
         # Ganti simbol metrum
-        '–': '‐',
         '⏑': '0',
         '⏓': '0̲',
         '=': ' = ',
@@ -395,9 +386,16 @@ def finalisasi(hasil):
         #'_': ' ',
     }
 
-    # Langkah 3: Lakukan penggantian sederhana dalam satu iterasi
+    # Langkah 1: Lakukan penggantian sederhana dalam satu iterasi
     for cari, ganti in penggantian.items():
         hasil = hasil.replace(cari, ganti)
+
+    # Pastikan 0̲ ditangani dulu
+    hasil = re.sub(r'[^\S\r\n]*(\||—|⏑|⏓|—)[^\S\r\n]*', r' \1 ', hasil)
+    hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)
+
+    # Langkah 2: Panggil fungsi ganti_tanda_metrum
+    hasil = ganti_tanda_metrum(hasil)
 
     #tanda sama dengan di lebih dari satu
     hasil = re.sub(r"=[^\S\n]+=[^\S\n]*", '==', hasil)

@@ -73,7 +73,7 @@ PENGGANTIAN_ṙ = [
     (rf'([{KONSONAN}])uṙww(a|i|u)', r'\1urw\2'), 
     (r'tumiṙww(a|â|ā)', r'tumirw\1'),
     (r'ṙwwaṅ\b', r'rwaṅ'),
-    (rf'([{KONSONAN.replace('đ','')}])aṙww(a|â|ā)', r'\1arw\2'),
+    (rf'([{KONSONAN.replace('đ','').replace('s','').replace('p','').replace('g','')}])aṙww(a|â|ā)', r'\1arw\2'),
 
     #cegah r+zwj-zwnj agar tidal jadi ra pangku 
     (r'r\u200c', 'ṙ'), (r'r\u200d', 'ṙ'),
