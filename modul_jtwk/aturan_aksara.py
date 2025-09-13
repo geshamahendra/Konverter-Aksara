@@ -264,7 +264,7 @@ def hukum_sandi(text):
                 lambda match: PENYERAGAMAN_VOKAL[match.group(0)], text)
     
     #kasus tabrakan font bagian taling
-    text = re.sub(rf'ṙ([{DAFTAR_KONSONAN}])\1([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}]+)(e|o)',rf'ṙ\1\1\2{ZWNJ}\3\4\5',text)
+    text = re.sub(rf'ṙ([{DAFTAR_KONSONAN}])([{DAFTAR_KONSONAN}])([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}]+)(e|o)',rf'ṙ\1\2\3{ZWNJ}\4\5\6',text)
 
     #cegah ya dipasangi
     pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyrṛṝl')
@@ -291,7 +291,9 @@ def hukum_sandi(text):
     #text = insert_h_between_unmerged_vowels(text)
 
     #konsonan rangkap setelah perpisahan kata
-    text = re.sub(rf'([{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}]\s+)([{'dwhgm'}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])', rf'\1{ZWNJ}\2', text)####
+    text = re.sub(rf'([{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}]\s+)([{'dwhgm'}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])', rf'\1{ZWNJ}\2', text)
+    #konsonan rangkap setelah perpisahan kata versi sigeg
+    text = re.sub(rf'([{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}]\s+)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][ṙḥŋ])', rf'\1{ZWNJ}\2', text)
 
     #Menyambung vokal dan konsonan yang terpisah spasi
     text = re.sub(rf'([{DAFTAR_KONSONAN}])[^\S\n]*([{DAFTAR_VOKAL}])', r'\1\2', text)
@@ -339,7 +341,7 @@ def hukum_penulisan(text):
         *buat_pola("t", ["c", "l", "b", "k", "ḍ"]),   
         *buat_pola("s", ["w", "k", "ḍ", "n"]),           
         *buat_pola("k", ["l", "w", "p", "ś", "j"]),      
-        *buat_pola("n", ["ś", "l", "j"]),          
+        *buat_pola("n", ["ś", "l", "j", "w"]),          
         *buat_pola("p", ["j", "ś", "g"]),           
         (konsonan_spasi, r"(duḥk|duḥꝁ|jñ)"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y|w)"),

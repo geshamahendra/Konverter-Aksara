@@ -16,14 +16,14 @@ ENABLE_KONSONAN_GANDA_CHECK = _ENABLE_KONSONAN_GANDA_CHECK_STR.lower() in ('true
 # --- Regex dan Konstanta Lainnya ---
 RE_METRUM_SIMBOL = re.compile(r'[—⏑⏓]')
 RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶṝḹṛḷ❓]')
-RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳŋḥṙʰ-]')
+RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳŋḥṙʰ]')
 ZWNJ = '\u200C'
 ZWJ = '\u200D'
 # Definisi ṝḹṛḷ sebagai vokal
 VOWELS = 'aiuĕāâîīûūêôeèéöoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
 VOWEL_PENDEK = 'aiuĕAIUĔṛḷ❓'
 VOWEL_PANJANG = 'āâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌṝḹ'
-KHUSUS_KONSONAN = 'ŋḥṙ'
+KHUSUS_KONSONAN = 'ŋḥṙṃ'
 konsonan_pattern = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳ"
 
 # Kamus Pemetaan Vokal
@@ -336,7 +336,23 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
                 # Aturan 1: Tentukan apakah vokal kedua harus dikapitalisasi
                 should_capitalize = False
-                should_capitalize = (met1 == '—' and v1_lower_temp in VOWEL_PENDEK)
+                # Kondisi dasar: metrum panjang (—) bertemu vokal pendek
+                if met1 == '—' and v1_lower_temp in VOWEL_PENDEK:
+                    # Cari indeks vokal berikutnya (v2) untuk menghitung konsonan di antaranya
+                    match_v2 = re.search(RE_VOKAL, line[idx1 + 1:])
+                    
+                    # Jika vokal berikutnya (v2) ditemukan
+                    if match_v2:
+                        idx_v2_temp = idx1 + 1 + match_v2.start()
+                        
+                        # Hitung jumlah konsonan antara v1 dan v2
+                        text_between_vowels = line[idx1 + 1 : idx_v2_temp]
+                        konsonan_between_vowels = re.findall(RE_KONSONAN, text_between_vowels)
+                        
+                        # Atur should_capitalize menjadi True HANYA jika jumlah konsonan sama dengan satu
+                        if len(konsonan_between_vowels) == 1:
+                            should_capitalize = True
+
                 kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
                 kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
 

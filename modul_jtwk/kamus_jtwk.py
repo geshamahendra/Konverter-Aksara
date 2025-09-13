@@ -87,7 +87,7 @@ substitutions = {
     #khusus r dan h
     r'h(m|k)(u|w)': r'ḥ\1\2',
     r'r(m|k)(u|w)': r'ṙ\\\1\2',
-    r'rt([' + daftar_vokal + r'])\b': r'ṙ\\t\1',
+    r'rta\b': r'ṙ ta',
     r'ht([' + daftar_vokal + r'])\b': r'ḥt\1',
     r'([' + daftar_vokal + r'])r(w|b)ud(a|ā)' : r'\1r\\\2ud\3',
     
