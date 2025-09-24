@@ -91,6 +91,13 @@ def kata_baku(text):
     # Substitusi kamus
     for pattern, replacement in REGEX_CACHE['substitusi']:
         text = pattern.sub(replacement, text)
+
+    # ṅ ulang
+    text = re.sub(
+        rf'([{KONSONAN}])([{VOKAL_KECIL}])[ŋṅ][-]*(\1)(\2)([ŋṅ])',
+        r'\1\2ŋ\3\4\5', text
+    )
+    
     
     return text
 
@@ -140,7 +147,7 @@ def hukum_ṙ(text):
     # Kasus ry -> ṙyy (di awal kata atau setelah spasi/tanda hubung)
     # Pola regex yang digunakan untuk mencari 'ry' yang perlu diganti menjadi 'ṙyy'
     pattern = (
-        fr'(?:(?<=[{KONSONAN}]\s)'  # cocok jika didahului konsonan + spasi
+        fr'(?:(?<=\w\s)'  # cocok jika didahului konsonan + spasi
         r'|(?<=^)'                 # atau berada di awal baris
         r'|(?<=-))'                # atau setelah tanda hubung '-'
         r'ry(?=[^\s-])'            # dan diikuti huruf (bukan spasi atau tanda hubung)
@@ -171,7 +178,7 @@ def hukum_sigeg(text):
     SPECIFIC_FOLLOWING = r'(?:lĕ|rĕ|ḷ|ṛ)' # Pola khusus setelah 'ṅ'
     VOKALPANJANG = 'āâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌṝḹ'
 
-    # --- Langkah 1: Proses kasus ' ṅ ' yang diapit spasi (prioritas tinggi) ---
+    # --- Proses kasus ' ṅ ' yang diapit spasi (prioritas tinggi) ---
 
     # Kriteria 3: Vokal Panjang + ' ṅ ' + pola khusus -> ' ṅ-'
     text = re.sub(rf'(?<=[{VOKALPANJANG}]) ṅ (?={SPECIFIC_FOLLOWING})',r' ṅ-',text)
@@ -197,12 +204,7 @@ def hukum_sigeg(text):
             rf'(?<!^)(?<!\n){old}\b(?!(?: ?|- ?)[{VOKAL_KECIL}])',
             new, text
         )
-    
-    # ṅ ulang
-    text = re.sub(
-        rf'([{KONSONAN}])([{VOKAL_KECIL}])[ŋṅ][-]*(\1)(\2)([ŋṅ])',
-        r'\1\2ŋ\3\4\5', text
-    )
+
     
     # Ubah ṙ jadi r di ujung baris/kalimat
     text = re.sub(
@@ -222,6 +224,9 @@ def hukum_sigeg(text):
 
 def finalisasi_jtwk(text):
     """Finalisasi dan kapitalisasi"""
+    # Normalisasi spasi
+    text = re.sub(r'[^\S\n]+', ' ', text)
+    
     # Kasus spesial pasanyan nya
     text = re.sub(
         rf'([rhṅ])(?=nṇ?y[{VOKAL}])',
@@ -237,10 +242,7 @@ def finalisasi_jtwk(text):
     # Sigeg bertemu sigeg
     text = re.sub(r'ṙ[^\S\n]*ŋ', r'ṙ ṅ', text)
     text = re.sub(r'ḥ[^\S\n]*ŋ', r'ḥ ṅ', text)
-    
-    # Normalisasi spasi
-    text = re.sub(r'[^\S\n]+', ' ', text)
-    
+
     # vokal diapit spasi
     text = re.sub(rf' ([{VOKAL}]) ',r' \1-',text)
 
@@ -250,7 +252,6 @@ def finalisasi_jtwk(text):
 
     # 2. Else, jika ada konsonan tunggal non-ṅḥṙ + spasi + vokal
     text = re.sub(rf' (\b(?![ṅḥṙ])[{KONSONAN}]\b) ([{VOKAL}])', r'\1-\2 ', text)
-
     
     # Kapitalisasi vokal awal baris
     text = REGEX_CACHE['awal_baris_vokal'].sub(

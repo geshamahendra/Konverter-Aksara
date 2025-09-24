@@ -16,13 +16,13 @@ ENABLE_KONSONAN_GANDA_CHECK = _ENABLE_KONSONAN_GANDA_CHECK_STR.lower() in ('true
 # --- Regex dan Konstanta Lainnya ---
 RE_METRUM_SIMBOL = re.compile(r'[—⏑⏓]')
 RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶṝḹṛḷ❓]')
-RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳŋḥṙʰ]')
+RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳʰ]')
 ZWNJ = '\u200C'
 ZWJ = '\u200D'
 # Definisi ṝḹṛḷ sebagai vokal
 VOWELS = 'aiuĕāâîīûūêôeèéöoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
 VOWEL_PENDEK = 'aiuĕAIUĔṛḷ❓'
-VOWEL_PANJANG = 'āâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌṝḹ'
+VOWEL_PANJANG = 'āâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹ'
 KHUSUS_KONSONAN = 'ŋḥṙṃ'
 konsonan_pattern = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳ"
 
@@ -38,8 +38,6 @@ VOWEL_PENDEK_KE_PANJANG = {
     'Ĕ': '❓',
     'ṛ': 'ṝ',
     'ḷ': 'ḹ',
-    # 'ṛ': 'ṝ', # Duplikat, dihapus
-    # 'ḷ': 'ḹ', # Duplikat, dihapus
 }
 
 VOWEL_PANJANG_KE_PENDEK = {
@@ -333,6 +331,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         # Lakukan pemanjangan jika kondisi (konsonan + vokal) terpenuhi
                         new_vokal2 = ubah_vokal_sesuai_metrum(v2, met2)
                         hasil_line[idx2] = new_vokal2
+                
 
                 # Aturan 1: Tentukan apakah vokal kedua harus dikapitalisasi
                 should_capitalize = False
@@ -345,34 +344,36 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                     if match_v2:
                         idx_v2_temp = idx1 + 1 + match_v2.start()
                         
-                        # Hitung jumlah konsonan antara v1 dan v2
-                        text_between_vowels = line[idx1 + 1 : idx_v2_temp]
-                        konsonan_between_vowels = re.findall(RE_KONSONAN, text_between_vowels)
-                        
+                        # Hitung jumlah konsonan antara v1 dan v2 secara manual
+                        konsonan_count = 0
+                        for i in range(idx1 + 1, idx_v2_temp):
+                            if RE_KONSONAN.match(line[i]):
+                                konsonan_count += 1
+
                         # Atur should_capitalize menjadi True HANYA jika jumlah konsonan sama dengan satu
-                        if len(konsonan_between_vowels) == 1:
+                        if konsonan_count == 1:
                             should_capitalize = True
 
-                kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
-                kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
+                    kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
+                    kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
 
-                if kata_v1 and kata_v2 and kata_v1 != kata_v2:
-                    akhir_kata1 = kata_v1[2]
-                    idx_v1_relatif = idx1 - kata_v1[0]
-                    if idx_v1_relatif + 1 < len(akhir_kata1):
-                        konsonan_akhir_kata1 = akhir_kata1[idx_v1_relatif + 1]
-                        text_between_words = line[kata_v1[1]:idx2]
+                    if kata_v1 and kata_v2 and kata_v1 != kata_v2:
+                        akhir_kata1 = kata_v1[2]
+                        idx_v1_relatif = idx1 - kata_v1[0]
+                        if idx_v1_relatif + 1 < len(akhir_kata1):
+                            konsonan_akhir_kata1 = akhir_kata1[idx_v1_relatif + 1]
+                            text_between_words = line[kata_v1[1]:idx2]
 
-                        if re.search(r'[ -]+', text_between_words) and not any(RE_KONSONAN.match(char) for char in text_between_words.replace(' ', '').replace('-', '')):
-                            if kata_v2 and len(kata_v2[2]) > 0 and kata_v2[2][0] == v2_lower_temp:
-                                # Cek dan sesuaikan vokal awal kata terhadap jumlah konsonan di belakangnya
-                                vokal_final = cek_vokal_awal_kata(v2, idx2, line, met2, RE_KONSONAN, RE_VOKAL, KHUSUS_KONSONAN)
+                            if re.search(r'[ -]+', text_between_words) and not any(RE_KONSONAN.match(char) for char in text_between_words.replace(' ', '').replace('-', '')):
+                                if kata_v2 and len(kata_v2[2]) > 0 and kata_v2[2][0] == v2_lower_temp:
+                                    # Cek dan sesuaikan vokal awal kata terhadap jumlah konsonan di belakangnya
+                                    vokal_final = cek_vokal_awal_kata(v2, idx2, line, met2, RE_KONSONAN, RE_VOKAL, KHUSUS_KONSONAN)
 
-                                # Logika kapitalisasi (ini terpisah dan selalu diperiksa)
-                                if should_capitalize:
-                                    vokal_final = vokal_final.upper()
+                                    # Logika kapitalisasi (ini terpisah dan selalu diperiksa)
+                                    if should_capitalize:
+                                        vokal_final = vokal_final.upper()
 
-                                hasil_line[idx2] = vokal_final
+                                    hasil_line[idx2] = vokal_final
 
                 #konsonan+vokal1+konsonan+vokal2
                 # Refactor 1: Gabungkan logika serupa
@@ -381,7 +382,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
                 if is_metrum_panjang_valid or is_metrum_pendek_valid:
                     konsonan_pattern_str = RE_KONSONAN.pattern[1:-1]
-                    vokal_spasi_konsonan_pattern = re.fullmatch(r'\s+' + r'([' + konsonan_pattern_str + r'])\s*', text_between)
+                    vokal_spasi_konsonan_pattern = re.fullmatch(r'[^\S\n]+' + r'([' + konsonan_pattern_str + r'])[^\S\n]*', text_between)
                     
                     if vokal_spasi_konsonan_pattern and vokal_spasi_konsonan_pattern.group(1).lower() not in KHUSUS_KONSONAN:
                         konsonan = vokal_spasi_konsonan_pattern.group(1)
@@ -433,7 +434,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                     if new_vokal != vokal:
                         hasil_line[idx_vokal] = new_vokal
 
-
+        
         #===================PENGECEKAN, JANGAN UBAH DIBAWAH INI============================#
             # Kondisi: vokal1+konsonan+spasi+vokal2 dan vokal 1 jatuh pada nada pendek, Kapital vokal2 harus jadi lowercase
             # Logika ini harus dijalankan setelah semua pemanjangan-pemendekan vokal utama selesai
@@ -461,6 +462,8 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                                 if len(kata_v2[2]) > 0 and kata_v2[2][0].lower() == v2.lower():
                                     # Jika semua kondisi terpenuhi, lowercasekan vokal2
                                     hasil_line[idx2] = hasil_line[idx2].lower()
+
+            
 
         # --- LOGIKA PENGECEKAN KONSONAN GANDA (DIKONTROL OLEH TOGGLE) ---
         if ENABLE_KONSONAN_GANDA_CHECK:
@@ -550,7 +553,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
             if final_vokal_count > metrum_length_for_line:
                 plus_minus_indicator = f'"+{final_vokal_count - metrum_length_for_line}"'
             elif final_vokal_count < metrum_length_for_line:
-                plus_minus_indicator = f'"—{metrum_length_for_line - final_vokal_count}"'
+                plus_minus_indicator = f'"–{metrum_length_for_line - final_vokal_count}"'
 
         if current_line_has_error_marker or plus_minus_indicator:
             error_details = []
@@ -683,108 +686,3 @@ def cek_kakawin(text):
     
     hasil_akhir = "\n".join(hasil_blok).strip()
     return hasil_akhir
-'''
-def cek_kakawin(text):
-    """
-    Fungsi ini memproses text puisi untuk menandai vokal pendek yang berada dalam
-    pasangan dengan vokal pendek lainnya dalam satu kata, sesuai dengan aturan metrum.
-    Fungsi ini juga menghitung jumlah metrum pada baris metrum dan menandai
-    ketidaksesuaian antara jumlah vokal dan simbol metrum.
-    """
-    blok_list = re.split(r'\n\s*\n', text.strip(), flags=re.MULTILINE)
-    hasil_blok = []
-    current_metrum = []
-    for blok in blok_list:
-        puisi_buffer = []
-        baris = blok.strip().splitlines()
-        metrum_lines = []
-        for line in baris:
-            if line.startswith("<") and ">" in line:
-                if puisi_buffer:
-                    processed = proses_puisi_buffer(puisi_buffer, current_metrum)
-                    hasil_blok.extend(processed)
-                    puisi_buffer = []
-                if metrum_lines:
-                    hasil_blok.extend(metrum_lines)
-                    metrum_lines = []
-                hasil_blok.append(line)
-                current_metrum = []
-            elif line.startswith("{") and "}" in line: 
-                if puisi_buffer:
-                    processed = proses_puisi_buffer(puisi_buffer, current_metrum)
-                    hasil_blok.extend(processed)
-                    puisi_buffer = []
-                if metrum_lines:
-                    hasil_blok.extend(metrum_lines)
-                    metrum_lines = []
-                hasil_blok.append(line)
-                current_metrum = []
-            elif line.startswith("]") and "]" in line: 
-                if puisi_buffer:
-                    processed = proses_puisi_buffer(puisi_buffer, current_metrum)
-                    hasil_blok.extend(processed)
-                    puisi_buffer = []
-                if metrum_lines:
-                    hasil_blok.extend(metrum_lines)
-                    metrum_lines = []
-                hasil_blok.append(line)
-                current_metrum = []
-            elif line.startswith("[") and "[" in line: 
-                if puisi_buffer:
-                    processed = proses_puisi_buffer(puisi_buffer, current_metrum)
-                    hasil_blok.extend(processed)
-                    puisi_buffer = []
-                if metrum_lines:
-                    hasil_blok.extend(metrum_lines)
-                    metrum_lines = []
-                hasil_blok.append(line)
-                current_metrum = []
-            elif line.startswith("!") and line.endswith("!"):
-                if puisi_buffer:
-                    processed = proses_puisi_buffer(puisi_buffer, current_metrum)
-                    hasil_blok.extend(processed)
-                    puisi_buffer = []
-                if metrum_lines:
-                    hasil_blok.extend(metrum_lines)
-                    metrum_lines = []
-                hasil_blok.append(line)
-                current_metrum = []
-            elif line.startswith("#") and line.endswith("#"):
-                if puisi_buffer:
-                    processed = proses_puisi_buffer(puisi_buffer, current_metrum)
-                    hasil_blok.extend(processed)
-                    puisi_buffer = []
-                if metrum_lines:
-                    hasil_blok.extend(metrum_lines)
-                    metrum_lines = []
-                hasil_blok.append(line)
-                current_metrum = []
-            elif RE_METRUM_SIMBOL.search(line):
-                if puisi_buffer:
-                    processed = proses_puisi_buffer(puisi_buffer, current_metrum)
-                    hasil_blok.extend(processed)
-                    puisi_buffer = []
-                jumlah = hitung_jumlah_metrum(line)
-                metrum_line = f"{line} = {jumlah}"
-                metrum_lines.append(metrum_line)
-                current_metrum.append(get_clean_metrum(line))
-            else:
-                puisi_buffer.append(line)
-        if metrum_lines:
-            hasil_blok.extend(metrum_lines)
-        if puisi_buffer:
-            processed = []
-            if current_metrum:
-                jumlah_metrum_metrum_blok = len(current_metrum)
-                for idx_line, line_puisi in enumerate(puisi_buffer):
-                    metrum_for_this_line = [current_metrum[idx_line % jumlah_metrum_metrum_blok]]
-                    processed_line_from_buffer = proses_puisi_buffer([line_puisi], metrum_for_this_line)
-                    processed.extend(processed_line_from_buffer)
-            else:
-                processed = puisi_buffer
-            
-            hasil_blok.extend(processed)
-        hasil_blok.append("")
-    hasil_akhir = "\n".join(hasil_blok).strip()
-    return hasil_akhir
-'''

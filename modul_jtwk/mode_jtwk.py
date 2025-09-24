@@ -19,7 +19,6 @@ def mode_kakawin(text):
     #text = text.lower()
     #Bahasa kawi tidak kenal ṙṇṇ
     text = re.sub(r'rṇ', 'rn', text) # khusus bahasa jawa kuno
-    text = re.sub(r'ṅlĕ', 'ŋlĕ', text)
 
     return text
 

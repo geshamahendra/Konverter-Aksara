@@ -333,7 +333,7 @@ def hukum_penulisan(text):
         """Membuat multiple pola dari satu huruf ke multiple target"""
         return [(rf"{huruf}\b ", target) for target in targets]
 
-    konsonan_spasi = rf"[^ā][{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}][^\S\n]+"
+    konsonan_spasi = rf"[{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}][^\S\n]+"
 
     # Sekarang lebih ringkas:
     pola_list = [
@@ -342,11 +342,12 @@ def hukum_penulisan(text):
         *buat_pola("s", ["w", "k", "ḍ", "n"]),           
         *buat_pola("k", ["l", "w", "p", "ś", "j"]),      
         *buat_pola("n", ["ś", "l", "j", "w"]),          
-        *buat_pola("p", ["j", "ś", "g"]),           
+        *buat_pola("p", ["j", "ś", "g"]),
+        *buat_pola("m", ["g"]),           
         (konsonan_spasi, r"(duḥk|duḥꝁ|jñ)"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y|w)"),
         #(konsonan_spasi.replace("t","").replace("d",""), r"w"),
-        (konsonan_spasi, r"(ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ|h)"),#|ṛ|ṝ
+        (konsonan_spasi, r"(ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ|h|l|lĕ|rĕ|lö|rö)"),#|ṛ|ṝ
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
         (konsonan_spasi, r"(str|sꝑ|sŧ)"),
     ]

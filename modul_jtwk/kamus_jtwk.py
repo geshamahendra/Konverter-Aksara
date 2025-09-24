@@ -48,7 +48,6 @@ substitutions = {
         if sum(c in daftar_vokal for c in m.group(3).lower()) > 1 else m.group(0),
 
     # Imbuhan aṅr / āṅr
-    # Imbuhan aṅr / āṅr
     r'(?:\b(m|p)aṅr|(\w+)āṅr|([{daftar_konsonan}]) aṅr)(\w+)': lambda m: (
         (m.group(1) or m.group(2) or m.group(3)) +
         ('aŋ' if m.group(1) or m.group(3) else 'āŋ') +
@@ -62,7 +61,13 @@ substitutions = {
         ('aŋ' if m.group(1) or m.group(3) else 'āŋ') +
         r'\rw' + m.group(4)
     ),
-
+    
+    # Imbuhan aṅrĕ
+    r'(?:\b(m|p)aṅrĕ|(\w+)āṅrĕ|([{daftar_konsonan}]) aṅrĕ)(e|ĕ)': lambda m: (
+        (m.group(1) or m.group(2) or m.group(3)) +
+        ('aŋ' if m.group(1) or m.group(3) else 'āŋ') +
+        rf'{SH}rĕ' + m.group(4)
+    ),
 
     # Imbuhan aṅ lainnya (selain g/k)
     rf'(?:\b(m|p)aṅ|(\w+)āṅ|([{daftar_konsonan}]) aṅ)((?![gk])[{daftar_konsonan}])(\w+)': (
@@ -75,8 +80,6 @@ substitutions = {
         )
     ),
 
-
-    
     #--akhiran
     #khusus ṅ 
     r'(sĕḍĕ)ṅk(u|w)':r'\1ŋk\2',
@@ -98,7 +101,7 @@ substitutions = {
     #Kasus khusus
     r'(duhk|duhꝁ)([' + daftar_vokal + '])' : r'duḥk\2',  #duhka
     r'rwarw(a|ā|â)' : r'rwa-rw\1', # rwa rwa
-    #r'\b(p|m)aṅ(duk|rug)' : r'\1aŋ\2',
+    r'\b(p|m)?aṅlĕ' : r'\1aŋlĕ',
 
     #Bahasa Indonesia
     rf'([{daftar_vokal}])([{daftar_konsonan}])lah\b': r'\1\2 laḥ',  

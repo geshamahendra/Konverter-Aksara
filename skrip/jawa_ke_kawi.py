@@ -104,10 +104,9 @@ def konversi_aksara_ke_kawi(text):
         str: Teks yang sudah dikonversi ke aksara Kawi.
     """
     # Aturan penggantian khusus sebelum konversi karakter per karakter
-    text = re.sub(r'(?<=\b)ꦪꦾꦂ', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
-    text = re.sub(r'ꦉ\u200Cꦴ', '𑼋', text, flags=re.IGNORECASE)
-    text = re.sub(r'ꦫꦾ', '𑼬𑽂𑼫\u200D', text, flags=re.IGNORECASE)
-    text = re.sub(r'ꦫ꧀ꦮ', '𑼬𑽂𑼮\u200D', text, flags=re.IGNORECASE)
+    text = re.sub(r'ꦪꦾꦂ', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
+    #text = re.sub(r'ꦫꦾ', '𑼬𑽂𑼫\u200D', text, flags=re.IGNORECASE)
+    #text = re.sub(r'ꦫ꧀ꦮ', '𑼬𑽂𑼮\u200D', text, flags=re.IGNORECASE)
 
     hasil = []
     # Lakukan konversi karakter per karakter menggunakan daftar_konversi global
@@ -124,6 +123,7 @@ def konversi_aksara_ke_kawi(text):
     text_hasil = re.sub(r'𑽂\u200D', '𑽁\u200D', text_hasil)
     text_hasil = re.sub(r'𑽂\u200C', '𑽁\u200C', text_hasil)
     text_hasil = re.sub(r'𑼫𑽂𑼫𑼂\u200D', '𑼂𑼫𑽂𑼫', text_hasil, flags=re.IGNORECASE)
+    text_hasil = re.sub(r'𑽀𑼵', '𑽀𑼴', text_hasil)
     text_hasil = re.sub(r'𑼂[\u200C\u200D]', '𑼂', text_hasil, flags=re.IGNORECASE)
     
     return text_hasil

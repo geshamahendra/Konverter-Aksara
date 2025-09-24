@@ -2,11 +2,11 @@
 #Ōṃ Awiǥnamāstu#
 
 #praŧamas saṙggaḥ#
-<Āṙyyā>
-! – – | – – | – – = :12: !
-! – – | – – | – – | – – | = :18: !
-! – – | – – | – – = :12: !
-! – – | – – | ⏑ | – – | – = :15: !
+<Āṙyyā>:1.1
+! — — | — — | — ⏓ = :12: !
+! — — | — — | — — | — ⏓ | = :18: !
+! — — | — — | — ⏓ = :12: !
+! — — | — — | ⏑ | — — | ⏓ = :15: !
 
 hana sira ratu dibya rĕṅön,
 praśāsta riŋ rāt musuḥ nira praṇata, 
@@ -46,7 +46,7 @@ māhéśwara ta sira lanā,
 Ikanaŋ đanuṙđara kabèḥ,
 kapwa ya ƀakti ri sira praṇata matwaŋ,
 kadi mawwata yaśa lanā,
-rūpanyan agöŋ ta kīṙti nira*
+rūpanyan agöŋ ta kīṙtti nira*
 
 jñāna nira śudđa kadi wulan,
 parāṙŧa gumawé sukā niŋ ƀuwana,
@@ -144,7 +144,7 @@ lawan ikaŋ krĕṣṇatila mađu,
 śrī-wrĕkṣa samidđa rowaŋnya*
 
 saŋ hyaŋ kuṇḍa pinūjā,
-caru makuliliṅan samatsyamāṅsadađi,
+caru makuliliṅan samatsyamāŋsadađi,
 kalawan sĕkul niwédya,
 Inamĕs salwiṙ nikaŋ marasa*
 
@@ -174,7 +174,7 @@ dèwī siraŋ sumitrā,
 lakṣmaṇa śatruǥna putra nira*
 
 ri wĕtu nikaŋ putra kabèḥ,
-pinuluŋ ḍaŋ hyaŋ lawan ḍaṅ acāṙyya,
+pinuluŋ ḍaŋ hyaŋ lawaṇ ḍaṅ acāṙyya,
 paripūṙṇna sira pinūjā,
 binojanan dé mahārāja*
 
@@ -224,7 +224,7 @@ hana saṅhulun mayajña,
 ndan yālilaŋ rākṣasāmiǥné*
 
 Ikana kunaŋ yan yogyā,
-saŋ rāma marā riṅ āśrāma maŋ­rakṣā,
+saŋ rāma marā riṅ āśrāma maŋrakṣā,
 śāraṇa mamin wĕnaṅa,
 Umatyanaŋ rākṣasāmiǥné*
 
@@ -241,7 +241,7 @@ jāti niṅ aswī maminta kasiḥ*
 nyā đaṙmma niŋ kadi kita,
 pinakaśaraṇa dé niraŋ tapaswi kabèḥ,
 salwīra niŋ katakuta,
-kita tāṅrākṣā ri duḥka kabèḥ*
+kita tāŋrākṣā ri duḥka kabèḥ*
 
 nyā đaṙmma niŋ kadi kami,
 mawaraha kita riŋ sinaṅguhan đaṙmma,
@@ -308,8 +308,8 @@ tuladana ikaŋ wwaṅ ulaḥ nirāṙ paniwi,
 sakwan saŋ rāma tumūt,
 taṙ dadi kantun asiŋ saparan*
 
-{mālinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{mālinī}:1.61
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 rahina ya sakatambé māwa taŋ déśa rāmya,
 lumaku ta sira kāliḥ sāmpun amwit manambaḥ,
@@ -322,11 +322,11 @@ kumĕdut i-tĕṅĕnan māṙ bāhu saŋ rāmaƀadra,
 marahakĕna Alaḥ niŋ śatru tātan paśéṣa*
 
 #dwitīyas saṙggaḥ#
-<basantatilaka>
-– – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓ = :14:
+<basantatilaka>:2.1
+— — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏓ = :14:
 
 kāwit śaratsamaya kāla nirāṙ para ṅkā,
-ṅ ton taŋ pradéśa ri hawan Ira kapwa rāmya,
+n ton taŋ pradéśa ri hawan Ira kapwa rāmya,
 kwèḥ lwaḥ magöŋ katĕmu dé nira tīṙŧa dibya,
 Udyāna lèn talaga niṙɉara kapwa mahniŋ*
 
@@ -366,7 +366,7 @@ kumbaŋ marĕŋ kumuda ṅūni dumèḥ ya méwa,
 Iṙṣa swaƀāwa nikanaŋ wini ǥāra kāsiḥ*
 
 ṅkānèṅ alas ƀramara matta maśabda mandra,
-nidraŋ kidaŋ kiniduṅan juga paŋhiḍĕpnya,
+nidraŋ kidaŋ kiniduṅañ juga paŋhiḍĕpnya,
 caṇḍāla yékana manaḥnya luput pwa dénya,
 Āpan pijĕṙ ya rumĕṅö kalahaṅsa moni*
 
@@ -410,7 +410,7 @@ lèn siṅha muṅgu rikanaŋ giri pāṙśwa moni,
 sakrođa maŋdĕmaka liŋnya mulat tumĕṅha,
 Āḥ sihha mūḋa winaliŋnya musuḥnya monī*
 
-riŋ paṙśwa lèn talaga rāmya tinon ira ṅkā,
+riŋ pāṙśwa lèn talaga rāmya tinon ira ṅkā,
 tuñjuŋ putiḥ juga sĕkaṙnya tatan hanābāŋ,
 tātan katon hana ta haṅsa putiḥ maṅumbaŋ,
 śabdanya mātra karĕṅö mrĕdu komalālwan*
@@ -506,13 +506,13 @@ saŋ rāma taṙ wiǥani śūra suđīra maṅsö,
 mojaṙ siraŋ nrĕpatiputra mahā marīkṣā*
 
 mārīca mūḋa Apa donmu riṅ āśrama ṅké,
-kon māṅsabakṣaṇa ri saŋ wiku taṙ pamāṅsa,
+kon māŋsabakṣaṇa ri saŋ wiku taṙ pamāṅsa,
 yapwan Ĕmās ya kaharĕpmu ri saŋ tapaswī,
 tan drĕbya saŋ wiku ṅaranya Atītaduḥka*
 
 Ꜽ rāmaƀadra Atimūḋa dahat mapuṅguŋ,
 tātan Ĕmās pinakadon mami yan para ṅké,
-taṙ māṅsa tan Apa mahāṅraƀasā juga ṅké,
+taṙ māṅsa tan Apa mahāŋraƀasā juga ṅké,
 đaṙmma swaƀāwa mami rākṣasa śatru niŋ rāt*
 
 miǥnèṅ ayajña Umatī wiku tan padosa,
@@ -543,7 +543,7 @@ kontal katūb ya tamatan papuliḥ muliḥ ya*
 sāmpun katūb kapalupuy pwa ya dé niṅ astra,
 Indrādi déwata sahaṙṣa manāđukāra,
 Ꜽ rāma hé daśaraŧātmaja sāđu dibya,
-nā liŋ nirāṅhudanakĕn sira puṣpawaṙṣa*
+nā liŋ nirāŋhudanakĕn sira puṣpawaṙṣa*
 
 ménak manaḥ nira mahāmuni yan payajña,
 niṙwiǥna tan hana kuraŋ rikanaŋ pamūjā,
@@ -558,7 +558,7 @@ kabwat nikan hana ƀaṭāra śacīpati ṅké*
 sakwèḥnyawakta katutuṙku tinonku maṅké,
 wiṣṇwaṅśa déwata kitānaku dibya śakti,
 riŋ pūṙwwakāla balirāja hilaŋ ya dènta,
-kṣīrodasāgara nahan pinutĕṙta ṅūni*
+kṣīrodasāgara nahan pinutĕṙ ta ṅūni*
 
 mwaŋ rāhu yékana cinakra gulūnya dènta,
 kwèḥ dꜽtya dānawa Anuŋ talu dènta ṅūni,
@@ -710,8 +710,8 @@ méraŋ tumona muꝁa saŋ nrĕpapūtra rāma,
 mahyā Ikaŋ bala kabèḥnya humuŋ paḍātri,
 saŋ mꜽtilī sira sahaṙṣa mariṙ makiṅkiŋ*
 
-{mālinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{mālinī}:2.78
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 Aŧa ri sĕḍĕṅ ikā saŋ ƀāṙggawālaḥ ya luṅhā,
 daśaraŧa sira haṙṣān kolakĕn pūtra rāma,
@@ -719,8 +719,8 @@ krama lumaku Umaṅkat tuṅgaṅan kapwa maṅrap,
 satĕka nira sinuŋsuŋ dé nikaŋ wwaŋ ry-ayođyā*
 
 #trĕtīyas saṙggaḥ#
-<pṛŧiwītala>
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+<pṛŧiwītala>:3.1
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 ḍatĕŋ pwa maharāja saŋ daśaraŧa ry-ayođyāmpura,
 Inastuti ta saŋ naréndrasuta rāma dé niŋ sarāt,
@@ -798,7 +798,7 @@ rinākṣa nira tékanaŋ bala kabèḥ pijĕṙ yāturū,
 waṅuṇ ḍahina śīǥra miṅgat aṅĕnĕs ta saŋ rāǥawa*
 
 siraŋ taruṇa lakṣmaṇāmilu lawan siraŋ mꜽŧilī,
-tatan hana wĕruḥ sĕḍĕŋ niran umiṅgat aŋlĕs hilaŋ,
+tatan hana wĕruḥ sĕḍĕŋ niran umiṅgat āŋlĕs hilaŋ,
 gĕlāna Ikanaŋ balān pawuṅu lèn sumantryāṅaraŋ,
 Apan kahilaṅan taman wruh i-wĕkas niraŋ rāǥawa*
 
@@ -833,7 +833,7 @@ waliŋ nira paṅoṣađān lumipuraŋ Unĕŋ riŋ Anak,
 muliḥ sira sakèŋ taman malara kaṣṭa puḥ mūṙcꞓita*
 
 hanan kĕlu rikaŋ tilām tuwi malit malĕmbut matīs,
-Awak nira linépanèŋ sulur usĕṙ lawan caṇḍana,
+Awak nira linépanèŋ sulur usĕṙ lawañ caṇḍana,
 nda tan paraṣa tan panīsi mapanas kabèḥ yan hiḍĕp,
 ri tībra nikanaŋ Unĕŋ dadi muliḥ sirèŋ swaṙgga wèḥ*
 
@@ -904,13 +904,13 @@ kadi pwa ya ƀaṭāra wiṣṇu kalawan ƀaṭāréśwara*
 
 muwaḥ ta manusup hana pwa patapan pinaṅguḥ nira,
 suƀikṣa ya manoharāśrama niraŋ ƀaradwāja ya,
-sĕḍĕŋ tiba-tibāṅlaluŋ diwasa kāla soré n-tĕka,
+sĕḍĕŋ tiba-tibāŋlaluŋ diwasa kāla soré n-tĕka,
 mahāṙṣi saha śisya gorawa masö manuŋsuŋ sira*
 
 Anéka panamuy mahāṙṣi mĕtu saṅka riŋ yoga ya,
 Amoǥa manurun manojña kayu pārijātādƀuta,
 Asiŋ sakaharĕp saménaka pawèḥ niraŋ paṇḍita,
-Aho saꝑala niŋ tapātiśaya sarwakāmaprada*
+Aho saꝑala niŋ tapātiśaya saṙwwakāmaprada*
 
 Anākĕbi riṅ indraloka manurun lawan Apsarī,
 ya téka makurĕn-kurĕn ri sira saŋ tamuy kādƀuta,
@@ -977,35 +977,35 @@ diwākara gunuŋ paḍanta himawān lawan sāgara,
 ṅhulun pwa pinujinta śakti guṇamānta tātan tuhu,
 Asamƀawa wuwusta maŋduhuṅakĕn mahā maŋlaré*
 
-{tiḍak ḍikĕtahui}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{tiḍak ḍikĕtahui}:3.52
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 nahan ikana wuwus saŋ kékayīputra sāđu,
 dadi sumahur ikā saŋ rāmaƀadrāsi maswī,
 muliha Ata kitāntĕn ṅkā ry-ayođyā tamolaḥ,
 yadin alĕmĕha séwan pādukaṅkwīki ratwa*
 
-{tiḍak ḍikĕtahui}
-– ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :15:
+{tiḍak ḍikĕtahui}:3.53,1
+— ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :15:
 
 ndan kita pi saraƀāran rākṣaŋ sakala jagat,
 kṣatriyawinaya yékā rākṣan katuturakĕn,
-{tiḍak ḍikĕtahui}
-– ⏑ ⏑ | ⏑ ⏑ – | – – – | ⏑ ⏑ ⏑ | ⏑ ⏓ = :14:
+{tiḍak ḍikĕtahui}:3.53,2
+— ⏑ ⏑ | ⏑ ⏑ — | — — — | ⏑ ⏑ ⏑ | ⏑ ⏓ = :14:
 śāsaṇa ya gĕgĕn taŋ śāstra d-wulati lanā,
 sojariṅ aji tūtĕn yékā mawa kasukan*
 
-{tiḍak ḍikĕtahui}
-– ⏑ ⏑ | ⏑ ⏑ – | – – – | ⏑ ⏑ ⏑ | ⏑ ⏓ = :14:
-– ⏑ ⏑ | ⏑ ⏑ – | – – – | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :15:
+{tiḍak ḍikĕtahui}:3.54
+— ⏑ ⏑ | ⏑ ⏑ — | — — — | ⏑ ⏑ ⏑ | ⏑ ⏓ = :14:
+— ⏑ ⏑ | ⏑ ⏑ — | — — — | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :15:
 
 dèwa kuśala śālā mwaŋ đaṙmma ya pahayun,
 mās ya ta pahawrĕdđin byāyā riŋ hayu kĕkĕsĕn,
 ƀukti sakaharĕptād wèhi-ŋ bala kasukan,
-đaṙmma kalawan aṙŧa mwaŋ kāmāta ṅaran ikā*
+đaṙmma kalawan āṙŧa mwaŋ kāmāta ṅaran ikā*
 
-{tiḍak ḍikĕtahui}
-– ⏑ ⏑ | ⏑ ⏑ – | – – – | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :15:
+{tiḍak ḍikĕtahui}:3.55
+— ⏑ ⏑ | ⏑ ⏑ — | — — — | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :15:
 
 śīla rahayu rākṣan rāga dwéśa hilaṅakĕn,
 kimburu ya ta hīlan śūnyāmbĕkta lawan awak,
@@ -1017,8 +1017,8 @@ riŋ raṇamuꝁa sāra mwaŋ wākśūra ya guṇitan,
 tyāga kita mapuṇyā riŋ brahmāṅśa muniwara,
 nāgata gawayĕntāt rākṣāŋ rāt ya pahapagĕḥ*
 
-{rucira}
-⏑ – ⏑ | – ⏑ ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :13:
+{rucira}:3.56
+⏑ — ⏑ | — ⏑ ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :13:
 
 krĕtajñatā haran ikanaŋ wruh iŋ guṇa,
 mulat rikaŋ bala manĕkĕt manon ulaḥ,
@@ -1030,8 +1030,8 @@ tumon ikaŋ hala-hayu yatna tan hĕnĕŋ,
 rumĕŋ­wakĕn lara nikanaŋ prajā kabèḥ,
 Apan Ikaŋ Uƀaga lanā ri saŋ praƀu*
 
-{tiḍak ḍikĕtahui}
-– – – | ⏑ ⏑ ⏑ | ⏑ ⏓ = :8:
+{tiḍak ḍikĕtahui}:3.59
+— — — | ⏑ ⏑ ⏑ | ⏑ ⏓ = :8:
 
 Utsāhāta larapana,
 kāṙyyāsiŋ pahapagĕhĕn,
@@ -1048,8 +1048,8 @@ nindā tan gawayakĕna,
 tañ janmāmuhara wĕrö,
 yékā praśraya sumuka*
 
-{pawitrā}
-– – – | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :9:
+{pawitrā}:3.62
+— — — | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :9:
 
 nyā-ŋ mukyāntĕn kanĕkĕtakĕn,
 haywāsampay riṅ asih-asiḥ,
@@ -1091,8 +1091,8 @@ tan saktā riŋ wiṣaya dahat,
 dyūtāsiŋ duṙyyasana kunĕŋ,
 yékānuŋ tan gawayakĕna*
 
-{pṛŧiwītala}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+{pṛŧiwītala}:3.70
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 nihan ta gawayanta nitya maṅĕmit prajā maṇḍala,
 wihāra pahayunta paṙhyaṅan umaḥ ƀaṭārāmĕrĕn,
@@ -1129,13 +1129,13 @@ samaṅkana ta saŋ praƀūmilaṅakĕn Ikaŋ duṙjjana,
 śaśaṅka magawé Asiḥ sira janānurāgèŋ sarāt,
 Awās ta kita maṅkanāri yat ahāta riŋ pun-punan*
 
-gunuŋ ya ta paḍanta ƀūpati Ikaŋ prajāṅkĕn ḍukut,
+gunuŋ ya ta paḍanta ƀūpati Ikaŋ prajāṅkĕṇ ḍukut,
 patūti guṇa-doṣa niŋ Ulah ikā mataŋnyān suka,
 Ikaŋ prawara pora waṙgga wanatulya yāṅkĕn Alas,
 kitékana ta siṅha rākṣaka dumèḥnya śoƀān katon*
 
-{śiꝁariṇī}
-⏑ – – | – – – | ⏑ ⏑ ⏑ | ⏑ ⏑ – | – ⏑ ⏑ | ⏑ ⏓ = :17:
+{śiꝁariṇī}:3.78
+⏑ — — | — — — | ⏑ ⏑ ⏑ | ⏑ ⏑ — | — ⏑ ⏑ | ⏑ ⏓ = :17:
 
 Ikaŋ ŧāni prītīnuƀaya guṇa niŋ ƀūpati lanā,
 ya saṅkanyā-ŋ ƀogān hana pakĕna niŋ rājya ya tuwi,
@@ -1143,7 +1143,7 @@ Asiŋ sénāluḥnyékana ta tuluṅĕn haywa humĕnĕŋ,
 lima lwiṙ niŋ sākṣāt ƀaya tĕka rikaŋ pora ya paḍĕm*
 
 kinonkon saŋ swāmīkana ta Umarèŋ wanwa mapanas,
-maliŋ makwèḥ lumrāṅhala-hala lawan drohaka wanèḥ,
+maliŋ makwèḥ lumrāŋhala-hala lawan drohaka wanèḥ,
 kapātnyékā saŋ wallaƀa ya winilaŋ duṣṭa tan alaḥ,
 lima mwaŋ loƀé saŋ narapati nahannyaŋ ƀaya magöŋ*
 
@@ -1172,26 +1172,26 @@ parāṙŧāsiḥ yāgöŋ saka lara nikaŋ rāt winulatan,
 tumiṅhal yātāsiŋ sawuwus ikanāŋ śāsana tinūt,
 tĕpĕt māsiḥ taṙ wruḥ kutila milag iŋ bañcana dumèḥ*
 
-{śiꝁariṇī}
-⏑ – – | – – – | ⏑ ⏑ ⏑ | ⏑ ⏑ – | – ⏑ ⏑ | ⏑ ⏓ = :17:
+{śiꝁariṇī}:3.85
+⏑ — — | — — — | ⏑ ⏑ ⏑ | ⏑ ⏑ — | — ⏑ ⏑ | ⏑ ⏓ = :17:
 
 nahan tojaṙ saŋ rāma manĕkĕt iṅ antĕn mapagĕha,
 sahaṙṣāmbĕk saŋ ƀārata ta rumĕṅö śabda karuṇa,
 manĕmbaḥ māmwīt saŋ ƀarata ri siraŋ rāmawijaya,
 lawan wadwākwèḥ mwaŋ sahana-hana niŋ ƀrĕtya mamuhun*
 
-{tiḍak ḍikĕtahui}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{tiḍak ḍikĕtahui}:3.86
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 Aŧa lumaku muliḥ saŋ kékayīputra luṅhā,
 tinawanakĕn irékaŋ pādukātyanta dibya,
 ya ta siniwi sinĕmbaḥ dé nikaŋ wwaŋ ry-ayođyā,
-ƀarata sira tamolaḥ ƀakti maŋ­rākṣa rājya*
+ƀarata sira tamolaḥ ƀakti maŋrākṣa rājya*
 
 #catuṙŧas saṙggaḥ#
-<Ꜷpacꞓandasika>
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+<Ꜷpacꞓandasika>:4.1
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 ndat atīta sirāṙ hanèŋ kaḍatwan,
 sira saŋ rāma hanèṅ alas tamolaḥ,
@@ -1208,18 +1208,18 @@ hana tālas karĕṅö pratīta riŋ lwā,
 Atiƀīṣaṇa daṇḍakā ṅaranya,
 ya paran saŋ raǥuputra rāmadéwa*
 
-{tiḍak ḍikĕtahui}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+{tiḍak ḍikĕtahui}:4.4
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 Umahas sira tā hanaŋ katākut,
 kalawan saŋ Ari lèn priyā nira,
 hana rākṣasa rodra yéka maṅsö,
 Umahā mātyana donya tan kalèn*
 
-{mālaƀāriṇi}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{mālaƀāriṇi}:4.5
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 si wirāđa ṅaranya tan panoli,
 I ruhuṙ n-uṅgu sukunya wèḥ sumuṅsaŋ,
@@ -1276,9 +1276,9 @@ karuṇā riŋ wanawāsakāciŧī ya,
 malawas ta naréndraputra rāma,
 rikanāṅ āśrama wètnyasiḥ mahāṙṣi*
 
-{prabođitā}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :10:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+{prabođitā}:4.16
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :10:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 Umahas ta sirèŋ tapowana,
 tinamuy dé nira saŋ mahāmuni,
@@ -1342,7 +1342,7 @@ tĕka riŋ daṇḍaka kānanāśrama*
 
 tinĕmunya ta saŋ nrĕpātmaja,
 riṅ alas kāwit amèt sĕkaṙ sira,
-kalawan janakātmajādulur,
+kalawañ janakātmajādulur,
 sira taṙ kāntun asiŋ paran tumūt*
 
 dadi mūṙ ya tumon sirādulur,
@@ -1355,9 +1355,9 @@ magawé ƀāwa mahiñji yan laku,
 paripūṙṇna Awaknya riŋ hayu,
 wulan iŋ puṙṇnamakāla tulya ya*
 
-{Ꜷpacꞓandasika}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{Ꜷpacꞓandasika}:4.31
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 maḍĕmit sapĕgĕg tĕṅaḥnya māmbĕt,
 mamanis lèn pamatanya rāmya molĕm,
@@ -1399,9 +1399,9 @@ Apa jātinta yan apsarī ta kūnĕŋ,
 paricāra winèḥ ya kāntunèka,
 kita kanyāhayu towi tuṅga-tuṅgal*
 
-{prabođitā}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :10:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+{prabođitā}:4.39
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :10:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 nya dumèh aku saṅśayā tĕmĕn,
 kita mojaṙ ry-aku tan kĕnèṅ iraŋ,
@@ -1533,9 +1533,9 @@ lĕhĕṅaŋ mātya kunĕŋ misan-misan,
 yadiyat hĕnĕṅāta riŋ musuḥ,
 tat asĕṅhit hana sāhasé ṅhulun*
 
-{Ꜷpacꞓandasika}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{Ꜷpacꞓandasika}:4.65
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 ya mataŋnya yadin hanāsihanta,
 Ikanaŋ rāǥawa lakṣmaṇolihanta,
@@ -1567,18 +1567,18 @@ matilañjaŋ majajaṙ kabèḥ mapañjaŋ,
 magalaḥ magalak malād ilatnya,
 malipuŋ puŋ juga riŋ wĕgig g-umaṅkat*
 
-{prabođitā}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :10:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+{prabođitā}:4.71
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :10:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 saḍatĕŋnya kabèḥ maṅĕmbuli,
 sira saŋ rāǥawa lakṣmaṇomasö,
 pinanaḥ nira tan paśéṣa ya,
 hibĕkan waṅkay ikaŋ tĕgal kabèḥ*
 
-{tiḍak ḍikĕtahui}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :10:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{tiḍak ḍikĕtahui}:4.72
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :10:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 hana ƀinna śiwak Awak nikā,
 hana timpaŋ pinanaḥ pupūnya timpal,
@@ -1590,9 +1590,9 @@ hana méraŋ Umaluy pwa yékaṅāmūk,
 ri muꝁanya mabāŋ mulĕk m~tu rāḥ,
 gumaluṅgaŋ ri gulūnya rodra taŋ hrū*
 
-{puṣpitāgra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{puṣpitāgra}:4.74
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 bala makabalasaḥ wanèḥ kabuñcaŋ,
 dadi mapuliḥ triśiraḥ masö masĕṅhit,
@@ -1600,7 +1600,7 @@ saraƀasa magalak Ulā paḍanya,
 garuḍa paḍā nira saŋ naréndraputra*
 
 Inarah-arah ikā gulūnya riŋ hrū,
-hana warayaŋ dadalī jugāṅlayaŋ ya,
+hana warayaŋ dadalī jugāŋlayaŋ ya,
 suniśita maputiḥ tĕlas malaṇḍĕp,
 ya mĕgatakĕn ri gulūnya rāḥnya muñcar*
 
@@ -1610,8 +1610,8 @@ tat ujara ta-takut niraŋ tapārĕs,
 tuwi bala rākṣasa tan wĕnaŋ mulat ya*
 
 #pañcamas saṙggaḥ#
-<rajanī>
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | ⏑ ⏓ = :17:
+<rajanī>:5.1
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | ⏑ ⏓ = :17:
 
 Aŧa ri pĕjaḥ nikaŋ triśira śīǥra hulūnya tibā,
 dadi ta masö masĕṅhit ikanaŋ ꝁara dūṣaṇa lèn,
@@ -1646,7 +1646,7 @@ prakaśita rāma lakṣmaṇa matī ya taman pamalĕs*
 sahana-hananta mātya kita dénya si dāśarati,
 ya ta walĕsĕnta toḥ kira-kiran pĕjahanya huwus,
 saꝑala Ikā kasĕṅhitakĕnéka pĕjaḥnya kabèḥ,
-Apan anipis pagĕṙta yadiyan mahurip biṣama*
+Apan anipis pagĕṙ ta yadiyan mahurip biṣama*
 
 kita mamaṅan magoṣṭi maṅinum saha ƀrĕtya wijaḥ,
 wiṣaya kasakta tat Aṅĕn-aṅĕn ṅ-awasāna pijĕr,
@@ -1749,7 +1749,7 @@ sahana niraŋ ratu pwa ya mayat ya taman kawĕnaŋ,
 kaŧam api saŋ raǥūttama mayat ya tikĕl wĕkasan*
 
 kita suka kéwalāwĕrĕ-wĕrö mamaṅan maṅinum,
-saha bala matta māṅsaka surā Ininumta lanā,
+saha bala matta māŋsaka surā Ininumta lanā,
 Amija-mijaḥ sĕkaṙ jĕnu suganđa jĕnĕk riṅ inak,
 ndya ta gamananta tat Alaha riŋ raṇa dé rasikā*
 
@@ -1780,7 +1780,7 @@ Ikaṅ umayat ya tambayan ataḥ lalu hīna dahat*
 
 pati nikanaŋ kara triśira tan ya dumèḥ ya pujin,
 Apan akĕlé pramāda ya dumèḥnya kabèḥ pĕjaha,
-yan agalakāṅlagāna ri si rāǥawa ǥoratara,
+yan agalakāŋlagāna ri si rāǥawa ǥoratara,
 niyata pĕjaḥ ni rāǥawa rikaŋ kṣaṇa taṙ paṅapa*
 
 ndya ta ya pujimwa śakti ni si rāǥawa koŋ Ađama,
@@ -1825,7 +1825,7 @@ Apan agĕlis lumumpat analimpĕtakĕn mawilĕt*
 
 kadi ya mariŋ mahā ya sakarĕŋ maṅadĕg maparö,
 wahu tinalandaṅan ya sinikĕp nira śīǥra mĕsat,
-Apan alĕyö wulunya malĕṅis linĕṅan juga ya,
+Apan alĕyö wulunya malĕṅis linĕṅañ juga ya,
 kamaga taṅan nirān kaluputan malayū ya muwaḥ*
 
 dadi ta madoḥ Uliḥ nira manūti taman kawĕnaŋ,
@@ -2059,8 +2059,8 @@ hana nikanaŋ praƀāwa ni si rāwaṇa tulya riwut,
 ya ta katakut nikaŋ sura dumèḥnya masor arusak*
 
 #saṭ saṙggaḥ#
-<waṅśasŧa>
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+<waṅśasŧa>:6.1
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 Ikā kaḍatwanku samīpa niŋ tasik,
 gahan ri lĕṅkā kadi kānti niŋ wulan,
@@ -2092,16 +2092,16 @@ masū masāmbat karĕṅö rikaŋ laṅit,
 kidaŋ manuk riŋ patapan paḍomĕnéŋ,
 kagömanānon riṅ ulaḥ samaṅkana*
 
-{Upajāti waṅśa}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Upajāti waṅśa}:6.7
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 Ꜽ rāma hé rāǥawa niṙǥrĕṇanta wèḥ,
 lukan kĕtékā tan asiḥ ta ri ṅhulun,
 Asiŋ pakon taṙ dadi laṅǥanā Ataḥ,
 waliṅku siḥ té ry-aku haḥ lalis kariḥ*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:6.8
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 lanā marīntoṣa kitāṅiriŋ manaḥ,
 widagda riŋ citta mariŋ Anākĕbi,
@@ -2158,8 +2158,8 @@ Umatyanaŋ mūṙkꝁa kabèḥ tamomaya,
 patik-patik saŋ raguputra tékihĕn,
 rĕṇāku ṅūnin pakamitra saŋ bapa*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:6.19
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 nāhan liŋ nira saŋ jaṭāyu Umasö masyaŋ humuŋ syāpraṅa,
 kumlab téka hĕlaṙ nirādƀuta makas malwā malaṇḍĕp kabèḥ,
@@ -2177,7 +2177,7 @@ muñcaṙ taŋ rudirār isĕp ta ya muwaḥ munduṙ mĕsat riŋ laṅit,
 maṅkin daṙppa sirāwĕrö minum ikā rāḥ-rāḥ niraŋ rāwaṇa*
 
 képwan saŋ daśawaktra soṙ sira sukĕṙ suṅgwī siraŋ mꜽŧilī,
-sambé taŋ bala rākṣasāṅhabĕt ikaŋ Aśwomibĕṙ taŋ raŧa,
+sambé taŋ bala rākṣasāŋhabĕt ikaŋ Aśwomibĕṙ taŋ raŧa,
 yèkoṅgwan n-ira maŋlayaŋ kuda manogāmī masö maŋdĕmak,
 śīṙṇnāsāk rinĕmĕk rĕmuk kinĕpĕkan rĕmpak tibā taŋ raŧa*
 
@@ -2201,17 +2201,17 @@ mosaḥ mosyan asiŋ paran Ira tinūt dé saŋ daśāsyèŋ laṅit,
 tan dwān tandaṅi saŋ jaṭāyu dumilaḥ taŋ candrahāsākilat,
 sĕmpal taŋ lahuyaŋ huyuŋ nira tibān pinraŋ niraŋ rāwaṇa*
 
-{puṣpitāgra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{puṣpitāgra}:6.27
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 daśawadana wawaŋ siromĕkul saŋ,
 janakasutāṙ wiparīta tībra mūṙccā,
 hana ta raŧa wanèḥ masö manuŋsuŋ,
 pinakahawan Ira yaṙ Uliḥ ri lĕṅkā*
 
-{mālinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{mālinī}:6.28
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 satĕka nira ri lĕṅkā glāna kāmāturāhyun,
 hana ri hati nirāṅhiŋ mꜽŧilī ūṣađātaḥ,
@@ -2231,7 +2231,7 @@ daśamuꝁa sira mūṙkkātyanta maṅsö tan éraŋ*
 pratidina sira mojaṙ ndan mahāsatya dèwi,
 raǥutanaya cinittā dé nikaŋ citta tan lèn,
 salahasa sira mosaḥ saŋ daśāsyāsi maswī,
-r-ujari bala nirāṙ kon jānakī rākṣa-rākṣan*
+r-ujari bala nirāṙ koñ jānakī rākṣa-rākṣan*
 
 Aŧa ri hana niraŋ śrī jānakī ṅkā ri lĕṅkā,
 raǥutanaya sirékātyanta saṇḍéha Āśa,
@@ -2250,7 +2250,7 @@ niyata pati nikā saŋ mꜽŧilī liŋ nirāśā*
 
 dadi ta sira matakwan śīǥra mojaṙ saṅ antĕn,
 duga-duga sira mājaṙ satya ƀaktīŋ kakāsiḥ,
-raǥutanaya gĕlānān paŋ­rĕṅö wrötamātra,
+raǥutanaya gĕlānān paŋrĕṅö wrötamātra,
 hati nira ya ta śiṙṇnān śūnya taŋ rāt hiḍĕpnya*
 
 kadi ta hilaṅ umĕtwaŋ jīwa saṅké śarīra,
@@ -2269,7 +2269,7 @@ bapa ta-taṅisanaṅkwébuṅku yādoḥ taman wruḥ,
 suragaṇa humĕnĕŋ đik déwatā tan hanojar*
 
 Atiśaya Aku yatnāmèt kitèŋ déśa mamriḥ,
-mara haku ri paturw-Antèŋ daṅū tat kapaṅguḥ,
+mara haku ri paturwantèŋ daṅū tat kapaṅguḥ,
 hana watu maratālwa ṅkāk paromèt kitātaḥ,
 sahana ni hawalantāku k-parāmèt kitāntĕn*
 
@@ -2300,7 +2300,7 @@ kadi dinudutakĕn mĕḥ mĕtwa jīwaṅku luṅhā*
 
 Aku manaṅis aböḥ mèḥ mĕtwa rāḥ niŋ matābaŋ,
 satata Aku masāmbat tan katoliḥ pwa dènta,
-yan ahuwusana k-āsiḥ tāri maryāku monĕŋ,
+yan ahuwusana k-āsiḥ tāri mary-āku monĕŋ,
 kita tamat awaraḥ riŋ karya luṅhā tat amwīt*
 
 tuwi Ikana Arintā lakṣmaṇékāna tan wruḥ,
@@ -2393,7 +2393,7 @@ ya mataṅ amuharopĕk duṙyyaśèŋ rāt ya pāpa,
 kalawan ikana taŋ rāt tan hanātaḥ sadoṣa,
 kita juga wiparīta glāna dé niŋ larāgöŋ*
 
-{śloka}
+{śloka}:6.64
 ⏓ ⏓ ⏓ ⏓ ⏓ ⏓ ⏓ ⏓ = :8:
 
 nāhan taṅguḥ niraṅ antĕn,
@@ -2402,7 +2402,7 @@ kapwānusup sirèṅ ālas,
 Adoḥ saṅka riṅ āśrama*
 
 tatkālān panusup kāliḥ,
-n-ton jaṭāyu manuk magöŋ,
+n-toñ jaṭāyu manuk magöŋ,
 tan byakta téka dé niŋ doḥ,
 katon kadi gunuŋ magöŋ*
 
@@ -2414,7 +2414,7 @@ jaṭāyu mawuwus wawaŋ*
 hé rāma hé raǥusuta,
 haywa sāhasa ri ṅhulun,
 jaṭāyu tāku tan kālèn,
-wruḥ tākun jānakīn pinèt*
+wruḥ tākuñ jānakīn pinèt*
 
 nā liŋ niraŋ mahāpakṣi,
 manĕmbaḥ saŋ raǥūttama,
@@ -2461,7 +2461,7 @@ dīṙgǥabāhu ṅaran ikā,
 ya ta maṅsö sira krūra,
 r-unus taŋ kadga tīkṣṇa ya*
 
-sāṅsönya rodra yāgalak,
+sāŋsönya rodra yāgalak,
 pinraŋ nira taṅanya ya,
 sāmpun pĕgat pwa bāhunya,
 tibā ta yérikaŋ lĕmaḥ*
@@ -2589,7 +2589,7 @@ yat satyèṅ īśwarāṙccaṇa*
 pitrĕpūjā kunaŋ nitya,
 lanāsanđyā kunaŋ kita,
 yat satya riŋ waca-wacan,
-lawan carita saŋ wiku*
+lawañ carita saŋ wiku*
 
 prastāwa niŋ tapa magöŋ,
 kāma moha kunaŋ hilaŋ,
@@ -2623,7 +2623,7 @@ Amaṅan hāraka mami*
 
 tĕlasnya maṅkanomati,
 śawanya tinaḍaḥ mami,
-ya tikāṅdadyakĕn duḥka,
+ya tikāŋdadyakĕn duḥka,
 Awak mami nīla waṙṇna*
 
 tāsyasiḥ hé kitaŋ rāma,
@@ -2646,8 +2646,8 @@ ya mitrānta mahāṙdđika,
 katĕmwa jānakī dénta,
 nā liŋnya dadi mokṣa ya*
 
-{turagagati}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
+{turagagati}:6.114
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
 
 rāma lakṣmaṇa muwaḥ sira manusup,
 riŋ Alas pratita kampa ya karĕṅö,
@@ -2729,8 +2729,8 @@ sanđi tībra maṅĕliḥ hati wipayoḥ,
 rĕṣyamūka giri ƀīṣaṇa masukĕt,
 nā paran nira saśoka masusupan*
 
-{basantatilaka}
-– – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓ = :14:
+{basantatilaka}:6.130
+— — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏓ = :14:
 
 tatkāla yaṙ tĕka rikaŋ giri rĕṣyamūka,
 sugrīwa śoka sira tībra maṅön akiṅkiŋ,
@@ -2742,7 +2742,7 @@ yékā paran nira lawan bala wānarākwèḥ,
 ƀaktinya mapraƀu dumèḥ ya kabèḥ tumūta,
 sugrīwa sāđu tuwi yogya siwin hiḍĕpnya*
 
-sāmpun ḍatĕŋ dadi kinon ta siraŋ hanūmān,
+sāmpuṇ ḍatĕŋ dadi kinon ta siraŋ hanūmān,
 dūtomarā ri sira saŋ raǥuputra pètĕn,
 tātaṙ wihaŋ pawanaputra kinon lumakwa,
 yékan pĕsat nira rikaŋ gaganāntarāla*
@@ -2779,7 +2779,7 @@ dé niŋ mahāgaja lanā mara daṙppa madyus*
 
 makwèh anuŋ ƀaya nikaŋ giri ƀīṣaṇa nké,
 lāwan śilātala tĕlanya malā Ulānya,
-moŋ māṅsaƀakṣa kaharĕpnya humöŋ galaknya,
+moŋ māŋsaƀakṣa kaharĕpnya humöŋ galaknya,
 tan wismayan paṅĕbusan mamisan wiṣanya*
 
 nā liŋ niraŋ pawanaputra masö matakwan,
@@ -2787,7 +2787,7 @@ mojaṙ ta saŋ raǥusutāṙ pawaraḥ rikaŋ don,
 Ꜽ Āṙyya don mami nihan ta rĕṅö tat aṅsö,
 mwaŋ hétu niŋ malarasan ya ta pājaraṅkwa*
 
-kyātīŋ sarāt daśaraŧa praƀu sarwaƀoga,
+kyātīŋ sarāt daśaraŧa praƀu saṙwwaƀoga,
 salwiṙ nikaŋ suka wiśéṣa hané sirākwèḥ,
 Akwèh anak nira Ariṅku ya dibyaśakti,
 Aṅhiŋ ṅhuluñ juga Anak nira mandaƀāgya*
@@ -2882,8 +2882,8 @@ bālī kĕbo ya wunuhan kaharan pamūjā,
 saŋ Āṙyya rāǥawa siréka kinon mayajñā,
 tārā sirāƀyudaya ƀoga ꝑalanya ƀuktin*
 
-{śiꝁariṇī}
-⏑ – – | – – – | ⏑ ⏑ ⏑ | ⏑ ⏑ – | – ⏑ ⏑ | ⏑ ⏓ = :17:
+{śiꝁariṇī}:6.160
+⏑ — — | — — — | ⏑ ⏑ ⏑ | ⏑ ⏑ — | — ⏑ ⏑ | ⏑ ⏓ = :17:
 
 saluṅhā saŋ rāmāṙ laku mara ri kiṣkiṇḋa wiwara,
 lawan saŋ sugrīwātiraƀasa sahāsaŋ kinasigan,
@@ -2896,9 +2896,9 @@ Umaṅkat saŋ bālī mĕtu ta sira saṅkèŋ giri guhā,
 malĕs makrak pūṙṇnāŋ gaganatala digdéśa hibĕkan*
 
 humuŋ hūmrĕŋ maṅsö ta sira kadi ta wyāǥra magalak,
-lawan saŋ sugrīwogratara kadi siṅhāṅrĕpa maṅaŋ,
+lawan saŋ sugrīwogratara kadi siṅhāŋrĕpa maṅaŋ,
 masö madwandwāprĕp magarut asahut kapwa manikĕp,
-manampyal maŋ­rĕṅgut paḍa ta sira gut-gūtĕn abutĕŋ*
+manampyal maŋrĕṅgut paḍa ta sira gut-gūtĕn abutĕŋ*
 
 rumukrūk taŋ rambut ginĕrĕmus umuṅgwiŋ palipisan,
 miṅis méṅas méṅā paḍa ta kapaluḥ lud maṅĕsĕsan,
@@ -2945,8 +2945,8 @@ maluy maṅsö taŋtaŋ kaka nira ta bālī mapuliha,
 tumandaŋ saŋ bālī maluy apĕluk amriḥ ta manikĕp,
 mamöṅpöŋ saŋ rāmāṙ tuju ta sira riŋ hrū kĕna pisan*
 
-{Upajāti bajra}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏓ = :11:
+{Upajāti bajra}:6.172
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏓ = :11:
 
 bālī tibā wānara wāṇḍawāwu,
 manaḥnya mènĕḥ manĕhĕṙ ta yomūr,
@@ -2980,7 +2980,7 @@ tātan pĕgat sānak apan dagiṅku*
 
 ya lèn akun sānaka dibya yāgöŋ,
 sākāśa lāwan prĕŧiwī ya siḥnya,
-yan krođamātrāṅdadi mrĕtyu yāwat,
+yan krođamātrāŋdadi mrĕtyu yāwat,
 tan saṅśayañcrol mamatī yapan lèn*
 
 yan đaṙmma niṅwaŋ ratu śūra sāđu,
@@ -3083,8 +3083,8 @@ Utus niraŋ rāǥawa hétu niŋ siḥ,
 samaṅkanékaŋ kapi wanđuwaṙgga,
 winèḥ dĕmak kapwa yaŧā kramanya*
 
-{mandākrānta}
-– – – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | – – ⏑ | – – ⏑ | – ⏓ = :17:
+{mandākrānta}:6.199
+— — — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | — — ⏑ | — — ⏑ | — ⏓ = :17:
 
 ménak tāmbĕk nira lawan ikaŋ wānarātyanta tuṣṭa,
 kapwā yāṅsö praṇata matatā yaṙ panĕmbaḥ kabèḥnya,
@@ -3093,36 +3093,36 @@ maṅsö cuṇḍuk ta ri suku niraŋ rāma maṅkin sahaṙṣa*
 
 hāḥ Āḥ nāŧātiśaya ya magöŋ siḥ ta tāman pahīṅan,
 tātaḥ magyā ta ri pamalĕsā ni ṅhulun dlāha sidđā,
-dényān rĕŋrĕŋ Iki tĕka huwus duṙbbalāŋ wānarātīs,
+dényān röŋrĕŋ Iki tĕka huwus duṙbbalāŋ wānarātīs,
 riŋ lahrū ṅkān t-alapa sira saŋ mꜽŧilī śatru śīṙṇnā*
 
-{dođakawrĕtta}
-– ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{dođakawrĕtta}:6.201
+— ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 nā ta wuwus nira saŋ kapirāja,
 minta kasiḥ ri narāđipa rāma,
 duṙbbala niŋ bala wānara hétu,
 saŋ raǥuputra Umom yanumoda*
 
-{tanumađya}
-– – ⏑ | ⏑ – ⏓ = :6:
+{tanumađya}:6.202
+— — ⏑ | ⏑ — ⏓ = :6:
 
 sāmpun samayātūt,
 rĕŋrĕŋ ya ta hèrĕn,
 sugrīwa manĕmbaḥ,
 mamwīta misātā*
 
-{mattamayūra}
-– – – | – – ⏑ | ⏑ – – | ⏑ ⏑ – | ⏓ = :13:
+{mattamayūra}:6.203
+— — — | — — ⏑ | ⏑ — — | ⏑ ⏑ — | ⏓ = :13:
 
 sāmpun mamwit śīǥra muliḥ saŋ kapirāja,
 lāwan wadwā wānara maṅkin ya sahaṙṣa,
 riŋ kiṣkiṇḍā mukti ta sīraŋ kapirāja,
-prāptāŋ rĕŋrĕŋ daṙppa Ikaŋ matta mayūra*
+prāptāŋ röŋrĕŋ daṙppa Ikaŋ matta mayūra*
 
 #saptamas saṙggaḥ#
-<ratodđata>
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+<ratodđata>:7.
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 ndā tatīta sira saŋ kapipraƀu,
 ƀukti taŋ wiṣaya niṙƀayaŋ manaḥ,
@@ -3156,7 +3156,7 @@ n-ton ikā ta kumĕtĕṙ manaḥ nira*
 
 taṙ katon wĕtu ƀaṭāra ƀāskara,
 dé nikaŋ jaladawrĕnda riŋ laṅit,
-yéka budđi nira tīkṣṇa yāṅlimut,
+yéka budđi nira tīkṣṇa yāŋlimut,
 dé ni moha nira wèt nikaŋ Unĕŋ*
 
 maṅkin onĕṅ asĕkĕl manaḥ nira,
@@ -3181,7 +3181,7 @@ sūkṣma taṙ pagamĕlan katon tuwi*
 
 nya-ŋ kunaŋ-kunaṅ anaṅgadīpa ya,
 taṙ paḍĕm paḍa-paḍān kĕḍap-kĕḍap,
-maŋ­raras-rarasakĕn manaḥ mibĕr,
+maŋraras-rarasakĕn manaḥ mibĕr,
 hāḥ manaḥku baribin tumon ikā*
 
 lèn kilat marimisī matāhulap,
@@ -3221,7 +3221,7 @@ hāḥ warĕg Aku huwus rikaŋ lara*
 
 saŋ mahāmuni hanèṅ alas kabèḥ,
 kölan iŋ daṅu-daṅū tatan lĕgö,
-wèt nikaŋ diwasa röŋrĕṅ aṅgĕgĕs,
+wèt nikaŋ diwasa rĕŋrĕṅ aṅgĕgĕs,
 mohitā ta sira liṅku taṙ suka*
 
 nyā-ŋ wihuŋ muni lawan manuk humuŋ,
@@ -3270,12 +3270,12 @@ hāḥ lukan wita gĕlāna ni ṅhulun,
 yan kaṅĕn-n-aṅĕn ataḥ kitèŋ kulĕm*
 
 O kataṅhi ṅ-alarāṅaraŋ makuŋ,
-prĕmm-Akĕn kasula tan pijĕṙ pwa wèḥ,
-tan hanāṅrasa sawèt nikaŋ huyaŋ,
+prĕmm-akĕn kasula tan pijĕṙ pwa wèḥ,
+tan hanāŋrasa sawèt nikaŋ huyaŋ,
 hāḥ wiyoga kadurus niroṣađa*
 
-{prĕŧwītala}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+{prĕŧwītala}:7.31
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 nahan ta ya taṅis nirān hana rikaŋ gunuŋ mālyawān,
 Ikaŋ wĕṅi tamaṙ kĕjĕp maṅĕn-aṅĕn priyā mꜽŧilī,
@@ -3292,7 +3292,7 @@ tinon nira ƀaṭāra candra mawĕlū sĕḍĕŋ pūṙṇnama,
 kadi pwa muꝁa saŋ priyā janakarājaputrī n-hiḍĕp,
 wawaŋ sira kataṅguhan r-ujari téka saŋ lakṣmaṇa*
 
-Ariṅku wulati-ŋ laṅit hana ta haṅsa haṙṣāṅlayaŋ,
+Ariṅku wulati-ŋ laṅit hana ta haṅsa haṙṣāŋlayaŋ,
 mamèt talaga haṙṣayan muni kabèḥnya konĕŋ Unĕŋ,
 Awās ya Iki lahru liṅku samayanta yèkin tĕka,
 Ah adwa tikanaŋ kapindra samayanya yā tan tuhu*
@@ -3337,16 +3337,16 @@ Ikaŋ wrayatagĕn kabèh umahasèŋ gunuŋ riŋ Alas,
 piraŋ sukĕta niŋ Alas susupananya kapwāmriha,
 Asiŋ sakahanan niraŋ janakarājaputrī n-parā*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:7.43
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 saŋ sugrīwa nahan ta liŋ nira ri saŋ somitra maṅkat sira,
 ṅ-kon tékaŋ bala wānarāmriha kabèḥ tātan hanā kāntuna,
-śīǥrāŋ wré Inatag ḍatĕŋ kakurutug maṅsö kabèḥ maŋ­rakĕt,
-saŋ somitra madĕg sirāṅdulurakĕn saŋ sugriwāgyā sira*
+śīǥrāŋ wré Inatag ḍatĕŋ kakurutug maṅsö kabèḥ maŋrakĕt,
+saŋ somitra madĕg sirāŋdulurakĕn saŋ sugriwāgyā sira*
 
 śīǥra prāpta ri mālyawān dadi masö cuṇḍuk siraŋ rāǥawa,
-saŋ sugrīwa huwus manĕmbah umarĕk taŋ wré kabèḥ maŋ­rĕpa,
+saŋ sugrīwa huwus manĕmbah umarĕk taŋ wré kabèḥ maŋrĕpa,
 sāmpunyān praṇatān paluṅguh abukuḥ matwaŋ tumuṅkul kabèḥ,
 dényāṙ ton sira saŋ kapīśwara masö mojaṙ I-saŋ rāǥawa*
 
@@ -3355,7 +3355,7 @@ tan wruḥ riŋ samayān tĕkāṅinak-inak mĕṅgĕp krĕtajña ṅhulun,
 tan kiṅkiŋ Upakāra tan Aṅĕn-aṅĕn yātālupālaḥ jĕnĕk,
 jātī mūḋa minitra tan wruh iniwö tan ṅèḥ gumantyāṅiwö*
 
-lāwan jāti nikaŋ wyamoha tumĕmu-ŋ ƀogāwĕrö yālupa,
+lāwañ jāti nikaŋ wyamoha tumĕmu-ŋ ƀogāwĕrö yālupa,
 tan wruḥ riŋ maṅanugrahé ya mahiwaŋ saktèṅ inak kéwala,
 ndan lotatya naréndra ri ṅhulun apan mūḍātimūḍāđama,
 saṅké pèt naranāŧa hétu ni tutuṙ niŋ mūḋa yékin tĕka*
@@ -3376,7 +3376,7 @@ nāhan dona nihan hawanta maṅidul saṅkérikaŋ mālyawān,
 t-ambaḥ taŋ giri pāṙśwa toḥ laku muwaḥ ton taŋ tasik loṙ kidul*
 
 sāmpunyān haliwat rikaŋ jalađi ton tékaŋ suwélācala,
-yapwan prāpta tĕkāṅhinĕp jaga-jagā yatnā magantyāturū,
+yapwan prāpta tĕkāŋhinĕp jaga-jagā yatnā magantyāturū,
 Akwèḥ rākṣasa sāhasèŋ wĕṅi mahās yékān kayatnākĕna,
 mwaŋ saŋ śrī janakātmajā t-iṅĕt-iṅĕt riŋ rājya lĕṅkāpura*
 
@@ -3400,8 +3400,8 @@ luṅhā-ŋ dūta madĕg ta saŋ śatabali wré śakti śīǥrāṅalor,
 wétan déśa paran niraŋ winata wèt niŋ gyā lumumpat kabèḥ,
 lāwan wré śata koṭi saṅꝁya ya tumūt śāṙddūlawikrīḍita*
 
-{twaritagati}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ ⏑ ⏑ | ⏓ = :10:
+{twaritagati}:7.55
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ ⏑ ⏑ | ⏓ = :10:
 
 Aŧa lumaku-ŋ wrayasasaran,
 saka ri pakon raǥutanaya,
@@ -3483,15 +3483,19 @@ syapa paṅaran nira karĕṅö,
 kita ta rarāhayu saꝑala,
 saṅapa ṅaranta warahakĕn*
 
-{tanumađya}
-– – ⏑ | ⏑ – ⏓ = :6:
+{tanumađya}:7.71
+— — ⏑ | ⏑ — ⏓ = :6:
 
 nā liŋ nikanaŋ wré,
 mītrĕṣṇa kabèḥnya,
 mojaṙ tikanaŋ strī,
 kanyā tanumađyā*
 
-{tiḍak dikĕtahui}
+{Āṙyyā}
+! — — | — — | — ⏓ = :12: !
+! — — | — — | — — | — ⏓ | = :18: !
+! — — | — — | — ⏓ = :12: !
+! — — | — — | ⏑ | — — | ⏓ = :15: !
 
 wwara sira dānawarāja,
 ṅaran ira saŋ wiśwakaṙmma tamoli,
@@ -3513,8 +3517,8 @@ ri lĕṅka mĕné-ŋ gĕlĕk méṅgal,
 ndak wĕtwakĕn kita kabèḥ,
 ndan tukupi matanta haywa mulat*
 
-{Indrabajra}
-– – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏓ = :11:
+{Indrabajra}:7.76
+— — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏓ = :11:
 
 nā liŋ nikaŋ dānawarājakanyā,
 Ūmañcana-ŋ wānara donya tan lén,
@@ -3526,24 +3530,24 @@ sāmitra jātinya Ulaḥnya tuṅggal,
 nāhan ta hétunya dumèḥ ya mélik,
 miǥnèkanaŋ wré magawé ta māyā*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:7.78
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 samaṅkanaŋ wré tamataṙ wihaŋ kabèḥ,
 siraŋ hanūmān tuwi moǥa mohita,
 wijaḥ kabèḥ mrĕm matukup-tukup mata,
 tatan hanātaḥ tumahā ya bañcana*
 
-{Upajāti waṅśa}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Upajāti waṅśa}:7.79
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 sawèt ni ṅèlnyān panusup saranta ya,
 magyān tĕkā yéka dumèḥnya maṅga ya,
 sĕḍĕŋnyan ūmrĕm kinĕnan ta yĕŋ mayā,
 taṙ ton ry-awaknyan mĕtu saṅka riŋ guhā*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:7.80
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 tinonya tāwaknya ri hèŋ nikaŋ guhām,
 wimoha tan wruḥ wulaṅun hilaŋ tutur,
@@ -3635,32 +3639,32 @@ huwus Atīta-ŋ samayālawas dahat,
 tatan tĕmu-ŋ donnya ta hétu niŋ Iraŋ,
 mataŋnya taṅsö ta patuk paṅan kami*
 
-{Upajāti waṅśa}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Upajāti waṅśa}:7.98
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 nā liŋ nikaŋ wré paḍa mātya don ikā,
 sampāti māsiḥ Umuwaḥ siromajar,
 Ah-o lukan kāsih-asiḥ ta mohita,
 Amoǥa māśā wulaṅun kuraŋ tutur*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:7.99
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 pinatyakĕntéka Awakta duṙyyaśa,
 ndya dona niŋ mātya tatan pakāraṇa,
 Adĕg tat amriḥ sahananta cāraka,
 katĕmwa dontāt aṅidul Aŧomuwaḥ*
 
-{Upajāti braja}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Upajāti braja}:7.100
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 yapwan panon rājya Umaḥ hĕmas kabèḥ,
 Umuṅgwi puñcak nikanaŋ gunuŋ magöŋ,
 ya téka lĕṅkā kahanan niṅ apsarī,
 tatan pahi mwaŋ himawān ikaŋ hayu*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:7.101
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 lĕwiḥ sakèŋ swaṙgga hayunya kādƀuta,
 tahaṅkwi lĕṅkā sari niŋ jagat kabèḥ,
@@ -3707,16 +3711,16 @@ sadaṙppa dé niŋ maṇiratna taṙ malaḥ,
 Anéka tolaḥnyan alaḥ wimohita,
 swaƀāwa niŋ śrī ya nimitta riŋ wĕrö*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:7.110
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 Aṅinya mādrĕs ya lanomiriṙ matīs,
 kadi pwa yośwāsa nikaŋ samudra ya,
 Ahos ikāmbĕknyan alaḥ warĕg dahat,
 minum Ikaŋ lwaḥ humilī nirantara*
 
-{kusumawicitra}
-⏑ ⏑ ⏑ | ⏑ – – | ⏑ ⏑ ⏑ | ⏑ – ⏓ = :12:
+{kusumawicitra}:7.111
+⏑ ⏑ ⏑ | ⏑ — — | ⏑ ⏑ ⏑ | ⏑ — ⏓ = :12:
 
 jĕnĕk ikanaŋ wānara Umulat riŋ,
 jalađi humuŋ ṙyyaknya paḍa manĕmpuḥ,
@@ -3728,17 +3732,17 @@ makara Uraŋ riŋ karaṅ akaramkam,
 hana ta Iwak wré paḍa ya lumumpat,
 gumuyu kĕkĕl wānarabala dénya*
 
-{pṛŧiwītala}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+{pṛŧiwītala}:7.113
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 sĕḍĕn pijĕr ikaŋ kapiprawara yan panonton iwak,
 saṅ aṅgada makon umaṅkata madĕg ta saŋ māruti,
-Apan pawanaputra muꝁya nikanaŋ kinon cārakā,
+Apan pawanaputra muꝁya nikanaŋ kinoñ cārakā,
 madĕg ta sira mĕḥ lumakwa kawĕkas tikaŋ wré kabèḥ*
 
 #Aṣṭamas saṙggaḥ#
-<drutawilambita>
-⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏓ = :12:
+<drutawilambita>:8.1
+⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏓ = :12:
 
 Aŧa mĕsat ta siraŋ pawanātmaja,
 gagana yéka hawan nira maŋlayaŋ,
@@ -3765,7 +3769,7 @@ pratita rodra ṅaranya si ḍākinī,
 Atiwiśāla tutuknya mĕṅā maṅaŋ,
 ya humĕlö sira śīǥra tĕkĕŋ wĕtĕŋ*
 
-pawanaputra widagđa sirāṅduduk,
+pawanaputra widagđa sirāŋduduk,
 sĕbitakĕn ta wĕtĕŋnya mĕsat sira,
 dadi maṅohan ikaŋ kala rākṣasī,
 katatakut kadi śabda niṅ ampuhan*
@@ -3775,8 +3779,8 @@ wuhaya lèn hyu masö marĕbut dagiŋ,
 hana timiṅgila kapwa warĕg kabèḥ,
 saka ri göŋ nikanaŋ jaḍa dākinī*
 
-{prahaṙṣiṇī}
-– – – | ⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{prahaṙṣiṇī}:8.8
+— — — | ⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 sāmpun māti dadi sahaṙṣa saŋ hanūmān,
 n-ton taŋ paṙbwata ri tĕṅaḥ nikaŋ samudra,
@@ -3828,8 +3832,8 @@ sakwèḥnyā-ŋ suraripu rākṣasolihĕṅkwa,
 swasŧā niŋ ƀuwana ya sāđya déṅku tan lèn,
 nā liŋ saŋ pawanasutomibĕṙ ta luṅhā*
 
-{bramitākṣara}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ ⏑ ⏓ = :12:
+{bramitākṣara}:8.18
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ ⏑ ⏓ = :12:
 
 hana rākṣasī katĕmu dé nira lén,
 wikaṭākṣinī ya ta ṅaranya gahan,
@@ -3943,7 +3947,7 @@ ri larā niraŋ raǥusutāṙ papasaḥ*
 
 karuṇā manaḥ nira saśoka tĕmĕn,
 mari yaṙ wulat riṅ aṅinum masiwo,
-mari maŋ­rĕṅö kiduṅ alaḥ malara,
+mari maŋrĕṅö kiduṅ alaḥ malara,
 humilī ta luḥ nira-nirantara ya*
 
 kramakāla mèḥ ta ya pisan tabĕha,
@@ -4036,8 +4040,8 @@ ya ta gopuranya kadi cūla lumön,
 ri lawaŋnya rākṣasa mapaṇṭa kĕmit,
 ya tikā sihuŋnya masalit maluṅid*
 
-{śālinī}
-– – – | – – ⏑ | – – ⏑ | – ⏓ = :11:
+{śālinī}:8.59
+— — — | — — ⏑ | — — ⏑ | — ⏓ = :11:
 
 nāhan lwiṙ niŋ paṙhyaṅan ṅkā ri lĕṅkā,
 saśrī téjanyojwalāƀrā praƀānya,
@@ -4047,11 +4051,11 @@ maṅkin saśrī paṙhyaṅan srīnya kasraŋ*
 déwī sītā byakta liṅkun hana ṅkā,
 liŋ niŋ cittānaṙkka yākon lumakwa,
 yékān lumpat saŋ hanūmān tĕka ṅka,
-ton taŋ wadwā rākṣasāṅrākṣa tan kraḥ*
+ton taŋ wadwā rākṣasāŋrākṣa tan kraḥ*
 
 momo niŋ wwil yéka wīnāni-wāni,
-yatnā tuṅgw-Iṅkaŋ catuṙ dwāra n-uṅgu,
-kapwāṅraṅkak caŋ-ciṅ añcaŋ kacaṅkag,
+yatnā tuṅgwiṅkaŋ catuṙ dwāra n-uṅgu,
+kapwāŋraṅkak caŋ-ciṅ añcaŋ kacaṅkag,
 moṅsil mèṅsĕl pāwakanyākral-akral*
 
 mawyaŋ mèkĕl woknya mākrĕp kumisnya,
@@ -4120,8 +4124,8 @@ yan riŋ téjā sūṙyya sèwūpamanya,
 yan riŋ krūrā-ŋ rāhu sākṣāt muꝁanya*
 
 ṅkānāṙ tonton saŋ daśāsya prasupta,
-tulyātĕṅgö nidra tan paŋ­rĕṅö rāt,
-lāwan cèṭī cèṭṭa riŋ krīḍa tan kraḥ,
+tulyātĕṅgö nidra tan paŋrĕṅö rāt,
+lāwañ cèṭī cèṭṭa riŋ krīḍa tan kraḥ,
 māmbö rūm niŋ kasturī bāhu sumrak*
 
 lwiṙnyèŋ gātra byakta kꜽlāśa riŋ göŋ,
@@ -4136,7 +4140,7 @@ wètnyān séḍuŋ ǥūṙṇnitādrĕs pracaṇḍa*
 
 Āśꞓaṙyyāmbĕk saŋ hanūmān tumon ya,
 Aṙdđāsowé wèt nirān kādƀutātaḥ,
-maŋ­ruṅkuk riŋ pañcaraṅkaŋ rumaṅkaŋ,
+maŋruṅkuk riŋ pañcaraṅkaŋ rumaṅkaŋ,
 raṅcānāmbĕk yaṙ paluṅguḥ wisāta*
 
 sakwèḥ niŋ strī kapwa nidrā kabèḥnya,
@@ -4204,8 +4208,8 @@ dèwī sītā ṅkā tamolaḥ tinuṅgu,
 mènĕḥ monĕŋ mona māśā saśoka,
 Aṅhiŋ wwil kwèḥ taṙ parowaŋ sira wwaŋ*
 
-{punaṙmmada}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :13:
+{punaṙmmada}:8.92
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :13:
 
 ya Ikā paran saṅ anilātmajāṙ pamèt,
 maṅikis sirāṙ tĕka manèk rikaŋ kayu,
@@ -4220,7 +4224,7 @@ dadi jāgra taŋ kusuma māri yākucup*
 matakut ta saŋ pawanaputra riŋ Aṅin,
 tumahā pawuṅwa nikanaŋ manuk kabèḥ,
 humĕnĕŋ sirāmrih aṅuḍampĕl iŋ kayu,
-cala pāŋnya tulya ya maṅulyat aṅlilir*
+cala pāŋnya tulya ya maṅulyataŋlilir*
 
 maṇi candrakānta tamalaḥ rikaŋ taman,
 kĕna raśmi ya drawa humīs nirantara,
@@ -4229,7 +4233,7 @@ manaṅis rikaŋ wĕṅi tamaṙ kĕnĕŋ turū*
 
 Ikanaŋ sĕkaṙ ya rinurū rikaŋ Aṅin,
 manaṅis jugān paguliṅan rikaŋ lĕmaḥ,
-tumibāṅhĕbun kabarabas ya luḥ nikā,
+tumibāŋhĕbun kabarabas ya luḥ nikā,
 malarāṙ wulat ri sira dèwi jānakī*
 
 Aŧa mĕḥ wwaluŋ tabĕh ajāgra taŋ manuk,
@@ -4242,7 +4246,7 @@ tuwi suswarān uni manojña yaṙ hiḍĕp,
 mahĕbaŋ-hĕbaŋ hati nirāgiraŋ manaḥ,
 Umaṅĕn-n-aṅĕn prawara rāǥawān mara*
 
-pawanātmajātiśaya haṙṣajāṅrĕṅö,
+pawanātmajātiśaya haṙṣajāŋrĕṅö,
 Uni niŋ manuk śuƀanimitta liŋ nira,
 saꝑaléki ṅèlku wĕkasanta yaṙ hiḍĕp,
 niyatān katĕmwa sira dèwi jānakī*
@@ -4268,7 +4272,7 @@ kadi rūpa niŋ priyawijāya duḥkita,
 A-ha dèwi liŋ nira saniśꞓayèŋ manaḥ*
 
 maṅiṅĕt-Iṅĕt maṅujiwat sirāṙ wulat,
-mĕtu kawrayan nira tumuṅkul aṅjĕṅok,
+mĕtu kawrayan nira tumuṅkulaŋjĕṅok,
 masĕkĕl tikā hati nirāṙ wulat masiḥ,
 lara niŋ kasaḥ priyawiyoga liŋ nira*
 
@@ -4292,7 +4296,7 @@ kala rākṣasī tan anumāna riŋ kasaḥ,
 maṅidīdi mèdi ri siraŋ kĕnĕŋ Unĕŋ,
 Awijaḥ mamid maṅujiwat Alaḥ puji*
 
-Umulat sirékanaṅ agupyan aṅdĕlö,
+Umulat sirékanaṅ agupyanaŋdĕlö,
 mawisik-wisik mrisakiti-ŋ wiyoga wèḥ,
 I lukān iké tan anumāna duṙjjana,
 ya ta liŋ nirojar-ujar iŋ dalĕm hati*
@@ -4317,7 +4321,7 @@ Ari mꜽŧilī lalu lalista ri ṅhulun,
 narakāku tāri yadiyan mrĕṣodita,
 kita tāri kéwala gumantuṅ iŋ mata*
 
-janakātmajātiśaya maṅkin aṅlaré,
+janakātmajātiśaya maṅkinaŋlaré,
 sa Ulaḥta tan malalisāta liṅkwari,
 nya laraṅku dènta kalalaḥ lĕhöŋ pĕjaḥ,
 kaśulāpa tan hana Asiḥ ta ri ṅhulun*
@@ -4394,7 +4398,7 @@ Apa ko malap ry-aku sĕḍĕŋnya tan hana*
 
 yadiyan prawīra kamu wāni riŋ raṇa,
 ndya mataŋnya taṙ papagakĕn sirèṅ alas,
-syapa śūra maŋ­raƀasa yan taya-ŋ musuḥ,
+syapa śūra maŋraƀasa yan taya-ŋ musuḥ,
 ya ta hīna śakti tĕṅĕranmu duṙjjana*
 
 tĕṅĕranyu yan wĕdi-wĕdī raṇāṅgaṇa,
@@ -4402,7 +4406,7 @@ paradāra kéwala manaḥmu taṙ wanèḥ,
 rinĕṅöṅku dé nikana saŋ jayèŋ musuḥ,
 Ikanaŋ tawan ya ta winèḥ yaŧāsuka*
 
-Apa paŋ­rĕṅömu I-siraŋ raǥūttama,
+Apa paŋrĕṅömu I-siraŋ raǥūttama,
 takarin sirékana đanuṙđarèŋ jagat,
 puruṣottamāṅśa sira déwamānuṣa,
 niyatāta ko pĕjaha dé nirèŋ raṇa*
@@ -4493,7 +4497,7 @@ A-ha mandaƀāgya mapasaḥ sĕḍĕŋ masiḥ,
 Aparanta ménaka Iké Awakkwari*
 
 ndya kunĕŋ kaŧā carita pūṙwwakāla ya,
-Irikaŋ purāṇa Aji parwa kāṇḍa lèn,
+Irikaŋ purāṇa Aji paṙwwa kāṇḍa lèn,
 mapasaḥ gĕlāna rasa mātya tambayan,
 wĕkasan mapaṅguh aduluṙ lawan sĕnĕŋ*
 
@@ -4508,7 +4512,7 @@ lalu nisꝑalāŋ parahitèŋ jagat kabèḥ,
 tuwi déwatā wimuꝁa đik tamaṙ wulat*
 
 Atitībra riŋ lara wimoha bāp aku,
-satinonkwasiŋ sarinĕṅöṅku yāṅlaré,
+satinonkwasiŋ sarinĕṅöṅku yāŋlaré,
 tuwi baṅsi kinnara ya kaṙṇnaśūla ya,
 lara niŋ wiyoga kadurus niroṣađa*
 
@@ -4525,7 +4529,7 @@ magawé prapañca ya mawèh unĕŋ magöŋ*
 kapanānta nora ta kunĕŋ Ikèṅ unĕŋ,
 mananā manaḥku manasaṙ manāŋ lanā,
 manaranta saŋ madana mèdi maŋlaré,
-mamanaḥ sirāmanasi maŋ­ruraḥ hati*
+mamanaḥ sirāmanasi maŋruraḥ hati*
 
 hati niŋ wiyoga juga tībra yāgĕsĕŋ,
 dadi kaṣṭa dé ni śara saŋ manoƀawa,
@@ -4602,8 +4606,8 @@ mapanas hiḍĕpku riya mimbuhiŋ Unĕŋ,
 kumĕlab hatiṅku rumĕṅö gĕrĕḥ malon,
 tumibā hudan kadi ya mèdi lot humuŋ*
 
-{turagagati}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
+{turagagati}:8.171
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
 
 riŋ śilātala rikāku tĕka maṅö,
 swāmi nitya ya lanā maṅaway-away,
@@ -4635,16 +4639,16 @@ tībra māsih iṅ anak sira maharis,
 ḍū ndya tolahan ikin priyawiraha,
 yak hanèŋ kalana rākṣasa tinawan*
 
-{mālinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{mālinī}:8.177
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 krama lumaku ta kāliḥ riŋ prasāda ṙ-pamūjā,
 mapunagi ta ri saŋ hyaŋ prāṙŧanākèn naréndra,
 ri hurip a-nira lāwan ménakékaŋ paluṅguḥ,
 ya Ikana ta sināđyā tan kalèn dé nirāsiḥ*
 
-{punaṙmmada}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :13:
+{punaṙmmada}:8.178.
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :13:
 
 Anilātmajātiśaya haṙṣa yaṙ wulat,
 tumurun sakèŋ kayu ḍatĕŋ sirèŋ lĕmaḥ,
@@ -4666,7 +4670,7 @@ ginawénya tékana Awaknya wānara,
 caritanya bañcana waliṅku tan tuhu,
 ri harèpnya yan syaṅana marya rākṣasa*
 
-hana paŋ­rĕṅöṅku tuwi wrĕttamātra ya,
+hana paŋrĕṅöṅku tuwi wrĕttamātra ya,
 pawaraḥ nikaŋ pinakacāra rākṣasa,
 wwara rakwa wānara kinon marā ry-aku,
 ndan asamƀawa-ŋ prawaga yan ya cārakā*
@@ -4716,11 +4720,11 @@ ri Iwĕḥ nikaŋ wwaṅ amĕnaŋ rikaŋ raṇa,
 Ikanaŋ pakon ƀiṣama yan kasiđđa ya,
 ya dumèḥ ṅhulun wuruṅ umaṅswa maŋlagā*
 
-{Āṙyyā}
-! – – | – – | – – = :12: !
-! – – | – – | – – | – – | = :18: !
-! – – | – – | – – = :12: !
-! – – | – – | ⏑ | – – | – = :15: !
+{Āṙyyā}:8.192
+! — — | — — | — ⏓ = :12: !
+! — — | — — | — — | — ⏓ | = :18: !
+! — — | — — | — ⏓ = :12: !
+! — — | — — | ⏑ | — — | ⏓ = :15: !
 
 wwara mitra rāka dèwī,
 saŋ sugrīwa ṅaran nira,
@@ -4832,16 +4836,16 @@ ya tékana laganaṅkwa,
 pĕjaḥ pwa Ika ya dèṅku,
 yaśaṅku tuwi ya wrĕdđya*
 
-{drutawilambita}
-⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏓ = :12:
+{drutawilambita}:8.214
+⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏓ = :12:
 
 Aŧa huwus nira māṅĕn-aṅĕn madĕg,
 raƀasa taŋ kayu rāmya rikaŋ taman,
 syapa ta rākṣasa wānya masö huwus,
 papagakĕnta si māruti liŋ nira*
 
-{Aśwalalita}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ ⏓ = :23:
+{Aśwalalita}:8.215
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ ⏓ = :23:
 
 pracalita puṣpa niŋ kayu rurū sarinya ya mĕlĕk kadi pwa ya kukus,
 kalawan ikaŋ palāśa tumibā sĕkaṙnya ya mabaŋ Akĕn hudan apuy,
@@ -4849,8 +4853,8 @@ Ibĕkan ikaŋ lĕmaḥ kadi dilaḥnya riŋ pralayakāla ƀīṣaṇa katon,
 ruru kĕna lèn kidaŋ masasaran kadi pwa matakut manon hudan apuy*
 
 #nawamas saṙggaḥ#
-<kusumawicitra>
-⏑ ⏑ ⏑ | ⏑ – – | ⏑ ⏑ ⏑ | ⏑ – ⏓ = :12:
+<kusumawicitra>:9.1
+⏑ ⏑ ⏑ | ⏑ — — | ⏑ ⏑ ⏑ | ⏑ — ⏓ = :12:
 
 Aŧa ri sĕḍĕŋnyāñcalita nanā rūg,
 kayu nikaṅ udyānawana ya śīṙṇna,
@@ -4909,7 +4913,7 @@ jalada si sambaṙttaka juga moni*
 
 saha bala taŋ rākṣasa kaharan lwaḥ,
 tĕka gumuruḥ ǥora kadi sĕḍĕŋ wāḥ,
-pawanasutāṅkĕn jalađi suđīra,
+pawanasutāṅkĕñ jalađi suđīra,
 pratidina taŋ wāḥ tĕka riya tan sök*
 
 babahaniṅ udyānawana ya māwān,
@@ -4982,8 +4986,8 @@ mapulih asĕṅhit mamawa krĕtāla,
 salahasa méḥ mamraṅa ya ginĕgwan,
 mati kapisan tan pabiṣa tinampyal*
 
-{toṭaka}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ ⏑ – | ⏑ ⏑ ⏓ = :12:
+{toṭaka}:9.27
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ ⏑ — | ⏑ ⏑ ⏓ = :12:
 
 hana lén aliman ya dalanya masö,
 binulusnya luput sira śīǥra mĕsat,
@@ -5000,8 +5004,8 @@ sumiliḥ mapuliḥ malĕmöḥ suruda,
 laju hīna nikaŋ malayū Umuliḥ,
 ya ta liŋnya maṅĕmbuli kapwa mamūk*
 
-{citrālaya}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏓ = :13:
+{citrālaya}:9.30
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏓ = :13:
 
 mamĕkul ya sadaṙppa hana ta manĕwĕk,
 pinĕrĕp tinĕkĕk siniku ya dinĕdĕl,
@@ -5063,8 +5067,8 @@ sagunuŋ juga göŋnya paḍa ta ya kanin,
 Umilī mĕtu rāḥnya ri muꝁa ya mabāŋ,
 kadi đātu sakèŋ giriwiwara mulĕk*
 
-{citraraśmi}
-– – – | – – ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ – | – ⏑ – | – ⏑ – | ⏓ = :19:
+{citraraśmi}:9.42
+— — — | — — ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ — | — ⏑ — | — ⏑ — | ⏓ = :19:
 
 sāmpun śīṙṇnā rākṣasabala maṅadĕg saŋ hanūmān sadaṙppa,
 riŋ Udyāna ṅkān ya mara rumaƀasā-ŋ pārijātātiśoƀa,
@@ -5111,8 +5115,8 @@ maṅsö sy-akṣa ṅkān muwah amanahi riŋ Astra saṅhārarāja,
 tātandwan tandaŋ saṅ anilasuta yaṙ duk tikaŋ sy-akṣa riŋ paŋ,
 sĕmpal bāhunyān kĕna mati kapisan rāḥnya muñcaṙ ya mūṙcca*
 
-{ƀujaṅgaprayāta}
-⏑ – – | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :12:
+{ƀujaṅgaprayāta}:9.51
+⏑ — — | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :12:
 
 huwusnyān pĕjaḥ sy-akṣa dé saŋ hanūmān,
 lumumpat sirè sāgara ṅkān parādyus,
@@ -5139,35 +5143,35 @@ cacal caṇḍanāpan kĕné wit nikaŋnyū,
 Anak niŋ manuk glāna monĕŋ ya moni,
 manuŋsuŋ Inaŋnyan Umaṅsö manambĕr*
 
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:11: = :39:
+{daṇḍaka}:9.56,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:11: = :39:
 
 wuru-wuru kawurug rikaŋ wrĕkṣa mawwaḥ wwara wwawwa yāwū lawan wūt mawūŋ jīwa-jīwāwĕdi wwawwa yāwok umūṙ mwaŋ lutuŋ,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:11: = :39:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:11: = :39:
 kaḍawa wuru kutut katūt yān tumūt riŋ Atat yātatā yātakut n-ton ikaŋ lomaśa mriḥ mibĕṙ mwaŋ mayūrāduluṙ syuŋ swarī,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:9: = :33:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:9: = :33:
 Umulat umututuŋ lutuŋ tuṅga-tuṅgal manuŋtuŋ ri tuŋtuŋ nikaŋ gintuṅantaṙ paṅan wwaḥnya kéṅin-n-iṅin,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:9: = :33:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:9: = :33:
 ƀramara mara mariŋ rikaŋ kaṙṇnikārārurū rūg karūgan paḍāntĕn sarinyéniriṙ dé nikaŋ mārutā*
 
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:24: = :78:
+{daṇḍaka}:9.57,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:24: = :78:
 
-saƀaya masasaran śaśanyān saśokānusup ṅkā ri soṙ niŋ saruṇyārĕṇĕb ronya mākrĕp sukĕt witnya śūnyomasuk taŋ śaśa ṅkāṅikiṙ mīs awaknyomahā yāṅrĕpāṅhèṙ hana pwéki kañcil kumuñcaŋ lumumpat mĕsat taŋ śaśān śīǥra kagyat kabèḥnyālayū,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:23: = :75:
+saƀaya masasaran śaśanyān saśokānusup ṅkā ri soṙ niŋ saruṇyārĕṇĕb ronya mākrĕp sukĕt witnya śūnyomasuk taŋ śaśa ṅkāṅikiṙ mīs awaknyomahā yāŋrĕpāṅhèṙ hana pwéki kañcil kumuñcaŋ lumumpat mĕsat taŋ śaśān śīǥra kagyat kabèḥnyālayū,
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:23: = :75:
 camara-mararakan parĕŋ yālayū līla yālon lumonlon lakunyābalĕm miṅgut-iṅgut liman glāna Abwat maṅaṇḍuŋ wĕtĕŋnyān palaṇḍuŋ Ikātan wĕnaŋ yan maṅèl kāpwa mĕṅgaḥ Umaṅguḥ gulūnyā ṅĕliḥ lolya molaḥ Ilatnyāmalāṅèl mĕhāḥ,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:23: = :75:
-saraƀa-saraƀasan mĕsat śīǥra luṅhā milu-ŋ tiṅgiliŋ tan Ilu-ŋ tan lĕgö niścayāpan subadđāṅrasuk riŋ sukĕt héwa riŋ laṇḍak amriḥ makuṇḍaŋ priyā maŋ­rĕpātaḥ ri soṙ niŋ puḍak döḥ Ah-o hīna yā liŋ nikaŋ tiṅgiliŋ siḥ nikaŋ tīṅaluŋ,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:24: = :78:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:23: = :75:
+saraƀa-saraƀasan mĕsat śīǥra luṅhā milu-ŋ tiṅgiliŋ tan Ilu-ŋ tan lĕgö niścayāpan subadđāŋrasuk riŋ sukĕt héwa riŋ laṇḍak amriḥ makuṇḍaŋ priyā maŋrĕpātaḥ ri soṙ niŋ puḍak döḥ Ah-o hīna yā liŋ nikaŋ tiṅgiliŋ siḥ nikaŋ tīṅaluŋ,
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:24: = :78:
 pati susu-susup iŋ sukĕt rūmnya rūkṣāpasaḥ kāsyasiḥ satwa sakwèḥnyanuṅgwiŋ taman maṅkana wwa-wwahan kapwa héman-manisnyénigū saŋ hanūmān babaryan tibā riŋ lĕmaḥ kapwa kāmbaḥ humis duḥnyaduḥkānaṅis lwiṙnya yāpan salaḥ lwiṙ rĕmĕk yārĕmuk*
 
-{ƀujaṅgaprayāta}
-⏑ – – | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :12:
+{ƀujaṅgaprayāta}:9.58
+⏑ — — | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :12:
 
 huwus saŋ hanūnān rumūg pārijāta,
 mararyan sirèŋ hèŋ niṅ udyāna kulwan,
 humèṙhèr ikaŋ rākṣasānuŋ masĕṅhit,
-hanāmbĕk nikā saŋ daśāsyāṅlagāna*
+hanāmbĕk nikā saŋ daśāsyāŋlagāna*
 
 yadin rāwaṇāsĕṅhitātaḥ marā ṅké,
 lagānaṅkwa tĕṇḍasnya yékolihaṅkwa,
@@ -5240,7 +5244,7 @@ panaḥ téka saŋ mārutī ṅ-astra tīkṣṇa,
 tataṙ pāṅapātaḥ panaḥnyāṙ pupug ya*
 
 masö tuṅgaṅan tulya yā siṅha maṅhrik,
-parĕŋ yāṅdĕmak saŋ hanūmān lumumpat,
+parĕŋ yāŋdĕmak saŋ hanūmān lumumpat,
 tuhuk pyaḥ nikaŋ tuṅgaṅan riŋ nakāgra,
 mĕtu-ŋ rāḥ sakéruŋnya jīwanya luṅhā*
 
@@ -5299,8 +5303,8 @@ Awās yékanaŋ pāśa śīṙṇnā yar ahyun,
 Upāyā nirāṙ tona saŋ rāwaṇèkā,
 mataŋnyān hĕnĕŋ riŋ ƀujaṅgaprayāta*
 
-{suwadanā}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | – ⏑ ⏑ | ⏑ ⏓ = :20:
+{suwadanā}:9.85
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | — ⏑ ⏑ | ⏑ ⏓ = :20:
 
 tat kāla n-kāpusan saŋ pawanasuta humuŋ taŋ rākṣasabala,
 lāwan saŋ méǥanādāṅamah-amah umahöm mahyā saha bala,
@@ -5318,12 +5322,12 @@ hāḥ wré duṣṭāṭiđūṙŧāđama pĕjahi huwus tunwīka ta mĕné,
 ndaḥ krĕt tĕṅgĕknya rāḥnyéninum aŧa ca pupuḥ tĕṇḍasnya rĕmukĕn*
 
 đūṙttèkī dūta niŋ rāǥawa mamati-matī donyā ṅalah-alaḥ,
-mĕṅgĕp śāntān tinonton iniṅĕt-iṅĕtakĕn caṇḍāla ya wĕgig,
+mĕṅgĕp śāntān tinonton iniṅĕt-iṅĕtakĕñ caṇḍāla ya wĕgig,
 niṙ dosa-ŋ rākṣasātaḥ tuwi yatika pĕjaḥ dényāsiṅ umasö,
 ndya-ŋ đaṙmma ndya-ŋ kawikwan riya mamati-matī đik tan tuhu wiku*
 
-{tiḍak ḍikĕtahui}
-– – ⏑ | ⏑ – – | ⏑ ⏑ ⏓ = :9:
+{tiḍak ḍikĕtahui}:9.89
+— — ⏑ | ⏑ — — | ⏑ ⏑ ⏓ = :9:
 
 nā liŋ nikanaŋ mūṙkꝁa kabèḥ,
 mahyā ya riṅ ākāśa humuŋ,
@@ -5340,8 +5344,8 @@ saŋ rāwaṇa sakrođa sira,
 wré duṣṭa durācāra pati,
 nā liŋ nira wètnyāṙ magĕlĕŋ*
 
-{halamuꝁī}
-– ⏑ – | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏓ = :9:
+{halamuꝁī}:9.92
+— ⏑ — | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏓ = :9:
 
 saŋ wiƀīṣaṇa sira mulat,
 n-ton marutsuta Inapusan,
@@ -5354,8 +5358,8 @@ dūta tan dadi pinĕjahan,
 yadyapin ya wĕgiga tuwi*
 
 #daśśamas saṙggaḥ#
-<tiḍak ḍikĕtahui>
-⏑ ⏑ – | – ⏑ ⏑ | – ⏓ = :8:
+<tiḍak ḍikĕtahui>:10.1
+⏑ ⏑ — | — ⏑ ⏑ | — ⏓ = :8:
 
 Iti nā liŋ nira mojar,
 Irikaŋ śāsana yukti,
@@ -5402,8 +5406,8 @@ kita trĕṣṇā ri huripnya,
 tuwi tiṙyyak mapacāra,
 Umĕnaŋ sāhasika ṅké*
 
-{campakamālā}
-– ⏑ ⏑ | – – – | ⏑ ⏑ – | ⏓ = :10:
+{campakamālā}:10.10
+— ⏑ ⏑ | — — — | ⏑ ⏑ — | ⏓ = :10:
 
 nā ta wuwus saŋ rāwaṇa maswī,
 mātyana saŋ bāywātmaja tan lèn,
@@ -5460,7 +5464,7 @@ haywa ta sakrođa-ŋ hati śānta,
 sĕmbahakĕn dèwī nira sītā,
 saŋ raǥuputrāwās sira haṙṣā*
 
-đaṙmma lawan Aṙŧottama kāma,
+đaṙmma lawan Āṙŧottama kāma,
 nya-ŋ tiga yékāwās ya tĕmunta,
 sĕṣṭi niṅ āmbĕk byakta katĕmwa,
 yat praṇatāpī saŋ raǥuputra*
@@ -5516,7 +5520,7 @@ ya pwa pinatyan dé ni si rāma,
 hāḥ kala tan wriŋ wlas Apalīṅa*
 
 ratna maṇik strī lāƀa niṅ apraŋ,
-yèkana pājaṙmwiryaku ṅūni,
+yèkana pājaṙmwiry-aku ṅūni,
 tātan ikā don saŋ Aƀimāna,
 kīṙtti yaśātaḥ don ira tan lèn*
 
@@ -5565,8 +5569,8 @@ mūṙkꝁa matīkaŋ bāli si bālī,
 ndan sĕḍĕṅ apraŋ lāwan arinya,
 hā haha ho hāḥ hīna si rāma*
 
-{ƀujagaśiśrĕta}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – ⏓ = :9:
+{ƀujagaśiśrĕta}:10.42
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — ⏓ = :9:
 
 daśawadana huwus mojar,
 jwalita hati nirān krođa,
@@ -5580,7 +5584,7 @@ maṅaṅĕn-aṅĕna mopāya*
 
 Aku Ikana kinon dūta,
 lumawada hana saŋ sītā,
-ndan alĕmĕh aku maŋ­rakwa,
+ndan alĕmĕh aku maŋrakwa,
 wruha ri sira Ataḥ byakta*
 
 nahan ikana ya don kwaṅrug,
@@ -5688,8 +5692,8 @@ dadi ya Inapitan mosaḥ,
 sagila mati Alaḥ mopĕk,
 syapa ta kunĕṅ ikaŋ tan wruḥ*
 
-{kāmadattā}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{kāmadattā}:10.66
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 daśamuꝁa ya mataŋnya śāntacittā,
 tat atukara lawan ƀaṭāra rāma,
@@ -5716,8 +5720,8 @@ kadi maṅajap-ajap wuwusnya jañjan,
 Apusi pahatĕguḥ Ikūnya tunwi,
 prisakiti ta hatinya wĕḥ sarantmè*
 
-{madahaṙṣa}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | – ⏑ – | – ⏑ – | – ⏑ ⏓ = :18:
+{madahaṙṣa}:10.1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | — ⏑ — | — ⏑ — | — ⏑ ⏓ = :18:
 
 daśawadana huwus nirojaṙ madĕg tèkanaŋ rākṣasa,
 hana Alalaṅ akiŋ pamuṅkusnya rīkū niraŋ māruti,
@@ -5730,30 +5734,30 @@ paḍa tan anumanān panunwī murub tékanékū nira,
 kagiri-giri dilaḥnya tèjanya maƀrā sinaŋ loṙ kidul*
 
 #Ĕkādaśamas saṙggaḥ#
-<daṇḍaka>
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:29: = :93:
+<daṇḍaka>:11.1,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:29: = :93:
 
 Aŧa sĕḍĕṅ umurub Ikū saŋ hanūmān Umaṅkak tikāwak nirāgöŋ gunuŋ méru tulyānanāŋ nāgapāśāpasaḥ sāk pasātus tatas śīṙṇna rampuŋ pĕgat dénikā bāhu saŋ bāyuputromĕsat śīǥra Ākāśagāmī miriṙ taŋ Aṅin ǥora yāǥūṙṇnitādrĕs riwutpāta humyus musus yomĕlĕk taŋ lĕbu,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:28: = :90:
-kadi ta Inububan ya maṅkin murub tékanékū nirāpan katūb dé nikaŋ bāyubajré sĕḍĕŋnyār ibĕṙ tulya saŋ hyaŋ lĕmaḥ maŋlayaŋ mwaŋ Apuy ꝁyāti kālāgni rodrāṙ dunuŋ taŋ Umaḥ ṅkā riṅ antaḥ purāpūṙwwa rūpanya saśrī saśoƀā yatékān tinunwan nirānéka waṙṇnanya nānāwiđa,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:29: = :93:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:28: = :90:
+kadi ta Inububan ya maṅkin murub tékanékū nirāpan katūb dé nikaŋ bāyubajré sĕḍĕŋnyār ibĕṙ tulya saŋ hyaŋ lĕmaḥ maŋlayaŋ mwaŋ Apuy ꝁyāti kālāgni rodrāṙ dunuŋ taŋ Umaḥ ṅkā riṅ antaḥ purāpūṙwwa rūpanya saśrī saśoƀā yatékān tinunwan nirānéka waṙṇnanya nānāwiđa*
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:29: = :93:
 paḍa makaparupuḥ ṅ-apuy yan dilaḥ riŋ Umaḥ kapwa rĕmpak rĕmuk maṅkana-ŋ maṇḍapāpan parĕŋ yan katunwan sakanyomakin wrĕdđitékaŋ Apuy Ujwalālola kumlab dilaḥnyā laṅit niṙƀayātaḥ manaḥ saŋ hanūmān mulat kādƀutékaŋ watĕk rākṣasé soṙ kasoran kaśūran kawīran kađīran tuwi,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:29: = :93:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:29: = :93:
 pa ḍa ta ya mututuŋ tutuknyān kagöman kapūhan tumĕŋ­hāmtakut n-ton kaḍatwan katunwan kutug taŋ Apuy loṙ kidul kālamrĕtyūpamanyomalad taŋ dilaḥ tulya télatnya molaḥ mĕlĕk taŋ kukus Aṙdđa mawyaŋ-wyaṅèkĕl-l-ikĕl yéka rambut ni tĕṇḍasnya rodrān katon kātara-ŋ rākṣasā ǥūṙṇni-tāwū humuŋ*
 
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:29: = :93:
+{daṇḍaka}:11.2,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:29: = :93:
 
 tripura-pura murub tinunwan ƀaṭāréśwarānuŋ paḍanyān tĕñuḥ taŋ Umaḥ mās ya masyūḥ masāk kaŋ sakāgöŋ maṇik bajra bajropamanyān makas kāsyasiḥ tékanaŋ Apsarī riŋ purāpūṙwwa yaṙ ton apuy kapwatékāgupuy kwèḥ kapöyĕḥ gĕyuḥ yan kayuḥ kèn i-cèṭinya maṅluḥ Umaṅguḥ huyaŋ yāṅĕliḥ,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:30: = :96:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:30: = :96:
 talaga-talaga riŋ kaḍatwan winatwan ya dé niŋ maṇik candrakānté daṅū ndan mĕné śuṣka yāsāt ya kèsĕp sĕkaṙ niŋ Aśokāṅasut yan kasūban panasrūkṣa sakwèḥnya yākiŋ makiṅkiŋ manuknyānaṅis moni kolāhalāwū walācakrawākā gĕlāna-ŋ pĕluŋ haṅsa māśā saśokāswarāsū Ikaŋ sārasa*
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:27: = :87:
-bala makabalasaḥ Ikaŋ rākṣasosaḥ mĕsat ṅkā riṅ ākāśa yāpan katunwan pakuwwanya tātan paśéṣāgĕsĕŋ śīṙṇna Éman liman ṅkā riṅ ālāna yāglāna dé niŋ Apuy maṅkana-ŋ tuṅgaṅan tuṅga-tuṅgal ya tātan hanānuŋ manuṅgaŋ riyāmriḥ lumumpat luput riŋ Apuy yāṅliput,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:26: = :84:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:27: = :87:
+bala makabalasaḥ Ikaŋ rākṣasosaḥ mĕsat ṅkā riṅ ākāśa yāpan katunwan pakuwwanya tātan paśéṣāgĕsĕŋ śīṙṇna Éman liman ṅkā riṅ ālāna yāglāna dé niŋ Apuy maṅkana-ŋ tuṅgaṅan tuṅga-tuṅgal ya tātan hanānuŋ manuṅgaŋ riyāmriḥ lumumpat luput riŋ Apuy yāŋliput,
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:26: = :84:
 jalak ajar-ajaran bayan syuŋ puyuḥ kwèḥ pĕjaḥ muṅgu rin pañjaré pañcaraṅkaŋ hĕmas tan katoliḥ Alaḥ mriḥ Awaknyèkanaŋ rākṣasī śīǥra luṅhā hah-āh-āh-ah-āḥ liŋnya kapwāmĕhāḥ yāṅuhuḥ mohitān ton ikaŋ rākṣasomèḥ tibā riŋ Apuy moǥa momo Umèḥ mātya ya*
 
 {sragđara}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :21:
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :21:
 
 nā lwiṙ niŋ rājya lĕṅkā matunu ya mananāŋ nāgapuṣpé nataṙnya,
 mandārāśoka punnāga ya raƀasa gĕsĕŋ ronya kĕmbaŋnya pāŋnya,
@@ -5791,7 +5795,7 @@ lāwan sakwèḥ nikaŋ wré niyata sira huwus sidđakāṙyyéki liŋnya,
 tapwan mojaṙ sira ndān guyu nira mamanis nā paṅawruḥ nikaŋ wray*
 
 sakwèḥ niŋ wré ya kapwomulat aṅiṅĕt-iṅĕt cihna saŋ bāyuputra,
-n-ton taŋ taṅgwan tumaṅgö ri pupu nira nahan cihna niŋ sāmpun apraŋ,
+n-ton taŋ taṅgwan tumaṅgö ri pupu nira nahañ cihna niŋ sāmpun apraŋ,
 ṅkāśꞓaṙyyāmbĕk nikaŋ wré mututuṅ aṅujiwat n-ton ikaŋ cihna makwèḥ,
 hāḥ saŋ śūrātiđīrèŋ lara sira Umahāƀūṣaṇékaŋ śarīra*
 
@@ -5800,7 +5804,7 @@ rambut mākrĕp mapañjaŋ ya ta kaharan alas nā-ŋ śiraḥ yéka puñcak,
 mwaŋ taṅgwan yèkanolā kanin ira ya guhā đātutulyékanaŋ rāḥ,
 nā liŋ niŋ wré sahaṙṣāmuji-muji ya wijaḥ kapwa mojaṙ magupyan*
 
-wètnyān haṙṣékanaŋ wānarabala kaharan paṙśwa niŋ mèru sākṣāt,
+wètnyān haṙṣékanaŋ wānarabala kaharan pāṙśwa niŋ mèru sākṣāt,
 molaḥ mawyaŋ wulunyān kadi kanakalatāñcāla dé niŋ samīra,
 nétranyékān kĕḍap lwiṙ sꝑaṭika kadi maṇik candrakāntātikānta,
 saṅké tuṣṭinya yan ton pawanasuta humīs luḥnya yékāmrĕtanya*
@@ -5810,9 +5814,9 @@ dèwī sītā kapaṅguḥ hana sira mahurip ṅkā ri lĕṅkā tamolaḥ,
 nāhan liŋ saŋ hanūmān makin agiraṅ ikaŋ wré ṇ-ḍĕṅö wrĕtta dèwī,
 haṙṣanyāgöŋ ya wrĕdđī hati ya kadi tasik yaṙ wĕtu-ŋ pūṙṇna candra*
 
-{Ꜷpacꞓandasika}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{Ꜷpacꞓandasika}:11.14
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 krama kāla muliḥ ta saŋ hanūmān,
 kalawan wānarawīra śīǥra luṅha,
@@ -5854,8 +5858,8 @@ Ikanaŋ réka surat naréndraputrī,
 Inalap ya Inuṅkaban ya saśrī,
 waca taŋ réka tulis mawèḥ prahaṙṣa*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:11.22
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 sĕmbaḥ ni ṅhulun āṙyyaputra ya tĕké pādadwayanta praƀu,
 nyékiŋ réka wacān uninyaya Iko cihnanyunĕŋ ni ṅhulun,
@@ -5882,7 +5886,7 @@ sāmpun tāku wĕruḥ rikèŋ lara magöŋ niṣkāṙyya tātan padon,
 sugyan dudwa kunĕŋ Ikéṅaṅĕn-aṅĕn tan dadya dé saŋ praƀu,
 nāhan hétu niké mataŋnya kawaraḥ swasŧā jayā ƀūpati*
 
-lāwan haywa kataṅguhan kita rikī ta lwiṙta ṅūniṇ ḍaray,
+lāwan haywa kataṅguhan kita rikī ta lwiṙ ta ṅūniṇ ḍaray,
 kālantād winaraŋ naréndra mahulun kāliḥ sukāmbĕk nira,
 salwiṙ niŋ Upaƀoga yogya ya pawèḥ tātan kuraŋ riŋ suka,
 riŋ krīđā wihikan kité sawinuwus riŋ kāmaśāstrottama*
@@ -5905,9 +5909,9 @@ lāwan luḥ juga timtimĕn nahan iké cihnānyunĕŋ ni ṅhulun*
 tāmbĕḥ niŋ lumaré ṅhulun hulun asiŋ saṅkā nikĕŋ wédanā,
 hétunyān mapasaḥ pakonku ginawé saṅké ry-asiḥ té ṅhulun,
 yapwan paṅguha saŋ naréndra Umuwaḥ tan maṅkanātaḥ maluy,
-solaḥ niŋ kahulun ṅhulun juga hulun yékā gĕgönkun hulun*
+solaḥ niŋ kahulun ṅhuluñ juga hulun yékā gĕgönkun hulun*
 
-sāsiŋ sajña naréndra yéka pituhun sojaṙta tak laṅǥana,
+sāsiŋ sajña naréndra yéka pituhun sojaṙ ta-tak laṅǥana,
 nāhan prāṙŧana ni ṅhulun taya wanèḥ saṅkā ri göŋ niŋ rĕṇa,
 yapwan tan wulati ṅhulun Apa kunĕŋ līṅaṅkwa tag wruḥ huwus,
 nī hétunya tĕkā naréndra huwusĕn saṅkā ry-unĕŋ ni ṅhulun*
@@ -5932,9 +5936,9 @@ lāwan saŋ praƀu haywa képwan irikā ndyānuŋ dayā ƀūpati,
 Aṅhiŋ maṅkata saŋ praƀū marawaśèŋ sārājya lĕṅkāpura,
 liŋ saŋ lakṣmaṇa taṙ wihaŋ nrĕpati yan tiṅhal ri saŋ māruti*
 
-{Ꜷpacꞓandasika}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{Ꜷpacꞓandasika}:11.37
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 I tĕlas nikanaŋ tulis wināca,
 Inalap dé nira taŋ maṇik liniṅliŋ,
@@ -5971,8 +5975,8 @@ tinĕmunyékaṅ inak makin ya daṙppa,
 Ikanaŋ Upadéśa sèp ya ri ṙyya,
 ya mataŋnyān pĕjahāta dé naréndra*
 
-{Upajāti waṅśa}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Upajāti waṅśa}:11.44
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 lāwan sira śrī janakātmajā makūŋ,
 rantĕn mahārāja wiyoga duḥkita,
@@ -6009,8 +6013,8 @@ madan tikaŋ wré maṅusuŋ-Usuŋ masö,
 parĕŋ Umaṅkat Umibèṙ ta yān laku,
 marĕp kidul prāpta sirèŋ mahéndra ya*
 
-{Upajāti bajra}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏓ = :11:
+{Upajāti bajra}:11.51
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏓ = :11:
 
 gunuŋ magöŋ mèru paḍanya saśrī,
 samīpa niŋ sāgara n-uṅgu sāra,
@@ -6022,12 +6026,12 @@ saḍā tikaŋ wāḥ tĕka ri ṙyya tan lyab,
 na lwiṙnyan ahyun rikanaŋ kađīran,
 mataŋnyan uṅgwī tĕpi niŋ samudra*
 
-{Upajāti waṅśa}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Upajāti waṅśa}:11.53
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 dudug ri soṙ witnya tĕkèŋ rasātala,
 mahocꞓa puñcaknya tĕkèŋ ƀuwaḥ pada,
-kadi pwa mahyun ḍumĕpāŋ jagattraya,
+kadi pwa mahyuṇ ḍumĕpāŋ jagattraya,
 mataŋnya miṅsoṙ salayā Umiṇḍuhur*
 
 kanyā muḍā tulya nikaŋ naƀastala,
@@ -6057,7 +6061,7 @@ sĕkaṙnya tuñjuŋ muꝁa saŋ priyāṙ hiḍĕp*
 
 samaṅkanékaŋ ƀramara ƀramanta ya,
 maśabda n-ambuŋ sari niŋ saroruha,
-kadi pwa saŋ śrī janakātmajāṅliṅa,
+kadi pwa saŋ śrī janakātmajāŋliṅa,
 manaḥ niraŋ rāma makin sahaṙṣa ya*
 
 huwus mararyan sira riŋ mahéndra ya,
@@ -6065,8 +6069,8 @@ katon ikaŋ rāwaṇarājya lĕṅka ya,
 lawan nikaŋ wré Umulat kabèḥ nikā,
 siraŋ hanūmān tumudūhakĕn riya*
 
-{swādamālinī}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | ⏑ – ⏓ = :12:
+{swādamālinī}:11.61
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | ⏑ — ⏓ = :12:
 
 Aŧa ri huwusnya katon pura lĕṅkā,
 dadi tumurun sira riŋ giripāṙśwa,
@@ -6139,7 +6143,7 @@ guṇa nira kādƀuta yékana ratna,
 tuwi śuciśīla suđīra gaƀīra*
 
 hana maḍĕmit salĕṅĕn nikanaŋ ṙyyak,
-hana ya magöŋ kadi parwata māwān,
+hana ya magöŋ kadi paṙwwata māwān,
 pasili-siliḥ nikanaŋ suka-duḥka,
 winarahakĕnya kadi pwa mataṅguḥ*
 
@@ -6203,8 +6207,8 @@ Ikana manaḥku Apūṙwwa tumon ya,
 gagana ya māwa taman hana méǥa,
 kaŧam api nitya kilatnya tinonku*
 
-{prahaṙṣiṇī}
-– – – | ⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{prahaṙṣiṇī}:11.88
+— — — | ⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 nā liŋ saŋ raǥutanayān wimoha citta,
 tātaṙ niśꞓaya rikanaŋ śaśāṅkawimba,
@@ -6213,7 +6217,7 @@ moǥékaŋ hati wulaṅun kadi pwa médan*
 
 glānosaḥ hati balisaḥ manaḥ nironĕŋ,
 taṙ nidrā tuwin ikanaŋ kulĕm mataṅhi,
-maŋ­ruṅkuk sira ta masamparan saśoka,
+maŋruṅkuk sira ta masamparan saśoka,
 sītātaḥ satata taman kalèñ cinitta*
 
 tat kālān madanaśarān wiƀūta monĕŋ,
@@ -6241,8 +6245,8 @@ ndan mĕṅgĕp ṅhulun awaraḥ kitèŋ kalīṅa,
 trĕṣṇāsiḥ ya juga makon mataṅguhātaḥ,
 hétunyāk pawara-waraḥ tatan sakèŋ wruḥ*
 
-{mattā}
-– – – | – ⏑ ⏑ | ⏑ ⏑ – | ⏓ = :10:
+{mattā}:11.95
+— — — | — ⏑ ⏑ | ⏑ ⏑ — | ⏓ = :10:
 
 nā liŋ saŋ lakṣmaṇa maṅuđāni,
 tuṣṭāmbĕk saŋ nrĕpasuta rāma,
@@ -6255,8 +6259,8 @@ saŋ sugrīwāmĕdĕli sumaṇḍiŋ,
 maṅkin nidrā raǥusuta tuṣṭa*
 
 #dwādaśamas saṙggaḥ#
-<jalađaramālā>
-– – – | – ⏑ ⏑ | ⏑ ⏑ – | – – ⏓ = :12:
+<jalađaramālā>:12.1
+— — — | — ⏑ ⏑ | ⏑ ⏑ — | — — ⏓ = :12:
 
 sāmpun luṅhā-ŋ wĕṅi sumurup hyaŋ candra,
 mèḥ mĕtwa-ŋ wé dadi sumĕkaṙ taŋ tuñjuŋ,
@@ -6326,7 +6330,7 @@ dé niŋ pañjut sawĕṅi lanā téjanya*
 sinyaŋ muṅgwiŋ śayana tan aṅgā yāṅdoḥ,
 wètnyān méraŋ kĕtĕ-kĕtĕgĕn tan pojar,
 magyā tékaŋ wara taruṇāṅdon taŋ strī,
-maŋ­riŋriŋ yāmujuki maṅol yāṅaṙ~ki*
+maŋriŋriŋ yāmujuki maṅol yāṅaṙ~ki*
 
 sāmpun yāṅol dinudutakĕnya-ŋ kanyā,
 wètnyān magyā baśa lumukaṙ kèn-kènya,
@@ -6358,8 +6362,8 @@ cèṭṭèŋ céṣṭāmuhara sarāgèŋ kanyā,
 tāmolī cumbananaꝁa mūṙcꞓākalpa,
 salwiṙ niŋ strī madanawilāsāƀyāsa*
 
-{swāgata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{swāgata}:12.21
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 mĕḥ wwaluŋ tabĕba riŋ sakatambay,
 téja saŋ hyaṅ aruṇojwala maƀrā,
@@ -6441,7 +6445,7 @@ n-ton wurinya manahut pipi māṙ mrik,
 tuṣṭacitta muririŋ ya sahaṙṣa,
 sāṙjjawā-n śiwa-siwo dayitānya*
 
-hé priyèryaku gĕlāna wimūṙcꞓā,
+hé priyèry-aku gĕlāna wimūṙcꞓā,
 n-ton hayunta ri sĕḍĕŋta ya mahyas,
 sāmpun ahyas acĕlĕk pwa kitāntĕn,
 syūh atiṅku mananān pinanaḥta*
@@ -6459,15 +6463,15 @@ citta cañcala tuwin kĕna dénya*
 nāgapāśa taliṅanta ya liṅku,
 ƀūṣaṇanya cuni yéka culanya,
 nityakāla sumirat ya sĕnönya,
-nā wiṣanya kapisan syaku dénya*
+nā wiṣanya kapisan sy-aku dénya*
 
 lèn tĕṅaḥta maḍĕmit tuwi māmbĕt,
 kādƀutākwari tumon ya majambĕt,
 yak wulat riya manaḥku katūtūt,
 tucꞓa moǥa gigirĕn milu maṅliḥ*
 
-{mattamayūra}
-– – – | – – ⏑ | ⏑ – – | ⏑ ⏑ – | ⏓ = :13:
+{mattamayūra}:12.42
+— — — | — — ⏑ | ⏑ — — | ⏑ ⏑ — | ⏓ = :13:
 
 mwaŋ lambaytārī ya sumambé hrĕdayaṅku,
 téjanyābāŋ bajra saśoƀādƀuta maƀrā,
@@ -6489,8 +6493,8 @@ jañjan méñjuḥ jāti nikaŋ wwaŋ wahu wanwa,
 mārin méraŋ maṅkin umāsö ya sumaṇḍiŋ,
 wèt niŋ hyunyān ton ikana strīnya ya mahyas*
 
-{malinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{malinī}:12.46
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 Aŧa huwus arahup taŋ kāminī sāmpun ahyas,
 kadi talaga ya malwā lwiṙ nikaŋ rajya lĕṅkā,
@@ -6543,7 +6547,7 @@ masiga ya wihikan riŋ Iṅgitākāra céṣṭā,
 sahana ni guṇa niŋ wwaŋ ƀrĕtya tātan mapuṅguŋ*
 
 saṅ apaṅalih apaṅkat sèwu saṅꝁyā panĕṇḍas,
-paḍa-paḍa saṅ anaṇḍaŋ maŋ­rakĕt koṭi piṇḍa,
+paḍa-paḍa saṅ anaṇḍaŋ maŋrakĕt koṭi piṇḍa,
 kalalu ya ta pamuntat tan wiwékan wilaŋnya,
 makakurutug atuṇḍuŋ tūt hawan wāḥ paḍanya*
 
@@ -6572,7 +6576,7 @@ wwara ta warak ulāgöŋ siṅha barwaŋ lawan moŋ,
 saka sapuluh iniṇḍit dénya tan pañjaré ya,
 kadi ta ya kura pawwat lwiṙ nikaŋ siṅha dénya*
 
-hana mulih umahas riŋ swaṙgga maŋ­rudđa kéndran,
+hana mulih umahas riŋ swaṙgga maŋrudđa kéndran,
 Asiṅ isi ni taman hyaŋ Indra yékénalapnya,
 ya ta tĕka paḍa moliḥ wwa-wwahan pawwatanya,
 kadi Amrĕta rasanyāmānuṣātyanta paŧya*
@@ -6582,8 +6586,8 @@ kalawan ikana ronyānuŋ sĕḍĕŋ komalānwam,
 ya tikana Inalapnya glāna saŋ hyaŋ kahĕntyan,
 paḍa mawĕdi kumöl kul tulya tātan hanolaḥ*
 
-{madahaṙṣa}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | – ⏑ – | – ⏑ – | – ⏑ ⏓ = :18:
+{madahaṙṣa}:12.64
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | — ⏑ — | — ⏑ — | — ⏑ ⏓ = :18:
 
 Aŧa huwus umawit pwa pawwat nikaŋ wīra maṅhèṙ kabèḥ,
 Umĕtu ta sira saŋ daśāsyāśilèŋ ratna siṅhāsana,
@@ -6596,8 +6600,8 @@ satĕka nira parĕŋ masö gorawātwaŋ tumuṅkul kabèḥ,
 maśila ri harĕpan niraŋ rāwaṇé pöhaniŋ maṇḍapa*
 
 #trayodaśamas saṙggaḥ#
-<rucira>
-⏑ – ⏑ | – ⏑ ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :13:
+<rucira>:13.1
+⏑ — ⏑ | — ⏑ ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :13:
 
 tĕlas masö sahana niraŋ patiḥ kabèḥ,
 siraŋ wiƀīṣaṇa juga tapwa yaṇ ḍatĕŋ,
@@ -6689,8 +6693,8 @@ sagorawa praṇata manĕmbah iŋ kaka,
 madĕg ta sādara Umasö sirāśila,
 samīpa niŋ kanakapalaṅka tan madoḥ*
 
-{Upajāti waṅśa}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Upajāti waṅśa}:13.19
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 huwus maluṅguḥ pwa siraŋ wiƀīṣaṇa,
 rikaŋ saƀā sāƀinawojwalān katon,
@@ -6798,7 +6802,7 @@ malĕs ta mojaṙ sira saŋ wiƀīṣaṇa,
 sagorawātaṅguha don irā-n sahur*
 
 hé wīra sakwèḥta hulun ri saŋ praƀu,
-yuktīkanojaṙta kabèḥ tatan salaḥ,
+yuktīkanojaṙ ta kabèḥ tatan salaḥ,
 Apan kitékā hinarĕp-harĕp tĕmĕn,
 makoliha-ŋ śatru makabyaya-ŋ hurip*
 
@@ -6814,7 +6818,7 @@ nahan kinon mojara mājarèŋ naya*
 
 sakiṅkiṅĕn saŋ raǥuputra yaṙ tĕkā,
 Apan nikā dūta nirātiśakti ya,
-ṅūnin panunwi syapa rākṣasāṅlawan,
+ṅūnin panunwi syapa rākṣasāŋlawan,
 ta śūra méraŋ ya kabèḥ tĕlas hilaŋ*
 
 walīṅa yā tan kĕna nāgapāśa ya,
@@ -6978,7 +6982,7 @@ musuḥta makwèḥ wihikan ta yèŋ naya,
 mataŋnya ƀaktīka ri saŋ raǥūttama*
 
 sirāta mitrānta taman sasamƀawa,
-Apan paḍa krođa paḍāṅhiḍĕp lara,
+Apan paḍa krođa paḍāŋhiḍĕp lara,
 sirālarāpan n-inalap priyā nira,
 kitālarān śīṙṇna balanta dé nira*
 
@@ -7088,8 +7092,8 @@ sakrođa tāmbĕk nira saŋ daśānana,
 tataṙ sahuṙ héwa ri saŋ wiƀīṣaṇa*
 
 #catuṙ daśamas saṙggaḥ#
-<basantatilaka>
-– – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓ = :14:
+<basantatilaka>:14.1
+— — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏓ = :14:
 
 tat kāla yaṙ kahĕnĕṅan ta siraŋ daśāsya,
 mojaṙ ta-taŋ kaki ṅaran nira saŋ sumāli,
@@ -7176,7 +7180,7 @@ solaḥta sāhasa sasaṙ tan anūt i-yukti,
 saŋ Āṙyya sāđu sasiwin sira śatru dèŋta,
 maryāda saŋ sujana sajjana tad-gawé ya*
 
-nāhan kasoṙta ya mataŋnya manĕmbahātaḥ,
+nāhan kasoṙ ta ya mataŋnya manĕmbahātaḥ,
 sojaṙnyarinta pituhun Apatan salaḥ ya,
 Āpan ya hétu ni hayunta hiḍĕpku tan lén,
 ƀaktyanta kéwala ri saŋ nrĕpaputra rāma*
@@ -7186,8 +7190,8 @@ saṅkā ry-asiḥ nira mapinta kasiḥ mataṅguḥ,
 saŋ rāwaṇātiśaya māna manaḥ nirākas,
 tātaṙ lĕgö sapinatiḥ tuwi taṙ patiḥ ya*
 
-{turagagati}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
+{turagagati}:14.20
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
 
 kāla saŋ kaki sĕḍĕŋ mawara-waraḥ,
 kumƀakaṙṇna sira jāgra ya rumĕṅö,
@@ -7409,8 +7413,8 @@ yéka nitya pamasĕḥ hati magĕlĕḥ,
 śānta satya sawuwus nira ya sadon,
 somya suswara sahuṙ nira wĕkasan*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:14.64
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 hé nāŧālapana-ŋ gĕlĕŋ pahalilaŋ wèhĕn wiśudđā-ŋ manaḥ,
 swasŧā saŋ praƀu haywa kéwala tumūt sojaṙ nikaŋ wwaŋ wanèḥ,
@@ -7419,7 +7423,7 @@ séṣṭintékana tūtakĕn pahatĕguḥ budđinta tan piṇḍaha*
 
 lāwan ṅwaŋ kadi saṅhulun hana hulun mamriḥ ya mojaṙ hita,
 ndan budđinta ya kaṙṇnaśūla rumĕṅö mèwĕḥ kitān māpĕsa,
-yogyāyogya nikaŋ ṅ-ujaṙ tinahilan dé saŋ praƀu n-paŋ­rĕṅö,
+yogyāyogya nikaŋ ṅ-ujaṙ tinahilan dé saŋ praƀu n-paŋrĕṅö,
 Āpan đaṙmmatulā ṅaran nikar alap budđi prasidđāhayu*
 
 lwiṙ ni-ṅwaŋ kadi saṅhulun salah ikā riŋ doṣa yan tan tinūt,
@@ -7442,8 +7446,8 @@ yan ṅwaŋ ƀrĕtya mataṅguh iŋ praƀu kunaŋ yānuŋ kĕnā riŋ salaḥ,
 yan saŋ ƀūpati niṙwiwéka capalèŋ wadwā kunaŋ yāhayu,
 sakwèḥ saŋ mapatiḥ sirékana Anuŋ prĕṣṇān apan wruḥ kabèḥ*
 
-{Upajāti waṅśa}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Upajāti waṅśa}:14.70
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 nā liŋ niraŋ Āṙyya wiƀīṣaṇān sahur,
 sāmpun sirāmwīt krama śīǥra yaṙ wĕtu,
@@ -7451,8 +7455,8 @@ madĕg ta rowaŋ nira ƀakti tan kasaḥ,
 tumūta sakwèḥ nira wèt nikaŋ Asiḥ*
 
 #pañcadaśamas saṙggaḥ#
-<praharaṇakalika>
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :14:
+<praharaṇakalika>:15.1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :14:
 
 Aŧa lumaku siromaliha saha bala,
 raǥutanaya sirékana wĕgilĕn ira,
@@ -7514,8 +7518,8 @@ Inanumata sirān pamalaku śaraṇa,
 kadi ta tinitisan Amrĕta hati nira,
 mahawan anĕmu höb ya paḍa nira suka*
 
-{Upajāti waṅśa}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :13:
+{Upajāti waṅśa}:15.13
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :13:
 
 nda tatīta yaṙ hana siraŋ wiƀīṣaṇa,
 maṅaṅĕn-n-aṅĕn ta sira saŋ raǥūttama,
@@ -7544,7 +7548,7 @@ Alah épu tan tĕmu ṅ-upāya riŋ tasik*
 
 ri sĕḍĕŋ nirānihaṅakĕn laras nira,
 kumĕtĕṙ samudra prĕŧiwī prakampita,
-giripaṙśwa cāla kalawan rasātala,
+giripāṙśwa cāla kalawan rasātala,
 paḍa saṅśayèŋ pralaya kāla yaṙ tĕka*
 
 linĕpāsakĕn pwa Ikanaŋ panaḥ murub,
@@ -7612,8 +7616,8 @@ pinujin suđīra sira đārakèŋ jagat,
 ri sawèt ni tībra ni panas nikaŋ panaḥ,
 kumĕtĕṙ tatan tuhu suđīra đāraka*
 
-{suwadanā}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | – ⏑ ⏑ | ⏑ ⏓ = :20:
+{suwadanā}:15.32
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | — ⏑ ⏑ | ⏑ ⏓ = :20:
 
 tat kālān glāna kolāhala sahana nikaŋ nāgéndra malayū,
 kombak taŋ ṙyyak lumimbak jalaniđi kakĕbĕk ƀūḥ ƀāga gumiwaŋ,
@@ -7650,7 +7654,7 @@ ndya ṅké mèwĕḥ linakwan ndya taṅ alas asukĕt ndya-ŋ paṙbwata magö�
 ndyāṅ ādityātitīkṣṇāmanasi Aŧa ca lèn ndya-ŋ bāyu biṣama,
 māyāmāyānta tékā kakawaśa ya tumūt swécꞓānta ya kabèḥ*
 
-tan wruḥ nārāyanāṅśāṅdadi maṅĕmita rāt sāđyanta manurun,
+tan wruḥ nārāyanāṅśāŋdadi maṅĕmita rāt sāđyanta manurun,
 swasŧā saŋ sāđu lāwan hilaṅa niṅ agawé hāro-hara ya don,
 Uṅgwantāt wiṣṇu téki-ŋ tasik apa ta guṇanyān sātana kunaŋ,
 ṅèl-ṅèlĕn dé ƀaṭārākira-kira Apa tan tāpā ta pakaya*
@@ -7680,8 +7684,8 @@ hrūtāṅkèn kālamrĕtyū maṅana sahana niŋ mūṙkꝁāđama kabèḥ,
 sakwèḥ niŋ wré ya kāṅkĕn kalula-kalula niŋ kālāntaka tĕka,
 byaktan śiṙṇnā sa-lĕṅkā jaya-jaya ƀagawān nārāyaṇa sira*
 
-{wātoṙmmimālā}
-– – – | – ⏑ ⏑ | – – ⏑ | – ⏓ = :11:
+{wātoṙmmimālā}:15.45
+— — — | — ⏑ ⏑ | — — ⏑ | — ⏓ = :11:
 
 nā liŋ saŋ hyaŋ baruṇāminta jīwa,
 tuṣṭāmbĕk saŋ raǥuputrān sinĕmbaḥ,
@@ -7693,18 +7697,18 @@ swaṣṭa-ŋ satwottama muṅgwiŋ samudra,
 sakwèḥnyānuŋ mati dé niŋ śarāgni,
 tātan malwaŋ Umuwaḥ labđajīwa*
 
-{drutawilambita ḍan tiḍak ḍikĕtahui}
-!⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏓ = :12:!
-!⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | ⏓ = :13:!
+{drutawilambita ḍan tiḍak ḍikĕtahui}:15.47
+!⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏓ = :12:!
+!⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | ⏓ = :13:!
 
 Aŧa huwus mahurip Ikanaŋ Iwak,
 wija-wijaḥ ya kabèḥ maṅaluŋ maluy,
 dadi ta kinon bala wānara maṅkata,
 maṅatĕra paṙbwata lèn watu tambaka*
 
-{wĕgawatī}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ ⏑ – | ⏓ = :10:
-– ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{wĕgawatī}:15.48
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ ⏑ — | ⏓ = :10:
+— ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 krama śīǥra mĕsat Ikanaŋ wray,
 kapwa sadaṙppa mibĕṙ ta ya luṅhā,
@@ -7726,8 +7730,8 @@ krūra humuŋ prakaṭādƀuta makrak,
 kadi siṅha sahasra maśabda,
 tulya gĕrĕḥ gumuruḥ Atiǥora*
 
-{Aśwalalita}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ ⏓ = :23:
+{Aśwalalita}:15.52
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ ⏓ = :23:
 
 ri tĕka nikaŋ kapi prawara wīra kampita ṅ-alas kĕnasnya malayū,
 Apituwi siṅha niṙƀaya daṅū mĕgil ya ri guhānya gahwara humèt,
@@ -7781,7 +7785,7 @@ paḍa ta kapaṙgatan maparikaṙmma saṅśaya sirān tĕkā-ŋ graha wanèḥ
 
 kapibala kapwa yāṅibĕrakĕn Anuŋ gunuṅ agöŋ ya ténusuṅ-usuŋ,
 sakatiga lèn sakarwa sakapat wanèḥ maṅalimé maṅānĕmi kunaŋ,
-kadi garuḍāṅlayaŋ mibĕrakĕn ƀaṭāra puruṣottamopama nikā,
+kadi garuḍāŋlayaŋ mibĕrakĕn ƀaṭāra puruṣottamopama nikā,
 tĕka ta ya riŋ ṇaƀastala gĕlāna taŋ grahagaṇān kasuṇḍuk alayū*
 
 hana masalaṅgapan gunuṅ anak mahā sahaja yāgawé kaba-kaba,
@@ -7789,8 +7793,8 @@ Ikanaṅ i-soṙ mamuṇḍut anĕhĕṙ maṅuṇḍa kadi riṇḍi daṙppa t
 Ikanaṅ umuṅgu riŋ gagana yatna ṭan kaluputan widagđa gapitan,
 sasasawi paŋhiḍĕpnya rikanaŋ gunuŋ ya mahaṅan yan uṅgu ri taṅan*
 
-{śiꝁariṇī}
-⏑ – – | – – – | ⏑ ⏑ ⏑ | ⏑ ⏑ – | – ⏑ ⏑ | ⏑ ⏓ = :17:
+{śiꝁariṇī}:15.64
+⏑ — — | — — — | ⏑ ⏑ ⏑ | ⏑ ⏑ — | — ⏑ ⏑ | ⏑ ⏓ = :17:
 
 hanéki wré tuṅgal kagiri-giri göŋnyogra magalak,
 Ahaṅkārāmbĕknyān guragaḍa tan aṅgān tuluṅana,
@@ -7817,8 +7821,8 @@ ya tāṅkèn kĕṇḍitnyojwala kasarakat tulya ya pĕgat,
 lumampaḥ pwékaŋ poḥ Asana wariṅin dé nikaṅ aṅin,
 kadi pwāsāk moré Ikana ta gĕluŋ niŋ śikariṇī*
 
-{mandākrānta}
-– – – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | – – ⏑ | – – ⏑ | – ⏓ = :17:
+{mandākrānta}:15.69
+— — — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | — — ⏑ | — — ⏑ | — ⏓ = :17:
 
 sāmpun moliḥ kapibala muliḥ śīǥra luṅhā kabèḥnya,
 kapwāwwat-wwat gunuṅ i-sira saŋ rāmadéwān panĕmbaḥ,
@@ -7826,8 +7830,8 @@ timbun tékaŋ giri wara kabèḥ mwaŋ śilā mèru tulya,
 māraryan māri-r irir irikaŋ pāṙśwa māṙ~nĕb kayunya*
 
 #soḍaśas saṙggaḥ#
-<prĕŧwītala>
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+<prĕŧwītala>:16.1
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 huwus tĕka Ikaŋ kapi prawara kapwa moliḥ gunuŋ,
 madĕg ta sira saŋ nala pratita wiśwakaṙmmātmaja,
@@ -7850,7 +7854,7 @@ tatan hana kasaṅśayériya subadđa tātañcala,
 Ah-o saꝑala śakti saŋ nala wĕnaŋ tumambak tasik*
 
 ri sāmpun ikanaŋ yaśātiśaya sétubanđādƀuta,
-siraŋ daśamuꝁāṅrĕṅö saƀaya kampitékaŋ hati,
+siraŋ daśamuꝁāŋrĕṅö saƀaya kampitékaŋ hati,
 maṅĕn-n-aṅĕn ikaŋ samudra Atiƀīṣaṇālwādalĕm,
 taŧāpi kawĕnaŋ tinambak inupāyan iŋ wānara*
 
@@ -7899,8 +7903,8 @@ Anon kayu manoharākiris atis tahĕnyārĕṇĕb,
 ꝑalanya matasak marūm Arupukan wanöḥ kwèḥ maḍām,
 sĕkaṙnya sumĕkaṙ prakīṙṇna ya rurū rikaŋ ƀūtala*
 
-{basantatilaka}
-– – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓ = :14:
+{basantatilaka}:16.15
+— — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏓ = :14:
 
 mandāra rāmya sumĕkaṙ kadi sāmpun ahyas,
 mandā ṅ-aṅin ya ta tumūb ya tĕbĕŋ tan olaḥ,
@@ -7947,8 +7951,8 @@ poḥ cāmpakāsana palāśa Aśoka tañjuŋ,
 lāwan wuṅū wuṅa kuniŋ wuṅa raṅga paṅgil,
 sĕntiŋ basantatilakā manĕḍĕŋ kabèḥnya*
 
-{rucira}
-⏑ – ⏑ | – ⏑ ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :13:
+{rucira}:16.24
+⏑ — ⏑ | — ⏑ ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :13:
 
 daḍap matöb dalima paḍānĕḍĕŋ kabèḥ,
 kawèni taŋ mulati ya saṅśayĕŋ Apuy,
@@ -7971,7 +7975,7 @@ Upāya tan hana kawĕnaŋ maḍömana,
 manaḥ kĕnèŋ madanaśarāgni tīkṣṇa ya*
 
 nayādi tan papakĕna téki niṙguṇa,
-guṇāṅliput ya kasakitan ta dénya wèḥ,
+guṇāŋliput ya kasakitan ta dénya wèḥ,
 nya wèḥ manaḥ raǥusuta śokamānasa,
 sasaṙ hiḍĕp nira humĕnĕŋ sirāsuwè*
 
@@ -7980,8 +7984,8 @@ tamāla komala tamalaḥ riké tĕmĕn,
 taman niraŋ madana hiḍĕpku yānurun,
 n-ururwakĕn priyawirahāmaṅun Unĕŋ*
 
-{ƀramarawilaśita}
-– – – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :11:
+{ƀramarawilaśita}:16.30
+— — — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :11:
 
 lāwan lwaḥ-lwaḥ riya taman adalĕm,
 kĕmbaŋ bajrojwala Amuja dilĕm,
@@ -8004,9 +8008,9 @@ kadyaṅgā niŋ Anakĕbi paḍa siḥ,
 tan saḥ māṅol suku patakuraṅan*
 
 saśrī yānluŋ hana ta ya maṅunĕŋ,
-kapwomuṅgwīŋ paḍali paḍa milĕt,
+kapwomuṅgwiŋ paḍali paḍa milĕt,
 kwèḥ kĕmbaŋnyānarawata sumawur,
-tulyāṅrumbé malara kinawayuḥ*
+tulyāŋrumbé malara kinawayuḥ*
 
 māsiḥ taŋ waŋ Umulat i-sulasiḥ,
 lwiṙnyān polaḥ kadi maṅasih-asiḥ,
@@ -8018,8 +8022,8 @@ mĕṇḍuṙ mĕṇḍuḥ paḍa-paḍa manĕḍĕŋ,
 maṅkin monèŋ raǥusuta kaƀaran,
 māṅè śoka-ŋ ƀramarawilasita*
 
-{waṅśapatrapatita}
-– ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :17:
+{waṅśapatrapatita}:16.37
+— ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :17:
 
 komala taŋ luruk-luruk atöb masĕkar asisihan,
 bāŋ sawanèḥ-wanè-ḥ ya maputiḥ kadi ta winasĕhan,
@@ -8041,8 +8045,8 @@ tulya manĕmbahé sira hawisnya ya Upama taṅan,
 ronya makiŋ tibā maputĕran ta ya Apan ahaṅan,
 citta niraŋ wiyoga ya paḍanya maha sabayaṅan*
 
-{dwitala}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | – ⏑ ⏓ = :12:
+{dwitala}:16.41
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | — ⏑ ⏓ = :12:
 
 Aŧa ri tĕka niraŋ naréndrātmaja,
 ri śiꝁara nikanaŋ suwélācala,
@@ -8080,8 +8084,8 @@ kadi sujana maṅaṙjjanĕŋ mās maṇik,
 parahita ya ta donya tan bukti ya*
 
 #saptadaśamas saṙggaḥ#
-<basantatilaka>
-– – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓ = :14:
+<basantatilaka>:17.1
+— — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏓ = :14:
 
 tat kāla saŋ praƀu daśānana rāga citta,
 ṅkāné taman nata manaḥ nira tan patamban,
@@ -8099,7 +8103,7 @@ sĕsrañcuṇinya sumĕnö lumarap maṇiknya,
 rapwan kinahyunan anéka Ulaḥ nirāhyas*
 
 māyā gaway nira cĕṅĕl naranāŧa rāma,
-lāwan cĕṅĕl prawara lakṣmaṇa śudđa sākṣāt,
+lāwañ cĕṅĕl prawara lakṣmaṇa śudđa sākṣāt,
 wadwā prawīra ya tikā mawa rodrarūpa,
 cèṭī nihan mamawa ƀūṣaṇa mās apèni*
 
@@ -8113,8 +8117,8 @@ maṅgā hiḍĕp nira risaŋ wararājaputrī,
 dényān huwus mati siraŋ nrĕpaputra rāma,
 mojaṙ sirāmujuki haṙṣa sarāga maswī*
 
-{punaṙmmada}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :13:
+{punaṙmmada}:17.7
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :13:
 
 Ari jānakī lihatanā Ikèŋ hulu,
 takariñ cĕṅĕl nika si rāma tékihĕn,
@@ -8126,7 +8130,7 @@ tuhu yāsamèŋ wĕdi kaniṣṭa tat walĕs,
 tuwi lumbu lambayuṅ akas ta yénarit,
 nya kunaŋ bubuṙ paḍa ni rāma lakṣmaṇa*
 
-ya mataŋnya liṅkwari manaḥta yātĕḍuḥ,
+ya mataŋnya liṅkw-ari manaḥta yātĕḍuḥ,
 taṅ atīta kéwala wuwusku yat patiḥ,
 Apa tan hanékana lĕwiḥ saké ry-aku,
 I pĕjaḥ ni rāma Aparan kasaṅśaya*
@@ -8134,7 +8138,7 @@ I pĕjaḥ ni rāma Aparan kasaṅśaya*
 Aku cakrawaṙtti jaya riŋ jagat kabèḥ,
 tuwi rūpawān Aku Udāra saśriya,
 Aku māsihāri kawaśāku dènta wèḥ,
-kita rowaṅaṅkwari mamuktya sĕmbahĕn*
+kita rowaṅaṅkw-ari mamuktya sĕmbahĕn*
 
 nya ta saŋ hyaṅ indra tuwi ƀakti téry-aku,
 ratu dibya śakti paricāra ni ṅhulun,
@@ -8186,9 +8190,9 @@ tuluṅĕn ṅhulun malara dènta kāsyasiḥ,
 kadi tan si rāwaṇa hiḍĕpku riŋ hawak,
 yadi tat pituhwa Aku hāḥ lĕhĕŋ pĕjaḥ*
 
-{Ꜷpacꞓandasika}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{Ꜷpacꞓandasika}:17.21
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 Iti nā ta wuwus nirān panomaḥ,
 sira saŋ rāwaṇa rāga haṙṣa tībra,
@@ -8225,9 +8229,9 @@ tuwi tan sora Ataḥ rikaŋ kaśūran,
 kala rākṣasa janma Alpaśakti,
 ndya mataŋnyat mati dénya yālaraṅku*
 
-{prabođitā}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :10:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+{prabođitā}:17.28
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :10:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 nya ta saŋ ratu ṅūni riŋ saƀā,
 Asamūhāta rikaŋ swayambara,
@@ -8239,9 +8243,9 @@ Umawit saŋ praƀu ṅūni riŋ hawan,
 rasikā ta wiśéṣa riŋ raṇa,
 kita tan lèn ta sumorakĕn sira*
 
-{Ꜷpacꞓandasika}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{Ꜷpacꞓandasika}:17.30
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 nya wuwus nira saŋ mahāṙṣi ṅūni,
 kita tan lèn ta baśā rikaŋ triloka,
@@ -8278,8 +8282,8 @@ tak adohāku saké sukunta nīŧa,
 yadiyan kawawèṅ awécidéśa,
 tamatan kāntuna ƀaktya nityakāla*
 
-{swāgata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{swāgata}:17.37
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 nā taṅis nira ta saŋ nrĕpaputrī,
 tuṅkulīkana cĕṅĕl naranāŧa,
@@ -8346,12 +8350,12 @@ dénya tan mati siraŋ raǥuputra,
 riŋ mĕné pwa ya huwus nira hantu,
 sāhasāku ri huripku Awās ya*
 
-{puṣpitāgra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{puṣpitāgra}:17.50
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 daśamuꝁa ya mataŋnya marya mojar,
-kadi-kadi jambat ujaṙta jañjan akwèḥ,
+kadi-kadi jambat ujaṙ ta jañjan akwèḥ,
 tuwi-tuwi kita śakti cakrawaṙtti,
 tat ahalĕpāta makolaha-ŋ wimāṙgga*
 
@@ -8386,7 +8390,7 @@ mati kita niyatā kari n-katĕmwa,
 lĕhĕṅa kitāt mahurip mamuktya ƀoga*
 
 takarin aku Iké praƀūttamèŋ rāt,
-sakaharĕpaṅkw-Irikaŋ triloka dadya,
+sakaharĕpaṅkw-irikaŋ triloka dadya,
 sapulu-puluha lakṣa séwu sītā,
 kṣaṇika tĕkā ya mataŋnya tūt ujaṙku*
 
@@ -8405,8 +8409,8 @@ Alah awuyuŋ sira héwa tan tinaṅgap,
 lumaku sira muliḥ tĕkèŋ kaḍatwan,
 maṅucap-ucap naya cĕṭṭa Ucꞓa caṅkak*
 
-{swāgata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{swāgata}:17.61
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 ndā ta tīta sira saŋ daśaśīṙṣa,
 jānakī sira muwaḥ Ujarĕn ta,
@@ -8478,8 +8482,8 @@ kampitékana matanya ya molaḥ,
 nā mataŋnyan agiraŋ ta manaḥnya,
 mājar-ājar i-siraŋ nrĕpaputrī*
 
-{turagagati}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
+{turagagati}:17.75
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
 
 ndaḥ nihan śuƀanimitta t-iṅĕt-iṅĕt,
 kampitékana mataṅku ya ri kiwān,
@@ -8496,8 +8500,8 @@ tāt amātya riṅ apuy kapara-paran,
 hèrakĕñ juga tĕkāku ya masiha,
 ṅkāna yan pĕjaha mātya lawan aku*
 
-{ƀadralalita}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ ⏓ = :21:
+{ƀadralalita}:17.78
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ ⏓ = :21:
 
 trijaṭā nahan ya ta wuwusnya yékana pĕsatnya śīǥra ya mibĕr,
 tĕka yèŋ suwéla giri ratna māya ya ta mèsi wānara kabèḥ,
@@ -8554,8 +8558,8 @@ pawĕkas naréndra pituhun huripta kĕmitĕn taman haru-harā,
 Umulat siré ṅhulun unĕŋ-Unĕŋ nira ri dèwi tībra ta kunĕŋ,
 winurug ṅhulun muliha mohutĕn pĕjahakĕnta rakwa sakarĕŋ*
 
-{turagagati}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
+{turagagati}:17.89
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
 
 dyaḥ mataŋnya ta rahup ta kamaligi,
 nya-ŋ gurun lĕkas ikaŋ lara lĕpasa,
@@ -8612,8 +8616,8 @@ ndaḥ wulat ry-aku ƀaṭāra Anumata,
 rāmaƀadra sira wèhĕn amĕnaṅa,
 māsihéry-aku sukān patĕmu mami*
 
-{wīralalita}
-– ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | ⏓ = :16:
+{wīralalita}:17.100
+— ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | ⏓ = :16:
 
 dèwi nahan prayojana nirātidibya ya tĕmĕn,
 māri mapakṣa mātya ri hurip naréndra karĕṅö,
@@ -8710,8 +8714,8 @@ mwaŋ paḍalinya bāp paḍapaḍāputiḥ ya tinĕnun,
 nāŋ dalimādƀutāmanis abāŋ karaŋ-karaṅ ikā,
 bāp saruṇinya dibya makuniŋ mikĕt ya taruṇī*
 
-{candrawilasita}
-⏑ ⏑ ⏑ | ⏑ – – | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
+{candrawilasita}:17.119
+⏑ ⏑ ⏑ | ⏑ — — | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
 
 paḍa maṅikĕt kĕmbaŋ wwara taruṇī,
 saruṇi rinantay mwaŋ suka ya marūm,
@@ -8758,8 +8762,8 @@ maṅiduṅiduŋ yācaṅkrama kasukan,
 maturu-turū roṇḍon pinakatilam,
 tumĕṅa-tĕṅā riŋ candrawilasita*
 
-{kusumawicitra}
-⏑ ⏑ ⏑ | ⏑ – – | ⏑ ⏑ ⏑ | ⏑ – ⏓ = :12:
+{kusumawicitra}:17.128
+⏑ ⏑ ⏑ | ⏑ — — | ⏑ ⏑ ⏑ | ⏑ — ⏓ = :12:
 
 kumucur ikaŋ pañcuran atirāmya,
 parijata muṅgwiŋ parigi paranti,
@@ -8791,8 +8795,8 @@ tuwi sira satyātiśaya suśīla,
 malara tuwin tan malupa ri saŋ hyaŋ,
 tĕka ta mamūjèŋ kusumawicitra*
 
-{mālinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{mālinī}:17.134
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 Aŧa rahina ya sānpun māwa taŋ déśa rāmya,
 dadi marahup amūjā jānakī satyaƀakti,
@@ -8805,12 +8809,12 @@ Atiśaya ta manaḥnyāhyun ta riŋ sātwikāsiḥ,
 saꝑala nira ta dèwī ƀakti nāhan ta liŋnya*
 
 ya tikana hiḍĕpĕntā liṅku saŋ hyaŋ śarīra,
-kita karika riyāpan janma mānuṣya hīna,
+kita karika riyāpañ janma mānuṣya hīna,
 sakawĕnaṅa nikā taŋ kāya riŋ yuktikrĕtya,
 sari-sari warahĕn tā tékanaŋ citta ƀaktya*
 
 wulati kari ya kĕdwa ndan hanĕŋ Āgamokta,
-tuwi carita rĕṅönta ꝁyāti riŋ kaṇḍaparwa,
+tuwi carita rĕṅönta ꝁyāti riŋ kaṇḍapaṙwwa,
 saka-saka ṅuni tékiŋ kléśa saṅsāra ni ṅwaŋ,
 ndan ikana ginawé taŋ ƀakti dé suŋ wiśéṣa*
 
@@ -8820,9 +8824,9 @@ wulati ta sira dèwī wèt nikāmbĕknya ƀakti,
 satata ta sira śoka ṅkām ri soṙ niŋ Aśoka*
 
 #Aṣṭādaśamas saṙggaḥ#
-<Ꜷpacꞓandasika>
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+<Ꜷpacꞓandasika>:18.1
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 nda tatīta sira-ŋ naréndraputrī,
 sira saṇ ƀūpati rāwaṇojarĕn ta,
@@ -8904,18 +8908,18 @@ ri siraŋ rāǥawa yālilaŋ manaḥnya,
 pawanātmaja tan dudū hiḍĕpnya,
 tuwi saŋ Aṅgada tan surud ya māsiḥ*
 
-{Aparawaktra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Aparawaktra}:18.17
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 gawa-gawaya gawākṣa jāmbawān,
 saha nala nīla suséna késari,
 śaraƀa wrĕṣaƀa Indrajānu lèn,
 kumuda darīmuꝁa ganđamādana*
 
-{puṣpitāgra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{puṣpitāgra}:18.18
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 dwiwiđa panasa ƀīmawaktra tāra,
 winata śuƀodara kālawaktra đūmra,
@@ -8927,9 +8931,9 @@ Atiśaya rodra ya kālamrĕtyu sākṣāt,
 kagiri-giri Ulaḥnya lèn wulatnya,
 gumuyu maśabda masoṙ gĕlap ta dénya*
 
-{Aparawaktra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Aparawaktra}:18.20
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 Ikana ta ya kabèḥnya tan kalèn,
 Ikana manaḥnya ta ƀakti kéwala,
@@ -8941,8 +8945,8 @@ Inamah-amaḥ nira saŋ wiƀīṣaṇa,
 raǥusuta sira sāđu taṙ pawèḥ,
 sira humurip ri patikta hé praƀu*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:18.22
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 mataŋnya hé ƀūpati yogya tāpĕsa,
 nihan ta-taṅguḥ mami karwa yālapĕn,
@@ -8954,8 +8958,8 @@ lawan siraŋ rāma maran lanā ṅ-inak,
 sitā sirékāna wawan mĕnèŋ gĕlĕk,
 Apan sirékā ta dumèḥ tukaṙ hana*
 
-{Upajāti waṅśa}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Upajāti waṅśa}:18.24
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 nahan wuwus niŋ śuka sāraṇāhayu,
 mataṅguh iŋ yukti Asiḥnya mapraƀu,
@@ -8972,8 +8976,8 @@ ya wānarātyanta kaniṣṭa yāđama,
 sawèt niké pāpamu tan prawīra ko,
 Alaḥ dudī cittamu ƀakti riŋ musuḥ*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:18.27
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 pratīta riŋ sāra ya śūra riŋ daṅū,
 mĕné pwa yāsāra ya cāra duṙyyaśa,
@@ -9005,8 +9009,8 @@ huwus katon śīṙṇna nanānya dé nikā,
 Ikā pwa wèḥ kwèḥnya kunaŋ hanāluput,
 nahan kayatnākĕna saŋ mahābala*
 
-{prĕŧwītala}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+{prĕŧwītala}:18.33
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 nahan n-ikana liŋnya riŋ daśamuꝁātiđīra-ŋ manaḥ,
 nda tīta rasikā siraŋ nrĕpati rāmaƀadrājarĕn,
@@ -9068,8 +9072,8 @@ daśānana mabāŋ prakampita ṅ-awak sawèt niŋ galak,
 halis nira ya cāla kumrut ikanaŋ lalāṭārĕṅū,
 wulat nira ya tāwĕlū tudiṅi téka saŋ Aṅgada*
 
-{śiꝁariṇī}
-⏑ – – | – – – | ⏑ ⏑ ⏑ | ⏑ ⏑ – | – ⏑ ⏑ | ⏑ ⏓ = :17:
+{śiꝁariṇī}:18.45
+⏑ — — | — — — | ⏑ ⏑ ⏑ | ⏑ ⏑ — | — ⏑ ⏑ | ⏑ ⏓ = :17:
 
 Ah-o niṙlajjékiŋ plawaga kadurus pāpa ya dahat,
 bali pwékī đīrèṅ aṅĕn-aṅĕn apan bālitanaya,
@@ -9112,8 +9116,8 @@ tumūt sakwèḥ niŋ wré maśila maduluṙ kapwa ta humuŋ,
 kinon muktyékānaŋ ꝑala saꝑala muṅgwiŋ śiꝁariṇī*
 
 #nawadaśamas saṙggaḥ#
-<praharaṇakalika>
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :14:
+<praharaṇakalika>:19
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :14:
 
 krama huwus amaṅan ꝑala sahana nikaŋ,
 kapibala paripūṙṇna ya tan alah-alaḥ,
@@ -9123,7 +9127,7 @@ kalalah umahĕm ahyun amususa musuḥ*
 tuwi-tuwi bala rākṣasa paḍa kalalaḥ,
 sĕḍĕṅ amaṅan agoṣṭi ya wijah aṅinum,
 manĕwĕri ya maƀūṣaṇa kanaka maṇik,
-muꝁa ḍaḍa Ibĕkan jĕnu paḍa masĕkar*
+muꝁa ḍaḍa Ibĕkañ jĕnu paḍa masĕkar*
 
 dadi maṅadĕg anambutakĕna si gadā,
 curiga krĕtala lori muśala paraśu,
@@ -9135,8 +9139,8 @@ mĕtu ta ya rikanaŋ kuṭawara waṅunan,
 kuda ya rinasukan gaja ya kinawacan,
 raŧa ya Inibĕkan praharaṇa kalikā*
 
-{Upendrabajra}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏓ = :11:
+{Upendrabajra}:19.5
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏓ = :11:
 
 sĕḍĕŋ nikaŋ rākṣasawīra yāwū,
 humuŋ ya mahyā kalalaḥ ya maṅhèr,
@@ -9158,8 +9162,8 @@ lawan mahāpāṙśwa ǥaṭodarākya,
 tumūt wirūpākṣa wilohitākṣa,
 yupākṣa kānĕm nira mantri muꝁya*
 
-{Upajāti bajra}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏓ = :11:
+{Upajāti bajra}:19.9
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏓ = :11:
 
 Anuŋ mahāśakti balaprađāna,
 mitraǥna lāwan praǥasa prajaṅǥa,
@@ -9176,10 +9180,10 @@ wadwā ni wadwā nira koṭi-koṭi,
 mahöm mahāśūra ya sāra riŋ praŋ,
 tīkṣṇāyuđanyogra kadīndrabajra*
 
-{sragđara}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :21:
+{sragđara}:19.12
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :21:
 
-tat kālanyān inājñan sahana-hana nikaŋ rākṣasomĕtwa riŋ praŋ,
+tatkālanyān inājñan sahana-hana nikaŋ rākṣasomĕtwa riŋ praŋ,
 tinyup taŋ śaṅka saṅꝁyānya ya Inatus-atus koṭi lakṣā parāḍya,
 śabdanyātyuǥra mapyak prakaṭa kadi gĕlap sapta pātāla molaḥ,
 lyab taŋ rāt ƀūṙ-ƀuwaḥ-swaḥ kadi ta ya śiwakaŋ Aṇḍa koṇḍākyakāṇḍĕk*
@@ -9196,7 +9200,7 @@ dé niŋ śabdātiǥorādƀuta kadi rubuha-ŋ paṙbwatārūga śīṙṇna*
 
 saŋ śūrātyanta tuṣṭān uni sahana nikaŋ śaṅka kĕṇḍaŋ Asaṅꝁya,
 maṅkin magyā Umĕtwèŋ raṇa hana maṅadĕg kapwa tāsiṅhanāda,
-sāmbut kontaṙnya lāwan karatala pinĕniŋ śūla lèn candrahāsa,
+sāmbut kontaṙnya lāwan karatala pinĕniŋ śūla lèñ candrahāsa,
 tan dwān tindak tumandaŋ wijah aṅigĕl ikaŋ wīra pañcāyuđajña*
 
 saŋ wruḥ riŋ hastiśikṣā sira Ika mamanèk riŋ liman matta daṙppa,
@@ -9240,16 +9244,16 @@ Aṅgānyāt mātya tādé Aku ta pĕjahanāwakku mātyātamūka,
 saṅké ƀaktiṅku yāṅhiŋ kita juga kaharan liṅga muṅgwiŋ hatiṅku*
 
 lāwan yan kāntunātaḥ syapa ta kadi kitānuŋ mahāté tuwuḥku,
-mwaŋ maŋ­rākṣā kitātaḥ taṅisana śaraṇā yan tĕkāŋ duḥkakāla,
+mwaŋ maŋrākṣā kitātaḥ taṅisana śaraṇā yan tĕkāŋ duḥkakāla,
 Āpan tā mitra kāsiḥ Aku tamak akadaŋ taṙ wulat rāma-réṇa,
-saṅké doṣaṅku k-āŋlĕs mara ri kita Alaḥ tībra mahyun tak amwīt*
+saṅké doṣaṅku k-āṅlĕs mara ri kita Alaḥ tībra mahyun tak amwīt*
 
 nā liŋnyāsiḥ manĕmbaḥ drawa ta hati nikaŋ wīra masnéha māsiḥ,
 wèt ni hyunyékanānuŋ Umawaya ri sirānlud sĕḍĕŋ gaṙbƀinī ya,
 puḥ ṅ-āmbĕk luḥ tan ampĕt r-aṅĕn-aṅĕn ikanāsiḥnya lèn kāsyasiḥnya,
 göŋ niŋ sambéga lāwan Asih umulahakĕñ citta ni-ṅwaŋ dadi wwaŋ*
 
-dèwī tā-trĕṣṇa tātaḥ t-ulih ari ri Umaḥ kapwa taṅhĕṙ tamolaḥ,
+dèwī tā-trĕṣṇa tātaḥ t-ulih ari ri Umaḥ kapwa taṅhèṙ tamolaḥ,
 Āmbĕktātyanta maṅliḥ tuwi kita maṅiḍam komalāpĕs sukunta,
 ṅwaŋ mapraŋ priṅga muṅgwī hĕlak-ĕlakan ikaŋ mrĕtyu mèwĕḥ Uripnya,
 méman hé dèwi hat-hat hayu nikanaṅ awak lyan wĕtĕṅtāri mèsi*
@@ -9271,7 +9275,7 @@ saŋ wīrātyanta māsiḥ dadi sira mamĕkul r-uṅgwakĕn yèŋ palaṅka*
 
 hé dèwī taryakĕŋ taŋ lara Apa tan ikā hétu ni ṅwaŋ mapaṅguḥ,
 tan kiṅkiŋ kāraṇāntāt anĕmu suka mĕné mwaŋ sukantèŋ paratra,
-Aṅhiŋ satyanta tékā ya ta lumĕpasakĕn riŋ kadi lwiṙta dèwī,
+Aṅhiŋ satyanta tékā ya ta lumĕpasakĕn riŋ kadi lwiṙ ta dèwī,
 yan tan satyékanaŋ strī niyata ya mapasaḥ mwaŋ tibā riŋ Awéci*
 
 maṅkā lwiṙ niŋ kadī māmi ya pinakapatik séwaké jöŋ naréndra,
@@ -9284,24 +9288,24 @@ ménak tékā manaḥnyomari manaṅis anūt sojariŋ swāmi satya,
 makrīḍāsnéha sāmpun Umĕtu ta sira saŋ wīra mārin kamāran,
 mahyas tékaŋ wara strī dadi maṅadĕg akèn sragđarā yan panĕmbaḥ*
 
-{rajanī}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | ⏑ ⏓ = :17:
+{rajanī}:19.33
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | ⏑ ⏓ = :17:
 
 ri wĕtu nikaŋ prawīra bala rākṣasa matri humuŋ,
 dadi ta kinon madūma sira saŋ mapatiḥ mamatiḥ,
 prakaśita saŋ prahasta matuhātuha riŋ samara,
 sira ta Umuṅgu wétan ikanaŋ nagarān pagĕlar*
 
-{prĕŧwītala}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+{prĕŧwītala}:19.34
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 ǥaṭodara sirodarèŋ raṇa patiḥ mahāpāṙśwa lèn,
 sirékana ta sāra rākṣaka kidul huwus saṅgraha,
-prawīra wara méǥanāda tinitaḥ sirāṅraṅkĕpi,
+prawīra wara méǥanāda tinitaḥ sirāŋraṅkĕpi,
 sĕnadđa siran uṅgu kulwan agĕlaṙ siromuṅgu lor*
 
-{śiꝁariṇī}
-⏑ – – | – – – | ⏑ ⏑ ⏑ | ⏑ ⏑ – | – ⏑ ⏑ | ⏑ ⏓ = :17:
+{śiꝁariṇī}:19.35
+⏑ — — | — — — | ⏑ ⏑ ⏑ | ⏑ ⏑ — | — ⏑ ⏑ | ⏑ ⏓ = :17:
 
 wirūpākṣāpakṣākĕmita ri dalĕm niŋ pura sira,
 waraḥ tékā rowaŋ nira ya masukātuṅgwa wataṅan,
@@ -9310,7 +9314,7 @@ kabèhīkaŋ śatrun tĕka taya malaywan pinanahan*
 
 nahan liŋ saŋ mantrī ri bala nira śīǥrān tama ta ya,
 tayānuŋ tan saṅkèp sama-sama rĕgĕp śakti matahĕn,
-ta hĕntyan sakwèhtottama kita kabèḥ liŋnya maṅatag,
+ta hĕntyan sakwèḥ tottama kita kabèḥ liŋnya maṅatag,
 Atag tékaŋ wadwā ya ta kakurutug rodra gumuruḥ*
 
 murub krođanyāgyā misanana Ikaŋ wānarabala,
@@ -9323,15 +9327,15 @@ hilaŋ sandéhanyān pamulati gagak lèn Asu hasaŋ,
 Asaṅꝁyāpūṙwwékin tĕka muni humuŋ lwiṙnya magiraŋ,
 giraŋnyān mātyékaŋ kalajana watĕk rākṣasa kabèḥ*
 
-{prĕŧwītala}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+{prĕŧwītala}:19.39
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 samāpta bala saŋ daśāsya humaḍaŋ kabèḥ sāyuđa,
-raǥūttama sirāṅrĕṅö dadi mulat sirèŋ lakṣmaṇa,
+raǥūttama sirāŋrĕṅö dadi mulat sirèŋ lakṣmaṇa,
 widagđa sira saŋ Arin winulatan wawaŋ wruḥ sira,
 prayatna maṅadĕg ta sādara r-atag tikaŋ wré kabèḥ*
 
-Anuŋ pramuꝁa śaktimānta tinuhèŋ watĕk wānara*
+Anuŋ pramuꝁa śaktimānta tinuhèŋ watĕk wānara,
 saṅ aṅgada suséna nīla nala jāmbawān māruti,
 sahasra hari mꜽnda ƀīmamuꝁa mattahaṣṭī gaja,
 gawākṣa winaténdrajāna śaraƀākya sampāti lén*
@@ -9463,7 +9467,7 @@ watèk makawacātisāra rikanaŋ juraŋ riŋ gunuŋ*
 
 Ikaŋ Umĕtu riŋ tĕgal paḍa madan ya mabyūha ya,
 padāti ri tĕṅaḥ kabèḥ panaliṅa-ŋ watĕk tuṅgaṅan,
-ri puṅkuran ikaŋ padāti matatā-ŋ raŧāṅrākṣa ya,
+ri puṅkuran ikaŋ padāti matatā-ŋ raŧāŋrākṣa ya,
 ṅaranya makarānana pratita muꝁya niŋ byūha ya*
 
 watĕk makuda nā dinānan atatā ya muṅgwī tĕṅaḥ,
@@ -9476,8 +9480,8 @@ watĕk makuda paŋhapit nda tan asö dahat tan madoḥ,
 Ikaŋ raŧa ya rākṣakèŋ kuda nahan ya sūcīmuꝁa,
 praśāsta ya daṅū wĕnaŋ malahakĕn sa-prĕŧwītala*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:19.69
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 nāhan byūha nikaŋ balāđika madan madwandwa tandwān asö,
 hūmrĕŋ siṅha jugèŋ galak katatakut kālāntakāṅiṇḍarāt,
@@ -9485,7 +9489,7 @@ mawyaŋ mèkĕl ikā wulunya makusut sākṣāt dilaḥ niṅhapuy,
 malwābāŋ mawĕlö matanya mawĕlū wā tulya yan löŋ lanā*
 
 molaḥ tānak-anaknya cañcala kilat tulyanya rodrān wulat,
-méǥèŋ rĕŋrĕṅ ataḥ paḍanyan ahirĕŋ woknyākusut yāsukĕt,
+méǥèŋ röŋrĕṅ ataḥ paḍanyan ahirĕŋ woknyākusut yāsukĕt,
 séṇḍuŋ ƀīṣaṇa bāyubajra sadrĕśoswāsanya humyus mĕsĕs,
 mākrak matri masiṅhanāda kumisik śabdanya yāṅkĕn gĕlap*
 
@@ -9499,10 +9503,10 @@ pāśomuṅgu rikaŋ taṅanya ri tĕṅĕn śīǥrān habĕt taŋ kuda,
 lumpat niŋ kuda tandwa tan dadi wuruŋ moliḥ kabèḥ maŋdĕmak,
 lāwan saŋ hana riŋ raŧāŋlĕpasakĕn kontāṅĕné pyaḥ paraḥ*
 
-yatna-ŋ wīra watĕk manuṅgaṅ umasö sāṅsönya tan wyaṙŧa ya,
+yatna-ŋ wīra watĕk manuṅgaṅ umasö sāŋsönya tan wyaṙŧa ya,
 kapwa wruḥ rikanaŋ musuḥ mati lawan tan mātya tan swaŋ masö,
 sèp taŋ wwaŋ Umulat riyān tĕka wawaŋ n-ton wré kahundul manūb,
-tulyanyālap-alap gĕlap juga ya riŋ śīǥrāṅalāṅhīrakĕn*
+tulyanyālap-alap gĕlap juga ya riŋ śīǥrāṅalāŋhīrakĕn*
 
 lèn wīrākawaca pracaṇḍa magalak sāmbĕknya tan paṅgalĕŋ,
 gumrut krođa hatinya lèn kumĕrĕkĕt lambénya dényānahut,
@@ -9540,7 +9544,7 @@ saṅsārān sinaranta śīṙṇna ya rujit Āwaknya tan lwiṙ Awak,
 dé niŋ wānara riŋ naƀastala sĕsök sakrođa kapwānahut*
 
 sākṣāt siṅha Ikaŋ kapīndra mamĕrĕp tékā taṅanyānĕpak,
-rāḥ wuṅkal tumapĕl rikaŋ karatalāṅrĕṅgut tĕpak taŋ muꝁa,
+rāḥ wuṅkal tumapĕl rikaŋ karatalāŋrĕṅgut tĕpak taŋ muꝁa,
 mūṙkꝁāmūk mamĕkul gumanti manahut héwān tinampyal malĕs,
 pinriḥ pīnrĕp iruŋnya pik Inuwahan huntunya rĕmpak pupak*
 
@@ -9574,8 +9578,8 @@ moŋ tulyanya manon kidaŋ ya maṅusī maswī ya moliḥ hulu*
 saŋ nīlānilaputra haywa humĕnĕŋ protsāhana-ŋ wré kabèḥ,
 Āpan tan palayū swaƀāwa nira saŋ śāṙddūlawikrīḍita*
 
-{kusumawicitra}
-⏑ ⏑ ⏑ | ⏑ – – | ⏑ ⏑ ⏑ | ⏑ – ⏓ = :12:
+{kusumawicitra}:19.88
+⏑ ⏑ ⏑ | ⏑ — — | ⏑ ⏑ ⏑ | ⏑ — ⏓ = :12:
 
 Aŧa ri huwus saŋ kapiwararāja,
 mujar i-siraŋ māruti nala nīla,
@@ -9657,8 +9661,8 @@ hana mamupak paṙbwata ya sadaṙppa,
 kayu-kayu māwān ya ta dinawutnya,
 makakarasak taŋ kusumawicitra*
 
-{śiꝁariṇī}
-⏑ – – | – – – | ⏑ ⏑ ⏑ | ⏑ ⏑ – | – ⏑ ⏑ | ⏑ ⏓ = :17:
+{śiꝁariṇī}:19.104
+⏑ — — | — — — | ⏑ ⏑ ⏑ | ⏑ ⏑ — | — ⏑ ⏑ | ⏑ ⏓ = :17:
 
 huwus saṅkĕp kapwātiraƀasa masö wānarabala,
 tumindak maṅduk riŋ kayu-kayu lawan tal hana hano,
@@ -9705,8 +9709,8 @@ tinūb yānūb moliḥ hana ta pinakoliḥnyan apuliḥ,
 marok wré wwil rodran kadi ta ya hari wyāǥra magalak,
 kađīranyātyantādƀuta kadi tĕguḥ niŋ śikariṇī*
 
-{jalodđatagati}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ ⏓ = :12:
+{jalodđatagati}:19.113
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ ⏓ = :12:
 
 samaṅkana Ikaŋ liman kinawacan,
 gaḍiŋnyan atitīkṣṇa malyus aluṅid,
@@ -9730,8 +9734,8 @@ manĕmpuhi gunuŋ Ikaŋ wray umibĕr*
 
 Anuŋ wray atiśakti yékana manèk,
 Anuṅgaṅi paḍāṅadĕg ri walakaŋ,
-Anuṅkak atisāhasāṅdĕdĕl igā,
-Anuṅgali hanāṅdĕdĕl hulu gulū*
+Anuṅkak atisāhasāŋdĕdĕl igā,
+Anuṅgali hanāŋdĕdĕl hulu gulū*
 
 wanöḥ wwara tĕkāmutĕṙ palu-palu,
 pupuḥ ta tulalay nikaŋ liman agöŋ,
@@ -9763,8 +9767,8 @@ nda tan kṣaya Anéka yātitih atap,
 lawan hana ta mapraṅ iŋ lwah adalĕm,
 gajéndra tahu riŋ jalodđatagati*
 
-{Aśwalalita}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ ⏓ = :23:
+{Aśwalalita}:19.124
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ ⏓ = :23:
 
 Aŧa ri sĕḍĕŋ nikaŋ bala parĕŋ mataṅkĕp atuguṙ ndatan hana surud,
 saraƀasa niṙƀayékana manaḥnya mo mati hiḍĕpnya tār alaṅ-alaŋ,
@@ -9796,8 +9800,8 @@ makin atitip tikaŋ śawa sawaŋ-sawaŋnya sawanèḥ t-ajaṙ sakawĕnaŋ,
 patĕmu ni rāḥ nikaŋ mati samaṅkanādƀuta dalĕmnya hīṅan i-ḍaḍa,
 gaja raŧa lèn padāti matunaḥ gĕlāna kapĕtĕk taṅ aśwalalita*
 
-{rajanī}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | ⏑ ⏓ = :17:
+{rajanī}:19.130
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | ⏑ ⏓ = :17:
 
 Atiśaya ƀīṣaṇāŋ samaraƀūmi mabāŋ ya kabèḥ,
 Ahalĕpa maṅkanāŋ talaga saŋ yama yan panurun,
@@ -9810,8 +9814,8 @@ madarawayan Ususnya mawilĕt ya ta tulya sulur,
 Atiśaya śudđa yan talaga tulya nikaŋ palagan*
 
 #wiṅśati saṙggaḥ#
-<citrālaya>
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏓ = :13:
+<citrālaya>:20.1
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏓ = :13:
 
 kadi guntur ikaŋ ruđira ya humilī,
 rikanaŋ giri gahwara kali madalĕm,
@@ -9828,8 +9832,8 @@ rikanaŋ raṇaƀūmi mamaṅan aṅinum,
 mawĕrö ya warĕg ruđira paḍa humuŋ,
 kadi siṅha muꝁanya ya kagiri-giri*
 
-{mānawakakrīḍita}
-– ⏑ ⏑ | – – ⏑ | ⏑ ⏓ = :8:
+{mānawakakrīḍita}:20.4
+— ⏑ ⏑ | — — ⏑ | ⏑ ⏓ = :8:
 
 kāla nikaŋ rāḥ humilī,
 pūṙṇna Ikaŋ luṅka kabèḥ,
@@ -9846,8 +9850,8 @@ māṙ ya mararyan maṅĕliḥ,
 kapwa mapèpèṙ hariṅĕt,
 mānawakākrīdita ya*
 
-{śālinī}
-– – – | – – ⏑ | – – ⏑ | – ⏓ = :11:
+{śālinī}:20.7
+— — — | — — ⏑ | — — ⏑ | — ⏓ = :11:
 
 munduṙ pwékaŋ wīra saṅkā ri ṅèlnya,
 kapwomaṅsö saŋ balānuŋ prađāna,
@@ -9889,8 +9893,8 @@ mèḥ maŋdūkèŋ pāda kāntĕp ḍinaṇḍa,
 kontal tĕṇḍasnyan linūdan katimpal,
 muñcaṙ taŋ rāḥ mwaŋ Ikaŋ jīwa luṅhā*
 
-{bramitākṣara}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ ⏑ ⏓ = :12:
+{bramitākṣara}:20.15
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ ⏑ ⏓ = :12:
 
 sꝑuṭadākṣi dakṣa ya rikaŋ samara,
 kalawan Ikaŋ pratapanākṣi masö,
@@ -9917,8 +9921,8 @@ wiparīta yénutitakĕn kapati,
 tinibākĕn īŋ lĕmah uđāni ta ya,
 pramitākṣarān mati saranta mĕkĕḥ*
 
-{sragđara}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :21:
+{sragđara}:20.20
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :21:
 
 tat kālanyān pĕjaḥ rākṣasabala-balawān wīra wānīŋ raṇāṅga,
 Ambĕknyāyudđa tātan Alaṅ-alaṅ atulaŋ tan wĕnaŋ mātya riŋ praŋ,
@@ -9945,12 +9949,12 @@ saṇḍaŋ wèt kwèḥ butinyān lagi malaga gahan riŋ galak tā paḍanya,
 kadganyātyanta tīkṣṇa n-parupuhi ta Ikaŋ wré dinuknyĕŋ krĕtāla,
 yāṅsö saŋ bāyuputrān pisani ya katibā yan tibèŋ paṙbwatāgöŋ*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:20.25
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 saŋ mitraǥna lawan wiƀīṣaṇa masö madwandwa rodrān katon,
 kapwa wruḥ rikanaŋ gadāyuđa sirāsowé widagđāpalu,
-saŋ mitraǥna kacidra riŋ kṣaṇa tibā mūṙcꞓān ḍinaṇḍèŋ gadā,
+saŋ mitraǥna kacidra riŋ kṣaṇa tibā mūṙcꞓāṇ ḍinaṇḍèŋ gadā,
 dé saŋ Āṙyya wiƀīṣaṇādƀuta humuŋ taŋ wré sahaṙṣān wulat*
 
 maṅsö saŋ praǥasa prawīra wihikan riŋ cidra lūd niṙƀaya,
@@ -9958,32 +9962,32 @@ saŋ sugrīwa mulat sahaṙṣa magiraŋ śīǥrān paraṅkĕp masö,
 cūṙṇna-ŋ ḍaṇḍa parĕŋ tikĕl dadi masö māprĕp ta riŋ ƀūtala,
 kontal saŋ praǥasāpasaḥ ḍaḍa nira syūḥ yan minuṣṭī kiwān*
 
-{sragđara}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :21:
+{sragđara}:20.27
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :21:
 
 haṙṣāmbĕk saŋ manonton rĕṣigaṇa kalawan déwa ganđaṙwwa tuṣṭa,
 dé saŋ sugrīwa wīrèŋ raṇa Umalahakĕn rākṣasātyanta śūra,
 saṅkā riŋ tuṣṭa mojaṙ jaya-jaya ya humuŋ kapwa mānāđukāra,
-nityékaŋ đūpa lāwan jĕnu hinudanakĕn puṣpawaṙṣādi lumrā*
+nityékaŋ đūpa lāwañ jĕnu hinudanakĕn puṣpawaṙṣādi lumrā*
 
-{basantatilaka}
-– – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓ = :14:
+{basantatilaka}:20.28
+— — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏓ = :14:
 
 nāhan pamūṙṣita niraŋ rĕṣi riŋ raṇāṅga,
 lāwan n-ikaŋ mati pinūja Apan prawīra,
 yékā mataŋnya sahananta kabèḥ rikèŋ praŋ,
 Ambĕk tatan suruda riŋ raṇa mātya śūra*
 
-{sragđara}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :21:
+{sragđara}:20.28
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :21:
 
 sakrođa-ŋ bajramuṣṭi prakaṭa maṅikikan yan masö kāla tulya,
 muṣṭinyākas ya bajropama mati kapisan śatru yan prĕp ya śīṙṇna,
 saŋ mꜽndātaḥ tumandaŋ mapagakĕn ikanaŋ bajramuṣṭīŋ raṇāṅga,
 tan dwān sāmbut cĕṅĕlnyāṙ pulirakĕn umĕsat śīǥra mawwāta tĕṇḍas*
 
-{toṭaka}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ ⏑ – | ⏑ ⏑ ⏓ = :12:
+{toṭaka}:20.30
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ ⏑ — | ⏑ ⏑ ⏓ = :12:
 
 wwara rākṣasawīra sĕḍĕŋ taruṇa,
 sy-anikumƀa ṅaranya Anuŋ mapuliḥ,
@@ -10000,12 +10004,12 @@ Acalopama taṙ pacalān pinupuḥ,
 sy-anikumƀa wawaŋ sinikĕp nira ya,
 sinahut nira téka gulūnya pĕgat*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:20.33
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 siraŋ wirūpākṣa mapakṣa tan sŧiti,
 huwus matuṅgwīri dalĕm nikaŋ pura,
-sahaṙṣa tāmbĕk nira maŋ­rĕṅö surak,
+sahaṙṣa tāmbĕk nira maŋrĕṅö surak,
 mĕsat ta śīǥrāṙ wĕtu riŋ raṇāṅgaṇa*
 
 masö ta saŋ lakṣmaṇa māna niścaya,
@@ -10013,8 +10017,8 @@ panaḥ wirūpākṣa paraḥ wawaŋ tibā,
 wawaŋ masö saŋ Aśanipraƀāpuliḥ,
 ḍinaṇḍa dé saŋ drawiḍéka yan pĕjaḥ*
 
-{prĕŧwītala}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+{prĕŧwītala}:20.35
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 pĕjaḥ sahana niŋ prawīra maṅasö ri saŋ Indrajit,
 masö raŧa nirāṙ putĕṙ ta Ikanaŋ gadāgöŋ sakol,
@@ -10036,9 +10040,9 @@ sirāta jaya riŋ musuḥ sapinapag nirālaḥ daṅū,
 hyaṅ indra tuwi déwatā sira ta kāpusan dé nira,
 nahan yaśa saṅ indrajit humibĕki-ŋ saprĕŧwītala*
 
-{Aparawaktra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Aparawaktra}:20.39
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 ya Ikana ta hilaŋ mĕné ṙ-hiḍĕp,
 yaśa nira śīṙṇna ri śīṙṇna niŋ raŧa,
@@ -10080,8 +10084,8 @@ ya tika mamūk tamatan paśéṣa ya,
 hana ta wĕdi-wĕdīŋ raṇāṅgaṇa,
 mamana-manā para cakra yālayū*
 
-{rajanī}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | ⏑ ⏓ = :17:
+{rajanī}:20.47
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | ⏑ ⏓ = :17:
 
 makabalasaḥ Ikaŋ bala ya duṙbbala niśśaraṇa,
 tuwi hinudan-hudan ya Ikanaŋ śara Astramaya,
@@ -10098,8 +10102,8 @@ paḍa ta mĕgil rikaŋ kuṭa Atīta lalu-ŋ diwasa,
 dadi sumurup ƀaṭāra rawi śīǥra kadi pwa humöt,
 Alah alĕmöḥ tumona Ikanaŋ bala yan palayū*
 
-{ƀujaṅgaprayāta}
-⏑ – – | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :12:
+{ƀujaṅgaprayāta}:20.50
+⏑ — — | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :12:
 
 surup saŋ hyaṅ āditya luṅhā sirosĕn,
 makin manda-mandékanaŋ téja māwā,
@@ -10151,8 +10155,8 @@ lumöŋ ƀinna cūlanya lāwan matanya,
 wiṣanyomĕsat nitya saṅké tutuknya,
 Ah-o ǥorarūpa-ŋ ƀujaṅga prayāta*
 
-{waṅśapatrapatita}
-– ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :17:
+{waṅśapatrapatita}:20.60
+— ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :17:
 
 nā tĕmahan niṅ āstra nika saŋ daśawadanasuta,
 koṭi sahasra saṅꝁya ya tikāṅapusi kapibala,
@@ -10169,8 +10173,8 @@ mrĕm wiparīta taŋ mata kadi pwa manĕhĕra pĕjaḥ,
 lèn muꝁa tan patéja kadi candra juga karahinan,
 tulya sawaṅśapatra patita-ŋ hati ya ta kumĕtĕr*
 
-{wīralalita}
-– ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | ⏓ = :16:
+{wīralalita}:20.63
+— ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | ⏓ = :16:
 
 kāla nirāṙ tibā dadi humuŋ tikaŋ kapibala,
 maṅkin akik makiṅkiṅ atikaṣṭa kapwa manaṅis,
@@ -10237,8 +10241,8 @@ niścaya tan kasaṅśaya sawèt nikaŋ guragaḍa,
 haṙṣa ta saŋ daśānana manāđukāra mamuji,
 sāđu Anakku dibya saꝑalān prawīralalita*
 
-{lakṣmīwati}
-– – ⏑ | – ⏑ ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :13:
+{lakṣmīwati}:20.76
+— — ⏑ | — ⏑ ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :13:
 
 nā liŋ niraŋ daśawadanāṙ puji ṅ-anak,
 saṅké giraŋ gĕrĕmĕ masö maṅolakĕn,
@@ -10260,8 +10264,8 @@ raṅkaŋ hĕmās jamanika bidđa nāga lén,
 molĕs tilām wara taruṇī warāpsarī,
 lakṣmīwatī mrĕdu paḍa paṇḍitèŋ siwo*
 
-{dođakawrĕtta}
-– ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{dođakawrĕtta}:20.80
+— ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 nā ta ƀinukti nikaŋ bala wīra,
 tan paturū rikanaŋ wĕṅi jāgra,
@@ -10269,9 +10273,9 @@ lèn mamijaḥ maṅigĕl ya sawaṙgga,
 lèn ta macumbana kāmuꝁa daṙppa*
 
 #Ĕkawiṅśati saṙggaḥ#
-<tiḍak ḍikĕtahui>
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+<tiḍak ḍikĕtahui>:21.1
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 nda ta tīta Ikaŋ balān pamukti,
 sira saŋ śrī janakātmajojarèn,
@@ -10308,7 +10312,7 @@ trijaṭā ndā huniṅan wuwuskwari,
 saparanku kita nda tan kasāha,
 tuwi tag dadya tak ājaré kitā*
 
-ya tikādi nikā Ujaṙta yādwā,
+ya tikādi nikā Ujaṙ ta yādwā,
 Apa tan wwīt aku tak madoḥ tuwi,
 ndi paran ni takut ta riŋ Asatya,
 ri paṅipyan tuwi tat kabañcana*
@@ -10316,14 +10320,14 @@ ri paṅipyan tuwi tat kabañcana*
 ri mĕné ta hilaŋ bratanta dénta,
 kita luṅhā tamatad waraḥ ṅhulun,
 winuwusta kabèh asiḥ ta ṅūni,
-tuwi sojaṙta tamat wĕnaŋ wihaŋ*
+tuwi sojaṙ ta-tamat wĕnaŋ wihaŋ*
 
 parimāṇa bapaṅku lén ibuṅku,
 taya trĕṣṇākw-i sirān hané kita,
 kita rāma kitāđidéwataṅku,
 kita cintāmaṇi kalpapādapa*
 
-siniwiṅku paṅöbanaṅkwu tan lèn,
+siniwiṅku paṅöbanaṅkwa tan lèn,
 kita tātaḥ hinarĕp-harĕp tĕmĕn,
 syapa māsiha lèn yadin taya dyaḥ,
 Ikanaŋ lèn niyatanya sampaya*
@@ -10338,8 +10342,8 @@ tuwi tak kāntuna dènta sakṣaṇa,
 ya mataŋnya t-uđāni dèwi tāṅhèr,
 Apa tak sāha Ataḥ sakè suku*!
 
-{Upajāti bajra}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏓ = :11:
+{Upajāti bajra}:21.14
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏓ = :11:
 
 nā liŋ nikā saŋ trijaṭān pasāmbat,
 saṅkā ri ƀaktinya lawan Asiḥnya,
@@ -10371,10 +10375,10 @@ taŧāpi tan tūt mati hé naréndra,
 yan bajra sākṣāt pwa kunaŋ hatiṅku,
 mataŋnya tan syūḥ ri pĕjaḥta nāŧa*
 
-{Upajāti bajra}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏓ = :11:
+{Upajāti bajra}:20.20
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏓ = :11:
 
-Alib ta pamriḥta laranta ṅĕlta,
+Alib ta pamriḥta laranta ṅèlta,
 Umèt ṅhulun ṅūni rikèŋ Alas göŋ,
 huwus kitād wruḥ hana wèḥ ri lĕṅkā,
 mamèt kitopāya sawètnyasiḥ ta*
@@ -10454,8 +10458,8 @@ Umuṅgu riŋ citta panasnya tīkṣṇa,
 gĕsöŋ katunwan hati dénya cūṙṇna,
 kadīkanaŋ wrĕkṣa kĕnéndrabajra*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:21.36
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 tibā ta dèwī Umuwaḥ wimohita,
 dinagđa riŋ duḥka hilaŋ hurip nira,
@@ -10483,7 +10487,7 @@ sira prasādaṅku ta rūg waṅun muwaḥ,
 hilaŋ pukaḥ tā wariṅinku yan taya*
 
 nahan ta liŋ ni trijaṭā ya kāsyasiḥ,
-samantarođāni sirāṅrĕṅö taṅis,
+samantarođāni sirāŋrĕṅö taṅis,
 tĕbĕŋ ta molaḥ maṅĕliḥ taṅan nira,
 ta molah ūmrĕm mawuwus tĕbĕŋ mugĕm*
 
@@ -10537,7 +10541,7 @@ kĕnèŋ mahāpāśa mahān sirān hiḍĕp,
 harĕp niran wrĕdđya ta haṙṣa niŋ musuḥ,
 Agöŋ pwa haṙṣanya mawās ta yan Alaḥ*
 
-mataŋnya tāṅhéra tamat harohara,
+mataŋnya tāŋhéra tamat harohara,
 pahénak āmbĕkta tamat makiṅkiṅa,
 Iké hurip duṙllaƀa tan pasambutan,
 sĕḍĕŋ ta yat mātya sira pwa tan pĕjaḥ*
@@ -10557,9 +10561,9 @@ mibĕṙ ya luṅhā mara riŋ raṇāṅgaṇa,
 ḍatĕŋ manĕmbaḥ ri siraŋ wiƀīṣaṇa,
 Ulaḥnya waṅśa sŧiti ƀakti riŋ bapa*
 
-{puṣpitāgra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{puṣpitāgra}:21.56
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 Aŧa tĕka ya ri saŋ wiƀīṣaṇāsiḥ,
 Umawa taṅisnya humīs ta luḥnya mādrĕs,
@@ -10631,8 +10635,8 @@ syapa ta tumona guṇaṅku dibya héman,
 kadi kayu ri tĕṅaḥ nikaŋ Alas goŋ,
 kamaga tĕwas manĕḍĕŋ ya puṣpatāgra*
 
-{ratodđata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+{ratodđata}:21.70
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 nā dumèh aku tamak Anona lèn,
 yaṙ tayā nrĕpatiputra rāǥawa,
@@ -10664,7 +10668,7 @@ saŋ wiƀīṣaṇa masö sirāwaraḥ,
 wrĕtta saŋ janakarājaputrikā,
 yékanénajarakĕn nirān asö*
 
-glāna saŋ raǥusutāṅrĕṅö sira,
+glāna saŋ raǥusutāŋrĕṅö sira,
 mꜽŧilī winawa riŋ raṇāṅgaṇa,
 byakta mātya rasikā si kāsyasiḥ,
 n-ton akuk kapati ṅūni mūṙcꞓita*
@@ -10714,8 +10718,8 @@ lèn manaḥta maṇi tulya śudđa ya,
 satya nitya ri hatinta yātĕguḥ,
 yadyapin wahu sĕḍĕŋ ratodđata*
 
-{swāgata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{swāgata}:21.86
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 ndaḥ priyé Asiha niŋ wiđi tāṅdé,
 riŋ paratra ta kunaŋ palarĕnta,
@@ -10757,8 +10761,8 @@ yogya yéka larapan ni Ulaḥta,
 pojaranta ya hitapriya satya,
 swāgatèṅ atiŧi mitra sagotra*
 
-{turagagati}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
+{turagagati}:21.99
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
 
 nā guṇanta ya Ananta hana ta lèn,
 kwèḥnya taṙ sawinilaŋ salah inujar,
@@ -10775,7 +10779,7 @@ n-ton kita praṇata séwaka satata,
 mèru tulya ta rĕṇaṅkwi rari kita,
 tan kahĕntya sahurĕn sa-Iwu tahun*
 
-prāṙŧanākwari yat aṅdadi ya muwaḥ,
+prāṙŧanākwari yataŋdadi ya muwaḥ,
 sānakāta kita haywa ta mapasaḥ,
 ndan kitāta matuhā Aku raraya,
 ƀaktya tāku ri kitāmalĕsa guṇa*
@@ -10810,8 +10814,8 @@ nyā-ŋ hurip tuwi lawan suka sakarĕŋ,
 ṙyyak kilat ya Upamā nikanaṅ inak,
 riŋ hiṅā paḍa lawan turagagati*
 
-{ƀramarawilaśita}
-– – – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :11:
+{ƀramarawilaśita}:21.104
+— — — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :11:
 
 nā hétunyād laku Umĕgil aku,
 saṅké hyuntèŋ parahita karuṇa,
@@ -10828,7 +10832,7 @@ saṅké pāpaṅku ya Asama-sama,
 hāḥ đik rāmāđama manalahasa,
 Āmbĕk māsiḥ bali kari wĕnaṅa*
 
-göŋ niŋ kléśéryaku giri sadrĕśa,
+göŋ niŋ kléśéry-aku giri sadrĕśa,
 tuŋtuŋ niŋ duṙyyaśa ka-Iraṅ-iraŋ,
 Āpan saŋ sajjana Umĕgil aku,
 tapwan sapwīkana salara nira*
@@ -10918,8 +10922,8 @@ kapwātaṅhi-ŋ manuk umuni humuŋ,
 sambégānon malara ya manaṅis,
 tulyāsāmbat ƀramarawilasita*
 
-{wīralalita}
-– ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | ⏓ = :16:
+{wīralalita}:21.125
+— ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | ⏓ = :16:
 
 kāla ƀaṭāra rāma humĕnĕŋ humuŋ rĕṣigaṇa,
 riŋ gaganān paṅañjali maṅunyakĕn stuti sira,
@@ -10978,7 +10982,7 @@ riŋ caturāśrama pwa ya grĕhasŧa Aśrama kita*
 
 đaṙmma magöŋ ꝑalanya taya duṙyyaśanya ta kita,
 nyāya nimitta yan katĕmu ṅ-aṙŧa yékana kita,
-kaṙmma manūt i-Āgama lawan jagadđita kita,
+kaṙmma manūt i-Āgama lawañ jagadđita kita,
 maṅkana riŋ Ulaḥ Anuṅ anūt i-yogya ta kita*
 
 mona kitèŋ rahasya kita wāda saŋ wruh acĕṅil,
@@ -10996,8 +11000,8 @@ riŋ maṅĕnākĕn ātiśaya ḍaṇḍa saŋ yama kita,
 bajra Awakta Uttama riṅ āyuđāpratihata,
 riŋ wihikan riṅ astra kita rāma wīralalita*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:21.140
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 riŋ nakṣatra kabèḥ kitékana wulan riŋ Aśwa Uccꜽḥśrawa,
 riŋ sènāpati saŋ kumāra rikanaŋ widyā kitāđyātmikā,
@@ -11009,8 +11013,8 @@ gāyatrī kita Uttamottama rikaŋ candénujaṙ saŋ kawi,
 dwandwāwakta rikaŋ samāsa kita ta dyūtèŋ calātaḥ kita,
 saŋ Ꜽrāwaṇa riŋ gajéndra magalak śāṙddūlawikrīḍita*
 
-{basantatilaka}
-– – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓ = :14:
+{basantatilaka}:21.142
+— — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏓ = :14:
 
 riŋ wrĕṣṇiwīra kita rakwa dĕlāha krĕṣṇa,
 kaṅśādidꜽtya trĕṇatulya ya patyananta,
@@ -11042,8 +11046,8 @@ swaṣṭā nikaŋ ƀuwana duṙjjana yādahānya,
 saŋ sāđu maṅguhakĕna-ŋ suka taṙ pakāla,
 Aṅhiŋ basantatilakādi sĕkaṙ makāla*
 
-{jagatpramudita}
-– ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | ⏓ = :16:
+{jagatpramudita}:20.148
+— ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | ⏓ = :16:
 
 nā ta Ujaṙ niraŋ rĕṣi kabèḥ maṅastuti humuŋ,
 mwaŋ sura sidđa cāraṇa maṅunyakĕñ jaya-jaya,
@@ -11076,12 +11080,12 @@ maṅkin agöŋ ta ƀakti ni manaḥnya tan n-alaṅ-alaŋ,
 n-ton ikana praƀāwa nira saŋ raǥūttama magöŋ*
 
 byakta ƀaṭāra wiṣṇu sira mānuṣākrĕti katon,
-saŋ garuḍađwajāṅdadi sirāṙyya rāma ta kariḥ,
+saŋ garuḍađwajāŋdadi sirāṙyya rāma ta kariḥ,
 tan hana saṅśayān hilaṅa śatru niŋ triƀuwana,
 rāma namostu nāŧa nikanaŋ jagat pramudita*
 
-{malinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{malinī}:21.155
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 nahan ikana wuwus niŋ wānarātyanta tuṣṭa,
 dadi ya madĕg adandan daṙppa yāsiṅhanāda,
@@ -11093,7 +11097,7 @@ kapibala ya Umaṅkat kapwa sāmpun sĕnadđa,
 krama tĕka ya ri hèŋ niŋ rājya lĕṅkā ya mahyā,
 gaganatala ya limpad dé ni śabdanya mādrĕs*
 
-daśamuꝁa sira kagyat maŋ­rĕṅö śabda ǥora,
+daśamuꝁa sira kagyat maŋrĕṅö śabda ǥora,
 tĕka tumama ya mājaṙ wrétta taŋ cāra śīǥra,
 saha bala maṅĕsaḥ sāk đꜽṙyya saŋ rāwaṇāsiḥ,
 hati saƀaya kapūhan kātrĕsan śoka māśā*
@@ -11128,8 +11132,8 @@ Inanumata sakahyun-hyunya dé saŋ naréndra,
 winarĕgan iniṅū riŋ wastra ratnopaƀoga,
 wiƀawa wiṣaya sécꞓā Apsarī mālinī kwèḥ*
 
-{widyutmālā}
-– – – | – – – | – ⏓ = :8:
+{widyutmālā}:21.164
+— — — | — — — | — ⏓ = :8:
 
 nāhan tojaṙ saŋ đūmrākṣa,
 sāmpun śudđāṅ āmbĕk mātya,
@@ -11143,11 +11147,11 @@ maṅhrĕŋ maṅhrik kapwāṅambul*
 
 maṅsö rowaŋ saŋ đūmrākṣa,
 krūrākārākrĕm-krĕm mākrĕp,
-kadyaṅgā niŋ méǥāröŋrĕŋ,
+kadyaṅgā niŋ méǥārĕŋrĕŋ,
 kadganyā ṅkèn widyutmālā*
 
-{mattamayūra}
-– – – | – – ⏑ | ⏑ – – | ⏑ ⏑ – | ⏓ = :13:
+{mattamayūra}:21.167
+— — — | — — ⏑ | ⏑ — — | ⏑ ⏑ — | ⏓ = :13:
 
 sāṅsö niŋ wwil kapwa tumindak ya tumandaŋ,
 mwaŋ kantaṙnyāty-ujwala patranya widagđa,
@@ -11199,8 +11203,8 @@ r-ambaḥ taŋ wré mawri ya māwrĕg ya Umundur,
 yékāṅsö saŋ māruti kapwāta sahaṙṣa,
 kadyaṅgā niŋ mattamayūrān panĕmūlā*
 
-{prahaṙṣiṇī}
-– – – | ⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{prahaṙṣiṇī}:21.177
+— — — | ⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 maṅsö saŋ pawanasuta prahaṙṣacitta,
 sāmbut taŋ watu sagunuŋ makas malaṇḍĕp,
@@ -11247,8 +11251,8 @@ hāhaḥ śabda haru-harālayū-ŋ watĕk wwil,
 mahyāhyaŋ mamuji wijaḥ manāđukāra,
 déwā riŋ gagana mulat prahaṙṣiṇī kwèḥ*
 
-{sragđara}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :21:
+{sragđara}:21.186
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :21:
 
 đwasta-ŋ đūmrākṣa đuṙttāđama makabalasaḥ đūli rowaŋnya śīṙṇna,
 dé niŋ wré wīra yāwoṙ wariṅutĕn abutĕŋ yaṙ pamuk tan panon rāt,
@@ -11320,8 +11324,8 @@ salwiṙ niŋ puṇya-puṇyénatĕrakĕn i-siraŋ brāhmaṇācāṙyya sidđa,
 mās lāwan mutyahāra sꝑaṭika marakatādinya dīnottamākwèḥ,
 luṅsiṙ déwāṅga dodot wrĕṣaƀa kuda liman kanyakā sragđarārūm*
 
-{suwadanā}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | – ⏑ ⏑ | ⏑ ⏓ = :20:
+{suwadanā}:21.200
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | — ⏑ ⏑ | ⏑ ⏓ = :20:
 
 sāmpun pwaŋ puṇya-puṇyātiśaya dadi Ināśīṙwwāda ta sira,
 dé ḍaŋ hyaŋ Aṣṭasénīnanumata ta sirān swasŧèŋ raṇa jaya,
@@ -11339,7 +11343,7 @@ haṙṣāmbĕk saŋ prahastāhuti nira hinatuṙ dīpākṣata miñak,
 saŋ hyaŋ wꜽśwānarénaṙccaṇa nira manĕhĕṙ mamwit mĕtu sira*
 
 wĕt niŋ gyā śīǥra muṅgaḥ sira ri raŧa nirālwāgöŋ kadi gunuŋ,
-pahyas sāmpun sĕnadđākawaca hinĕmasan jwālanya kumĕñar,
+pahyas sāmpun sĕnadđākawaca hinĕmasañ jwālanya kumĕñar,
 maƀrī taŋ ratna muktā-ŋ kanaka tapu-tapu ṅkāné hulu nira,
 Ādityomuṅgwi puñcak niṅ udaya sumĕnö nā topama nira*
 
@@ -11349,7 +11353,7 @@ tan kraḥ taŋ taṇḍa-taṇḍojwala kaharan alun n-ālola kumĕlab,
 tulyéwak lumba-lumba-ŋ kuda krĕtala Akĕn hyu praŋnya mawilĕt*
 
 cihnanyān mātya riŋ praŋ krama dadi ta manon aswāsaṅ apupul,
-yānuŋsuŋ saŋ prahastāṅhalulu ya maṅalup kapwāṅuliliṅi,
+yānuŋsuŋ saŋ prahastāŋhalulu ya maṅalup kapwāṅuliliṅi,
 gĕntĕṙ taŋ rāt hudan rāḥ kagiri-giri tikĕl taŋ taṇḍa kumupak,
 nā lwiṙ niŋ māra wiǥnāmarahakĕn i-pati byaktāhala daṅū*
 
@@ -11364,7 +11368,7 @@ mwaŋ byūhanyāṙdđacandrāṙdđa kawĕtu ri tĕṅaḥ saṅké panaliṅa,
 saŋ kīṙṇna byūha niŋ wré bari-bari majĕmuṙ yāwoṙ tar apiliḥ*
 
 sāṅsö saŋ sꜽnya sénāpati maṅarahakĕn wīrāṅatagakĕn,
-Uttuṅgottuṅga niŋ wwil malayu-layu masö kapwāṅlaki-laki,
+Uttuṅgottuṅga niŋ wwil malayu-layu masö kapwāŋlaki-laki,
 tan dwānyāṇḍĕm maraṅkĕp kaparupuh amupuḥ mosyan silih usī,
 sinraŋ manraŋ ya mamraŋ manuruṅ aṅicipiṙ cidranya gapitan*
 
@@ -11408,8 +11412,8 @@ raṅké-raṅké jugāpan taji makatulajĕg tan pāntara riya,
 saŋ sugrīwālarān ton kapibala kabalik yāsoṙ kawalĕsan,
 sambé saŋ nīla līlān taṅan ira mawajik mojaṙ suwadana*
 
-{basantatilaka}
-– – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓ = :14:
+{basantatilaka}:21.217
+— — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏓ = :14:
 
 hé nīla haywa humĕnĕŋ mananā Ikaŋ wré,
 tāṅsö-huwus papagakĕnta Ikoŋ prahasta,
@@ -11541,8 +11545,8 @@ kagyat kagöman umulat muliṅānya méṅas,
 saŋ nīla ƀinna maṅusī manuruŋ maṅambaḥ,
 siṅhopamāmuru kĕnas juga duṙniwāṙyya*
 
-{Upendrabajra}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏓ = :11:
+{Upendrabajra}:21.243
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏓ = :11:
 
 katūb ikaŋ rākṣasa tan pasāra,
 muliḥ kabèḥ tan papuliḥ paḍāṅliḥ,
@@ -11550,8 +11554,8 @@ mĕhāḥ mahosyan tama riŋ kaḍatwan,
 tĕkānaṅis mājar-ajaṙ ya wrĕtta*
 
 #dwāwiṅśati saṙggaḥ#
-<rajanī>
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | ⏑ ⏓ = :17:
+<rajanī>:22.1
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | ⏑ ⏓ = :17:
 
 Aŧa winaraḥ ta saŋ daśamuké pati saŋ mapatiḥ,
 makin atakut manaḥ nira-nirantara kampita ya,
@@ -11613,8 +11617,8 @@ satama nirān tĕmu-ŋ kaka kakiṅkiṅanāṅĕn-aṅĕn,
 muꝁa mawĕnĕs mahos hati kĕtĕg-kĕtĕgĕn rumaras,
 panĕṅĕr i-göŋ nikaŋ ƀaya wuwus nira manda malon*
 
-{tiḍak dikĕtahui}
-– – ⏑ | ⏑ – – | ⏑ ⏑ ⏓ = :9:
+{tiḍak dikĕtahui}:22.13
+— — ⏑ | ⏑ — — | ⏑ ⏑ ⏓ = :9:
 
 Antĕnku halib moha kita,
 nidrā wiparītāt paturū,
@@ -11756,8 +11760,8 @@ yakṣāsura déwāta tuwi,
 tāwat niyatā yan pralayā,
 dé niŋ mada yan tībra murub*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:22.41
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 nā liŋ saŋ Ari kumƀakaṙṇna manĕsĕl sakrođa saŋ rāwaṇa,
 hāḥ đik đūṙtta niké wĕnaŋ mujarakĕn sāmbĕknya tan paṅgalĕŋ,
@@ -11787,7 +11791,7 @@ saŋ hyaŋ sūṙyya masoṙ sĕnö nira kucĕm méraŋ marin Ujwala*
 yan riŋ rodra kadi hyaṅ īśwara katon māwak mahāƀꜽrawa,
 yan riŋ göŋ kalawan mawān sama-sama mwaŋ méru tātan pahī,
 Ādityèŋ pralaya pracaṇḍa mapanas yātaḥ paḍā niŋ mata,
-sākṣāt mrĕtyu Ikaŋ muꝁāriṅi-riṅi krūrāgra daŋṣṭrā nira*
+sākṣāt mrĕtyu Ikaŋ muꝁāriṅi-riṅi krūrāgra ḍaŋṣṭrā nira*
 
 malwā lyaŋ ni Iruŋ nirādƀuta pĕṅuŋ gamƀīra yāṅkĕn guhā,
 mwaŋ Uśwāsa niromĕsĕs dadi haṅin séṇḍuŋ riwutpāta ya,
@@ -11801,65 +11805,63 @@ moǥātaḥ kumĕdut Ikaŋ mata lawan bāhwī kiwāñ cañcala*
 
 ndā taṙ wismaya taṙ lĕgö lagi manon Utpāta taṙ pèt hayu,
 maṅkin daṙppa sirār asö papagakĕn taŋ wānarāṅĕmbuli,
-maŋ­raṅkul ya parĕŋ manĕk kasaputan tāwak nira wré kabèḥ,
+maŋraṅkul ya parĕŋ manĕk kasaputan tāwak nira wré kabèḥ,
 kadyaṅgā nikanaŋ gunuŋ papupulan niŋ méǥa śīǥrānaput*
 
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:29: = :93:
+{daṇḍaka}:22.50,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:29: = :93:
 
-Aŧa pinarĕbutan ta saŋ kumƀakaṙṇnénasö dé nikaŋ wré wijahyānibèŋ paṙbwatāmaṇḍĕm aṅḍaṇḍa maṅduk mañakrèŋ śilā bajra mamrihya māmrĕp manampyal Iruŋ maŋhabĕt yāmubat maŋdĕmak maŋdugaŋ maŋdĕkuŋ maŋdĕdĕl maŋdudut kapwa yāmèt upāyānahut yānuhuk riŋ nakāgrān tujaḥ taŋ mata,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:28: = :90:
+Aŧa pinarĕbutan ta saŋ kumƀakaṙṇnénasö dé nikaŋ wré wijahyānibèŋ paṙbwatāmaṇḍĕmaŋḍaṇḍa maṅduk mañakrèŋ śilā bajra mamrihya māmrĕp manampyal Iruŋ maŋhabĕt yāmubat maŋdĕmak maŋdugaŋ maŋdĕkuŋ maŋdĕdĕl maŋdudut kapwa yāmèt upāyānahut yānuhuk riŋ nakāgrān tujaḥ taŋ mata,
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:28: = :90:
 kaŧamapi taya mamyati ṅkāna puḥ taŋ watu syūḥ gunuŋ cūṙṇna taŋ ḍaṇḍa tātan dwa saŋ kumƀakaṙṇnāmalĕs taṙ pahīṅan paṅan tékanaŋ wrétaṅan karwa yāgantya mantīṅakĕn riŋ pupū mwaŋ ri tūṙ lèn sinĕmpal sĕbit śīṙṇna rantan Ususnyāṙ gitĕs tĕṅgĕkiŋ wré wanèḥ rāḥnya muñcaṙ linaṅgā nira,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:28: = :90:
-hana ta hinapitan pi tan polah opĕk kapĕṅhĕl ḍinaṇḍèŋ gadā kwèḥ śiṇūlāsi maŋ laḥ malā lèn liḍaḥnyān katimpal tinampyal nirāpil wanèḥ kèdĕkan mwaŋ hana wré sināmbut Ikūnyākidat yāṅdudut duṙbbalāmriḥ makudyat makūṙcyat kakūṙcyat cacal kut nikékūnya laklak lucut yan lucat,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:28: = :90:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:28: = :90:
+hana ta hinapitan pi tan polah opĕk kapĕṅhĕl ḍinaṇḍèŋ gadā kwèḥ śiṇūlāsi maŋ laḥ malā lèn liḍaḥnyān katimpal tinampyal nirāpil wanèḥ kèdĕkan mwaŋ hana wré sināmbut Ikūnyākidat yāŋdudut duṙbbalāmriḥ makudyat makūṙcyat kakūṙcyat cacal kut nikékūnya laklak lucut yan lucat,
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:28: = :90:
 makin atiśaya rodra saŋ kumƀakaṙṇnāgalak taṙ warĕg yaṙ paṅanwānarāsiŋ masö wrĕdđi tékaŋ lapā tan palö taŋ wĕtĕŋ dé nikaŋ wré piraŋ koṭi lakṣa-kṣayanyèḥ kṣaṇākwèḥ dahat lwaŋnya tan lwaŋ-lwaṅ īkaṅlapān tulya kālāgnirodraŋ Apuy riŋ wĕtĕŋ somasuk tan paśéṣāsi ƀasmīkrĕta*
 
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:29: = :93:
+{daṇḍaka}:22.51,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:29: = :93:
 
-kadi ta sira ƀaṭāra kālāmaṅan sarwaƀūté sĕḍĕŋ niŋ yugāntāṅigĕl riŋ śmaśānānanā nāpulaŋ rāḥ Utĕk yékanāṅkĕn kawit yāsawit brahmasūtro-pamā niŋ Usus nā ta pahyas mahākāla-kālanya r-impönakĕn rāt mana-ṅhāra nā tulya saŋ kumƀakaṙṇnāpulaŋ rāḥ paṅan tékanaŋ wré kabèḥ,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:28: = :90:
+kadi ta sira ƀaṭāra kālāmaṅan saṙwwaƀūté sĕḍĕŋ niŋ yugāntāṅigĕl riŋ śmaśānānanā nāpulaŋ rāḥ Utĕk yékanāṅkĕn kawit yāsawit brahmasūtro-pamā niŋ Usus nā ta pahyas mahākāla-kālanya r-impönakĕn rāt mana-ṅhāra nā tulya saŋ kumƀakaṙṇnāpulaŋ rāḥ paṅan tékanaŋ wré kabèḥ,
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:28: = :90:
 kagiri-giri girīndratulyāṙ katon ƀīṣaṇékaŋ tutuk dé ni rāḥ niŋ watĕk wānarābaŋ Akĕn đātu muñcaṙ sumök ṅké guhā niŋ gunuŋ taṙ wĕnaŋ tékanaŋ wré mulat yomasö tāmas āmbĕknya dé niŋ takut kātrĕsan yomĕsat taṙ-panon rāt pĕtĕŋ rāt hiḍĕpnyālayū mriḥ Awaknyānusup riŋ sukĕt,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:28: = :90:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:28: = :90:
 hana ta mĕgil i-śrĕṅga niŋ paṙbwatāmèt guhā hātnya riŋ jīwa hétunyan amriḥ humöt riŋ luwaŋ riŋ klĕwuŋ lèn manèk riŋ mahāwrĕkṣa raṇḍö kukap poḥ kĕpuḥ hambulu ṅkān panĕk mèṅguṅan tékanaŋ wrĕkṣa Uṅgwanya molaḥ kadi pwālĕmĕḥ Āśrayan dé nikaŋ wré Apan hīna nīcālayū riŋ raṇa,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:28: = :90:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:28: = :90:
 riga-rigu kumĕtĕṙ tan aṅgĕḥ paluṅguḥnya méṅguŋ Ikaŋ wrĕkṣa Uṅgwanya miṅgat lumumpat tumumpaŋ tumampil ya riŋ pāŋ wanèḥ kātar-āsiŋ paranyākĕtĕṙ kātrĕsan mwaŋ hanānuŋ manèk riŋ hano nohanāmbĕknya muṅkus Awaknyèŋ hĕduk tan katunduk ya dé niŋ hĕduk niṣṣah āhaḥ wiśātāturun*
 
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:26: = :84:
+{daṇḍaka}:22.52,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:26: = :84:
 
 makakarasak asāk Ikaŋ wré ri soṙ ṅkā swaranyāmĕgil riŋ suwélāsuwéyājĕmuṙ mūr arok rūkṣa moruk marin méraṅ-éraŋ rumaṅkaŋ rumuṅkuŋ makik kèdĕkan dé ni rowaŋnya wèt niŋ sĕsĕk sök rikaŋ pāṙśwa śīǥrānturun riŋ tasik maṅkin osik ya riŋ sétubanđālayū,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:26: = :84:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:26: = :84:
 kakurutug atuguṙ matiṇḍiḥ matuṇḍuŋ kasaṇḍuŋ kasiṅgul wanèḥ ṅkā ri tambiŋ nikaŋ tambak āmbĕknya luṅhā tibā riŋ tasik kāsyasiḥ yan paṅumbaŋ kumĕmbĕŋ ta luḥ niŋ tumon yan kawantus kawantiŋ kabuñcaŋ kinuñcaŋ nikaŋ ṙyyak rĕmĕk waṅkuwaṅkun ni waṅkwaŋnya wuṅkuk tikĕl,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:29: = :93:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:29: = :93:
 kadi tan uwaha maŋlawan lwiṙ nikaŋ wré mĕgil riŋ mahéndrā mahénak paluṅguḥnyan uṅgwiŋ guhā tan tahāŋ moŋ Apan moha dé niŋ takut lèn hanānuŋ mahöt-hötan iŋ horwi hāro-harāmèt hawan tātan oliḥ kanīna-n kĕné rwī nikaŋ hoṙ wyah-o jīwatrĕṣṇā tuhun yan pawèḥ duḥka riŋ wwaŋ satrĕṣṇā dahat,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:28: = :90:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:28: = :90:
 mulat ikana saṅ aṅgadātyanta téraŋ nirāṙ ton ikaŋ wré n-alaḥ wök ulaḥnyaṙ hiḍĕp đīra tāmbĕk nikāṅhiŋ sirātèka tuṅgal tiniṅgal manuṅgul maṅaṅgul tumaṅgĕl Ikaŋ duṙyyaśāgöŋ mataŋnyan pataṅguḥ makāṅgaḥ Ujaṙ niŋ Aji jñāna sañ jāti śūrĕŋ raṇātaḥ gĕgontā kitaŋ wré kabèḥ*
 
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:28: = :90:
+{daṇḍaka}:22.53,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:28: = :90:
 
 bali hana raṇayajña ya jñāna saŋ śūra yan sāra saŋ wīra saŋ đīra saŋ đārakèŋ praŋ mahāntaŋ panuŋtuŋ niṅ uttuṅga tātan pakāṅgĕḥ Ikā tuṅga-tuṅgal sirāniṅgilis késisan taṙ gĕlis ṅwaŋ wanèḥ kwan niṅ āmbĕk ya mukṣèŋ kṣaṇā liŋ nirāmūk sirèŋ papraṅan maṅkanātaḥ kitaŋ wānara,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:29: = :93:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:29: = :93:
 Apa ꝑala puharā nikaŋ jīwa yan tan pamūjā lawan tan kapūjā rikèŋ papraṅan yékyakĕn kuṇḍa-kuṇḍā niraŋ wīra nāŋ śatru yāṅkĕn Apuy nāyuđanyojwalāṅkĕn dilaḥ nāŋ kaśūranta yékān akĕn śruk-śru-wānyā hutinta-ŋ huripnyā ṅ-awak carwa pañcopacārā Ika wruḥta riŋ citra pañcāyuđa,
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:29: = :93:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:29: = :93:
 ṅuni-ṅuni yan ikaŋ musuḥ mātya nīśéṣa dèntêŋ raṇa byakta homanta méman tĕmĕn tat t-amètā byayantāṅhiṅ īkāṅĕn-āṅĕn n-ikāṅĕn-n-aṅĕntā-lilaŋ nitya saŋ hyaŋ mahāwīraƀadréśwarālambanānèŋ raṇāṅgāṅgaṇāniŋ pahoman samidđānta waṅkay nikaŋ śatru sampūṙṇna pūṙṇnāhutī rāḥ Utĕk,
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:28: = :90:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:28: = :90:
 ndya ta kakuraṅan iŋ pamūjā rikèŋ praŋ Apan saṅkĕp iŋ yoga paṅhrĕŋ ta paŋhrikta patrinta tékāstutintèŋ mahāsiṅhanādèŋ raṇāṅdé suka swaṙgga-waṙggan tĕmu-ŋ ƀoga saṅké praƀāwanta dé niŋ kaśūran kađīran kawīran yaśātaḥ ya sāđyanta paṅguḥ mahāśūra riŋ rāt kiténastuti*
 
-{waṅśapatrapatita}
-– ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :17:
+{waṅśapatrapatita}:22.54
+— ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :17:
 
 nā ta wuwus saṅ aṅgada makon umuwah apuliha,
 gaṙjjita citta niŋ wray abaṅun kadi ta kinĕlĕgan,
 tā katakutnya mo mati mamūk ta ya muwah umasö,
 ǥūṙṇnita sök sĕsök kadi ta rūpa niṅ udađi pasaŋ*
 
-{sragđara}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :21:
+{sragđara}:22.55
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :21:
 
 maṅhrĕŋ maṅhrik ya makrak prakaṭa kadi gĕlap ǥora śabdanya mahyā,
 haṙṣékāmbĕknya maṅsö paḍa makabarubuḥ yaṇ ḍĕṅö śāstra hétu,
@@ -11869,15 +11871,15 @@ mawyaŋ mèkĕl wulunyojwala paḍa kumĕlab rāmbutiŋ wānarākwèḥ*
 sakwèḥ niŋ wīra maṅhèṙ paḍa ta ya maṅadĕg bāp ikaŋ wré sĕnadđa,
 sātus saṅꝁyā piraŋ koṭi Ayuta ta kunaŋ sāgarékā hatuṙnya,
 loṙ wètan sök ya kulwan kidul ika hibĕkan dé nikaŋ wré maṅanti,
-saṅsiptékā kabèḥnyāpalu-palu ginĕgönyéka poḥ nā sinĕmpal*
+saŋsiptékā kabèḥnyāpalu-palu ginĕgönyéka poḥ nā sinĕmpal*
 
-sāmpun tékāṅrĕgĕp wrĕkṣa kadi ta ya gunuŋ sañjatanyātirodra,
+sāmpun tékāŋrĕgĕp wrĕkṣa kadi ta ya gunuŋ sañjatanyātirodra,
 maṅsö taŋ wīra sakwèḥnya makin akĕtĕran dé ni rowaŋnya māwrĕg,
 molaḥ taŋ wrĕkṣa humyūs haṅin-aṅin ikanaŋ rākṣasā kumƀakaṙṇna,
 Uśwāsanyèṅ iruŋ kādƀuta ya katatakut yéka mādrĕs ya nitya*
 
-{mrĕgāṅśā}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏓ = :19:
+{mrĕgāṅśā}:22.58
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏓ = :19:
 
 saŋ nīlāṙṣaƀa ganđamādana đanuṙđara gawa-gawaya, 
 tārā krĕndana Indrajānu kalawan śatabali winata,
@@ -11924,8 +11926,8 @@ saŋ hyaŋ Indra huwus Alaḥ baruṇa wꜽśrawaṇa yama tuwi,
 śaktinyopama bāyubajra rikanaŋ pralaya katatakut,
 śīṙṇnāsiŋ kahawā ta dénya ya mataŋnya lĕkasana huwus*
 
-{Upajāti bajra}
-⏓ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏓ = :11:
+{Upajāti bajra}:22.67
+⏓ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏓ = :11:
 
 minaṅkana śrī naranāŧa rāma,
 r-ajñéka saŋ wānararāja maswa,
@@ -11962,8 +11964,8 @@ nāŋ wrĕkṣa paṅduk nira yéka bajra,
 saŋ kumƀakaṙṇnācala mèru tulya,
 đīrātĕguḥ niścala niṙwikāra*
 
-{prahaṙṣiṇī}
-– – – | ⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{prahaṙṣiṇī}:22.74
+— — — | ⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 ndā tapwan wiǥani siraŋ dinuk Akampya,
 saŋ sugrīwa sira wawaŋ muwaḥ ta maṅduk,
@@ -12030,8 +12032,8 @@ rĕñcĕm mūṙccita sira yaṙ tibā kalĕṅgak,
 tātan wruḥ sira pinalaywakĕn pinuṇḍut,
 dé niŋ rakṣasa warawīra kumƀakaṙṇna*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:22.87
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 saŋ sugrīwa katon pinuṇḍut alayū taŋ wānarāwrĕg kabèḥ,
 Āśā śoka ya soṙ gatinya ta huwus Āpan tuhānyāṙdđa sor,
@@ -12041,10 +12043,10 @@ rudrāgni jwalitopamā nira humöŋ Āmbĕk pracaṇḍāgalak*
 saŋ sugrīwa samantarāwuṅu wawaŋ tođāni dāni-ŋ manaḥ,
 mĕṅgĕp mrĕm sakarĕŋ mawās aṅĕn-aṅĕn yékā ta lumpat sira,
 tātaṙ wyāṙŧa pĕsat nirāṙ sahut iruŋ saŋ kumƀakaṙṇnādƀuta,
-maŋ­rĕṅgut taliṅèŋ taṅan kaṅĕs akas tīkṣṇa-ŋ kuku krūra ya*
+maŋrĕṅgut taliṅèŋ taṅan kaṅĕs akas tīkṣṇa-ŋ kuku krūra ya*
 
-{sragđara}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :21:
+{sragđara}:22.89
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :21:
 
 luṅhā saŋ wānaréndrāṙ wwat iruṅ iraṅ-iraŋ kumƀakaṙṇnān wirūpa,
 taṙ péruŋ tā kapö niŋ taliṅa lĕṅĕ-lĕṅö lwiṙnya médan mamuṇḍuŋ,
@@ -12052,8 +12054,8 @@ méraŋ mūran wirūpāṅasula lĕhĕṅ akuk mātya liŋnyān pamūka,
 tātan dwékā lĕkasnyān waluy umaṅan ikaŋ wānarān rāḥnya hĕnti*
 
 #trayowiṅśati saṙggaḥ#
-<waṅśapattrapatita>
-– ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :17:
+<waṅśapattrapatita>:23.1
+— ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :17:
 
 byakta ta hĕntya niŋ kapibalān hĕnĕṅakĕna Iké,
 rākṣasa kumƀakaṙṇna waḍawāmuꝁa muꝁa nikana,
@@ -12090,8 +12092,8 @@ sök ta tutuknya tan wĕnaṅ aśabda tuwi kapĕpĕkan,
 yan pinanaḥ muwaḥ pinisanan ta ya Inarah-araḥ,
 rākṣasa tan salaḥ ya tumanĕm hati ya ta kinĕnan*
 
-{wikasitakusuma}
-– ⏑ ⏑ | – – – | ⏑ ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏓ = :25:
+{wikasitakusuma}:23.8
+— ⏑ ⏑ | — — — | ⏑ ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏓ = :25:
 
 hrū gumaluṅgaŋ ṅkā ri ḍaḍanya drawa ruđira ri muꝁa mĕtu makabĕlĕbĕk,
 riŋ mata rīruŋ rāḥnya ya muñcaṙ pracalita hana ta saka ri taliṅa mulĕk,
@@ -12103,8 +12105,8 @@ saŋ rĕṣi haṙṣāṅastuti tuṣṭāṙ wulat i-kapatiniṅ amuhara haru-
 hyaŋ prĕŧiwī molaḥ milu haṙṣā tasik atiśaya sira suka kadi maṅigĕl,
 cañcala līlā ryaknya lumimbak lalita kadi ta-taṅaniṅ amijah agiraŋ*
 
-{ƀadralalita}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ ⏓ = :21:
+{ƀadralalita}:23.10
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ ⏓ = :21:
 
 Aŧa sāmpuniŋ suƀaga kumƀakaṙṇna mati dé niraŋ raǥusuta,
 manaṅis ta saŋ daśamuꝁātitībra wiparītacitta saƀaya,
@@ -12296,8 +12298,8 @@ U lukān imān i-kapatinya dé nikana saŋ samīraṇasuta,
 pati niŋ rwa sānak ahĕnĕk manaḥ ni kalulanya līna kalulun,
 binuruñjakĕn milu jurunya duṙjjana julig taman n-ilu pĕjaḥ*
 
-{suwaṅśapattra}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏓ = :18:
+{suwaṅśapattra}:23.48
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏓ = :18:
 
 daśamuꝁa késisan kasiharĕp kawĕkas aṅililan,
 Akara-karā tĕkā nikanaṅ antaka ri sira huwus,
@@ -12429,8 +12431,8 @@ Upakaraṇèŋ raṇāṅgaṇa huwus hana hinaḍaṅakĕn,
 pinasuk iraŋ rasuk hana rukuḥ nira kanaka maṇik,
 dumilah abāŋ sĕnönya mahĕniŋ kadi ta hati nira*
 
-{wiśwalalita}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ ⏓ = :17:
+{wiśwalalita}:23.74
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ ⏓ = :17:
 
 krama Umanèk sirèŋ raŧa magöŋ kinūṣa riṅ ĕmās,
 kadi ta ya śrĕṅga niŋ giri sumèru kāñcana maya,
@@ -12447,7 +12449,7 @@ tabĕ-tabĕhanya ǥūṙṇnita tĕkèŋ diśāntara humuŋ,
 đwaja kadi waṅkawāsĕmu kuwuŋ-kuwuŋ Ubar-abir,
 kadi ta hudan magöŋ wiṣa panaḥnya tīkṣṇa mapanas*
 
-tĕka ta Umaṇḍĕm āṅrĕpa maṅaŋ ya maṅhrik aṅakar,
+tĕka ta Umaṇḍĕmaŋrĕpa maṅaŋ ya maṅhrik aṅakar,
 tuwi bala saŋ raǥūttama masö tumindak aṅigĕl,
 paḍa ta galaknya yan patĕmu kapwa đīra mapupuḥ,
 kadi bubula-ŋ lĕmaḥ n-inidĕkan matĕmpuh atugur*
@@ -12477,24 +12479,24 @@ raŧa nira śīǥra gumrit umasö Amoǥa kawaluy,
 pinakanimitta niŋ Alaha riŋ raṇékana huwus,
 tĕka taṅ aṅin riwut makaduluṙ gagak malimunan*
 
-{sragđara}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | ⏑ – – | ⏑ – ⏓ = :21:
+{sragđara}:23.84
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | ⏑ — — | ⏑ — ⏓ = :21:
 
 ndā taṙ kagyat tar āśā rasika ta saṅ amūk mūṙkꝁa rājā daśāsya,
 ṅ-kon taŋ wadwāmrihātaḥ krama dadi ta masö saŋ wirūpākṣa nāma,
 muṅgwiŋ hastin panuṅgaŋ mamawa ta ya lipuŋ tīkṣṇa ƀinnāṙ putĕṙnya,
 saŋ sugrīwā mapag yèŋ raṇa mati kapisan taṙ pasārān tinampyal*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:23.85
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 saŋ đūmrākṣa masö masĕṅhit apuliḥ tan polih amriḥ Ataḥ,
 saŋ sugrīwa siromatī ya tinibān wuṅkal kariṅkĕl rĕmuk,
 mahyāmuk Ika saŋ mahodara masö mahyun tumĕmwaŋ yaśa,
 pīnrĕp dé niraṅ aṅgadèŋ raṇa rĕmuk-rĕmpū hulunyāpasaḥ*
 
-{Indrayuđa}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | – ⏑ – | – ⏑ – | – ⏑ – | – ⏑ ⏓ = :21:
+{Indrayuđa}:23.86
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | — ⏑ — | — ⏑ — | — ⏑ — | — ⏑ ⏓ = :21:
 
 ri pati saṅ apatiḥ tigaŋ waŋ wirūpākṣa đūmrākṣa māhodara,
 makin alilaṅ awās awaśyaŋ baśā ṅ-antaké saŋ daśāsyèŋ raṇa,
@@ -12502,8 +12504,8 @@ mĕtu sakala galak nirāṙ wuk Ikaŋ wānarānékanā duṙbbala,
 tutug apagĕh ikaŋ kaśūran rasé tan surud-rudra tulyèḥ galak*
 
 #catuṙ wiṅśati saṙggaḥ#
-<śāṙddūlawikrīḍita>
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+<śāṙddūlawikrīḍita>:24.1
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 tat kālān kadi kālamrĕtyu sakalātyantèŋ galak yaṙ pamuk,
 yékāṅsö nira saŋ raǥūttama tumūt saŋ lakṣmaṇāṅimbaṅi,
@@ -12525,8 +12527,8 @@ multak taŋ muśalā triśūla krĕtalārūg ry-agra niŋ hrū mĕlĕk,
 wuṅkal lèn alaṅan hilaŋ haliliṅĕn sāsiŋ kĕnā dé nikā,
 ganđaṙwwāstra panaḥ pratīta panulak saŋ rāma riŋ maṅkana*
 
-{prahaṙṣiṇī}
-– – – | ⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{prahaṙṣiṇī}:24.5
+— — — | ⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 yan soṙ bāṇa nira ta saŋ daśāsya śīṙṇna,
 pahyā niŋ rĕṣigaṇa riŋ naƀastalāwū,
@@ -12543,8 +12545,8 @@ yatnāntĕn nira sumawat sawèt nirāṙ wruḥ,
 Aƀyāsèŋ samara mariŋ wulat nirāwās,
 hétunyān kĕna pinanaḥ lipuŋ ya puṅgĕl*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:24.8
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 muntab krođa niraŋ daśānana tumon kontāsi kontal tikĕl,
 sāmbut konta wanèḥ kinon ira ta saŋ rāma prayatnā huwus,
@@ -12563,7 +12565,7 @@ sakwèḥ saŋ manaṅis miṅis mari maruk maṅhrūk watĕk wānara*
 
 hāḥ saḥ māruti dibya māraṇa hilaŋ dèntār alap ṅ-oṣađi,
 śudđékā suyaśanta sidđi satirun riŋ maŋ hurip rāt kabèḥ,
-nā liŋ niŋ bala wānarāmuji wijaḥ n-ton jīwa saŋ lakṣmaṇa,
+nā liŋ niŋ bala wānarāmuji wijaḥ n-toñ jīwa saŋ lakṣmaṇa,
 saŋ rāmāta maṅolakĕn gĕmĕ-gĕmĕn göŋ niŋ giraŋ riŋ Ari*
 
 tan poliḥ Amĕṅan niraŋ daśamuꝁām poliḥ ḍatĕŋ tā-muliḥ,
@@ -12576,8 +12578,8 @@ yatnāwèḥ ta sirāstra guhyawijaya brahmāstra lāwan raŧa,
 tan lèn sāraŧi mātalīkana kinon nityé karākṣān nira,
 muṅgaḥ saŋ raǥuputra riŋ raŧa maṇik saśrī lawan saŋ Ari*
 
-{mađulinda}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ ⏓ = :24:
+{mađulinda}:24.14
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ ⏓ = :24:
 
 Anantara naréndraputra hana riŋ raŧottama pawĕḥ hyaṅ indra ri sira,
 watĕk rĕṣi riṅ antarikṣa Anumoda maŋhudanakĕn ta ganđakusuma,
@@ -12636,7 +12638,7 @@ yadin palĕ-palĕḥ piliḥ kita puliḥ panumpala nikā kunaŋ mamĕnaṅa*
 
 damaṙ maṅaraman Umèḥ pĕjaha hĕntya duḥnya dumilaḥ murub sapinaḍĕm,
 nahan paṅupamé pamūk rasika mūṙkꝁa wiṣṭi biṣamĕŋ sumaṙdḍiṅ iriya,
-mataŋnya pahawās huwus-huwusi taŋ lagā pĕjahi ṅ-aṅjahit triƀuwana,
+mataŋnya pahawās huwus-huwusi taŋ lagā pĕjahi ṅaŋjahit triƀuwana,
 panaḥ ta ya tumampanèŋ kapanasan kabèḥ kapana téki yan lĕkasana*
 
 gĕgön ikanaṅ astra guhyawijayāpraméya ya Apan naƀastalamaya,
@@ -12649,8 +12651,8 @@ madan ta siraṅ āṙyya muṣṭi ta laras nirāṙ tihaṅakĕn śilīmuꝁa 
 Ujaṙ ta juga makramé sira tamaṙ katon lĕpasakĕn ya sèp ṅwaṅ umulat,
 daśānana paraḥ gulū nira parĕŋ pĕgat kasapuluḥ tibā kabarubuḥ*
 
-{praharaṇakalika}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :14:
+{praharaṇakalika}:24.28
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :14:
 
 Aŧa ri pati niraŋ praƀu daśawadana,
 kapibala kadi sāgara gumuruh awū,
@@ -12662,16 +12664,16 @@ jĕnu kanaka sumāṙ sumawur ata marūm,
 Agaru gugula đūpa satata kumukus,
 suragaṇa karuṇā sira maṅinakakĕn*
 
-{prahaṙṣiṇī}
-– – – | ⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{prahaṙṣiṇī}:24.30
+— — — | ⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 haṙṣāmbĕk rĕṣigaṇa sidđa yaṙ paśānti,
 riŋ méǥāṙ hana sukamātra taṙ pagātra,
 mwaŋ puṣpāñjali nira nā katon manojña,
 lumrā taŋ ƀramara mariŋriṅ antarikṣa*
 
-{prĕŧwītala}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+{prĕŧwītala}:24.31
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 wiƀīṣaṇa sirātitībra kabaran gĕlānāṅaraŋ,
 manaḥ nira ya kāsrĕpan wulat i-saŋ kakāsiḥ pĕjaḥ,
@@ -12721,7 +12723,7 @@ sayogya pituhun tuhun matuha tan tinon tan tinūt*
 gĕlāna kabaran tumon ṅwaṅ awamānacittāmahil,
 r-uliḥ ta manaṅis Asiḥ maṅĕsah ènĕh āśā sira,
 muwaḥ Aku mataṅguh amrih awaraḥ Umās-wās kita,
-wahil matĕmahan galak gĕlĕṅi tāku moǥāṅdĕdĕl*
+wahil matĕmahan galak gĕlĕṅi tāku moǥāŋdĕdĕl*
 
 Ađā kalana līna riŋ hati hilaŋ panontāt-hiḍĕp,
 tan ora hiniḍĕp wuwus suśaraṇa ṅwaṅ èwö ṅhayu,
@@ -12733,8 +12735,8 @@ Apan ṅwaṅ aƀimāna riŋ wwaṅ atuhāsahāsāsahaŋ,
 hilaŋ hayu hĕlinya duḥka pati pātakāgöŋ tĕka,
 Ah-o kaka nihan katon kita katuŋtuṅan dūṙyyaśa*
 
-{sariṇī}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :11:
+{sariṇī}:24.43
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :11:
 
 wiƀīṣaṇa nahan ta sāmbat nira,
 raǥūttama wawaŋ mataṅguḥ sira,
@@ -12761,7 +12763,7 @@ Apat nipuṇa puṇyawān śīlawān,
 taŧāpi warahĕṅkwa tātaḥ kita,
 pagĕḥ-pagĕha niŋ hiḍĕp don iké*
 
-nihan krama ni dé niṅ aṅdāni rāt,
+nihan krama ni dé niṅaŋdāni rāt,
 Awakta rumuhun waraḥ riŋ hayu,
 tĕlasta mapagĕḥ magöm Āgama,
 tĕkérikaṅ amātya mantrī tumūt*
@@ -12787,7 +12789,7 @@ sirā ta maka-Aṅga saŋ ƀūpati,
 mataŋ nira Iniṣṭi Aṣṭabrata*
 
 nihan brata ni saŋ hyaṅ indrālapèn,
-sirāṅhudanakĕn tumrĕptīŋ jagat,
+sirāŋhudanakĕn tumrĕptīŋ jagat,
 sirāta tuladĕnta Indrabrata,
 sudāna ya hudanta maŋlyābi rāt*
 
@@ -12926,12 +12928,12 @@ Asiḥ ta maratā rikaŋ rāt kabèḥ,
 halāhayu nikaŋ jagat haywakĕn,
 syasiḥ guṇa gunuŋ magöŋ saṅǥa ta*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:24.81
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 prihĕn tĕmĕn đaṙmma đumāraṇa-ŋ sarāt,
 sarāga saŋ sāđu siréka tūtana,
-tan aṙŧa tan kāma pi donya tan yaśa,
+tan āṙŧa tan kāma pi donya tan yaśa,
 ya śakti saŋ sajjana đaṙmmarākṣaka*
 
 sakā nikaŋ rāt kita yan wĕnaŋ manūt,
@@ -12949,19 +12951,19 @@ mawèḥ kasidđyan paḍa mukti niṙmmala,
 malā milĕt tan pamatuk makiŋ mariŋ,
 mari-n wiśéṣāŋ yaśa sidđa tāpasa*
 
-pasaŋ putiḥ tulya nikaŋ malāṅliput,
+pasaŋ putiḥ tulya nikaŋ malāŋliput,
 luput siraŋ sāđu yakĕn pasaŋ tuju,
 tuju-ŋ suka ṅké mamunuḥ taman muliḥ,
 muliḥ sirèŋ mokṣa lĕpas rikaŋ muliḥ*
 
 mulik patūt niŋ Aji nā gawé nira,
 nirantarāwèḥ hayu đaṙmma riŋ para,
-parāṙŧa tan lèn juga don irèŋ jagat,
+parāṙŧa tan lèñ juga don irèŋ jagat,
 jagat ṇ-ḍĕṅö sājar-ajaṙ nirèŋ hayu*
 
-{puṣpitāgra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{puṣpitāgra}:24.87
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 nahan ikana wuwus ƀaṭāra rāma,
 Umuḍahanī sira saŋ wiƀīṣaṇāsiḥ,
@@ -12988,12 +12990,12 @@ brata nira dāna hudan magöŋ mawaḥ-waḥ,
 sa-mahala kahilī hilaŋ ya luṅhā,
 kawĕkas ikaŋ śuci śoƀa ƀūmi rāmya*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:24.93
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 tampuḥ niŋ paramāmrĕté sapinasuk riŋ rājya lĕṅkāpura,
 maṅkin wrĕdđi hayunya Ujwala muwaḥ salwiṙnya dé saŋ kaka,
-sampūṙṇna-ŋ giri riŋ mahéndra katĕkān rĕŋrĕŋ ya rāmyāpuliḥ,
+sampūṙṇna-ŋ giri riŋ mahéndra katĕkān röŋ-rĕŋ ya rāmyāpuliḥ,
 sakwèḥ-kwèḥ nikanaŋ nanā ya hinĕnö dé saŋ hyaṅ indrāmalĕs*
 
 tātan déśa jugāpuliḥ hinuripan taŋ wré pĕjaḥ riŋ raṇa,
@@ -13006,8 +13008,8 @@ lāwan taŋ mati riṇ ranāṅgaṇa kabèḥ riŋ wīralokān dunuŋ,
 salwiṙ niŋ Upaƀoga ƀūṣaṇa maṇik Atyanta riŋ kādƀuta,
 nāhan swaṙgga niraŋ prawīra paramèṅ uttuṅga toṅgwan nira*
 
-{suwadanā}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | – ⏑ ⏑ | ⏑ ⏓ = :20:
+{suwadanā}:24.95
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | — ⏑ ⏑ | ⏑ ⏓ = :20:
 
 sāmpun sampūṙṇna sampat sira ratu sumiliḥ lĕṅkādipa gahan,
 saŋ hyaŋ ƀūtādƀutānon saguṇa wahu madĕg kādĕg sira mulat,
@@ -13044,7 +13046,7 @@ jīwā-jīwāwajik yāŋ-jawat ajulay aḍèŋ riŋ kinnara-rarā,
 syuŋ tan swaŋ wruḥnya mèdī kĕna madana madan médan milu masö,
 suŋsuŋ tékā bayanyāṅaway-away agawè rāgériya mada*
 
-sāṅsönyèŋ śūnya-śūnyāṅikis aṅĕkĕs unĕŋnyāsyaŋ masĕnĕṅa,
+sāŋsönyèŋ śūnya-śūnyāṅikis aṅĕkĕs unĕŋnyāsyaŋ masĕnĕṅa,
 prāpta ṅkā tan Isin riŋ Atat atakut ataḥ tan tūt tula-tuli,
 lwiṙ niŋ syuŋ hyunya tan swaŋ ya sumĕḍĕku masö wiśwāsa manisik,
 késyan kāruṇya kériŋ siniwi-siwi ṅ-atat tūtut ya wĕkasan*
@@ -13057,10 +13059,10 @@ tuṅgaŋ-tuṅgaŋnya maṅgaŋ maṅagagi gigirĕn śaktin kahaṅĕtan*
 haṅsāsyaŋ-syaŋ maṅumbaŋ ri tĕpi-tĕpi nikā ƀoganya talaga,
 tan ton swāminya luṅhānilĕmi sulur adoḥ wĕtwanya wĕkasan,
 śīǥrāŋ haṅsān usiṙ taŋ laki-laki ya wujuk muṅkuṙ malĕk-alök,
-lwiṙ niŋ kāsiḥ nikāsiḥ mamirimisi mahāṅdodohi sakarĕŋ*
+lwiṙ niŋ kāsiḥ nikāsiḥ mamirimisi mahāŋdodohi sakarĕŋ*
 
 kĕmbaŋ niŋ jambu kériṙ sumawur i-walakaŋ niŋ mrāk ya maṅigèl,
-yāṅkĕn jĕnwanya madyus riya makin agiraŋ daṙppān kararaban,
+yāṅkĕñ jĕnwanya madyus riya makin agiraŋ daṙppān kararaban,
 līlā ƀāwān wugatnyāŋ-jiriṅ i-maṅicipiṙ yan kéḍak akĕcĕk,
 nāŋ nĕp mās tulya maṅliŋ kadi pamugari niŋ kaywāra kabaran*
 
@@ -13071,7 +13073,7 @@ méṅin mamriḥ mamaṇḍak ḍarapati wĕlu wok yékā pipi ruṣa*
 
 satwātūt budđi satwa prasama tan asuwé ta wwaŋnya mapalöŋ,
 siṅhāsiŋ siṅha kāsiḥ tĕka kadi ta kadaŋ kāriŋ kidaṅ ariŋ,
-saṅkā yan trus nikaŋ priḥ praŧama nikana saŋ maŋ­rākṣa ƀuwana,
+saṅkā yan trus nikaŋ priḥ praŧama nikana saŋ maŋrākṣa ƀuwana,
 taṙ mèwĕḥ dé niṅ āmbĕk makaka muḍi ṅ-asiḥ mꜽtrī ya banawā*
 
 moŋ taŋ moŋ sosyanāmoṙ camara mari n-usī kañcil kacula mik,
@@ -13145,7 +13147,7 @@ matrī trik trĕpta méraŋ ri si tilil alayū luṅhā malulunan,
 cūcuṙ-cūcuṙ curīkaŋ cucur umuni cucud mélik ri si tilil*
 
 lĕŋlĕŋ luŋluŋ lumaṅlaŋ tumuluy alalayan riŋ saṅkuliṅ arĕn,
-caṅkak cod caŋ-ciṅan yākĕcĕk acala-calan caṙccāñ cucu-cucud,
+caṅkak cod caŋ-ciṅan yākĕcĕk acala-calañ caṙccāñ cucu-cucud,
 don taŋ dok dīna yāṅdoḥ mamĕdi-mĕdi Ataḥ mèdī wĕdi-wĕdi,
 daryas miṅgus kasiṅkuḥ milu winijah ajoŋ kampid tukaṅ akūŋ*
 
@@ -13169,10 +13171,10 @@ saṅkā yan śānta tā ƀīṣaṇa ya mataṅ ikè kyātīṅaran arūm,
 r-andĕl riŋ rājya lĕṅkā kadi taru kanakā riŋ nandanawana,
 cāyācāyā nirātīs katitisan amrĕtékaŋ rāt suka maṅöb*
 
-{Udgatawisama}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :20:
-– ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ ⏓ = :11:
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :13:
+{Udgatawisama}:24.127
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :20:
+— ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ ⏓ = :11:
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :13:
 
 nda t-atīta saŋ praƀu gumanti tujara ta siraŋ marutsuta,
 sādara sira mara maŋlawada,
@@ -13278,7 +13280,7 @@ yadiyan si lakṣmaṇa saliŋta si ƀarata kunaŋ paṅöbana,
 yan wĕgila kunaṅ i-saŋ kapirāt,
 tamatad gulaŋ-gulaṅa riŋ saménaka*
 
-paramāṙŧa tékana wuwusku tatan ujariṅ aṅlulū Iké,
+paramāṙŧa tékana wuwusku tatan ujariṅaŋlulū Iké,
 duṙyyaśa niyata kitāt mapasaḥ,
 yaśa māsihéry-aku ya sāđya niŋ dadi*
 
@@ -13342,8 +13344,8 @@ ya tikā wuwus nira sudèwi dadi ta sumahuṙ ya mānasā,
 tībra ya malara masū manaṅis,
 Atiđīra niṙƀaya ya mojar iŋ saƀā*
 
-{punaṙmmada}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :13:
+{punaṙmmada}:24.169
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :13:
 
 kadurus ƀaṭāra wuta tulya taṙ panon,
 takarin hiḍĕp wara-waraḥ niṅ āgama,
@@ -13370,8 +13372,8 @@ wruha riŋ salaḥ kĕna ƀaṭāra tan kalèn,
 wĕgilĕn Ikaŋ Agati pāpa kāsyasiḥ,
 kita tāmrĕtĕŋ ƀuwana yukti Oṣađā*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:24.174
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 taŧāpi yan mūṙkꝁa hatinta niṙǥrĕṇa,
 kalĕṅka tātaḥ hrĕdayanta tan padon,
@@ -13381,7 +13383,7 @@ Apat t-ala d-dé nikanaŋ malānaput*
 lukan gĕlĕḥ tālapakĕn kita praƀu,
 swaƀāwa niŋ déwata tan hané kita,
 hilaŋ pwa đaṙmmanta yaśanta riŋ jagat,
-Apan grĕhītāṅhala tat t-alap ṅ hayu*
+Apan grĕhītāŋhala tat t-alap ṅ hayu*
 
 mataŋnya tātaṙ hana śāśwatānulus,
 śuƀāśuƀātaḥ suꝁa-duḥka taṙ wuruŋ,
@@ -13443,8 +13445,8 @@ huwus hĕnĕŋ saŋ trijaṭā tĕwas maṅèl,
 samaṅkanāriṅku si lakṣmaṇād wulat,
 t-amoŋ Apuy tāsiha ri ṅhulun Ari*
 
-{prahaṙṣiṇī}
-– – – | ⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{prahaṙṣiṇī}:24.188
+— — — | ⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 nojaṙ saŋ janakasutāṙ paminta mātya,
 saṅké göŋ niṅ iraṅ-iraŋ lawan kasatyan,
@@ -13466,8 +13468,8 @@ yak duṣṭāhala gĕsĕṅa ṅhulun wiśīṙṇnā,
 yak satya pwa ya kĕmitĕn ṅhulun tĕkapta,
 nā sāmbat nira tumĕḍun ri saŋ hyaṅ agni*
 
-{rajanī}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | ⏑ ⏓ = :17:
+{rajanī}:24.192
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | ⏑ ⏓ = :17:
 
 Aŧa ri tĕḍun niraŋ paramasatya ri saŋ hyaṅ apuy,
 nda tan agĕsĕŋ manaḥ niṅ umulat juga śīṙṇna gĕsĕŋ,
@@ -13504,8 +13506,8 @@ milu manurun siraŋ daśaraŧa praƀu nāŧa sira,
 maśila sirèŋ wimāna manapĕl ri ƀaṭāra śiwa,
 makajuru saŋ hyaṅ indra sira mitra nirèŋ sakala*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:24.199
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 nāhan liŋ nira saŋ hyaṅ agni tumurun sākṣāt ta saŋ hyaŋ śiwa,
 lāwan déwaganāpramèya hibĕkan ṅ-ākāśa sök loṙ kidul,
@@ -13518,7 +13520,7 @@ saŋ hyaŋ wiṣṇu kĕtā kita priyatamā sītā sira śrī-maya,
 taṙ saḥ sātmaka śudđa satya pihakanyāwakta yat dampati*
 
 haywātaḥ kita saṅśayé sira muwaḥ sāmpun kaśudđyan sira,
-dontāt aṅdadi dadyakĕn tulusakĕn kīṙttinta riŋ rāt kabèḥ,
+dontātaŋdadi dadyakĕn tulusakĕn kīṙttinta riŋ rāt kabèḥ,
 swasŧā niŋ ƀuwanatrayékana Iwön nāhan ꝑalantāt jaya,
 cihnānyān kita saŋ janāṙddana dinésaŋ hyaŋ dumīkṣa-ŋ sarāt*
 
@@ -13527,9 +13529,9 @@ Antaṙ-līna ƀaṭāra sukṣma kawĕkas saŋ rāma tuṣṭa-ŋ manaḥ,
 saŋ sītā śuci satya śodđa satirun santāna lumrāŋ yaśā,
 saṅkrānta prakaṭa praśāsta kinudaŋ tan lèn kiduŋ niŋ sarāt*
 
-{prabođitā}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | ⏓ = :10:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+{prabođitā}:25.203
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | ⏓ = :10:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 Aŧa sāmpun awās sirāṙ śuci,
 sira saŋ śrī janakātmajénapi,
@@ -13556,7 +13558,7 @@ Umusī méǥa makandĕl iŋ laṅit,
 haliwat pwa kitèŋ mahodađi,
 tĕmu taŋ rāmya mahéndrapaṙbwata*
 
-paṅaloṙta muwaḥ tĕmu-ŋ gunuŋ,
+paṅaloṙ ta muwaḥ tĕmu-ŋ gunuŋ,
 malayā ꝁyāti manojña komala,
 giri winđya ya loṙ nikāparö,
 tuwi kiṣkinđa gunuŋ ya saśri ya*
@@ -13604,7 +13606,7 @@ masibū syūḥ jĕnu kumkumé susu*
 tumamā ta kité dalĕm pura,
 tĕmu tébuṅku sukān kitān tĕka,
 pawaraḥ pwa kitān alaḥ musuḥ,
-ƀaratāwaś ya giraŋ nikāṅrĕṅö*
+ƀaratāwaś ya giraŋ nikāŋrĕṅö*
 
 siraṅ āṙyya wiƀīṣaṇāṅadĕg,
 sumiliḥ ƀūpati nāŧa pājara,
@@ -13656,9 +13658,9 @@ kabaran ṅwaŋ kumĕmit tikān hana,
 priyamitra ya rākṣakāṅĕmit,
 ya mawèḥ ƀoga maṅöbi maŋlyabi*
 
-{Ꜷpacꞓandasika}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{Ꜷpacꞓandasika}:24.228
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 ya wuwus naranāŧa rāma masyaŋ,
 Umarā milwa muliḥ marèṅ ayođyā,
@@ -13666,7 +13668,7 @@ sumahuṙ sira saŋ rwa kapwa mojar,
 kapi sugrīwa wiƀīṣaṇātihaṙṣa*
 
 naranāŧa kitāgĕlĕm maṅājñé,
-kadi maŋrwa-rwa Ujaṙta sāṙjjawāsiḥ,
+kadi maŋrwa-rwa Ujaṙ ta sāṙjjawāsiḥ,
 Aparan kari tan tĕmun mami ṅkā,
 syapa molin paripūṙṇna taŋ Ayođyā*
 
@@ -13720,8 +13722,8 @@ majapāṅaṙccaṇa kapwa ƀakti satya,
 brata saŋ praƀu mrĕdđyakĕn praƀāwa,
 saparan sélwana ƀakti muꝁya mūlya*
 
-{swāgata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{swāgata}:24.240
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 maṅkas-aṅkas aṅadĕg ta sirādan,
 dampatī nrĕpati rāǥawa sītā,
@@ -13734,7 +13736,7 @@ yāta Uṅgwan ira kālih aluṅguḥ,
 ratnajampana wimāna manojña*
 
 saŋ wiƀīṣaṇa kapīndra kapuṅkur,
-maŋ­rakĕt ri sira kèn kadi sānak,
+maŋrakĕt ri sira kèn kadi sānak,
 lakṣmaṇāṅgĕnĕṅi cāmara saśrī,
 Aṅgadāṅisapu pāda riṅ ambyan*
 
@@ -13823,8 +13825,8 @@ hyun mamī hayu nikā suyaśanta,
 yak parā kunaṅ araḥ riṅ ayođyā,
 swāgatā kami manuŋsuṅa ƀaktya*
 
-{malinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{malinī}:24.260
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 malaya maluyakén kūŋ kokilanyān paśabda,
 kuya ta ya kayu koliŋ candanākwèḥ riyārūm,
@@ -13832,8 +13834,8 @@ satata mawaṅi māmbö mimbuhī kūŋnya tékā,
 mrisakiti ṅ-apadohan mrāknya maṅhrūk manawwaŋ*
 
 #pañcawiṅśati saṙggaḥ#
-<mattamayūra>
-– – – | – – ⏑ | ⏑ – – | ⏑ ⏑ – | ⏓ = :13:
+<mattamayūra>:25.1
+— — — | — — ⏑ | ⏑ — — | ⏑ ⏑ — | ⏓ = :13:
 
 nā taŋ winđyā tiṅhali śröṅanya manojña,
 yékā mahyun rakwa rumūgāŋ pada kéndran,
@@ -13850,40 +13852,40 @@ pintan tékaŋ winđya hawan haywa kitāwān,
 wèt ni twaŋ niŋ winđya ri saŋ sidđa Agastya,
 maṇḍĕḥ mĕṇḍĕk māri manuṇḍul suka taŋ rāt*
 
-{turagagati}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
+{turagagati}:25.4
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
 
 mālyawān lĕwi-lĕwiḥ hayu wulati,
 rĕṣyamūka rumaras Aku matutur,
 daṇḍakékana nahan sapinanahan,
 yéka mūla ni laranta laradakĕn*
 
-{suwadanā}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | – ⏑ ⏑ | ⏑ ⏓ = :20:
+{suwadanā}:25.5
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | — ⏑ ⏑ | ⏑ ⏓ = :20:
 
 pampā pöŋpöŋ para ṅkā parama ya rikanaŋ pāwitra ta sibū,
 pèpèrī pāpa-pāpé lara niṅ alarasan māsiḥ pwa masĕha,
 ṅkéhĕn tambay ta tībrālara dahatĕn ah-o ṅké yan huwusana,
 gantyanta-ŋ sokya mukyolih-ulih atulihèŋ rājyāmuliha rāt*
 
-{drutawilambita}
-⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏓ = :12:
+{drutawilambita}:25.6
+⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏓ = :12:
 
 Aŧa huwus sumĕpĕṙ mapuḍé-puḍé,
 masĕha kaśmala niŋ dadi mānuṣa,
 krama mibĕṙ ta muwaḥ sira maŋlayaŋ,
 Atĕhĕrojar amaṙṇnana tūt hawan*
 
-{prahaṙṣiṇī}
-– – – | ⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{prahaṙṣiṇī}:25.7
+— — — | ⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 nā tékāṅ alas-alas āwa rāmya-rāmya,
 kĕmbaŋ bāp ri tĕpi-tĕpinya tan pahīṅan,
 rāganyā ṅibĕki raganta ṅūnyaganti,
 kālantat kalula mahāṙṣyamèt pamūjā*
 
-{bramitākṣara}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ ⏑ ⏓ = :12:
+{bramitākṣara}:25.8
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ ⏑ ⏓ = :12:
 
 śaraƀaṅga ƀoga patapan rasikā,
 patiganya kapwa tinanĕm-tanĕman,
@@ -14020,8 +14022,8 @@ mari yan pawèḥ parujaran Inajar,
 tuhu yan paköm laki-bi mabrata ya,
 Asiđāra đīra ya kumöl riṅ atol*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:25.35
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 tonton taŋ yamunā manojña mahijo jātinya wét niŋ hĕniŋ,
 tulyanyā ri dukut lĕpas-lĕpas asiŋ satya bratāköm rikā,
@@ -14031,7 +14033,7 @@ mutyātyanta paḍanya muktyasiṅ agöŋ śrĕdđānya yan ton ikā*
 nā taŋ lwaḥ tamasā masaṅǥani humuŋ kumbaŋnya lāwan kuwoŋ,
 muktī kĕmbaṅ asĕmburan sari rurū lumrā ri tĕmbiŋ nikā,
 himbaŋ-himbaṅ ikaŋ gunuŋ ya hibĕkan dé niŋ sĕkaṙ kīṙṇna ya,
-yékānuŋ humilī lanāṅhilaṅakĕn pāpād wulat tuṅkuli*
+yékānuŋ humilī lanāŋhilaṅakĕn pāpād wulat tuṅkuli*
 
 nāhan paŋhinĕpanta ṅūni taṅikis miṅgat mahāṅāryakĕn,
 kāsyāsiḥ rasikā saṅ āsih i-kitāt kārīŋ karaṅrwaŋ rikā,
@@ -14048,8 +14050,8 @@ rūpanyāṙ patapèŋ manohara wĕnaŋ monān panon kāminī,
 nitya-ŋ wwaŋ riṅ ayođya yaṙ pararakan-kanyā mahāhyas mahās,
 tātan yatna rikaŋ rahasya masibū riŋ lwaḥ tar aṅluḥ mulat*
 
-{dođakawrĕtta}
-– ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{dođakawrĕtta}:25.40
+— ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 nimna manaḥ nira saŋ muni mona,
 đīra đumāraṇaṅ āmbĕk aṅumbaḥ,
@@ -14066,17 +14068,17 @@ wuṅli walĕs malĕsèŋ guṇa donya,
 lampĕs apĕs puharanya kaśāntan,
 widyasarīkana moliha widyā*
 
-{kusumawicitra}
-⏑ ⏑ ⏑ | ⏑ – – | ⏑ ⏑ ⏑ | ⏑ – ⏓ = :12:
+{kusumawicitra}:25.43
+⏑ ⏑ ⏑ | ⏑ — — | ⏑ ⏑ ⏑ | ⏑ — ⏓ = :12:
 
 hati maputĕk nāputa tumulak ya,
-duhĕt ulam aṅdohana hala donya,
+duhĕt ulamaŋdohana hala donya,
 rukĕm asĕwö rāgamala rinūgnya,
 lwah amuharālwāmbĕk iṅ aji malwā*
 
-{puṣpitāgra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{puṣpitāgra}:25.44
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 palisa kapalisèŋ halāhalèlik,
 saṅu nira r-anti paranti kāna saŋ hyaŋ,
@@ -14103,16 +14105,16 @@ ri guṇa nirā ta suđīra đārakèŋ rāt,
 Apan ikana kukusnyapuy nirārūm,
 ya dadi hudan ya dumadyakĕn tahunta*
 
-{dođakawrĕtta}
-– ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{dođakawrĕtta}:25.49
+— ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 jāti niraŋ rĕṣi sāđaka sidđa,
 sāđana niŋ magawé hayu méman,
 naṅka hilus Ilu na ṅkana tonton,
 tona niraŋ nirapèkṣa Upékṣa*
 
-{drutawilambita}
-⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏓ = :12:
+{drutawilambita}:25.50
+⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏓ = :12:
 
 wulati tuṅkuli taŋ sarayū taṅé,
 Aku tak adwa mabāŋ makuniŋ kunĕŋ,
@@ -14174,8 +14176,8 @@ kapahĕlèd umĕlĕd dĕlĕg īŋ Ulĕk,
 muni pĕjat-pĕjatan pijĕraŋ dulaŋ,
 majar anaknya Anéka manūtakĕn*
 
-{malinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{malinī}:25.62
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 kuya ta wihaga maṅkuk kapwa log-log baṅo bāp,
 madulu-dulur aḍas-ḍas naŋ manuk tambĕṅ akwèḥ,
@@ -14192,16 +14194,16 @@ kadi ta ya tuhu-tuhwā yāribāyan n-inaṅsö,
 malimunan umibĕṙ bāp wuntu loṙ wuntu kulwan,
 Inuhuh-uhuh inumban dé niṅ anhwan paḍédi*
 
-{ƀramarawilaśita}
-– – – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :11:
+{ƀramarawilaśita}:25.65
+— — — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :11:
 
 burwak-burwak rwa mawurahan i-sor,
 muṅgwiŋ paṅgaŋ wara ya wara putĕr,
-mandĕl daryas Alap-alap-alapan,
+mandĕl dāṙyyas Alap-alap-alapan,
 maṅgĕŋ moliḥ wala-wala wilalan*
 
-{ramƀā}
-⏑ ⏑ ⏑ | ⏑ – – | – ⏓ = :8:
+{ramƀā}:25.66
+⏑ ⏑ ⏑ | ⏑ — — | — ⏓ = :8:
 
 Umuni manuk tomtoman,
 mahas-ahasātomtoman,
@@ -14213,8 +14215,8 @@ masĕsĕh irīkaŋ tamyaŋ,
 matĕmu si gāgāhöm-höm,
 mawĕdi tiniñjo niŋ dok*
 
-{campakamālā}
-– ⏑ ⏑ | – – – | ⏑ ⏑ – | ⏓ = :10:
+{campakamālā}:25.68
+— ⏑ ⏑ | — — — | ⏑ ⏑ — | ⏓ = :10:
 
 gintuṅan āwān kalwaṅ agantuŋ,
 tan paripūṙṇnātöb lalawāpĕk,
@@ -14226,16 +14228,16 @@ riŋ kukap ériŋ taŋ kukaṅ éraŋ,
 riŋ lilaṅ élik dé ni gatĕlnya,
 wulwan aṅulwan riŋ kayu wulwan*
 
-{sundaralĕꝁā}
-– – – | – – ⏑ | ⏑ – ⏓ = :9:
+{sundaralĕꝁā}:25.70
+— — — | — — ⏑ | ⏑ — ⏓ = :9:
 
 riŋ poḥ suṅsaŋ syuŋ ya masĕṅsöŋ,
 mélik dényān bwat n-tut ikiŋ kwak,
 Ꜽ koŋ kwak haywāta mara ṅkè,
 mèdi-ŋ kwak yékārĕhak amwak*
 
-{bramitākṣara}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ ⏑ ⏓ = :12:
+{bramitākṣara}:25.71
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ ⏑ ⏓ = :12:
 
 ri kuwaŋ kuwoŋ Umuni konĕṅ-unĕŋ,
 wariṅin ya kèṅin-iṅin āṙ~ṇĕb atis,
@@ -14247,24 +14249,24 @@ gigirĕn ṅwaṅ akri Umulat muririŋ,
 kuya piŋ kĕpuḥ kadi sahasra muꝁa,
 Umiṅis maṅaŋ hana midĕm mukakĕm*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:25.73
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 walū kumĕṇḍuŋ ya kumĕṇḍĕṅi-ŋ tilil,
 kinolnya raṇḍö paḍa kapwa yākapuk,
 pulé makĕmbaŋ hana handuliŋ hawan,
 payaṅgu mĕmbaŋ paya niŋ kalampyayan*
 
-{ratodđata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+{ratodđata}:25.74
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 haṇḍurū ya marurū walik haḍĕp,
 nāŋ kulīna suka paṅgiliŋ juraŋ,
 siŋ gugū ya sagĕgĕṙ giraŋ-giraŋ,
 somya sĕmbuṅ asĕmī sumuṙ sumār*
 
-{malinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{malinī}:25.75
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 kuya si kayu puriŋ riŋ tĕmbiṅ awyaŋ sĕkaṙnya,
 wuṅa tali mataliṇḍaŋ nāŋ gaḍuŋ mwaŋ putat bāp,
@@ -14281,8 +14283,8 @@ dalima maḍam aḍĕmpĕl mwaŋ paḍantĕn paḍātöb,
 sari-sari-sari niŋ poḥ jambu masraŋ mamiśra,
 haṅin umirir amoǥā māṙ manaḥ niŋ maré ya*
 
-{kusumawicitra}
-⏑ ⏑ ⏑ | ⏑ – – | ⏑ ⏑ ⏑ | ⏑ – ⏓ = :12:
+{kusumawicitra}:25.78
+⏑ ⏑ ⏑ | ⏑ — — | ⏑ ⏑ ⏑ | ⏑ — ⏓ = :12:
 
 kuya ṅ-amanèk cāmpaka rinuganya,
 hana ta kinandutnya ri walakaŋnya,
@@ -14304,24 +14306,24 @@ kĕna ya rināgan wulat iṅ anaṅgap,
 mata tinutupnyāraṅ-araṅ arĕṅkĕŋ,
 ya walikatĕn kol ika kalulanya*
 
-{prĕŧwītala}
-⏑ – ⏑ | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ – – | ⏑ ⏓ = :17:
+{prĕŧwītala}:25.82
+⏑ — ⏑ | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ — — | ⏑ ⏓ = :17:
 
 palāśa saꝑalāsĕkaṙ ta ya ta ronya sāmpun rurū,
 sĕkaṙnya ya matap ri pāŋnya Apa topamanyān mabāŋ,
 kadi pwa hati saŋ sarāga tinĕwĕk niraŋ manmaŧa,
 riniṇḍiṅ inĕnaḥ nirèŋ kayu nahan rinèṇḍèŋ nira*
 
-{suwadanā}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | – ⏑ ⏑ | ⏑ ⏓ = :20:
+{suwadanā}:25.83
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | — ⏑ ⏑ | ⏑ ⏓ = :20:
 
 tĕmbiŋ niŋ lwaḥ lwa paṇḍak puḍak apĕḍĕk umöd kĕmbaŋnya dumĕlĕg,
 méṅin tékaŋ malag-lag mari y-apuday anon paṇḍan paḍa manèk,
 maṙbuk tékās sarinyé pipi pinakapupuṙ sampūṙṇna mapĕtak,
 ranté tékā lawönyān wilĕtakĕna rikaŋ dūwan pakasĕkar*
 
-{drutawilambita}
-⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏓ = :12:
+{drutawilambita}:25.84
+⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏓ = :12:
 
 kuya ṅ-anū śrigaḍiŋ sahajān paḍèn,
 pinipikan pakĕnānya marumpukan,
@@ -14333,8 +14335,8 @@ nurunakĕn sari niŋ sarunī hulu,
 puji mapañji mapiñjuṅa méñjuha,
 jaga ta saŋ tapa dénya maṅèl kumöl*
 
-{bramitākṣara}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ ⏑ ⏓ = :12:
+{bramitākṣara}:25.86
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ ⏑ ⏓ = :12:
 
 I ruhuṙ nikaŋ pasumuran masĕkar,
 paramèṅ atöb parijatān pasĕkar,
@@ -14356,25 +14358,25 @@ muray iŋ wuṅū wuṅa tĕlĕŋ mahirĕŋ,
 maputiḥ wanèḥ pati Atap masĕkar,
 karacuk trikañcu kadi mās salaka*
 
-{mattamayūra}
-– – – | – – ⏑ | ⏑ – – | ⏑ ⏑ – | ⏓ = :13:
+{mattamayūra}:25.90
+— — — | — — ⏑ | ⏑ — — | ⏑ ⏑ — | ⏓ = :13:
 
 nāŋ daṅdāṅan dibya mahātyanta pawitra,
 tan rūm mwaŋ tan kĕmbaṅ anuŋ pālapananya,
 ndan liŋ saŋ hyaŋ Āgama milwéki pamūjā,
 ndādé saŋ hyaŋ tā manulus riŋ guṇa dibya*
 
-{swāgata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{swāgata}:25.91
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 nī ta wèḥ lĕṅa-lĕṅanya makaṇḍaḥ,
 yéka pālapan ikāpi pawitra,
 yan Inambuṅ ari māṙ ya masĕṅhar,
 wastu niŋ guṇa Ikāri paṅastu*
 
-{Ꜷpacꞓandasika}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{Ꜷpacꞓandasika}:25.92
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 kuya kaṇḍuyuhan sadā matambak,
 ndya rasanyān paṅaṅĕn tan ènak alyud,
@@ -14386,8 +14388,8 @@ samaron tumuwuḥ hanāta donya,
 Aparan kari mulya riŋ mapuṅguŋ,
 guṇa saŋ dibya guṇa pwa tā guṇanya*
 
-{ratodđata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
+{ratodđata}:25.94
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
 
 saŋ manojña pi mahāt manon guṇa,
 wastwasiŋ winulatan Inastwakĕn,
@@ -14409,25 +14411,25 @@ nyékiṅ āśrama samīpa niŋ pura,
 saŋ mahān maharadin ya dibya ya,
 kwèḥ marè sira calanya yācawuḥ*
 
-{suwadanā}
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | – ⏑ ⏑ | ⏑ ⏓ = :20:
+{suwadanā}:25.98
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | — ⏑ ⏑ | ⏑ ⏓ = :20:
 
-jañjan jambat Ujaṙ tāṅucap-ucapa niraŋ tan māpa sakarĕŋ,
+jañjañ jambat Ujaṙ tāṅucap-ucapa niraŋ tan māpa sakarĕŋ,
 jātī ṅwaŋ mèḥ tĕkā riŋ swagrĕha ciha-cihān haṙṣāsiga-siga,
 n-ton dāśādéśa ni-ṅwaŋ tuwi yan ulih-uliḥ molaḥ hati nira,
 kāhinyan hinyaṅ iŋ rāt ratu-ratu niṅ arūm wanwanya winuwus*
 
-{waṅśasŧa}
-⏑ – ⏑ | – – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{waṅśasŧa}:25.99
+⏑ — ⏑ | — — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 kuya-ŋ kurañjyāri kurañji riŋ juraŋ,
 tajĕm kuriñjĕm kayu téja yājajar,
 kuraṇṭa yāṙdđā kuru tan kuraŋ sĕkar,
 kataṅga-taṅgā turunan kataṅga bāp*
 
-{Aparawaktra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Aparawaktra}:25.100
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 kayu harĕṅ alurus laras juga,
 tĕmu gumĕgĕṙ sapanaḥ muṭūmadĕg,
@@ -14449,10 +14451,10 @@ kadi śawa niŋ gaja Aśwa riŋ raṇa,
 kuya ta lawĕ-lawö nikaŋ puḍak,
 marawa-raway mamaḍèŋ gaḍiŋ tikĕl*
 
-{swāgata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{swāgata}:25.104
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
-māŋlĕr-ālĕr irikaŋ kalak ātap,
+maŋlĕr-ālĕr irikaŋ kalak ātap,
 wruḥ ry-apĕsnya tumĕluŋ tĕka niŋ waḥ,
 nā tirun ni saṅ asora riṅ āmbĕk,
 ƀaktya tābrata sumiwya ṅ-aśakti*
@@ -14462,8 +14464,8 @@ tan panĕmbah aṅadĕg juga yan waḥ,
 doṣa niŋ mapagakĕn saṅ aśakti,
 nā tinonta hamĕṅanya rĕbaḥ rūg*
 
-{bramitākṣara}
-⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ ⏑ ⏓ = :12:
+{bramitākṣara}:25.106
+⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ ⏑ ⏓ = :12:
 
 kaparaḥ kuya-ŋ parahu pan parahu,
 saṅ aƀāṇḍa-ƀāṇḍa Umawit dwal i-sor,
@@ -14475,26 +14477,26 @@ hana niŋ wiśéṣa sarayū lwah agöŋ,
 ya ta pèwakan padagaṅan magaṅan,
 tuwi tīṙŧa ménak ininum rumĕsĕp*
 
-{rajanī}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | ⏑ ⏓ = :17:
+{rajanī}:25.108
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | ⏑ ⏓ = :17:
 
 kuya ṅ-amariŋ-mariŋ mararakan mara riŋ maḍaké,
 makakurutug tutug-tutugakĕn ta tĕkĕnya parĕŋ,
 kiriwili saŋ kumāra karikā paṅĕkönya huraŋ,
 makakucupak cakaŋ kumĕcap iŋ kulu māṅicipir*
 
-{Aparawaktra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Aparawaktra}:25.109
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 kuya saṅ aguluṅan paḍāmaṅan,
 kuya saṅ agulwalĕmĕḥ rikaŋ mahāt,
 sapi nira sapininta tumbasĕn,
 sapinirakan sapi tan sipī gĕlis*
 
-{puṣpitāgra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{puṣpitāgra}:25.110
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 paśu pasusupan iŋ larātiƀāra,
 pinalu lumakwakĕna-ŋ ƀināṇḍaƀāra,
@@ -14504,11 +14506,11 @@ suka sakutĕk ya pinètnya tan saƀāra*
 lĕṅa watu-watu tulya lèn Uyaḥ bras,
 ya kinadutan kuda tan wĕnaŋ ya molaḥ,
 tan ari tinarimanya tékanaŋ bwat,
-kuda makidat-kidatan lwir a-tanāga*
+kuda makidat-kidatan lwir ā-tanāga*
 
-{Aparawaktra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :11:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ ⏓ = :12:
+{Aparawaktra}:25.112
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :11:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ ⏓ = :12:
 
 lara-lara niṅ asoṙ hanèŋ sapi,
 sapinakadīpa kadi pwa yāwaraḥ,
@@ -14527,7 +14529,7 @@ ya mataṅ akuk sapi piḥ t-usapyaku*
 
 nahan ikana ta liŋ nikaŋ sapi,
 n-usapi Awaknya rikaŋ Ikūmilug,
-mamitutur i-ri Aṙŧa niŋ sapi,
+mamitutur i-ri Āṙŧa niŋ sapi,
 sapinaritoṣa ya liṅku piḥ bĕtaḥ*
 
 wĕnaṅ amasaṅakĕn ya mānuṣa,
@@ -14541,16 +14543,16 @@ sapinalu sapinaṇḍĕm iŋ watu,
 ya mataṅ ikān sapi liŋ nikaŋ wagus*
 
 #ṣaḍwiṅśati saṙggaḥ#
-<suwadanā>
-– – – | – ⏑ – | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ – – | – ⏑ ⏑ | ⏑ ⏓ = :20:
+<suwadanā>:26.1
+— — — | — ⏑ — | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ — — | — ⏑ ⏑ | ⏑ ⏓ = :20:
 
 nā taŋ rājyèṅ ayođyāṙdđa kaluwuk ahawūk nāhan ya wulati,
 nityā taŋ yajña pūjā kuśala salawasiŋ maŋjanma sakala,
 tonton tékaŋ kukus riŋ gagana kadi hĕbun binwaŋ nikaṅ aṅin,
 sambéga ṅggā nikaŋ rāt kadi wiku mahawuk dé niŋ brata hawūk*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:26.2
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 nā ṅwaŋ kwèḥ mapalaywan aṙdđa matakut yan ton kitékiŋ laṅit,
 sowényān pasibū tatan wawarĕṅö ṅūni n-pijĕṙ tan wulat,
@@ -14562,8 +14564,8 @@ yatnanyèŋ sĕsĕran saranta malayū saṅgā-ŋ garit riŋ pipi,
 nā-ŋ mānak kumutuk Anaknya malimöṙ tampyal puliṙ hnīrakĕn,
 swaŋ śīǥrāŋ maṅasūmuliḥ taman isī dyunnyā ṅgaruṅgaŋ mutit*
 
-{kusumawicitra}
-⏑ ⏑ ⏑ | ⏑ – – | ⏑ ⏑ ⏑ | ⏑ – ⏓ = :12:
+{kusumawicitra}:26.4
+⏑ ⏑ ⏑ | ⏑ — — | ⏑ ⏑ ⏑ | ⏑ — ⏓ = :12:
 
 wada huya madyus kuda ya lumumpat,
 muliha ri tan tolih ika kudanya,
@@ -14575,17 +14577,17 @@ Ikana Uliḥnyā ṅarit ari kāri,
 kasawur awoṙ guṇḍa ḍaraka malwā,
 milu ḍuḍutan kapwa tiniḍa pucꞓa*
 
-{puṣpitāgra}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
-⏑ ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{puṣpitāgra}:26.6
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
+⏑ ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 kuya ṅ-amasĕ-masĕḥ mahā tumĕṅha,
 kadi tuhu wāni mulat waluy pwa luṅhā,
 wasĕ-wasĕhan atīta liŋnya hāh-āḥ,
 makabalasaḥ maṅĕsaḥ ri soṙ nikaŋ hā*
 
-{malinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{malinī}:26.7
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 ƀarata kuya manuŋsuŋ ṅké turun ndaḥ ta rāṙyyan,
 gaja raŧa ya duluṙnyānéka taŋ tuṅgaṅan kwèḥ,
@@ -14597,8 +14599,8 @@ milu lumaku manuŋsuŋ saṅka riŋ haṙṣa monĕŋ,
 hilu tĕhĕr atura ṅkā ndā t-anĕmbaḥ tan ĕmbiḥ,
 t-alapi lara nirākūŋ kāri ṅūnin tiniṅgal*
 
-{drutawilambita}
-⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏓ = :12:
+{drutawilambita}:26.9
+⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏓ = :12:
 
 Aŧa masö praƀu ƀūpati dampati,
 praṇata ƀakti ri saŋ Ibu luḥ humīs,
@@ -14665,46 +14667,47 @@ minaki citta nikaŋ kula baṙ titi,
 titisi yāmrĕta riŋ hati yan liriŋ,
 hana hamunya giraŋnya minaṅkana*
 
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:33: = :105:
+{daṇḍaka}:26.22,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:33: = :105:
 
 gaja raŧa ya madan madĕg taṇḍa rakryan manĕmbaḥ maluy tomuliḥ paŋhulū ṅ-aśwa hastī sumantryādi saŋ mantri paŋhañjur ājār ikaŋ rāja māṙggomasö saŋ Anak wanwa sakwèḥ nikaŋ māgĕman yāgĕm āmöṅakĕn śrī mabārāja mawwat padékān padan tan kadan wwa-wwahan bāp kĕbo kambiṅ akwèḥ Iwak wök kĕna s-sĕmpalan rĕmpa-rĕmpaḥ parĕŋ,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:33: = :105:
+
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:33: = :105:
 parujar ajajarojar ājāri saŋ maŋjawat pawwata wwatnya tanwan lawan tawwa-tawwan taya-ŋ śūnyahastātĕhĕṙ tāśilāhyun tumontona saŋ ƀūpati ṅkān patiṅkaḥ patiḥ saŋ patiḥ saṅka gaṅsal gĕgöŋ śīla tūt saṅkalā taṙ halaŋ tan kalĕṅké manaḥ maṅkana-ŋ gusti tātaṙ wagus tīkṣṇabudđi prayatna-ŋ watĕk rāma-rāmāratā yātatā,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:30: = :96:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:30: = :96:
 salaku nira muliḥ salīlāsalimbé salampé kinarwan payuŋ guywa-guywan yaŧālālanā niŋ manaḥ monĕṅ āsiḥ mahā yaṙ panaṇḍuŋ tinuṇḍuŋ I-ḍĕḥ rāga hétu-n paṅunté sĕkaṙ taṙ tinaṅgap malök héwa riŋ bwat manaṇḍuŋ Umantun tan aṅgā kisat maŋliriŋ đīra-đīrāṙdđa cumbun gitĕl yaṙ tĕpak taŋ ḍaḍa,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:30: = :96:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:30: = :96:
 ƀarata kawuri Aṙdđa méraŋ Umantuk katon saŋ kakāsiḥ tumuntun siraŋ kāsih-onĕŋ sumāmbīkanaŋ sāmbya-sāmbyan niṅ amriḥ Inak niŋ siwo māsirékopaman kāri saŋ kapwa māsiḥ manoliḥ mulat n-ton saṅ antĕn Umantun maṅanti-ŋ mahāntĕn Umĕṅgĕp Ikaŋ pawwat akwèḥ dumūnīkanaŋ wré mawa-ŋ ƀūṣaṇa*
 
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:32: = :102:
+{daṇḍaka}:26.23,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:32: = :102:
 
 wija-wijah arĕbut-rĕbut wānarāṅĕmbut-ĕmbut tikĕl taŋ tĕbū māmbĕt-āmbĕt lakunyā ṅinum riŋ mahāmāṙgga waṙ~giŋ Awak duḥ nikaŋnyū kumūkuṙ kinūranya tékā ḍaḍanyāṙdđa mamwas masö wwaḥ nikaŋ tal huwus pinraṅan nā paṅantyantyananyé siraŋ dampatī mériṅ éraŋ Ikaŋ wré Apan yāpanoṅsil sumāmbyāsiwo tūt hawan,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:32: = :102:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:32: = :102:
 tĕka sira ri samīpa niŋ rājya rājñékanaŋ wānarā rāđanā đāna donyānumāné manaḥ niŋ manonton maniñjo wijaḥ sāwatĕk hiñji-hiñji n-paniñjo wanāwan lawan hyasnyalīlā rumumbay rikaŋ kālasaṅkérikaŋ haṙṣa saṅkā riṅ ūni n-pasot-sot sumot saŋ sumāđyāŋ sarāt sidđakāṙyyān tĕkā riŋ tĕkan yaṙ tĕkā ṅké muwaḥ,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:34: = :108:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:34: = :108:
 ƀaraŧa sira marĕk gumantī siraŋ lakṣmaṇāñāmaré mꜽnda mārin pakampil Inambil niraŋ lakṣmaṇānimbaṅ iŋ wīra śatruǥna r-ambil payuŋ saŋ nalāganti maŋđāraṇa-ŋ catra ratna prayatné hulu śrī mahārāja sampūṙṇna sampat sirāṙ pat supātrāhalĕp yaṙ payuŋ niŋ jagat pāt Upāyopamö sāma dānāduluṙ ḍaṇḍa ƀédān papiṇḍāṙ katon,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:35: = :111:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:35: = :111:
 sahana nira tatā rikaŋ rājya haṙṣān panuŋsuŋ mpu ḍaŋ hyaŋ ḍaṅ ācāṙyya sācāra sopācaraŋ Aṙgǥa Ꜽṙśānti śānta-ŋ manaḥ naṙttakī yāṅigĕl lèn hanāṅgīta naṅgay nagéry-āgiraŋ gāmarārūm asaṅǥaṙṣa yādwandwa kapwomadĕg mindĕr-indĕṙ Umindak Umuṇḍak miḍik riŋ paras yābrĕbĕt bāp mahāsāra masraŋ makaṅsīnusī rāmya baṇḍuŋ lawan kinnara*
 
-{daṇḍaka}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:41: = :129:
+{daṇḍaka}:26.24,1
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:41: = :129:
 
 wataṅan atiśayāhĕnī mās maṇiknéka waṙṇnānataṙ tāratamyātirāmya-ŋ mahāmandapāpūṙwwa śoƀāhatĕp mās pirak ratna mutya pralĕmbanya lambénya yābāŋ sinindūra duḥ niŋ duray ṅkān uray cāmarāṅkĕn kumisnyāhirĕŋ rĕṅganānā wanèḥ tūt ata ṅkān tatiŋ taṅluh ātap lawan kya-kya lèn waḥ nikaŋnyū gaḍiŋ Ādya Uttuṅga ƀinnāniṅis wismayāpan mahārāja muṅgwiŋ mahāratna siṅhāsanātyujwala,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:44: = :138:
-narapati sira dampatī prāpta sāmpun maluṅguḥ tumūt saŋ tamuy makrama ꝁyāti lĕṅkāđipa mwaŋ siraŋ wānaréndrāśilèŋ ratnasiṅhāsanānūt i-saŋ kékayīputra somitra śatruǥna sāmpun makĕmbaŋ mamuṇḍut pasuṇḍuk nikā saŋ matutwan matūtan halĕp dé niṅ aṅdāni hantrantri gaṇḍaŋ mahāmāṅsa sèsī nikaŋ sāgara lwaḥ Alas lwā niṅ āmbĕk rahasyad wuwus tat wĕnaŋ maṙṇnitékaŋ Umuṅgwiŋ limas mās masowé magantiŋ mawèwèḥ lanā,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:42: = :132:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:44: = :138:
+narapati sira dampatī prāpta sāmpun maluṅguḥ tumūt saŋ tamuy makrama ꝁyāti lĕṅkāđipa mwaŋ siraŋ wānaréndrāśilèŋ ratnasiṅhāsanānūt i-saŋ kékayīputra somitra śatruǥna sāmpun makĕmbaŋ mamuṇḍut pasuṇḍuk nikā saŋ matutwan matūtan halĕp dé niṅaŋdāni hantrantri gaṇḍaŋ mahāmāṅsa sèsī nikaŋ sāgara lwaḥ Alas lwā niṅ āmbĕk rahasyad wuwus tat wĕnaŋ maṙṇnitékaŋ Umuṅgwiŋ limas mās masowé magantiŋ mawèwèḥ lanā,
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:42: = :132:
 kapibala riṅ alun-n-alun loṙ dinānan niraŋ jāmbawān agra paŋktī tatātūt susénādi tan sénujaṙ śrī mahārāja kapwānaḍaḥ yaṙ taḍaḥ taŋ Umuṅgwiŋ gĕḍaḥ drāk sasīđu-ŋ sumāṙ māsawâtyanta jaṙṇniḥ hapènī mahāpāna muṅgwiŋ pané mās Inaṅsū nikā saŋ matoṙ sök tĕké soṙ ṅ-atoṙ Īṅitū pūṙṇna gémpor ikaŋ wré sawèt niŋ wĕrö waṙṇna sindūra tékā ḍaḍanyāḍaḍut yātĕnĕŋ ḍaḥ kahīsan Asiŋ séninumnyāturaḥ,
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ – ⏑ – ] ×:43: = :135:
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | [ — ⏑ — ] ×:43: = :135:
 kadi ta ya sinĕpaŋ kapö niŋ kapindrākupik kapwa daṙppān kapat kāpusan dé nikaŋ mađya mađwī madān yomadĕg Aṙdđa mèdan manĕmbaḥ manāmbīŋ manāmbut ya tutwan mamĕṇḍĕḥ sumaṇḍiŋ paḍāhyāṅgupit rāwaṇāstāsiṅ énak kiduŋnyān kadaŋ taṙ pahī mwaŋ kiduŋ daṙppa dé niŋ kiduŋ lèn suliŋ saŋ magĕṇḍiŋ salaṅsaŋ Ikaŋ tāmarāsiŋ Asiŋ moni ménak manojñé manaḥ niŋ watĕk wānarāṅaṅguran pujyanāpañ jĕnĕk yaṇ ḍĕṅö gāmara*
 
-{mahā daṇḍaka}
- [ ⏑ ⏑ – ] ×:476: = :1428:
+{mahā daṇḍaka}:26.25
+ [ ⏑ ⏑ — ] ×:476: = :1428:
 
-naranāŧa raǥūttama ƀoga ƀinukti lawan ǥariṇī nira pūṙṇna pĕnuḥ pinaṅan pinagantyakĕn iŋ mananĕk dinadak-dadak énak-inak ya ta-tambul ikaŋ sumĕḍaḥ sakarĕŋ sinaranta paranti nirantara taŋ malariḥ maṅaliḥ masiliḥ-silihan sumĕlaŋ sumiliḥ mamaṅan maṅinum sakarĕŋ saka rĕmba nikā sakarĕŋ Umaluy pwa matoṙ maduluṙ mawuwuḥ-wuwuhowah-uwaḥ ta paṅan nira dé niṅ anékarasādƀuta ṣadrasa dibya suganđamahā mahaṅĕt mĕrĕṅĕt sira dénya mĕtu-ŋ hariṅĕt kĕna mađya madĕg madarāga masö saṅ awèḥ jĕnu kumkuma candana tīsnya marūm panirām nira rāmya rikaŋ ḍaḍa bāhu gulū tĕka riŋ twas atīs rumĕsĕp śuci cāmara somya mirīŋ ramaṇīya ṅ-ĕmās sumuké sira yaṙ pasĕkaṙ suka baṙ pulaṅ utpala cāmpaka bolu gaḍuŋ puḍak utkaṭa sāri Arūm tumurun ta sirèŋ natar ériṅ-iriŋ kalawan ta siraŋ Ari ƀāra guṇottama saŋ ƀaratāṙ para té sira saŋ tinamuy r-adĕg iŋ bala wānara yaṙ panaḍaḥ maṅinum wwara baṇḍa si ƀaṇḍira nāma parö ri siraŋ ƀaratomilu manwagaté gati saŋ tamuy uttama dénya diné wruha yāta tumakwani saŋ tinamuy mapa kālah-alaḥ Apa tāmbĕha tambulasiŋ kakuraŋ kurawuŋ kurapas kurahan-hana maṇḍaga riŋ raga sugwan ĕmās wwara piṇḍaṅ apiṇḍa lawan bakasĕm pakasaṅśaya haywa tamuy-tamuyan yan asömasi wantĕna saṅgiṅ irāhira hèrakĕnā sakarĕŋ mwaṅ arīṅa-riṅan Iriṅĕn tĕka dé niṅ atoṙ sahajān hibĕkī Inuman tan umāna tĕkèŋ mawĕrö wwara hantiga lumwaṅalap gĕtĕm apya mapāta rasanya rasénisi sīsyanikā Inamĕṙ nira saŋ walakas lĕkasan magaway rasa ƀaṅgi wiƀāga nikaŋ guṇaƀoga tamaṙ tama tā dadi ƀaṅga r-usiṙ suƀago matakut kuyaśā-kuyaśa-ŋ makarī sakarĕŋ makarā-kirakĕn ta ya siŋ matasak matasé kahiris ta haraḥ kuya taṅli pawèhakĕn osĕn-usĕn nda hanus hunus īku pinaṅgaṅakĕn taṅ ikān putihan ri ḍatĕŋ walikāpĕs-apĕs mwas ikā hati niŋ hyu lawan pya nikaŋ hawulāmrak inaṅsi ṅ-usīra pasāra ya satwa śaśā wana kuṙkuṭa Ugra rasottama tad warahĕn Irikaŋ hitamāṅsa hanèŋ Aji sūpakaśāstra milu-ŋ lulu kambiṅ anuŋ maharĕŋ wayawak ruti wūru-wurū prit awoṙ puyuh uttama laṇḍak iṅantya tĕmĕn rasa tuṅgal i-tiṅgiliṅ iṅgalakĕn pwa Asiŋ matasak kalalaḥ tikanaŋ kalalaḥ katĕké sira wānara wīra warĕg I-rasā kalalaḥ nira kāla nikā harĕp anta yadin tĕka riŋ paṅĕlān paṅalap ta piriŋ satapī katupaŋ kurupuk-k-ararus ḍaḍaṅan hawan iŋ warawan wulatī tatiṅan ta kaṅ anta manaṅgap atuṅgayapan paramèŋ rasa pojaraniŋ sajagat rasa kalwaṅ akĕndĕl arūm awuduk mapĕḍak malikĕt-likĕt alwat ikā gilutĕn ṅ hulu kantaka rīnuhuma-ŋ talukan tuliriŋ kupaṅan pwa ṅ-irāh-irah éraṅa saŋ mananĕk yadiyan wirasā ya rasāna wanèḥnya baniŋnya lawaṙ-lawaranya gulay-gulayanya lĕmĕŋ-lĕmĕṅanya pĕṅĕt-pĕṅĕtanya hasĕm-hasĕmanya takiḥ-takihanya sarad-saradanya kulub-kulubanya bĕnĕm-bĕnĕmanya taman sipi riŋ mahĕmuk hulam īŋ rĕcahan ta pĕcĕl-pĕcĕlan śuci taṙ pacalan cĕcĕp iŋ jruk asin nasi tāsi saménaka yan paṅinum wway ahaywa ta sanđi hana-ŋ mađu śīra jalaṇḍaka santĕn arūm tala mastaka laṇḍuga naṅka salak ya salaḥ winilaŋ ǥrĕta pūra kipiŋ tila moda tulađya paṅan paṅasī wwara puñcakatak sisilan panisil ta kukap nda kukup sagĕlista tamaṙ kĕbĕs āt Aṅinum wway atīs nda nihan ta maṅan Uwi naṅka pisaŋ waraṅan ꝑala dibya salak Inumī surasĕkṣurasārun-arun taruṇī taṅinum susu paŧya putĕṙ tan isĕp ta jukut manis énak awās luput īŋ lĕpĕt énak ikénatakan kinapuṙ-kapuran Aparan kawĕkasnya wĕkas niṅ arūm awuduk sakalé kalisālwat ikā palikĕt lakĕtan kinuñit nda kĕta t-wulati-ŋ manĕtĕk-nĕtĕk iŋ paṅĕlan Umalap ta mahā maharĕp tiru ƀāwa nikaŋ manabĕḥ murawān paṅuliŋ sĕsĕban kadi ƀāwa nikaŋ wwaṅ aboṇḍi widagđa miṅis kumayaŋ-kayaṅ aṅkĕn ulaḥnya maṅindĕlakĕn lĕṅa riŋ kawali n-taru ƀinna kisiknya ya gumyatakĕn nika maṅgurapay matama pwa ya pat mawĕrö wiratīŋ kupatay tamataṙ kagaway pabubuṙ susu śudđa putus riṅ atīs hati niŋ kĕna madya madanda ta gucꞓaka kĕmbaṅ arumpukan āpa kariḥ pakĕnā niṅ inak ya Iké ꝑala lālana saŋ wijayèŋ raṇa maṅguhakĕn śri ya ƀoga magöŋ Ikaṅ uttama ƀakti sadā ri ƀaṭāra mahéśwara hétu nikaŋ ƀuwanān kasukāna muwaḥ-muwahāta krĕta,
+naranāŧa raǥūttama ƀoga ƀinukti lawan ǥariṇī nira pūṙṇna pĕnuḥ pinaṅan pinagantyakĕn iŋ mananĕk dinadak-dadak énak-inak ya ta-tambul ikaŋ sumĕḍaḥ sakarĕŋ sinaranta paranti nirantara taŋ malariḥ maṅaliḥ masiliḥ-silihan sumĕlaŋ sumiliḥ mamaṅan maṅinum sakarĕŋ saka rĕmba nikā sakarĕŋ Umaluy pwa matoṙ maduluṙ mawuwuḥ-wuwuhowah-uwaḥ ta paṅan nira dé niṅ anékarasādƀuta ṣadrasa dibya suganđamahā mahaṅĕt mĕrĕṅĕt sira dénya mĕtu-ŋ hariṅĕt kĕna mađya madĕg madarāga masö saṅ awèḥ jĕnu kumkuma candana tīsnya marūm panirām nira rāmya rikaŋ ḍaḍa bāhu gulū tĕka riŋ twas atīs rumĕsĕp śuci cāmara somya mirīŋ ramaṇīya ṅ-ĕmās sumuké sira yaṙ pasĕkaṙ suka baṙ pulaṅ utpala cāmpaka bolu gaḍuŋ puḍak utkaṭa sāri Arūm tumurun ta sirèŋ natar ériṅ-iriŋ kalawan ta siraŋ Ari ƀāra guṇottama saŋ ƀaratāṙ para té sira saŋ tinamuy r-adĕg iŋ bala wānara yaṙ panaḍaḥ maṅinum wwara baṇḍa si ƀaṇḍira nāma parö ri siraŋ ƀaratomilu manwagaté gati saŋ tamuy uttama dénya diné wruha yāta tumakwani saŋ tinamuy mapa kālah-alaḥ Apa tāmbĕha tambulasiŋ kakuraŋ kurawuŋ kurapas kurahan-hana maṇḍaga riŋ raga sugwan ĕmās wwara piṇḍaṅ apiṇḍa lawan bakasĕm pakasaṅśaya haywa tamuy-tamuyan yan asömasi wantĕna saṅgiṅ irāhira hèrakĕnā sakarĕŋ mwaṅ arīṅa-riṅan Iriṅĕn tĕka dé niṅ atoṙ sahajān hibĕkī Inuman tan umāna tĕkèŋ mawĕrö wwara hantiga lumwaṅalap gĕtĕm apya mapāta rasanya rasénisi sīsyanikā Inamĕṙ nira saŋ walakas lĕkasan magaway rasa ƀaṅgi wiƀāga nikaŋ guṇaƀoga tamaṙ tama tā dadi ƀaṅga r-usiṙ suƀago matakut kuyaśā-kuyaśa-ŋ makarī sakarĕŋ makarā-kirakĕn ta ya siŋ matasak matasé kahiris ta haraḥ kuya taṅli pawèhakĕn osĕn-usĕn nda hanus hunus īku pinaṅgaṅakĕn taṅ ikān putihan ri ḍatĕŋ walikāpĕs-apĕs mwas ikā hati niŋ hyu lawan pya nikaŋ hawulāmrak inaṅsi ṅ-usīra pasāra ya satwa śaśā wana kuṙkuṭa Ugra rasottama tad warahĕn Irikaŋ hitamāṅsa hanèŋ Aji sūpakaśāstra milu-ŋ lulu kambiṅ anuŋ maharĕŋ wayawak ruti wūru-wurū prit awoṙ puyuh uttama laṇḍak iṅantya tĕmĕn rasa tuṅgal i-tiṅgiliṅ iṅgalakĕn pwa Asiŋ matasak kalalaḥ tikanaŋ kalalaḥ katĕké sira wānara wīra warĕg I-rasā kalalaḥ nira kāla nikā harĕp anta yadin tĕka riŋ paṅĕlān paṅalap ta piriŋ satapī katupaŋ kurupuk-k-ararus ḍaḍaṅan hawan iŋ warawan wulatī tatiṅan ta kaṅ anta manaṅgap atuṅgayapan paramèŋ rasa pojaraniŋ sajagat rasa kalwaṅ akĕndĕl arūm awuduk mapĕḍak malikĕt-likĕt alwat ikā gilutĕn ṅ hulu kantaka rīnuhuma-ŋ talukan tuliriŋ kupaṅan pwa ṅ-irāh-irah éraṅa saŋ mananĕk yadiyan wirasā ya rasāna wanèḥnya baniŋnya lawaṙ-lawaranya gulay-gulayanya lĕmĕŋ-lĕmĕṅanya pĕṅĕt-pĕṅĕtanya hasĕm-hasĕmanya takiḥ-takihanya sarad-saradanya kulub-kulubanya bĕnĕm-bĕnĕmanya taman sipi riŋ mahĕmuk hulam īŋ rĕcahan ta pĕcĕl-pĕcĕlan śuci taṙ pacalañ cĕcĕp iŋ jruk asin nasi tāsi saménaka yan paṅinum wway ahaywa ta sanđi hana-ŋ mađu śīra jalaṇḍaka santĕn arūm tala mastaka laṇḍuga naṅka salak ya salaḥ winilaŋ ǥrĕta pūra kipiŋ tila moda tulađya paṅan paṅasī wwara puñcakatak sisilan panisil ta kukap nda kukup sagĕlista tamaṙ kĕbĕs āt Aṅinum wway atīs nda nihan ta maṅan Uwi naṅka pisaŋ waraṅan ꝑala dibya salak Inumī surasĕkṣurasārun-arun taruṇī taṅinum susu paŧya putĕṙ tan isĕp ta jukut manis énak awās luput īŋ lĕpĕt énak ikénatakan kinapuṙ-kapuran Aparan kawĕkasnya wĕkas niṅ arūm awuduk sakalé kalisālwat ikā palikĕt lakĕtan kinuñit nda kĕta t-wulati-ŋ manĕtĕk-nĕtĕk iŋ paṅĕlan Umalap ta mahā maharĕp tiru ƀāwa nikaŋ manabĕḥ murawān paṅuliŋ sĕsĕban kadi ƀāwa nikaŋ wwaṅ aboṇḍi widagđa miṅis kumayaŋ-kayaṅ aṅkĕn ulaḥnya maṅindĕlakĕn lĕṅa riŋ kawali n-taru ƀinna kisiknya ya gumyatakĕn nika maṅgurapay matama pwa ya pat mawĕrö wiratīŋ kupatay tamataṙ kagaway pabubuṙ susu śudđa putus riṅ atīs hati niŋ kĕna madya madanda ta gucꞓaka kĕmbaṅ arumpukan āpa kariḥ pakĕnā niṅ inak ya Iké ꝑala lālana saŋ wijayèŋ raṇa maṅguhakĕn śri ya ƀoga magöŋ Ikaṅ uttama ƀakti sadā ri ƀaṭāra mahéśwara hétu nikaŋ ƀuwanān kasukāna muwaḥ-muwahāta krĕta*,
 
-{basantatilaka}
-– – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | ⏑ – ⏑ | – ⏓ = :14:
+{basantatilaka}:26.26
+— — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | ⏑ — ⏑ | — ⏓ = :14:
 
 nā liŋ nikaŋ suƀaga ƀaṇḍa si ƀaṇḍirāṅliŋ,
 sumwāgaté sagati saŋ tinamuy tinakwan,
@@ -14756,32 +14759,32 @@ tan wruḥ ṅhulun tuna tĕmĕn rikana kṣamākĕn,
 wātsyāyanāji madanodaya sanđisūtra,
 ṅkāƀyāsa dénta ya paṅawruha riŋ rasa ṅka*
 
-{waṅśapatrapatita}
-– ⏑ ⏑ | – ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :17:
+{waṅśapatrapatita}:26.36
+— ⏑ ⏑ | — ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏓ = :17:
 
 sāmpun ikaŋ sukottama-taman sawinuwus adawā,
 riŋ rahinomuwaḥ Inisukan saṅ atiŧi tinamuy,
 pañcami ṣāṣi saptami taman pĕgat ikaṅ aṅinum,
 prāpta riṅ aṣṭamī nawami riŋ daśami mahuwusan*
 
-{malinī}
-⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – – – | ⏑ – – | ⏑ – ⏓ = :15:
+{malinī}:26.37
+⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — — — | ⏑ — — | ⏑ — ⏓ = :15:
 
 suka-suka sira kāliḥ saŋ tamuy kapwa mamwīt,
 r-uliha r-ulihakĕn śrī paŋdĕmak śrī naréndra,
 gaja raŧa turaga strī dāsa-dāsī swadéśa,
 tinarima sapawèwèḥ śrī mahārāja mulya*
 
-{śāṙddūlawikrīḍita}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | – – ⏑ | – – ⏑ | ⏓ = :19:
+{śāṙddūlawikrīḍita}:26.38
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | — — ⏑ | — — ⏑ | ⏓ = :19:
 
 lāwan saŋ trijaṭā manĕmbah umasö mamwīt ri saŋ ƀūpati,
 mwan ri śrī janakātmajā tamar adoḥ tan saḥ sumaṇḍiŋ lanā,
 dèwī māsih awèḥ sirāta dĕmakan wastrādi lèn ƀūṣaṇa,
 sakwèḥ-kwèḥ nikanaŋ wiśéṣa ya pawèḥ bāp wwaŋ hulun mās maṇik*
 
-{dođakawrĕtta}
-– ⏑ ⏑ | – ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{dođakawrĕtta}:26.39
+— ⏑ ⏑ | — ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 tuṣṭa manaḥ nira saŋ trijaṭāsiḥ,
 ssĕmbahakĕn dĕmakan ri naréndra,
@@ -14793,8 +14796,8 @@ tāt alupā ri laranta ta ṅūni,
 kāla nikāt para riŋ talagārūm,
 riŋ watu riŋ wulakan kita tāṅhyaŋ*
 
-{prahaṙṣiṇī}
-– – – | ⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ – | ⏓ = :13:
+{prahaṙṣiṇī}:26.41 
+— — — | ⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ — | ⏓ = :13:
 
 wrĕkṣāgöŋ ya ta pinaranta śūnya-śūnyān,
 hyaŋ duṙggā gaṇapati bāp banaspati ṅkā,
@@ -14806,8 +14809,8 @@ lāwan yak muwaha muliḥ tĕkèṅ ayođyā,
 pūjāntāta sira kabèḥ rikaŋ sayogya,
 yékān tuhwakĕna tulūsakĕnta siḥ ta*
 
-{turagagati}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
+{turagagati}:26.43
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | ⏑ ⏑ ⏓ = :12:
 
 haṅsa sātus irikaŋ sara lĕpasĕn,
 rīṅ alas mahiṣa sèwu ya lĕpasĕn,
@@ -14819,8 +14822,8 @@ riŋ prasāda ta mujèŋ kanaka maṇik,
 brāhmaṇādi wiku sajjana guṇawān,
 ƀojanāna saha dakṣiṇa saꝑala*
 
-{swāgata}
-– ⏑ – | ⏑ ⏑ ⏑ | – ⏑ ⏑ | – ⏓ = :11:
+{swāgata}:26.45
+— ⏑ — | ⏑ ⏑ ⏑ | — ⏑ ⏑ | — ⏓ = :11:
 
 hāḥ lumampaha wisāta kitāntĕn,
 sāntĕn iŋ suka-sukaṅku ta dènta,
@@ -14837,25 +14840,25 @@ tuṣṭa saŋ tamuy anĕmbah umaṅkat,
 saŋ wiƀīṣaṇa kapīśwara luṅhā,
 riŋ swadéśa pinaran nira śīǥra*
 
-{Ꜷpacꞓandasika}
-⏑ ⏑ – | ⏑ ⏑ – | ⏑ – ⏑ | – ⏓ = :11:
-⏑ ⏑ – | – ⏑ ⏑ | – ⏑ – | ⏑ – ⏓ = :12:
+{Ꜷpacꞓandasika}:26.48
+⏑ ⏑ — | ⏑ ⏑ — | ⏑ — ⏑ | — ⏓ = :11:
+⏑ ⏑ — | — ⏑ ⏑ | — ⏑ — | ⏑ — ⏓ = :12:
 
 sira kapwa muliḥ Umaṙ~sukāŋ rāt,
 naranāŧā kawĕkas humaywakĕn rāt,
 wariṅin sira bođi möbikiŋ rāt,
 kayu sāmpaŋ rwa ta pāŋ nirāmrĕtèŋ rāt*
 
-{Aśwalalita}
-⏑ ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ – ⏑ | – ⏑ ⏑ | ⏑ ⏓ = :23:
+{Aśwalalita}:26.49
+⏑ ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ — ⏑ | — ⏑ ⏑ | ⏑ ⏓ = :23:
 
 jaya paraméśwarātiśaya śakti nāŧa nikanaŋ jagattraya kita,
 praṇata hatiṅku nitya ri sukunta tātan alupā lanā matutura,
 Ikana ꝑalā ni ƀakti ni hatiṅku rāt ya ta tumūta ƀaktya ri kita,
 kalawan ikiŋ suƀāṣita kaŧā saƀākĕna rĕṅön rasanya suƀaga*
 
-{rāgakusuma}
-– – – | ⏑ ⏑ – | ⏑ – ⏑ | ⏑ ⏑ – | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | – ⏑ – | ⏑ ⏓ = :23:
+{rāgakusuma}:26.50
+— — — | ⏑ ⏑ — | ⏑ — ⏑ | ⏑ ⏑ — | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | — ⏑ — | ⏑ ⏓ = :23:
 
 sākṣāt manmaŧa śīla saŋ raǥusutāmĕnuhi wiṣayađaṙmma riŋ sarāt,
 ṅkān rāmāyaṇa ƀadrawāda nira moǥa mawaṅi rumĕsĕp tĕké hati,
@@ -14867,7 +14870,7 @@ mahyun moliha lāƀa pāwana tumirwa guṇa nira saṅ āṙyya paṇḍita,
 tus-tus niŋ kajanānurāga nira riŋ ƀuwana saꝑala dibya saṅgrahan,
 dé ni ṅwaŋ tuna budđi tan pahamĕṅan palar apulih ahĕlya kośala*
 
-{tiḍak ḍikĕtahui}
+{tiḍak ḍikĕtahui}:26.52
 ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏑ | ⏑ ⏑ ⏓ = :27:
 
 kṣama sahana-hana sujana kuśala saꝑala pinuji pinaraga sinaguṇa,
