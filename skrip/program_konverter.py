@@ -26,7 +26,8 @@ except ImportError as e:
 WASKITA_RULES = [
     (r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ'),
     (r'ꦫ꧀ꦮ', 'ꦫ꧀ꦮ\u200D'), # Tambahkan Zero-Width Joiner (ZWJ) untuk penyambungan yang lebih baik
-    (r'ꦂ', 'ꦂ\u200D', re.IGNORECASE) # Tambahkan ZWJ setelah pangkon (ꦂ)
+    #(r'ꦂ', 'ꦂ\u200D', re.IGNORECASE) # Tambahkan ZWJ setelah pangkon (ꦂ)
+    (r'ꦂ', 'ꦫ꧀', re.IGNORECASE) # Tambahkan ZWJ setelah pangkon (ꦂ)
 ]
 GAYATRI_RULES = [
     (r'ꦈ', '#'),
@@ -52,16 +53,16 @@ GAYATRI_RULES = [
 # Kunci: aksara_type -> font_family -> daftar_aturan (pattern, replacement, flags)
 FONT_SPECIFIC_REGEX_RULES = {
     "jawa": {
-        "jayaƀaya": WASKITA_RULES, # Referensikan set aturan yang sudah didefinisikan
+        "jayabaya": WASKITA_RULES, # Referensikan set aturan yang sudah didefinisikan
         "Asta Gayatri 09": GAYATRI_RULES, # Aturan untuk font Vimala (saat ini kosong)
-        "natya": []                       # Aturan untuk font Natya (saat ini kosong)
+        "Simbar Dwijendra 2": []                       # Aturan untuk font Simbar Dwijendra 2 (saat ini kosong)
     },
     "bali": {
         "vimala": [], # Contoh: VIMALA_BALI_RULES, # Jika ada, referensikan di sini
-        "natya": []
+        "Simbar Dwijendra 2": []
     },
     "kawi": {
-        "jayaƀaya": [] # Aturan untuk font Jayabaya Aksara Kawi (saat ini kosong)
+        "Noto Sans Kawi": [] # Aturan untuk font Jayabaya Aksara Kawi (saat ini kosong)
     }
 }
 
@@ -78,7 +79,7 @@ def main_convertion(text, line_spacing, mode, aksara_type, font_family):
         text_output = converted_jawa
         # Khusus untuk font Jayabaya, lakukan swap karakter ꦈ dan ꦎ menggunakan str.replace()
         # Ini menghindari masalah dengan re.sub dan karakter Unicode tertentu
-        if font_family == "jayaƀaya":
+        if font_family == "jayabaya":
             # Lakukan swap tiga arah
             text_output = text_output.replace('ꦈ', 'TEMP_JAYABAYA_U_PLACEHOLDER')
             text_output = text_output.replace('ꦎ', 'ꦈ')
@@ -275,15 +276,15 @@ font_label = tk.Label(font_frame, text="Font Aksara:")
 font_label.pack(side=tk.LEFT)
 
 # Daftar font yang mungkin tersedia (Anda bisa menambahkan lebih banyak)
-available_fonts = ["jayaƀaya", "vimala", "natya", "Asta Gayatri 09"]
+available_fonts = ["jayabaya", "vimala", "Simbar Dwijendra 2", "Asta Gayatri 09", "Noto Sans Kawi"]
 
 font_sizes = [str(i) for i in range(8, 30, 2)] # Ukuran font dari 8 hingga 28
 
 # Dictionary untuk menyimpan StringVar untuk font dan ukuran per aksara
 font_family_vars = {
-    "jawa": tk.StringVar(value="jayaƀaya"), # Default font for Jawa
-    "bali": tk.StringVar(value="vimala"),   # Default font for Bali
-    "kawi": tk.StringVar(value="jayaƀaya")    # Default font for Kawi
+    "jawa": tk.StringVar(value="jayabaya"), # Default font for Jawa
+    "bali": tk.StringVar(value="Simbar Dwijendra 2"),   # Default font for Bali
+    "kawi": tk.StringVar(value="Noto Sans Kawi")    # Default font for Kawi
 }
 font_size_vars = {
     "jawa": tk.StringVar(value="14"),

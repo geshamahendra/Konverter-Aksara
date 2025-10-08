@@ -70,7 +70,7 @@ substitutions = {
     ),
 
     # Imbuhan aṅ lainnya (selain g/k)
-    rf'(?:\b(m|p)aṅ|(\w+)āṅ|([{daftar_konsonan}]) aṅ)((?![gk])[{daftar_konsonan}])(\w+)': (
+    rf'(?:\b(m|p)aṅ|(\w+)āṅ|([{daftar_konsonan}][^\S\n]+)aṅ)((?![gk])[{daftar_konsonan}])(\w+)': (
     lambda m: (
         (m.group(1) or m.group(2) or m.group(3))
         + ('aŋ' if m.group(1) or m.group(3) else 'āŋ')
@@ -99,7 +99,7 @@ substitutions = {
     r'([' + daftar_konsonan + '])([' + daftar_vokal + '])h(k|m)w([' + daftar_vokal + '])': r'\1\2ḥ\3w\4', 
 
     #Kasus khusus
-    r'(duhk|duhꝁ)([' + daftar_vokal + '])' : r'duḥk\2',  #duhka
+    r'duh(k|ꝁ)(ita|[' + daftar_vokal + '])' : r'duḥꝁ\2', #duhka duhkita
     r'rwarw(a|ā|â)' : r'rwa-rw\1', # rwa rwa
     r'\b(p|m)?aṅlĕ' : r'\1aŋlĕ',
 

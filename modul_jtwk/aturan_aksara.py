@@ -117,10 +117,10 @@ for kunci, nilai in [
     (['ê', 'é', 'è'], 'e'),
     (['û'], 'ū'),
     (['ē','~'], ''),
-    (['lĕ', 'ḷĕ'], 'ḷ'),
-    (['lö', 'ḹö'], 'ḹ'),
-    (['rĕ', 'ṛĕ'], 'ṛ'),
-    (['rö', 'ṝö'], 'ṝ'),
+    (['lĕ', 'ḷĕ', 'l̥'], 'ḷ'),
+    (['lö', 'ḹö', 'l̥̄'], 'ḹ'),
+    (['rĕ', 'ṛĕ', 'r̥'], 'ṛ'),
+    (['rö', 'ṝö', 'r̥̄'], 'ṝ'),
 ]:
     PENYERAGAMAN_VOKAL.update(dict.fromkeys(kunci, nilai))
 
@@ -375,6 +375,7 @@ def finalisasi(hasil):
         '⏒꧇': '⏒ ꧇',
         '!': '',
         '_': f'{ZWNJ}',
+        #'ꦫ꧀ꦮ': f'ꦫ꧀ꦮ{ZWNJ}',
         ' ' : '', # Hapus spasi
 
         # Ganti simbol metrum
@@ -394,8 +395,8 @@ def finalisasi(hasil):
         hasil = hasil.replace(cari, ganti)
 
     # Pastikan 0̲ ditangani dulu
-    hasil = re.sub(r'[^\S\r\n]*(\||—|⏑|⏓|—)[^\S\r\n]*', r' \1 ', hasil)
-    hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)
+    #hasil = re.sub(r'[^\S\r\n]*(\||—|⏑|⏓|—)[^\S\r\n]*', r' \1 ', hasil)
+    #hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)
 
     # Langkah 2: Panggil fungsi ganti_tanda_metrum
     hasil = ganti_tanda_metrum(hasil)

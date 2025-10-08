@@ -8,23 +8,27 @@ sys.path.append(root_path)
 
 # Kamus konversi karakter spesial ke latin
 DAFTAR_KONVERSI = {
-    'ꝁ': 'kh', 'Ꝁ': 'Kh',
-    'ǥ': 'gh', 'Ǥ': 'Gh',
-    'ꞓ': 'ch', 'Ꞓ': 'Ch',
-    'ɉ': 'jh', 'Ɉ': 'Jh',
-    'ṫ': 'ṭh', 'Ṫ': 'Ṭh',
-    'ḋ': 'ḍh', 'Ḋ': 'Ḍh',
-    'ŧ': 'th', 'Ŧ': 'Th',
-    'đ': 'dh', 'Đ': 'Dh',
-    'ꝑ': 'ph', 'Ꝑ': 'Ph',
-    'ƀ': 'bh', 'Ƀ': 'Bh',
-    'ṛ': 'rĕ', r'ṝ': 'rö',
-    'ḷ': 'lĕ', r'ḹ': 'lö',
+    #'ꝁ': 'kh', 'Ꝁ': 'Kh',
+    #'ǥ': 'gh', 'Ǥ': 'Gh',
+    #'ꞓ': 'ch', 'Ꞓ': 'Ch',
+    #'ɉ': 'jh', 'Ɉ': 'Jh',
+    #'ṫ': 'ṭh', 'Ṫ': 'Ṭh',
+    #'ḋ': 'ḍh', 'Ḋ': 'Ḍh',
+    #'ŧ': 'th', 'Ŧ': 'Th',
+    #'đ': 'dh', 'Đ': 'Dh',
+    #'ꝑ': 'ph', 'Ꝑ': 'Ph',
+    #'ƀ': 'bh', 'Ƀ': 'Bh',
+    'rĕ': 'r̥',
+    'rö': 'r̥̄',
+    'lĕ': 'l̥',
+    'lö': 'l̥̄',
 }
 
 # Konversi karakter spesial ke latin
 def konversi_aksara_ke_latin(text, daftar_konversi):
-    return ''.join(daftar_konversi.get(kar, kar) for kar in text)
+    for k, v in daftar_konversi.items():
+        text = text.replace(k, v)
+    return text
 
 # Ganti vokal ganda dengan bentuk panjang
 def ganti_vokal_panjang(text):
@@ -41,8 +45,8 @@ def ganti_vokal_panjang(text):
 def ganti_hukum_r(text):
 
     #kasus re
-    text = re.sub(r'ṛĕ', 'rĕ', text)
-    text = re.sub(r'(?<!ĕ)ṛ', 'rĕ', text)
+    #text = re.sub(r'ṛĕ', 'rĕ', text)
+    #text = re.sub(r'(?<!ĕ)ṛ', 'rĕ', text)
 
     text = re.sub(r'â', 'a a', text, flags=re.IGNORECASE)
     text = re.sub(r'î', 'i i', text, flags=re.IGNORECASE)
@@ -56,19 +60,19 @@ def ganti_hukum_r(text):
 
 def gabungkan_kata_ulang(text):
     # Aturan 1: kata yang persis sama → kuwuŋ kuwuŋ → kuwuŋ-kuwuŋ
-    text = re.sub(r'\b(\w+)\s+\1\b', r'\1-\1', text)
+    #text = re.sub(r'\b(\w+)\s+\1\b', r'\1-\1', text)
 
     # Aturan 2: kata pertama diakhiri kata kedua → mangadep adep → mangadep-adep
-    text = re.sub(r'\b(\w+)\s+(\w+)\b', lambda m:
-                  f"{m.group(1)}-{m.group(2)}"
-                  if m.group(1).endswith(m.group(2)) else m.group(0), text)
+    #text = re.sub(r'\b(\w+)\s+(\w+)\b', lambda m:
+    #              f"{m.group(1)}-{m.group(2)}"
+    #              if m.group(1).endswith(m.group(2)) else m.group(0), text)
 
     # Aturan 3: kata kedua diawali kata pertama → raga ragan → raga-ragan
     # Panjang kata kedua harus lebih panjang dari pertama
-    text = re.sub(r'\b(\w+)\s+(\w+)\b', lambda m:
-                  f"{m.group(1)}-{m.group(2)}"
-                  if m.group(2).startswith(m.group(1)) and len(m.group(2)) > len(m.group(1))
-                  else m.group(0), text)
+    #text = re.sub(r'\b(\w+)\s+(\w+)\b', lambda m:
+    #              f"{m.group(1)}-{m.group(2)}"
+    #              if m.group(2).startswith(m.group(1)) and len(m.group(2)) > len(m.group(1))
+    #              else m.group(0), text)
 
     return text
 
@@ -90,6 +94,6 @@ def process_file(input_file, output_file):
 
 # Jalankan jika file ini dijalankan langsung
 if __name__ == '__main__':
-    input_file = 'output/input_jawa.txt'
+    input_file = 'pengolah_output/output_pupuh.txt'
     output_file = 'output/output_latin_normal.txt'
     process_file(input_file, output_file)

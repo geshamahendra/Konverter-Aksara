@@ -46,15 +46,14 @@ def latin_to_jawa(text, line_spacing):
     # Terapkan aturan tarung panjang
     text = tarung(text)
     text = re.sub(r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ', text)
-    text = re.sub(r'ꦫꦾ', '꧟', text)
-    text = re.sub(r'ꦫ꧀ꦮ', '꧞', text)
-    text = re.sub(r'ꦾ', '꧀ꦪ', text)
-    text = re.sub(r'ꦿ', '꧀ꦫ', text)
-    text = re.sub(r'ꦂ', 'ꦂ', text, flags=re.IGNORECASE)#layar ke layar
+    #text = re.sub(r'ꦫꦾ', '꧟', text)
+    text = re.sub(r'ꦫ꧀ꦮ\u200C', 'ꦫ\u200C꧀ꦮ', text)
+    #text = re.sub(r'ꦾ', '꧀ꦪ', text)
+    #text = re.sub(r'ꦿ', '꧀ꦫ', text)
+    #text = re.sub(r'ꦂ', 'ꦂ', text, flags=re.IGNORECASE)#layar ke layar
     text = re.sub(r'꧄꧐꧄', '꧅꧐꧅', text)
     text = re.sub(r'꧁', '꧄', text)
     text = re.sub(r'꧂', '꧄', text)
-    text = re.sub(r'ꦼꦴꦁ', 'ꦼꦁ꧌', text)
 
     #khusus font jayabaya
     text = re.sub(r'ꦈ', '#', text)
