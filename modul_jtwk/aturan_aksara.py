@@ -1,16 +1,6 @@
 #Menghapus spasi ada di aturan aksara
 import re
-
-# --- Variabel Global ---
-ZWNJ = '\u200C'
-ZWSP = '\u200B'
-ZWJ = '\u200D'
-ZWNBSP = '\uFEFF'
-DAFTAR_KONSONAN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅṙṛṝḷḹꝁǥꞓƀśḳkʰ"
-DAFTAR_VOKAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûôAĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ'
-VOKAL_KAPITAL = "AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ"
-VOKAL_NON_KAPITAL = 'aāiīuūeèéêoōöŏĕꜷꜽâîûô'
-VOKAL_NON_KAPITAL_REGEX = f"[{VOKAL_NON_KAPITAL}]"
+from modul_jtwk.konstanta import VOKAL_KAPITAL, VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, ZWNJ, ZWSP
 
 # Peta karakter Latin ke aksara Jawa (dalam bentuk dimatikan secara default)
 aksara = {
@@ -230,134 +220,117 @@ def insert_h_between_unmerged_vowels(text):
         return f'{v1}h{v2}'
     return re.sub(pattern, repl, text)
 
-def inisialisasi_aksara(text):
+RE_INISIALISASI_AKSARA = [
     # Ganti * ujung pupuh
-    text = re.sub(r'\*(\s*[#\<{])', r'#\1', text)
-
-    NON_HURUF_PENDAHULU = r'([^\w\s-])(\s*)'
-    VOKAL_REGEX = f"[{DAFTAR_VOKAL}]"
-
+    (re.compile(r'\*(\s*[#\<{])'), r'#\1'),
     # Kapitalkan vokal di awal baris
-    text = re.sub(rf'^([{DAFTAR_VOKAL}])', lambda m: {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}.get(m.group(1), m.group(1).upper()), text, flags=re.MULTILINE)
-    # Kapitalkan vokal jika didahului tanda baca non-huruf (bukan spasi/strip)
-    text = re.sub(rf'{NON_HURUF_PENDAHULU}({VOKAL_REGEX})', lambda m: f"{m.group(1)}{m.group(2)}{m.group(3).upper()}", text)
+    (re.compile(rf'^([{DAFTAR_VOKAL}])', re.MULTILINE), 
+        lambda m: {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}.get(m.group(1), m.group(1).upper())),
+    # Kapitalkan vokal jika didahului tanda baca non-huruf    
+    (re.compile(rf'([^\w\s-])(\s*)([{DAFTAR_VOKAL}])'),
+        lambda m: f"{m.group(1)}{m.group(2)}{m.group(3).upper()}"),
+]
+
+def inisialisasi_aksara(text):
+    for regex, repl in RE_INISIALISASI_AKSARA: text = regex.sub(repl, text)
 
     return text
 
+
+RE_HUKUM_SANDI = [
+    # aksara suci (m-ending)
+    (re.compile(rf'\b([{DAFTAR_VOKAL}])(m|ṃ)\b'), 
+        lambda m: f" {ZWNJ}{m.group(1).upper()}{m.group(2)}{ZWNJ} "),
+    # pertahankan le
+    (re.compile(rf'(?<=([{DAFTAR_KONSONAN}]))(ḷ|ḹ)'), lambda m: m.group(2) + '\u200D'),
+    # hapus strip depan konsonan
+    (re.compile(rf'-([{DAFTAR_KONSONAN}])'), r' \1'),
+    # agar aksara swara tidak jadi pasangan
+    (re.compile(rf"(?<=[{DAFTAR_KONSONAN.replace('ṙ','')}])[^\S\n]*([{VOKAL_KAPITAL}])"),
+        lambda m: ZWNJ + m.group(1)),
+    # kasus tabrakan font bagian taling
+    (re.compile(rf'ṙ([{DAFTAR_KONSONAN}])([{DAFTAR_KONSONAN}])([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}]+)(e|o)'),
+        rf'ṙ\1\2\3{ZWNJ}\4\5\6'),
+]
+
 def hukum_sandi(text):
-    #Aksara suci
-    text = re.sub(rf'\b([{DAFTAR_VOKAL}])(m|ṃ)\b', lambda m: f" {ZWNJ}{m.group(1).upper()}{m.group(2)}{ZWNJ} ", text)
+    for regex, repl in RE_HUKUM_SANDI: text = regex.sub(repl, text)
 
-    #pertahankan le
-    text = re.sub(rf'(?<=([{DAFTAR_KONSONAN}]))(ḷ|ḹ)',lambda m: m.group(2) + '\u200D',text)
-    #hapus strip depan konsonan agar tidak menjadi kata baru
-    text = re.sub(rf'-([{DAFTAR_KONSONAN}])',r' \1',text)
-
-    # Hapus strip di tahap ini
     text = text.replace("-", " ")
-
-    #agar aksara swara tidak dijadikan pasangan
-    text = re.sub(rf"(?<=[{DAFTAR_KONSONAN.replace('ṙ','')}])[^\S\n]*([{VOKAL_KAPITAL}])", lambda m: ZWNJ + m.group(1), text)
-
-    # Regex penyeragaman vokal
-    text = re.sub('|'.join(re.escape(k) for k in PENYERAGAMAN_VOKAL.keys()),
-                lambda match: PENYERAGAMAN_VOKAL[match.group(0)], text)
-    
-    #kasus tabrakan font bagian taling
-    text = re.sub(rf'ṙ([{DAFTAR_KONSONAN}])([{DAFTAR_KONSONAN}])([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}]+)(e|o)',rf'ṙ\1\2\3{ZWNJ}\4\5\6',text)
+    text = re.sub('|'.join(map(re.escape, PENYERAGAMAN_VOKAL)), lambda m: PENYERAGAMAN_VOKAL[m.group(0)], text)
 
     #cegah ya dipasangi
     pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyrṛṝl')
-    text = re.sub(
-    r'([y])([^\S\n]*|-)(?=([^\s]))',
-    lambda m: (m.group(1) + m.group(2) + ('' if m.group(3).lower() in pengecualian_ya else ZWNJ)),text)
+    text = re.sub(r'([y])([^\S\n]*|-)(?=([^\s]))',
+        lambda m: m.group(1)+m.group(2)+('' if m.group(3).lower() in pengecualian_ya else ZWNJ), text)
 
-    identik = [('a', 'ā'), ('i', 'ī'), ('u', 'ū'), ('e', 'ꜽ'), ('o', 'ꜷ')]
-    for base, long_form in identik:
-        # Gabungan vokal identik kecil → vokal panjang
+    # vokal identik dan sandhi
+    for base,long_form in [('a','ā'),('i','ī'),('u','ū'),('e','ꜽ'),('o','ꜷ')]:
         text = re.sub(rf'{base}[^\S\n]*{base}', long_form, text)
         text = re.sub(rf'{long_form}[^\S\n]*{long_form}', long_form, text)
-
-    # Kombinasi sandhi vokal yang disederhanakan
-    text = re.sub(r'[aā][^\S\n]+[iī]', 'e', text)   # a atau ā + i atau ī menjadi e
-    text = re.sub(r'[aā][^\S\n]+[uū]', 'o', text)   # a atau ā + u atau ū menjadi o
-
+    text = re.sub(r'[aā][^\S\n]+[iī]', 'e', text)
+    text = re.sub(r'[aā][^\S\n]+[uū]', 'o', text)
     text = re.sub(r'ꜽ[^\S\n]*ꜽ', 'ꜽ', text)
     text = re.sub(r'ꜷ[^\S\n]*ꜷ', 'ꜷ', text)
 
+    # merge antar vokal
     text = apply_vowel_merges_with_space(text, VOWEL_MERGE_RULES_WITH_SPACE)
     text = apply_vowel_merges_no_space(text, VOWEL_MERGE_RULES_NO_SPACE)
     text = apply_vowel_merges(text, VOWEL_MERGE_RULES)
-    #text = insert_h_between_unmerged_vowels(text)
-
-    #konsonan rangkap setelah perpisahan kata
-    text = re.sub(rf'([{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}]\s+)([{'dwhgm'}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])', rf'\1{ZWNJ}\2', text)
-    #konsonan rangkap setelah perpisahan kata versi sigeg
-    text = re.sub(rf'([{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}]\s+)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][ṙḥŋ])', rf'\1{ZWNJ}\2', text)
-
-    #Menyambung vokal dan konsonan yang terpisah spasi
-    text = re.sub(rf'([{DAFTAR_KONSONAN}])[^\S\n]*([{DAFTAR_VOKAL}])', r'\1\2', text)
-
     return text
 
-def hukum_penulisan(text):
 
-    SUBSTITUTION_REGEX = [
-    #Kasus ryy dan rth
-    (re.compile(r'(?<=\s)ṙyy|^ṙyy', flags=re.MULTILINE), f'{ZWNJ}ꦪꦾꦂ'),
-    (re.compile(r'\brŧ'), f'{ZWNJ}ꦡꦂ'),
+# Kompilasi substitusi utama
+RE_HUKUM_PENULISAN = [
+    # konsonan rangkap setelah perpisahan kata
+    (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{"dwhgm"}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])'), rf'\1{ZWNJ}\2'),
+    #konsonan rangkap setelah perpisahan kata versi sigeg
+    (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][ṙḥŋ])'), rf'\1{ZWNJ}\2'),
     
+    # sambung konsonan dan vokal terpisah spasi
+    (re.compile(rf'([{DAFTAR_KONSONAN}])[^\S\n]*([{DAFTAR_VOKAL}])'), r'\1\2'),
+]
+
+SUBSTITUSI_SIGEG = [
+    #Kasus ryy dan rth
+    (re.compile(r'(?<=\s)ṙyy|^ṙyy', re.MULTILINE), f'{ZWNJ}ꦪꦾꦂ'),
+    (re.compile(r'\brŧ'), f'{ZWNJ}ꦡꦂ'),
+
     #substitusi sigeg + zwnj
     (re.compile(r'ṅ‌'), 'ŋ'),
-
     #zwnj sebelum konsonan+vokal+ŋ
-    (re.compile(rf'([{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}][^\S\n]+)([{DAFTAR_KONSONAN.replace('n', '')}])([{DAFTAR_VOKAL}])ŋ'), rf'\1{ZWNJ}\2\3ŋ'),
+    (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","")}][^\S\n]+)([{DAFTAR_KONSONAN.replace("n","")}])([{DAFTAR_VOKAL}])ŋ'), rf'\1{ZWNJ}\2\3ŋ'),
+]
 
-    ]
-    
-    for pattern, replacement in SUBSTITUTION_REGEX:
-        text = pattern.sub(replacement, text)
+def hukum_penulisan(text):
+    for r, s in RE_HUKUM_PENULISAN + SUBSTITUSI_SIGEG: text = r.sub(s, text)
 
+    # sisipkan ZWNJ antar pola
     def sisipkan_zwnj_pola(text, pola_list):
-        """
-        Menyisipkan ZWNJ di antara dua grup pola (X)(Y) sesuai daftar pola_list.
-        pola_list: list tuple (pola_X, pola_Y)
-        """
         for pola_x, pola_y in pola_list:
-            regex = re.compile(f"({pola_x})({pola_y})", flags=re.IGNORECASE)
-            text = regex.sub(rf"\1{ZWNJ}\2", text)
+            text = re.sub(f"({pola_x})({pola_y})", rf"\1{ZWNJ}\2", text, flags=re.IGNORECASE)
         return text
 
-    # Helper function untuk pola berulang
-    def buat_pola(huruf, targets):
-        """Membuat multiple pola dari satu huruf ke multiple target"""
-        return [(rf"{huruf}\b ", target) for target in targets]
+    def buat_pola(h, targets): return [(rf"{h}\b ", t) for t in targets]
 
-    konsonan_spasi = rf"[{DAFTAR_KONSONAN.replace('ḥ', '').replace('ŋ', '').replace('ṙ', '')}][^\S\n]+"
-
-    # Sekarang lebih ringkas:
+    konsonan_spasi = rf"[{DAFTAR_KONSONAN.replace('ḥ','').replace('ŋ','').replace('ṙ','').replace('ñ','').replace('ṇ','')}][^\S\n]+"
     pola_list = [
-        *buat_pola("l", ["h", "t"]), 
-        *buat_pola("t", ["c", "l", "b", "k", "ḍ"]),   
-        *buat_pola("s", ["w", "k", "ḍ", "n"]),           
-        *buat_pola("k", ["l", "w", "p", "ś", "j"]),      
-        *buat_pola("n", ["ś", "l", "j", "w"]),          
-        *buat_pola("p", ["j", "ś", "g"]),
-        *buat_pola("m", ["g"]),           
+        *buat_pola("l", ["h","t"]), 
+        *buat_pola("t", ["c","l","b","k","ḍ"]),
+        *buat_pola("s", ["w","k","ḍ","n","s"]), 
+        *buat_pola("k", ["l","w","p","ś","j"]),
+        *buat_pola("n", ["ś","l","j","w"]), 
+        *buat_pola("p", ["j","ś","g"]), 
+        *buat_pola("m", ["g"]),
         (konsonan_spasi, r"(duḥk|duḥꝁ|jñ)"),
-        (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p', '').replace('s', '')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y|w)"),
-        #(konsonan_spasi.replace("t","").replace("d",""), r"w"),
-        (konsonan_spasi, r"(ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ|h|l|lĕ|rĕ|lö|rö)"),#|ṛ|ṝ
+        (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p','').replace('s','')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y|w)"),
+        (konsonan_spasi, r"(ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ|h|l|lĕ|rĕ|lö|rö)"),
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
         (konsonan_spasi, r"(str|sꝑ|sŧ)"),
     ]
-
     text = sisipkan_zwnj_pola(text, pola_list)
+    return insert_zwnj_between_consonants(text)
 
-    #cegah pasangan lebih dari tumpuk tiga
-    text = insert_zwnj_between_consonants(text)
-
-    return(text)
 
 def finalisasi(hasil):
 
@@ -375,7 +348,7 @@ def finalisasi(hasil):
         '⏒꧇': '⏒ ꧇',
         '!': '',
         '_': f'{ZWNJ}',
-        #'ꦫ꧀ꦮ': f'ꦫ꧀ꦮ{ZWNJ}',
+        'ꦫ꧀ꦮ': f'ꦫ꧀ꦮ{ZWNJ}',
         ' ' : '', # Hapus spasi
 
         # Ganti simbol metrum

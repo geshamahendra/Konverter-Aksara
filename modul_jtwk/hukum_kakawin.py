@@ -21,8 +21,8 @@ ZWNJ = '\u200C'
 ZWJ = '\u200D'
 # Definisi ṝḹṛḷ sebagai vokal
 VOWELS = 'aiuĕāâîīûūêôeèéöoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
-VOWEL_PENDEK = 'aiuĕAIUĔṛḷ❓'
-VOWEL_PANJANG = 'āâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹ'
+VOKAL_PENDEK = 'aiuĕAIUĔṛḷ❓'
+VOKAL_PANJANG = 'āâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹ'
 KHUSUS_KONSONAN = 'ŋḥṙṃ'
 konsonan_pattern = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳ"
 
@@ -301,14 +301,14 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
                 # vokal1+konsonan+spasi+vokal2
                 # Aturan 0.1: Jika vokal1 panjang namun jatuh metrum pendek maka pendekkan keduanya.
-                if v1_lower_temp in VOWEL_PANJANG and met1 == '⏑':
+                if v1_lower_temp in VOKAL_PANJANG and met1 == '⏑':
                     # Pendekkan vokal1
                     new_vokal1 = ubah_vokal_sesuai_metrum(v1, met1)
                     hasil_line[idx1] = new_vokal1
                 
                 # Aturan 0.2: Jika vokal2 panjang namun jatuh metrum pendek dan bukan diakhir kata, maka pendekkan keduanya
                 # Modifikasi baru: Tambahkan kondisi untuk pemanjangan vokal2
-                if v2_lower_temp in VOWEL_PENDEK and met2 == '—':
+                if v2_lower_temp in VOKAL_PENDEK and met2 == '—':
                     
                     # Inisialisasi variabel untuk kondisi pemanjangan
                     should_prolong = False
@@ -336,7 +336,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                 # Aturan 1: Tentukan apakah vokal kedua harus dikapitalisasi
                 should_capitalize = False
                 # Kondisi dasar: metrum panjang (—) bertemu vokal pendek
-                if met1 == '—' and v1_lower_temp in VOWEL_PENDEK:
+                if met1 == '—' and v1_lower_temp in VOKAL_PENDEK:
                     # Cari indeks vokal berikutnya (v2) untuk menghitung konsonan di antaranya
                     match_v2 = re.search(RE_VOKAL, line[idx1 + 1:])
                     
@@ -377,8 +377,8 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
                 #konsonan+vokal1+konsonan+vokal2
                 # Refactor 1: Gabungkan logika serupa
-                is_metrum_panjang_valid = (met1 == '—' and v1_lower_temp in VOWEL_PENDEK)
-                is_metrum_pendek_valid = (met1 == '⏑' and v1_lower_temp in VOWEL_PANJANG)
+                is_metrum_panjang_valid = (met1 == '—' and v1_lower_temp in VOKAL_PENDEK)
+                is_metrum_pendek_valid = (met1 == '⏑' and v1_lower_temp in VOKAL_PANJANG)
 
                 if is_metrum_panjang_valid or is_metrum_pendek_valid:
                     konsonan_pattern_str = RE_KONSONAN.pattern[1:-1]
@@ -399,8 +399,8 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                 kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
 
                 if kata_v1:
-                    is_metrum_panjang_valid_2 = (met1 == '—' and v1_lower_temp in VOWEL_PENDEK)
-                    is_metrum_pendek_valid_2 = (met1 == '⏑' and v1_lower_temp in VOWEL_PANJANG)
+                    is_metrum_panjang_valid_2 = (met1 == '—' and v1_lower_temp in VOKAL_PENDEK)
+                    is_metrum_pendek_valid_2 = (met1 == '⏑' and v1_lower_temp in VOKAL_PANJANG)
                     
                     if is_metrum_panjang_valid_2 or is_metrum_pendek_valid_2:
                         kata = kata_v1[2]
@@ -444,7 +444,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                 v1_lower_temp = vokal.lower()
 
                 # Kondisi inti: vokal1 pendek dan metrumnya pendek
-                if v1_lower_temp in VOWEL_PENDEK and metrum_vokal == '⏑':
+                if v1_lower_temp in VOKAL_PENDEK and metrum_vokal == '⏑':
                     kata_v1 = next((k for k in kata_list if k[0] <= idx_vokal < k[1]), None)
                     kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
 

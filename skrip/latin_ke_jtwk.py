@@ -6,6 +6,8 @@ import os
 root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(root_path)
 
+from modul_jtwk.konstanta import VOKAL_KAPITAL
+
 from modul_jtwk.mode_jtwk import mode_normal, mode_sriwedari, mode_cerita, mode_sanskrit, mode_satya, mode_kakawin, mode_lampah
 from modul_jtwk.hukum_jtwk import kata_baku, hukum_aksara, hukum_sigeg, hukum_ṙ, finalisasi_jtwk
 from modul_jtwk.replacements_jtwk import replacements, replace_numbers_with_colon
@@ -15,9 +17,8 @@ from modul_jtwk.hukum_macapat import cek_macapat
 def replace_characters(text, mode):
     #paksa konsonan jadi huruf kecil kecuali vokal kapital
     def paksa_huruf_kecil(text):
-        vokal_kapital = "AĀÂIĪÎUŪÛOŌÔEĔÊÉÈꜼꜶ"
         return ''.join(
-            c if c in vokal_kapital else c.lower()
+            c if c in VOKAL_KAPITAL else c.lower()
             for c in text
         )
     text = paksa_huruf_kecil(text)

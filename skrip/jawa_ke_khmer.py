@@ -25,7 +25,7 @@ daftar_konversi = {
     'ꦴ': 'ា', 'ꦶ': 'ិ', 'ꦷ': 'ី', 'ꦸ': 'ុ', 'ꦹ': 'ូ', 'ꦼ': 'េ', 'ꦼꦴ': 'ែ', 'ꦺ': 'ៃ', 'ꦻ': 'ោ', 'ꦺꦴ': 'ៅ',
     
     #sigeg
-    'ꦀ': 'ំ', 'ꦁ': 'ំ', 'ꦂ': '់', 'ꦃ': '៍', '꦳': '៝', '꧀': '្',
+    'ꦀ': 'ំ', 'ꦁ': 'ំ', 'ꦂ': '៍', 'ꦃ': 'ះ', '꦳': '៝', '꧀': '្',
     
     #Angka
     '꧑': '១', '꧒': '២', '꧓': '៣', '꧔': '៤', '꧕': '៥', '꧖': '៦', '꧗': '៧', '꧘': '៨', '꧙': '៩', '꧐': '០',
@@ -52,7 +52,7 @@ def konversi_aksara_ke_burma(teks, daftar_konversi):
         hasil.append(daftar_konversi.get(karakter, karakter))  # Gunakan karakter asli jika tidak ditemukan
     text = ''.join(hasil)
     
-    text = re.sub(r'္ဝ', 'ွ', text, flags=re.IGNORECASE)
+    text = re.sub(r'្‌', '៑', text, flags=re.IGNORECASE)
     text = retain_final_asat(text)
     return text
     

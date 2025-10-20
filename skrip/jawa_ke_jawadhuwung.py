@@ -41,39 +41,30 @@ def tarung(text):
     )
     return text
 
+RE_LATIN_TO_JAWA = [
+    (re.compile(r'ꦪꦾꦂ'), 'ꦫ꧀ꦪꦾ'),
+    (re.compile(r'ꦫ꧀ꦮ\u200C'), 'ꦫ\u200C꧀ꦮ'),
+    (re.compile(r'꧄꧐꧄'), '꧅꧐꧅'),
+    (re.compile(r'꧁'), '꧄'),
+    (re.compile(r'꧂'), '꧄'),
+    # khusus font Jayabaya
+    (re.compile(r'ꦈ'), '#'),
+    (re.compile(r'ꦎ'), 'ꦈ'),
+    (re.compile(r'#'), 'ꦎ'),
+]
+
 def latin_to_jawa(text, line_spacing):
-    
-    # Terapkan aturan tarung panjang
+    """
+    Konversi teks Latin hasil transliterasi menjadi Aksara Jawa
+    dengan aturan visual dan penyesuaian font Jayabaya.
+    """
+    # Tahap awal: atur tarung panjang
     text = tarung(text)
-    text = re.sub(r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ', text)
-    #text = re.sub(r'ꦫꦾ', '꧟', text)
-    text = re.sub(r'ꦫ꧀ꦮ\u200C', 'ꦫ\u200C꧀ꦮ', text)
-    #text = re.sub(r'ꦾ', '꧀ꦪ', text)
-    #text = re.sub(r'ꦿ', '꧀ꦫ', text)
-    #text = re.sub(r'ꦂ', 'ꦂ', text, flags=re.IGNORECASE)#layar ke layar
-    text = re.sub(r'꧄꧐꧄', '꧅꧐꧅', text)
-    text = re.sub(r'꧁', '꧄', text)
-    text = re.sub(r'꧂', '꧄', text)
 
-    #khusus font jayabaya
-    text = re.sub(r'ꦈ', '#', text)
-    text = re.sub(r'ꦎ', 'ꦈ', text)
-    text = re.sub(r'#', 'ꦎ', text)
-    
-    '''
-    #text = re.sub(r'ṙ', 'r\u200D', text, flags=re.IGNORECASE)
-    text = re.sub(r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ', text)
-    
-    text = re.sub(r'ꦂ', 'ꦫ꧀\u200D', text, flags=re.IGNORECASE)
-    text = re.sub(r'꧀ꦧ', '꧀\u200Dꦧ', text, flags=re.IGNORECASE)
-    text = re.sub(r'꧀ꦨ', '꧀ꦧ', text, flags=re.IGNORECASE)
-    text = re.sub(r'꧀ꦚ', '꧀\u200Dꦚ', text, flags=re.IGNORECASE)
+    # Terapkan semua regex
+    for regex, replacement in RE_LATIN_TO_JAWA:
+        text = regex.sub(replacement, text)
 
-    # Penukaran karakter ꧀ꦱ ↔ ꧀ꦰ tanpa saling menimpa
-    text = re.sub(r'꧀ꦱ', '__TEMP_SWAP__', text, flags=re.IGNORECASE)
-    text = re.sub(r'꧀ꦰ', '꧀ꦱ', text, flags=re.IGNORECASE)
-    text = re.sub(r'__TEMP_SWAP__', '꧀ꦰ', text)
-    '''
     return text
 
 def convert_file(input_file, output_file, line_spacing=2):

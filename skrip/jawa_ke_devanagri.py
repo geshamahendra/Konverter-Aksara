@@ -24,11 +24,11 @@ swara = {
 
 sandhangan = {
     'ꦴ': 'ा', 'ꦶ': 'ि', 'ꦷ': 'ी', 'ꦸ': 'ु', 'ꦹ': 'ू', 'ꦺ': 'े', 'ꦻ': 'ै', 
-    'ꦼ': 'ॅ', 'ꦺꦴ': 'ो', 'ꦻꦴ': 'ौ',
+    'ꦼ': 'ॅ', 'ꦺꦴ': 'ो', 'ꦻꦴ': 'ौ', 'ꦂ':'र्'
 }
 
 sigeg = {
-    'ꦀ': 'ँ', 'ꦁ': 'ं', 'ꦂ': 'ः', 'ꦃ': 'ः', '꧀': '्',
+    'ꦀ': 'ँ', 'ꦁ': 'ं', 'ꦂ': 'र्', 'ꦃ': 'ः', '꧀': '्',
 }
 
 angka = {
@@ -42,8 +42,8 @@ simbol = {
 
 # Gabungkan semua kategori menjadi satu dictionary
 daftar_konversi = {}
-daftar_konversi.update(nglegena)
 daftar_konversi.update(swara)
+daftar_konversi.update(nglegena)
 daftar_konversi.update(sandhangan)
 daftar_konversi.update(sigeg)
 daftar_konversi.update(angka)
@@ -72,7 +72,7 @@ def process_file(input_file, output_file, daftar_konversi):
 
 if __name__ == '__main__':
     # Nama file input dan output
-    input_file = 'input_devanagri.txt'  
+    input_file = 'output/output_jawa.txt'  
     output_file = 'output/output_devanagri.txt'  
 
     # Memproses file

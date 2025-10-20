@@ -93,40 +93,26 @@ def retain_final_pangkon(text):
     
     return "\n".join(lines)
 
+
+# Regex precompiled untuk efisiensi
+RE_JAWA_KE_KAWI = [
+    (re.compile(r'ꦪꦾꦂ', re.IGNORECASE), '𑼂𑼫𑽂𑼫'),
+    (re.compile(r'𑽂\u200D', re.IGNORECASE), '𑽁\u200D'),
+    (re.compile(r'𑽂\u200C', re.IGNORECASE), '𑽁\u200C'),
+    (re.compile(r'𑼫𑽂𑼫𑼂\u200D', re.IGNORECASE), '𑼂𑼫𑽂𑼫'),
+    (re.compile(r'𑽀𑼵', re.IGNORECASE), '𑽀𑼴'),
+    (re.compile(r'𑼂[\u200C\u200D]', re.IGNORECASE), '𑼂'),
+]
+
 def konversi_aksara_ke_kawi(text):
-    """
-    Mengkonversi teks yang mengandung aksara Jawa ke aksara Kawi.
-    
-    Args:
-        text (str): Teks input yang akan dikonversi.
-        
-    Returns:
-        str: Teks yang sudah dikonversi ke aksara Kawi.
-    """
-    # Aturan penggantian khusus sebelum konversi karakter per karakter
-    text = re.sub(r'ꦪꦾꦂ', '𑼂𑼫𑽂𑼫', text, flags=re.IGNORECASE)
-    #text = re.sub(r'ꦫꦾ', '𑼬𑽂𑼫\u200D', text, flags=re.IGNORECASE)
-    #text = re.sub(r'ꦫ꧀ꦮ', '𑼬𑽂𑼮\u200D', text, flags=re.IGNORECASE)
-
-    hasil = []
-    # Lakukan konversi karakter per karakter menggunakan daftar_konversi global
-    for karakter in text:
-        hasil.append(daftar_konversi.get(karakter, karakter))  # Gunakan karakter asli jika tidak ditemukan
-   
+    """Konversi teks beraksara Jawa ke Kawi dengan aturan substitusi dan konversi karakter."""
+    for regex, pengganti in RE_JAWA_KE_KAWI[:1]: text = regex.sub(pengganti, text)  # aturan awal sebelum loop
+    hasil = [daftar_konversi.get(k, k) for k in text]
     text_hasil = ''.join(hasil)
-
-    # Terapkan aturan tarung panjang
-    text_hasil = tarung(text_hasil)
-    text_hasil = retain_final_pangkon(text_hasil)  # Memastikan pangkon diproses setelah penggantian
-    
-    # Penanganan Zero Width Non-Joiner (ZWNJ) dan Zero Width Joiner (ZWJ)
-    text_hasil = re.sub(r'𑽂\u200D', '𑽁\u200D', text_hasil)
-    text_hasil = re.sub(r'𑽂\u200C', '𑽁\u200C', text_hasil)
-    text_hasil = re.sub(r'𑼫𑽂𑼫𑼂\u200D', '𑼂𑼫𑽂𑼫', text_hasil, flags=re.IGNORECASE)
-    text_hasil = re.sub(r'𑽀𑼵', '𑽀𑼴', text_hasil)
-    text_hasil = re.sub(r'𑼂[\u200C\u200D]', '𑼂', text_hasil, flags=re.IGNORECASE)
-    
+    text_hasil = retain_final_pangkon(tarung(text_hasil))  # panggil dua fungsi aturan akhir
+    for regex, pengganti in RE_JAWA_KE_KAWI[1:]: text_hasil = regex.sub(pengganti, text_hasil)
     return text_hasil
+
 
 def process_file(input_file, output_file):
     """

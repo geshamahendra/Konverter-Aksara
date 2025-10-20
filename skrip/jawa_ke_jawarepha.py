@@ -6,31 +6,24 @@ import re
 root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(root_path)
 
+RE_LATIN_TO_JAWA = [
+    # Reorder ligatur dasar
+    (re.compile(r'ꦪꦾꦂ'), 'ꦫ꧀ꦪꦾ'),
+    (re.compile(r'ꦫ꧀ꦮ'), 'ꦫ꧀ꦮ\u200D'),
+
+    # Khusus font Jayabaya (swap ꦈ / ꦎ)
+    (re.compile(r'ꦈ'), '#'),
+    (re.compile(r'ꦎ'), 'ꦈ'),
+    (re.compile(r'#'), 'ꦎ'),
+
+    # Layar ke ra pangku
+    (re.compile(r'ꦂ', re.IGNORECASE), 'ꦫ꧀'),
+]
+
 def latin_to_jawa(text, line_spacing):
-    #text = re.sub(r'ṙ', 'r\u200D', text, flags=re.IGNORECASE)
-    #text = re.sub(r'ꦫ꧀ꦪ', '~', text)
-    text = re.sub(r'ꦪꦾꦂ', 'ꦫ꧀ꦪꦾ', text)
-    #text = re.sub(r'ꦉꦴ', 'ꦉ', text)
-    text = re.sub(r'ꦫ꧀ꦮ', 'ꦫ꧀ꦮ\u200D', text)
-
-    #khusus font jayabaya
-    text = re.sub(r'ꦈ', '#', text)
-    text = re.sub(r'ꦎ', 'ꦈ', text)
-    text = re.sub(r'#', 'ꦎ', text)
-
-    #text = re.sub(r'ꦿ', '꧀ꦫ', text, flags=re.IGNORECASE)
-    #text = re.sub(r'ꦾ', '꧀ꦪ', text, flags=re.IGNORECASE)
-    
-    #text = re.sub(r'ꦂ', 'ꦂ\u200D', text, flags=re.IGNORECASE)#layar ke layar
-    text = re.sub(r'ꦂ', 'ꦫ꧀', text, flags=re.IGNORECASE) #layar ke ra pangku
-
-    #text = re.sub(r'ꦫ꧀ꦪ', '\u200Cꦫ꧀ꦮ\u200D', text)
-
-    #kembalikan ry
-    #text = re.sub('~', 'ꦫꦾ', text)
-
-
-
+    """Konversi pola Latin ke Aksara Jawa (dengan optimasi regex precompiled)."""
+    for regex, repl in RE_LATIN_TO_JAWA:
+        text = regex.sub(repl, text)
     return text
 
 def convert_file(input_file, output_file, line_spacing=2):
