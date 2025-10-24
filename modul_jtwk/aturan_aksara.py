@@ -1,6 +1,6 @@
 #Menghapus spasi ada di aturan aksara
 import re
-from modul_jtwk.konstanta import VOKAL_KAPITAL, VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, ZWNJ, ZWSP
+from modul_jtwk.konstanta import VOKAL_KAPITAL, VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, ZWNJ, ZWSP, ZWJ
 
 # Peta karakter Latin ke aksara Jawa (dalam bentuk dimatikan secara default)
 aksara = {
@@ -348,7 +348,7 @@ def finalisasi(hasil):
         '⏒꧇': '⏒ ꧇',
         '!': '',
         '_': f'{ZWNJ}',
-        'ꦫ꧀ꦮ': f'ꦫ꧀ꦮ{ZWNJ}',
+        'ꦫ꧀ꦮ': f'ꦫ꧀ꦮ{ZWJ}',
         ' ' : '', # Hapus spasi
 
         # Ganti simbol metrum

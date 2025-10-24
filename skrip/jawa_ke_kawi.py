@@ -19,7 +19,7 @@ nglegena = {
 }
 
 swara = {
-    'ꦄ': '𑼄', 'ꦄꦴ': '𑼅', 'ꦅ': '𑼆', 'ꦆ': '𑼇', 'ꦇ': '𑼇', 'ꦎ': '𑼈', 'ꦎꦴ': '𑼉', 'ꦌ': '𑼎', 'ꦍ': '𑼏', 'ꦈ': '𑼐', 'ꦈꦴ': '𑼐𑼴', 
+    'ꦄ': '𑼄', 'ꦄꦴ': '𑼅', 'ꦅ': '𑼆', 'ꦆ': '𑼇', 'ꦇ': '𑼇', 'ꦎ': '𑼈', 'ꦌ': '𑼎', 'ꦍ': '𑼏', 'ꦈ': '𑼐',  
     'ꦉ': '𑼊', 'ꦉꦴ': '𑼋', 'ꦊ': '𑼌', 'ꦋ': '𑼍',
     'ꦽ': '𑼺', 'ꦽꦴ': '𑼺𑼴', 
 }
@@ -102,6 +102,8 @@ RE_JAWA_KE_KAWI = [
     (re.compile(r'𑼫𑽂𑼫𑼂\u200D', re.IGNORECASE), '𑼂𑼫𑽂𑼫'),
     (re.compile(r'𑽀𑼵', re.IGNORECASE), '𑽀𑼴'),
     (re.compile(r'𑼂[\u200C\u200D]', re.IGNORECASE), '𑼂'),
+    (re.compile(r'𑼄𑼴', re.IGNORECASE), '𑼅'),
+    (re.compile(r'𑼈𑼴', re.IGNORECASE), '𑼉'),
 ]
 
 def konversi_aksara_ke_kawi(text):

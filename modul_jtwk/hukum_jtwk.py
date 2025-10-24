@@ -1,6 +1,6 @@
 import re
 from modul_jtwk.kamus_jtwk import substitutions
-from modul_jtwk.konstanta import VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, SEMI_VOKAL, TIDAK_DIGANDAKAN, VOKAL_PANJANG
+from modul_jtwk.konstanta import VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, SEMI_VOKAL, TIDAK_DIGANDAKAN, VOKAL_PANJANG, SH
 
 # Pre-compiled regex patterns
 REGEX_CACHE = {
@@ -70,7 +70,7 @@ PENGGANTIAN_ṙ = [
     (rf'([{DAFTAR_KONSONAN.replace('đ','').replace('s','').replace('p','').replace('g','')}])aṙww(a|â|ā)', r'\1arw\2'),
 
     #cegah r+zwj-zwnj agar tidal jadi ra pangku 
-    (r'r\u200c', 'ṙ'), (r'r\u200d', 'ṙ'),
+    (r'r\u200c', 'ṙ'), (r'r\u200d', 'ṙ'),(rf'r{SH}', 'ṙ'),
     #hapus zwj-zwnj 
     (r'\u200c', ''), (r'\u200d', '')
 ]

@@ -8,6 +8,7 @@ sys.path.append(root_path)
 
 # Daftar aksara dengan tarung panjang
 aksara_tarung_panjang = 'ꦥꦔꦭꦛꦧ'
+cakra = 'ꦿ'
 joiner = '꧀'
 tarung_panjang_char = 'ꦵ'
 aksara_nglegena = ''.join([
@@ -15,7 +16,7 @@ aksara_nglegena = ''.join([
     'ꦕ', 'ꦖ', 'ꦗ', 'ꦘ', 'ꦙ', 'ꦚ', 'ꦯ', 'ꦪ',
     'ꦛ', 'ꦜ', 'ꦝ', 'ꦞ', 'ꦟ', 'ꦰ', 'ꦫ',
     'ꦠ', 'ꦡ', 'ꦢ', 'ꦣ', 'ꦤ', 'ꦱ', 'ꦭ',
-    'ꦥ', 'ꦦ', 'ꦧ', 'ꦨ', 'ꦩ', 'ꦮ'
+    'ꦥ', 'ꦦ', 'ꦧ', 'ꦨ', 'ꦩ', 'ꦮ',
 ])
 taling_1 = 'ꦺ'
 taling_2 = 'ꦻ'
@@ -28,6 +29,7 @@ def tarung(text):
         (                           # Grup 1: Bagian sebelum tarung pendek
             [{aksara_tarung_panjang}]       # Aksara tarung panjang
             (?:{joiner}[{aksara_nglegena}])*  # Kombinasi joiner + nglegena (bisa berulang)
+            (?:[{cakra}])*    # Tambahan: Opsional Pengkal/Cakra - BISA BERULANG (jika ꦽ Keret juga dipertimbangkan)
             (?:{taling_group})?             # Opsional: salah satu taling
         )
         ꦴ                            # Tarung pendek yang akan diubah
@@ -42,8 +44,8 @@ def tarung(text):
     return text
 
 RE_LATIN_TO_JAWA = [
+    (re.compile(r'ꦫ꧀ꦮ‍‌ꦶ'), 'ꦫ꧀ꦮ‍ꦶ'),
     (re.compile(r'ꦪꦾꦂ'), 'ꦫ꧀ꦪꦾ'),
-    (re.compile(r'ꦫ꧀ꦮ\u200C'), 'ꦫ\u200C꧀ꦮ'),
     (re.compile(r'꧄꧐꧄'), '꧅꧐꧅'),
     (re.compile(r'꧁'), '꧄'),
     (re.compile(r'꧂'), '꧄'),
