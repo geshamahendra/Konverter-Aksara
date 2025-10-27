@@ -9,6 +9,7 @@ Catatan:
 
 
 ===========input.txt===========
+
 +kakawin+
 
 {rajanī}:25.108
