@@ -46,6 +46,7 @@ def tarung(text):
 RE_LATIN_TO_JAWA = [
     (re.compile(r'ꦫ꧀ꦮ‍‌ꦶ'), 'ꦫ꧀ꦮ‍ꦶ'),
     (re.compile(r'ꦪꦾꦂ'), 'ꦫ꧀ꦪꦾ'),
+    (re.compile(r'ꦼꦴ'), 'ꦼꦵ'),
     (re.compile(r'꧄꧐꧄'), '꧅꧐꧅'),
     (re.compile(r'꧁'), '꧄'),
     (re.compile(r'꧂'), '꧄'),

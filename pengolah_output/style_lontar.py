@@ -56,6 +56,8 @@ with open("pengolah_output/input_lontar.txt", "r", encoding="utf-8") as f:
 
 hasil = renumber_canto(teks)
 hasil = re.sub(r'\n(\d.*\n)', r'\n', hasil)
+hasil = re.sub(r'(\*)\n\n(\w)', r'\1\2', hasil)
+
 
 with open("pengolah_output/output_lontar.txt", "w", encoding="utf-8") as f:
     f.write(hasil)
