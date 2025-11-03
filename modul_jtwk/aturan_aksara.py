@@ -1,6 +1,6 @@
 #Menghapus spasi ada di aturan aksara
 import re
-from modul_jtwk.konstanta import VOKAL_KAPITAL, VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, ZWNJ, ZWSP, ZWJ
+from modul_jtwk.konstanta import VOKAL_KAPITAL, VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, ZWNJ, ZWSP, ZWJ, VOKAL_PANJANG
 
 # Peta karakter Latin ke aksara Jawa (dalam bentuk dimatikan secara default)
 aksara = {
@@ -249,8 +249,9 @@ RE_HUKUM_SANDI = [
     (re.compile(rf"(?<=[{DAFTAR_KONSONAN.replace('ṙ','')}])[^\S\n]*([{VOKAL_KAPITAL}])"),
         lambda m: ZWNJ + m.group(1)),
     # kasus tabrakan font bagian taling
-    (re.compile(rf'ṙ([{DAFTAR_KONSONAN}])([{DAFTAR_KONSONAN}])([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}]+)(e|o)'),
-        rf'ṙ\1\2\3{ZWNJ}\4\5\6'),
+    #(re.compile(rf'ṙ([{DAFTAR_KONSONAN}])([{DAFTAR_KONSONAN}])([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}]+)(e|o)'), rf'ṙ\1\2\3{ZWNJ}\4\5\6'),
+    (re.compile(rf'ṙ([{DAFTAR_KONSONAN.replace('ṙ','').replace('ŋ','').replace('ḥ','')}]{{2,}})([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}])(e|o)'), rf'ṙ\1\2{ZWNJ}\3\4\5'),
+
 ]
 
 def hukum_sandi(text):
@@ -286,9 +287,12 @@ RE_HUKUM_PENULISAN = [
     (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{"dwhgm"}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])'), rf'\1{ZWNJ}\2'),
     #konsonan rangkap setelah perpisahan kata versi sigeg
     (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][ṙḥŋ])'), rf'\1{ZWNJ}\2'),
-    
+    #perpisahan kata: dua suku kata akhiran suku kata panjang
+    (re.compile(rf'(?<=[{DAFTAR_KONSONAN}]\s)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])'), rf'{ZWNJ}\1'),
+
     # sambung konsonan dan vokal terpisah spasi
     (re.compile(rf'([{DAFTAR_KONSONAN}])[^\S\n]*([{DAFTAR_VOKAL}])'), r'\1\2'),
+
 ]
 
 SUBSTITUSI_SIGEG = [
@@ -324,9 +328,11 @@ def hukum_penulisan(text):
         *buat_pola("m", ["g"]),
         (konsonan_spasi, r"(duḥk|duḥꝁ|jñ)"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p','').replace('s','')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y|w)"),
-        (konsonan_spasi, r"(ḷ|ḹ|r|y|ǥ|ñ|ɉ|ṅ|h|l|lĕ|rĕ|lö|rö)"),
+        (konsonan_spasi, r"(ḷ|ḹ|r|w|y|ǥ|ñ|ɉ|ṅ|h|l|lĕ|rĕ|lö|rö)"),
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
         (konsonan_spasi, r"(str|sꝑ|sŧ)"),
+        (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])"),
+        (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])"),
     ]
     text = sisipkan_zwnj_pola(text, pola_list)
     return insert_zwnj_between_consonants(text)

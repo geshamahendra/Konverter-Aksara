@@ -49,7 +49,7 @@ PENGGANTIAN_ṙ = [
 
     #cegah setelah nir durpar konsonan tumpuk tiga
     #(rf'\b(niṙ|duṙ|pāṙ([{DAFTAR_KONSONAN}])\2([{DAFTAR_KONSONAN}])', r'\1\2\3'),
-    (rf'ṙ([{DAFTAR_KONSONAN}])\1([{DAFTAR_KONSONAN}])', r'ṙ\1\2'),
+    #(rf'ṙ([{DAFTAR_KONSONAN}])\1([{DAFTAR_KONSONAN}])', r'ṙ\1\2'),
 
     #kata khusus
     #(rf'\bduṙṇn([{DAFTAR_VOKAL}])', r'duṙn\1'), #khusus durnaya
@@ -114,13 +114,13 @@ def hukum_aksara(text):
 
 RE_HUKUM_R = [
     # Bersihkan konsonan ganda setelah ṙ/r (ṙjj → rj)
-    (re.compile(rf'[rṙ]([{DAFTAR_KONSONAN}])\1'), r'r\1'),
+    #(re.compile(rf'[rṙ]([{DAFTAR_KONSONAN}])\1'), r'r\1'),
 
     # Step tambahan untuk kluster seperti "gra", "kra", "dra"
     (re.compile(rf'(?<=\w)r(?=([{DAFTAR_KONSONAN}])([{SEMI_VOKAL}]))'), 'ṙ'),
 
     # Ubah 'r' jadi 'ṙ' jika setelahnya konsonan + vokal non kapital
-    (re.compile(rf'(?<=\w)r(?=([{DAFTAR_KONSONAN}])([{VOKAL_NON_KAPITAL}]))'), 'ṙ'),
+    (re.compile(rf'(?<=\w)r(?=([{DAFTAR_KONSONAN}])+([{VOKAL_NON_KAPITAL}]))'), 'ṙ'),
 
     # ROLLBACK: jika sebelum ṙ ada konsonan
     (re.compile(rf'([{DAFTAR_KONSONAN}])ṙ([{DAFTAR_KONSONAN}])\2?'), r'\1r\2'),
@@ -146,11 +146,19 @@ def hukum_ṙ(text):
         text = regex.sub(repl, text)
 
     # Gandakan konsonan setelah ṙ, kecuali dalam TIDAK_DIGANDAKAN
+    
     text = re.sub(
         rf'(?<=ṙ)([{DAFTAR_KONSONAN}])(?![{DAFTAR_KONSONAN}])',
         lambda m: m.group(1) if m.group(1) in TIDAK_DIGANDAKAN else m.group(1) * 2,
         text,
     )
+    '''
+    text = re.sub(
+        rf'(?<=ṙ)([{DAFTAR_KONSONAN}])',
+        lambda m: m.group(1) if m.group(1) in TIDAK_DIGANDAKAN else m.group(1) * 2,
+        text,
+    )
+    '''
 
     # Mahaprana dan penggantian spesial
     for pattern, replacement in HUKUM_ṙ_MAHAPRANA + PENGGANTIAN_ṙ:

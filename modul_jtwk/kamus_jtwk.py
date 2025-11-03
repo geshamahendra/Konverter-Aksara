@@ -6,14 +6,8 @@ substitutions = {
     'ai': 'ꜽ', 'au': 'ꜷ', 
     'ng': 'ṅ', r'\b^h' : 'ʰ',
     r'\b(A|a)wi(g|ǥ)?(h)?namastu\b': r'`Awiǥnamāstu', 
-    
-    r'wi(s|ś)(è|e)sa': 'wiśèṣa',
     r'r(e|è|ĕ)?sn((?![' + DAFTAR_KONSONAN + ']))': r'rĕṣṇ', 
-    r'\bkar(ĕ|e)na': 'karĕṇa', r'\bwau\b': 'wawu',
-    r'\bwong\b': 'wwoŋ', r'\bdewa\b': 'dèwa', r'\bdewi\b': 'dèwī',
-    r'\bsasangka\b': 'śaśāṅka', r'\b(s|ś)r(i|ī)\b': 'śrī', r'\brsi\b': 'ṛṣi',
-    r'(?i)mahadewi': 'mahādèwi', r'(?i)mahadewa': 'mahādewa', r'(?i)wisnu': 'wiṣṇu',
-    r'(?i)siwa': 'śīwa', r'(?i)ganesha': 'ganèśa', r'(?i)mataram': 'matāram',
+    
 
     #aturan baku
     r'lĕṅlĕṅ':'lĕŋlĕŋ', r'nuṅ(s|t)uṅ':r'nuŋ\1uṅ',
@@ -95,12 +89,22 @@ substitutions = {
     rf'([{DAFTAR_VOKAL}])([{DAFTAR_KONSONAN}])lah\b': r'\1\2 laḥ',  
 
     #=========================================================================#
+
+    r'\bkar(ĕ|e)na': 'karĕṇa', r'\bwau\b': 'wawu',
+    r'\bwong\b': 'wwoŋ', r'\bdewa\b': 'dèwa', r'\bdewi\b': 'dèwī',
+    r'\bsasangka\b': 'śaśāṅka', r'\b(s|ś)r(i|ī)\b': 'śrī', r'\brsi\b': 'ṛṣi',
+    r'(?i)mahadewi': 'mahādèwi', r'(?i)mahadewa': 'mahādewa', r'(?i)wisnu': 'wiṣṇu',
+    r'(?i)siwa': 'śīwa', r'(?i)ganesha': 'ganèśa', r'(?i)mataram': 'matāram',
+    r'wi(s|ś)(è|e)sa': 'wiśèṣa', r'(i|ī)(s|ś)wara': 'īśwara', r'\bmas\b': 'mās', 
+    
+    r'(a|ā)d(b|ƀ)u(t|ŧ)': 'ādƀuŧ', #adbhutha
+    r'\bs(u|ū)n(u|w)': r'sūn\2', #sunu=putra
     
     r'\b(s|ś)unya': 'śūnya', r'budi': 'budđi', 
     r'purna': 'pūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
     r'tir(t|ŧ)a': 'tīṙŧa', r'\bsabda\b': 'śabda',
     r'purwa': 'pūrwa', r'\bsirna\b': 'śīrna', 
-    r'\bmurti\b': 'mūrti', r'(ś|s)ighra': 'śīghra', r'prapta': 'prāpta',
+    r'\bmurti\b': 'mūrti', r'(ś|s)(i|ī)(g|ǥ)ra': 'śīǥra', r'prapta': 'prāpta',
     r'\bmus(t|ṭ)i': 'muṣṭi', r'na(th|ŧ)a': 'nāŧa',
     r'prabu': 'praƀu', r'\bguna\b': 'guṇa', 
     r'\bmèga\b': 'mèǥa', r'\brat\b': 'rāt',
@@ -131,6 +135,7 @@ substitutions = {
     r'\\\|': '\u200D',  # input literal \| jadi ZWJ
     r'\\': '\u200C',  # input literal \\ jadi ZWNJ
 
+    '''
     #Pembalik layar-mahaprana
     r'(ṙ|r)kk': r'rk', r'(ṙ|r)kꝁ': r'rꝁ',
     r'(ṙ|r)ṭṫ': r'rṫ', r'(ṙ|r)pꝑ': r'rꝑ',
@@ -141,7 +146,7 @@ substitutions = {
     r'(ṙ|r)dḍ': r'rḍ', r'(ṙ|r)dḋ': r'rḋ', 
     r'(ṙ|r)cc': r'rc', r'(ṙ|r)cꞓ': r'rꞓ',
     r'(ṙ|r)tŧ': r'rŧ',
-
+    '''
     #khusus ṙṇṇ tidak ada di jawa kuno
     r'(ṙ|r)ṇ': r'rn',
 }
