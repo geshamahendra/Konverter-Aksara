@@ -59,7 +59,7 @@ sandhangan = {
     'ꜷ': 'ꦻꦴ',
     **{tanda: 'ꦹ' for tanda in ('ū', 'û')},
     **{tanda: 'ꦴ' for tanda in ('ā', 'â')},
-    **{tanda: 'ꦼꦴ' for tanda in ('ö', 'ŏ')},
+    **{tanda: 'ꦼꦴ' for tanda in ('ö', 'ŏ', 'ë')},
     **{tanda: 'ꦷ' for tanda in ('ī', 'î')},
     **{tanda: 'ꦼ' for tanda in ('ĕ', 'ě')},
     **{tanda: 'ꦺꦴ' for tanda in ('o', 'ô')},
@@ -80,7 +80,7 @@ swara = {
     **{bunyi: 'ꦎꦴ' for bunyi in ('Ū', 'Û')},
     **{bunyi: 'ꦌ' for bunyi in ('E', 'È','É')},
     **{bunyi: 'ꦄꦼ' for bunyi in ('Ĕ')},
-    **{bunyi: 'ꦈꦴ' for bunyi in ('Ŏ', 'Ō', 'Ꜷ')},
+    **{bunyi: 'ꦈꦴ' for bunyi in ('Ŏ', 'Ō', 'Ꜷ', 'ō')},
     # Swara spesial
     **{bunyi: 'ꦉ' for bunyi in ('ṛ', 'Ṛ')},
     **{bunyi: 'ꦉꦴ' for bunyi in ('ṝ', 'Ṝ')},
@@ -241,6 +241,7 @@ RE_HUKUM_SANDI = [
     # aksara suci (m-ending)
     (re.compile(rf'\b([{DAFTAR_VOKAL}])(m|ṃ)\b'), 
         lambda m: f" {ZWNJ}{m.group(1).upper()}{m.group(2)}{ZWNJ} "),
+
     # pertahankan le
     (re.compile(rf'(?<=([{DAFTAR_KONSONAN}]))(ḷ|ḹ)'), lambda m: m.group(2) + '\u200D'),
     # hapus strip depan konsonan
@@ -284,9 +285,13 @@ def hukum_sandi(text):
 # Kompilasi substitusi utama
 RE_HUKUM_PENULISAN = [
     # konsonan rangkap setelah perpisahan kata
-    (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{"dwhgm"}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])'), rf'\1{ZWNJ}\2'),
+    #(re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{"dwhgm"}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])'), rf'\1{ZWNJ}\2'),
+
+    (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])'), rf'\1{ZWNJ}\2'),
+    
     #konsonan rangkap setelah perpisahan kata versi sigeg
     (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][ṙḥŋ])'), rf'\1{ZWNJ}\2'),
+    
     #perpisahan kata: dua suku kata akhiran suku kata panjang
     (re.compile(rf'(?<=[{DAFTAR_KONSONAN}]\s)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])'), rf'{ZWNJ}\1'),
 
@@ -320,19 +325,22 @@ def hukum_penulisan(text):
     konsonan_spasi = rf"[{DAFTAR_KONSONAN.replace('ḥ','').replace('ŋ','').replace('ṙ','').replace('ñ','').replace('ṇ','')}][^\S\n]+"
     pola_list = [
         *buat_pola("l", ["h","t"]), 
-        *buat_pola("t", ["c","l","b","k","ḍ"]),
+        *buat_pola("t", ["c","l","b","k","ḍ","p"]),
         *buat_pola("s", ["w","k","ḍ","n","s"]), 
-        *buat_pola("k", ["l","w","p","ś","j"]),
-        *buat_pola("n", ["ś","l","j","w"]), 
+        *buat_pola("k", ["l","w","p","ś","j","n"]),
+        *buat_pola("n", ["ś","l","j","w","m"]), 
         *buat_pola("p", ["j","ś","g"]), 
         *buat_pola("m", ["g"]),
         (konsonan_spasi, r"(duḥk|duḥꝁ|jñ)"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p','').replace('s','')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y|w)"),
-        (konsonan_spasi, r"(ḷ|ḹ|r|w|y|ǥ|ñ|ɉ|ṅ|h|l|lĕ|rĕ|lö|rö)"),
+        (konsonan_spasi, r"(s|m|ḷ|ḹ|r|w|y|ǥ|ñ|ɉ|ṅ|h|l|lĕ|rĕ|lö|rö)"),
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
         (konsonan_spasi, r"(str|sꝑ|sŧ)"),
+
+
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])"),
+        #(konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}]\b)"),
     ]
     text = sisipkan_zwnj_pola(text, pola_list)
     return insert_zwnj_between_consonants(text)

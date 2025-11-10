@@ -2,6 +2,8 @@ import re
 import sys
 import os
 
+from modul_jtwk.konstanta import ZWJ, ZWNJ
+
 # Tambahkan direktori proyek ke sys.path
 root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 sys.path.append(root_path)
@@ -101,9 +103,11 @@ RE_JAWA_KE_KAWI = [
     (re.compile(r'𑽂\u200C', re.IGNORECASE), '𑽁\u200C'),
     (re.compile(r'𑼫𑽂𑼫𑼂\u200D', re.IGNORECASE), '𑼂𑼫𑽂𑼫'),
     (re.compile(r'𑽀𑼵', re.IGNORECASE), '𑽀𑼴'),
+    (re.compile(r'𑼵𑼁', re.IGNORECASE), '𑼴𑼁'),
     (re.compile(r'𑼂[\u200C\u200D]', re.IGNORECASE), '𑼂'),
     (re.compile(r'𑼄𑼴', re.IGNORECASE), '𑼅'),
     (re.compile(r'𑼈𑼴', re.IGNORECASE), '𑼉'),
+    (re.compile(r'𑼬𑽂[\u200C\u200D]𑼮', re.IGNORECASE), '𑼬𑽂𑼮'),
 ]
 
 def konversi_aksara_ke_kawi(text):

@@ -42,7 +42,7 @@ def process_file(input_file, output_file):
         print(f"An error occurred: {e}")
 
 # Contoh penggunaan
-input_file = "input_spasi.txt"
-output_file = "output_graphme.txt"
+input_file = "pengolah_output/input_spasi.txt"
+output_file = "pengolah_output/output_spasi.txt"
 
 process_file(input_file, output_file)

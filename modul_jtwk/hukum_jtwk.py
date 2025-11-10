@@ -1,6 +1,6 @@
 import re
 from modul_jtwk.kamus_jtwk import substitutions
-from modul_jtwk.konstanta import VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, SEMI_VOKAL, TIDAK_DIGANDAKAN, VOKAL_PANJANG, SH
+from modul_jtwk.konstanta import VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, SEMI_VOKAL, TIDAK_DIGANDAKAN, VOKAL_PANJANG, SH, VOKAL_KAPITAL
 
 # Pre-compiled regex patterns
 REGEX_CACHE = {
@@ -11,10 +11,6 @@ REGEX_CACHE = {
     'backtick_vokal': re.compile(rf'`([{DAFTAR_VOKAL}])'),
     'substitusi': [(re.compile(p), r) for p, r in substitutions.items()],
 }
-
-# Mapping tables
-KAPITAL_MAP = str.maketrans('AĀÂIĪÎUŪÛOŌÔEÊÉÈꜽꜷ', 'aāâiīîuūûoōôeêéèꜽꜷ')
-VOKAL_KAPITAL = {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}
 
 # Rule sets
 HUKUM_AKSARA_CLUSTER = [
@@ -75,6 +71,22 @@ PENGGANTIAN_ṙ = [
     (r'\u200c', ''), (r'\u200d', '')
 ]
 
+def pisahkan_kata_ulang(teks):
+    # 1. Pola A: Perulangan Murni (Contoh: 'rumahrumah' -> 'rumah-rumah')
+    # Hanya kata dasar >= 3 huruf
+    pola_murni = r'(\w{3,})\1'
+    teks = re.sub(pola_murni, r'\1-\1', teks)
+    
+    # 2. Pola B: Perulangan Berimbuhan (Contoh: 'tumuṅkultuṅkul' -> 'tumuṅkul-tuṅkul')
+    # (\w*)   -> Grup 1: Awalan 1 (misalnya 'tum')
+    # (\w{3,}) -> Grup 2: Kata Dasar (misalnya 'uṅkul'), minimal 3 huruf
+    # (\w?)   -> Grup 3: Awalan 2 (misalnya 't')
+    # \2      -> Referensi Balik ke Kata Dasar (Grup 2)
+    pola_imbuhan = r'(\w*)(\w{3,})(\w?)\2'
+    teks = re.sub(pola_imbuhan, r'\1\2-\3\2', teks)
+    
+    return teks
+
 def kata_baku(text):
     
     """Kapitalisasi vokal awal baris dan substitusi kamus"""
@@ -83,6 +95,8 @@ def kata_baku(text):
         lambda m: m.group(1) + m.group(2).upper(), text
     )
     
+    text = pisahkan_kata_ulang(text) 
+
     # Substitusi kamus
     for pattern, replacement in REGEX_CACHE['substitusi']:
         text = pattern.sub(replacement, text)
@@ -258,6 +272,9 @@ RE_FINALISASI = [
     (re.compile(r'\b(\w+)\s+\1(\w+)\b'), r'\1-\1\2'),
 ]
 
+# Mapping tables
+KAPITAL_MAP = str.maketrans('AĀÂIĪÎUŪÛOŌÔEÊÉÈꜼꜶ', 'aāâiīîuūûoōôeêéèꜽꜷ')
+VOKAL_KAPITAL_CUSTOM = {'ꜽ': 'Ꜽ', 'è': 'È', 'é': 'É'}
 
 def finalisasi_jtwk(text):
     """Finalisasi dan kapitalisasi"""
@@ -267,7 +284,7 @@ def finalisasi_jtwk(text):
 
     # Kapitalisasi vokal awal baris
     text = REGEX_CACHE['awal_baris_vokal'].sub(
-        lambda m: m.group(1) + VOKAL_KAPITAL.get(m.group(2), m.group(2).upper()),
+        lambda m: m.group(1) + VOKAL_KAPITAL_CUSTOM.get(m.group(2), m.group(2).upper()),
         text
     )
 

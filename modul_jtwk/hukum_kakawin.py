@@ -20,9 +20,9 @@ RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁ
 ZWNJ = '\u200C'
 ZWJ = '\u200D'
 # Definisi ṝḹṛḷ sebagai vokal
-VOWELS = 'aiuĕāâîīûūêôeèéöoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
+VOWELS = 'aiuĕāâîīûūêôeèéöëoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
 VOKAL_PENDEK = 'aiuĕAIUĔṛḷ❓'
-VOKAL_PANJANG = 'āâîīûūêôeèéöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹ'
+VOKAL_PANJANG = 'āâîīûūêôeèéëöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹ'
 KHUSUS_KONSONAN = 'ŋḥṙṃ'
 konsonan_pattern = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳ"
 
