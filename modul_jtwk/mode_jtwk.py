@@ -4,6 +4,9 @@ from modul_jtwk.konstanta import VOKAL_NON_KAPITAL, DAFTAR_VOKAL, ZWNJ, DAFTAR_K
 
 def mode_normal(text):
 
+    #Bahasa Indonesia
+    #rf'([{DAFTAR_VOKAL}])([{DAFTAR_KONSONAN}])lah\b': r'\1\2 laḥ',  
+
     return text
 
 

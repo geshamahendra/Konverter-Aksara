@@ -37,9 +37,9 @@ PENGGANTIAN_ṙ = [
 
     #pengecualian vokal a
     (r'ṙs', 'ṙṣ'), (r'ṙṣik\b', 'ṙsik'), 
-    (r'ṙṇny', 'ṙny'), (r'aṙyy([aā])', r'ary\1'),
+    (r'ṙṇny', 'ṙny'), 
+    (rf'([{DAFTAR_KONSONAN}])aṙyy([aā])', r'\1ary\2'),
     (r'(ā|a)ś([cꞓ])ary', r'\1ś\2aṙyy'), (r'ṙyy(akĕn|aku)', r'ry\1'), 
-    (r'p(a|ā)ṙśś', r'p\1ṙś'),
     (rf'\b((?!r)[{DAFTAR_KONSONAN}])aryan\b', r'\1aṙyyan'),
     (rf'\b(b|h|p|g)arya', r'\1aṙyya'),
 
@@ -62,8 +62,11 @@ PENGGANTIAN_ṙ = [
     (r'ṙmmu ', 'ṙmu '), 
     (rf'([{DAFTAR_KONSONAN}])uṙww(a|i|u)', r'\1urw\2'), 
     (r'tumiṙww(a|â|ā)', r'tumirw\1'),
-    (r'ṙwwaṅ\b', r'rwaṅ'),
+    (r'\bṙwwaṅ\b', r'rwaṅ'),
     (rf'([{DAFTAR_KONSONAN.replace('đ','').replace('s','').replace('p','').replace('g','')}])aṙww(a|â|ā)', r'\1arw\2'),
+
+    #kata khusus
+    (r'arwata\b', r'aṙwwata'),
 
     #cegah r+zwj-zwnj agar tidal jadi ra pangku 
     (r'r\u200c', 'ṙ'), (r'r\u200d', 'ṙ'),(rf'r{SH}', 'ṙ'),
@@ -205,6 +208,9 @@ RE_HUKUM_SIGEG = [
 
     # Kriteria 6: konsonan + ṅ + h
     (re.compile(rf'(?<=[{DAFTAR_KONSONAN}])[^\S\n]+ṅ[^\S\n]+h'), r' ṅh'),
+
+    # Kriteria 7: sisipan pĕpĕt
+    (re.compile(rf'(ŋ~)'), r'ṅ~'),
 ]
 
 

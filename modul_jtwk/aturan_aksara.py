@@ -246,6 +246,7 @@ RE_HUKUM_SANDI = [
     (re.compile(rf'(?<=([{DAFTAR_KONSONAN}]))(ḷ|ḹ)'), lambda m: m.group(2) + '\u200D'),
     # hapus strip depan konsonan
     (re.compile(rf'-([{DAFTAR_KONSONAN}])'), r' \1'),
+
     # agar aksara swara tidak jadi pasangan
     (re.compile(rf"(?<=[{DAFTAR_KONSONAN.replace('ṙ','')}])[^\S\n]*([{VOKAL_KAPITAL}])"),
         lambda m: ZWNJ + m.group(1)),
@@ -259,6 +260,7 @@ def hukum_sandi(text):
     for regex, repl in RE_HUKUM_SANDI: text = regex.sub(repl, text)
 
     text = text.replace("-", " ")
+    text = text.replace("–", " ") #en dash
     text = re.sub('|'.join(map(re.escape, PENYERAGAMAN_VOKAL)), lambda m: PENYERAGAMAN_VOKAL[m.group(0)], text)
 
     #cegah ya dipasangi
@@ -285,18 +287,19 @@ def hukum_sandi(text):
 # Kompilasi substitusi utama
 RE_HUKUM_PENULISAN = [
     # konsonan rangkap setelah perpisahan kata
-    #(re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{"dwhgm"}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])'), rf'\1{ZWNJ}\2'),
-
     (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])'), rf'\1{ZWNJ}\2'),
     
     #konsonan rangkap setelah perpisahan kata versi sigeg
-    (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][ṙḥŋ])'), rf'\1{ZWNJ}\2'),
+    (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN.replace("n","").replace("t","")}][{DAFTAR_VOKAL}][ṙḥŋ])'), rf'\1{ZWNJ}\2'), #kecuali akhiran ta-ni
     
     #perpisahan kata: dua suku kata akhiran suku kata panjang
     (re.compile(rf'(?<=[{DAFTAR_KONSONAN}]\s)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])'), rf'{ZWNJ}\1'),
 
+    #satu suku kata tertutup dilanjut rĕ
+    (re.compile(rf'\b([{DAFTAR_VOKAL.replace("ṛ","").replace("ṝ","")}][{DAFTAR_KONSONAN}])[^\S\n]+([ṝṛḹḷ])'), rf'\1{ZWNJ}\2'),
+
     # sambung konsonan dan vokal terpisah spasi
-    (re.compile(rf'([{DAFTAR_KONSONAN}])[^\S\n]*([{DAFTAR_VOKAL}])'), r'\1\2'),
+    (re.compile(rf'([{DAFTAR_KONSONAN}])[^\S\n]+([{DAFTAR_VOKAL.replace("ṛ","").replace("ṝ","")}])'), r'\1\2'), #jangan masukkan rĕ
 
 ]
 
@@ -307,8 +310,6 @@ SUBSTITUSI_SIGEG = [
 
     #substitusi sigeg + zwnj
     (re.compile(r'ṅ‌'), 'ŋ'),
-    #zwnj sebelum konsonan+vokal+ŋ
-    (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","")}][^\S\n]+)([{DAFTAR_KONSONAN.replace("n","")}])([{DAFTAR_VOKAL}])ŋ'), rf'\1{ZWNJ}\2\3ŋ'),
 ]
 
 def hukum_penulisan(text):
@@ -332,14 +333,14 @@ def hukum_penulisan(text):
         *buat_pola("p", ["j","ś","g"]), 
         *buat_pola("m", ["g"]),
         (konsonan_spasi, r"(duḥk|duḥꝁ|jñ)"),
-        (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p','').replace('s','')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y|w)"),
-        (konsonan_spasi, r"(s|m|ḷ|ḹ|r|w|y|ǥ|ñ|ɉ|ṅ|h|l|lĕ|rĕ|lö|rö)"),
+        (konsonan_spasi, rf"([{DAFTAR_KONSONAN.replace('p','').replace('s','')}])(r|ṛ|ḷ|ṝ|ḹ|w|l|y)"),
+        (konsonan_spasi, r"(s|m|ḷ|ḹ|r|w|y|ǥ|ñ|ɉ|ṅ|h|l)"),
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
-        (konsonan_spasi, r"(str|sꝑ|sŧ)"),
-
+        (konsonan_spasi, rf"([{DAFTAR_KONSONAN}](?:ṛ|ṝ))"),
 
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])"),
+
         #(konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}]\b)"),
     ]
     text = sisipkan_zwnj_pola(text, pola_list)
@@ -382,8 +383,10 @@ def finalisasi(hasil):
         hasil = hasil.replace(cari, ganti)
 
     # Pastikan 0̲ ditangani dulu
-    #hasil = re.sub(r'[^\S\r\n]*(\||—|⏑|⏓|—)[^\S\r\n]*', r' \1 ', hasil)
+    #hasil = re.sub(r'[^\S\r\n]*(—)[^\S\r\n]*', r' \1 ', hasil)
     #hasil = re.sub(r'[^\S\r\n]{2,}', ' ', hasil)
+    hasil = re.sub(r'—{2,}', lambda m: " ".join(list(m.group(0))), hasil)
+
 
     # Langkah 2: Panggil fungsi ganti_tanda_metrum
     hasil = ganti_tanda_metrum(hasil)

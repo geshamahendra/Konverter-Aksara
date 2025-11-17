@@ -16,7 +16,7 @@ ENABLE_KONSONAN_GANDA_CHECK = _ENABLE_KONSONAN_GANDA_CHECK_STR.lower() in ('true
 # --- Regex dan Konstanta Lainnya ---
 RE_METRUM_SIMBOL = re.compile(r'[—⏑⏓]')
 RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶṝḹṛḷ❓]')
-RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳʰ]')
+RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳʰ–]') #en-dash
 ZWNJ = '\u200C'
 ZWJ = '\u200D'
 # Definisi ṝḹṛḷ sebagai vokal
