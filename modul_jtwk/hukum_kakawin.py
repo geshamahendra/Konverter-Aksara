@@ -1,5 +1,4 @@
 import re
-
 # --- Konfigurasi Global ---
 TANDA_SALAH = '❌'
 JARAK_TANDA_SALAH = 2
@@ -15,19 +14,20 @@ ENABLE_KONSONAN_GANDA_CHECK = _ENABLE_KONSONAN_GANDA_CHECK_STR.lower() in ('true
 
 # --- Regex dan Konstanta Lainnya ---
 RE_METRUM_SIMBOL = re.compile(r'[—⏑⏓]')
-RE_VOKAL = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶṝḹṛḷ❓]')
-RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳʰ–]') #en-dash
+RE_VOKAL_KAKAWIN = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶṝḹṛḷ❓]')
+RE_KONSONAN_KAKAWIN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳʰ–]') #en-dash
 ZWNJ = '\u200C'
 ZWJ = '\u200D'
 # Definisi ṝḹṛḷ sebagai vokal
-VOWELS = 'aiuĕāâîīûūêôeèéöëoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
-VOKAL_PENDEK = 'aiuĕAIUĔṛḷ❓'
-VOKAL_PANJANG = 'āâîīûūêôeèéëöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹ'
-KHUSUS_KONSONAN = 'ŋḥṙṃ'
-konsonan_pattern = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳ"
+VOKAL_KAKAWIN = 'aiuĕāâîīûūêôeèéöëoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
+VOKAL_PENDEK_KAKAWIN = 'aiuĕAIUĔṛḷ❓'
+VOKAL_PANJANG_KAKAWIN = 'āâîīûūêôeèéëöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹ'
+KONSONAN_KHUSUS = 'ŋḥṙṃ'
+RE_KONSONAN_KHUSUS = re.compile(r'[ŋḥṙṃ]')
+KONSONAN_KAKAWIN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳ"
 
 # Kamus Pemetaan Vokal
-VOWEL_PENDEK_KE_PANJANG = {
+VOKAL_PENDEK_KE_PANJANG = {
     'a': 'ā',
     'A': 'Ā',
     'i': 'ī',
@@ -40,7 +40,7 @@ VOWEL_PENDEK_KE_PANJANG = {
     'ḷ': 'ḹ',
 }
 
-VOWEL_PANJANG_KE_PENDEK = {
+VOKAL_PANJANG_KE_PENDEK = {
     'ā': 'a', 
     'â': 'a',
     'Ā': 'A',
@@ -51,7 +51,9 @@ VOWEL_PANJANG_KE_PENDEK = {
     'û': 'u',
     'Ū': 'U',
     'ö': 'ĕ', 
-    'e': 'ĕ', 
+    'e': 'ĕ',
+    'ê': 'ĕ',
+    'ë': 'ĕ',  
     'è': 'ĕ', 
     'é': 'ĕ',
     'ō': 'o',
@@ -136,13 +138,13 @@ def ubah_vokal_sesuai_metrum(vokal_char, metrum_target, is_first_char=False):
     """
 
     if metrum_target == '—': # Metrum panjang, coba panjangkan
-        if vokal_char in VOWEL_PENDEK_KE_PANJANG:
-            transformed_vowel = VOWEL_PENDEK_KE_PANJANG[vokal_char]
+        if vokal_char in VOKAL_PENDEK_KE_PANJANG:
+            transformed_vowel = VOKAL_PENDEK_KE_PANJANG[vokal_char]
             # Kapitalisasi jika ini adalah karakter pertama baris
             return transformed_vowel.upper() if is_first_char else transformed_vowel
     elif metrum_target == '⏑': # Metrum pendek, coba pendekkan
-        if vokal_char in VOWEL_PANJANG_KE_PENDEK:
-            transformed_vowel = VOWEL_PANJANG_KE_PENDEK[vokal_char]
+        if vokal_char in VOKAL_PANJANG_KE_PENDEK:
+            transformed_vowel = VOKAL_PANJANG_KE_PENDEK[vokal_char]
             # Kapitalisasi jika ini adalah karakter pertama baris
             return transformed_vowel.upper() if is_first_char else transformed_vowel
     
@@ -151,7 +153,7 @@ def ubah_vokal_sesuai_metrum(vokal_char, metrum_target, is_first_char=False):
         return vokal_char.upper()
     return vokal_char
 
-def cek_vokal_awal_kata(vokal, idx, line, metrum, RE_KONSONAN, RE_VOKAL, KHUSUS_KONSONAN):
+def cek_vokal_awal_kata(vokal, idx, line, metrum, RE_KONSONAN_KAKAWIN, RE_VOKAL_KAKAWIN, KONSONAN_KHUSUS):
     """
     Menghitung konsonan setelah vokal dan menyesuaikan panjang vokal 
     berdasarkan metrum dan aturan konsonan.
@@ -163,11 +165,11 @@ def cek_vokal_awal_kata(vokal, idx, line, metrum, RE_KONSONAN, RE_VOKAL, KHUSUS_
     for i in range(idx + 1, len(line)):
         char = line[i]
 
-        if RE_KONSONAN.match(char):
+        if RE_KONSONAN_KAKAWIN.match(char) or RE_KONSONAN_KHUSUS.match(char):
             konsonan_count_after += 1
-            if char in KHUSUS_KONSONAN:
+            if char in KONSONAN_KHUSUS:
                 has_special_consonant = True
-        elif RE_VOKAL.match(char):
+        elif RE_VOKAL_KAKAWIN.match(char):
             # Hentikan hitungan jika vokal lain ditemukan
             break
         # Mengabaikan spasi
@@ -203,7 +205,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
             # Menggunakan re.sub dengan fungsi pengganti untuk mempertahankan kapitalisasi awal jika diperlukan
             # Ini sedikit lebih kompleks karena PRA_PROSES_KARAKTER_KHUSUS memetakan 2 karakter menjadi 1
             # Kita perlu memastikan bahwa karakter khusus yang baru dimasukkan juga dihitung sebagai vokal
-            # Cara paling sederhana adalah mengganti langsung dan memastikan regex VOWELS mengenalnya.
+            # Cara paling sederhana adalah mengganti langsung dan memastikan regex VOKAL_KAKAWIN mengenalnya.
             # Ini juga berarti kita harus menangani UPPERCASE/lowercase di PRA_PROSES_KARAKTER_KHUSUS jika ada varian
             # Saat ini, saya mengasumsikan input 'rĕ' dll. adalah lowercase
             line = line.replace(old_seq, new_char)
@@ -215,15 +217,15 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
         clean_line_for_vowels = bersihkan_karakter_tak_terlihat(line)
 
         # Logika kapitalisasi huruf pertama baris
-        if clean_line_for_vowels and RE_VOKAL.match(clean_line_for_vowels[0]):
+        if clean_line_for_vowels and RE_VOKAL_KAKAWIN.match(clean_line_for_vowels[0]):
             metrum_awal = selected_metrum[0]
             vokal_awal = clean_line_for_vowels[0]
 
             if len(clean_line_for_vowels) >= 3:
                 # Periksa apakah ada konsonan + vokal setelah vokal awal
-                if (RE_KONSONAN.match(clean_line_for_vowels[1]) and
-                    RE_VOKAL.match(clean_line_for_vowels[2]) and
-                    clean_line_for_vowels[1].lower() not in KHUSUS_KONSONAN):
+                if (RE_KONSONAN_KAKAWIN.match(clean_line_for_vowels[1]) and
+                    RE_VOKAL_KAKAWIN.match(clean_line_for_vowels[2]) and
+                    clean_line_for_vowels[1].lower() not in KONSONAN_KHUSUS):
 
                     # Panggil ubah_vokal_sesuai_metrum dengan is_first_char=True
                     # Ini akan mengkapitalisasi vokal awal jika perlu (termasuk ṛ/ḷ ke Ṛ/Ḷ atau ṝ/ḹ ke Ṝ/Ḹ)
@@ -234,7 +236,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         idx_first_vowel_in_line = -1
                         temp_clean_idx_count = 0
                         for char_idx, char in enumerate(line):
-                            if char.lower() in VOWELS:
+                            if char.lower() in VOKAL_KAKAWIN:
                                 if temp_clean_idx_count == 0:
                                     idx_first_vowel_in_line = char_idx
                                     break
@@ -247,11 +249,11 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                             hasil_line_temp[idx_first_vowel_in_line] = new_vokal_awal
                             line = "".join(hasil_line_temp)
                         # else: Ini berarti baris tidak memiliki vokal atau vokal awal tidak ditemukan, 
-                        # yang seharusnya sudah ditangani oleh if clean_line_for_vowels dan RE_VOKAL.match
+                        # yang seharusnya sudah ditangani oleh if clean_line_for_vowels dan RE_VOKAL_KAKAWIN.match
 
         vokal_posisi_clean = []
         for idx, char in enumerate(bersihkan_karakter_tak_terlihat(line)): # Gunakan 'line' yang sudah diubah
-            if char.lower() in VOWELS:
+            if char.lower() in VOKAL_KAKAWIN:
                 vokal_posisi_clean.append(idx)
 
         vokal_posisi_in_original_line = []
@@ -262,7 +264,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
         while clean_idx < len(bersihkan_karakter_tak_terlihat(line)) and clean_vokal_idx < len(vokal_posisi_clean):
             if clean_idx == vokal_posisi_clean[clean_vokal_idx]:
                 while orig_idx < len(line):
-                    if line[orig_idx].lower() in VOWELS:
+                    if line[orig_idx].lower() in VOKAL_KAKAWIN:
                         metrum_idx = clean_vokal_idx % len(selected_metrum)
                         vokal_posisi_in_original_line.append((orig_idx, line[orig_idx], selected_metrum[metrum_idx]))
                         orig_idx += 1
@@ -291,24 +293,24 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
                 #vokal1+spasi/tanda hubung+vokal2
                 if re.fullmatch(r'([^\S\n]|-)*', text_between):
-                    if v1_lower_temp in VOWELS and v2_lower_temp in VOWELS:
+                    if v1_lower_temp in VOKAL_KAKAWIN and v2_lower_temp in VOKAL_KAKAWIN:
                         # Langkah 1 (Baru): Terapkan kapitalisasi secara eksplisit
                         new_vokal_v2 = v2.upper()
 
                         # Langkah 2 (Baru): Lakukan pemanjangan/pemendekan berdasarkan metrum vokal2
-                        final_v2 = cek_vokal_awal_kata(new_vokal_v2, idx2, line, met2, RE_KONSONAN, RE_VOKAL, KHUSUS_KONSONAN)
+                        final_v2 = cek_vokal_awal_kata(new_vokal_v2, idx2, line, met2, RE_KONSONAN_KAKAWIN, RE_VOKAL_KAKAWIN, KONSONAN_KHUSUS)
                         hasil_line[idx2] = final_v2
 
                 # vokal1+konsonan+spasi+vokal2
                 # Aturan 0.1: Jika vokal1 panjang namun jatuh metrum pendek maka pendekkan keduanya.
-                if v1_lower_temp in VOKAL_PANJANG and met1 == '⏑':
+                if v1_lower_temp in VOKAL_PANJANG_KAKAWIN and met1 == '⏑':
                     # Pendekkan vokal1
                     new_vokal1 = ubah_vokal_sesuai_metrum(v1, met1)
                     hasil_line[idx1] = new_vokal1
                 
                 # Aturan 0.2: Jika vokal2 panjang namun jatuh metrum pendek dan bukan diakhir kata, maka pendekkan keduanya
                 # Modifikasi baru: Tambahkan kondisi untuk pemanjangan vokal2
-                if v2_lower_temp in VOKAL_PENDEK and met2 == '—':
+                if v2_lower_temp in VOKAL_PENDEK_KAKAWIN and met2 == '—':
                     
                     # Inisialisasi variabel untuk kondisi pemanjangan
                     should_prolong = False
@@ -319,7 +321,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         char2 = line[idx2 + 2] # Karakter kedua setelah vokal2
 
                         # Cek apakah karakter pertama adalah konsonan dan karakter kedua adalah vokal
-                        if RE_KONSONAN.match(char1) and RE_VOKAL.match(char2):
+                        if RE_KONSONAN_KAKAWIN.match(char1) and RE_VOKAL_KAKAWIN.match(char2):
                             should_prolong = True
                             
                     except IndexError:
@@ -332,13 +334,12 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         new_vokal2 = ubah_vokal_sesuai_metrum(v2, met2)
                         hasil_line[idx2] = new_vokal2
                 
-
                 # Aturan 1: Tentukan apakah vokal kedua harus dikapitalisasi
                 should_capitalize = False
                 # Kondisi dasar: metrum panjang (—) bertemu vokal pendek
-                if met1 == '—' and v1_lower_temp in VOKAL_PENDEK:
+                if met1 == '—' and v1_lower_temp in VOKAL_PENDEK_KAKAWIN:
                     # Cari indeks vokal berikutnya (v2) untuk menghitung konsonan di antaranya
-                    match_v2 = re.search(RE_VOKAL, line[idx1 + 1:])
+                    match_v2 = re.search(RE_VOKAL_KAKAWIN, line[idx1 + 1:])
                     
                     # Jika vokal berikutnya (v2) ditemukan
                     if match_v2:
@@ -347,13 +348,13 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         # Hitung jumlah konsonan antara v1 dan v2 secara manual
                         konsonan_count = 0
                         for i in range(idx1 + 1, idx_v2_temp):
-                            if RE_KONSONAN.match(line[i]):
+                            if RE_KONSONAN_KAKAWIN.match(line[i]):
                                 konsonan_count += 1
 
                         # Atur should_capitalize menjadi True HANYA jika jumlah konsonan sama dengan satu
                         if konsonan_count == 1:
                             should_capitalize = True
-
+                    
                     kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
                     kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
 
@@ -364,10 +365,10 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                             konsonan_akhir_kata1 = akhir_kata1[idx_v1_relatif + 1]
                             text_between_words = line[kata_v1[1]:idx2]
 
-                            if re.search(r'[ -]+', text_between_words) and not any(RE_KONSONAN.match(char) for char in text_between_words.replace(' ', '').replace('-', '')):
+                            if re.search(r'[ -]+', text_between_words) and not any(RE_KONSONAN_KAKAWIN.match(char) for char in text_between_words.replace(' ', '').replace('-', '')):
                                 if kata_v2 and len(kata_v2[2]) > 0 and kata_v2[2][0] == v2_lower_temp:
                                     # Cek dan sesuaikan vokal awal kata terhadap jumlah konsonan di belakangnya
-                                    vokal_final = cek_vokal_awal_kata(v2, idx2, line, met2, RE_KONSONAN, RE_VOKAL, KHUSUS_KONSONAN)
+                                    vokal_final = cek_vokal_awal_kata(v2, idx2, line, met2, RE_KONSONAN_KAKAWIN, RE_VOKAL_KAKAWIN, KONSONAN_KHUSUS)
 
                                     # Logika kapitalisasi (ini terpisah dan selalu diperiksa)
                                     if should_capitalize:
@@ -377,20 +378,20 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
                 #konsonan+vokal1+konsonan+vokal2
                 # Refactor 1: Gabungkan logika serupa
-                is_metrum_panjang_valid = (met1 == '—' and v1_lower_temp in VOKAL_PENDEK)
-                is_metrum_pendek_valid = (met1 == '⏑' and v1_lower_temp in VOKAL_PANJANG)
+                is_metrum_panjang_valid = (met1 == '—' and v1_lower_temp in VOKAL_PENDEK_KAKAWIN)
+                is_metrum_pendek_valid = (met1 == '⏑' and v1_lower_temp in VOKAL_PANJANG_KAKAWIN)
 
                 if is_metrum_panjang_valid or is_metrum_pendek_valid:
-                    konsonan_pattern_str = RE_KONSONAN.pattern[1:-1]
-                    vokal_spasi_konsonan_pattern = re.fullmatch(r'[^\S\n]+' + r'([' + konsonan_pattern_str + r'])[^\S\n]*', text_between)
+                    KONSONAN_KAKAWIN_str = RE_KONSONAN_KAKAWIN.pattern[1:-1]
+                    vokal_spasi_KONSONAN_KAKAWIN = re.fullmatch(r'[^\S\n]+' + r'([' + KONSONAN_KAKAWIN_str + r'])[^\S\n]*', text_between)
                     
-                    if vokal_spasi_konsonan_pattern and vokal_spasi_konsonan_pattern.group(1).lower() not in KHUSUS_KONSONAN:
-                        konsonan = vokal_spasi_konsonan_pattern.group(1)
+                    if vokal_spasi_KONSONAN_KAKAWIN and vokal_spasi_KONSONAN_KAKAWIN.group(1).lower() not in KONSONAN_KHUSUS:
+                        konsonan = vokal_spasi_KONSONAN_KAKAWIN.group(1)
                         kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
                         
                         if kata_v2:
                             awal_kata2 = kata_v2[2]
-                            if awal_kata2.startswith(konsonan) and len(awal_kata2) > 1 and RE_VOKAL.match(awal_kata2[1]):
+                            if awal_kata2.startswith(konsonan) and len(awal_kata2) > 1 and RE_VOKAL_KAKAWIN.match(awal_kata2[1]):
                                 new_vokal = ubah_vokal_sesuai_metrum(v1, met1)
                                 if new_vokal != v1:
                                     hasil_line[idx1] = new_vokal
@@ -399,8 +400,8 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                 kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
 
                 if kata_v1:
-                    is_metrum_panjang_valid_2 = (met1 == '—' and v1_lower_temp in VOKAL_PENDEK)
-                    is_metrum_pendek_valid_2 = (met1 == '⏑' and v1_lower_temp in VOKAL_PANJANG)
+                    is_metrum_panjang_valid_2 = (met1 == '—' and v1_lower_temp in VOKAL_PENDEK_KAKAWIN)
+                    is_metrum_pendek_valid_2 = (met1 == '⏑' and v1_lower_temp in VOKAL_PANJANG_KAKAWIN)
                     
                     if is_metrum_panjang_valid_2 or is_metrum_pendek_valid_2:
                         kata = kata_v1[2]
@@ -411,8 +412,8 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                             if next_kata_idx < len(kata_list):
                                 next_kata = kata_list[next_kata_idx][2]
                                 
-                                if len(next_kata) == 2 and RE_KONSONAN.match(next_kata[0]) and RE_VOKAL.match(next_kata[1]):
-                                    if next_kata[0].lower() not in KHUSUS_KONSONAN:
+                                if len(next_kata) == 2 and RE_KONSONAN_KAKAWIN.match(next_kata[0]) and RE_VOKAL_KAKAWIN.match(next_kata[1]):
+                                    if next_kata[0].lower() not in KONSONAN_KHUSUS:
                                         new_vokal = ubah_vokal_sesuai_metrum(v1, met1)
                                         if new_vokal != v1:
                                             hasil_line[idx1] = new_vokal
@@ -423,12 +424,12 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                 kata = kata_v[2]
                 idx_rel = idx_vokal - kata_v[0]
 
-                konsonan_sebelum = idx_rel > 0 and RE_KONSONAN.match(kata[idx_rel - 1])
+                konsonan_sebelum = idx_rel > 0 and RE_KONSONAN_KAKAWIN.match(kata[idx_rel - 1])
 
                 if (konsonan_sebelum and
                     idx_rel + 2 < len(kata) and
-                    RE_KONSONAN.match(kata[idx_rel + 1]) and
-                    RE_VOKAL.match(kata[idx_rel + 2])):
+                    RE_KONSONAN_KAKAWIN.match(kata[idx_rel + 1]) and
+                    RE_VOKAL_KAKAWIN.match(kata[idx_rel + 2])):
 
                     new_vokal = ubah_vokal_sesuai_metrum(vokal, metrum_vokal) # is_first_char=False di sini
                     if new_vokal != vokal:
@@ -444,7 +445,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                 v1_lower_temp = vokal.lower()
 
                 # Kondisi inti: vokal1 pendek dan metrumnya pendek
-                if v1_lower_temp in VOKAL_PENDEK and metrum_vokal == '⏑':
+                if v1_lower_temp in VOKAL_PENDEK_KAKAWIN and metrum_vokal == '⏑':
                     kata_v1 = next((k for k in kata_list if k[0] <= idx_vokal < k[1]), None)
                     kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
 
@@ -456,7 +457,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         # Cek adanya konsonan di akhir kata1 dan spasi
                         if idx_v1_relatif + 1 < len(akhir_kata1) and ' ' in text_between:
                             konsonan_akhir_kata1 = akhir_kata1[idx_v1_relatif + 1]
-                            if RE_KONSONAN.match(konsonan_akhir_kata1) and konsonan_akhir_kata1.lower() not in KHUSUS_KONSONAN:
+                            if RE_KONSONAN_KAKAWIN.match(konsonan_akhir_kata1) and konsonan_akhir_kata1.lower() not in KONSONAN_KHUSUS:
 
                                 # Cek apakah vokal2 adalah karakter pertama dari kata kedua
                                 if len(kata_v2[2]) > 0 and kata_v2[2][0].lower() == v2.lower():
@@ -476,13 +477,13 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
 
             temp_vokal_posisi_clean = []
             for idx, char in enumerate(temp_clean_line_for_vowels):
-                if char.lower() in VOWELS:
+                if char.lower() in VOKAL_KAKAWIN:
                     temp_vokal_posisi_clean.append(idx)
 
             while temp_clean_idx < len(temp_clean_line_for_vowels) and temp_clean_vokal_idx < len(temp_vokal_posisi_clean):
                 if temp_clean_idx == temp_vokal_posisi_clean[temp_clean_vokal_idx]:
                     while temp_orig_idx < len(current_line_str_after_mod):
-                        if current_line_str_after_mod[temp_orig_idx].lower() in VOWELS:
+                        if current_line_str_after_mod[temp_orig_idx].lower() in VOKAL_KAKAWIN:
                             metrum_idx = temp_clean_vokal_idx % len(selected_metrum)
                             re_vokal_posisi_in_original_line.append((temp_orig_idx, current_line_str_after_mod[temp_orig_idx], selected_metrum[metrum_idx]))
                             temp_orig_idx += 1
@@ -497,7 +498,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
             for i_vokal_curr, (idx_vokal, vokal, metrum_vokal) in enumerate(re_vokal_posisi_in_original_line):
                 vokal_lower = vokal.lower()
 
-                if vokal_lower in VOWELS and metrum_vokal == '⏑':
+                if vokal_lower in VOKAL_KAKAWIN and metrum_vokal == '⏑':
                     if i_vokal_curr + 1 < len(re_vokal_posisi_in_original_line):
                         idx_next_vokal_orig = re_vokal_posisi_in_original_line[i_vokal_curr + 1][0]
 
@@ -522,7 +523,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         while j < len(substring_between_vowels_clean):
                             char = substring_between_vowels_clean[j]
 
-                            if RE_KONSONAN.match(char.lower()) and char != '-':
+                            if RE_KONSONAN_KAKAWIN.match(char.lower()) and char != '-':
                                 konsonan_count_between += 1 
                             j += 1
 
@@ -544,7 +545,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
             final_line_output = final_line_output.replace(old_char, new_char)
 
         final_clean_line = bersihkan_karakter_tak_terlihat(final_line_output)
-        final_vokal_count = sum(1 for char in final_clean_line if char.lower() in VOWELS)
+        final_vokal_count = sum(1 for char in final_clean_line if char.lower() in VOKAL_KAKAWIN)
 
         metrum_length_for_line = len(selected_metrum)
 
@@ -553,7 +554,7 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
             if final_vokal_count > metrum_length_for_line:
                 plus_minus_indicator = f'"+{final_vokal_count - metrum_length_for_line}"'
             elif final_vokal_count < metrum_length_for_line:
-                plus_minus_indicator = f'"–{metrum_length_for_line - final_vokal_count}"'
+                plus_minus_indicator = f'"―{metrum_length_for_line - final_vokal_count}"'
 
         if current_line_has_error_marker or plus_minus_indicator:
             error_details = []

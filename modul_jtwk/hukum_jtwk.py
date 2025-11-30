@@ -7,7 +7,7 @@ REGEX_CACHE = {
     'vokal': re.compile(f'[{DAFTAR_VOKAL}]'),
     'vokal_kecil': re.compile(f'[{VOKAL_NON_KAPITAL}]'),
     'awal_baris_vokal': re.compile(rf'(^|\n)([{DAFTAR_VOKAL}])', re.MULTILINE),
-    'non_huruf_vokal': re.compile(rf'([^\w\s-])(\s*)([{DAFTAR_VOKAL}])'),
+    'non_huruf_vokal': re.compile(rf'([^\w\s-]|ṃ)(\s*)([{DAFTAR_VOKAL}])'),
     'backtick_vokal': re.compile(rf'`([{DAFTAR_VOKAL}])'),
     'substitusi': [(re.compile(p), r) for p, r in substitutions.items()],
 }
@@ -18,7 +18,7 @@ HUKUM_AKSARA_CLUSTER = [
     (r'nc', 'ñc'), (r'nj', 'ñj'), (r'ks', 'kṣ'), (r'ꝁs', 'ꝁṣ'),
     (r'gs', 'gṣ'), (r'ǥs', 'ǥṣ'), (r'jn', 'jñ'), (r'rs', 'ṙṣ'),
     (r'sṭ', 'ṣṭ'), (r'ṣŧ', 'ṣṫ'), (r'sry', 'śry'), (r'sṫ', 'ṣṫ'),
-    (r'kṣn', 'kṣṇ')
+    (r'kṣn', 'kṣṇ'), (r'sṇ', 'ṣṇ')
 ]
 
 # Aturan khusus dengan lambda function
@@ -49,11 +49,13 @@ PENGGANTIAN_ṙ = [
 
     #kata khusus
     #(rf'\bduṙṇn([{DAFTAR_VOKAL}])', r'duṙn\1'), #khusus durnaya
+    (rf'ṣṭꜽśwarya', r'ṣṭꜽśwaṙyya'),
     (rf'mātsyarya', r'mātsyaṙyya'),
     (rf'\bduṙṇn([{DAFTAR_VOKAL}])', r'duṙn\1'), #khusus durnaya
     (rf'(a|ā)ṙwwud(a|ā)', r'\1ṙwud\2'), #khusus arwuda
     (rf'paṙggata', r'paṙgata'), # khusus ghana dari sanskrit, par ghana ta
     (rf'\bhoṙwwi\b', r'horwi'),
+    (rf'([{DAFTAR_VOKAL}])ṙwwi\b', r'\1rwi'),
     (rf'\bmaṙkkata\b', r'maṙkata'), #hijau
     (rf'\bmaṙbbuk\b', r'maṙbuk'), 
     #(rf'daryas', r'daṙyyas'),
@@ -63,13 +65,13 @@ PENGGANTIAN_ṙ = [
     (rf'([{DAFTAR_KONSONAN}])uṙww(a|i|u)', r'\1urw\2'), 
     (r'tumiṙww(a|â|ā)', r'tumirw\1'),
     (r'\bṙwwaṅ\b', r'rwaṅ'),
-    (rf'([{DAFTAR_KONSONAN.replace('đ','').replace('s','').replace('p','').replace('g','')}])aṙww(a|â|ā)', r'\1arw\2'),
+    (rf'([{DAFTAR_KONSONAN.replace('đ','').replace('s','').replace('p','').replace('g','')}])aṙww([{DAFTAR_VOKAL}])', r'\1arw\2'),
 
     #kata khusus
-    (r'arwata\b', r'aṙwwata'),
+    (r'arwata\b', r'aṙwwata'), (r'arwatā(\w)', r'aṙwwatā\1'),
 
     #cegah r+zwj-zwnj agar tidal jadi ra pangku 
-    (r'r\u200c', 'ṙ'), (r'r\u200d', 'ṙ'),(rf'r{SH}', 'ṙ'),
+    (r'r\u200c', 'ṙ'), (r'r\u200d', 'ṙ'), (r'r~', 'ṙ'),(rf'r{SH}', 'ṙ'),
     #hapus zwj-zwnj 
     (r'\u200c', ''), (r'\u200d', '')
 ]

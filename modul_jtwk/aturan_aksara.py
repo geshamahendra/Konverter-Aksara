@@ -1,6 +1,6 @@
 #Menghapus spasi ada di aturan aksara
 import re
-from modul_jtwk.konstanta import VOKAL_KAPITAL, VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, ZWNJ, ZWSP, ZWJ, VOKAL_PANJANG
+from modul_jtwk.konstanta import VOKAL_KAPITAL, VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, ZWNJ, ZWSP, ZWJ, VOKAL_PANJANG, SH
 
 # Peta karakter Latin ke aksara Jawa (dalam bentuk dimatikan secara default)
 aksara = {
@@ -238,20 +238,16 @@ def inisialisasi_aksara(text):
 
 
 RE_HUKUM_SANDI = [
-    # aksara suci (m-ending)
+    #aksara suci (m-ending)
     (re.compile(rf'\b([{DAFTAR_VOKAL}])(m|ṃ)\b'), 
         lambda m: f" {ZWNJ}{m.group(1).upper()}{m.group(2)}{ZWNJ} "),
 
     # pertahankan le
     (re.compile(rf'(?<=([{DAFTAR_KONSONAN}]))(ḷ|ḹ)'), lambda m: m.group(2) + '\u200D'),
     # hapus strip depan konsonan
-    (re.compile(rf'-([{DAFTAR_KONSONAN}])'), r' \1'),
+    #(re.compile(rf'-([{DAFTAR_KONSONAN}])'), r' \1'),
 
-    # agar aksara swara tidak jadi pasangan
-    (re.compile(rf"(?<=[{DAFTAR_KONSONAN.replace('ṙ','')}])[^\S\n]*([{VOKAL_KAPITAL}])"),
-        lambda m: ZWNJ + m.group(1)),
     # kasus tabrakan font bagian taling
-    #(re.compile(rf'ṙ([{DAFTAR_KONSONAN}])([{DAFTAR_KONSONAN}])([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}]+)(e|o)'), rf'ṙ\1\2\3{ZWNJ}\4\5\6'),
     (re.compile(rf'ṙ([{DAFTAR_KONSONAN.replace('ṙ','').replace('ŋ','').replace('ḥ','')}]{{2,}})([{DAFTAR_VOKAL}])(\s*)([{DAFTAR_KONSONAN}])(e|o)'), rf'ṙ\1\2{ZWNJ}\3\4\5'),
 
 ]
@@ -259,14 +255,9 @@ RE_HUKUM_SANDI = [
 def hukum_sandi(text):
     for regex, repl in RE_HUKUM_SANDI: text = regex.sub(repl, text)
 
-    text = text.replace("-", " ")
-    text = text.replace("–", " ") #en dash
+    #text = text.replace("-", " ")
+    #text = text.replace("–", " ") #en dash
     text = re.sub('|'.join(map(re.escape, PENYERAGAMAN_VOKAL)), lambda m: PENYERAGAMAN_VOKAL[m.group(0)], text)
-
-    #cegah ya dipasangi
-    pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyrṛṝl')
-    text = re.sub(r'([y])([^\S\n]*|-)(?=([^\s]))',
-        lambda m: m.group(1)+m.group(2)+('' if m.group(3).lower() in pengecualian_ya else ZWNJ), text)
 
     # vokal identik dan sandhi
     for base,long_form in [('a','ā'),('i','ī'),('u','ū'),('e','ꜽ'),('o','ꜷ')]:
@@ -293,13 +284,19 @@ RE_HUKUM_PENULISAN = [
     (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN.replace("n","").replace("t","")}][{DAFTAR_VOKAL}][ṙḥŋ])'), rf'\1{ZWNJ}\2'), #kecuali akhiran ta-ni
     
     #perpisahan kata: dua suku kata akhiran suku kata panjang
-    (re.compile(rf'(?<=[{DAFTAR_KONSONAN}]\s)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])'), rf'{ZWNJ}\1'),
+    (re.compile(rf'(?<=[{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])'), rf'{ZWNJ}\1'),
+
+    #partikel lalu dilanjut suku kata
+    (re.compile(rf'(\b[{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}]\b)([^\S\n]+[{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}])'), rf'\1{ZWNJ}\2'),
 
     #satu suku kata tertutup dilanjut rĕ
     (re.compile(rf'\b([{DAFTAR_VOKAL.replace("ṛ","").replace("ṝ","")}][{DAFTAR_KONSONAN}])[^\S\n]+([ṝṛḹḷ])'), rf'\1{ZWNJ}\2'),
 
+    (re.compile(r'-'), ' '),
+    (re.compile(r'–'), ' '),  #en dash
+    
     # sambung konsonan dan vokal terpisah spasi
-    (re.compile(rf'([{DAFTAR_KONSONAN}])[^\S\n]+([{DAFTAR_VOKAL.replace("ṛ","").replace("ṝ","")}])'), r'\1\2'), #jangan masukkan rĕ
+    (re.compile(rf'([{DAFTAR_KONSONAN}])[^\S\n]+([{DAFTAR_VOKAL.replace("ṛ","").replace("ṝ","").replace("ḷ","").replace("ḹ","")}])'), r'\1\2'), #jangan masukkan rĕ
 
 ]
 
@@ -310,10 +307,23 @@ SUBSTITUSI_SIGEG = [
 
     #substitusi sigeg + zwnj
     (re.compile(r'ṅ‌'), 'ŋ'),
+
+    #substitusi sigeg + zwnj
+    (re.compile(rf'ān[^\S\n]+([{DAFTAR_KONSONAN}])'), rf'an{ZWNJ}\1'),
+
+    # agar aksara swara tidak jadi pasangan
+    (re.compile(rf"(?<=[{DAFTAR_KONSONAN.replace('ṙ','')}])[^\S\n]*([{VOKAL_KAPITAL}])"),
+        lambda m: ZWNJ + m.group(1)),
+
+    #zwnj akhiran an
+    (re.compile(rf'\b(\w+)(an)\b([^\S\n]+[{DAFTAR_KONSONAN}])'), lambda m: (
+        m.group(1) + rf'an{ZWNJ}' + m.group(3)
+        if sum(c in DAFTAR_VOKAL for c in m.group(1)) > 0
+        else m.group(0))),
+
 ]
 
 def hukum_penulisan(text):
-    for r, s in RE_HUKUM_PENULISAN + SUBSTITUSI_SIGEG: text = r.sub(s, text)
 
     # sisipkan ZWNJ antar pola
     def sisipkan_zwnj_pola(text, pola_list):
@@ -323,10 +333,10 @@ def hukum_penulisan(text):
 
     def buat_pola(h, targets): return [(rf"{h}\b ", t) for t in targets]
 
-    konsonan_spasi = rf"[{DAFTAR_KONSONAN.replace('ḥ','').replace('ŋ','').replace('ṙ','').replace('ñ','').replace('ṇ','')}][^\S\n]+"
+    konsonan_spasi = rf"[{DAFTAR_KONSONAN.replace('ḥ','').replace('ŋ','').replace('ṙ','').replace('ñ','').replace('ṇ','')}][^\S\n]+" #jangan masukin strip atau en dash disini
     pola_list = [
         *buat_pola("l", ["h","t"]), 
-        *buat_pola("t", ["c","l","b","k","ḍ","p"]),
+        *buat_pola("t", ["c","l","b","k","ḍ","p","g"]),
         *buat_pola("s", ["w","k","ḍ","n","s"]), 
         *buat_pola("k", ["l","w","p","ś","j","n"]),
         *buat_pola("n", ["ś","l","j","w","m"]), 
@@ -337,13 +347,22 @@ def hukum_penulisan(text):
         (konsonan_spasi, r"(s|m|ḷ|ḹ|r|w|y|ǥ|ñ|ɉ|ṅ|h|l)"),
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}](?:ṛ|ṝ))"),
+        (rf"[{DAFTAR_KONSONAN}][-–]", rf"(ḹ|ḷ|r)"),
 
-        (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])"),
+        (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{VOKAL_PANJANG}|u|ĕ])"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])"),
-
+        
         #(konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}]\b)"),
     ]
     text = sisipkan_zwnj_pola(text, pola_list)
+
+    for r, s in RE_HUKUM_PENULISAN + SUBSTITUSI_SIGEG: text = r.sub(s, text)
+
+    #cegah ya dipasangi
+    pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyrṛṝl')
+    text = re.sub(r'([y])([^\S\n]*|-)(?=([^\s]))',
+        lambda m: m.group(1)+m.group(2)+('' if m.group(3).lower() in pengecualian_ya else ZWNJ), text)
+
     return insert_zwnj_between_consonants(text)
 
 
