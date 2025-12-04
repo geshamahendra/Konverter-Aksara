@@ -57,7 +57,7 @@ PENGGANTIAN_ṙ = [
     (rf'\bhoṙwwi\b', r'horwi'),
     (rf'([{DAFTAR_VOKAL}])ṙwwi\b', r'\1rwi'),
     (rf'\bmaṙkkata\b', r'maṙkata'), #hijau
-    (rf'\bmaṙbbuk\b', r'maṙbuk'), 
+    (rf'\bm[aā]ṙbbuk\b', r'maṙbuk'), 
     #(rf'daryas', r'daṙyyas'),
 
     #pengecualian vokal u
@@ -93,18 +93,18 @@ def pisahkan_kata_ulang(teks):
     return teks
 
 def kata_baku(text):
-    
+
     """Kapitalisasi vokal awal baris dan substitusi kamus"""
-    # Kapitalisasi vokal awal baris
-    text = REGEX_CACHE['awal_baris_vokal'].sub(
-        lambda m: m.group(1) + m.group(2).upper(), text
-    )
-    
-    text = pisahkan_kata_ulang(text) 
+    #text = pisahkan_kata_ulang(text) 
 
     # Substitusi kamus
     for pattern, replacement in REGEX_CACHE['substitusi']:
         text = pattern.sub(replacement, text)
+
+    # Kapitalisasi vokal awal baris
+    text = REGEX_CACHE['awal_baris_vokal'].sub(
+        lambda m: m.group(1) + m.group(2).upper(), text
+    )
 
     # ṅ ulang
     text = re.sub(
@@ -248,36 +248,46 @@ def hukum_sigeg(text):
 
 # Kumpulan regex finalisasi — dijalankan berurutan
 RE_FINALISASI = [
-    # 1️⃣ Normalisasi spasi
+    # 1. Normalisasi spasi
     (re.compile(r'[^\S\n]+'), ' '),
 
-    # 2️⃣ Kasus spesial pasanyan nya
+    # 2. Kasus spesial pasanyan nya
     (re.compile(rf'([rhṅ])(?=nṇ?y[{DAFTAR_VOKAL}])'),
      lambda m: {'r': 'ṙ', 'h': 'ḥ', 'ṅ': 'ŋ'}[m.group(1)]),
 
-    # 3️⃣ Huruf + spasi + vokal kapital
+    # 3. Huruf + spasi + vokal kapital
     (re.compile(rf'(h|ṅ|r)(\s|-)([{VOKAL_KAPITAL}])'),
      lambda m: {'h': 'ḥ', 'ṅ': 'ŋ', 'r': 'ṙ'}[m.group(1)] + m.group(2) + m.group(3)),
 
-    # 4️⃣ Sigeg bertemu sigeg
+    # 4. Huruf + spasi + vokal non kapital
+    (re.compile(rf'(ŋ|ḥ|ṙ)(\s|-)([{VOKAL_NON_KAPITAL}])'),
+     lambda m: {'ŋ': 'ṅ', 'ḥ': 'h', 'ṙ': 'r'}[m.group(1)] + m.group(2) + m.group(3)),
+
+
+    # 5. Pengecekan jika sigeg+non kapital
+    (re.compile(rf'(ŋ|ḥ|ṙ)([{VOKAL_NON_KAPITAL}])'),
+     lambda m: f"⚠️{m.group(0)}")
+
+    # 6. Sigeg bertemu sigeg
     (re.compile(r'ṙ[^\S\n]*ŋ'), 'ṙ ṅ'),
     (re.compile(r'ḥ[^\S\n]*ŋ'), 'ḥ ṅ'),
 
-    # 5️⃣ Vokal diapit spasi → vokal dihubung tanda -
+    # 7. Vokal diapit spasi → vokal dihubung tanda -
     (re.compile(rf' ([{DAFTAR_VOKAL}]) '), r' \1-'),
 
-    # 6️⃣ Konsonan non-ṅḥṙ berdiri di antara spasi
-    #    6a. vokal + spasi + konsonan tunggal
+    # 8 Konsonan non-ṅḥṙ berdiri di antara spasi
+    #    8a. vokal + spasi + konsonan tunggal
     (re.compile(rf'([{DAFTAR_VOKAL}]) (\b(?![ṅḥṙ])[{DAFTAR_KONSONAN}]\b) '),
      r'\1-\2 '),
-    #    6b. konsonan tunggal + spasi + vokal
+    #    8b. konsonan tunggal + spasi + vokal
     (re.compile(rf' (\b(?![ṅḥṙ])[{DAFTAR_KONSONAN}]\b) ([{DAFTAR_VOKAL}])'),
      r'\1-\2 '),
 
-    # 7️⃣ Pengulangan
+    # 9. Pengulangan
     (re.compile(r'\b(\w{3,})\s+\1\b'), r'\1-\1'),
     (re.compile(r'\b(\w*?)(\w{3,})\s+\2(\w+)\b'), r'\1\2-\2\3'),
     (re.compile(r'\b(\w+)\s+\1(\w+)\b'), r'\1-\1\2'),
+
 ]
 
 # Mapping tables

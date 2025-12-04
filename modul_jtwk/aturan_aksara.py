@@ -281,17 +281,18 @@ RE_HUKUM_PENULISAN = [
     (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])'), rf'\1{ZWNJ}\2'),
     
     #konsonan rangkap setelah perpisahan kata versi sigeg
-    (re.compile(rf'([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN.replace("n","").replace("t","")}][{DAFTAR_VOKAL}][ṙḥŋ])'), rf'\1{ZWNJ}\2'), #kecuali akhiran ta-ni
+    (re.compile(rf'(?:(?<=\s)|(?<=^)|(?<![{VOKAL_PANJANG}]))([{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s+)([{DAFTAR_KONSONAN.replace("n","").replace("t","")}][{DAFTAR_VOKAL}][ṙḥŋ])'), rf'\1{ZWNJ}\2'), #kecuali akhiran ta-ni
     
     #perpisahan kata: dua suku kata akhiran suku kata panjang
     (re.compile(rf'(?<=[{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\s)([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])'), rf'{ZWNJ}\1'),
 
     #partikel lalu dilanjut suku kata
-    (re.compile(rf'(\b[{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}]\b)([^\S\n]+[{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}])'), rf'\1{ZWNJ}\2'),
+    (re.compile(rf'(\b[{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN.replace("ḥ","").replace("ŋ","").replace("ṙ","").replace("ñ","").replace("ṇ","")}]\b)([^\S\n]+[{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}])'), rf'\1{ZWNJ}\2'),
 
     #satu suku kata tertutup dilanjut rĕ
     (re.compile(rf'\b([{DAFTAR_VOKAL.replace("ṛ","").replace("ṝ","")}][{DAFTAR_KONSONAN}])[^\S\n]+([ṝṛḹḷ])'), rf'\1{ZWNJ}\2'),
 
+    (re.compile(r'ṙ[^\S\n]+ṙ'), 'ṙ'),
     (re.compile(r'-'), ' '),
     (re.compile(r'–'), ' '),  #en dash
     
@@ -347,7 +348,7 @@ def hukum_penulisan(text):
         (konsonan_spasi, r"(s|m|ḷ|ḹ|r|w|y|ǥ|ñ|ɉ|ṅ|h|l)"),
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}](?:ṛ|ṝ))"),
-        (rf"[{DAFTAR_KONSONAN}][-–]", rf"(ḹ|ḷ|r)"),
+        (rf"[{DAFTAR_KONSONAN}][-–]", rf"(ḹ|ḷ)"),
 
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{VOKAL_PANJANG}|u|ĕ])"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])"),
@@ -380,6 +381,7 @@ def finalisasi(hasil):
         '꧀ꦭꦼ': '꧀ꦭ‍ꦼ',
         #'ꦉꦴ': f'ꦉ{ZWNJ}ꦴ',
         '⏒꧇': '⏒ ꧇',
+        '?': '❓',
         '!': '',
         '_': f'{ZWNJ}',
         'ꦫ꧀ꦮ': f'ꦫ꧀ꦮ{ZWJ}',
