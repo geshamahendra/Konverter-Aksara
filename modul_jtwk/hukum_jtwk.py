@@ -263,10 +263,9 @@ RE_FINALISASI = [
     (re.compile(rf'(ŋ|ḥ|ṙ)(\s|-)([{VOKAL_NON_KAPITAL}])'),
      lambda m: {'ŋ': 'ṅ', 'ḥ': 'h', 'ṙ': 'r'}[m.group(1)] + m.group(2) + m.group(3)),
 
-
     # 5. Pengecekan jika sigeg+non kapital
     (re.compile(rf'(ŋ|ḥ|ṙ)([{VOKAL_NON_KAPITAL}])'),
-     lambda m: f"⚠️{m.group(0)}")
+     lambda m: f"⚠️{m.group(0)}"),
 
     # 6. Sigeg bertemu sigeg
     (re.compile(r'ṙ[^\S\n]*ŋ'), 'ṙ ṅ'),
