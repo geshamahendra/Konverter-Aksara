@@ -335,8 +335,7 @@ def hukum_penulisan(text):
     def buat_pola(h, targets): return [(rf"{h}\b ", t) for t in targets]
 
     konsonan_spasi = rf"[{DAFTAR_KONSONAN.replace('ḥ','').replace('ŋ','').replace('ṙ','').replace('ñ','').replace('ṇ','')}][^\S\n]+" #jangan masukin strip atau en dash disini
-    pola_list = [
-        *buat_pola("l", ["h","t"]), 
+    pola_list = [ 
         *buat_pola("t", ["c","l","b","k","ḍ","p","g"]),
         *buat_pola("s", ["w","k","ḍ","n","s"]), 
         *buat_pola("k", ["l","w","p","ś","j","n"]),
@@ -349,6 +348,8 @@ def hukum_penulisan(text):
         (konsonan_spasi, r"(ṅ(-)?[" + DAFTAR_KONSONAN + r"])"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}](?:ṛ|ṝ))"),
         (rf"[{DAFTAR_KONSONAN}][-–]", rf"(ḹ|ḷ)"),
+        (rf"l[-–]", rf"([{DAFTAR_KONSONAN}])"),
+        
 
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{VOKAL_PANJANG}|u|ĕ|i])"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])"),
@@ -358,6 +359,10 @@ def hukum_penulisan(text):
     text = sisipkan_zwnj_pola(text, pola_list)
 
     for r, s in RE_HUKUM_PENULISAN + SUBSTITUSI_SIGEG: text = r.sub(s, text)
+
+    # hapus zwnj untuk akhiran
+    text = re.sub(rf"{ZWNJ}[^\S\n]*(?=(?:ni|nir[{DAFTAR_VOKAL}]|nik[{DAFTAR_VOKAL}])(ṅ?))", "", text)
+
 
     #cegah ya dipasangi
     pengecualian_ya = set(VOKAL_NON_KAPITAL + 'wyrṛṝl')

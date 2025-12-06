@@ -1,142 +1,25 @@
-from modul_jtwk.konstanta import DAFTAR_VOKAL, DAFTAR_KONSONAN, SH
+from modul_jtwk.konstanta import DAFTAR_VOKAL, DAFTAR_KONSONAN, SH, VOKAL_PANJANG
 
-substitutions = {
-    #Aksara Suci
-    'Ai': 'Ꜽ', 'Au': 'Ꜷ', r'(\*|\#)[Oo]m': r'\1Ōṃ',
-    'ai': 'ꜽ', 'au': 'ꜷ', 
-    'ng': 'ṅ', r'\b^h' : 'ʰ',
-
-    #Pembalik layar-mahaprana
-    rf'[rṙᶉ]([{DAFTAR_KONSONAN.replace("t","").replace("w","").replace("ś","")}])\1': r'r\1', 
-    r'[rṙ]kk': r'rk', r'[rṙ]ṭṫ': r'rṫ', 
-    r'[rṙ]gǥ': r'rǥ', r'[rṙ]bƀ': r'rƀ', 
-    r'[rṙ]ṇn': r'rn', r'[rṙ]dd': r'rd', 
-    r'[rṙ]dḍ': r'rḍ', r'[rṙ]cc': r'rc', 
-    r'[rṙ]tŧ': r'rŧ', r'[rṙ]kꝁ': r'rꝁ',
-    r'[rṙ]pꝑ': r'rꝑ', r'[rṙ]jɉ': r'rɉ',
-    r'[rṙ]ṇṇ': r'rṇ', r'[rṙ]nn': r'rn',
-    r'[rṙ]dđ': r'rđ', r'[rṙ]dḋ': r'rḋ',
-    r'[rṙ]cꞓ': r'rꞓ',  
-
-    #khusus ṙṇṇ tidak ada di jawa kuno
-    r'[rṙ]ṇ': r'rn',
-
-    #===================#
-
-    r'\b[Aa]wi[gǥ]?(h)?namastu\b': r'`Awiǥnamāstu',
-    r'[sś][aā]nti': r'śānti', 
-    r'r[eèĕ]?sn((?![' + DAFTAR_KONSONAN + ']))': r'rĕṣṇ', 
+kamus_inti = {
+    
     
     #aturan baku
     r'lĕṅlĕṅ':'lĕŋlĕŋ', r'nuṅ(s|t)uṅ':r'nuŋ\1uṅ',
     r'rĕṅrĕṅ':'rĕŋrĕṅ',
-
-    #en dash khusus
-    r'(rĕs)(?: |-)(?=rĕs)': r'\1–',
-
-    r'\bsa[ṅn]k[sṣ][eèé]pa': 'saŋkṣepa',
-    rf'\bsa[nṅ](s|ṣ)ipt([{DAFTAR_VOKAL}])': r'saŋ\1ipt\2',
-    r'\bsa[n|ṅ]ṣipta': 'saŋṣ',
-    r'ṅkt': 'ŋkt', r'ṅ[ṣs][ṭt]r': 'ŋṣṭr', rf'ṅsk': r'ŋsk',
     
     #suku kata khusus
     #rf'\b([{DAFTAR_KONSONAN}]+)a([{DAFTAR_KONSONAN}]+[^\S\n]+[{DAFTAR_KONSONAN}])': r'\1ā\2',
     #rf'\b([{DAFTAR_KONSONAN}]+)i([{DAFTAR_KONSONAN}]+[^\S\n]+[{DAFTAR_KONSONAN}])': r'\1ī\2',
     #rf'\b([{DAFTAR_KONSONAN}]+)u([{DAFTAR_KONSONAN}]+[^\S\n]+[{DAFTAR_KONSONAN}])': r'\1ū\2',
     #rf'\b([{DAFTAR_KONSONAN}]+)ĕ([{DAFTAR_KONSONAN}]+[^\S\n]+[{DAFTAR_KONSONAN}])': r'\1ö\2',
-    
-    # Hukum Imbuhan sanskrit
-    # Regex substitusi
-    r'\b(nir|dur|pār|dūr)(?![' + DAFTAR_VOKAL + 'bngmjl])' : r'\1\\', #|pur|tir|sir|sar|har|kar|mar|war|yar|gar|bar|ꞓar
-    r'\bnir(g)': r'nir\\\1', #nir guna
-    r'\bnir(l)': r'nir\\\1', #nir labha
-    r'\bdur\\(y|n)': r'dur\1', #durya
-    r'\bpar\\(w)': r'par\1', #parwa 
-
-    rf'\b(pĕr|bĕr|tĕr|mĕṅ)([{DAFTAR_KONSONAN}])(\w*)':
-        lambda m: f'{m.group(1)}{SH}{m.group(2)}{m.group(3)}'
-        if sum(c in DAFTAR_VOKAL for c in m.group(3).lower()) > 1 else m.group(0),
-
-    # Imbuhan aṅr / āṅr
-    r'(?:\b(m|p)aṅr|(\w+)āṅr|([{DAFTAR_KONSONAN}]) aṅr)(\w+)': lambda m: (
-        (m.group(1) or m.group(2) or m.group(3)) +
-        ('aŋ' if m.group(1) or m.group(3) else 'āŋ') +
-        r'r' + m.group(4)
-        if sum(c in DAFTAR_VOKAL for c in m.group(4)) >= 2 else m.group(0)
-    ),
-
-    # Imbuhan aṅrw / āṅrw[aā]
-    r'(?:\b(m|p)aṅrw|(\w+)āṅrw|([{DAFTAR_KONSONAN}]) aṅrw)(a|ā)': lambda m: (
-        (m.group(1) or m.group(2) or m.group(3)) +
-        ('aŋ' if m.group(1) or m.group(3) else 'āŋ') +
-        r'\rw' + m.group(4)
-    ),
-    
-    # Imbuhan aṅrĕ
-    r'(?:\b(m|p)aṅrĕ|(\w+)āṅrĕ|([{DAFTAR_KONSONAN}]) aṅrĕ)(e|ĕ)': lambda m: (
-        (m.group(1) or m.group(2) or m.group(3)) +
-        ('aŋ' if m.group(1) or m.group(3) else 'āŋ') +
-        rf'{SH}rĕ' + m.group(4)
-    ),
-
-    # Imbuhan aṅ lainnya (selain g/k), dipecah jadi dua
-    # Imbuhan aṅ intra-kata (tidak melibatkan konsonan + spasi)
-    rf'(?:\b(m|p)aṅ|(\w+)āṅ)((?![gk])[{DAFTAR_KONSONAN}])(\w+)': (
-        lambda m: (
-            (m.group(1) or m.group(2))
-            + ('aŋ' if m.group(1) else 'āŋ')
-            + m.group(3) + m.group(4)
-            if sum(c in DAFTAR_VOKAL for c in m.group(4)) >= 2
-            else m.group(0)
-        )
-    ),
-    # Imbuhan aṅ antar-kata (konsonan + spasi + aṅ)
-    rf'([{DAFTAR_KONSONAN}])[^\S\n]+aṅ((?![gk])[{DAFTAR_KONSONAN}])(\w+)': (
-        lambda m: (
-            m.group(1)+ ' '+ 'aŋ'+ m.group(2)+ m.group(3)
-            if sum(c in DAFTAR_VOKAL for c in m.group(3)) >= 2
-            else m.group(0)
-        )
-    ),
-
-    #aṅ sastra lampah diawali konsonan rangkap
-    rf'(r[wy])aṅ((?![gk])[{DAFTAR_KONSONAN}])(\w+)': (
-        lambda m: (
-            m.group(1)
-            + 'aŋ'
-            + m.group(2)
-            + m.group(3)
-            if sum(c in DAFTAR_VOKAL for c in m.group(3)) >= 2
-            else m.group(0)
-        )
-    ),
-
-    #pendekkan akhiran ān
-    rf'\b(\w+)(ān)([^\S\n]+[{DAFTAR_KONSONAN}])': (
-        lambda m: (
-            m.group(1) + 'an' + m.group(3)
-            if sum(c in DAFTAR_VOKAL for c in m.group(1)) > 0
-            else m.group(0)
-        )
-    ),
-
-    #tambahan aṅ khusus
-    r'aṅ(jrah)\b': r'aŋ\1',
-    r'(\w)āṅ(jrah)\b': r'\1āŋ\2',
-
-    #an khusus
-    r'an jrih': r'añ jrih',
-    r' n ton': r' nton',
-
-    #rf'\bm([āa])r([{DAFTAR_KONSONAN}])': r'mar\\\2',
 
     #Kasus khusus
     r'duh(k|ꝁ)(ita|[' + DAFTAR_VOKAL + '])' : r'duḥꝁ\2', #duhka duhkita
     r'rwarw(a|ā|â)' : r'rwa-rw\1', # rwa rwa
     r'\b(p|m)?aṅlĕ' : r'\1aŋlĕ', r'(\w)āṅlĕ' : r'\1āŋlĕ',
-    r'(ā|a)ḥniṅ\b' : r'\1hniṅ',
+    r'(ā|a|â)ḥniṅ\b' : r'\1hniṅ',
     r'\bmasku\b' : r'māsku',
-    r'[ꜽe]rtali' : r'ꜽr\\tali',
+    r'[ꜽe]rtal([iy])' : r'ꜽr\\tal\1',
 
     #=================#
 
@@ -146,11 +29,6 @@ substitutions = {
     #rf'\b([{DAFTAR_KONSONAN}])u([{DAFTAR_KONSONAN}]\s*[{DAFTAR_KONSONAN}])': r'\1ū\2',
 
     #=============================
-
-    #akhiran khusus
-    r'ṅ(ni|nira|nire|nik)(ṅ?)\b': r'ŋ\1\2',
-    r'h(ni|nira|nire|nik)(ṅ?)\b': r'ḥ\1\2',
-    r'r(ni|nira|nire|nik)(ṅ?)\b': r'r\\\1\2',
     #rf'ṅny([{DAFTAR_VOKAL}])': r'ŋ\\ny\1',
     #rf'hny([{DAFTAR_VOKAL}])': r'ḥ\\ny\1',
     #rf'ṙny([{DAFTAR_VOKAL}])': r'ṙ\\ny\1',
@@ -166,8 +44,7 @@ substitutions = {
     #khusus ry
     r'\bduryan\b': 'dūryan', r'\daryas\b': 'dāryas',
     r'\bky[aā]t[iī]\b': 'ꝁyāti', r'\bky[aā]t(iī)(\w)': r'ꝁyāt\1\2', 
-    r'muka': 'muꝁa', rf'muk([{DAFTAR_VOKAL}])(\w)': r'muꝁ\1\2',
-    r'[aā]pt([iy])': r'āpt\1',
+    r'[aāâ]pt([iy])': r'āpt\1',
 
     r'\bkar[ĕe]na': 'karĕṇa', r'\bwau\b': 'wawu',
     r'\bwong\b': 'wwoṅ', r'\bṅka': 'ṅkā', 
@@ -193,7 +70,7 @@ substitutions = {
     
     r'[sś]unya': 'śūnya', r'budi': 'budđi', r'ƀasm': 'ƀaṣm', 
     r'([pc])urna': r'\1ūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
-    r'purwa': 'pūrwa', r'[sś][iī]rna': 'śīrna', 
+    r'purwa': 'pūrwa', 
     r'murt(t)?([iy])': r'mūrtt\2',
     r'kirt(t)?([iy])': r'kīrtt\2', 
     r'prapta': 'prāpta',
@@ -231,7 +108,7 @@ substitutions = {
     
     r'\bb([aā])na': r'b\1ṇa',
     r'osad': 'oṣad', r'bhagya': 'bhāgya',
-    r'ƀaskar': 'ƀaṣkar', r'dĕp': 'ḍĕp', r'k[aā]n[tṭ]a': 'kaṇṭa', r'br[aā]hm': 'brahm',
+    r'ƀaskar': 'ƀaṣkar', r'dĕp': 'ḍĕp', r'k[aā]n[tṭ]a\b': 'kaṇṭa', r'br[aā]hm': 'brahm',
     r'brahmana': 'brahmaṇa', 
     
     r'\byasa\b': 'yaśa', r'esti\b': 'eṣṭi', 
@@ -256,11 +133,11 @@ substitutions = {
     r'pininda': r'pininḍa', r'(ta|sa)[nṇ]diṅ': r'\1ṇḍiṅ', r'pandan': r'panḍan', r'gundik': r'gunḍik', r'k[eĕ]ndaṅ': r'kĕnḍaṅ', 
 
     #pendekkan
+    r'āścāry': 'āścary', 
     r'\bs[aā]smrĕti': 'sasmrĕti',  r'c[iī]tta': 'citta',
     r'([pd])āksa': r'\1aksa', 
     r'wākt(r?)a': r'wakt\1a', r'\b[sś][uū]kl': 'śukl',  
-    r'\bārja': 'arja', r'(\w{2,})[āa]rja': r'\1ārja', 
-    r'mātya': 'matya', r'māntuk': 'mantuk', 
+    r'māntuk': 'mantuk', 
     r'd[iī](b|w)ya': r'di\1ya', 
     r'[ƀb][uū]kt([iy])': r'ƀukt\1',
     r'b[aā]y([uw])': r'bāy\1',
@@ -276,7 +153,8 @@ substitutions = {
     #konsonan ganda
     r'm[aā]rtyaloka': 'marttyaloka', r't[aā]twa': 'tattwa', r'jag[aā]ttraya': 'jagattraya', 
 
-    rf'b[aā][hḥ]n([{DAFTAR_VOKAL}]|y)': r'bahn\1', 
+    rf'b[aā][hḥ]n([{DAFTAR_VOKAL}]|y)': r'bahn\1',
+    rf'\b(m|p)āt([{DAFTAR_VOKAL}]|y)': r'\1at\2',  
     rf'[sś][aā]str([{DAFTAR_VOKAL}])': r'śāstr\1', 
     rf's[aā]ṅsay([{DAFTAR_VOKAL}])': r'saṅśay\1',
     rf'p[aā]n[ḍd]it([{DAFTAR_VOKAL}])': r'paṇḍit\1',
@@ -310,8 +188,12 @@ substitutions = {
     rf'pa[dḍ]([{DAFTAR_VOKAL}])(?!dway)': r'paḍ\1',
     rf'pram([aā])n([{DAFTAR_VOKAL}])': r'pram\1ṇ\2',
     rf'k[sṣ]a[ṇn]([{DAFTAR_VOKAL}])': r'kṣaṇ\1',
+    rf'sury([{DAFTAR_VOKAL}])': r'sūry\1',
     rf'm[aā]rg([{DAFTAR_VOKAL}])(?!lawu)': r'mārg\1',
-    rf'(?<!u)(?<!kahawa)(?<!krū)(?<![{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])r([{DAFTAR_VOKAL}])n([{DAFTAR_VOKAL.replace("ĕ","")}])': r'r\1ṇ\2',
+    rf'(?<!u)(?<!kahawa)(?<!krū)(?<![{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])r([{DAFTAR_VOKAL.replace("ā","")}])n([{DAFTAR_VOKAL.replace("ĕ","")}])': r'r\1ṇ\2',
+    rf'(?<! [{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}])(?<![{DAFTAR_KONSONAN}][{VOKAL_PANJANG}])muk([{DAFTAR_VOKAL}])': r'muꝁ\1',
+    rf'[ṣsś][iī]rn([{DAFTAR_VOKAL}])': r'śīrn\1', 
+    rf'k[iī]rn([{DAFTAR_VOKAL}])': r'kīrn\1', 
 
     #bisa merubah wirama
     r'ṅuni': 'ṅūni', r'\brah' : 'rāh',
@@ -344,22 +226,13 @@ substitutions = {
 
     #vokal awal atau suku kata terbuka
     #bunyi a
-    r'\bā(kra|kweh|rđ|ṅlih|gya|mbĕk|[sś]ray|psara|mrĕta|mrih|ntara|stra|gra|hyun|ntaka|glis|sraṅ|sya|ksi|ṅhiṅ|hya|ṅga|ntĕn|dƀut)': r'a\1', 
+    r'\b([āâ])(kra|kweh|rđ|ṅlih|gya|mbĕk|[sś]ray|psara|mrĕta|mrih|ntara|stra|gra|hyun|ntaka|glis|sraṅ|sya|ksi|ṅhiṅ|hya|ṅga|ntĕn|dƀut|gny)': r'a\1', 
     
-    rf'(?<!^nir)(?<! aṅ)(?<![{DAFTAR_KONSONAN}]y)(?<![{DAFTAR_KONSONAN}]w)(?<!\snir)(?<!\saw)(?<!^s)(?<!\ss)(?<!\s)(?<!<)(?<!\{{)a(kra|kweh|rđ|ṅlih|gya|mbĕk|psara|mrĕta|mrih|ntara|stra|gra|hyun|ntaka|glis|sraṅ|sya|ksi|ṅhiṅ|gni|hya|ṅga|ntĕn|dƀut)': r'ā\1',
+    rf'(?<!^nir)(?<! aṅ)(?<! [{DAFTAR_KONSONAN}])(?<![{DAFTAR_KONSONAN}]y)(?<![{DAFTAR_KONSONAN}]w)(?<!\snir)(?<!\saw)(?<!^s)(?<!\ss)(?<!\s)(?<!<)(?<!\{{)a(kra|kweh|rđ|ṅlih|gya|mbĕk|psara|mrĕta|mrih|ntara|stra|gra|hyun|ntaka|glis|sraṅ|sya|ksi|ṅhiṅ|gni|hya|ṅga|ntĕn|dƀut|gny)': r'ā\1',
 
     #bunyi i
     r'\b[iī](ndr)': r'i\1', 
     rf'(?<!nir)(?<!<)(?<!\{{)(?<!\s)[iī](ndr)': r'ī\1',
-
-    
-
-    #############################################################
-
-    #pemisah kata ulang
-    r'\b([A-Za-z]{2,}?)(?=(?!–)\1\b)' : r'\1-',# kecualikan en dash
-    #kembalikan kata ulang
-    r'\b(sum)-\1': r'\1\1',
 
     #backsplash buat pemutus
     r'\\\|': '\u200D',  # input literal \| jadi ZWJ

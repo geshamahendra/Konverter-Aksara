@@ -1,5 +1,6 @@
 import re
-from modul_jtwk.kamus_jtwk import substitutions
+from modul_jtwk.kamus_filter import kamus_filter
+from modul_jtwk.kamus_jtwk import kamus_inti
 from modul_jtwk.konstanta import VOKAL_NON_KAPITAL, DAFTAR_VOKAL, DAFTAR_KONSONAN, SEMI_VOKAL, TIDAK_DIGANDAKAN, VOKAL_PANJANG, SH, VOKAL_KAPITAL
 
 # Pre-compiled regex patterns
@@ -9,7 +10,8 @@ REGEX_CACHE = {
     'awal_baris_vokal': re.compile(rf'(^|\n)([{DAFTAR_VOKAL}])', re.MULTILINE),
     'non_huruf_vokal': re.compile(rf'([^\w\s-]|ṃ)(\s*)([{DAFTAR_VOKAL}])'),
     'backtick_vokal': re.compile(rf'`([{DAFTAR_VOKAL}])'),
-    'substitusi': [(re.compile(p), r) for p, r in substitutions.items()],
+    'kamus_filter': [(re.compile(p), r) for p, r in kamus_filter.items()],
+    'kamus_inti': [(re.compile(p), r) for p, r in kamus_inti.items()],
 }
 
 # Rule sets
@@ -95,8 +97,11 @@ def pisahkan_kata_ulang(teks):
 def kata_baku(text):
 
     """Kapitalisasi vokal awal baris dan substitusi kamus"""
-    # Substitusi kamus
-    for pattern, replacement in REGEX_CACHE['substitusi']:
+    # Substitusi kamus filter
+    for pattern, replacement in REGEX_CACHE['kamus_filter']:
+        text = pattern.sub(replacement, text)
+    # Substitusi kamus inti
+    for pattern, replacement in REGEX_CACHE['kamus_inti']:
         text = pattern.sub(replacement, text)
 
     # Kapitalisasi vokal awal baris
@@ -104,7 +109,7 @@ def kata_baku(text):
         lambda m: m.group(1) + m.group(2).upper(), text
     )
 
-    #text = pisahkan_kata_ulang(text) 
+    text = pisahkan_kata_ulang(text) 
 
     # ṅ ulang
     text = re.sub(
