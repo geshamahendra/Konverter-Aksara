@@ -22,7 +22,7 @@ RE_KONSONAN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁ
 ZWNJ = '\u200C'
 ZWJ = '\u200D'
 # Definisi ṝḹṛḷ sebagai vokal
-VOWELS = 'aiuĕāâîīûūêôeèéöëoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
-VOKAL_PENDEK = 'aiuĕAIUĔṛḷ❓'
-VOKAL_PANJANG = 'āâîīûūêôeèéëöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹ'
+VOWELS = 'aiuĕāâîīûūêôeèéöëoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṚḶṜḸṝḹṛḷ❓'
+VOKAL_PENDEK = 'aiuĕAIUĔṚṛḶḷ❓'
+VOKAL_PANJANG = 'āâîīûūêôeèéëöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṜṝḸḹ'
 KHUSUS_KONSONAN = 'ŋḥṙṃ'

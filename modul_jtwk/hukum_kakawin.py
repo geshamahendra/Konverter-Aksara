@@ -14,17 +14,16 @@ ENABLE_KONSONAN_GANDA_CHECK = _ENABLE_KONSONAN_GANDA_CHECK_STR.lower() in ('true
 
 # --- Regex dan Konstanta Lainnya ---
 RE_METRUM_SIMBOL = re.compile(r'[—⏑⏓]')
-RE_VOKAL_KAKAWIN = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶṝḹṛḷ❓]')
+VOKAL_KAKAWIN = 'aiuĕāâîīûūêôeèéöëoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṚḶṜḸṝḹṛḷ❓'
+RE_VOKAL_KAKAWIN = re.compile(r'[aiuĕāâîīûūêôeèéōöŏoꜽꜷAĀÂIĪÎUŪÛOŎŌÔEÊÉÈꜼꜶṚḶṜḸṝḹṛḷ❓]')
+KONSONAN_KAKAWIN = "bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳʰ–"
 RE_KONSONAN_KAKAWIN = re.compile(r'[bcdfghjɉklmnpꝑqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳʰ–]') #en-dash
-ZWNJ = '\u200C'
-ZWJ = '\u200D'
-# Definisi ṝḹṛḷ sebagai vokal
-VOKAL_KAKAWIN = 'aiuĕāâîīûūêôeèéöëoōŏꜽꜷAIUĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹṛḷ❓'
-VOKAL_PENDEK_KAKAWIN = 'aiuĕAIUĔṛḷ❓'
-VOKAL_PANJANG_KAKAWIN = 'āâîīûūêôeèéëöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṝḹ'
 KONSONAN_KHUSUS = 'ŋḥṙṃ'
 RE_KONSONAN_KHUSUS = re.compile(r'[ŋḥṙṃ]')
-KONSONAN_KAKAWIN = "bcdfghjɉklmnpqrstvwyzḋḍđŧṭṣñṇṅꝁǥꞓƀśḳ"
+VOKAL_PENDEK_KAKAWIN = 'aiuĕAIUĔṚḶṛḷ❓'
+VOKAL_PANJANG_KAKAWIN = 'āâîīûūêôeèéëöoōŏꜽꜷĀÂÎĪÛŪÊŎÔŌꜼꜶṜḸṝḹ'
+ZWNJ = '\u200C'
+ZWJ = '\u200D'
 
 # Kamus Pemetaan Vokal
 VOKAL_PENDEK_KE_PANJANG = {
@@ -294,10 +293,15 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                 #vokal1+spasi/tanda hubung+vokal2
                 if re.fullmatch(r'([^\S\n]|-)*', text_between):
                     if v1_lower_temp in VOKAL_KAKAWIN and v2_lower_temp in VOKAL_KAKAWIN:
-                        # Langkah 1 (Baru): Terapkan kapitalisasi secara eksplisit
+                        #Langkah 1 : Sesuaikan metrum pada vokal v1 dahulu
+                        new_vokal_v1 = v1_lower_temp
+                        final_v1 = cek_vokal_awal_kata(new_vokal_v1, idx1, line, met1, RE_KONSONAN_KAKAWIN, RE_VOKAL_KAKAWIN, KONSONAN_KHUSUS)
+                        hasil_line[idx1] = final_v1
+
+                        # Langkah 2 : Terapkan kapitalisasi secara eksplisit
                         new_vokal_v2 = v2.upper()
 
-                        # Langkah 2 (Baru): Lakukan pemanjangan/pemendekan berdasarkan metrum vokal2
+                        # Langkah 3 : Lakukan pemanjangan/pemendekan berdasarkan metrum vokal2
                         final_v2 = cek_vokal_awal_kata(new_vokal_v2, idx2, line, met2, RE_KONSONAN_KAKAWIN, RE_VOKAL_KAKAWIN, KONSONAN_KHUSUS)
                         hasil_line[idx2] = final_v2
 
@@ -355,26 +359,26 @@ def proses_puisi_buffer(puisi_buffer, current_metrum):
                         if konsonan_count == 1:
                             should_capitalize = True
                     
-                    kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
-                    kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
+                        kata_v1 = next((k for k in kata_list if k[0] <= idx1 < k[1]), None)
+                        kata_v2 = next((k for k in kata_list if k[0] <= idx2 < k[1]), None)
 
-                    if kata_v1 and kata_v2 and kata_v1 != kata_v2:
-                        akhir_kata1 = kata_v1[2]
-                        idx_v1_relatif = idx1 - kata_v1[0]
-                        if idx_v1_relatif + 1 < len(akhir_kata1):
-                            konsonan_akhir_kata1 = akhir_kata1[idx_v1_relatif + 1]
-                            text_between_words = line[kata_v1[1]:idx2]
+                        if kata_v1 and kata_v2 and kata_v1 != kata_v2:
+                            akhir_kata1 = kata_v1[2]
+                            idx_v1_relatif = idx1 - kata_v1[0]
+                            if idx_v1_relatif + 1 < len(akhir_kata1):
+                                konsonan_akhir_kata1 = akhir_kata1[idx_v1_relatif + 1]
+                                text_between_words = line[kata_v1[1]:idx2]
 
-                            if re.search(r'[ -]+', text_between_words) and not any(RE_KONSONAN_KAKAWIN.match(char) for char in text_between_words.replace(' ', '').replace('-', '')):
-                                if kata_v2 and len(kata_v2[2]) > 0 and kata_v2[2][0] == v2_lower_temp:
-                                    # Cek dan sesuaikan vokal awal kata terhadap jumlah konsonan di belakangnya
-                                    vokal_final = cek_vokal_awal_kata(v2, idx2, line, met2, RE_KONSONAN_KAKAWIN, RE_VOKAL_KAKAWIN, KONSONAN_KHUSUS)
+                                if re.search(r'[ -]+', text_between_words) and not any(RE_KONSONAN_KAKAWIN.match(char) for char in text_between_words.replace(' ', '').replace('-', '')):
+                                    if kata_v2 and len(kata_v2[2]) > 0 and kata_v2[2][0] == v2_lower_temp:
+                                        # Cek dan sesuaikan vokal awal kata terhadap jumlah konsonan di belakangnya
+                                        vokal_final = cek_vokal_awal_kata(v2, idx2, line, met2, RE_KONSONAN_KAKAWIN, RE_VOKAL_KAKAWIN, KONSONAN_KHUSUS)
 
-                                    # Logika kapitalisasi (ini terpisah dan selalu diperiksa)
-                                    if should_capitalize:
-                                        vokal_final = vokal_final.upper()
+                                        # Logika kapitalisasi (ini terpisah dan selalu diperiksa)
+                                        if should_capitalize:
+                                            vokal_final = vokal_final.upper()
 
-                                    hasil_line[idx2] = vokal_final
+                                        hasil_line[idx2] = vokal_final
 
                 #konsonan+vokal1+konsonan+vokal2
                 # Refactor 1: Gabungkan logika serupa

@@ -350,7 +350,7 @@ def hukum_penulisan(text):
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}](?:ṛ|ṝ))"),
         (rf"[{DAFTAR_KONSONAN}][-–]", rf"(ḹ|ḷ)"),
 
-        (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{VOKAL_PANJANG}|u|ĕ])"),
+        (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{VOKAL_PANJANG}|u|ĕ|i])"),
         (konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])"),
         
         #(konsonan_spasi, rf"([{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}][{DAFTAR_KONSONAN}][{DAFTAR_VOKAL}]\b)"),

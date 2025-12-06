@@ -7,7 +7,7 @@ substitutions = {
     'ng': 'ṅ', r'\b^h' : 'ʰ',
 
     #Pembalik layar-mahaprana
-    rf'[rṙᶉ]([{DAFTAR_KONSONAN.replace("t","").replace("w","")}])\1': r'r\1', 
+    rf'[rṙᶉ]([{DAFTAR_KONSONAN.replace("t","").replace("w","").replace("ś","")}])\1': r'r\1', 
     r'[rṙ]kk': r'rk', r'[rṙ]ṭṫ': r'rṫ', 
     r'[rṙ]gǥ': r'rǥ', r'[rṙ]bƀ': r'rƀ', 
     r'[rṙ]ṇn': r'rn', r'[rṙ]dd': r'rd', 
@@ -124,14 +124,19 @@ substitutions = {
     r'aṅ(jrah)\b': r'aŋ\1',
     r'(\w)āṅ(jrah)\b': r'\1āŋ\2',
 
+    #an khusus
+    r'an jrih': r'añ jrih',
+    r' n ton': r' nton',
+
     #rf'\bm([āa])r([{DAFTAR_KONSONAN}])': r'mar\\\2',
 
     #Kasus khusus
     r'duh(k|ꝁ)(ita|[' + DAFTAR_VOKAL + '])' : r'duḥꝁ\2', #duhka duhkita
     r'rwarw(a|ā|â)' : r'rwa-rw\1', # rwa rwa
-    r'\b(p|m)?aṅlĕ' : r'\1a lĕ',
+    r'\b(p|m)?aṅlĕ' : r'\1aŋlĕ', r'(\w)āṅlĕ' : r'\1āŋlĕ',
     r'(ā|a)ḥniṅ\b' : r'\1hniṅ',
     r'\bmasku\b' : r'māsku',
+    r'[ꜽe]rtali' : r'ꜽr\\tali',
 
     #=================#
 
@@ -143,7 +148,7 @@ substitutions = {
     #=============================
 
     #akhiran khusus
-    r'ṅ(ni|nira|nire|nik|)(ṅ?)\b': r'ŋ\1\2',
+    r'ṅ(ni|nira|nire|nik)(ṅ?)\b': r'ŋ\1\2',
     r'h(ni|nira|nire|nik)(ṅ?)\b': r'ḥ\1\2',
     r'r(ni|nira|nire|nik)(ṅ?)\b': r'r\\\1\2',
     #rf'ṅny([{DAFTAR_VOKAL}])': r'ŋ\\ny\1',
@@ -160,21 +165,18 @@ substitutions = {
     
     #khusus ry
     r'\bduryan\b': 'dūryan', r'\daryas\b': 'dāryas',
-
-    r'\b[aā]d[bƀ]u[tŧ]': 'adƀut', 
-    rf'([{DAFTAR_KONSONAN}])[aā]d[bƀ][uū][tŧ]': r'\1ādƀut', #adbhutha
     r'\bky[aā]t[iī]\b': 'ꝁyāti', r'\bky[aā]t(iī)(\w)': r'ꝁyāt\1\2', 
     r'muka': 'muꝁa', rf'muk([{DAFTAR_VOKAL}])(\w)': r'muꝁ\1\2',
+    r'[aā]pt([iy])': r'āpt\1',
 
     r'\bkar[ĕe]na': 'karĕṇa', r'\bwau\b': 'wawu',
-    r'\bwong\b': 'wwoŋ', r'\bṅka': 'ṅkā', r'ndĕ([ms])': r'nḍĕ\1',
+    r'\bwong\b': 'wwoṅ', r'\bṅka': 'ṅkā', 
     r'nadah': r'naḍah',
     r'\bsasa[nṅ]ka\b': 'śaśāṅka', r'\b[ṣsś]r[iī]\b': 'śrī', r'\brsi\b': 'ṛṣi',
     r'siwa': 'śīwa', r'ganesha': 'ganèśa', r'mataram': 'matāram',
     r'wi[sś][èe]sa': 'wiśèṣa', r'\bmas\b': 'mās', r'dosa': 'doṣa', r'\blati': 'laṭi',
     r'[tṭŧ]a[tṭŧ]it': 'taṭit',
     
-
     r'nirb[āa][nṇ](a|ā)': r'nirbāṇ\1',
 
     r'[iī][sś]wara': 'īśwara',
@@ -190,7 +192,7 @@ substitutions = {
     r'(\w)aṅde\b': r'\1āṅde',
     
     r'[sś]unya': 'śūnya', r'budi': 'budđi', r'ƀasm': 'ƀaṣm', 
-    r'purna': 'pūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
+    r'([pc])urna': r'\1ūrna', r'hidĕp': 'hiḍĕp', r'rĕsi':'rĕṣi', 
     r'purwa': 'pūrwa', r'[sś][iī]rna': 'śīrna', 
     r'murt(t)?([iy])': r'mūrtt\2',
     r'kirt(t)?([iy])': r'kīrtt\2', 
@@ -200,9 +202,10 @@ substitutions = {
     r'naŧa': 'nāŧa',
     r'prabu': 'praƀu', r'gun(a|ā)': r'guṇ\1', 
     r'\bmèga\b': 'mèǥa', r'\brat\b': 'rāt',
+    r'g[āa][ṇn][dḍ]ew': 'gāṇḍew',
     r'\bbra\b': 'ƀra', r'\b[bƀ]a[tŧṭ]ar': 'ƀaṭār', r'\bs[aā]mpun\b': 'sampun', r'wakpatu': 'wākpaṭu', 
     r'\bwirya': 'wīrya', r'wisa': 'wiṣa', #r'\brasa\b': 'raṣa', 
-    r'uksma': 'ūkṣma', r'\bs[eĕ][dḍ][eĕ]ṅ\b': 'sĕḍĕṅ',
+    r'uksma': 'ūkṣma', 
     r'\bmaha(?!ntĕn)': 'mahā', 
     r'\bmahar[sṣ]i': 'mahāṙṣi',
 
@@ -213,28 +216,39 @@ substitutions = {
     r'r[aā]mya': 'ramya', r'[sś]iǥra': 'śīǥra', r's[aā]k[sṣ][aā]t': 'sākṣāt', r'maṅsa': 'māṅsa',
     r'[dḍ]at[ĕe]ṅ': 'ḍatĕṅ', r'ratri': 'rātri', 
     r'm(u|e)sti\b': r'm\1ṣṭi',
-    r'hid(ĕ|e)p': 'hiḍĕp', r'yogi[sś]wara': 'yogīśwara', r'dusta': 'duṣṭa', r'makuta': 'makuṭa', r'man(i|ī)': r'maṇ\1',  r'\bsirna\b': 'śīrna', r'\b[sś]ar[iī]ra': 'śarīra', r'atma': 'ātma', r'pranata': 'praṇata',  r'sꝑatik': 'sꝑaṭik', 
+    r'hid(ĕ|e)p': 'hiḍĕp', r'yogi[sś]wara': 'yogīśwara', r'dusta': 'duṣṭa', r'makuta': 'makuṭa', r'man(i|ī|y)': r'maṇ\1',  r'\bsirna\b': 'śīrna', r'\b[sś]ar[iī]ra': 'śarīra', r'atma': 'ātma', 
+    r'pranata': 'praṇata',  
+    r'sꝑatik': 'sꝑaṭik',
+    r'ǥosa': 'ǥoṣa', 
     r'k(a|ā)r(a|ā)na': r'k\1r\2ṇa',  r'patni': 'patnī', r'drĕ[ḍđ]a': 'drĕḋa', r'saṅkya': 'saṅꝁya', r'bakti': 'ƀakti', r'nipuna': 'nipuṇa', r'ƀarana': 'ƀaraṇa', r'ka[tṭ][uū][nṅ]ka': 'kaṭuṅka',
     r'(?<!~)\brana\b': 'raṇa', 
+    r'\bwana\b': 'waṇa',
     
     r'(?<!ga)gana\b': r'gaṇa', r'\bgana\b': r'gaṇa',
     r'raksasa': 'rākṣasa', r'samānta': r'samanta',
     r'r[aā]ksa(\w?)\b': r'rakṣa\1', r'kĕdap': 'kĕḍap',
     r'k([ou])t([iy])': r'k\1ṭ\2', r'paramarŧa': 'paramārŧa',
     
-    r'ksana': 'kṣaṇa', r'\bb([aā])na': r'b\1ṇa',
-    r'osad': 'oṣad', r'bhagya': 'bhāgya', r'k[sṣ]a[ṇn]': 'kṣaṇ',
-    r'ƀaskar': 'ƀaṣkar', r'dĕp': 'ḍĕp', r'k[aā]n[tṭ]a': 'kaṇṭa', r'br[aā]hm': 'brahm', r'\byasa\b': 'yaśa', r'esti\b': 'eṣṭi', 
+    r'\bb([aā])na': r'b\1ṇa',
+    r'osad': 'oṣad', r'bhagya': 'bhāgya',
+    r'ƀaskar': 'ƀaṣkar', r'dĕp': 'ḍĕp', r'k[aā]n[tṭ]a': 'kaṇṭa', r'br[aā]hm': 'brahm',
+    r'brahmana': 'brahmaṇa', 
+    
+    r'\byasa\b': 'yaśa', r'esti\b': 'eṣṭi', 
     
     r'pudak': 'puḍak', r'aṅin(\s?)dar[aā]t': 'aṅiṇḍarat', r'darat': 'ḍarat', r'([tn])unda': r'\1unḍa', r'kinanta': 'kinanṭa',
     r'g[eĕ][nṇ][dḍ]iṅ': 'gĕṇḍiṅ', r'duduk': 'ḍuḍuk', r'li[nṇ][dḍ](u|ū|w)': r'linḍ\1', r't[eĕ][dḍ][uū]([n])': r'tĕḍu\1',  
     r'tum[eĕ][dḍ][uū]([n])': r'tumĕḍu\1',
     r'padaṅ': 'paḍaṅ', r'tindih': 'tinḍih', r'dukuh': 'ḍukuh', r'undu([tk])': r'unḍu\1', r'ĕdap\b': r'ĕḍap', 
-    r'danda': 'ḍanḍa', r'garuda': 'garuḍa', r'tadah': 'taḍah', r'p[āa]n[dḍ]aw': 'pānḍaw', 
+    r'd([aā])nd([āa])': r'ḍanḍ\1', r'garuda': 'garuḍa', r'tadah': 'taḍah', r'p[āa]n[dḍ]aw': 'pānḍaw', r'p[āa]n[dḍ]u': 'pānḍu', 
     r'tĕndas': 'tĕnḍas', r'mandala': 'manḍala', r'gandewa': 'ganḍewa', r'manda\b': 'manḍa', r'tanda': 'tanḍa',
+
+    r'([sn])[eĕ][dḍ][eĕ]ṅ\b': r'\1ĕḍĕṅ',
+    r'ndĕ([ms])': r'nḍĕ\1',
+    r'dĕdĕt': r'ḍĕḍĕt',
     
     r'\brasmi': 'raṣmi', 
-    r'r[aā]tn[aā]' : 'ratna', r'ratnakanda': r'ratnakanḍa',
+    r'r[aā]tn[aā]' : 'ratna', r'ratnakand': r'ratnakanḍ',
     r'\bsaj(ñ|n)[aā]': 'sajñā', r'pra[bƀ][aā]wa': 'praƀāwa', r'\bk[aā][sś]mala': 'kaśmala', 
     
     r'g(ĕ|a)d(a|u|i)ṅ': r'g\1ḍ\2ṅ', 
@@ -243,15 +257,25 @@ substitutions = {
 
     #pendekkan
     r'\bs[aā]smrĕti': 'sasmrĕti',  r'c[iī]tta': 'citta',
-    r'pāksa': 'paksa', r'wākt(r?)a': r'wakt\1a', r'\b[sś][uū]kl': 'śukl',  
+    r'([pd])āksa': r'\1aksa', 
+    r'wākt(r?)a': r'wakt\1a', r'\b[sś][uū]kl': 'śukl',  
     r'\bārja': 'arja', r'(\w{2,})[āa]rja': r'\1ārja', 
     r'mātya': 'matya', r'māntuk': 'mantuk', 
-    r'd[iī](b|w)ya': r'di\1ya', r'[ƀb][uū]kt(i|y)': r'ƀukt\1',
+    r'd[iī](b|w)ya': r'di\1ya', 
+    r'[ƀb][uū]kt([iy])': r'ƀukt\1',
+    r'b[aā]y([uw])': r'bāy\1',
     r's[aā]nma[tŧ]a': 'sanmata',  r'ma[nṇ][iī]ndr': 'maṇīndr', 
-    r'k[aā]sturi': 'kasturi', r'wiwāk[sṣ]an': 'wiwaksan', r'wārga': 'warga', 
+    r'k[aā]sturi': 'kasturi', r'wiwāk[sṣ]a': 'wiwaksa', r'wārga': 'warga', r'parātra': 'paratra', 
+    r'[sṣś]aktim[aā]nt': 'śaktimant',
+
+    r'dūrga': 'durga', r'rūdr': 'rudr',
+    r'pr[aā]l[aā]m[bƀ]': 'pralamb', 
+    r'pr[aā]k[aā]mp': 'prakamp',
+    r'm[aā][nṇ][dḍ][eĕ]g': 'maṇḍĕg', 
 
     #konsonan ganda
     r'm[aā]rtyaloka': 'marttyaloka', r't[aā]twa': 'tattwa', r'jag[aā]ttraya': 'jagattraya', 
+
     rf'b[aā][hḥ]n([{DAFTAR_VOKAL}]|y)': r'bahn\1', 
     rf'[sś][aā]str([{DAFTAR_VOKAL}])': r'śāstr\1', 
     rf's[aā]ṅsay([{DAFTAR_VOKAL}])': r'saṅśay\1',
@@ -279,19 +303,21 @@ substitutions = {
     rf'n[iī]st([{DAFTAR_VOKAL}])': r'niṣṭ\1',
     rf'(go|ƀra|tu)st([{DAFTAR_VOKAL}])': r'\1ṣṭ\2',
     rf'makut([{DAFTAR_VOKAL}])': r'makuṭ\1',
-    rf'wisn([{DAFTAR_VOKAL}]|w)': r'wiṣṇ\1',
+    rf'w([ie])sn([{DAFTAR_VOKAL}]|w)': r'w\1ṣṇ\2',
     rf'p([ou])rus([{DAFTAR_VOKAL}])': r'p\1ruṣ\2',
     rf'k(a|ā)ra[nṇ]([{DAFTAR_VOKAL}])': r'k\1raṇ\2',
     rf'muky([{DAFTAR_VOKAL}])': r'muꝁy\1',
-    rf'(?<!u)r([{DAFTAR_VOKAL}])n([{DAFTAR_VOKAL.replace("ĕ","")}])': r'r\1ṇ\2',
-    rf'pa[dḍ]([{DAFTAR_VOKAL}])': r'paḍ\1',
-    
-      
+    rf'pa[dḍ]([{DAFTAR_VOKAL}])(?!dway)': r'paḍ\1',
+    rf'pram([aā])n([{DAFTAR_VOKAL}])': r'pram\1ṇ\2',
+    rf'k[sṣ]a[ṇn]([{DAFTAR_VOKAL}])': r'kṣaṇ\1',
+    rf'm[aā]rg([{DAFTAR_VOKAL}])(?!lawu)': r'mārg\1',
+    rf'(?<!u)(?<!kahawa)(?<!krū)(?<![{DAFTAR_KONSONAN}][{DAFTAR_KONSONAN}])r([{DAFTAR_VOKAL}])n([{DAFTAR_VOKAL.replace("ĕ","")}])': r'r\1ṇ\2',
+
     #bisa merubah wirama
-    r'ṅuni': 'ṅūni', r'\brah\b' : 'rāh',
+    r'ṅuni': 'ṅūni', r'\brah' : 'rāh',
     r'nagara': 'nāgara', r'pat\b': 'pāt',
-    r'\bsad\b': 'ṣaḍ',
-    r'\brum': 'rūm', r'tut': 'tūt', r'tinut': 'tinūt',
+    r'\bsad': 'ṣaḍ',
+    r'\brum': 'rūm', r'tut(?![iy])': 'tūt', r'tinut': 'tinūt',
     r'\bsyuh\b': 'syūh',
     r'\braja\b': 'rāja',
     r'\b[sś]arira': 'śarīra',
@@ -317,10 +343,14 @@ substitutions = {
     r'([' + DAFTAR_VOKAL + r'])r(w|b)ud(a|ā)' : r'\1r\\\2ud\3',
 
     #vokal awal atau suku kata terbuka
-    r'\b[aā](kral|kweh|rđ|ṅlih|gya|mbĕk|[sś]ray|psara|mrĕta|mrih|ntara|stra|gra|hyun|ntaka|glis|krak|sraṅ|sya|ksi)': r'a\1', 
-    r'(?<!nir)[aā](kral|kweh|rđ|ṅlih|gya|mbĕk|psara|mrĕta|mrih|ntara|stra|gra|hyun|ntaka|glis|krak|sraṅ|sya|ksi)': r'ā\1',
-    r'\b[iī](ndra)': r'i\1', 
-    r'(?<!nir)[iī](ndra)': r'ī\1',
+    #bunyi a
+    r'\bā(kra|kweh|rđ|ṅlih|gya|mbĕk|[sś]ray|psara|mrĕta|mrih|ntara|stra|gra|hyun|ntaka|glis|sraṅ|sya|ksi|ṅhiṅ|hya|ṅga|ntĕn|dƀut)': r'a\1', 
+    
+    rf'(?<!^nir)(?<! aṅ)(?<![{DAFTAR_KONSONAN}]y)(?<![{DAFTAR_KONSONAN}]w)(?<!\snir)(?<!\saw)(?<!^s)(?<!\ss)(?<!\s)(?<!<)(?<!\{{)a(kra|kweh|rđ|ṅlih|gya|mbĕk|psara|mrĕta|mrih|ntara|stra|gra|hyun|ntaka|glis|sraṅ|sya|ksi|ṅhiṅ|gni|hya|ṅga|ntĕn|dƀut)': r'ā\1',
+
+    #bunyi i
+    r'\b[iī](ndr)': r'i\1', 
+    rf'(?<!nir)(?<!<)(?<!\{{)(?<!\s)[iī](ndr)': r'ī\1',
 
     
 

@@ -95,8 +95,6 @@ def pisahkan_kata_ulang(teks):
 def kata_baku(text):
 
     """Kapitalisasi vokal awal baris dan substitusi kamus"""
-    #text = pisahkan_kata_ulang(text) 
-
     # Substitusi kamus
     for pattern, replacement in REGEX_CACHE['substitusi']:
         text = pattern.sub(replacement, text)
@@ -105,6 +103,8 @@ def kata_baku(text):
     text = REGEX_CACHE['awal_baris_vokal'].sub(
         lambda m: m.group(1) + m.group(2).upper(), text
     )
+
+    #text = pisahkan_kata_ulang(text) 
 
     # ṅ ulang
     text = re.sub(
@@ -132,9 +132,6 @@ def hukum_aksara(text):
     return text
 
 RE_HUKUM_R = [
-    # Bersihkan konsonan ganda setelah ṙ/r (ṙjj → rj)
-    #(re.compile(rf'[rṙ]([{DAFTAR_KONSONAN}])\1'), r'r\1'),
-
     # Step tambahan untuk kluster seperti "gra", "kra", "dra"
     (re.compile(rf'(?<=\w)r(?=([{DAFTAR_KONSONAN}])([{SEMI_VOKAL}]))'), 'ṙ'),
 
@@ -240,7 +237,7 @@ def hukum_sigeg(text):
 
     # Kasus khusus
     text = re.sub(r'\s+ŋ\s+h', ' ṅh', text, re.IGNORECASE)
-    text = re.sub(rf'kiŋki(ṅ|ŋ)', r'kiṅki\1', text)
+    text = re.sub(rf'kiṅki(ṅ|ŋ)', r'kiṅki\1', text)
 
     return text
 
@@ -266,6 +263,10 @@ RE_FINALISASI = [
     # 5. Pengecekan jika sigeg+non kapital
     (re.compile(rf'(ŋ|ḥ|ṙ)([{VOKAL_NON_KAPITAL}])'),
      lambda m: f"⚠️{m.group(0)}"),
+    
+    # 5. Pengecualian ~
+    (re.compile(rf'(ŋ|ḥ|ṙ)(~)([{DAFTAR_KONSONAN}])'),
+     lambda m: {'ŋ': 'ṅ', 'ḥ': 'h', 'ṙ': 'r'}[m.group(1)] + m.group(2) + m.group(3)),
 
     # 6. Sigeg bertemu sigeg
     (re.compile(r'ṙ[^\S\n]*ŋ'), 'ṙ ṅ'),
